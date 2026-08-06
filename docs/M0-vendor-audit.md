@@ -97,6 +97,21 @@ These are the concrete discrepancies to fix in **M1** before any win-rate number
 - Boss effect tests now exist for every boss incl. wall/violet/mark/verdant/pillar/ox/cerulean/amber/crimson/flint/eye/mouth/club/wheel/house/arm (`tests/test_boss_effects.py`, 41 tests; obs masking included). Some pre-existing vendored boss tests remain weak smoke tests ("doesn't crash").
 - Real boss-blind *selection* tests exist (`tests/test_boss_selection.py`, 18 tests: min-ante eligibility, ante-8 Showdown pool, empty allow-list, fewest-appearances rotation + restart, seed determinism, full-run integration).
 
+### 4.7 ~~[P2]~~ **[FIXED 2026-08-06]** Vouchers — full 32-voucher set implemented
+All 11 buyable no-ops now have real effects and the 5 missing vouchers are in the catalogue (**32 total**, 15 base→upgrade pairs via `VOUCHER_BASE`). Verified against balatrowiki.org/w/Vouchers:
+- **Hone / Glow Up**: 2x / 4x Foil+Holo odds in the shop (`_roll_edition` boost; Polychrome gets the real 3x/7x quirk).
+- **Tarot/Planet Merchant** (2x) and **Tycoon** (4x) shift the shop card-slot weights (`_consumable_weights`, multiplicative).
+- **Magic Trick** adds playing-card items to shop card slots ($4, buy → added to the run deck); **Illusion** adds enhancement/edition to those cards (seals bugged off, matching the real game).
+- **Omen Globe**: 20% chance each Arcana-Pack Tarot is replaced by a Spectral.
+- **Telescope**: Celestial Packs always contain the most-played hand's Planet (higher-tier tie-break).
+- **Observatory**: Planet cards in the consumable area give X1.5 Mult for their hand (`score_hand`).
+- **Seed Money / Money Tree**: interest cap $10 / $20 (`game.interest_cap`).
+- **Blank**: does nothing (unlocks Antimatter via the pair rule); **Antimatter**: +1 joker slot.
+- **Director's Cut / Retcon**: `reroll_boss` shop action — $10, Director's Cut 1x/Ante, Retcon unlimited; no-repeat rotation preserved, Wall/Violet rescale the blind target. env_sim action 46, env_v7 phase action 17.
+- **Pair-unlock rule**: upgraded vouchers only appear after the base is owned (initial pool = 17 bases/standalones, was 27) — this re-mapped the golden shop pin's voucher draw (v_paint_brush → v_seed_money; all non-voucher draws verified unchanged).
+- **Drive-by fixes**: Director's Cut no longer grants +1 free shop reroll (it never did in the real game); Petroglyph now also −1 discard per round (was missing).
+Obs vouchers 27→32 (+5 dims): env_sim **449**, env_v7 **481**, env_mp **485**. Tests: `tests/test_vouchers.py` (28). Full suite: **818 passed**. Known approximations: shop packs stay uniformly weighted (Tycoon/Telescope pack-odds half not modeled — only pack *contents*); Hone/Glow Up apply to shop jokers only; `dc_reroll_ante` (Director's Cut spent-this-ante) is not in the obs (hidden state the agent infers).
+
 ## 5. What this means for M1 (updated plan items)
 
 1. **Persistent deck state** — the single most important fidelity fix. Cards return to deck at round end (played cards are spent, held cards return), deck composition carries across blinds. This enables the deck-strategy dimension the whole project depends on.

@@ -326,7 +326,8 @@ class TestSeedModeGolden:
     EXPECTED_SHOP = [
         ("joker", "j_even_steven"), ("joker", "j_hologram"),
         ("tarot", "c_sun"), ("planet", "pl_venus"),
-        ("voucher", "v_paint_brush"),
+        ("voucher", "v_seed_money"),   # pair-unlock: initial pool is the 17
+        #  bases/standalones only (was v_paint_brush over the 27-key pool)
         ("booster", "p_standard_jumbo"), ("booster", "p_celestial"),
     ]
 

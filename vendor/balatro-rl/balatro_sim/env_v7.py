@@ -6,7 +6,7 @@ The SELECTING_HAND phase uses a two-level action:
   2. Card subset: selected via card scoring head -> subset distribution -> sample
 
 The env receives a composite action dict and translates it to game.step() calls.
-Shop and blind_select phases use a flat Discrete(17) phase action.
+Shop and blind_select phases use a flat Discrete(18) phase action.
 
 Observation: 434 dims (402 from V6 + 32 new per-card features)
   New per-card features (4 per slot, 8 slots = 32):
@@ -44,7 +44,7 @@ from .card_selection import (
 # ════════════════════════════════════════════════════════════════════════════
 
 # Phase actions (blind_select + shop)
-N_PHASE_ACTIONS = 17
+N_PHASE_ACTIONS = 18
 # Phase action mapping:
 #   0  play_blind
 #   1  skip_blind
@@ -53,6 +53,7 @@ N_PHASE_ACTIONS = 17
 #   14  reroll
 #   15  leave_shop
 #   16  use planet in shop
+#   17  reroll boss (Director's Cut / Retcon)
 
 # Phase IDs
 PHASE_SELECTING_HAND = 0
@@ -88,7 +89,7 @@ N_SHOP_SLOTS   = 7
 PLANET_FEATURES = 12
 CONS_FEATURES  = 8
 N_CONS_SLOTS   = 2
-SHOP_CONTEXT   = 73    # reroll(2) + vouchers(27) + boss(28) + deck_comp(8) + enhance(8)
+SHOP_CONTEXT   = 78    # reroll(2) + vouchers(32) + boss(28) + deck_comp(8) + enhance(8)
 
 # Skip-blind Tag features: offered-tag one-hot (24) + pending-tag state (5)
 TAG_FEATURES         = 24
@@ -103,7 +104,7 @@ OBS_DIM = (GAME_SCALARS
            + SHOP_CONTEXT
            + TAG_FEATURES
            + PENDING_TAG_FEATURES)
-# = 14 + 240 + 50 + 42 + 12 + 16 + 73 + 24 + 5 = 476
+# = 14 + 240 + 50 + 42 + 12 + 16 + 78 + 24 + 5 = 481
 
 # Reward constants — V7 Run 5: auto-positioning, ante-aware synergy, sell rewards
 R_BLIND_BASE     = 1.0
@@ -427,6 +428,10 @@ class BalatroV7Env(gym.Env):
                                  "consumable_idx": 0, "target_cards": []})
                         reward += R_HEUR_USE_PLANET
 
+            elif action == 17:
+                # Director's Cut / Retcon: reroll the upcoming Boss Blind
+                gs.step({"type": "reroll_boss"})
+
         return self._finish_step(reward)
 
     def _finish_step(self, reward: float):
@@ -616,6 +621,13 @@ class BalatroV7Env(gym.Env):
             from .consumables import ALL_PLANETS as _AP
             if gs.consumable_hand and gs.consumable_hand[0] in _AP:
                 mask[16] = True
+            # Reroll Boss (Director's Cut / Retcon): $10, next blind is a Boss
+            if gs.current_blind.kind == "Boss" and gs.dollars >= 10:
+                can_retcon = "v_retcon" in gs.vouchers
+                can_dc = ("v_directors_cut" in gs.vouchers
+                          and gs.dc_reroll_ante != gs.ante)
+                if can_retcon or can_dc:
+                    mask[17] = True
 
         elif gs.state == State.GAME_OVER:
             mask[15] = True  # dummy
@@ -715,8 +727,8 @@ class BalatroV7Env(gym.Env):
                 item = gs.current_shop[slot]
                 obs[idx]   = float(not item.sold)
                 kind_map   = {"joker": 1, "planet": 2, "tarot": 3,
-                              "spectral": 4, "voucher": 5, "booster": 6}
-                obs[idx+1] = kind_map.get(item.kind, 0) / 6.0
+                              "spectral": 4, "voucher": 5, "booster": 6, "card": 7}
+                obs[idx+1] = kind_map.get(item.kind, 0) / 7.0
                 obs[idx+2] = item.price / 20.0
                 can_afford  = float(gs.dollars >= item.price and not item.sold)
                 obs[idx+3] = can_afford
@@ -752,9 +764,9 @@ class BalatroV7Env(gym.Env):
         obs[idx+1] = gs.free_rerolls_remaining / max(gs.free_rerolls_per_round + 1, 1)
         idx += 2
 
-        for vi, vkey in enumerate(ALL_VOUCHERS[:27]):
+        for vi, vkey in enumerate(ALL_VOUCHERS):
             obs[idx + vi] = 1.0 if vkey in gs.vouchers else 0.0
-        idx += 27
+        idx += len(ALL_VOUCHERS)
 
         # Boss blind one-hot (28 — full real boss set)
         BOSS_TYPES = [

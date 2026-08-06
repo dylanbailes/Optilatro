@@ -221,6 +221,10 @@ class BalatroGame:
         self.free_rerolls_per_round = 0
         self.free_rerolls_remaining = 0
         self.current_shop: list[ShopItem] = []
+        # Interest cap (Seed Money $10 / Money Tree $20; base $5)
+        self.interest_cap = INTEREST_CAP
+        # Director's Cut: the ante on which the 1x-per-Ante Boss reroll was used
+        self.dc_reroll_ante: Optional[int] = None
 
         # Booster state
         self.booster_choices: list = []
@@ -645,6 +649,8 @@ class BalatroGame:
                 )
             elif atype == "reroll":
                 reroll_shop(self)
+            elif atype == "reroll_boss":
+                self._reroll_boss()
             elif atype == "leave_shop":
                 self._end_shop()
 
@@ -891,9 +897,9 @@ class BalatroGame:
     # ── Round end / shop ─────────────────────────────────────────────────────
 
     def _end_round(self):
-        # Payout
+        # Payout (interest cap raised by Seed Money / Money Tree)
         earnings = self.hands_left * HAND_PAYOUT
-        interest = min(self.dollars // INTEREST_RATE, INTEREST_CAP)
+        interest = min(self.dollars // INTEREST_RATE, self.interest_cap)
         self.dollars += earnings + interest
         # Garbage Tag: unused discards this round count toward the run total
         self.run_unused_discards += self.discards_left
@@ -958,6 +964,41 @@ class BalatroGame:
                 self.state = State.GAME_OVER
                 return
         self._prepare_next_blind()
+
+    def _reroll_boss(self):
+        """Pay $10 to reroll the upcoming Boss Blind.
+
+        Director's Cut allows this once per Ante; Retcon makes it unlimited.
+        Only available in the shop when the next blind is the Boss. The
+        no-repeat rotation is preserved (the first pick's appearance is undone
+        and the reselect excludes it)."""
+        if self.current_blind.kind != "Boss":
+            return
+        has_retcon = "v_retcon" in self.vouchers
+        has_dc = "v_directors_cut" in self.vouchers
+        if not (has_retcon or has_dc):
+            return
+        if not has_retcon and self.dc_reroll_ante == self.ante:
+            return  # Director's Cut: once per Ante
+        if self.dollars < 10:
+            return
+        self.dollars -= 10
+        if not has_retcon:
+            self.dc_reroll_ante = self.ante
+        cur = self.current_blind.boss_key
+        self.boss_appearances[cur] = max(0, self.boss_appearances.get(cur, 0) - 1)
+        new = self._select_boss(self.ante, exclude=cur)
+        self.boss_appearances[new] = self.boss_appearances.get(new, 0) + 1
+        self.current_blind.boss_key = new
+        # Base boss = 1x; Wall/Violet scale the required score (abilities
+        # disabled by Chicot/Luchador skip the scaling).
+        base = BLIND_CHIPS[self.ante][2]
+        if self._boss_effects_on():
+            if new == "bl_wall":
+                base = BLIND_CHIPS[self.ante][0] * 4
+            elif new == "bl_violet":
+                base = BLIND_CHIPS[self.ante][0] * 6
+        self.current_blind.chips_target = base
 
     def _skip_blind(self):
         """Skip a non-Boss blind (Boss can't be skipped) and claim its Tag."""

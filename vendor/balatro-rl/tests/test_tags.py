@@ -344,7 +344,7 @@ class TestBoosterFlow:
 class TestObservation:
     def test_env_sim_obs_dims_and_tag_onehot(self):
         from balatro_sim.env_sim import BalatroSimEnv, OBS_DIM
-        assert OBS_DIM == 444   # 415 + 24 tag one-hot + 5 pending scalars
+        assert OBS_DIM == 449   # 444 + 5 (vouchers 27 -> 32)
         env = BalatroSimEnv(seed=1, rng_mode="seed")
         obs, *_ = env.reset()
         assert obs.shape == (OBS_DIM,)
@@ -355,7 +355,7 @@ class TestObservation:
 
     def test_env_v7_obs_dim(self):
         from balatro_sim.env_v7 import BalatroV7Env, OBS_DIM
-        assert OBS_DIM == 476   # 447 + 29
+        assert OBS_DIM == 481   # 476 + 5 (vouchers 27 -> 32)
         env = BalatroV7Env(seed=1, rng_mode="seed")
         obs, *_ = env.reset()
         assert obs.shape == (OBS_DIM,)

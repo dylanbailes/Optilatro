@@ -437,9 +437,12 @@ class TestVouchers:
         assert game.hand_size == prev + 1
 
     def test_directors_cut(self, game):
+        # Director's Cut rerolls the Boss Blind 1x per Ante for $10 (game
+        # action) — it grants no shop rerolls.
         prev = game.free_rerolls_per_round
         apply_voucher(game, "v_directors_cut")
-        assert game.free_rerolls_per_round == prev + 1
+        assert game.free_rerolls_per_round == prev
+        assert "v_directors_cut" in game.vouchers
 
     def test_voucher_cannot_be_bought_twice(self, game):
         assert apply_voucher(game, "v_overstock") is True

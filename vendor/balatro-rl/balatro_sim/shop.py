@@ -25,12 +25,22 @@ if TYPE_CHECKING:
 
 from .consumables import (
     ALL_PLANETS, ALL_TAROTS, ALL_SPECTRALS, ALL_VOUCHERS,
-    PLANET_NAME, TAROT_NAME, SPECTRAL_NAME, VOUCHER_NAME,
+    PLANET_NAME, TAROT_NAME, SPECTRAL_NAME, VOUCHER_NAME, VOUCHER_BASE,
+    PLANET_HAND,
 )
 from .seed_rng import (
     node_joker, node_rarity, node_edition, node_tarot, node_planet,
     node_spectral, node_voucher, node_shop_pack, node_stdset, node_cdt,
+    MAGIC_CARD_NODE, OMEN_NODE, ILLUSION_NODE,
 )
+from .constants import ENHANCEMENTS, EDITIONS
+
+# Hand-tier order for Telescope's "higher tier hand" tie-break.
+_HAND_TIERS = {h: i for i, h in enumerate([
+    "High Card", "Pair", "Two Pair", "Three of a Kind", "Straight", "Flush",
+    "Full House", "Four of a Kind", "Straight Flush", "Five of a Kind",
+    "Flush House", "Flush Five",
+])}
 
 # ════════════════════════════════════════════════════════════════════════════
 # JOKER CATALOGUE — all joker keys with rarity and base price
@@ -202,12 +212,13 @@ def random_joker_key(
 
 @dataclass
 class ShopItem:
-    kind: str          # "joker" | "planet" | "tarot" | "spectral" | "voucher" | "booster"
+    kind: str          # "joker" | "planet" | "tarot" | "spectral" | "voucher" | "booster" | "card"
     key: str
     name: str
     price: int
     edition: str = "None"    # for jokers
     sold: bool = False
+    card: Optional["Card"] = None   # Magic Trick: the offered playing card
 
     def discounted_price(self, discount_frac: float) -> int:
         return max(1, int(self.price * (1 - discount_frac)))
@@ -266,6 +277,10 @@ def generate_shop(game: "BalatroGame") -> list[ShopItem]:
         game.pending_reroll_free = False
         game.reroll_cost = 0   # D6 Tag: rerolls in the next shop start at $0
 
+    # Hone / Glow Up: 2x / 4x shop edition odds (Polychrome 3x / 7x)
+    edition_boost = (4 if "v_glow_up" in game.vouchers
+                     else 2 if "v_hone" in game.vouchers else 1)
+
     # Joker slots (2 by default)
     for i in range(game.shop_joker_slots):
         if i == 0 and free_rarity:
@@ -284,7 +299,8 @@ def generate_shop(game: "BalatroGame") -> list[ShopItem]:
         else:
             key = random_joker_key(rng=game.rng, ante=game.ante, source="sho")
             info = JOKER_CATALOGUE.get(key, {})
-            edition = _roll_edition(game.rng.node(node_edition("sho", game.ante)))
+            edition = _roll_edition(
+                game.rng.node(node_edition("sho", game.ante)), edition_boost)
             price = info.get("price", 6)
             if edition != "None":
                 price += _edition_markup(edition)
@@ -319,12 +335,37 @@ def generate_shop(game: "BalatroGame") -> list[ShopItem]:
     return items
 
 
+def _consumable_weights(game: "BalatroGame") -> tuple[list[str], list[int]]:
+    """Shop card-slot item pools and weights, shifted by vouchers.
+
+    Base: planets 40 / tarots 50 / spectrals 10 (the real cdt{ante} item-type
+    poll). Tarot Merchant 2x / Tarot Tycoon 4x, Planet Merchant 2x / Planet
+    Tycoon 4x (multiplicative — a Tycoon requires its Merchant base first).
+    Magic Trick / Illusion add a playing-card kind (weight 25)."""
+    w_planet, w_tarot, w_spectral, w_card = 40, 50, 10, 0
+    v = game.vouchers
+    if "v_tarot_merchant" in v:
+        w_tarot *= 2
+    if "v_tarot_tycoon" in v:
+        w_tarot *= 2
+    if "v_planet_merchant" in v:
+        w_planet *= 2
+    if "v_planet_tycoon" in v:
+        w_planet *= 2
+    if "v_magic_trick" in v or "v_illusion" in v:
+        w_card = 25
+    pool = ["planet", "tarot", "spectral"]
+    weights = [w_planet, w_tarot, w_spectral]
+    if w_card:
+        pool.append("card")
+        weights.append(w_card)
+    return pool, weights
+
+
 def _random_consumable_item(game: "BalatroGame") -> ShopItem:
-    """Pick a random planet, tarot, or spectral for a card slot."""
-    # Weight: planets 40%, tarots 50%, spectrals 10% (drawn via the real game's
-    # cdt{ante} item-type node).
-    kind = game.rng.node(node_cdt(game.ante)).choices(
-        ["planet", "tarot", "spectral"], weights=[40, 50, 10])[0]
+    """Pick a random planet, tarot, spectral, or (Magic Trick) playing card."""
+    pool, weights = _consumable_weights(game)
+    kind = game.rng.node(node_cdt(game.ante)).choices(pool, weights)[0]
     ante = game.ante
     if kind == "planet":
         key = game.rng.node(node_planet("sho", ante)).choice(ALL_PLANETS)
@@ -332,27 +373,73 @@ def _random_consumable_item(game: "BalatroGame") -> ShopItem:
     elif kind == "tarot":
         key = game.rng.node(node_tarot("sho", ante)).choice(ALL_TAROTS)
         return ShopItem("tarot", key, TAROT_NAME.get(key, key), 3)
-    else:
+    elif kind == "spectral":
         key = game.rng.node(node_spectral("sho", ante)).choice(ALL_SPECTRALS)
         return ShopItem("spectral", key, SPECTRAL_NAME.get(key, key), 4)
+    else:
+        return _shop_card_item(game)
+
+
+def _shop_card_item(game: "BalatroGame") -> ShopItem:
+    """A playing-card shop item ($4, Magic Trick). Illusion adds an
+    enhancement and/or edition (seals are bugged off in the real game)."""
+    from .card import Card
+    from .constants import RANK_NAMES, SUITS
+
+    node = game.rng.node(MAGIC_CARD_NODE)
+    rank = node.randint(2, 14)
+    suit = node.choice(SUITS)
+    enhancement = edition = "None"
+    if "v_illusion" in game.vouchers:
+        inode = game.rng.node(ILLUSION_NODE)
+        if inode.chance(0.5):
+            enhancement = inode.choice([e for e in ENHANCEMENTS if e != "None"])
+        if inode.chance(0.5):
+            edition = inode.choice([e for e in EDITIONS if e != "None"])
+    card = Card(rank, suit, enhancement=enhancement, edition=edition)
+    name = f"{RANK_NAMES[rank]} of {suit}"
+    return ShopItem("card", f"card_{rank}_{suit}", name, 4, card=card)
 
 
 def _random_voucher(game: "BalatroGame") -> Optional[str]:
-    available = [v for v in ALL_VOUCHERS if v not in game.vouchers]
+    """Pick a voucher for the shop slot. Upgraded vouchers only appear once
+    their base pair is owned (real-game pair-unlock rule)."""
+    available = []
+    for v in ALL_VOUCHERS:
+        if v in game.vouchers:
+            continue
+        base = VOUCHER_BASE.get(v)
+        if base is not None and base not in game.vouchers:
+            continue
+        available.append(v)
     if not available:
+        # Real game falls back to offering Blank repeatedly once every voucher
+        # is purchased; the sim just leaves the voucher slot empty.
         return None
     return game.rng.node(node_voucher(game.ante)).choice(available)
 
 
-def _roll_edition(node=None) -> str:
+def _roll_edition(node=None, boost: float = 1.0) -> str:
     """Edition roll; thresholds match real Balatro (next_joker's edition poll).
     node: a NodeRng to draw through (per-node in seed mode); None → module
-    random (legacy direct-call behavior)."""
+    random (legacy direct-call behavior).
+    boost: Hone (2) / Glow Up (4) multiply Foil + Holographic appearance;
+    Polychrome gets 3x for Hone / 7x for Glow Up (the real game's quirk)."""
     r = node.random() if node is not None else random.random()
+    if boost <= 1.0:
+        if r < 0.003:   return "Negative"
+        if r < 0.006:   return "Polychrome"
+        if r < 0.02:    return "Holographic"
+        if r < 0.04:    return "Foil"
+        return "None"
+    poly_boost = 7.0 if boost >= 4.0 else 3.0
+    t_poly = 0.003 + 0.003 * poly_boost
+    t_holo = t_poly + 0.014 * boost
+    t_foil = t_holo + 0.02 * boost
     if r < 0.003:   return "Negative"
-    if r < 0.006:   return "Polychrome"
-    if r < 0.02:    return "Holographic"
-    if r < 0.04:    return "Foil"
+    if r < t_poly:  return "Polychrome"
+    if r < t_holo:  return "Holographic"
+    if r < t_foil:  return "Foil"
     return "None"
 
 
@@ -402,6 +489,15 @@ def buy_item(game: "BalatroGame", item: ShopItem) -> bool:
             item.sold = True
             return True
         return False
+
+    if item.kind == "card":
+        # Magic Trick: buying a playing card adds it to the run deck
+        if item.card is None:
+            return False
+        game.deck.insert(0, item.card)
+        game.dollars -= effective_price
+        item.sold = True
+        return True
 
     if item.kind == "booster":
         game.dollars -= effective_price
@@ -456,11 +552,29 @@ def _open_booster(game: "BalatroGame", booster_key: str):
 
     choices = []
     if content_kind == "tarot":
-        choices = [game.rng.node(node_tarot("ar1", game.ante)).choice(ALL_TAROTS)
-                   for _ in range(n_cards)]
+        # Omen Globe: 20% chance each Arcana-Pack Tarot is replaced by a
+        # Spectral card (real-game effect).
+        omen = "v_omen_globe" in game.vouchers
+        omen_node = game.rng.node(OMEN_NODE)
+        for _ in range(n_cards):
+            key = game.rng.node(node_tarot("ar1", game.ante)).choice(ALL_TAROTS)
+            if omen and omen_node.chance(0.2):
+                key = game.rng.node(node_spectral("spe", game.ante)).choice(ALL_SPECTRALS)
+            choices.append(key)
     elif content_kind == "planet":
-        choices = [game.rng.node(node_planet("pl1", game.ante)).choice(ALL_PLANETS)
-                   for _ in range(n_cards)]
+        # Telescope: Celestial Packs always contain the Planet card for the
+        # most-played hand (tie-break: the higher-tier hand, real-game rule).
+        forced = None
+        if "v_telescope" in game.vouchers:
+            counts = getattr(game, "run_hand_counts", None)
+            if counts:
+                most = max(counts, key=lambda h: (counts[h], _HAND_TIERS.get(h, 0)))
+                forced = {v: k for k, v in PLANET_HAND.items()}.get(most)
+        for i in range(n_cards):
+            if forced is not None and i == 0:
+                choices.append(forced)
+                continue
+            choices.append(game.rng.node(node_planet("pl1", game.ante)).choice(ALL_PLANETS))
     elif content_kind == "spectral":
         choices = [game.rng.node(node_spectral("spe", game.ante)).choice(ALL_SPECTRALS)
                    for _ in range(n_cards)]

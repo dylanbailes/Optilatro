@@ -261,6 +261,9 @@ HOOK_NODE = "hook"              # The Hook: which 2 cards are discarded
 CRIMSON_NODE = "crimson"        # Crimson Heart: which joker is disabled
 MADNESS_NODE = "madness"        # Madness joker: which joker is destroyed
 PURPLE_SEAL_NODE = "purple_seal"  # Purple seal: which tarot is added
+MAGIC_CARD_NODE = "magic_card"    # Magic Trick: shop playing-card rank/suit
+OMEN_NODE = "omen"                # Omen Globe: 20% tarot -> spectral in Arcana Packs
+ILLUSION_NODE = "illusion"        # Illusion: shop-card enhancement/edition rolls
 DEFAULT_NODE = "default"
 
 

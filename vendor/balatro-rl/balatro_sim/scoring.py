@@ -168,5 +168,12 @@ def score_hand(
 
     total_chips = base_chips + ctx.chips
     total_mult  = (base_mult + ctx.mult) * ctx.mult_mult
+    # Observatory: Planet cards in the consumable area give X1.5 Mult for
+    # their specified poker hand.
+    if game is not None and "v_observatory" in game.vouchers:
+        from .consumables import PLANET_HAND
+        hand_to_planet = {v: k for k, v in PLANET_HAND.items()}
+        if hand_to_planet.get(hand_type) in game.consumable_hand:
+            total_mult *= 1.5
     score = int(total_chips * max(total_mult, 0))
     return score, ctx

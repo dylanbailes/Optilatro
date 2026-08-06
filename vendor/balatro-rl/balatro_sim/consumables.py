@@ -494,9 +494,35 @@ VOUCHER_NAME = {
     "v_illusion":       "Illusion",        # Playing cards can have editions
     "v_hieroglyph":     "Hieroglyph",      # -1 ante, -1 hand per round
     "v_petroglyph":     "Petroglyph",      # -1 ante (stacks with Hieroglyph)
-    "v_directors_cut":  "Director's Cut",  # +1 free reroll per round
+    "v_directors_cut":  "Director's Cut",  # Reroll Boss Blind 1 time per Ante, $10
     "v_paint_brush":    "Paint Brush",     # +1 hand size
     "v_palette":        "Palette",         # +1 hand size again
+    "v_seed_money":     "Seed Money",      # interest cap $10
+    "v_money_tree":     "Money Tree",      # interest cap $20
+    "v_blank":          "Blank",           # does nothing (unlocks Antimatter)
+    "v_antimatter":     "Antimatter",      # +1 joker slot
+    "v_retcon":         "Retcon",          # reroll Boss Blind unlimited times
+}
+
+# Upgraded vouchers only appear in the shop once their base pair is owned
+# (wiki: "only by claiming a Base Voucher can the player then claim the
+# corresponding Upgraded Voucher in future shops in the run").
+VOUCHER_BASE = {
+    "v_overstock_plus":  "v_overstock",
+    "v_liquidation":     "v_clearance_sale",
+    "v_glow_up":         "v_hone",
+    "v_reroll_glut":     "v_reroll_surplus",
+    "v_observatory":     "v_telescope",
+    "v_nacho_tong":      "v_grabber",
+    "v_recyclomancy":    "v_wasteful",
+    "v_tarot_tycoon":    "v_tarot_merchant",
+    "v_planet_tycoon":   "v_planet_merchant",
+    "v_illusion":        "v_magic_trick",
+    "v_petroglyph":      "v_hieroglyph",
+    "v_retcon":          "v_directors_cut",
+    "v_palette":         "v_paint_brush",
+    "v_money_tree":      "v_seed_money",
+    "v_antimatter":      "v_blank",
 }
 
 ALL_VOUCHERS = list(VOUCHER_NAME.keys())
@@ -538,12 +564,36 @@ def apply_voucher(game: "BalatroGame", voucher_key: str) -> bool:
         game.base_hands = max(1, game.base_hands - 1)
     elif voucher_key == "v_petroglyph":
         game.ante = max(1, game.ante - 1)
+        game.base_discards = max(1, game.base_discards - 1)  # -1 discard each round
     elif voucher_key == "v_paint_brush":
         game.hand_size += 1
     elif voucher_key == "v_palette":
         game.hand_size += 1
     elif voucher_key == "v_directors_cut":
-        game.free_rerolls_per_round += 1
+        pass  # reroll the Boss Blind 1x per Ante for $10 — see game._reroll_boss
+    elif voucher_key == "v_retcon":
+        pass  # reroll the Boss Blind unlimited times for $10 — see game._reroll_boss
+    elif voucher_key == "v_hone" or voucher_key == "v_glow_up":
+        pass  # shop edition odds boost — applied in shop._roll_edition
+    elif voucher_key == "v_omen_globe":
+        pass  # 20% Spectral replaces Tarot in Arcana Packs — shop._open_booster
+    elif voucher_key == "v_telescope":
+        pass  # Celestial Packs always contain the most-played hand's Planet
+    elif voucher_key == "v_observatory":
+        pass  # Planet cards in the consumable area give X1.5 Mult — scoring
+    elif voucher_key in ("v_tarot_merchant", "v_tarot_tycoon",
+                         "v_planet_merchant", "v_planet_tycoon"):
+        pass  # shop consumable-type weights — applied in shop._consumable_weights
+    elif voucher_key == "v_magic_trick" or voucher_key == "v_illusion":
+        pass  # playing cards in the shop — applied in shop._random_consumable_item
+    elif voucher_key == "v_seed_money":
+        game.interest_cap = 10
+    elif voucher_key == "v_money_tree":
+        game.interest_cap = 20
+    elif voucher_key == "v_blank":
+        pass  # Blank does nothing — unlocks Antimatter via the pair rule
+    elif voucher_key == "v_antimatter":
+        game.joker_slots += 1
 
     return True
 

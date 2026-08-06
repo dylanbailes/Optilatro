@@ -21,8 +21,8 @@ class TestObservation:
         obs, _ = env.reset()
         assert obs.shape == (OBS_DIM,), f"Expected {OBS_DIM}, got {obs.shape}"
 
-    def test_obs_dim_is_445(self):
-        assert OBS_DIM == 476   # 447 + 29 (24 tag one-hot + 5 pending-tag scalars)
+    def test_obs_dim(self):
+        assert OBS_DIM == 481   # 476 + 5 (vouchers 27 -> 32)
 
     def test_card_features_is_30(self):
         assert CARD_FEATURES == 30

@@ -4,7 +4,7 @@ env_sim.py — Gymnasium-compatible Balatro environment using the Python sim.
 Observation: flat numpy float32 vector of shape (OBS_DIM,)
 Action:      discrete integer in [0, N_ACTIONS)
 
-Action space (46 actions):
+Action space (47 actions):
   Phase BLIND_SELECT:
     30  play_blind
     31  skip_blind
@@ -67,7 +67,7 @@ from .shop import JOKER_CATALOGUE
 # Constants
 # ════════════════════════════════════════════════════════════════════════════
 
-N_ACTIONS = 46
+N_ACTIONS = 47
 
 # Hand type priority lookup (higher = better)
 HAND_PRIORITY = {
@@ -104,7 +104,7 @@ CONS_FEATURES  = 8     # per consumable slot
 N_CONS_SLOTS   = 2
 
 # Shop context features (new — richer shop state for informed buying decisions)
-SHOP_CONTEXT   = 73    # reroll(2) + vouchers(27) + boss(28) + deck_comp(8) + enhance(8)
+SHOP_CONTEXT   = 78    # reroll(2) + vouchers(32) + boss(28) + deck_comp(8) + enhance(8)
 
 # Skip-blind Tag features: offered-tag one-hot (24) + pending-tag state (5)
 TAG_FEATURES         = 24
@@ -119,7 +119,7 @@ OBS_DIM = (GAME_SCALARS
            + SHOP_CONTEXT
            + TAG_FEATURES
            + PENDING_TAG_FEATURES)
-# = 14 + 208 + 50 + 42 + 12 + 16 + 73 + 24 + 5 = 444
+# = 14 + 208 + 50 + 42 + 12 + 16 + 78 + 24 + 5 = 449
 
 # Reward constants
 # Blind clear reward scales inversely with ante: ante 1 = 16.0, ante 8 = 2.0
@@ -304,13 +304,17 @@ class BalatroSimEnv(gym.Env):
                 # Interest: $1 per $5, cap at $25. So optimal is to spend down
                 # to the nearest $5 (e.g. $9 -> spend $4, keep $5 for interest)
                 # Above $25, ALL excess is waste (interest capped)
-                interest_floor = min(gs.dollars // 5 * 5, 25)
+                interest_floor = min(gs.dollars // 5 * 5, gs.interest_cap)
                 wasted = gs.dollars - interest_floor
                 if wasted > 0:
                     reward += R_HEUR_WASTE_MONEY * wasted
                 gs.step({"type": "leave_shop"})
                 self._auto_advance()
                 self._update_play_combos()
+
+            elif action == 46:
+                # Director's Cut / Retcon: reroll the upcoming Boss Blind ($10)
+                gs.step({"type": "reroll_boss"})
 
             elif action in (28, 29):
                 # Use consumable in shop (planets)
@@ -491,8 +495,8 @@ class BalatroSimEnv(gym.Env):
                 item = gs.current_shop[slot]
                 obs[idx]   = float(not item.sold)
                 kind_map   = {"joker": 1, "planet": 2, "tarot": 3,
-                              "spectral": 4, "voucher": 5, "booster": 6}
-                obs[idx+1] = kind_map.get(item.kind, 0) / 6.0
+                              "spectral": 4, "voucher": 5, "booster": 6, "card": 7}
+                obs[idx+1] = kind_map.get(item.kind, 0) / 7.0
                 obs[idx+2] = item.price / 20.0
                 can_afford  = float(gs.dollars >= item.price and not item.sold)
                 obs[idx+3] = can_afford
@@ -531,10 +535,10 @@ class BalatroSimEnv(gym.Env):
         obs[idx+1] = gs.free_rerolls_remaining / max(gs.free_rerolls_per_round + 1, 1)
         idx += 2
 
-        # Vouchers owned (27 binary flags)
-        for vi, vkey in enumerate(ALL_VOUCHERS[:27]):
+        # Vouchers owned (32 binary flags — full real voucher set)
+        for vi, vkey in enumerate(ALL_VOUCHERS):
             obs[idx + vi] = 1.0 if vkey in gs.vouchers else 0.0
-        idx += 27
+        idx += len(ALL_VOUCHERS)
 
         # Boss blind one-hot (28 — full real boss set)
         BOSS_TYPES = [
