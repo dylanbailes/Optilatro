@@ -12,8 +12,16 @@ A workspace for authoring **custom Codebuff agents** (the `.agents/` directory c
 ## Project layout (Balatro AI optimizer)
 - `balatro-ai-spec.md` — project spec (route, stack, search design, milestones).
 - `docs/M0-vendor-audit.md` — vendored-sim audit: coverage verified + fidelity gaps.
-- `vendor/balatro-rl/` — vendored balatro-rl Python sim (commit 59588ba, no LICENSE file).
+- `vendor/balatro-rl/` — vendored balatro-rl Python sim (upstream commit 59588ba, no LICENSE file; tracked as plain files — nested `.git` removed).
+- `vendor/balatro-rs/` — vendored balatro-rs Rust workspace (core + balatro-seed, tracked as plain files).
+- `.github/workflows/ci.yml` — CI: full suite + `ci_gate` on every push/PR.
+- `requirements-ci.txt` — CI deps (numpy, gymnasium, pytest only — **no torch needed**; nothing in tests/ or balatro_sim/ imports it).
 - `bench/bench_sim.py` — throughput + random win-rate baseline benchmark.
+
+## CI & git (2026-08-06)
+- Repo: initialized `main` (commit `75b81b3`), **no remote yet** — create the repo on github.com then `git remote add origin <url>` + `git push -u origin main`.
+- CI commands (from `vendor/balatro-rl/`): full suite `python -m pytest tests/ balatro_sim/tests/ -q` (726 passed, 3 skipped) and the seed-exactness gate `python -m pytest tests/test_seed_exactness.py -m ci_gate` (4 passed).
+- **Vendor gitlink gotcha:** if a vendor dir is re-cloned with its own `.git`, the root repo tracks it as a submodule-style gitlink and CI checks out zero files — remove the nested `.git` before committing (`git rm --cached -f vendor/<name>` if already staged). CI's sanity-check step catches this with a clear message.
 - `.agents/` — Codebuff agent types (consumed by the Codebuff CLI).
 - Dev: create agent files in `.agents/` (e.g. `.agents/my-agent.ts`), importing from `./types/agent-definition`, then `export default definition`.
 - Test: none configured.

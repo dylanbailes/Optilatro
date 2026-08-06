@@ -1,0 +1,15 @@
+# Deterministic line endings: the repo stores LF and working trees stay LF on
+# every platform (Windows dev box + Linux CI). Prevents CRLF-mixed diffs and
+# surprises like a file whose content silently differs between checkout hosts.
+* text=auto
+*.py text eol=lf
+*.rs text eol=lf
+*.lua text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.ini text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.sh text eol=lf

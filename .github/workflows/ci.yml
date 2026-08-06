@@ -31,6 +31,7 @@ jobs:
   test:
     name: Full suite + seed-exactness gate
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     defaults:
       run:
         working-directory: vendor/balatro-rl
