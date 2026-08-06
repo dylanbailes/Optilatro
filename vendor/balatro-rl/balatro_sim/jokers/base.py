@@ -54,6 +54,7 @@ class ScoreContext:
     pending_money: int = 0             # dollars to award after round
     prevent_loss: bool = False         # Mr. Bones
     pending_consumables: list = field(default_factory=list)  # created tarots/planets
+    destroyed: list = field(default_factory=list)  # Glass cards shattered this hand
 
     # The game driving this hand — lets scoring-time code (Lucky card) and
     # joker probability triggers reach the game's RNG source. None when built

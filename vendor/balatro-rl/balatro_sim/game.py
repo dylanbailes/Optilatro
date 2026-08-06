@@ -177,10 +177,13 @@ class BalatroGame:
             obs = game.step(action)
     """
 
-    def __init__(self, seed: Optional[int] = None, rng_mode: str = "generic"):
+    def __init__(self, seed: Optional[int] = None, rng_mode: str = "generic",
+                 deck: str = "red"):
         """seed: run seed. rng_mode: "generic" (shared stream, legacy default)
-        or "seed" (per-node LuaRandom, Balatro's real scheme — seed_rng.py)."""
+        or "seed" (per-node LuaRandom, Balatro's real scheme — seed_rng.py).
+        deck: "red" (spec lock — +1 discard per round) or "white" (base)."""
         self.rng = make_source(seed, rng_mode)
+        self.deck_config = deck
         self._init_game_vars()
 
     # ── Initialization ───────────────────────────────────────────────────────
@@ -203,9 +206,9 @@ class BalatroGame:
         self.planets_used: list[str] = []
         self.tarots_used: list[str] = []
 
-        # Hand / discard / hand-size settings
+        # Hand / discard / hand-size settings (Red Deck: +1 discard per round)
         self.base_hands = STARTING_HANDS
-        self.base_discards = STARTING_DISCARDS
+        self.base_discards = STARTING_DISCARDS + (1 if self.deck_config == "red" else 0)
         self.hand_size = HAND_SIZE
 
         # Shop settings
@@ -243,6 +246,7 @@ class BalatroGame:
         self.jokers_flipped = False             # Amber Acorn: joker identities hidden, order shuffled
         self.bell_card: Optional[Card] = None   # Cerulean Bell: card forced into every played hand
         self._last_crimson_idx = None           # Crimson Heart: joker disabled this hand (no repeat)
+        self.boss_disabled_override = False     # Luchador: sold → next Boss Blind disabled
         self.ante_played_ids: set[int] = set()  # The Pillar: cards played this ante
         self.run_hand_counts: dict[str, int] = {h: 0 for h in _HAND_TYPE_ORDER}  # The Ox
         # Boss rotation: appearances per boss this run. Selection only picks from
@@ -301,11 +305,14 @@ class BalatroGame:
         boss_key = ""
         if kind == "Boss":
             boss_key = self._select_boss(self.ante)
-            # Large-blind bosses scale the required score (base chips = 1x)
-            if boss_key == "bl_wall":
-                chips = BLIND_CHIPS[self.ante][0] * 4   # The Wall: 4x base
-            elif boss_key == "bl_violet":
-                chips = BLIND_CHIPS[self.ante][0] * 6   # Violet Vessel: 6x base
+            # Large-blind bosses scale the required score (base chips = 1x);
+            # scaling is part of the boss ability, so it is skipped when
+            # abilities are disabled (Chicot / Luchador).
+            if self._boss_effects_on():
+                if boss_key == "bl_wall":
+                    chips = BLIND_CHIPS[self.ante][0] * 4   # The Wall: 4x base
+                elif boss_key == "bl_violet":
+                    chips = BLIND_CHIPS[self.ante][0] * 6   # Violet Vessel: 6x base
         self.current_blind = BlindInfo(
             name=f"Ante {self.ante} {kind}",
             kind=kind,
@@ -356,8 +363,8 @@ class BalatroGame:
         self.hand = []
         self.rng.node(DECK_SHUFFLE_NODE).shuffle(self.deck)
         self._draw_to_full()
-        # Apply boss debuffs
-        if self.current_blind.is_boss:
+        # Apply boss debuffs (skipped entirely when abilities are disabled)
+        if self.current_blind.is_boss and self._boss_effects_on():
             self._apply_boss_start(self.current_blind.boss_key)
         # Fire blind_selected joker hooks
         for j in self.jokers:
@@ -455,6 +462,11 @@ class BalatroGame:
             # cards drawn later in the round come face up.
             for c in self.hand:
                 c.flipped = True
+        # Matador: +$8 when the boss ability applies at blind start. The
+        # per-hand bosses (Crimson Heart, Cerulean Bell, The Hook) trigger
+        # during play instead — fired from _play_hand.
+        if boss_key not in ("bl_crimson", "bl_cerulean", "bl_hook"):
+            self._fire_boss_trigger()
 
     def _undo_boss_debuffs(self, boss_key: str):
         """Re-enable cards after boss blind ends."""
@@ -479,7 +491,7 @@ class BalatroGame:
 
     def _draw_to_full(self):
         target = self.hand_size
-        if self.current_blind.boss_key == "bl_fish":
+        if self._boss_effects_on() and self.current_blind.boss_key == "bl_fish":
             played = self.base_hands - self.hands_left
             target = max(1, self.hand_size - played)
         while len(self.hand) < target and self.deck:
@@ -489,7 +501,7 @@ class BalatroGame:
 
     def _on_card_drawn(self, card: Card):
         """Apply boss-blind effects to a card the moment it is drawn."""
-        boss = self.current_blind.boss_key
+        boss = self.current_blind.boss_key if self._boss_effects_on() else ""
         if boss == "bl_mark" and card.is_face_card:
             card.flipped = True          # The Mark: face cards are drawn face down
         if boss == "bl_wheel" and self.rng.node(WHEEL_NODE).random() < 1 / 7:
@@ -522,6 +534,28 @@ class BalatroGame:
             if key > best_key:
                 best_key, best = key, ht
         return best
+
+    def _boss_effects_on(self) -> bool:
+        """False when Boss Blind abilities are disabled: Chicot's permanent
+        passive (presence-based — the real game disables every boss while
+        owned) or Luchador's sell-to-disable (one-shot override, consumed
+        when the boss blind resolves)."""
+        if self.boss_disabled_override:
+            return False
+        return not any(j.key == "j_chicot" for j in self.jokers)
+
+    def _fire_boss_trigger(self):
+        """Fire Matador's on_boss_ability_triggered: +$8 when a Boss Blind
+        ability actually applies. Called once at blind start for static bosses
+        and per hand for the in-play bosses (Crimson Heart / Cerulean Bell /
+        The Hook). No-op while boss abilities are disabled."""
+        if not self._boss_effects_on():
+            return
+        for j in self.jokers:
+            effect = JOKER_REGISTRY.get(j.key)
+            if effect and hasattr(effect, "on_boss_ability_triggered"):
+                effect.on_boss_ability_triggered(j, None)
+            self.dollars += j.state.pop("pending_money", 0)
 
     # ── Main step ────────────────────────────────────────────────────────────
 
@@ -589,12 +623,15 @@ class BalatroGame:
         if not selected:
             return
 
+        # Boss effects are skipped entirely while disabled (Chicot / Luchador)
+        boss = self.current_blind.boss_key if self._boss_effects_on() else ""
+
         # Boss: psychic — must play exactly 5
-        if self.current_blind.boss_key == "bl_psychic" and len(selected) != 5:
+        if boss == "bl_psychic" and len(selected) != 5:
             return
 
         # Boss: hook — discard 2 random scoring cards
-        if self.current_blind.boss_key == "bl_hook":
+        if boss == "bl_hook":
             shuffle = list(selected)
             self.rng.node(HOOK_NODE).shuffle(shuffle)
             for c in shuffle[:2]:
@@ -610,13 +647,11 @@ class BalatroGame:
 
         # Boss: cerulean bell — the forced card is automatically added to every
         # played hand (the player cannot leave it out)
-        if self.current_blind.boss_key == "bl_cerulean" and self.bell_card is not None \
+        if boss == "bl_cerulean" and self.bell_card is not None \
                 and self.bell_card in self.hand and self.bell_card not in selected:
             selected.append(self.bell_card)
 
         hand_type, scoring_cards = evaluate_hand(selected)
-
-        boss = self.current_blind.boss_key
 
         # Boss: eye — no repeat hand types this round.
         # Boss: mouth — only one hand type can be played this round.
@@ -647,6 +682,10 @@ class BalatroGame:
             self._last_crimson_idx = idx
             active_jokers = [j for i, j in enumerate(self.jokers) if i != idx]
 
+        # Matador: the in-play bosses trigger per hand
+        if boss in ("bl_crimson", "bl_cerulean", "bl_hook"):
+            self._fire_boss_trigger()
+
         # Boss: arm (bl_grim) — permanently decrease the played hand type's
         # level by 1 (floor at level 1), applied BEFORE scoring so this hand
         # scores at the reduced level. Levels lost persist for the rest of the
@@ -672,7 +711,7 @@ class BalatroGame:
         )
 
         # Boss: tooth — lose $1 per card played
-        if self.current_blind.boss_key == "bl_tooth":
+        if boss == "bl_tooth":
             self.dollars = max(0, self.dollars - len(selected))
 
         # Boss: eye/mouth — a disallowed hand scores 0 for the blind (the cards
@@ -695,6 +734,16 @@ class BalatroGame:
                 self.hand.remove(c)
                 self.spent.append(c)
 
+        # Glass shatter: shattered cards are destroyed permanently — they do
+        # not return to the deck with the rest of the spent cards.
+        for c in ctx.destroyed:
+            if c in self.spent:
+                self.spent.remove(c)
+            if c in self.hand:
+                self.hand.remove(c)
+            if c in self.deck:
+                self.deck.remove(c)
+
         # Run-wide tracking for boss blinds:
         #  - The Pillar debuffs cards played earlier this ante (and as they are played)
         #  - The Ox keys off the most-played hand type of the run
@@ -712,7 +761,7 @@ class BalatroGame:
                 c.flipped = False
 
         # Boss: serpent — discard remaining hand after play, redraw
-        if self.current_blind.boss_key == "bl_serpent":
+        if boss == "bl_serpent":
             self.spent.extend(self.hand)
             self.hand = []
 
@@ -768,7 +817,7 @@ class BalatroGame:
         self.discards_left -= 1
         self._draw_to_full()
         # Cerulean Bell: the forced card was discarded — pick a new one if any remain
-        if self.current_blind.boss_key == "bl_cerulean":
+        if self._boss_effects_on() and self.current_blind.boss_key == "bl_cerulean":
             self._maybe_repick_bell_card()
 
     def _use_consumable(self, consumable_idx: int, target_cards: list[int]):
@@ -802,6 +851,8 @@ class BalatroGame:
                 if effect and hasattr(effect, "on_boss_beaten"):
                     effect.on_boss_beaten(j, None)
             self._undo_boss_debuffs(self.current_blind.boss_key)
+            # The Boss Blind resolved — Luchador's one-shot disable is consumed
+            self.boss_disabled_override = False
 
         # Pre-compute deck stats for jokers that need them (e.g. Cloud 9)
         deck_nines = sum(1 for c in self.deck + self.hand + self.spent if c.rank == 9)

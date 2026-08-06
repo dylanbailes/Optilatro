@@ -767,8 +767,14 @@ class TestRegistryCompleteness:
     def test_all_registered_jokers_have_at_least_one_hook(self):
         """Every registered joker should have at least one trigger method
         (except passive jokers applied directly in game.py)."""
-        # Passive jokers — effects applied in game.py._start_blind by key check
-        PASSIVE_JOKERS = {"j_merry_andy", "j_troubadour", "j_juggler", "j_drunkard"}
+        # Passive jokers — effects applied in game.py by key check (not hooks):
+        #  - merry_andy/troubadour/juggler/drunkard: _start_blind passives
+        #  - chicot: boss disable by presence in _boss_effects_on()
+        #  - ring_master: real-game "Showman" — duplicates already the sim default
+        PASSIVE_JOKERS = {
+            "j_merry_andy", "j_troubadour", "j_juggler", "j_drunkard",
+            "j_chicot", "j_ring_master",
+        }
         hooks = [
             "on_score_card", "on_hand_scored", "on_discard", "on_round_end",
             "on_blind_selected", "on_boss_beaten", "on_planet_used",

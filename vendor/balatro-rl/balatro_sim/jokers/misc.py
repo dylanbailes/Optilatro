@@ -339,10 +339,12 @@ JOKER_REGISTRY["j_perkeo"] = _Perkeo()
 # BOSS BLIND EFFECTS
 # ════════════════════════════════════════════════════════════════════════════
 
-# ── j_chicot: disable current Boss Blind effect ───────────────────────────────
+# ── j_chicot: disables the effect of every Boss Blind (Legendary) ────────────
+# game.py disables boss abilities by PRESENCE of this key in the joker list
+# (game._boss_effects_on) — matching the real game's permanent passive. No
+# hook needed; the class exists so the joker resolves in the registry.
 class _Chicot:
-    def on_blind_selected(self, inst, ctx):
-        inst.state["boss_disabled"] = True  # game.py checks this flag
+    pass
 JOKER_REGISTRY["j_chicot"] = _Chicot()
 
 # ── j_matador: earn $8 if Boss Blind ability triggers ────────────────────────
@@ -351,16 +353,24 @@ class _Matador:
         inst.state["pending_money"] = inst.state.get("pending_money", 0) + 8
 JOKER_REGISTRY["j_matador"] = _Matador()
 
-# ── j_luchador: sell this to disable Boss Blind ──────────────────────────────
+# ── j_luchador: sell this to disable the Boss Blind ─────────────────────────
 class _Luchador:
     def on_sell(self, inst, ctx):
-        inst.state["boss_disabled"] = True
+        # Set a GAME-level flag: the joker instance is destroyed on sale, so the
+        # flag must outlive it. game._boss_effects_on() reads it until the next
+        # Boss Blind resolves (_end_round clears it).
+        if inst.game is not None:
+            inst.game.boss_disabled_override = True
 JOKER_REGISTRY["j_luchador"] = _Luchador()
 
-# ── j_ring_master: re-roll boss blind 1 time per blind ───────────────────────
+# ── j_ring_master: real game = "Showman" (Joker/Tarot/Planet/Spectral cards
+# may appear multiple times). The sim never dedupes shop/pack items, so this
+# effect is already the sim's default — kept as a registered no-op marker. The
+# previous "reroll boss blind" implementation was NOT a real Balatro joker
+# effect (boss rerolls belong to the Director's Cut voucher) and has been
+# removed rather than wired into a non-existent mechanic.
 class _RingMaster:
-    def on_blind_selected(self, inst, ctx):
-        inst.state.setdefault("rerolls", 1)  # 1 free boss reroll
+    pass
 JOKER_REGISTRY["j_ring_master"] = _RingMaster()
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -383,10 +393,14 @@ class _DNA:
             inst.state["used"] = True
 JOKER_REGISTRY["j_dna"] = _DNA()
 
-# ── j_oops_all_sixes: double all listed probabilities ────────────────────────
+# ── j_oops_all_sixes (catalogue key "j_oops"): double all listed probabilities ─
+# scoring.py detects the key by presence in the active joker list and doubles
+# Glass shatter / Lucky rolls (real-game behavior). Registered under both the
+# catalogue key ("j_oops" — what the shop sells) and the old internal key.
 class _OopsAllSixes:
     def pre_score(self, inst, ctx):
-        inst.state["double_prob"] = True  # probability system reads this
+        inst.state["double_prob"] = True  # informational; scoring uses presence
+JOKER_REGISTRY["j_oops"] = _OopsAllSixes()
 JOKER_REGISTRY["j_oops_all_sixes"] = _OopsAllSixes()
 
 # ── j_trading_card: first discard each round destroys random card, earn $3 ────

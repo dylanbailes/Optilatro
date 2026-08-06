@@ -140,6 +140,17 @@ def score_hand(
         for _ in range(extra):
             _score_single_card(card, ctx, jokers)
 
+    # Glass shatter: 1-in-4 per non-debuffed Glass card scored, rolled once per
+    # card per hand after all scoring passes (real-game timing). Oops! All 6s
+    # doubles the chance. Shattered cards are collected for the game to remove
+    # permanently — they never return to the deck.
+    oops = any(j.key in ("j_oops", "j_oops_all_sixes") for j in jokers)
+    rng = _ctx_rng(ctx)
+    for card in scoring_cards:
+        if card.enhancement == "Glass" and not card.debuffed:
+            if rng.random() < (0.5 if oops else 0.25):
+                ctx.destroyed.append(card)
+
     # Jokers: on_hand_scored (fires after all cards)
     for joker in jokers:
         joker.on_hand_scored(ctx)

@@ -385,3 +385,11 @@ class _Satellite:
     def on_round_end(self, inst, ctx):
         pass  # TODO: needs planet usage tracking across run
 JOKER_REGISTRY["j_satellite"] = _Satellite()
+
+# ── j_supernova: +Mult equal to the number of times the played hand type has
+# been played this run (Common) ──────────────────────────────────────────────
+class _Supernova:
+    def on_hand_scored(self, inst, ctx):
+        if inst.game is not None:
+            ctx.mult += inst.game.run_hand_counts.get(ctx.hand_type, 0)
+JOKER_REGISTRY["j_supernova"] = _Supernova()
