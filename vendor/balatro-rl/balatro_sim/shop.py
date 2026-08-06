@@ -231,41 +231,90 @@ BOOSTER_CATALOGUE = {
     "p_standard_jumbo":("Jumbo Standard",  6, "card",     5),
     "p_buffoon":       ("Buffoon Pack",    4, "joker",    2),
     "p_buffoon_jumbo": ("Jumbo Buffoon",   6, "joker",    4),
+    # Tag-only Mega packs (Buffoon/Standard Tags). Kept OUT of the shop pool
+    # (SHOP_PACK_POOL below) so the shop booster distribution is unchanged.
+    "p_buffoon_mega":  ("Mega Buffoon",   10, "joker",    5),
+    "p_standard_mega": ("Mega Standard",   8, "card",     5),
 }
 
+# Booster packs that can appear in the shop (real-game pool minus the
+# tag-only Mega Buffoon/Standard, which enter only via their Tags).
+SHOP_PACK_POOL = [
+    k for k in BOOSTER_CATALOGUE
+    if k not in ("p_buffoon_mega", "p_standard_mega")
+]
+
 def generate_shop(game: "BalatroGame") -> list[ShopItem]:
-    """Generate a full shop for the current ante/round."""
+    """Generate a full shop for the current ante/round.
+
+    Consumes one-shot skip-blind Tag shop modifiers (Coupon / D6 / Uncommon /
+    Rare / Foil-Holo-Poly-Negative / Voucher Tags) — they apply to the first
+    shop generated after the skipped blind.
+    """
     items: list[ShopItem] = []
 
+    # Consume pending tag modifiers (one-shot, apply to THIS shop only)
+    coupon = game.pending_coupon
+    game.pending_coupon = False
+    free_rarity = game.pending_free_rarity
+    game.pending_free_rarity = None
+    free_edition = game.pending_free_edition
+    game.pending_free_edition = None
+    voucher_extra = game.pending_voucher
+    game.pending_voucher = False
+    if game.pending_reroll_free:
+        game.pending_reroll_free = False
+        game.reroll_cost = 0   # D6 Tag: rerolls in the next shop start at $0
+
     # Joker slots (2 by default)
-    for _ in range(game.shop_joker_slots):
-        key = random_joker_key(rng=game.rng, ante=game.ante, source="sho")
-        info = JOKER_CATALOGUE.get(key, {})
-        edition = _roll_edition(game.rng.node(node_edition("sho", game.ante)))
-        price = info.get("price", 6)
-        if edition != "None":
-            price += _edition_markup(edition)
+    for i in range(game.shop_joker_slots):
+        if i == 0 and free_rarity:
+            # Uncommon/Rare Tag: a free Joker of that rarity
+            key = random_joker_key(rarity=free_rarity, rng=game.rng,
+                                   ante=game.ante, source="sho")
+            info = JOKER_CATALOGUE.get(key, {})
+            edition = "None"
+            price = 0
+        elif i == 0 and free_edition:
+            # Foil/Holographic/Polychrome/Negative Tag: free Joker with the edition
+            key = random_joker_key(rng=game.rng, ante=game.ante, source="sho")
+            info = JOKER_CATALOGUE.get(key, {})
+            edition = free_edition
+            price = 0
+        else:
+            key = random_joker_key(rng=game.rng, ante=game.ante, source="sho")
+            info = JOKER_CATALOGUE.get(key, {})
+            edition = _roll_edition(game.rng.node(node_edition("sho", game.ante)))
+            price = info.get("price", 6)
+            if edition != "None":
+                price += _edition_markup(edition)
         items.append(ShopItem("joker", key, info.get("name", key), price, edition))
 
     # Card slots (2 by default: planets / tarots / spectrals)
     for _ in range(game.shop_card_slots):
         items.append(_random_consumable_item(game))
 
-    # Voucher slot (1)
-    voucher_key = _random_voucher(game)
-    if voucher_key:
-        items.append(ShopItem(
-            "voucher", voucher_key,
-            VOUCHER_NAME.get(voucher_key, voucher_key), 10
-        ))
+    # Voucher slot (1; +1 with the Voucher Tag)
+    for _ in range(1 + (1 if voucher_extra else 0)):
+        voucher_key = _random_voucher(game)
+        if voucher_key:
+            items.append(ShopItem(
+                "voucher", voucher_key,
+                VOUCHER_NAME.get(voucher_key, voucher_key), 10
+            ))
 
     # Booster pack slots (2)
     for _ in range(2):
-        bkey = game.rng.node(node_shop_pack(game.ante)).choice(
-            list(BOOSTER_CATALOGUE.keys())
-        )
+        bkey = game.rng.node(node_shop_pack(game.ante)).choice(SHOP_PACK_POOL)
         bname, bprice, _, _ = BOOSTER_CATALOGUE[bkey]
         items.append(ShopItem("booster", bkey, bname, bprice))
+
+    # Coupon Tag: initial cards and booster packs in the next shop are free
+    # (vouchers excluded, matching the real effect)
+    if coupon:
+        for item in items:
+            if item.kind != "voucher":
+                item.price = 0
 
     return items
 
@@ -358,6 +407,8 @@ def buy_item(game: "BalatroGame", item: ShopItem) -> bool:
         game.dollars -= effective_price
         item.sold = True
         _open_booster(game, item.key)
+        from .game import State
+        game.state = State.BOOSTER_OPEN   # agent picks from the pack next
         return True
 
     return False

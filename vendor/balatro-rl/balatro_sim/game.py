@@ -54,6 +54,7 @@ from .seed_rng import (
     DECK_SHUFFLE_NODE, AMBER_NODE, WHEEL_NODE, BELL_NODE, HOOK_NODE,
     CRIMSON_NODE, MADNESS_NODE, PURPLE_SEAL_NODE,
 )
+from .tags import roll_tag, apply_tag, _open_next_pack
 
 # Hand type order used for run-wide tracking (The Pillar / The Ox). High Card
 # first matches the real game's default tie-break for the most-played hand.
@@ -225,6 +226,23 @@ class BalatroGame:
         self.booster_choices: list = []
         self.booster_picks_remaining: int = 0
 
+        # ── Skip-blind Tag state (Phase 1: all 24 real tags) ───────────────
+        self.current_tag: Optional[str] = None   # tag offered for the current blind
+        self.skipped_blinds = 0                  # Speed Tag: $5 × skips this run
+        self.run_hands_played = 0                # Handy Tag: $1 per played hand this run
+        self.run_unused_discards = 0             # Garbage Tag: $1 per unused discard this run
+        self.investment_pending = False          # Investment Tag: +$25 after next Boss
+        self.double_tag_active = False           # Double Tag: copy the next tag
+        self.boss_reroll_pending = False         # Boss Tag: reroll the next Boss Blind
+        self.hand_size_bonus_next_round = 0      # Juggle Tag: +3 hand size next round
+        self.pending_coupon = False              # Coupon Tag: next shop cards/packs free
+        self.pending_reroll_free = False         # D6 Tag: next shop rerolls start at $0
+        self.pending_free_rarity: Optional[str] = None   # Uncommon/Rare Tag
+        self.pending_free_edition: Optional[str] = None  # Foil/Holo/Poly/Negative Tag
+        self.pending_voucher = False             # Voucher Tag: extra voucher next shop
+        self.pending_packs: list[str] = []       # queued free-pack Tag boosters
+        self._shop_after_pack = False            # free-pack tag → generate shop after picks
+
         # Blind state
         self.current_blind: BlindInfo = BlindInfo("", "Small", 0)
         self.chips_scored = 0
@@ -263,7 +281,7 @@ class BalatroGame:
 
     # ── Blind setup ──────────────────────────────────────────────────────────
 
-    def _select_boss(self, ante: int) -> str:
+    def _select_boss(self, ante: int, exclude: Optional[str] = None) -> str:
         """Choose the next boss blind using the real-game selection rules.
 
         - Min-ante eligibility: only bosses with BOSS_MIN_ANTE[key] <= ante may
@@ -274,6 +292,7 @@ class BalatroGame:
           fewest appearances will be selected").
         - Driven by the game's RNG (self.rng.node("boss")); candidates are
           sorted so the pick is stable across processes.
+        - exclude: a boss to skip (Boss Tag reroll).
         """
         if ante >= 8 and ante % 8 == 0:
             pool = SHOWDOWN_BOSSES
@@ -292,8 +311,16 @@ class BalatroGame:
         min_count = min(self.boss_appearances.get(k, 0) for k in pool)
         candidates = [
             k for k in sorted(pool)
-            if self.boss_appearances.get(k, 0) == min_count
+            if k != exclude
+            and self.boss_appearances.get(k, 0) == min_count
         ]
+        if not candidates:
+            # exclude removed the whole pool (unreachable with current tables —
+            # insurance against a future table change).
+            candidates = [
+                k for k in sorted(pool)
+                if self.boss_appearances.get(k, 0) == min_count
+            ]
         boss = self.rng.node(node_boss()).choice(candidates)
         self.boss_appearances[boss] = self.boss_appearances.get(boss, 0) + 1
         return boss
@@ -305,6 +332,14 @@ class BalatroGame:
         boss_key = ""
         if kind == "Boss":
             boss_key = self._select_boss(self.ante)
+            # Boss Tag: reroll the Boss Blind — undo the no-repeat increment
+            # from the first pick so the rotation stays correct.
+            if self.boss_reroll_pending:
+                self.boss_reroll_pending = False
+                self.boss_appearances[boss_key] = max(
+                    0, self.boss_appearances.get(boss_key, 0) - 1
+                )
+                boss_key = self._select_boss(self.ante, exclude=boss_key)
             # Large-blind bosses scale the required score (base chips = 1x);
             # scaling is part of the boss ability, so it is skipped when
             # abilities are disabled (Chicot / Luchador).
@@ -321,6 +356,8 @@ class BalatroGame:
             boss_key=boss_key,
         )
         self.state = State.BLIND_SELECT
+        # Roll the skip-blind Tag offered for this blind (Boss blinds offer none)
+        self.current_tag = roll_tag(self)
 
     def _start_blind(self):
         """Begin playing the current blind."""
@@ -328,6 +365,10 @@ class BalatroGame:
         self.hands_left = self.base_hands
         self.discards_left = self.base_discards
         self.hand_size = HAND_SIZE  # reset to base before applying joker passives
+        # Juggle Tag: +3 hand size for the next round only
+        if self.hand_size_bonus_next_round:
+            self.hand_size += self.hand_size_bonus_next_round
+            self.hand_size_bonus_next_round = 0
         self.played_hand_types_this_round = set()
         # Reset per-blind boss effects
         self.verdant_debuff = False
@@ -612,7 +653,15 @@ class BalatroGame:
                 self._pick_booster(action.get("indices", []))
             elif atype == "skip_booster":
                 self.booster_choices = []
-                self.state = State.SHOP
+                if self.pending_packs:
+                    # Double Tag on a pack tag: another free pack awaits
+                    _open_next_pack(self)
+                elif self._shop_after_pack:
+                    # Free-pack Tag: enter the skipped blind's shop after the pack
+                    self._shop_after_pack = False
+                    self._end_blind_and_enter_shop()
+                else:
+                    self.state = State.SHOP
 
         return self._obs()
 
@@ -651,6 +700,9 @@ class BalatroGame:
                 and self.bell_card in self.hand and self.bell_card not in selected:
             selected.append(self.bell_card)
 
+        # Handy Tag: $1 per played hand this run. Counted only after boss
+        # rejections (psychic wrong count) that do not consume a hand.
+        self.run_hands_played += 1
         hand_type, scoring_cards = evaluate_hand(selected)
 
         # Boss: eye — no repeat hand types this round.
@@ -843,6 +895,8 @@ class BalatroGame:
         earnings = self.hands_left * HAND_PAYOUT
         interest = min(self.dollars // INTEREST_RATE, INTEREST_CAP)
         self.dollars += earnings + interest
+        # Garbage Tag: unused discards this round count toward the run total
+        self.run_unused_discards += self.discards_left
 
         # Boss blind beaten: fire on_boss_beaten hooks
         if self.current_blind.is_boss:
@@ -853,6 +907,10 @@ class BalatroGame:
             self._undo_boss_debuffs(self.current_blind.boss_key)
             # The Boss Blind resolved — Luchador's one-shot disable is consumed
             self.boss_disabled_override = False
+            # Investment Tag: +$25 after defeating the next Boss Blind
+            if self.investment_pending:
+                self.investment_pending = False
+                self.dollars += 25
 
         # Pre-compute deck stats for jokers that need them (e.g. Cloud 9)
         deck_nines = sum(1 for c in self.deck + self.hand + self.spent if c.rank == 9)
@@ -902,7 +960,7 @@ class BalatroGame:
         self._prepare_next_blind()
 
     def _skip_blind(self):
-        """Skip a non-Boss blind (Boss can't be skipped)."""
+        """Skip a non-Boss blind (Boss can't be skipped) and claim its Tag."""
         if self.current_blind.kind == "Boss":
             return
         # Fire blind_skipped joker hooks
@@ -910,9 +968,24 @@ class BalatroGame:
             effect = JOKER_REGISTRY.get(j.key)
             if effect and hasattr(effect, "on_blind_skipped"):
                 effect.on_blind_skipped(j, None)
-        # Give a skip tag reward (approximate: +$5)
-        self.dollars += 5
-        self._end_blind_and_enter_shop()
+        # Claim the skip-blind Tag. The Double Tag copies the NEXT tag selected
+        # (never itself); every other tag auto-applies at skip time.
+        self.skipped_blinds += 1
+        key = self.current_tag
+        if key == "t_double":
+            self.double_tag_active = True
+        elif key and self.double_tag_active:
+            self.double_tag_active = False
+            apply_tag(self, key)
+            apply_tag(self, key)
+        elif key:
+            apply_tag(self, key)
+        # Free-pack tags queue a booster — open the first one now (a doubled
+        # pack tag queues more, resolved after each pick).
+        if self.pending_packs:
+            _open_next_pack(self)
+        if self.state != State.BOOSTER_OPEN:
+            self._end_blind_and_enter_shop()
 
     def _end_blind_and_enter_shop(self):
         self.reroll_cost = 5
@@ -937,7 +1010,15 @@ class BalatroGame:
                     self.deck.insert(0, choice[1])
         self.booster_choices = []
         self.booster_picks_remaining = 0
-        self.state = State.SHOP
+        if self.pending_packs:
+            # Double Tag on a pack tag: another free pack awaits before the shop
+            _open_next_pack(self)
+        elif self._shop_after_pack:
+            # Free-pack Tag: enter the skipped blind's shop after the pack
+            self._shop_after_pack = False
+            self._end_blind_and_enter_shop()
+        else:
+            self.state = State.SHOP
 
     # ── Observation ──────────────────────────────────────────────────────────
 
@@ -963,5 +1044,6 @@ class BalatroGame:
                 "boss_key": self.current_blind.boss_key,
                 "vouchers": list(self.vouchers),
                 "booster_choices": list(self.booster_choices),
+                "tag": self.current_tag,
             }
         )

@@ -22,6 +22,7 @@ from balatro_sim.seed_rng import (
 from balatro_sim.game import (
     BalatroGame, BOSS_MIN_ANTE, SHOWDOWN_BOSSES, UNIMPLEMENTED_BOSSES,
 )
+from balatro_sim.tags import TAG_CATALOGUE, TAG_ORDER
 from balatro_sim.card import make_standard_deck
 from balatro_sim.shop import generate_shop
 
@@ -155,8 +156,14 @@ class TestGenericMatchesLegacy:
 
     def _legacy_boss_seq(self, seed: int, antes):
         """The exact old _select_boss algorithm: self.rng.choice over sorted
-        fewest-appearance candidates, rotation tracked in boss_appearances."""
+        fewest-appearance candidates, rotation tracked in boss_appearances.
+
+        BalatroGame._prepare_next_blind() now rolls the ante-1 skip tag on the
+        shared generic stream (one weighted pick) before any boss selection, so
+        the legacy simulation consumes that draw first."""
         rng = random.Random(seed)
+        eligible = [k for k in TAG_ORDER if TAG_CATALOGUE[k][1] <= 1]
+        rng.choices(eligible, weights=[1.0] * len(eligible))
         appearances: dict[str, int] = {}
         seq = []
         for ante in antes:
@@ -183,6 +190,10 @@ class TestGenericMatchesLegacy:
         # rank/suit identity instead.
         def legacy_hand(seed: int):
             r = random.Random(seed)
+            # Ante-1 skip-tag roll happens at _prepare_next_blind (init) on the
+            # shared stream before the deck shuffle.
+            eligible = [k for k in TAG_ORDER if TAG_CATALOGUE[k][1] <= 1]
+            r.choices(eligible, weights=[1.0] * len(eligible))
             deck = make_standard_deck()
             r.shuffle(deck)
             # _draw_to_full pops from the END of the deck, so the opening hand

@@ -153,10 +153,16 @@ class TestGameFlow:
 # ════════════════════════════════════════════════════════════════════════════
 
 class TestSkipBlind:
-    def test_skip_small_gives_money(self, game):
+    def test_skip_small_claims_tag(self, game):
+        # Skipping awards the offered Tag (replaces the old flat +$5). Force a
+        # money tag to pin the payout path through the tag system.
+        assert game.current_tag is not None
+        game.current_tag = "t_speed"
+        game.skipped_blinds = 0
         prev = game.dollars
         game.step({"type": "skip_blind"})
-        assert game.dollars == prev + 5
+        assert game.skipped_blinds == 1
+        assert game.dollars == prev + 5   # Speed Tag: $5 × 1 skipped blind
 
     def test_skip_enters_shop(self, game):
         game.step({"type": "skip_blind"})

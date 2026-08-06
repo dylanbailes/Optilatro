@@ -57,28 +57,28 @@ class TestBannedJokers:
 
 
 class TestMPObsExtension:
-    """V8 Run 3: obs is extended with 4 multiplayer state features (445 → 449)."""
+    """V8 Run 3: obs is extended with 4 multiplayer state features (447 → 451; tag features push to 480)."""
 
     def test_obs_dim_is_449(self):
-        assert OBS_DIM == 451   # 447 (V7 with 28-boss one-hot) + 4 MP features
+        assert OBS_DIM == 480   # 476 (V7 + 29 tag features) + 4 MP features
 
     def test_self_lives_in_obs(self):
         env = MultiplayerBalatroEnv(seed=42, lives=4)
         env.reset()
         p1_obs, _ = env.p1.encode_obs(), env.p2.encode_obs()
-        assert p1_obs[447] == 1.0  # 4/4 lives
+        assert p1_obs[476] == 1.0  # 4/4 lives
         # After losing a life
         env.mp.apply_blind_failure(1)
         p1_obs = env.p1.encode_obs()
-        assert p1_obs[447] == 0.75  # 3/4 lives
+        assert p1_obs[476] == 0.75  # 3/4 lives
 
     def test_opponent_lives_in_obs(self):
         env = MultiplayerBalatroEnv(seed=42, lives=4)
         env.reset()
         env.mp.apply_blind_failure(2)  # P2 loses a life
         p1_obs = env.p1.encode_obs()
-        assert p1_obs[447] == 1.0      # P1 own lives full
-        assert p1_obs[448] == 0.75     # P2 lives at 3/4
+        assert p1_obs[476] == 1.0      # P1 own lives full
+        assert p1_obs[477] == 0.75     # P2 lives at 3/4
 
     def test_is_pvp_flag(self):
         """The is_pvp flag should be 1.0 when the current blind is a boss."""
@@ -86,7 +86,7 @@ class TestMPObsExtension:
         env.reset()
         # Not on PvP blind initially (small blind)
         p1_obs = env.p1.encode_obs()
-        assert p1_obs[450] == 0.0
+        assert p1_obs[479] == 0.0
 
     def test_obs_has_no_nan(self):
         env = MultiplayerBalatroEnv(seed=42)

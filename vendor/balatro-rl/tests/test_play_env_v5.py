@@ -221,11 +221,11 @@ class TestBlindSelect:
         env.step(30)  # play_blind
         assert env.game.state == State.SELECTING_HAND
 
-    def test_skip_blind_gives_money(self, env):
+    def test_skip_blind_claims_tag(self, env):
         env.reset()
-        prev_dollars = env.game.dollars
+        assert env.game.current_tag is not None
         env.step(31)  # skip_blind
-        assert env.game.dollars >= prev_dollars + 5
+        assert env.game.skipped_blinds == 1
 
     def test_skip_blind_advances(self, env):
         env.reset()

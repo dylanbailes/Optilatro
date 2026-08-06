@@ -106,14 +106,20 @@ N_CONS_SLOTS   = 2
 # Shop context features (new — richer shop state for informed buying decisions)
 SHOP_CONTEXT   = 73    # reroll(2) + vouchers(27) + boss(28) + deck_comp(8) + enhance(8)
 
+# Skip-blind Tag features: offered-tag one-hot (24) + pending-tag state (5)
+TAG_FEATURES         = 24
+PENDING_TAG_FEATURES = 5
+
 OBS_DIM = (GAME_SCALARS
            + N_HAND_SLOTS  * CARD_FEATURES
            + N_JOKER_SLOTS * JOKER_FEATURES
            + N_SHOP_SLOTS  * SHOP_FEATURES
            + PLANET_FEATURES
            + N_CONS_SLOTS  * CONS_FEATURES
-           + SHOP_CONTEXT)
-# = 14 + 208 + 50 + 42 + 12 + 16 + 73 = 415
+           + SHOP_CONTEXT
+           + TAG_FEATURES
+           + PENDING_TAG_FEATURES)
+# = 14 + 208 + 50 + 42 + 12 + 16 + 73 + 24 + 5 = 444
 
 # Reward constants
 # Blind clear reward scales inversely with ante: ante 1 = 16.0, ante 8 = 2.0
@@ -584,6 +590,21 @@ class BalatroSimEnv(gym.Env):
         obs[idx:idx+8] = [foil/deck_n, holo/deck_n, poly/deck_n, gold_enh/deck_n,
                           wild/deck_n, seal_gold/deck_n, seal_red/deck_n, seal_blue/deck_n]
         idx += 8
+
+        # ── Skip-blind Tag features (29) ──────────────────────────────────
+        # Offered/claimed-tag one-hot (24) + pending-tag state scalars (5).
+        # The claimed tag persists through the following shop, so the agent can
+        # see what it earned from the last skip.
+        from .tags import TAG_ORDER
+        for ti, tkey in enumerate(TAG_ORDER):
+            obs[idx + ti] = 1.0 if gs.current_tag == tkey else 0.0
+        idx += TAG_FEATURES
+        obs[idx]   = gs.skipped_blinds / 8.0
+        obs[idx+1] = float(gs.investment_pending)
+        obs[idx+2] = float(gs.double_tag_active)
+        obs[idx+3] = gs.hand_size_bonus_next_round / 3.0
+        obs[idx+4] = float(gs.boss_reroll_pending)
+        idx += PENDING_TAG_FEATURES
 
         assert idx == OBS_DIM, f"obs encoding mismatch: {idx} != {OBS_DIM}"
         return obs
