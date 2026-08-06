@@ -1,0 +1,916 @@
+"""
+game.py — Top-level Balatro game state machine.
+
+States:
+  BLIND_SELECT   -> agent chooses to play or skip a blind
+  SELECTING_HAND -> agent plays or discards cards
+  ROUND_EVAL     -> end-of-round payout (auto-advances)
+  SHOP           -> agent buys, sells, uses consumables, rerolls, then leaves
+  BOOSTER_OPEN   -> agent picks from opened booster pack
+  GAME_OVER      -> terminal state
+
+Actions (passed as dict to game.step()):
+  BLIND_SELECT:
+    {"type": "play_blind"}
+    {"type": "skip_blind"}
+
+  SELECTING_HAND:
+    {"type": "play",    "cards": [0, 2, 4]}
+    {"type": "discard", "cards": [1, 3]}
+    {"type": "use_consumable", "consumable_idx": 0, "target_cards": [0, 1]}
+
+  SHOP:
+    {"type": "buy",          "item_idx": 0}
+    {"type": "sell_joker",   "joker_idx": 1}
+    {"type": "use_consumable","consumable_idx": 0, "target_cards": [2]}
+    {"type": "reroll"}
+    {"type": "leave_shop"}
+
+  BOOSTER_OPEN:
+    {"type": "pick_booster", "indices": [0, 2]}  # which items to keep
+    {"type": "skip_booster"}
+"""
+from __future__ import annotations
+from dataclasses import dataclass, field
+from enum import Enum, auto
+from typing import Optional
+
+from .card import Card, make_standard_deck
+from .hand_eval import evaluate_hand
+from .scoring import score_hand
+from .constants import (
+    BLIND_CHIPS, STARTING_HANDS, STARTING_DISCARDS, HAND_SIZE,
+    INTEREST_RATE, INTEREST_CAP, HAND_PAYOUT, STARTING_MONEY,
+)
+from .jokers.base import JokerInstance, JOKER_REGISTRY
+from .consumables import (
+    apply_planet, apply_tarot, apply_spectral,
+    PLANET_HAND, ALL_TAROTS, ALL_PLANETS, ALL_SPECTRALS,
+    TAROT_NAME, PLANET_NAME, SPECTRAL_NAME,
+)
+from .shop import ShopItem, generate_shop, buy_item, sell_joker, reroll_shop
+from .seed_rng import (
+    make_source, node_boss,
+    DECK_SHUFFLE_NODE, AMBER_NODE, WHEEL_NODE, BELL_NODE, HOOK_NODE,
+    CRIMSON_NODE, MADNESS_NODE, PURPLE_SEAL_NODE,
+)
+
+# Hand type order used for run-wide tracking (The Pillar / The Ox). High Card
+# first matches the real game's default tie-break for the most-played hand.
+_HAND_TYPE_ORDER = [
+    "High Card", "Pair", "Two Pair", "Three of a Kind", "Straight", "Flush",
+    "Full House", "Four of a Kind", "Straight Flush", "Five of a Kind",
+    "Flush House", "Flush Five",
+]
+
+
+class State(Enum):
+    BLIND_SELECT   = auto()
+    SELECTING_HAND = auto()
+    ROUND_EVAL     = auto()
+    SHOP           = auto()
+    BOOSTER_OPEN   = auto()
+    GAME_OVER      = auto()
+
+
+@dataclass
+class BlindInfo:
+    name: str
+    kind: str           # "Small" | "Big" | "Boss"
+    chips_target: int
+    is_boss: bool = False
+    boss_key: str = ""
+
+
+@dataclass
+class GameState:
+    """Full observable game state snapshot."""
+    state: State
+    ante: int
+    blind_kind: str
+    chips_target: int
+    chips_scored: int
+    hands_left: int
+    discards_left: int
+    dollars: int
+    hand: list[Card]
+    deck_remaining: int
+    jokers: list[JokerInstance]
+    consumable_hand: list[str]      # list of consumable keys held
+    planet_levels: dict[str, int]
+    shop_items: list[ShopItem]
+    hand_type: str = ""
+    done: bool = False
+    won: bool = False
+    info: dict = field(default_factory=dict)
+
+
+# Reference list of implemented boss keys and their real effects (documentation
+# only — selection uses BOSS_MIN_ANTE / SHOWDOWN_BOSSES / UNIMPLEMENTED_BOSSES
+# below, not this list).
+BOSS_BLINDS = [
+    "bl_hook",        # discard 2 random cards on play
+    "bl_goad",        # all Spades debuffed (real: The Goad)
+    "bl_window",      # all Diamonds debuffed
+    "bl_club",        # all Clubs debuffed (real: The Club)
+    "bl_wheel",       # 1-in-7 cards drawn face down (real: The Wheel)
+    "bl_manacle",     # -1 hand size
+    "bl_eye",         # can't play same hand type twice
+    "bl_mouth",       # can only play 1 hand type
+    "bl_fish",        # draw 1 fewer card after each play
+    "bl_plant",       # all face cards debuffed
+    "bl_needle",      # only 1 hand
+    "bl_head",        # all Hearts debuffed
+    "bl_tooth",       # lose $1 per card played
+    "bl_wall",        # 4x base blind size
+    "bl_house",       # first hand (opening deal) drawn face down
+    "bl_mark",        # all face cards drawn face down
+    "bl_flint",       # base chips + mult halved for the round
+    "bl_psychic",     # must play exactly 5 cards
+    "bl_grim",        # The Arm: permanently decrease played hand level by 1
+    "bl_verdant",     # all cards debuffed until 1 joker sold
+    "bl_serpent",     # after each play, discard hand and draw new one
+    "bl_pillar",      # cards played earlier this ante are debuffed
+    "bl_water",       # start with 0 discards
+    "bl_ox",          # playing the most-played hand this run sets money to $0
+    "bl_cerulean",    # forces 1 card in hand to always be selected
+    "bl_amber",       # flips and shuffles all joker cards
+    "bl_violet",      # 6x base blind size (Violet Vessel)
+    "bl_crimson",     # one random joker disabled every hand (Crimson Heart)
+]
+
+# Real-game boss selection data (balatrowiki.org/w/Blinds_and_Antes).
+# BOSS_MIN_ANTE holds the minimum-ante eligibility for every real boss. The five
+# SHOWDOWN_BOSSES only appear at ante 8 (and 16/24 in Endless). Keys in
+# UNIMPLEMENTED_BOSSES are excluded from selection until their effects are
+# implemented — the same allow-list approach used for jokers — so the sim never
+# presents a boss whose effect it cannot model faithfully.
+BOSS_MIN_ANTE = {
+    "bl_hook": 1, "bl_goad": 1, "bl_window": 1, "bl_manacle": 1,
+    "bl_eye": 3, "bl_mouth": 2, "bl_fish": 2, "bl_plant": 4,
+    "bl_needle": 2, "bl_head": 1, "bl_tooth": 3, "bl_wall": 2,
+    "bl_house": 2,   # The House: first hand drawn face down
+    "bl_mark": 2, "bl_flint": 2, "bl_psychic": 1,
+    "bl_grim": 2,    # The Arm: decrease played hand level by 1
+    "bl_verdant": 8, "bl_serpent": 5, "bl_pillar": 1, "bl_water": 2,
+    "bl_ox": 6, "bl_cerulean": 8, "bl_amber": 8, "bl_violet": 8,
+    "bl_crimson": 8,
+    "bl_club": 1,    # The Club: all Clubs debuffed
+    "bl_wheel": 2,   # The Wheel: 1-in-7 cards drawn face down
+}
+
+SHOWDOWN_BOSSES = {"bl_amber", "bl_verdant", "bl_violet", "bl_crimson", "bl_cerulean"}
+# All 28 real bosses are now implemented — the allow-list is kept (empty) as
+# infrastructure in case future coverage gaps need to exclude a boss again.
+UNIMPLEMENTED_BOSSES: set[str] = set()
+
+
+class BalatroGame:
+    """
+    Full stateful Balatro game engine.
+
+    Usage:
+        game = BalatroGame(seed=42)
+        obs = game.reset()
+        while not obs.done:
+            action = agent.act(obs)
+            obs = game.step(action)
+    """
+
+    def __init__(self, seed: Optional[int] = None, rng_mode: str = "generic"):
+        """seed: run seed. rng_mode: "generic" (shared stream, legacy default)
+        or "seed" (per-node LuaRandom, Balatro's real scheme — seed_rng.py)."""
+        self.rng = make_source(seed, rng_mode)
+        self._init_game_vars()
+
+    # ── Initialization ───────────────────────────────────────────────────────
+
+    def _init_game_vars(self):
+        """Set all mutable game state to starting values."""
+        self.ante = 1
+        self.blind_idx = 0                  # 0=Small, 1=Big, 2=Boss
+        self.dollars = STARTING_MONEY
+        self.jokers: list[JokerInstance] = []
+        self.joker_slots = 5
+        self.consumable_hand: list[str] = []  # held consumable keys
+        self.consumable_slots = 2
+        self.planet_levels: dict[str, int] = {h: 1 for h in [
+            "High Card", "Pair", "Two Pair", "Three of a Kind",
+            "Straight", "Flush", "Full House", "Four of a Kind",
+            "Straight Flush", "Five of a Kind", "Flush House", "Flush Five",
+        ]}
+        self.vouchers: set[str] = set()
+        self.planets_used: list[str] = []
+        self.tarots_used: list[str] = []
+
+        # Hand / discard / hand-size settings
+        self.base_hands = STARTING_HANDS
+        self.base_discards = STARTING_DISCARDS
+        self.hand_size = HAND_SIZE
+
+        # Shop settings
+        self.shop_joker_slots = 2
+        self.shop_card_slots = 2
+        self.shop_discount = 0.0
+        self.reroll_cost = 5
+        self.reroll_discount = 0
+        self.free_rerolls_per_round = 0
+        self.free_rerolls_remaining = 0
+        self.current_shop: list[ShopItem] = []
+
+        # Booster state
+        self.booster_choices: list = []
+        self.booster_picks_remaining: int = 0
+
+        # Blind state
+        self.current_blind: BlindInfo = BlindInfo("", "Small", 0)
+        self.chips_scored = 0
+        self.hands_left = self.base_hands
+        self.discards_left = self.base_discards
+        self.hand: list[Card] = []
+        # The run deck is created ONCE and persists across blinds. Cards are
+        # drawn from it each round and returned at the start of the next blind;
+        # permanently destroyed cards (Hanged Man, Immolate, ...) leave it for
+        # good — real Balatro deck behavior.
+        self.deck: list[Card] = make_standard_deck()
+        # Cards played or discarded during the current round. They cannot be
+        # redrawn mid-round, but return to the deck at the next blind's start.
+        self.spent: list[Card] = []
+        self.played_hand_types_this_round: set[str] = set()
+
+        # ── Boss-blind runtime state ──────────────────────────────────────
+        self.verdant_debuff = False             # Verdant Leaf: all cards debuffed until a joker is sold
+        self.jokers_flipped = False             # Amber Acorn: joker identities hidden, order shuffled
+        self.bell_card: Optional[Card] = None   # Cerulean Bell: card forced into every played hand
+        self._last_crimson_idx = None           # Crimson Heart: joker disabled this hand (no repeat)
+        self.ante_played_ids: set[int] = set()  # The Pillar: cards played this ante
+        self.run_hand_counts: dict[str, int] = {h: 0 for h in _HAND_TYPE_ORDER}  # The Ox
+        # Boss rotation: appearances per boss this run. Selection only picks from
+        # bosses with the fewest appearances, so a boss cannot repeat until every
+        # eligible boss has appeared once (real-game no-repeat rule).
+        self.boss_appearances: dict[str, int] = {}
+
+        self.state = State.BLIND_SELECT
+        self._prepare_next_blind()
+
+    def reset(self) -> GameState:
+        self._init_game_vars()
+        return self._obs()
+
+    # ── Blind setup ──────────────────────────────────────────────────────────
+
+    def _select_boss(self, ante: int) -> str:
+        """Choose the next boss blind using the real-game selection rules.
+
+        - Min-ante eligibility: only bosses with BOSS_MIN_ANTE[key] <= ante may
+          appear; ante 8 (and 16/24 in Endless) draws from the Showdown pool.
+        - No-repeat rotation: only bosses with the FEWEST appearances in the run
+          are candidates, so a boss cannot reappear until every eligible boss
+          has appeared at least once (wiki: "Only the Boss Blinds with the
+          fewest appearances will be selected").
+        - Driven by the game's RNG (self.rng.node("boss")); candidates are
+          sorted so the pick is stable across processes.
+        """
+        if ante >= 8 and ante % 8 == 0:
+            pool = SHOWDOWN_BOSSES
+        else:
+            pool = {
+                key for key, min_ante in BOSS_MIN_ANTE.items()
+                if min_ante <= ante
+                and key not in SHOWDOWN_BOSSES
+                and key not in UNIMPLEMENTED_BOSSES
+            }
+        if not pool:
+            # ante >= 1 always has a non-empty eligible pool; if this ever fires,
+            # the tables are broken and a loud failure beats silently ignoring
+            # the min-ante rule.
+            raise ValueError(f"no selectable boss for ante {ante}")
+        min_count = min(self.boss_appearances.get(k, 0) for k in pool)
+        candidates = [
+            k for k in sorted(pool)
+            if self.boss_appearances.get(k, 0) == min_count
+        ]
+        boss = self.rng.node(node_boss()).choice(candidates)
+        self.boss_appearances[boss] = self.boss_appearances.get(boss, 0) + 1
+        return boss
+
+    def _prepare_next_blind(self):
+        """Set up current_blind without starting play yet."""
+        kind = ["Small", "Big", "Boss"][self.blind_idx]
+        chips = BLIND_CHIPS[self.ante][self.blind_idx]
+        boss_key = ""
+        if kind == "Boss":
+            boss_key = self._select_boss(self.ante)
+            # Large-blind bosses scale the required score (base chips = 1x)
+            if boss_key == "bl_wall":
+                chips = BLIND_CHIPS[self.ante][0] * 4   # The Wall: 4x base
+            elif boss_key == "bl_violet":
+                chips = BLIND_CHIPS[self.ante][0] * 6   # Violet Vessel: 6x base
+        self.current_blind = BlindInfo(
+            name=f"Ante {self.ante} {kind}",
+            kind=kind,
+            chips_target=chips,
+            is_boss=(kind == "Boss"),
+            boss_key=boss_key,
+        )
+        self.state = State.BLIND_SELECT
+
+    def _start_blind(self):
+        """Begin playing the current blind."""
+        self.chips_scored = 0
+        self.hands_left = self.base_hands
+        self.discards_left = self.base_discards
+        self.hand_size = HAND_SIZE  # reset to base before applying joker passives
+        self.played_hand_types_this_round = set()
+        # Reset per-blind boss effects
+        self.verdant_debuff = False
+        self.jokers_flipped = False
+        self.bell_card = None
+
+        # Apply passive joker effects (constant while owned, not cumulative)
+        joker_keys = {j.key for j in self.jokers}
+        if "j_juggler" in joker_keys:
+            self.hand_size += 1
+        if "j_drunkard" in joker_keys:
+            self.discards_left += 1
+        if "j_troubadour" in joker_keys:
+            self.hand_size += 2
+            self.hands_left = max(1, self.hands_left - 1)
+        if "j_merry_andy" in joker_keys:
+            self.discards_left += 3
+            self.hand_size = max(1, self.hand_size - 1)
+
+        # Apply voucher hand size adjustments
+        if "v_paint_brush" in self.vouchers:
+            self.hand_size += 1
+        if "v_palette" in self.vouchers:
+            self.hand_size += 1
+
+        # Return cards played/discarded last round (and any cards still held,
+        # e.g. left in hand through the shop phase) to the persistent deck,
+        # then shuffle and draw the opening hand. Destroyed cards are neither
+        # in hand nor spent, so they stay removed from the run.
+        self.deck.extend(self.spent)
+        self.deck.extend(self.hand)
+        self.spent = []
+        self.hand = []
+        self.rng.node(DECK_SHUFFLE_NODE).shuffle(self.deck)
+        self._draw_to_full()
+        # Apply boss debuffs
+        if self.current_blind.is_boss:
+            self._apply_boss_start(self.current_blind.boss_key)
+        # Fire blind_selected joker hooks
+        for j in self.jokers:
+            effect = JOKER_REGISTRY.get(j.key)
+            if effect and hasattr(effect, "on_blind_selected"):
+                effect.on_blind_selected(j, None)
+            # Collect pending consumables / planet upgrades from joker state
+            for item in j.state.pop("pending_consumables", []):
+                if len(self.consumable_hand) < self.consumable_slots:
+                    self.consumable_hand.append(item)
+            if "planet_upgrade" in j.state:
+                ht = j.state.pop("planet_upgrade")
+                self.planet_levels[ht] = self.planet_levels.get(ht, 1) + 1
+            # Event-based game-state modifiers (Burglar — fires once per blind)
+            extra_hands = j.state.pop("extra_hands", 0)
+            if extra_hands:
+                self.hands_left += extra_hands
+            if j.state.pop("zero_discards", False):
+                self.discards_left = 0
+        # Ceremonial Dagger: destroy joker to the right, gain 2x sell value as mult
+        to_destroy = []
+        for i, j in enumerate(self.jokers):
+            if j.state.pop("destroy_right", False) and i + 1 < len(self.jokers):
+                target = self.jokers[i + 1]
+                sell_val = target.state.get("sell_value", 2)
+                j.state["mult"] = j.state.get("mult", 0) + sell_val * 2
+                to_destroy.append(i + 1)
+        for idx in sorted(to_destroy, reverse=True):
+            self.jokers.pop(idx)
+        # Madness: destroy a random OTHER joker on Small/Big blind
+        madness_destroy = []
+        for i, j in enumerate(self.jokers):
+            if j.state.pop("destroy_random", False):
+                others = [k for k in range(len(self.jokers)) if k != i]
+                if others:
+                    madness_destroy.append(self.rng.node(MADNESS_NODE).choice(others))
+        for idx in sorted(set(madness_destroy), reverse=True):
+            if idx < len(self.jokers):
+                self.jokers.pop(idx)
+        self.state = State.SELECTING_HAND
+
+    def _apply_boss_start(self, boss_key: str):
+        """Apply start-of-blind boss effects."""
+        if boss_key == "bl_manacle":
+            self.hand_size = max(1, self.hand_size - 1)
+        elif boss_key == "bl_needle":
+            self.hands_left = 1
+        elif boss_key == "bl_water":
+            self.discards_left = 0
+        elif boss_key == "bl_goad":
+            # The Goad debuffs Spades in the real game (Clubs are The Club,
+            # handled separately below).
+            for c in self.deck + self.hand:
+                if c.suit == "Spades":
+                    c.debuffed = True
+        elif boss_key == "bl_club":
+            # The Club: all Club cards are debuffed
+            for c in self.deck + self.hand:
+                if c.suit == "Clubs":
+                    c.debuffed = True
+        elif boss_key == "bl_window":
+            for c in self.deck + self.hand:
+                if c.suit == "Diamonds":
+                    c.debuffed = True
+        elif boss_key == "bl_head":
+            for c in self.deck + self.hand:
+                if c.suit == "Hearts":
+                    c.debuffed = True
+        elif boss_key == "bl_plant":
+            for c in self.deck + self.hand:
+                if c.is_face_card:
+                    c.debuffed = True
+        elif boss_key == "bl_fish":
+            pass  # handled in _draw_to_full
+        elif boss_key == "bl_psychic":
+            pass  # enforced in _play_hand validation
+        elif boss_key == "bl_verdant":
+            # Verdant Leaf: every card is debuffed until a joker is sold
+            self.verdant_debuff = True
+            for c in self.deck + self.hand:
+                c.debuffed = True
+        elif boss_key == "bl_pillar":
+            # The Pillar: cards played earlier this ante are debuffed
+            for c in self.deck + self.hand:
+                if c.id in self.ante_played_ids:
+                    c.debuffed = True
+        elif boss_key == "bl_cerulean":
+            self._pick_bell_card()
+        elif boss_key == "bl_amber":
+            # Amber Acorn: shuffle joker order (matters for scoring) and hide identities
+            self.rng.node(AMBER_NODE).shuffle(self.jokers)
+            self.jokers_flipped = True
+        elif boss_key == "bl_house":
+            # The House: the opening hand (dealt at blind start) is face down;
+            # cards drawn later in the round come face up.
+            for c in self.hand:
+                c.flipped = True
+
+    def _undo_boss_debuffs(self, boss_key: str):
+        """Re-enable cards after boss blind ends."""
+        if boss_key in ("bl_goad", "bl_club", "bl_window", "bl_head", "bl_plant"):
+            # Include spent (played/discarded) cards: they return to the deck at
+            # the next blind, so their debuff must not carry over with them.
+            for c in self.deck + self.hand + self.spent:
+                c.debuffed = False
+        elif boss_key in ("bl_pillar", "bl_verdant"):
+            self.verdant_debuff = False
+            for c in self.deck + self.hand + self.spent:
+                c.debuffed = False
+        elif boss_key in ("bl_mark", "bl_wheel", "bl_house"):
+            # Face-down cards (The Mark / The Wheel / The House) are revealed
+            # when the blind ends so they don't stay face-down into later blinds.
+            for c in self.deck + self.hand + self.spent:
+                c.flipped = False
+        elif boss_key == "bl_amber":
+            self.jokers_flipped = False
+        elif boss_key == "bl_cerulean":
+            self.bell_card = None
+
+    def _draw_to_full(self):
+        target = self.hand_size
+        if self.current_blind.boss_key == "bl_fish":
+            played = self.base_hands - self.hands_left
+            target = max(1, self.hand_size - played)
+        while len(self.hand) < target and self.deck:
+            c = self.deck.pop()
+            self._on_card_drawn(c)
+            self.hand.append(c)
+
+    def _on_card_drawn(self, card: Card):
+        """Apply boss-blind effects to a card the moment it is drawn."""
+        boss = self.current_blind.boss_key
+        if boss == "bl_mark" and card.is_face_card:
+            card.flipped = True          # The Mark: face cards are drawn face down
+        if boss == "bl_wheel" and self.rng.node(WHEEL_NODE).random() < 1 / 7:
+            card.flipped = True          # The Wheel: 1-in-7 cards drawn face down
+            # WHEEL_NODE is a sim-internal node (balatro-seed does not pin the
+            # in-game Wheel call site), so it is deterministic per seed in seed
+            # mode but not byte-exact against the real game — see M0 audit 4.2.
+        if boss == "bl_verdant" and self.verdant_debuff:
+            card.debuffed = True         # Verdant Leaf: every drawn card stays debuffed
+        if boss == "bl_pillar" and card.id in self.ante_played_ids:
+            card.debuffed = True         # The Pillar: cards played earlier this ante are debuffed
+
+    def _pick_bell_card(self):
+        """Cerulean Bell: choose a random card in hand as the forced card."""
+        if self.hand:
+            self.bell_card = self.rng.node(BELL_NODE).choice(self.hand)
+
+    def _maybe_repick_bell_card(self):
+        """Cerulean Bell: re-choose a forced card once the old one leaves the hand."""
+        if self.bell_card is None or self.bell_card not in self.hand:
+            self._pick_bell_card()
+
+    def _most_played_hand(self) -> str:
+        """The hand type played most this run; ties break toward High Card (game default)."""
+        best = "High Card"
+        best_key = (-1, -1)
+        for ht, count in self.run_hand_counts.items():
+            # Negate the order index so ties favor High Card (index 0)
+            key = (count, -_HAND_TYPE_ORDER.index(ht))
+            if key > best_key:
+                best_key, best = key, ht
+        return best
+
+    # ── Main step ────────────────────────────────────────────────────────────
+
+    def step(self, action: dict) -> GameState:
+        atype = action.get("type", "")
+
+        if self.state == State.BLIND_SELECT:
+            if atype == "play_blind":
+                self._start_blind()
+            elif atype == "skip_blind":
+                self._skip_blind()
+
+        elif self.state == State.SELECTING_HAND:
+            if atype == "play":
+                self._play_hand(action.get("cards", []))
+            elif atype == "discard":
+                self._discard(action.get("cards", []))
+            elif atype == "use_consumable":
+                self._use_consumable(
+                    action.get("consumable_idx", 0),
+                    action.get("target_cards", [])
+                )
+            elif atype == "sell_joker":
+                # Selling mid-blind is only allowed under Verdant Leaf, where
+                # selling any joker lifts the all-cards debuff
+                if self.current_blind.boss_key == "bl_verdant":
+                    if sell_joker(self, action.get("joker_idx", 0)):
+                        self.verdant_debuff = False
+                        for c in self.deck + self.hand:
+                            c.debuffed = False
+
+        elif self.state == State.ROUND_EVAL:
+            self._end_round()
+
+        elif self.state == State.SHOP:
+            if atype == "buy":
+                idx = action.get("item_idx", 0)
+                if idx < len(self.current_shop):
+                    buy_item(self, self.current_shop[idx])
+            elif atype == "sell_joker":
+                sell_joker(self, action.get("joker_idx", 0))
+            elif atype == "use_consumable":
+                self._use_consumable(
+                    action.get("consumable_idx", 0),
+                    action.get("target_cards", [])
+                )
+            elif atype == "reroll":
+                reroll_shop(self)
+            elif atype == "leave_shop":
+                self._end_shop()
+
+        elif self.state == State.BOOSTER_OPEN:
+            if atype == "pick_booster":
+                self._pick_booster(action.get("indices", []))
+            elif atype == "skip_booster":
+                self.booster_choices = []
+                self.state = State.SHOP
+
+        return self._obs()
+
+    # ── Play ─────────────────────────────────────────────────────────────────
+
+    def _play_hand(self, card_indices: list[int]):
+        selected = [self.hand[i] for i in card_indices if i < len(self.hand)]
+        if not selected:
+            return
+
+        # Boss: psychic — must play exactly 5
+        if self.current_blind.boss_key == "bl_psychic" and len(selected) != 5:
+            return
+
+        # Boss: hook — discard 2 random scoring cards
+        if self.current_blind.boss_key == "bl_hook":
+            shuffle = list(selected)
+            self.rng.node(HOOK_NODE).shuffle(shuffle)
+            for c in shuffle[:2]:
+                selected.remove(c)
+                self.hand.remove(c)
+            self.spent.extend(shuffle[:2])  # hook-discarded cards return next blind
+            if not selected:
+                self._draw_to_full()
+                self.hands_left -= 1
+                if self.hands_left <= 0:
+                    self.state = State.GAME_OVER
+                return
+
+        # Boss: cerulean bell — the forced card is automatically added to every
+        # played hand (the player cannot leave it out)
+        if self.current_blind.boss_key == "bl_cerulean" and self.bell_card is not None \
+                and self.bell_card in self.hand and self.bell_card not in selected:
+            selected.append(self.bell_card)
+
+        hand_type, scoring_cards = evaluate_hand(selected)
+
+        boss = self.current_blind.boss_key
+
+        # Boss: eye — no repeat hand types this round.
+        # Boss: mouth — only one hand type can be played this round.
+        # A disallowed hand is still played and wastes a hand, but scores 0
+        # ("Not allowed!") and does NOT count as that hand type for the round's
+        # restriction tracking.
+        # NOTE: bool() is required — `and`/`or` return OPERANDS, not bools, and
+        # the empty `played_hand_types_this_round` set is a falsy operand. Without
+        # it, `rejected` aliases the live set and flips truthy after the add below.
+        rejected = bool(
+            (boss == "bl_eye" and hand_type in self.played_hand_types_this_round)
+            or (boss == "bl_mouth" and self.played_hand_types_this_round
+                and hand_type not in self.played_hand_types_this_round)
+        )
+        if not rejected:
+            self.played_hand_types_this_round.add(hand_type)
+
+        # Boss: ox — playing the most-played hand type of the run sets money to $0
+        if boss == "bl_ox" and hand_type == self._most_played_hand():
+            self.dollars = 0
+
+        # Boss: crimson heart — one random joker is disabled for this hand
+        active_jokers = self.jokers
+        if boss == "bl_crimson" and self.jokers:
+            idx = self.rng.node(CRIMSON_NODE).randrange(len(self.jokers))
+            if len(self.jokers) > 1 and idx == self._last_crimson_idx:
+                idx = (idx + 1) % len(self.jokers)
+            self._last_crimson_idx = idx
+            active_jokers = [j for i, j in enumerate(self.jokers) if i != idx]
+
+        # Boss: arm (bl_grim) — permanently decrease the played hand type's
+        # level by 1 (floor at level 1), applied BEFORE scoring so this hand
+        # scores at the reduced level. Levels lost persist for the rest of the
+        # run (planet_levels is run-wide).
+        if boss == "bl_grim":
+            self.planet_levels[hand_type] = max(
+                1, self.planet_levels.get(hand_type, 1) - 1
+            )
+
+        score, ctx = score_hand(
+            scoring_cards=scoring_cards,
+            all_cards=selected,
+            hand_type=hand_type,
+            jokers=active_jokers,
+            planet_levels=self.planet_levels,
+            hands_left=self.hands_left - 1,
+            discards_left=self.discards_left,
+            dollars=self.dollars,
+            ante=self.ante,
+            deck_remaining=len(self.deck),
+            half_base=(boss == "bl_flint"),
+            game=self,
+        )
+
+        # Boss: tooth — lose $1 per card played
+        if self.current_blind.boss_key == "bl_tooth":
+            self.dollars = max(0, self.dollars - len(selected))
+
+        # Boss: eye/mouth — a disallowed hand scores 0 for the blind (the cards
+        # still play and the hand is still consumed)
+        if rejected:
+            score = 0
+
+        self.chips_scored += score
+        self.hands_left -= 1
+
+        # Apply pending side-effects from scoring
+        self.dollars += ctx.pending_money
+        for key in ctx.pending_consumables:
+            if len(self.consumable_hand) < self.consumable_slots:
+                self.consumable_hand.append(key)
+
+        # Move played cards out of hand (they return to the deck at the next blind)
+        for c in selected:
+            if c in self.hand:
+                self.hand.remove(c)
+                self.spent.append(c)
+
+        # Run-wide tracking for boss blinds:
+        #  - The Pillar debuffs cards played earlier this ante (and as they are played)
+        #  - The Ox keys off the most-played hand type of the run
+        # A rejected eye/mouth hand does NOT count toward either (it is not a
+        # valid play of that hand type). Bosses never coexist, but keep the
+        # semantics uniform.
+        if not rejected:
+            for c in selected:
+                self.ante_played_ids.add(c.id)
+            self.run_hand_counts[hand_type] = self.run_hand_counts.get(hand_type, 0) + 1
+
+        # The Mark / The Wheel / The House: face-down cards are revealed once played
+        if boss in ("bl_mark", "bl_wheel", "bl_house"):
+            for c in selected:
+                c.flipped = False
+
+        # Boss: serpent — discard remaining hand after play, redraw
+        if self.current_blind.boss_key == "bl_serpent":
+            self.spent.extend(self.hand)
+            self.hand = []
+
+        self._draw_to_full()
+
+        # Cerulean Bell: the forced card left the hand — choose a new one if any remain
+        if boss == "bl_cerulean":
+            self._maybe_repick_bell_card()
+
+        # Blue seal: add Planet card to consumable hand
+        for c in scoring_cards:
+            if c.seal == "Blue" and len(self.consumable_hand) < self.consumable_slots:
+                hand_to_planet = {v: k for k, v in PLANET_HAND.items()}
+                planet_key = hand_to_planet.get(hand_type)
+                if planet_key:
+                    self.consumable_hand.append(planet_key)
+
+        # Purple seal: add Tarot card
+        for c in selected:
+            if c.seal == "Purple" and len(self.consumable_hand) < self.consumable_slots:
+                self.consumable_hand.append(self.rng.node(PURPLE_SEAL_NODE).choice(ALL_TAROTS))
+
+        # Check win / loss
+        if ctx.prevent_loss and self.chips_scored >= self.current_blind.chips_target * 0.25:
+            # Mr. Bones: prevent death if >= 25% reached
+            self.chips_scored = self.current_blind.chips_target
+            self.state = State.ROUND_EVAL
+        elif self.chips_scored >= self.current_blind.chips_target:
+            self.state = State.ROUND_EVAL
+        elif self.hands_left <= 0:
+            self.state = State.GAME_OVER
+
+    def _discard(self, card_indices: list[int]):
+        if self.discards_left <= 0:
+            return
+        selected = [self.hand[i] for i in card_indices if i < len(self.hand)]
+        if not selected:
+            return
+
+        # Fire on_discard joker hooks; collect pending money/consumables
+        for j in self.jokers:
+            effect = JOKER_REGISTRY.get(j.key)
+            if effect and hasattr(effect, "on_discard"):
+                effect.on_discard(j, selected, None)
+            self.dollars += j.state.pop("pending_money", 0)
+            for item in j.state.pop("pending_consumables", []):
+                if len(self.consumable_hand) < self.consumable_slots:
+                    self.consumable_hand.append(item)
+
+        for c in selected:
+            self.hand.remove(c)
+            self.spent.append(c)
+        self.discards_left -= 1
+        self._draw_to_full()
+        # Cerulean Bell: the forced card was discarded — pick a new one if any remain
+        if self.current_blind.boss_key == "bl_cerulean":
+            self._maybe_repick_bell_card()
+
+    def _use_consumable(self, consumable_idx: int, target_cards: list[int]):
+        if consumable_idx >= len(self.consumable_hand):
+            return
+        key = self.consumable_hand[consumable_idx]
+        success = False
+
+        if key in PLANET_HAND:
+            success = apply_planet(self, key)
+        elif key in {t for t in ALL_TAROTS}:
+            success = apply_tarot(self, key, target_cards)
+        elif key in {s for s in ALL_SPECTRALS}:
+            success = apply_spectral(self, key, target_cards)
+
+        if success:
+            self.consumable_hand.pop(consumable_idx)
+
+    # ── Round end / shop ─────────────────────────────────────────────────────
+
+    def _end_round(self):
+        # Payout
+        earnings = self.hands_left * HAND_PAYOUT
+        interest = min(self.dollars // INTEREST_RATE, INTEREST_CAP)
+        self.dollars += earnings + interest
+
+        # Boss blind beaten: fire on_boss_beaten hooks
+        if self.current_blind.is_boss:
+            for j in self.jokers:
+                effect = JOKER_REGISTRY.get(j.key)
+                if effect and hasattr(effect, "on_boss_beaten"):
+                    effect.on_boss_beaten(j, None)
+            self._undo_boss_debuffs(self.current_blind.boss_key)
+
+        # Pre-compute deck stats for jokers that need them (e.g. Cloud 9)
+        deck_nines = sum(1 for c in self.deck + self.hand + self.spent if c.rank == 9)
+        # Fire on_round_end hooks; collect pending money and consumables
+        for j in self.jokers:
+            j.state["deck_nines"] = deck_nines  # for Cloud 9
+            effect = JOKER_REGISTRY.get(j.key)
+            if effect and hasattr(effect, "on_round_end"):
+                effect.on_round_end(j, None)
+            self.dollars += j.state.pop("pending_money", 0)
+            for item in j.state.pop("pending_consumables", []):
+                if len(self.consumable_hand) < self.consumable_slots:
+                    self.consumable_hand.append(item)
+
+        # Gold seal: $3 per Gold seal card held in hand
+        for c in self.hand:
+            if c.seal == "Gold":
+                self.dollars += 3
+
+        # Gold enhancement: $3 per Gold card held
+        for c in self.hand:
+            if c.enhancement == "Gold":
+                self.dollars += 3
+
+        # Reset hand size mods from boss (bl_manacle)
+        if self.current_blind.boss_key == "bl_manacle":
+            self.hand_size = HAND_SIZE  # restore (voucher adjustments persist)
+
+        # Reset reroll cost and free rerolls
+        self.reroll_cost = 5
+        self.free_rerolls_remaining = self.free_rerolls_per_round
+
+        # Generate shop
+        self.current_shop = generate_shop(self)
+        self.state = State.SHOP
+
+    def _end_shop(self):
+        # Advance blind
+        self.blind_idx += 1
+        if self.blind_idx >= 3:
+            self.blind_idx = 0
+            self.ante += 1
+            self.ante_played_ids.clear()   # The Pillar: "played this ante" resets each ante
+            if self.ante > 8:
+                self.state = State.GAME_OVER
+                return
+        self._prepare_next_blind()
+
+    def _skip_blind(self):
+        """Skip a non-Boss blind (Boss can't be skipped)."""
+        if self.current_blind.kind == "Boss":
+            return
+        # Fire blind_skipped joker hooks
+        for j in self.jokers:
+            effect = JOKER_REGISTRY.get(j.key)
+            if effect and hasattr(effect, "on_blind_skipped"):
+                effect.on_blind_skipped(j, None)
+        # Give a skip tag reward (approximate: +$5)
+        self.dollars += 5
+        self._end_blind_and_enter_shop()
+
+    def _end_blind_and_enter_shop(self):
+        self.reroll_cost = 5
+        self.free_rerolls_remaining = self.free_rerolls_per_round
+        self.current_shop = generate_shop(self)
+        self.state = State.SHOP
+
+    def _pick_booster(self, indices: list[int]):
+        picks = min(self.booster_picks_remaining, len(indices))
+        for idx in indices[:picks]:
+            if idx < len(self.booster_choices):
+                choice = self.booster_choices[idx]
+                if isinstance(choice, str):
+                    # Planet, tarot, spectral, or joker key
+                    if len(self.consumable_hand) < self.consumable_slots:
+                        self.consumable_hand.append(choice)
+                    elif choice in {k for k in JOKER_REGISTRY}:
+                        if len(self.jokers) < self.joker_slots:
+                            self.jokers.append(JokerInstance(choice, game=self))
+                elif isinstance(choice, tuple) and choice[0] == "card":
+                    # Playing card from Standard pack
+                    self.deck.insert(0, choice[1])
+        self.booster_choices = []
+        self.booster_picks_remaining = 0
+        self.state = State.SHOP
+
+    # ── Observation ──────────────────────────────────────────────────────────
+
+    def _obs(self) -> GameState:
+        return GameState(
+            state=self.state,
+            ante=self.ante,
+            blind_kind=self.current_blind.kind,
+            chips_target=self.current_blind.chips_target,
+            chips_scored=self.chips_scored,
+            hands_left=self.hands_left,
+            discards_left=self.discards_left,
+            dollars=self.dollars,
+            hand=list(self.hand),
+            deck_remaining=len(self.deck),
+            jokers=list(self.jokers),
+            consumable_hand=list(self.consumable_hand),
+            planet_levels=dict(self.planet_levels),
+            shop_items=list(self.current_shop),
+            done=(self.state == State.GAME_OVER),
+            won=(self.ante > 8 and self.state == State.GAME_OVER),
+            info={
+                "boss_key": self.current_blind.boss_key,
+                "vouchers": list(self.vouchers),
+                "booster_choices": list(self.booster_choices),
+            }
+        )

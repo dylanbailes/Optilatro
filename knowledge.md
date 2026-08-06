@@ -1,0 +1,45 @@
+# Project knowledge
+
+This file gives Freebuff context about your project: goals, commands, conventions, and gotchas.
+
+## Overview
+A workspace for authoring **custom Codebuff agents** (the `.agents/` directory consumed by the Codebuff CLI). It contains only TypeScript type definitions that give full type safety + IntelliSense when writing agent definition files.
+
+- `.agents/types/agent-definition.ts` — `AgentDefinition` interface + `AgentState`, `AgentStepContext`, `ModelName` types. This is the main contract for any agent you write.
+- `.agents/types/tools.ts` — `ToolName` union and `ToolParamsMap` (param types for every available tool, e.g. `read_files`, `spawn_agents`, `run_terminal_command`).
+- `.agents/types/util-types.ts` — JSON schema types, message content parts (`TextPart`, `ToolCallPart`, …), `MCPConfig`, `Logger` interface.
+
+## Project layout (Balatro AI optimizer)
+- `balatro-ai-spec.md` — project spec (route, stack, search design, milestones).
+- `docs/M0-vendor-audit.md` — vendored-sim audit: coverage verified + fidelity gaps.
+- `vendor/balatro-rl/` — vendored balatro-rl Python sim (commit 59588ba, no LICENSE file).
+- `bench/bench_sim.py` — throughput + random win-rate baseline benchmark.
+- `.agents/` — Codebuff agent types (consumed by the Codebuff CLI).
+- Dev: create agent files in `.agents/` (e.g. `.agents/my-agent.ts`), importing from `./types/agent-definition`, then `export default definition`.
+- Test: none configured.
+- Build/lint: none configured (no tsconfig, no scripts). Validate by editor type-checking or running the agent in Codebuff.
+
+## Conventions
+- Agent file pattern: `const definition: AgentDefinition = { ... }` then `export default definition`.
+- `id` must contain only lowercase letters, numbers, hyphens (e.g. `'code-reviewer'`).
+- `model` is any OpenRouter model slug (see `ModelName` in `agent-definition.ts` and https://openrouter.ai/models).
+- `spawnableAgents`: published agents use full format `publisher/agent@version` (e.g. `'codebuff/file-picker@0.0.1'`); local agents in `.agents/` use just their id.
+- `reasoningOptions` requires one of `max_tokens` or `effort` (`'high' | 'medium' | 'low' | 'minimal' | 'none'`).
+- Tools: restrict via `toolNames`; scope MCP tools with `'mcpServerName/toolName'`. `outputMode` defaults to `'last_message'`.
+- Secrets: in MCP `env`, use `'$VAR_NAME'` syntax — resolved from `process.env` at agent load time. Keep keys in `.env.local`, never hardcode.
+
+## Sim gotchas (from M0 audit)
+- **Deck persistence fixed (2026-08-06):** deck now persists across blinds in `vendor/balatro-rl/balatro_sim/game.py` via a `game.spent` pile — played/discarded cards return at the next blind's start, destroyed cards (Hanged Man/Immolate) stay gone, and boss debuffs are cleared from spent cards (`_undo_boss_debuffs` covers `deck+hand+spent`). Regression tests: `vendor/balatro-rl/tests/test_deck_persistence.py` (7 tests).
+- **Two-mode RNG (2026-08-06)**: `balatro_sim/seed_rng.py` ports balatro-seed's per-node LuaRandom (Balatro's real scheme — every decision reseeds a fresh `LuaRandom` from a hash of `(node_id, seed)`, node value advances per access). `BalatroGame(seed, rng_mode="generic"|"seed")`; default **generic** = one shared `random.Random` stream (legacy for boss/deck/effects; shop now seeded per run + real 70/25/5 rarity thresholds). **seed** = per-node LuaRandom with real node strings (`boss`, `Joker1sho3`, `rarity3sho`, `edisho3`, `Tarotsho3`, `Voucher3`, `shop_pack3`, ...; `Joker4` has no suffix). Wired: boss, deck, shop, in-round boss effects. **All consumers wired (2026-08-06)** — joker triggers via `JokerInstance.chance()` (per-node `chance` node; created jokers must carry `game=` or triggers fall back to module random), consumables + `scoring.py` Lucky via `game.rng.node(CHANCE_NODE)`/`ctx.game`. Full-run seed-mode replay is deterministic end-to-end (`TestReplayDeterminism`). Tests: `tests/test_seed_rng.py` (33). Envs pass `rng_mode` through.
+- **Replay-diff harness (2026-08-06)**: `balatro_sim/replay.py` — `SeedSource.enable_tracing()` logs every per-node draw `(node, seq, value, method, result)` (observation-only); `python -m balatro_sim.replay --seed N --steps M` runs a seed twice and diffs the logs bit-for-bit, exiting 1 on the first divergence (which names the exact node draw). Tests: `tests/test_replay.py` (11).
+- **Cross-process seed-exactness gate (2026-08-06)**: `tests/test_seed_exactness.py` (4 tests, marker `ci_gate`) spawns fresh interpreter instances under different `PYTHONHASHSEED` values (incl. `random`) via `python -m balatro_sim.replay --sha` (added single-run fingerprint mode) and asserts the draw-log sha256 + run summary are byte-identical — proves the fingerprint has no process-dependent component (hash randomization, dict/set order), so it's stable across CI runs/machines. Opt-in: `python -m pytest tests/test_seed_exactness.py -m ci_gate` (deselected by default via `pytest.ini` `addopts = -m "not ci_gate"`).
+- **Boss blinds — effects implemented (2026-08-06)**: wall/violet scaling, mark (face-down + obs masking), verdant, pillar, ox, cerulean (forced card auto-add), amber, crimson, **club** (Clubs debuffed), **wheel** (1-in-7 face-down, per-node `WHEEL_NODE` in seed mode), corrected flint (pre-joker halving via `score_hand(half_base=)`), corrected eye/mouth (rejected hands still play + waste a hand + score 0 — verified vs wiki; also fixes a random-agent stall). **Selection now real (2026-08-06)**: `_select_boss()` uses `BOSS_MIN_ANTE` (min-ante eligibility), the ante-8 Showdown pool (`SHOWDOWN_BOSSES`), and the fewest-appearances no-repeat rotation (`boss_appearances`); **all 28 real bosses selectable — `UNIMPLEMENTED_BOSSES` empty (2026-08-06)**, incl. **house** (opening hand dealt face-down, revealed on play) and **grim/The Arm** (played hand type's planet level −1, floor 1, before scoring). **The Goad debuffs Spades** (was Clubs). Tests: `tests/test_boss_effects.py` (41) + `tests/test_boss_selection.py` (18). Obs dims (28-boss one-hot): env_sim 415, env_v7 447, env_mp 451.
+- **Red Deck / White Stake not configurable** yet (`base_discards` hardcoded).
+- Tests live at `tests/` + `balatro_sim/tests/` (README path is stale).
+- **Python gotcha:** `and`/`or` return operands, not bools — if you build a flag with them and the operand is a mutable falsy value (e.g. an empty set), the flag can alias the object and flip truthiness after a mutation. Wrap in `bool(...)`.
+
+## Gotchas
+- **`handleSteps` is serialized with `toString()`** — a generator cannot close over request-time state. Read the current model from `AgentStepContext.model` (treat `undefined` as "unknown model" and pick a safe default).
+- `inheritParentSystemPrompt` cannot be combined with `systemPrompt`.
+- In `util-types.ts`, `timeToLive`, `keepDuringTruncation`, and `keepLastTags` are **deprecated** — use `tags` instead.
+- `includeMessageHistory` defaults to `false`; enable it only when the agent needs full parent conversation context.

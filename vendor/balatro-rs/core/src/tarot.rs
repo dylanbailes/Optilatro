@@ -1,0 +1,448 @@
+use crate::card::{Enhancement, Suit};
+use crate::error::GameError;
+use crate::game::Game;
+use crate::rng::RngBackend;
+use rand::Rng;
+use strum::IntoEnumIterator;
+
+pub use balatro_types::Tarot;
+
+/// Engine behavior for `Tarot`
+pub trait TarotEffect {
+    fn apply(&self, game: &mut Game) -> Result<(), GameError>;
+}
+
+impl TarotEffect for Tarot {
+    fn apply(&self, game: &mut Game) -> Result<(), GameError> {
+        match self {
+            Self::Magician => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.enhancement = Some(Enhancement::Lucky));
+                }
+            }
+            Self::Empress => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.enhancement = Some(Enhancement::Mult));
+                }
+            }
+            Self::Hierophant => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.enhancement = Some(Enhancement::Bonus));
+                }
+            }
+            Self::Lovers => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.enhancement = Some(Enhancement::Wild));
+                }
+            }
+            Self::Chariot => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.enhancement = Some(Enhancement::Steel));
+                }
+            }
+            Self::Justice => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.enhancement = Some(Enhancement::Glass));
+                }
+            }
+            Self::Devil => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.enhancement = Some(Enhancement::Gold));
+                }
+            }
+            Self::Tower => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.enhancement = Some(Enhancement::Stone));
+                }
+            }
+            Self::Star => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.suit = Suit::Diamond);
+                }
+            }
+            Self::Moon => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.suit = Suit::Club);
+                }
+            }
+            Self::Sun => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.suit = Suit::Heart);
+                }
+            }
+            Self::World => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.suit = Suit::Spade);
+                }
+            }
+            Self::Strength => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.mutate_card(card.id, |c| c.value = c.value.next());
+                }
+            }
+            Self::HangedMan => {
+                let selected = game.available.selected();
+                for card in selected {
+                    game.destroy_card(card.id);
+                }
+            }
+            Self::Death => {
+                let selected = game.available.selected();
+                if selected.len() < 2 {
+                    return Err(GameError::InvalidAction);
+                }
+                let left_id = selected[0].id;
+                let right = selected[1];
+                game.mutate_card(left_id, |c| {
+                    c.value = right.value;
+                    c.suit = right.suit;
+                    c.enhancement = right.enhancement;
+                    c.edition = right.edition;
+                    c.seal = right.seal;
+                });
+            }
+            Self::Hermit => {
+                let gain = game.money.min(20);
+                game.money += gain;
+            }
+            Self::Temperance => {
+                let total: usize = game.jokers.iter().map(|j| j.sell_value()).sum();
+                game.money += total.min(50);
+            }
+            Self::WheelOfFortune => {
+                if !game.jokers.is_empty() && game.prob_roll(1, 4) {
+                    let picked = game.backend.pick_random_joker(game.jokers.clone());
+                    let edition = game.backend.roll_random_edition();
+                    if let Some(j) = game
+                        .jokers
+                        .iter_mut()
+                        .find(|j| j.instance_id() == picked.instance_id())
+                    {
+                        j.set_edition(edition);
+                    }
+                }
+            }
+            Self::HighPriestess => {
+                let slots = game.config.consumable_slots;
+                for _ in 0..2 {
+                    if game.consumables.len() >= slots {
+                        break;
+                    }
+                    let planetarium = game.planetarium.clone();
+                    let planet = game.backend.roll_random_planet(&planetarium, &[]);
+                    game.consumables.push(planet);
+                }
+            }
+            Self::Emperor => {
+                let slots = game.config.consumable_slots;
+                let mut excl: Vec<Tarot> = game
+                    .consumables
+                    .iter()
+                    .filter_map(|c| {
+                        if let crate::consumable::Consumable::Tarot(t) = c {
+                            Some(*t)
+                        } else {
+                            None
+                        }
+                    })
+                    .collect();
+                for _ in 0..2 {
+                    if game.consumables.len() >= slots {
+                        break;
+                    }
+                    let tarot = game.backend.roll_random_tarot(&excl);
+                    if let crate::consumable::Consumable::Tarot(t) = &tarot {
+                        excl.push(*t);
+                    }
+                    game.consumables.push(tarot);
+                }
+            }
+            Self::Judgement => {
+                if game.jokers.len() < game.config.joker_slots {
+                    let prob_mult = game.prob_mult;
+                    let exclude = game.jokers.clone();
+                    let ante = game.ante_current as i32;
+                    let joker = game.backend.gen_joker(ante, prob_mult, &exclude);
+                    game.jokers.push(joker);
+                }
+            }
+            Self::Fool => {
+                if let Some(last) = game.last_consumable_used {
+                    if game.consumables.len() < game.config.consumable_slots {
+                        game.consumables.push(last);
+                    }
+                }
+            }
+        }
+        Ok(())
+    }
+}
+
+/// Picks a uniformly random Tarot
+pub fn random_tarot(rng: &mut impl Rng) -> Tarot {
+    let all: Vec<Tarot> = Tarot::iter().collect();
+    let i = rng.gen_range(0..all.len());
+    all[i]
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::card::{Card, Suit, Value};
+    use crate::consumable::Consumable;
+    use crate::game::Game;
+    use crate::stage::{Blind, Stage};
+
+    fn game_in_blind() -> Game {
+        Game {
+            stage: Stage::Blind(Blind::Small),
+            ..Default::default()
+        }
+    }
+
+    #[test]
+    fn test_target_counts() {
+        assert_eq!(Tarot::Fool.min_targets(), 0);
+        assert_eq!(Tarot::Fool.max_targets(), 0);
+        assert_eq!(Tarot::Lovers.min_targets(), 1);
+        assert_eq!(Tarot::Lovers.max_targets(), 1);
+        assert_eq!(Tarot::Magician.min_targets(), 1);
+        assert_eq!(Tarot::Magician.max_targets(), 2);
+        assert_eq!(Tarot::Death.min_targets(), 2);
+        assert_eq!(Tarot::Death.max_targets(), 2);
+        assert_eq!(Tarot::Star.min_targets(), 1);
+        assert_eq!(Tarot::Star.max_targets(), 3);
+    }
+
+    #[test]
+    fn test_requires_targets() {
+        assert!(!Tarot::Fool.requires_targets());
+        assert!(!Tarot::Hermit.requires_targets());
+        assert!(Tarot::Lovers.requires_targets());
+        assert!(Tarot::Death.requires_targets());
+    }
+
+    #[test]
+    fn test_strength_rank_wrap() {
+        assert_eq!(Value::King.next(), Value::Ace);
+        assert_eq!(Value::Ace.next(), Value::Two);
+        assert_eq!(Value::Two.next(), Value::Three);
+    }
+
+    #[test]
+    fn test_hermit_cap() {
+        let mut g = game_in_blind();
+        g.money = 4;
+        Tarot::Hermit.apply(&mut g).unwrap();
+        assert_eq!(g.money, 8);
+
+        let mut g = game_in_blind();
+        g.money = 25;
+        Tarot::Hermit.apply(&mut g).unwrap();
+        assert_eq!(g.money, 45);
+
+        let mut g = game_in_blind();
+        g.money = 20;
+        Tarot::Hermit.apply(&mut g).unwrap();
+        assert_eq!(g.money, 40);
+    }
+
+    #[test]
+    fn test_death_copy_semantics() {
+        let ace = Card::new(Value::Ace, Suit::Heart);
+        let king = Card::new(Value::King, Suit::Diamond);
+        let ace_id = ace.id;
+
+        let mut g = game_in_blind();
+        g.available.extend(vec![ace, king]);
+        g.available.select_card(ace).unwrap();
+        g.available.select_card(king).unwrap();
+        g.deck.extend(vec![ace, king]);
+
+        Tarot::Death.apply(&mut g).unwrap();
+
+        let cards = g.available.cards();
+        let left = cards.iter().find(|c| c.id == ace_id).unwrap();
+        assert_eq!(left.value, Value::King);
+        assert_eq!(left.suit, Suit::Diamond);
+        assert_eq!(left.id, ace_id);
+    }
+
+    #[test]
+    fn test_enhancement_tarot() {
+        let ace = Card::new(Value::Ace, Suit::Heart);
+        let ace_id = ace.id;
+
+        let mut g = game_in_blind();
+        g.available.extend(vec![ace]);
+        g.available.select_card(ace).unwrap();
+        g.deck.extend(vec![ace]);
+
+        Tarot::Justice.apply(&mut g).unwrap();
+
+        let cards = g.available.cards();
+        let card = cards.iter().find(|c| c.id == ace_id).unwrap();
+        assert_eq!(card.enhancement, Some(Enhancement::Glass));
+
+        let deck_cards = g.deck.cards();
+        let deck_card = deck_cards.iter().find(|c| c.id == ace_id).unwrap();
+        assert_eq!(deck_card.enhancement, Some(Enhancement::Glass));
+    }
+
+    #[test]
+    fn test_suit_tarot() {
+        let ace = Card::new(Value::Ace, Suit::Heart);
+        let ace_id = ace.id;
+
+        let mut g = game_in_blind();
+        g.available.extend(vec![ace]);
+        g.available.select_card(ace).unwrap();
+        g.deck.extend(vec![ace]);
+
+        Tarot::Star.apply(&mut g).unwrap();
+
+        let cards = g.available.cards();
+        let card = cards.iter().find(|c| c.id == ace_id).unwrap();
+        assert_eq!(card.suit, Suit::Diamond);
+    }
+
+    #[test]
+    fn test_hanged_man_destroys() {
+        let ace = Card::new(Value::Ace, Suit::Heart);
+        let king = Card::new(Value::King, Suit::Diamond);
+        let ace_id = ace.id;
+
+        let mut g = game_in_blind();
+        g.available.extend(vec![ace, king]);
+        g.available.select_card(ace).unwrap();
+        g.deck.extend(vec![ace, king]);
+
+        let deck_before = g.deck.cards().len();
+        assert_eq!(g.available.cards().len(), 2);
+        Tarot::HangedMan.apply(&mut g).unwrap();
+        assert_eq!(g.available.cards().len(), 1);
+        assert_eq!(g.deck.cards().len(), deck_before - 1);
+        assert!(!g.deck.cards().iter().any(|c| c.id == ace_id));
+    }
+
+    #[test]
+    fn test_fool_copies_last_consumable() {
+        use crate::planet::Planets;
+
+        let mut g = game_in_blind();
+        g.config.consumable_slots = 2;
+        g.last_consumable_used = Some(Consumable::Planet(Planets::Mercury));
+
+        Tarot::Fool.apply(&mut g).unwrap();
+        assert_eq!(g.consumables.len(), 1);
+        assert_eq!(g.consumables[0], Consumable::Planet(Planets::Mercury));
+    }
+
+    #[test]
+    fn test_fool_noop_when_no_last() {
+        let mut g = game_in_blind();
+        Tarot::Fool.apply(&mut g).unwrap();
+        assert!(g.consumables.is_empty());
+    }
+
+    #[test]
+    fn test_strength_wraps_ace() {
+        let ace = Card::new(Value::Ace, Suit::Heart);
+        let ace_id = ace.id;
+
+        let mut g = game_in_blind();
+        g.available.extend(vec![ace]);
+        g.available.select_card(ace).unwrap();
+        g.deck.extend(vec![ace]);
+
+        Tarot::Strength.apply(&mut g).unwrap();
+
+        let cards = g.available.cards();
+        let card = cards.iter().find(|c| c.id == ace_id).unwrap();
+        assert_eq!(card.value, Value::Two);
+    }
+
+    #[test]
+    fn test_strength_ten_to_jack_becomes_face() {
+        let ten = Card::new(Value::Ten, Suit::Heart);
+        let ten_id = ten.id;
+        assert!(!ten.is_face_card());
+
+        let mut g = game_in_blind();
+        g.available.extend(vec![ten]);
+        g.available.select_card(ten).unwrap();
+        g.deck.extend(vec![ten]);
+
+        Tarot::Strength.apply(&mut g).unwrap();
+
+        let cards = g.available.cards();
+        let card = cards.iter().find(|c| c.id == ten_id).unwrap();
+        assert_eq!(card.value, Value::Jack);
+        assert!(card.is_face_card());
+    }
+
+    #[test]
+    fn test_strength_king_to_ace_loses_face() {
+        let king = Card::new(Value::King, Suit::Heart);
+        let king_id = king.id;
+        assert!(king.is_face_card());
+
+        let mut g = game_in_blind();
+        g.available.extend(vec![king]);
+        g.available.select_card(king).unwrap();
+        g.deck.extend(vec![king]);
+
+        Tarot::Strength.apply(&mut g).unwrap();
+
+        let cards = g.available.cards();
+        let card = cards.iter().find(|c| c.id == king_id).unwrap();
+        assert_eq!(card.value, Value::Ace);
+        assert!(!card.is_face_card());
+    }
+
+    #[test]
+    fn test_wheel_of_fortune_noop_without_jokers() {
+        let mut g = game_in_blind();
+        Tarot::WheelOfFortune.apply(&mut g).unwrap();
+        assert!(g.jokers.is_empty());
+    }
+
+    #[test]
+    fn test_wheel_of_fortune_gates_edition_by_prob_roll() {
+        use crate::joker::{Jokers, TheJoker};
+        use balatro_types::Edition;
+
+        let mut g = game_in_blind();
+        g.jokers.push(Jokers::TheJoker(TheJoker::default()));
+
+        let mut saw_base = false;
+        let mut saw_edition = false;
+        for _ in 0..200 {
+            Tarot::WheelOfFortune.apply(&mut g).unwrap();
+
+            assert_eq!(g.jokers.len(), 1, "joker count must not change");
+            match g.jokers[0].edition() {
+                Edition::Base => saw_base = true,
+                Edition::Foil | Edition::Holographic | Edition::Polychrome => saw_edition = true,
+                Edition::Negative => panic!("Wheel of Fortune must never apply Negative"),
+            }
+            g.jokers[0].set_edition(Edition::Base);
+        }
+
+        assert!(saw_base, "1-in-4 gate should sometimes not fire in 200 tries");
+        assert!(saw_edition, "1-in-4 gate should sometimes fire in 200 tries");
+    }
+}

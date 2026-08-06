@@ -1,0 +1,188 @@
+{
+  "V1": {
+    "source": "historical_live_training",
+    "n": 26412,
+    "distribution": {
+      "1": 25914,
+      "2": 322,
+      "3": 141,
+      "4": 33,
+      "5": 2
+    },
+    "peak_wr_note": "Live-game Lua IPC, RAM-leak degraded",
+    "milestones_pct": {
+      "died_ante_1": 98.11,
+      "died_ante_2_3": 1.75,
+      "died_ante_4_5": 0.13,
+      "died_ante_6_8": 0.0,
+      "won": 0.0
+    }
+  },
+  "V2": {
+    "source": "historical_last_500eps",
+    "n": 500,
+    "distribution": {
+      "1": 198,
+      "2": 131,
+      "3": 120,
+      "4": 41,
+      "5": 8,
+      "6": 2
+    },
+    "peak_wr_note": "Parallel live training snapshot, last 500 eps",
+    "milestones_pct": {
+      "died_ante_1": 39.6,
+      "died_ante_2_3": 50.2,
+      "died_ante_4_5": 9.8,
+      "died_ante_6_8": 0.4,
+      "won": 0.0
+    }
+  },
+  "V3": {
+    "source": "historical_dashboard_image",
+    "n": 500,
+    "distribution": {
+      "1": 412,
+      "2": 59,
+      "3": 17,
+      "4": 9,
+      "5": 2,
+      "6": 1
+    },
+    "peak_wr_note": "Socket-IPC dashboard, last 500 eps",
+    "milestones_pct": {
+      "died_ante_1": 82.4,
+      "died_ante_2_3": 15.2,
+      "died_ante_4_5": 2.2,
+      "died_ante_6_8": 0.2,
+      "won": 0.0
+    }
+  },
+  "V5 (approx)": {
+    "source": "approximated",
+    "n": 1000,
+    "distribution": {
+      "1": 950,
+      "2": 35,
+      "3": 10,
+      "4": 5
+    },
+    "peak_wr_note": "Approximation based on 0% WR + shop-starvation diagnosis",
+    "milestones_pct": {
+      "died_ante_1": 95.0,
+      "died_ante_2_3": 4.5,
+      "died_ante_4_5": 0.5,
+      "died_ante_6_8": 0.0,
+      "won": 0.0
+    }
+  },
+  "V6 (approx)": {
+    "source": "approximated_from_1.9wr",
+    "n": 1000,
+    "distribution": {
+      "1": 650,
+      "2": 170,
+      "3": 70,
+      "4": 45,
+      "5": 20,
+      "6": 20,
+      "7": 15,
+      "8": 5,
+      "9": 5
+    },
+    "peak_wr_note": "Approximation anchored on 1.9% WR",
+    "milestones_pct": {
+      "died_ante_1": 65.0,
+      "died_ante_2_3": 24.0,
+      "died_ante_4_5": 6.5,
+      "died_ante_6_8": 4.0,
+      "won": 0.5
+    }
+  },
+  "V7 Run 4": {
+    "source": "fresh_eval_5k_stoch",
+    "distribution": {
+      "1": 4523,
+      "2": 310,
+      "3": 90,
+      "4": 48,
+      "5": 23,
+      "6": 2,
+      "7": 1,
+      "8": 1,
+      "9": 2
+    },
+    "n": 5000,
+    "milestones_pct": {
+      "died_ante_1": 90.46,
+      "died_ante_2_3": 8.0,
+      "died_ante_4_5": 1.42,
+      "died_ante_6_8": 0.08,
+      "won": 0.04
+    }
+  },
+  "V7 Runs 5-6": {
+    "source": "fresh_eval_5k_stoch",
+    "distribution": {
+      "1": 4445,
+      "2": 345,
+      "3": 103,
+      "4": 59,
+      "5": 23,
+      "6": 12,
+      "7": 4,
+      "8": 4,
+      "9": 5
+    },
+    "n": 5000,
+    "milestones_pct": {
+      "died_ante_1": 88.9,
+      "died_ante_2_3": 8.96,
+      "died_ante_4_5": 1.64,
+      "died_ante_6_8": 0.4,
+      "won": 0.1
+    }
+  },
+  "V7 Run 7": {
+    "source": "fresh_eval_5k_stoch",
+    "distribution": {
+      "1": 4482,
+      "2": 268,
+      "3": 91,
+      "4": 74,
+      "5": 35,
+      "6": 24,
+      "7": 11,
+      "8": 2,
+      "9": 13
+    },
+    "n": 5000,
+    "milestones_pct": {
+      "died_ante_1": 89.64,
+      "died_ante_2_3": 7.18,
+      "died_ante_4_5": 2.18,
+      "died_ante_6_8": 0.74,
+      "won": 0.26
+    }
+  },
+  "V8": {
+    "source": "fresh_eval_2k_stoch",
+    "distribution": {
+      "1": 1783,
+      "2": 139,
+      "3": 32,
+      "4": 18,
+      "5": 14,
+      "6": 10,
+      "7": 4
+    },
+    "n": 2000,
+    "milestones_pct": {
+      "died_ante_1": 89.15,
+      "died_ante_2_3": 8.55,
+      "died_ante_4_5": 1.6,
+      "died_ante_6_8": 0.7,
+      "won": 0.0
+    }
+  }
+}

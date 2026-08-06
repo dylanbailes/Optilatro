@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+ray-env/
+venv/
+env/
+ENV/
+
+# Logs and checkpoints
+logs_ray/
+logs_ray_socket/
+checkpoints/
+checkpoints_v3/
+checkpoints_sim/
+checkpoints_v5/
+checkpoints_v7/
+checkpoints_v7_run*/
+checkpoints_v8/
+checkpoints_v8_run*/
+logs_sim/
+logs_v7/
+logs_v7_run*/
+logs_v8/
+*.log
+*.bundle
+
+# Agent workspace
+.claude/
+
+# Keep plot scripts but not generated PNGs
+*.png
+# ...except these curated artifacts used in the README
+!docs/media/*.png
+!docs/media/*.jpg
+!docs/v2_training_progress.png
+!results/v1_v8_progression.png
+!results/training_progress.png
+
+# Eval output (regenerable; too large for repo)
+results/eval_trajectories.jsonl
+
+# Temp files
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*

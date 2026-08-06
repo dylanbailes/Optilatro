@@ -1,0 +1,60 @@
+# CI — full sim test suite + seed-exactness gate.
+#
+# Runs on every push / PR. The tests live in vendor/balatro-rl (a vendored
+# upstream repo) and are run from there via `python -m pytest`.
+#
+# NOTE: vendor/balatro-rl is tracked as plain content (its nested .git was
+# removed at the first commit). If you ever re-vendor from upstream by cloning
+# into vendor/balatro-rl again, git will track the new directory as a *gitlink*
+# (submodule-style SHA) and check out ZERO files — remove the fresh nested .git
+# before committing. The sanity-check step below fails with a clear message
+# instead of a confusing pytest error if this ever bites.
+#
+# The seed-exactness gate (tests/test_seed_exactness.py) is opt-in via the
+# `ci_gate` marker (pytest.ini: addopts = -m "not ci_gate"), so the full-suite
+# step runs first, then the gate is run explicitly. The gate spawns fresh
+# interpreter instances under varying PYTHONHASHSEED and asserts the seed-mode
+# draw-log sha256 is byte-identical across them.
+
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Full suite + seed-exactness gate
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: vendor/balatro-rl
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-ci.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r ../../requirements-ci.txt
+
+      - name: Sanity-check vendored sim is present
+        run: test -f balatro_sim/game.py && echo "vendored sim OK"
+
+      - name: Full suite
+        run: python -m pytest tests/ balatro_sim/tests/ -q
+
+      - name: Seed-exactness gate (cross-process sha256)
+        run: python -m pytest tests/test_seed_exactness.py -m ci_gate -v

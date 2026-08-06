@@ -1,0 +1,7 @@
+# CI dependencies for the balatro-rl test suite (tests/ + balatro_sim/tests/).
+# Verified (2026-08-06): nothing in tests/ or balatro_sim/ imports torch, so it
+# is deliberately omitted — keeps CI installs small and fast. If a test starts
+# needing torch, add it here and re-run the seed-exactness gate.
+numpy==2.4.6
+gymnasium==1.3.0
+pytest==9.1.1

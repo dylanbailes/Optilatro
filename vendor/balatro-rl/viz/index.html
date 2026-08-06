@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>V7 Run 4 · Balatro RL Replay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="stage">
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-title">Balatro RL</span>
+        <span class="brand-sub">V7 Run 4 · checkpoint <span id="ckpt">iter_0920</span></span>
+      </div>
+      <div class="ante-pill">
+        <span class="ante-label">ANTE</span>
+        <span class="ante-value" id="ante">1</span>
+        <span class="ante-sep">·</span>
+        <span class="blind-name" id="blind-name">—</span>
+      </div>
+      <div class="meta">
+        <div class="meta-row"><span>seed</span><span id="seed">—</span></div>
+        <div class="meta-row"><span>step</span><span id="step">0 / 0</span></div>
+      </div>
+    </header>
+
+    <!-- Main 3-column body -->
+    <section class="body">
+
+      <!-- Left column: jokers, money, consumables -->
+      <aside class="col col-left">
+        <div class="panel money-panel">
+          <div class="money-label">MONEY</div>
+          <div class="money-value"><span id="money">0</span><span class="money-unit">$</span></div>
+        </div>
+
+        <div class="panel jokers-panel">
+          <div class="panel-header">
+            <span>JOKERS</span>
+            <span class="joker-count" id="joker-count">0/5</span>
+          </div>
+          <div class="jokers-list" id="jokers"></div>
+        </div>
+
+        <div class="panel consumables-panel">
+          <div class="panel-header"><span>CONSUMABLES</span></div>
+          <div class="consumables-list" id="consumables">
+            <div class="empty-slot"></div>
+            <div class="empty-slot"></div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Center column: blind + cards/shop -->
+      <section class="col col-center">
+        <div class="panel blind-panel">
+          <div class="blind-top">
+            <div class="blind-badge" id="blind-badge">SMALL</div>
+            <div class="blind-meta">
+              <div class="blind-title" id="blind-title">Ante 1 Small</div>
+              <div class="blind-target">
+                Target: <span id="blind-target" class="mono">0</span>
+              </div>
+            </div>
+            <div class="blind-counters">
+              <div class="counter">
+                <span class="counter-label">HANDS</span>
+                <span class="counter-value" id="hands-left">4</span>
+              </div>
+              <div class="counter">
+                <span class="counter-label">DISCARDS</span>
+                <span class="counter-value" id="discards-left">3</span>
+              </div>
+            </div>
+          </div>
+          <div class="score-row">
+            <div class="score-label">SCORE</div>
+            <div class="score-value mono" id="score">0</div>
+            <div class="score-progress">
+              <div class="score-bar" id="score-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-area" id="stage-area">
+          <div class="hand-area" id="hand-area"></div>
+          <div class="shop-area" id="shop-area"></div>
+          <div class="blind-select-area" id="blind-select-area">
+            <div class="blind-choice">
+              <div class="blind-choice-kind" id="blind-choice-kind-badge">BOSS</div>
+              <div class="blind-choice-name" id="blind-choice-name">—</div>
+              <div class="blind-choice-target">
+                Target <span class="mono" id="blind-choice-target">0</span>
+              </div>
+              <div class="blind-choice-decision" id="blind-choice-decision">
+                <div class="decision-verdict" id="decision-verdict">SKIP</div>
+                <div class="decision-sub" id="decision-sub">claim tag, keep cash</div>
+              </div>
+            </div>
+          </div>
+          <div class="game-over-area" id="game-over-area">
+            <div class="game-over-title" id="game-over-title">ANTE 9 CLEARED</div>
+            <div class="game-over-sub">Run complete</div>
+          </div>
+
+          <!-- Red Deck pile, bottom-right -->
+          <div class="deck-pile" id="deck-pile" aria-label="Red Deck">
+            <div class="deck-card back-red"></div>
+            <div class="deck-count">
+              <span class="mono" id="deck-size">52</span>
+              <span class="deck-count-label">/ 52</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right column: agent decision panel -->
+      <aside class="col col-right">
+        <div class="panel decision-panel">
+          <div class="panel-header decision-header">
+            <span>AGENT DECISION</span>
+            <span class="phase-pill" id="phase-pill">HAND</span>
+          </div>
+
+          <div class="chosen-action">
+            <div class="chosen-label">CHOSEN</div>
+            <div class="chosen-value" id="chosen-action">—</div>
+          </div>
+
+          <div class="probs" id="probs"></div>
+
+          <div class="value-row">
+            <div class="value-cell">
+              <div class="value-label">Value estimate</div>
+              <div class="value-number mono" id="value-estimate">0.00</div>
+            </div>
+            <div class="value-cell">
+              <div class="value-label">Step reward</div>
+              <div class="value-number mono" id="step-reward">+0.00</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Bottom progress strip + controls -->
+    <footer class="bottombar">
+      <div class="progress-strip">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="controls">
+        <button class="btn" id="btn-restart" title="Restart">⏮</button>
+        <button class="btn" id="btn-prev" title="Previous step">◀</button>
+        <button class="btn btn-primary" id="btn-play" title="Play / pause">▶</button>
+        <button class="btn" id="btn-next" title="Next step">▶|</button>
+        <div class="speed">
+          <span>speed</span>
+          <select id="speed-select">
+            <option value="2000">0.5x</option>
+            <option value="1200" selected>1x</option>
+            <option value="600">2x</option>
+            <option value="300">4x</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

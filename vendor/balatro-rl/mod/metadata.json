@@ -1,0 +1,17 @@
+{
+    "id": "BalatroRL",
+    "name": "BalatroRL",
+    "display_name": "Balatro RL State Observer",
+    "author": ["taggarttufte"],
+    "description": "Exposes game state to disk for RL training. Writes state.json after each action.",
+    "prefix": "brl",
+    "main_file": "BalatroRL.lua",
+    "priority": 10,
+    "version": "0.1.0",
+    "dependencies": [],
+    "config": {
+        "lua_nav":    true,
+        "buy_jokers": true,
+        "debug_log":  false
+    }
+}
