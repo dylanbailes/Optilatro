@@ -22,6 +22,10 @@ on:
   push:
     branches: [main, master]
   pull_request:
+  # Manual trigger — push events occasionally fail to auto-start runs (the
+  # webhook can be dropped); workflow_dispatch gives a deterministic way to
+  # re-run CI on the current branch head.
+  workflow_dispatch:
 
 concurrency:
   group: ci-${{ github.ref }}
