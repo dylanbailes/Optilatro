@@ -15,7 +15,7 @@ A workspace for authoring **custom Codebuff agents** (the `.agents/` directory c
 - `vendor/balatro-rl/` — vendored balatro-rl Python sim (upstream commit 59588ba, no LICENSE file; tracked as plain files — nested `.git` removed).
 - `vendor/balatro-rs/` — vendored balatro-rs Rust workspace (core + balatro-seed, tracked as plain files).
 - `.github/workflows/ci.yml` — CI: full suite + `ci_gate` on every push/PR.
-- `requirements-ci.txt` — CI deps (numpy, gymnasium, pytest only — **no torch needed**; nothing in tests/ or balatro_sim/ imports it).
+- `requirements-ci.txt` — CI deps (numpy, gymnasium, pytest; **torch is required by the suite** via `train_sim.py` → `balatro_sim/tests/test_edge_cases.py`, but installed separately in CI from the CPU index to avoid the ~3 GB CUDA-bundled PyPI wheel).
 - `bench/bench_sim.py` — throughput + random win-rate baseline benchmark.
 
 ## CI & git (2026-08-06)
