@@ -45,11 +45,16 @@ def bench_throughput(seconds: float = 5.0) -> tuple[int, float]:
     return steps, steps / dt
 
 
-def bench_winrate(n_games: int = 100) -> tuple[int, int, int]:
-    """Random-agent win rate over n_games full runs (ante-8 completion)."""
+def bench_winrate(n_games: int = 100) -> tuple[int, int, dict[int, int]]:
+    """Random-agent win rate over n_games full runs (ante-8 completion).
+
+    Returns (wins, losses, death_by_ante) where death_by_ante maps the ante a
+    run ended in (1..8) to how many runs died there; a won run is recorded at
+    ante 9 (past ante 8) so the histogram has a single terminal bucket.
+    """
     wins = 0
     losses = 0
-    ante_reached: dict[int, int] = {}
+    death_by_ante: dict[int, int] = {}
     for _ in range(n_games):
         env = BalatroSimEnv(seed=random.randrange(1_000_000_000))
         obs, _ = env.reset()
@@ -61,20 +66,24 @@ def bench_winrate(n_games: int = 100) -> tuple[int, int, int]:
             if steps > 100_000:
                 # Safety cap: a pathological state must never hang the benchmark.
                 # Count the stalled run as a loss and move on.
-                ante_reached[env.game.ante] = ante_reached.get(env.game.ante, 0) + 1
+                death_by_ante[env.game.ante] = death_by_ante.get(env.game.ante, 0) + 1
                 losses += 1
                 break
             if terminated or truncated:
                 # env_sim exposes the underlying game for inspection
                 g = env.game
                 won = getattr(g, "won", False) or (g.ante > 8)
-                ante_reached[g.ante] = ante_reached.get(g.ante, 0) + 1
+                # Won runs already end at ante 9 (the ante-8 shop -> GAME_OVER
+                # transition increments ante past 8), so bucket 9 == win; the
+                # explicit branch just documents intent and guards the field.
+                bucket = 9 if won else g.ante
+                death_by_ante[bucket] = death_by_ante.get(bucket, 0) + 1
                 if won:
                     wins += 1
                 else:
                     losses += 1
                 break
-    return wins, losses, max(ante_reached, default=1)
+    return wins, losses, death_by_ante
 
 
 def main() -> None:
@@ -87,14 +96,22 @@ def main() -> None:
     print(f"throughput: {steps} steps in {args.seconds:.1f}s -> {sps:.0f} steps/s (single env, random agent)")
 
     t0 = time.perf_counter()
-    wins, losses, max_ante = bench_winrate(args.games)
+    wins, losses, death_by_ante = bench_winrate(args.games)
     dt = time.perf_counter() - t0
     total = wins + losses
+    if total == 0:
+        print("no games completed (try --games N with N >= 1)")
+        return
     print(
         f"random-agent win rate: {wins}/{total} = "
-        f"{100.0 * wins / total:.2f}% (losses: {losses}, max ante reached: {max_ante}) "
-        f"in {dt:.1f}s"
+        f"{100.0 * wins / total:.2f}% (losses: {losses}) in {dt:.1f}s"
     )
+    print("death by ante (9 = won past ante 8):")
+    for ante in range(1, 10):
+        n = death_by_ante.get(ante, 0)
+        if n:
+            bar = "#" * int(60 * n / total)
+            print(f"  ante {ante}: {n:>5} ({100.0 * n / total:5.2f}%) {bar}")
 
 
 if __name__ == "__main__":

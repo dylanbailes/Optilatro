@@ -16,7 +16,7 @@ A workspace for authoring **custom Codebuff agents** (the `.agents/` directory c
 - `vendor/balatro-rs/` — vendored balatro-rs Rust workspace (core + balatro-seed, tracked as plain files).
 - `.github/workflows/ci.yml` — CI: full suite + `ci_gate` on every push/PR.
 - `requirements-ci.txt` — CI deps (numpy, gymnasium, pytest; **torch is required by the suite** via `train_sim.py` → `balatro_sim/tests/test_edge_cases.py`, but installed separately in CI from the CPU index to avoid the ~3 GB CUDA-bundled PyPI wheel).
-- `bench/bench_sim.py` — throughput + random win-rate baseline benchmark.
+- `bench/bench_sim.py` — throughput + random win-rate baseline benchmark. **Full-ruleset random baseline (2026-08-06): 0/1000 = 0.00% win** (96% die at ante 1, 3.8% ante 2, 0.2% ante 3; max ante 3); prints a death-by-ante histogram (ante 9 bucket = win). ~2,135 steps/s single-env. This 0% is the floor for Tier 1 search to beat.
 
 ## CI & git (2026-08-06)
 - Repo: initialized `main` (commit `75b81b3`), **no remote yet** — create the repo on github.com then `git remote add origin <url>` + `git push -u origin main`.

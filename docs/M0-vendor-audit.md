@@ -41,10 +41,21 @@
 
 **Throughput baseline (single env, random agent, Ryzen 7 2700):**
 ```
-~2,992 steps/s
-random-agent win rate: 0/200 = 0.00% (max ante reached: 2)
+~2,135 steps/s
+random-agent win rate: 0/1000 = 0.00% (max ante reached: 3)
 ```
-Matches the repo's "<0.01%" random baseline; the env is ~3× faster than their reported ~1,000 sps.
+Matches the repo's "<0.01%" random baseline. Earlier `~2,992 steps/s` / `0/200` was measured pre-tags/vouchers; the env is now ~2.1–2.5k sps with the full ruleset wired.
+
+**Random-agent baseline with the FULL ruleset (2026-08-06, `bench/bench_sim.py --games 1000`)** — all 32 vouchers, all 24 tags, all 28 bosses live:
+```
+throughput:           2,135 steps/s (single env, random agent)
+random-agent win rate: 0/1000 = 0.00%  (losses: 1000, in 52.8s)
+death by ante (9 = won past ante 8):
+  ante 1:   960 (96.00%)
+  ante 2:    38 ( 3.80%)
+  ante 3:     2 ( 0.20%)
+```
+Sanity: across 60 random games the sim exercised SHOP state 3,117×, rolled a tag 5,995×, offered a voucher 5,736×, and hit a Boss blind 1,274× — the full ruleset is reachable and live in random play. Win detection verified (`g.ante > 8` on GAME_OVER; the ante-8 → ante-9 shop transition is the win path). A uniform-random policy over the 47-action space stalls at the ante-1 small blind (96%) — it cannot reliably score 300 chips with random plays. This 0.00% is the floor to beat; the search agent (Tier 1) is the first real target above it.
 
 ## 4. Fidelity gaps found (this is the real M0 value)
 
