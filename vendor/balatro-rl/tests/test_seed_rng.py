@@ -324,10 +324,11 @@ class TestSeedModeGolden:
         "bl_pillar", "bl_goad", "bl_eye", "bl_violet",
     ]
     EXPECTED_SHOP = [
-        ("joker", "j_even_steven"), ("joker", "j_hologram"),
-        ("tarot", "c_sun"), ("planet", "pl_venus"),
-        ("voucher", "v_seed_money"),   # pair-unlock: initial pool is the 17
-        #  bases/standalones only (was v_paint_brush over the 27-key pool)
+        # Re-derived after the M2 shop restructure (2026-08-06): the real shop
+        # has 2 cdt-polled random slots (Joker 20 / Tarot 4 / Planet 4), a
+        # voucher slot, and 2 booster-pack slots. Slot 1 polls a Tarot here.
+        ("tarot", "c_sun"), ("joker", "j_mystic_summit"),
+        ("voucher", "v_seed_money"),
         ("booster", "p_standard_jumbo"), ("booster", "p_celestial"),
     ]
 
@@ -342,3 +343,52 @@ class TestSeedModeGolden:
         g = BalatroGame(seed=11, rng_mode="seed")
         got = [(i.kind, i.key) for i in generate_shop(g)]
         assert got == self.EXPECTED_SHOP
+
+    def test_catalogue_matches_real_game(self):
+        """Guard the M1 P0 fix: every catalogue joker must resolve to an effect
+        (no dead shop jokers), display names must be unique (no duplicates), and
+        the canonical real-game ids / rarities must be in place."""
+        from balatro_sim.shop import JOKER_CATALOGUE
+        from balatro_sim.jokers.base import JOKER_REGISTRY
+
+        # Full real-game pool: 149 jokers (150 - 1; balatro-rs has no duplicate)
+        assert len(JOKER_CATALOGUE) == 149
+        names = [v["name"] for v in JOKER_CATALOGUE.values()]
+        assert len(set(names)) == 149, "duplicate joker names in catalogue"
+        dead = [k for k in JOKER_CATALOGUE if JOKER_REGISTRY.get(k) is None]
+        assert dead == [], f"dead shop jokers: {dead}"
+        # The old duplicate keys must be gone (The Duo/Trio/Family/Order/Tribe,
+        # Wee Joker) and legendaries only carry their real ids.
+        for gone in ("j_the_duo", "j_the_trio", "j_the_family",
+                     "j_the_order", "j_the_tribe", "j_wee_joker"):
+            assert gone not in JOKER_CATALOGUE, f"duplicate key {gone} still present"
+
+    def test_catalogue_rarities_are_real(self):
+        """Spot-check the M1 rarity fix on jokers that were wrong before."""
+        from balatro_sim.shop import JOKER_CATALOGUE
+        expect = {
+            "j_baron": "Rare", "j_dna": "Rare", "j_abstract": "Common",
+            "j_half": "Common", "j_odd_todd": "Common", "j_duo": "Rare",
+            "j_wee": "Rare", "j_flash": "Uncommon", "j_stencil": "Uncommon",
+            "j_drivers_license": "Rare", "j_oops": "Uncommon",
+            "j_gluttenous_joker": "Common", "j_caino": "Legendary",
+        }
+        for key, rar in expect.items():
+            assert JOKER_CATALOGUE[key]["rarity"] == rar, \
+                f"{key}: {JOKER_CATALOGUE[key]['rarity']} != {rar}"
+        # Real per-joker base costs (wiki-verified)
+        assert JOKER_CATALOGUE["j_joker"]["price"] == 2
+        assert JOKER_CATALOGUE["j_credit_card"]["price"] == 1
+        assert JOKER_CATALOGUE["j_blueprint"]["price"] == 10
+        assert JOKER_CATALOGUE["j_caino"]["price"] == 20
+
+    def test_canonical_aliases_resolve(self):
+        """Canonical keys that need an alias must resolve to the right effect
+        (j_ring_master = Showman, j_ticket = real Golden Ticket), and the native
+        per-card suit jokers must NOT be shadowed by the alias layer."""
+        from balatro_sim.jokers.base import JOKER_REGISTRY
+        assert type(JOKER_REGISTRY["j_ring_master"]).__name__ == "_Showman"
+        assert type(JOKER_REGISTRY["j_ticket"]).__name__ == "_GoldenTicket"
+        assert type(JOKER_REGISTRY["j_greedy_joker"]).__name__ == "_Greedy"
+        assert type(JOKER_REGISTRY["j_lusty_joker"]).__name__ == "_Lusty"
+        assert type(JOKER_REGISTRY["j_gluttenous_joker"]).__name__ == "_Gluttonous"

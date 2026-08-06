@@ -279,7 +279,8 @@ class TestQueuedTags:
         g.dollars = 4  # no interest ($4 < $5), no hand payout
         g.state = State.ROUND_EVAL
         g.step({"type": "noop"})
-        assert g.dollars == 4 + 25
+        # +25 Investment Tag, plus the $5 Boss-blind reward (M2 P0)
+        assert g.dollars == 4 + 25 + 5
         assert not g.investment_pending
 
     def test_juggle_hand_size_next_round_only(self):

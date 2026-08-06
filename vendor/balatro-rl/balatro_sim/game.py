@@ -41,6 +41,7 @@ from .scoring import score_hand
 from .constants import (
     BLIND_CHIPS, STARTING_HANDS, STARTING_DISCARDS, HAND_SIZE,
     INTEREST_RATE, INTEREST_CAP, HAND_PAYOUT, STARTING_MONEY,
+    BLIND_REWARDS, SHOWDOWN_REWARD,
 )
 from .jokers.base import JokerInstance, JOKER_REGISTRY
 from .consumables import (
@@ -212,9 +213,10 @@ class BalatroGame:
         self.base_discards = STARTING_DISCARDS + (1 if self.deck_config == "red" else 0)
         self.hand_size = HAND_SIZE
 
-        # Shop settings
-        self.shop_joker_slots = 2
-        self.shop_card_slots = 2
+        # Shop settings — the real game's shop has `joker_max` cdt-polled
+        # random slots (2 base; Overstock / Overstock Plus +1 each), plus a
+        # voucher slot and 2 booster-pack slots.
+        self.shop_item_slots = 2
         self.shop_discount = 0.0
         self.reroll_cost = 5
         self.reroll_discount = 0
@@ -507,11 +509,8 @@ class BalatroGame:
             # cards drawn later in the round come face up.
             for c in self.hand:
                 c.flipped = True
-        # Matador: +$8 when the boss ability applies at blind start. The
-        # per-hand bosses (Crimson Heart, Cerulean Bell, The Hook) trigger
-        # during play instead — fired from _play_hand.
-        if boss_key not in ("bl_crimson", "bl_cerulean", "bl_hook"):
-            self._fire_boss_trigger()
+        # NOTE: Matador pays only per PLAYED hand that triggers the boss
+        # ability (see _play_hand) — there is no blind-start payout.
 
     def _undo_boss_debuffs(self, boss_key: str):
         """Re-enable cards after boss blind ends."""
@@ -590,10 +589,10 @@ class BalatroGame:
         return not any(j.key == "j_chicot" for j in self.jokers)
 
     def _fire_boss_trigger(self):
-        """Fire Matador's on_boss_ability_triggered: +$8 when a Boss Blind
-        ability actually applies. Called once at blind start for static bosses
-        and per hand for the in-play bosses (Crimson Heart / Cerulean Bell /
-        The Hook). No-op while boss abilities are disabled."""
+        """Fire Matador's on_boss_ability_triggered: +$8 for the current played
+        hand, paid once per qualifying hand. Called from _play_hand only (the
+        real game has no blind-start payout). No-op while boss abilities are
+        disabled or Matador is not owned."""
         if not self._boss_effects_on():
             return
         for j in self.jokers:
@@ -681,8 +680,16 @@ class BalatroGame:
         # Boss effects are skipped entirely while disabled (Chicot / Luchador)
         boss = self.current_blind.boss_key if self._boss_effects_on() else ""
 
-        # Boss: psychic — must play exactly 5
+        # Boss: psychic — must play exactly 5. A <5-card play is a non-scoring
+        # hand: it still consumes a hand (real game) and triggers Matador
+        # (wiki: Psychic triggers on "less than 5 cards"). Consuming the hand
+        # also stops an agent from farming Matador's $8 with free rejected
+        # plays.
         if boss == "bl_psychic" and len(selected) != 5:
+            self._fire_boss_trigger()
+            self.hands_left -= 1
+            if self.hands_left <= 0:
+                self.state = State.GAME_OVER
             return
 
         # Boss: hook — discard 2 random scoring cards
@@ -740,8 +747,32 @@ class BalatroGame:
             self._last_crimson_idx = idx
             active_jokers = [j for i, j in enumerate(self.jokers) if i != idx]
 
-        # Matador: the in-play bosses trigger per hand
-        if boss in ("bl_crimson", "bl_cerulean", "bl_hook"):
+        # Matador: +$8 per played hand that triggers the Boss Blind ability.
+        # Real-game semantics (wiki j_matador page) — 13 triggering blinds, all
+        # per-hand, once per qualifying hand; the other 15 blinds never pay
+        # (Wheel, House, Fish, Water, Wall, Manacle, Serpent, Needle, Tooth,
+        # Mark, Hook, Amber, Violet, Crimson, Cerulean — a real-game oversight
+        # where Hook/Tooth/Crimson set the flag with the wrong timing).
+        matador = False
+        if boss == "bl_flint":
+            matador = True   # every played hand is halved
+        elif boss in ("bl_goad", "bl_club", "bl_window", "bl_head",
+                      "bl_plant", "bl_pillar"):
+            # Suit/face/pillar debuffs: a DEBUFFED card must actually score
+            # (debuffed cards outside the hand's scoring cards don't count).
+            matador = any(c.debuffed for c in scoring_cards)
+        elif boss in ("bl_eye", "bl_mouth"):
+            matador = rejected   # a disallowed (non-scoring) hand
+        elif boss == "bl_grim":
+            # The Arm: only when the played hand's level can be decreased
+            matador = self.planet_levels.get(hand_type, 1) >= 2
+        elif boss == "bl_ox":
+            # The Ox: only when the hand sets your money to zero
+            matador = hand_type == self._most_played_hand()
+        elif boss == "bl_verdant":
+            # Verdant Leaf: until a joker is sold this blind
+            matador = self.verdant_debuff
+        if matador:
             self._fire_boss_trigger()
 
         # Boss: arm (bl_grim) — permanently decrease the played hand type's
@@ -900,7 +931,13 @@ class BalatroGame:
         # Payout (interest cap raised by Seed Money / Money Tree)
         earnings = self.hands_left * HAND_PAYOUT
         interest = min(self.dollars // INTEREST_RATE, self.interest_cap)
-        self.dollars += earnings + interest
+        # Blind reward — flat per tier (Small $3 / Big $4 / Boss $5); the
+        # Ante-8 Showdown finisher pays $8. Real game blind table.
+        if self.current_blind.is_boss and self.ante % 8 == 0:
+            reward = SHOWDOWN_REWARD
+        else:
+            reward = BLIND_REWARDS[self.current_blind.kind]
+        self.dollars += earnings + interest + reward
         # Garbage Tag: unused discards this round count toward the run total
         self.run_unused_discards += self.discards_left
 

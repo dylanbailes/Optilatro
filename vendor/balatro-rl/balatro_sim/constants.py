@@ -70,6 +70,12 @@ BLIND_CHIPS = {
 INTEREST_RATE   = 5    # $1 per $5 held
 INTEREST_CAP    = 5    # max $5 interest per round
 
+# Blind reward money — flat per tier, no Ante scaling (real game blind table:
+# bl_small dollars=3, bl_big dollars=4, regular bosses dollars=5, and the
+# Showdown finishers (Amber/Cerulean/Crimson/Verdant/Violet) dollars=8).
+BLIND_REWARDS = {"Small": 3, "Big": 4, "Boss": 5}
+SHOWDOWN_REWARD = 8
+
 # Starting hand/discard counts
 STARTING_HANDS    = 4
 STARTING_DISCARDS = 3

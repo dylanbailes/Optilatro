@@ -536,9 +536,9 @@ def apply_voucher(game: "BalatroGame", voucher_key: str) -> bool:
     game.vouchers.add(voucher_key)
 
     if voucher_key == "v_overstock":
-        game.shop_card_slots += 1
+        game.shop_item_slots += 1
     elif voucher_key == "v_overstock_plus":
-        game.shop_card_slots += 1
+        game.shop_item_slots += 1
     elif voucher_key == "v_clearance_sale":
         game.shop_discount = min(game.shop_discount + 0.25, 0.5)
     elif voucher_key == "v_liquidation":
@@ -583,9 +583,9 @@ def apply_voucher(game: "BalatroGame", voucher_key: str) -> bool:
         pass  # Planet cards in the consumable area give X1.5 Mult — scoring
     elif voucher_key in ("v_tarot_merchant", "v_tarot_tycoon",
                          "v_planet_merchant", "v_planet_tycoon"):
-        pass  # shop consumable-type weights — applied in shop._consumable_weights
+        pass  # shop item-type weights — applied in shop._shop_item_weights
     elif voucher_key == "v_magic_trick" or voucher_key == "v_illusion":
-        pass  # playing cards in the shop — applied in shop._random_consumable_item
+        pass  # playing cards in the shop — applied in shop._random_shop_item
     elif voucher_key == "v_seed_money":
         game.interest_cap = 10
     elif voucher_key == "v_money_tree":

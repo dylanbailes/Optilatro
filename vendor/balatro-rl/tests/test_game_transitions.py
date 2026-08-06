@@ -16,6 +16,7 @@ from balatro_sim.card import Card
 from balatro_sim.constants import (
     BLIND_CHIPS, STARTING_HANDS, STARTING_DISCARDS,
     STARTING_MONEY, INTEREST_RATE, INTEREST_CAP, HAND_PAYOUT,
+    BLIND_REWARDS,
 )
 
 
@@ -197,7 +198,8 @@ class TestRoundPayouts:
         game._end_round()
         earnings = hands_remaining * HAND_PAYOUT
         interest = min(prev_dollars // INTEREST_RATE, INTEREST_CAP)
-        expected = prev_dollars + earnings + interest
+        reward = BLIND_REWARDS[game.current_blind.kind]   # flat blind reward
+        expected = prev_dollars + earnings + interest + reward
         assert game.dollars == expected
 
     def test_interest_caps_at_5(self, game):

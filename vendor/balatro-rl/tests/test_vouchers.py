@@ -10,7 +10,7 @@ from balatro_sim.consumables import (
 )
 from balatro_sim.game import BalatroGame, State, BLIND_CHIPS
 from balatro_sim.shop import (
-    generate_shop, _random_voucher, _consumable_weights, _shop_card_item,
+    generate_shop, _random_voucher, _shop_item_weights, _shop_card_item,
     _roll_edition, _open_booster, ShopItem,
 )
 from balatro_sim.scoring import score_hand
@@ -82,8 +82,10 @@ class TestEconomyVouchers:
                 apply_voucher(g, cap_voucher)
             g.dollars = 100
             g.hands_left = 0          # no hand payout
+            # The fresh game is on Ante 1 Small Blind, which pays a flat $3
+            # blind reward at round end — subtract it to isolate interest.
             g._end_round()
-            return g.dollars - 100
+            return g.dollars - 100 - 3
         assert interest_with() == 5          # base cap $5 (20 // 5 = 20 -> 5)
         assert interest_with("v_seed_money") == 10
         assert interest_with("v_money_tree") == 20
@@ -105,19 +107,21 @@ class TestEconomyVouchers:
 
 class TestShopOddsVouchers:
     def test_consumable_weights(self):
+        # Real cdt{ante} poll (functions.hpp nextShopItem): Joker 20 / Tarot 4 /
+        # Planet 4; Merchant -> 9.6, Tycoon -> 32.
         g = BalatroGame(seed=5, rng_mode="seed")
-        assert _consumable_weights(g) == (["planet", "tarot", "spectral"], [40, 50, 10])
+        assert _shop_item_weights(g) == (["joker", "tarot", "planet"], [20.0, 4.0, 4.0])
         apply_voucher(g, "v_tarot_merchant")
-        pool, w = _consumable_weights(g)
-        assert dict(zip(pool, w))["tarot"] == 100
+        pool, w = _shop_item_weights(g)
+        assert dict(zip(pool, w))["tarot"] == 9.6
         apply_voucher(g, "v_tarot_tycoon")
-        _, w = _consumable_weights(g)
-        assert dict(zip(pool, w))["tarot"] == 200
+        _, w = _shop_item_weights(g)
+        assert dict(zip(pool, w))["tarot"] == 32.0
         apply_voucher(g, "v_planet_merchant")
         apply_voucher(g, "v_planet_tycoon")
-        _, w = _consumable_weights(g)
+        _, w = _shop_item_weights(g)
         # Telescope affects Celestial PACK contents (not shop weights)
-        assert dict(zip(pool, w))["planet"] == 40 * 2 * 2
+        assert dict(zip(pool, w))["planet"] == 32.0
 
     @pytest.mark.parametrize("boost,r,expected", [
         (1.0, 0.005, "Polychrome"),

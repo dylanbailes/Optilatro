@@ -357,15 +357,15 @@ class TestSpectrals:
 
 class TestVouchers:
     def test_overstock_adds_shop_slot(self, game):
-        prev = game.shop_card_slots
+        prev = game.shop_item_slots
         apply_voucher(game, "v_overstock")
-        assert game.shop_card_slots == prev + 1
+        assert game.shop_item_slots == prev + 1
 
     def test_overstock_plus(self, game):
         apply_voucher(game, "v_overstock")
-        prev = game.shop_card_slots
+        prev = game.shop_item_slots
         apply_voucher(game, "v_overstock_plus")
-        assert game.shop_card_slots == prev + 1
+        assert game.shop_item_slots == prev + 1
 
     def test_clearance_sale(self, game):
         apply_voucher(game, "v_clearance_sale")
