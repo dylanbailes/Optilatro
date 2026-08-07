@@ -31,9 +31,24 @@ def _ctx_rng(ctx: ScoreContext):
     return _random
 
 
-def _score_single_card(card: Card, ctx: ScoreContext, jokers: list[JokerInstance]):
-    """Score one card pass (used for base scoring + each retrigger)."""
+def _lucky_trigger(jokers: list[JokerInstance], ctx: ScoreContext):
+    """Fire on_lucky_trigger on every owned joker (Lucky Cat: X0.25 per
+    successful Lucky trigger — one call per successful roll). The base
+    JokerEffect guarantees the hook exists; no hasattr needed (R2)."""
+    for joker in jokers:
+        joker.fire("on_lucky_trigger", ctx)
+
+
+def _score_single_card(card: Card, ctx: ScoreContext, jokers: list[JokerInstance],
+                       oops: bool = False):
+    """Score one card pass (used for base scoring + each retrigger).
+
+    oops: Oops! All 6s owned — doubles listed probabilities (Lucky card rolls;
+    Glass shatter is handled separately)."""
     ctx.chips += card.base_chips
+    # Hiker: every played card permanently gains +5 chips (stored on the card
+    # by scaling._Hiker); applied on every scoring pass like the real game.
+    ctx.chips += getattr(card, "bonus_chips", 0)
 
     # Enhancement effects
     if card.enhancement == "Bonus":
@@ -43,14 +58,20 @@ def _score_single_card(card: Card, ctx: ScoreContext, jokers: list[JokerInstance
     elif card.enhancement == "Glass":
         ctx.mult_mult *= 2.0
     elif card.enhancement == "Lucky":
+        # Real Balatro: 1-in-5 chance for +20 Mult, 1-in-15 chance for $20
+        # (two independent rolls; balatro-rs game.rs prob_roll(1,5)/(1,15), ref
+        # doc §6). Oops! All 6s doubles both (2/5, 2/15). Lucky Cat gains
+        # X0.25 per SUCCESSFUL TRIGGER (each successful roll fires it — both
+        # rolling true grants X0.5, matching the real lucky_trigger loop).
         rng = _ctx_rng(ctx)
-        if rng.random() < 1/4:   # real Balatro: 1 in 4 chance
+        if rng.random() < (0.4 if oops else 0.2):
             ctx.mult += 20
-        if rng.random() < 1/15:
+            _lucky_trigger(jokers, ctx)
+        if rng.random() < (2/15 if oops else 1/15):
             ctx.pending_money += 20
-    elif card.enhancement == "Steel":
-        ctx.mult_mult *= 1.5  # applies while held in hand; here approximated per scoring pass
-
+            _lucky_trigger(jokers, ctx)
+    # NOTE: Steel is NOT scored here — it is a held-in-hand effect applied in
+    # the held-in-hand pass of score_hand (B3 fix: held, not scored).
     # Edition effects on card
     if card.edition == "Foil":
         ctx.chips += 50
@@ -77,6 +98,7 @@ def score_hand(
     deck_remaining: int,
     half_base: bool = False,
     game=None,
+    held_cards: list[Card] | None = None,
 ) -> tuple[int, ScoreContext]:
     """
     Compute the total score for a played hand.
@@ -105,6 +127,7 @@ def score_hand(
         hand_type=hand_type,
         scoring_cards=scoring_cards,
         all_cards=all_cards,
+        held_cards=held_cards or [],
         jokers=jokers,
         hands_left=hands_left,
         discards_left=discards_left,
@@ -115,13 +138,15 @@ def score_hand(
         game=game,
     )
 
+    # Oops! All 6s owned — doubles listed probabilities (Glass shatter, Lucky).
+    # Capability flag (R3), not a key scan.
+    oops = any(j.has_flag("doubles_lucky") for j in jokers)
+
     # Pre-score: jokers that set flags / retrigger counts before the card loop
     # (Blueprint/Brainstorm copy effects here; retrigger jokers like Dusk set
     #  card_retriggers for all cards if on last hand)
     for joker in jokers:
-        effect = __import__('balatro_sim.jokers.base', fromlist=['JOKER_REGISTRY']).JOKER_REGISTRY.get(joker.key)
-        if effect and hasattr(effect, 'pre_score'):
-            effect.pre_score(joker, ctx)
+        joker.fire("pre_score", ctx)
 
     # Score each card + retriggers
     for i, card in enumerate(scoring_cards):
@@ -129,22 +154,32 @@ def score_hand(
             continue
 
         # Base scoring pass
-        _score_single_card(card, ctx, jokers)
+        _score_single_card(card, ctx, jokers, oops)
 
         # Red seal: retrigger this card once
         if card.seal == "Red":
-            _score_single_card(card, ctx, jokers)
+            _score_single_card(card, ctx, jokers, oops)
 
         # Joker-initiated retriggers (e.g. Hack, SockAndBuskin, HangingChad)
         extra = ctx.card_retriggers.get(i, 0)
         for _ in range(extra):
-            _score_single_card(card, ctx, jokers)
+            _score_single_card(card, ctx, jokers, oops)
+
+    # Held-in-hand effects: Steel cards give X1.5 Mult while HELD in hand
+    # (B3 fix — previously they fired on scored cards). Mime retriggers
+    # held-in-hand abilities (capability flag, R3), doubling each Steel proc.
+    mime = any(j.has_flag("retriggers_held") for j in jokers)
+    held_steel = [c for c in ctx.held_cards
+                  if c.enhancement == "Steel" and not c.debuffed]
+    for _ in held_steel:
+        ctx.mult_mult *= 1.5
+        if mime:
+            ctx.mult_mult *= 1.5
 
     # Glass shatter: 1-in-4 per non-debuffed Glass card scored, rolled once per
     # card per hand after all scoring passes (real-game timing). Oops! All 6s
     # doubles the chance. Shattered cards are collected for the game to remove
     # permanently — they never return to the deck.
-    oops = any(j.key in ("j_oops", "j_oops_all_sixes") for j in jokers)
     rng = _ctx_rng(ctx)
     for card in scoring_cards:
         if card.enhancement == "Glass" and not card.debuffed:

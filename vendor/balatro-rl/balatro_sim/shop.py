@@ -13,6 +13,7 @@ Prices:
   Planet / Tarot:  $3
   Booster (std):   $4
   Voucher:         $10
+  Playing card (Magic Trick): $1
 
 Selling jokers: ~50% of buy price (rounded down), minimum $1.
 """
@@ -31,10 +32,11 @@ from .consumables import (
 )
 from .seed_rng import (
     node_joker, node_rarity, node_edition, node_tarot, node_planet,
-    node_spectral, node_voucher, node_shop_pack, node_stdset, node_cdt,
-    MAGIC_CARD_NODE, OMEN_NODE, ILLUSION_NODE,
+    node_spectral, node_voucher, node_shop_pack, node_stdset,
+    node_std_enhanced, node_std_front, node_std_edition, node_std_seal,
+    node_std_seal_type, node_cdt, MAGIC_CARD_NODE, OMEN_NODE, ILLUSION_NODE,
 )
-from .constants import ENHANCEMENTS, EDITIONS
+from .constants import ENHANCEMENTS
 
 # Hand-tier order for Telescope's "higher tier hand" tie-break.
 _HAND_TIERS = {h: i for i, h in enumerate([
@@ -91,6 +93,7 @@ JOKER_CATALOGUE: dict[str, dict] = {
     "j_steel_joker": {"key": "j_steel_joker", "name": "Steel Joker", "rarity": "Uncommon", "price": 7},
     "j_scary_face": {"key": "j_scary_face", "name": "Scary Face", "rarity": "Common", "price": 4},
     "j_abstract": {"key": "j_abstract", "name": "Abstract Joker", "rarity": "Common", "price": 4},
+    "j_delayed_grat": {"key": "j_delayed_grat", "name": "Delayed Gratification", "rarity": "Common", "price": 4},
     "j_hack": {"key": "j_hack", "name": "Hack", "rarity": "Uncommon", "price": 6},
     "j_pareidolia": {"key": "j_pareidolia", "name": "Pareidolia", "rarity": "Uncommon", "price": 5},
     "j_gros_michel": {"key": "j_gros_michel", "name": "Gros Michel", "rarity": "Common", "price": 5},
@@ -239,11 +242,80 @@ def clear_banned_jokers():
     BANNED_JOKERS = set()
 
 
+# ────────────────────────────────────────────────────────────────────────────
+# DUPLICATE SUPPRESSION (the Showman rule)
+# ────────────────────────────────────────────────────────────────────────────
+# Real game: without Showman, any Joker/Tarot/Planet/Spectral already in the
+# player's possession is excluded from the pool for the rest of the run — in
+# the Shop and Booster Packs alike. Merely *seeing* a card does not exclude it
+# (it can reappear on a reroll). Showman lifts the rule for all four types.
+#
+# Draw mechanics mirror balatro-seed instance.rs::randchoice (a byte-accurate
+# port of the real game): pick uniformly from the FULL pool; if the picked
+# item is locked and Showman is not owned, re-draw from "{node_id}_resample{n}"
+# nodes until an unlocked item appears (1000-resample fallback, after which a
+# fully-owned pool re-allows duplicates). Draw counts match the real game's
+# call structure, so seed-mode node pins stay aligned.
+
+# Showman's real catalogue key (j_ring_master) and its legacy effect-registry
+# key (j_showman); owning either lifts the no-duplicate rule.
+
+
+
+def _showman_owned(game) -> bool:
+    """True when the player owns Showman (its presence lifts duplicate
+    suppression for Joker/Tarot/Planet/Spectral cards)."""
+    return any(j.has_flag("allow_dupes") for j in getattr(game, "jokers", ()))
+
+
+def _possessed_keys(game) -> set:
+    """Keys the player currently possesses (joker slots + consumable area).
+
+    Possession is the real game's lock source: selling a joker or using a
+    consumable (with no copies remaining) re-allows it, so the locked set is
+    computed live from game state rather than tracked separately."""
+    keys = {j.key for j in getattr(game, "jokers", ())}
+    keys.update(getattr(game, "consumable_hand", ()))
+    return keys
+
+
+def _locked_pool(game) -> set:
+    """The key set a draw must avoid: everything possessed, or empty when
+    Showman lifts the rule."""
+    if _showman_owned(game):
+        return set()
+    return _possessed_keys(game)
+
+
+def _draw_excluding(rng, node_id: str, pool, locked) -> object:
+    """One pool draw with the real game's lock-triggered resample.
+
+    Mirrors balatro-seed instance.rs::randchoice: pick uniformly from the FULL
+    pool; if the picked item is locked (possessed, or temporarily locked while
+    a pack is being generated), draw again from '{node_id}_resample{n}' nodes
+    until an unlocked item appears (resample starts at 2; after 1000 resamples
+    the last draw is returned even if locked — a fully-owned pool re-allows
+    duplicates, exactly like the real game). `locked` empty → plain choice."""
+    if not locked:
+        return rng.node(node_id).choice(pool)
+    item = rng.node(node_id).choice(pool)
+    if item not in locked:
+        return item
+    resample = 2
+    while True:
+        item = rng.node(f"{node_id}_resample{resample}").choice(pool)
+        resample += 1
+        if item not in locked or resample > 1000:
+            return item
+
+
 def random_joker_key(
     rarity: Optional[str] = None,
     rng=None,
     ante: int = 1,
     source: str = "sho",
+    game=None,
+    exclude: Optional[set] = None,
 ) -> str:
     """Pick a random joker key, honoring BANNED_JOKERS.
 
@@ -252,7 +324,12 @@ def random_joker_key(
     the draw mirrors Balatro's node scheme: a rarity poll on
     "rarity{ante}{source}" then a pick from that rarity's pool on
     "Joker{1|2|3}{source}{ante}".
-    """
+
+    game: when provided (and Showman is not owned), jokers already in the
+    player's possession are excluded via the real lock-triggered resample.
+    exclude: extra keys to treat as locked (e.g. jokers already drawn into the
+    current pack, so a pack never repeats one); ignored when game is None or
+    Showman is owned (the rule is fully lifted)."""
     if rng is None:
         if rarity:
             pool = [k for k, v in JOKER_CATALOGUE.items()
@@ -271,8 +348,15 @@ def random_joker_key(
             if v["rarity"] == rarity and k not in BANNED_JOKERS]
     if not pool:
         return "j_joker"
-    draw = rng.node(node_joker(_JOKER_NODE_RARITY[rarity], source, ante))
-    return draw.choice(pool)
+    jnode = node_joker(_JOKER_NODE_RARITY[rarity], source, ante)
+    if game is None or _showman_owned(game):
+        # Showman lifts duplicate suppression entirely — even within-pack
+        # `exclude` locks are bypassed (real game).
+        return rng.node(jnode).choice(pool)
+    locked = _possessed_keys(game)
+    if exclude:
+        locked = locked | set(exclude)
+    return _draw_excluding(rng, jnode, pool, locked)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -288,6 +372,7 @@ class ShopItem:
     edition: str = "None"    # for jokers
     sold: bool = False
     card: Optional["Card"] = None   # Magic Trick: the offered playing card
+    sell_bonus: int = 0      # Gift Card: +$1 sell value on shop cards (per round)
 
     def discounted_price(self, discount_frac: float) -> int:
         return max(1, int(self.price * (1 - discount_frac)))
@@ -311,27 +396,50 @@ BOOSTER_CATALOGUE = {
     "p_standard_jumbo":("Jumbo Standard",  6, "card",     5),
     "p_buffoon":       ("Buffoon Pack",    4, "joker",    2),
     "p_buffoon_jumbo": ("Jumbo Buffoon",   6, "joker",    4),
-    # Tag-only Mega packs (Buffoon/Standard Tags). Kept OUT of the shop pool
-    # (SHOP_PACK_POOL below) so the shop booster distribution is unchanged.
-    "p_buffoon_mega":  ("Mega Buffoon",   10, "joker",    5),
+    # All Mega packs cost $8; Mega Buffoon holds 4 jokers (choose 2) — the
+    # real 2/4/4 (Normal/Jumbo/Mega) Buffoon progression (§15). The Buffoon /
+    # Standard Tags grant the Mega packs for free, but they are also
+    # shop-legal in the real game (see PACK_WEIGHTS below).
+    "p_buffoon_mega":  ("Mega Buffoon",    8, "joker",    4),
     "p_standard_mega": ("Mega Standard",   8, "card",     5),
 }
 
-# Booster packs that can appear in the shop (real-game pool minus the
-# tag-only Mega Buffoon/Standard, which enter only via their Tags).
-SHOP_PACK_POOL = [
-    k for k in BOOSTER_CATALOGUE
-    if k not in ("p_buffoon_mega", "p_standard_mega")
-]
+# Real Booster-Pack type/size rates (wiki Booster Packs page; balatro-seed
+# pools.rs PACKS — the 15 entries sum to 22.42, the table's RETRY sentinel).
+# Every size of every type is shop-legal in the real game, incl. the Mega
+# Buffoon/Standard (weights 0.15 / 0.5). Pool order matches balatro-seed's
+# PACKS layout (Arcana, Celestial, Standard, Buffoon, Spectral × Normal /
+# Jumbo / Mega) so the weighted draw stays byte-aligned with the real game.
+PACK_WEIGHTS: dict[str, float] = {
+    "p_arcana": 4.0, "p_arcana_jumbo": 2.0, "p_arcana_mega": 0.5,
+    "p_celestial": 4.0, "p_celestial_jumbo": 2.0, "p_celestial_mega": 0.5,
+    "p_standard": 4.0, "p_standard_jumbo": 2.0, "p_standard_mega": 0.5,
+    "p_buffoon": 1.2, "p_buffoon_jumbo": 0.6, "p_buffoon_mega": 0.15,
+    "p_spectral": 0.6, "p_spectral_jumbo": 0.3, "p_spectral_mega": 0.07,
+}
+SHOP_PACK_POOL = list(PACK_WEIGHTS)
+SHOP_PACK_WEIGHTS = [PACK_WEIGHTS[k] for k in SHOP_PACK_POOL]
 
-def generate_shop(game: "BalatroGame") -> list[ShopItem]:
+def generate_shop(game: "BalatroGame", restock_voucher: bool = False) -> list[ShopItem]:
     """Generate a full shop for the current ante/round.
 
     Consumes one-shot skip-blind Tag shop modifiers (Coupon / D6 / Uncommon /
     Rare / Foil-Holo-Poly-Negative / Voucher Tags) — they apply to the first
     shop generated after the skipped blind.
+
+    restock_voucher: roll a fresh voucher for the shop slot. The real game's
+    Voucher persists across non-Boss blinds and rerolls — it restocks only
+    after the Boss Blind is defeated (or the run's first shop, when no voucher
+    has been offered yet). Buying the offered voucher empties the slot until
+    the next restock.
     """
     items: list[ShopItem] = []
+
+    # Gift Card (j_gift): "Adds $1 to the sell value of every Joker and
+    # Consumable card in the shop at the end of the round" — the round-end
+    # on_round_end hook parks pending_shop_buff; consume it here and add +$1
+    # sell value to this shop's jokers (consumable sell values are not modeled).
+    shop_buff = any(j.state.pop("pending_shop_buff", False) for j in game.jokers)
 
     # Consume pending tag modifiers (one-shot, apply to THIS shop only)
     coupon = game.pending_coupon
@@ -346,9 +454,11 @@ def generate_shop(game: "BalatroGame") -> list[ShopItem]:
         game.pending_reroll_free = False
         game.reroll_cost = 0   # D6 Tag: rerolls in the next shop start at $0
 
-    # Hone / Glow Up: 2x / 4x shop edition odds (Polychrome 3x / 7x)
-    edition_boost = (4 if "v_glow_up" in game.vouchers
-                     else 2 if "v_hone" in game.vouchers else 1)
+    # Hone / Glow Up: 2x / 4x edition odds (Polychrome's effective 3x / 7x
+    # comes out of the poll thresholds — see _roll_edition). Applied to shop
+    # jokers AND Buffoon-pack jokers alike (real game: next_joker reads
+    # G.GAME.edition_rate for every joker regardless of source).
+    edition_boost = _edition_boost(game)
 
     # cdt-polled random slots (real game: G.GAME.shop.joker_max — 2 base, +1
     # per Overstock/Overstock Plus). Each slot independently rolls the cdt{ante}
@@ -358,29 +468,62 @@ def generate_shop(game: "BalatroGame") -> list[ShopItem]:
         if i == 0 and free_rarity:
             # Uncommon/Rare Tag: the first slot is a free Joker of that rarity
             key = random_joker_key(rarity=free_rarity, rng=game.rng,
-                                   ante=game.ante, source="sho")
+                                   ante=game.ante, source="sho", game=game)
             info = JOKER_CATALOGUE.get(key, {})
-            items.append(ShopItem("joker", key, info.get("name", key), 0))
+            items.append(ShopItem("joker", key, info.get("name", key), 0,
+                                  sell_bonus=1 if shop_buff else 0))
         elif i == 0 and free_edition:
             # Foil/Holographic/Polychrome/Negative Tag: free Joker with the edition
-            key = random_joker_key(rng=game.rng, ante=game.ante, source="sho")
+            key = random_joker_key(rng=game.rng, ante=game.ante, source="sho", game=game)
             info = JOKER_CATALOGUE.get(key, {})
-            items.append(ShopItem("joker", key, info.get("name", key), 0, free_edition))
+            items.append(ShopItem("joker", key, info.get("name", key), 0, free_edition,
+                                  sell_bonus=1 if shop_buff else 0))
         else:
-            items.append(_random_shop_item(game, edition_boost))
+            item = _random_shop_item(game, edition_boost)
+            if item.kind in ("joker", "tarot", "planet", "spectral") and shop_buff:
+                item.sell_bonus = 1
+            items.append(item)
 
-    # Voucher slot (1; +1 with the Voucher Tag)
-    for _ in range(1 + (1 if voucher_extra else 0)):
-        voucher_key = _random_voucher(game)
-        if voucher_key:
+    # Voucher slot (1; +1 with the Voucher Tag). Real game (§17 + wiki): the
+    # Voucher offered in the shop persists across non-Boss blinds and rerolls
+    # (the same card stays until bought); it restocks only after the Boss Blind
+    # is defeated. `restock_voucher` (boss beaten) or `offered_voucher is None`
+    # (run's first shop) triggers a fresh roll; the Voucher Tag's extra slot is
+    # always a fresh draw.
+    # offered_voucher states: None = nothing offered yet (roll on first shop),
+    # key = currently on offer, "" = pool exhausted / slot intentionally empty
+    # (bought, or all 32 vouchers owned) — "" keeps non-Boss shops draw-free.
+    if restock_voucher or game.offered_voucher is None:
+        game.offered_voucher = _random_voucher(game) or ""
+    if game.offered_voucher and game.offered_voucher not in game.vouchers:
+        items.append(ShopItem(
+            "voucher", game.offered_voucher,
+            VOUCHER_NAME.get(game.offered_voucher, game.offered_voucher), 10
+        ))
+    if voucher_extra:
+        extra = _random_voucher(
+            game,
+            exclude={game.offered_voucher} if game.offered_voucher else None,
+        )
+        if extra and extra not in game.vouchers:
             items.append(ShopItem(
-                "voucher", voucher_key,
-                VOUCHER_NAME.get(voucher_key, voucher_key), 10
+                "voucher", extra,
+                VOUCHER_NAME.get(extra, extra), 10
             ))
 
-    # Booster pack slots (2)
-    for _ in range(2):
-        bkey = game.rng.node(node_shop_pack(game.ante)).choice(SHOP_PACK_POOL)
+    # Booster pack slots (2). The first pack of a run is always a normal
+    # Buffoon Pack (real game: G.GAME.first_shop_buffoon in get_pack); it
+    # consumes no seeded pack-generic draw (the real game uses unseeded
+    # math.random for the variant), so the second slot gets draw #1. Pack
+    # type/size is a weighted draw on shop_pack{ante} using the real rates
+    # (PACK_WEIGHTS — balatro-seed's randweightedchoice on pools::PACKS).
+    for i in range(2):
+        if i == 0 and not game.first_shop_buffoon:
+            game.first_shop_buffoon = True
+            bkey = "p_buffoon"
+        else:
+            bkey = game.rng.node(node_shop_pack(game.ante)).choices(
+                SHOP_PACK_POOL, SHOP_PACK_WEIGHTS)[0]
         bname, bprice, _, _ = BOOSTER_CATALOGUE[bkey]
         items.append(ShopItem("booster", bkey, bname, bprice))
 
@@ -421,7 +564,7 @@ def _random_shop_item(game: "BalatroGame", edition_boost: float = 1.0) -> ShopIt
     kind = game.rng.node(node_cdt(game.ante)).choices(pool, weights)[0]
     ante = game.ante
     if kind == "joker":
-        key = random_joker_key(rng=game.rng, ante=ante, source="sho")
+        key = random_joker_key(rng=game.rng, ante=ante, source="sho", game=game)
         info = JOKER_CATALOGUE.get(key, {})
         edition = _roll_edition(
             game.rng.node(node_edition("sho", ante)), edition_boost)
@@ -430,17 +573,22 @@ def _random_shop_item(game: "BalatroGame", edition_boost: float = 1.0) -> ShopIt
             price += _edition_markup(edition)
         return ShopItem("joker", key, info.get("name", key), price, edition)
     if kind == "tarot":
-        key = game.rng.node(node_tarot("sho", ante)).choice(ALL_TAROTS)
+        key = _draw_excluding(game.rng, node_tarot("sho", ante), ALL_TAROTS,
+                              _locked_pool(game))
         return ShopItem("tarot", key, TAROT_NAME.get(key, key), 3)
     if kind == "planet":
-        key = game.rng.node(node_planet("sho", ante)).choice(ALL_PLANETS)
-        return ShopItem("planet", key, PLANET_NAME.get(key, key), 3)
+        key = _draw_excluding(game.rng, node_planet("sho", ante), ALL_PLANETS,
+                              _locked_pool(game))
+        # Astronomer (j_astronomer): "All Planet cards in the shop cost $0"
+        price = 0 if any(j.has_flag("free_planets") for j in game.jokers) else 3
+        return ShopItem("planet", key, PLANET_NAME.get(key, key), price)
     return _shop_card_item(game)
 
 
 def _shop_card_item(game: "BalatroGame") -> ShopItem:
-    """A playing-card shop item ($4, Magic Trick). Illusion adds an
-    enhancement and/or edition (seals are bugged off in the real game)."""
+    """A playing-card shop item ($1, Magic Trick). Illusion adds an
+    enhancement (40%) and/or edition (20% — Foil/Holographic/Polychrome only,
+    never Negative; seals are bugged off in the real game)."""
     from .card import Card
     from .constants import RANK_NAMES, SUITS
 
@@ -450,21 +598,37 @@ def _shop_card_item(game: "BalatroGame") -> ShopItem:
     enhancement = edition = "None"
     if "v_illusion" in game.vouchers:
         inode = game.rng.node(ILLUSION_NODE)
-        if inode.chance(0.5):
+        # Real game (UI_definitions.lua create_card_for_shop): Enhancement 40%
+        # (pseudorandom('illusion') > 0.6), Edition 20% (pseudorandom > 0.8).
+        # Edition split matches the real poll: Foil 50% / Holographic 35% /
+        # Polychrome 15%. Negative never appears on playing cards.
+        if inode.chance(0.4):
             enhancement = inode.choice([e for e in ENHANCEMENTS if e != "None"])
-        if inode.chance(0.5):
-            edition = inode.choice([e for e in EDITIONS if e != "None"])
+        if inode.chance(0.2):
+            r = inode.random()
+            if r > 0.85:
+                edition = "Polychrome"
+            elif r > 0.5:
+                edition = "Holographic"
+            else:
+                edition = "Foil"
     card = Card(rank, suit, enhancement=enhancement, edition=edition)
     name = f"{RANK_NAMES[rank]} of {suit}"
-    return ShopItem("card", f"card_{rank}_{suit}", name, 4, card=card)
+    return ShopItem("card", f"card_{rank}_{suit}", name, 1, card=card)
 
 
-def _random_voucher(game: "BalatroGame") -> Optional[str]:
+def _random_voucher(game: "BalatroGame",
+                    exclude: Optional[set] = None) -> Optional[str]:
     """Pick a voucher for the shop slot. Upgraded vouchers only appear once
-    their base pair is owned (real-game pair-unlock rule)."""
+    their base pair is owned (real-game pair-unlock rule).
+
+    exclude: extra keys to skip (the Voucher Tag's extra slot must not offer
+    the same voucher as the persistent slot)."""
     available = []
     for v in ALL_VOUCHERS:
         if v in game.vouchers:
+            continue
+        if exclude and v in exclude:
             continue
         base = VOUCHER_BASE.get(v)
         if base is not None and base not in game.vouchers:
@@ -475,6 +639,16 @@ def _random_voucher(game: "BalatroGame") -> Optional[str]:
         # is purchased; the sim just leaves the voucher slot empty.
         return None
     return game.rng.node(node_voucher(game.ante)).choice(available)
+
+
+def _edition_boost(game: "BalatroGame") -> int:
+    """Hone / Glow Up edition-rate multiplier (2x / 4x). Polychrome's effective
+    3x / 7x boost falls out of the poll thresholds (see _roll_edition)."""
+    if "v_glow_up" in game.vouchers:
+        return 4
+    if "v_hone" in game.vouchers:
+        return 2
+    return 1
 
 
 def _roll_edition(node=None, boost: float = 1.0) -> str:
@@ -518,16 +692,19 @@ def buy_item(game: "BalatroGame", item: ShopItem) -> bool:
         return False
 
     effective_price = item.discounted_price(game.shop_discount)
-    if game.dollars < effective_price:
+    # Credit Card: "Go up to -$20 in debt" — purchases are allowed even when
+    # unaffordable, down to a -$20 balance (capability flag, R3).
+    credit = any(j.has_flag("debt") for j in game.jokers)
+    if game.dollars - effective_price < (-20 if credit else 0):
         return False
 
     if item.kind == "joker":
-        if len(game.jokers) >= game.joker_slots:
+        if len(game.jokers) >= game.joker_slots and item.edition != "Negative":
             return False
-        from .jokers.base import JokerInstance
-        j = JokerInstance(item.key, item.edition, game=game)
-        j.state["sell_value"] = max(1, effective_price // 2)
-        game.jokers.append(j)
+        j = game.grant_joker(item.key, item.edition)
+        if j is None:
+            return False
+        j.state["sell_value"] = max(1, effective_price // 2) + item.sell_bonus
         game.dollars -= effective_price
         item.sold = True
         return True
@@ -553,6 +730,9 @@ def buy_item(game: "BalatroGame", item: ShopItem) -> bool:
         if item.card is None:
             return False
         game.deck.insert(0, item.card)
+        # Hologram: X0.25 per card added to the run (M1 B2 on_card_added)
+        for j in game.jokers:
+            j.fire("on_card_added", None)
         game.dollars -= effective_price
         item.sold = True
         return True
@@ -575,16 +755,31 @@ def sell_joker(game: "BalatroGame", joker_idx: int) -> int:
     j = game.jokers.pop(joker_idx)
     sell_value = j.state.get("sell_value", 2)
     game.dollars += sell_value
-    # Fire on_sell hooks
-    effect = _get_effect(j.key)
-    if effect and hasattr(effect, "on_sell"):
-        effect.on_sell(j, None)
+    # Fire on_sell hooks on the sold joker itself (Luchador, Invisible Joker,
+    # Diet Cola — they need the sold instance's own state)
+    j.fire("on_sell", None)
+    # Fire on_other_sold on every REMAINING joker: Campfire grows on ANY card
+    # sold (real game). Dedicated hook so unrelated on_sell effects never fire
+    # for someone else's sale.
+    for other in game.jokers:
+        other.fire("on_other_sold", None)
     return sell_value
 
 
 def reroll_shop(game: "BalatroGame") -> bool:
-    """Pay for a reroll. Returns True on success."""
+    """Pay for a reroll. Returns True on success.
+
+    Real game: rerolling replaces the Jokers/Tarots/Planets but does NOT
+    restock Booster Packs or the Voucher (reference §17) — those persist until
+    the next shop entry / next Boss Blind respectively.
+    """
     cost = max(0, game.reroll_cost - game.reroll_discount)
+    # Chaos the Clown (j_chaos): "First reroll in the shop is free" — its
+    # on_shop_enter parks free_reroll on the joker; consume it here.
+    for j in game.jokers:
+        if j.state.pop("free_reroll", False):
+            cost = 0
+            break
     if game.free_rerolls_remaining > 0:
         game.free_rerolls_remaining -= 1
         cost = 0
@@ -592,7 +787,13 @@ def reroll_shop(game: "BalatroGame") -> bool:
         return False
     game.dollars -= cost
     game.reroll_cost += 1
-    game.current_shop = generate_shop(game)
+    # Flash Card (j_flash): +2 Mult permanently per shop reroll used (M1 B2
+    # on_reroll hook dispatch). Fires whether or not the reroll is free.
+    for j in game.jokers:
+        j.fire("on_reroll", None)
+    # Keep the currently-offered voucher (restock_voucher=False): rerolls never
+    # restock the Voucher slot.
+    game.current_shop = generate_shop(game, restock_voucher=False)
     return True
 
 
@@ -600,14 +801,88 @@ def reroll_shop(game: "BalatroGame") -> bool:
 # BOOSTER PACK OPENING
 # ════════════════════════════════════════════════════════════════════════════
 
+# Real Standard-Pack pools (balatro-seed pools.rs, order-matched so the
+# frontsta{ante} draw stays byte-aligned with the real game): the 8 real
+# enhancements (constants.ENHANCEMENTS sans "None" — same order as the real
+# pool), and the 52-card base pool in the real CARDS ordering — suit blocks
+# Clubs/Diamonds/Hearts/Spades; ranks 2-9, A, J, K, Q, T. Sim rank ints:
+# A=14, J=11, K=13, Q=12, T=10.
+_STD_ENHANCEMENTS = [e for e in ENHANCEMENTS if e != "None"]
+_STD_CARD_POOL = [
+    (rank, suit)
+    for suit in ("Clubs", "Diamonds", "Hearts", "Spades")
+    for rank in (2, 3, 4, 5, 6, 7, 8, 9, 14, 11, 13, 12, 10)
+]
+
+
+def _roll_standard_card(game: "BalatroGame") -> "Card":
+    """Generate one Standard-Pack playing card with the real modifier odds.
+
+    Mirrors the real game's nextStandardCard roll sequence (balatro-seed
+    draws.rs::next_standard_card), per card:
+      1. enhancement poll (stdset{ante}): > 0.6 → 40% enhanced, type drawn
+         from the 8 real enhancements (Enhancedsta{ante});
+      2. base card (frontsta{ante}) — one draw from the 52-card pool, so
+         duplicates within a pack are expected (real behavior);
+      3. edition poll (standard_edition{ante}): Foil 4% / Holographic 2.8% /
+         Polychrome 1.2% — NOT boosted by Hone/Glow Up (only next_joker
+         reads G.GAME.edition_rate);
+      4. seal poll (stdseal{ante}): > 0.8 → 20% sealed, type evenly split
+         across the 4 variants (stdsealtype{ante}).
+    """
+    from .card import Card
+
+    enhancement = "None"
+    if game.rng.node(node_stdset(game.ante)).random() > 0.6:   # 40%
+        enhancement = game.rng.node(
+            node_std_enhanced(game.ante)).choice(_STD_ENHANCEMENTS)
+
+    rank, suit = game.rng.node(node_std_front(game.ante)).choice(_STD_CARD_POOL)
+
+    r = game.rng.node(node_std_edition(game.ante)).random()
+    edition = ("Polychrome" if r > 0.988 else
+               "Holographic" if r > 0.96 else
+               "Foil" if r > 0.92 else "None")
+
+    seal = "None"
+    if game.rng.node(node_std_seal(game.ante)).random() > 0.8:   # 20%
+        sr = game.rng.node(node_std_seal_type(game.ante)).random()
+        seal = ("Red" if sr > 0.75 else
+                "Blue" if sr > 0.5 else
+                "Gold" if sr > 0.25 else "Purple")
+
+    return Card(rank, suit, enhancement=enhancement, edition=edition,
+                seal=seal)
+
+
 def _open_booster(game: "BalatroGame", booster_key: str):
     """Open a booster pack — add options to game.booster_choices for the agent to pick."""
     info = BOOSTER_CATALOGUE.get(booster_key)
     if not info:
         return
     _, _, content_kind, n_cards = info
+    # Hallucination (j_hallucination): 1-in-2 chance of a Tarot when any
+    # Booster Pack is opened (M1 B2 on_booster_opened dispatch). The hook
+    # parks the reward on its own state (no ScoreContext exists here); collect
+    # and grant it to the consumable area.
+    for j in game.jokers:
+        j.fire("on_booster_opened", None)
+        game._grant_pending(j.state.pop("pending_consumables", []))
     picks = 2 if "mega" in booster_key else 1
+    # Hone / Glow Up boost Buffoon-pack joker editions identically to shop
+    # jokers (real game: next_joker reads G.GAME.edition_rate regardless of
+    # source — see _edition_boost).
+    edition_boost = _edition_boost(game)
 
+    # Pack contents honor the same duplicate-suppression rule as the shop:
+    # cards the player possesses are excluded (unless Showman is owned), and
+    # each card drawn into this pack is temporarily locked so a pack never
+    # repeats one — the real game locks each drawn card until the pack is fully
+    # generated (balatro-seed draws.rs::next_*_pack). Standard packs are exempt
+    # (playing-card duplicates are expected, matching the real game).
+    showman = _showman_owned(game)
+    locked = _locked_pool(game)   # possession locks; empty when Showman is owned
+    inpack = set()                # cards drawn into this pack — also bypassed by Showman
     choices = []
     if content_kind == "tarot":
         # Omen Globe: 20% chance each Arcana-Pack Tarot is replaced by a
@@ -615,10 +890,14 @@ def _open_booster(game: "BalatroGame", booster_key: str):
         omen = "v_omen_globe" in game.vouchers
         omen_node = game.rng.node(OMEN_NODE)
         for _ in range(n_cards):
-            key = game.rng.node(node_tarot("ar1", game.ante)).choice(ALL_TAROTS)
+            excl = locked if showman else (locked | inpack)
+            key = _draw_excluding(game.rng, node_tarot("ar1", game.ante),
+                                  ALL_TAROTS, excl)
             if omen and omen_node.chance(0.2):
-                key = game.rng.node(node_spectral("spe", game.ante)).choice(ALL_SPECTRALS)
+                key = _draw_excluding(game.rng, node_spectral("spe", game.ante),
+                                      ALL_SPECTRALS, excl)
             choices.append(key)
+            inpack.add(key)
     elif content_kind == "planet":
         # Telescope: Celestial Packs always contain the Planet card for the
         # most-played hand (tie-break: the higher-tier hand, real-game rule).
@@ -631,24 +910,40 @@ def _open_booster(game: "BalatroGame", booster_key: str):
         for i in range(n_cards):
             if forced is not None and i == 0:
                 choices.append(forced)
+                inpack.add(forced)
                 continue
-            choices.append(game.rng.node(node_planet("pl1", game.ante)).choice(ALL_PLANETS))
+            key = _draw_excluding(game.rng, node_planet("pl1", game.ante),
+                                  ALL_PLANETS, locked if showman else (locked | inpack))
+            choices.append(key)
+            inpack.add(key)
     elif content_kind == "spectral":
-        choices = [game.rng.node(node_spectral("spe", game.ante)).choice(ALL_SPECTRALS)
-                   for _ in range(n_cards)]
+        for _ in range(n_cards):
+            key = _draw_excluding(game.rng, node_spectral("spe", game.ante),
+                                  ALL_SPECTRALS, locked if showman else (locked | inpack))
+            choices.append(key)
+            inpack.add(key)
     elif content_kind == "joker":
-        choices = [random_joker_key(rng=game.rng, ante=game.ante, source="buf")
-                   for _ in range(n_cards)]
+        # Real game (functions.hpp next_joker, mirrored by balatro-seed):
+        # Buffoon-pack jokers roll the SAME edition poll as shop jokers, on
+        # the edibuf{ante} node, with Hone/Glow Up boosting it identically.
+        # Choices carry the edition as ("joker", key, edition) tuples.
+        ednode = game.rng.node(node_edition("buf", game.ante))
+        for _ in range(n_cards):
+            key = random_joker_key(rng=game.rng, ante=game.ante,
+                                   source="buf", game=game,
+                                   exclude={c[1] for c in choices})
+            choices.append(("joker", key, _roll_edition(ednode, edition_boost)))
     elif content_kind == "card":
-        from .card import make_standard_deck
-        deck = make_standard_deck()
-        game.rng.node(node_stdset(game.ante)).shuffle(deck)
-        choices = [("card", deck[i]) for i in range(min(n_cards, len(deck)))]
+        # Real game (functions.hpp::nextStandardCard, mirrored by balatro-seed
+        # draws.rs::next_standard_card): each Standard-Pack card rolls an
+        # enhancement (40%), a base card, an edition (Foil 4% / Holographic
+        # 2.8% / Polychrome 1.2%) and a seal (20%). Unlike every other pack,
+        # drawn cards are never locked — duplicates within one Standard Pack
+        # are expected. Choices stay the ("card", card) tuple convention.
+        choices = [("card", _roll_standard_card(game)) for _ in range(n_cards)]
 
     game.booster_choices = choices
     game.booster_picks_remaining = picks
 
 
-def _get_effect(key: str):
-    from .jokers.base import JOKER_REGISTRY
-    return JOKER_REGISTRY.get(key)
+

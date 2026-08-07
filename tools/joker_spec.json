@@ -1,0 +1,1052 @@
+{
+  "j_8_ball": {
+    "cost": 5,
+    "effect": "1 in 4 chance for each played 8 to create a Tarot card when scored",
+    "name": "8 Ball",
+    "timing": "On Scored",
+    "type": "Effect"
+  },
+  "j_abstract": {
+    "cost": 4,
+    "effect": "+3 Mult for each Joker card",
+    "name": "Abstract Joker",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_acrobat": {
+    "cost": 6,
+    "effect": "X3 Mult on final hand of round",
+    "name": "Acrobat",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_ancient": {
+    "cost": 8,
+    "effect": "Each played card with [suit] gives X1.5 Mult when scored, suit changes at end of round",
+    "name": "Ancient Joker",
+    "timing": "On Scored",
+    "type": "xMult"
+  },
+  "j_arrowhead": {
+    "cost": 7,
+    "effect": "Played cards with Spade suit give +50 Chips when scored",
+    "name": "Arrowhead",
+    "timing": "On Scored",
+    "type": "Chips"
+  },
+  "j_astronomer": {
+    "cost": 8,
+    "effect": "All Planet cards and Celestial Packs in the shop are free",
+    "name": "Astronomer",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_banner": {
+    "cost": 5,
+    "effect": "+30 Chips for each remaining discard",
+    "name": "Banner",
+    "timing": "Independent",
+    "type": "Chips"
+  },
+  "j_baron": {
+    "cost": 8,
+    "effect": "Each King held in hand gives X1.5 Mult",
+    "name": "Baron",
+    "timing": "On Held",
+    "type": "xMult"
+  },
+  "j_baseball": {
+    "cost": 8,
+    "effect": "Uncommon Jokers each give X1.5 Mult",
+    "name": "Baseball Card",
+    "timing": "On Other Jokers",
+    "type": "xMult"
+  },
+  "j_blackboard": {
+    "cost": 6,
+    "effect": "X3 Mult if all cards held in hand are Spades or Clubs",
+    "name": "Blackboard",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_bloodstone": {
+    "cost": 7,
+    "effect": "1 in 2 chance for played cards with Heart suit to give X1.5 Mult when scored",
+    "name": "Bloodstone",
+    "timing": "On Scored",
+    "type": "xMult"
+  },
+  "j_blue_joker": {
+    "cost": 5,
+    "effect": "+2 Chips for each remaining card in deck",
+    "name": "Blue Joker",
+    "timing": "Independent",
+    "type": "Chips"
+  },
+  "j_blueprint": {
+    "cost": 10,
+    "effect": "Copies ability of Joker to the right",
+    "name": "Blueprint",
+    "timing": "On Other Jokers*",
+    "type": "Effect"
+  },
+  "j_bootstraps": {
+    "cost": 7,
+    "effect": "+2 Mult for every $5 you have",
+    "name": "Bootstraps",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_brainstorm": {
+    "cost": 10,
+    "effect": "Copies the ability of leftmost Joker",
+    "name": "Brainstorm",
+    "timing": "On Other Jokers*",
+    "type": "Effect"
+  },
+  "j_bull": {
+    "cost": 6,
+    "effect": "+2 Chips for each $1 you have",
+    "name": "Bull",
+    "timing": "Independent",
+    "type": "Chips"
+  },
+  "j_burglar": {
+    "cost": 6,
+    "effect": "When Blind is selected, gain +3 Hands and lose all discards",
+    "name": "Burglar",
+    "timing": "On Blind Select",
+    "type": "Effect"
+  },
+  "j_burnt": {
+    "cost": 8,
+    "effect": "Upgrade the level of the first discarded poker hand each round",
+    "name": "Burnt Joker",
+    "timing": "On Discard",
+    "type": "Effect"
+  },
+  "j_business": {
+    "cost": 4,
+    "effect": "Played face cards have a 1 in 2 chance to give $2 when scored",
+    "name": "Business Card",
+    "timing": "On Scored",
+    "type": "Economy"
+  },
+  "j_caino": {
+    "cost": 20,
+    "effect": "This Joker gains X1 Mult when a face card is destroyed",
+    "name": "Canio",
+    "timing": "Mixed",
+    "type": "xMult"
+  },
+  "j_campfire": {
+    "cost": 9,
+    "effect": "This Joker gains X0.25 Mult for each card sold, resets when Boss Blind is defeated",
+    "name": "Campfire",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_card_sharp": {
+    "cost": 6,
+    "effect": "X3 Mult if played poker hand has already been played this round",
+    "name": "Card Sharp",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_cartomancer": {
+    "cost": 6,
+    "effect": "Create a Tarot card when Blind is selected",
+    "name": "Cartomancer",
+    "timing": "On Blind Select",
+    "type": "Effect"
+  },
+  "j_castle": {
+    "cost": 6,
+    "effect": "This Joker gains +3 Chips per discarded [suit] card, suit changes every round",
+    "name": "Castle",
+    "timing": "Mixed",
+    "type": "Chips"
+  },
+  "j_cavendish": {
+    "cost": 4,
+    "effect": "X3 Mult. 1 in 1000 chance this card is destroyed at the end of round",
+    "name": "Cavendish",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_ceremonial": {
+    "cost": 6,
+    "effect": "When Blind is selected, destroy Joker to the right and permanently add double its sell value to it's Mult",
+    "name": "Ceremonial Dagger",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_certificate": {
+    "cost": 6,
+    "effect": "When round begins, add a random playing card with a random seal to your hand",
+    "name": "Certificate",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_chaos": {
+    "cost": 4,
+    "effect": "1 free Reroll per shop",
+    "name": "Chaos the Clown",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_chicot": {
+    "cost": 20,
+    "effect": "Disables effect of every Boss Blind",
+    "name": "Chicot",
+    "timing": "On Blind Select",
+    "type": "Effect"
+  },
+  "j_clever": {
+    "cost": 4,
+    "effect": "+80 Chips if played hand contains a Two Pair",
+    "name": "Clever Joker",
+    "timing": "Independent",
+    "type": "Chips"
+  },
+  "j_cloud_9": {
+    "cost": 7,
+    "effect": "Earn $1 for each 9 in your full deck at end of round",
+    "name": "Cloud 9",
+    "timing": "Passive",
+    "type": "Economy"
+  },
+  "j_constellation": {
+    "cost": 6,
+    "effect": "This Joker gains X0.1 Mult every time a Planet card is used",
+    "name": "Constellation",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_crafty": {
+    "cost": 4,
+    "effect": "+80 Chips if played hand contains a Flush",
+    "name": "Crafty Joker",
+    "timing": "Independent",
+    "type": "Chips"
+  },
+  "j_crazy": {
+    "cost": 4,
+    "effect": "+12 Mult if played hand contains a Straight",
+    "name": "Crazy Joker",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_credit_card": {
+    "cost": 1,
+    "effect": "Go up to -$20 in debt",
+    "name": "Credit Card",
+    "timing": "Passive",
+    "type": "Economy"
+  },
+  "j_delayed_grat": {
+    "cost": 4,
+    "effect": "Earn $2 per discard if no discards are used by end of the round",
+    "name": "Delayed Gratification",
+    "timing": "Passive",
+    "type": "Economy"
+  },
+  "j_devious": {
+    "cost": 4,
+    "effect": "+100 Chips if played hand contains a Straight",
+    "name": "Devious Joker",
+    "timing": "Independent",
+    "type": "Chips"
+  },
+  "j_diet_cola": {
+    "cost": 6,
+    "effect": "Sell this card to create a free Double Tag",
+    "name": "Diet Cola",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_dna": {
+    "cost": 8,
+    "effect": "If first hand of round has only 1 card, add a permanent copy to deck and draw it to hand",
+    "name": "DNA",
+    "timing": "On Played",
+    "type": "Effect"
+  },
+  "j_drivers_license": {
+    "cost": 7,
+    "effect": "X3 Mult if you have at least 16 Enhanced cards in your full deck",
+    "name": "Driver's License",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_droll": {
+    "cost": 4,
+    "effect": "+10 Mult if played hand contains a Flush",
+    "name": "Droll Joker",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_drunkard": {
+    "cost": 4,
+    "effect": "+1 discard each round",
+    "name": "Drunkard",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_duo": {
+    "cost": 8,
+    "effect": "X2 Mult if played hand contains a Pair",
+    "name": "The Duo",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_dusk": {
+    "cost": 5,
+    "effect": "Retrigger all played cards in final hand of the round",
+    "name": "Dusk",
+    "timing": "On Scored",
+    "type": "Retrigger"
+  },
+  "j_egg": {
+    "cost": 4,
+    "effect": "Gains $3 of sell value at end of round",
+    "name": "Egg",
+    "timing": "Passive",
+    "type": "Economy"
+  },
+  "j_erosion": {
+    "cost": 6,
+    "effect": "+4 Mult for each card below the deck's starting size in your full deck",
+    "name": "Erosion",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_even_steven": {
+    "cost": 4,
+    "effect": "Played cards with even rank give +4 Mult when scored (10, 8, 6, 4, 2)",
+    "name": "Even Steven",
+    "timing": "On Scored",
+    "type": "+Mult"
+  },
+  "j_faceless": {
+    "cost": 4,
+    "effect": "Earn $5 if 3 or more face cards are discarded at the same time",
+    "name": "Faceless Joker",
+    "timing": "On Discard",
+    "type": "Economy"
+  },
+  "j_family": {
+    "cost": 8,
+    "effect": "X4 Mult if played hand contains a Four of a Kind",
+    "name": "The Family",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_fibonacci": {
+    "cost": 8,
+    "effect": "Each played Ace, 2, 3, 5, or 8 gives +8 Mult when scored",
+    "name": "Fibonacci",
+    "timing": "On Scored",
+    "type": "+Mult"
+  },
+  "j_flash": {
+    "cost": 5,
+    "effect": "This Joker gains +2 Mult per reroll in the shop",
+    "name": "Flash Card",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_flower_pot": {
+    "cost": 6,
+    "effect": "X3 Mult if poker hand contains a Diamond card, Club card, Heart card, and Spade card",
+    "name": "Flower Pot",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_fortune_teller": {
+    "cost": 6,
+    "effect": "+1 Mult per Tarot card used this run",
+    "name": "Fortune Teller",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_four_fingers": {
+    "cost": 7,
+    "effect": "All Flushes and Straights can be made with 4 cards",
+    "name": "Four Fingers",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_gift": {
+    "cost": 6,
+    "effect": "Add $1 of sell value to every Joker and Consumable card at end of round",
+    "name": "Gift Card",
+    "timing": "Passive",
+    "type": "Economy"
+  },
+  "j_glass": {
+    "cost": 6,
+    "effect": "This Joker gains X0.75 Mult for every Glass Card that is destroyed",
+    "name": "Glass Joker",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_gluttenous_joker": {
+    "cost": 5,
+    "effect": "Played cards with Club suit give +3 Mult when scored",
+    "name": "Gluttonous Joker",
+    "timing": "On Scored",
+    "type": "+Mult"
+  },
+  "j_golden": {
+    "cost": 6,
+    "effect": "Earn $4 at end of round",
+    "name": "Golden Joker",
+    "timing": "Passive",
+    "type": "Economy"
+  },
+  "j_greedy_joker": {
+    "cost": 5,
+    "effect": "Played cards with Diamond suit give +3 Mult when scored",
+    "name": "Greedy Joker",
+    "timing": "On Scored",
+    "type": "+Mult"
+  },
+  "j_green_joker": {
+    "cost": 4,
+    "effect": "+1 Mult per hand played. -1 Mult per discard",
+    "name": "Green Joker",
+    "timing": "Mixed",
+    "type": "+Mult"
+  },
+  "j_gros_michel": {
+    "cost": 5,
+    "effect": "+15 Mult. 1 in 6 chance this card is destroyed at the end of round.",
+    "name": "Gros Michel",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_hack": {
+    "cost": 6,
+    "effect": "Retrigger each played 2, 3, 4, or 5",
+    "name": "Hack",
+    "timing": "On Scored",
+    "type": "Retrigger"
+  },
+  "j_half": {
+    "cost": 5,
+    "effect": "+20 Mult if played hand contains 3 or fewer cards",
+    "name": "Half Joker",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_hallucination": {
+    "cost": 4,
+    "effect": "1 in 2 chance to create a Tarot card when any Booster Pack is opened",
+    "name": "Hallucination",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_hanging_chad": {
+    "cost": 4,
+    "effect": "Retrigger first played card used in scoring 2 additional times",
+    "name": "Hanging Chad",
+    "timing": "On Scored",
+    "type": "Retrigger"
+  },
+  "j_hiker": {
+    "cost": 5,
+    "effect": "Every played card permanently gains +5 Chips when scored",
+    "name": "Hiker",
+    "timing": "On Scored",
+    "type": "Chips"
+  },
+  "j_hit_the_road": {
+    "cost": 8,
+    "effect": "This Joker gains X0.5 Mult for every Jack discarded this round",
+    "name": "Hit the Road",
+    "timing": "Mixed",
+    "type": "xMult"
+  },
+  "j_hologram": {
+    "cost": 7,
+    "effect": "This Joker gains X0.25 Mult every time a playing card is added to your deck",
+    "name": "Hologram",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_ice_cream": {
+    "cost": 5,
+    "effect": "+100 Chips. -5 Chips for every hand played",
+    "name": "Ice Cream",
+    "timing": "Independent",
+    "type": "Chips"
+  },
+  "j_idol": {
+    "cost": 6,
+    "effect": "Each played [rank] of [suit] gives X2 Mult when scored, card changes every round",
+    "name": "The Idol",
+    "timing": "On Scored",
+    "type": "xMult"
+  },
+  "j_invisible": {
+    "cost": 8,
+    "effect": "After 2 rounds, sell this card to Duplicate a random Joker (Removes Negative from copy)",
+    "name": "Invisible Joker",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_joker": {
+    "cost": 2,
+    "effect": "+4 Mult",
+    "name": "Joker",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_jolly": {
+    "cost": 3,
+    "effect": "+8 Mult if played hand contains a Pair",
+    "name": "Jolly Joker",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_juggler": {
+    "cost": 4,
+    "effect": "+1 hand size",
+    "name": "Juggler",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_loyalty_card": {
+    "cost": 5,
+    "effect": "X4 Mult every 6 hands played",
+    "name": "Loyalty Card",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_luchador": {
+    "cost": 5,
+    "effect": "Sell this card to disable the current Boss Blind",
+    "name": "Luchador",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_lucky_cat": {
+    "cost": 6,
+    "effect": "This Joker gains X0.25 Mult every time a Lucky card successfully triggers",
+    "name": "Lucky Cat",
+    "timing": "Mixed",
+    "type": "xMult"
+  },
+  "j_lusty_joker": {
+    "cost": 5,
+    "effect": "Played cards with Heart suit give +3 Mult when scored",
+    "name": "Lusty Joker",
+    "timing": "On Scored",
+    "type": "+Mult"
+  },
+  "j_mad": {
+    "cost": 4,
+    "effect": "+10 Mult if played hand contains a Two Pair",
+    "name": "Mad Joker",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_madness": {
+    "cost": 7,
+    "effect": "When Small Blind or Big Blind is selected, gain X0.5 Mult and destroy a random Joker",
+    "name": "Madness",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_mail": {
+    "cost": 4,
+    "effect": "Earn $5 for each discarded [rank], rank changes every round",
+    "name": "Mail-In Rebate",
+    "timing": "On Discard",
+    "type": "Economy"
+  },
+  "j_marble": {
+    "cost": 6,
+    "effect": "Adds one Stone card to the deck when Blind is selected",
+    "name": "Marble Joker",
+    "timing": "On Blind Select",
+    "type": "Effect"
+  },
+  "j_matador": {
+    "cost": 7,
+    "effect": "Earn $8 if played hand triggers the Boss Blind ability",
+    "name": "Matador",
+    "timing": "Independent",
+    "type": "Economy"
+  },
+  "j_merry_andy": {
+    "cost": 7,
+    "effect": "+3 discards each round, -1 hand size",
+    "name": "Merry Andy",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_midas_mask": {
+    "cost": 7,
+    "effect": "All played face cards become Gold cards when scored",
+    "name": "Midas Mask",
+    "timing": "On Played",
+    "type": "Effect"
+  },
+  "j_mime": {
+    "cost": 5,
+    "effect": "Retrigger all card held in hand abilities",
+    "name": "Mime",
+    "timing": "On Held",
+    "type": "Retrigger"
+  },
+  "j_misprint": {
+    "cost": 4,
+    "effect": "+0-23 Mult",
+    "name": "Misprint",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_mr_bones": {
+    "cost": 5,
+    "effect": "Prevents Death if chips scored are at least 25% of required chips. self destructs",
+    "name": "Mr. Bones",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_mystic_summit": {
+    "cost": 5,
+    "effect": "+15 Mult when 0 discards remaining",
+    "name": "Mystic Summit",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_obelisk": {
+    "cost": 8,
+    "effect": "This Joker gains X0.2 Mult per consecutive hand played without playing your most played poker hand",
+    "name": "Obelisk",
+    "timing": "Mixed",
+    "type": "xMult"
+  },
+  "j_odd_todd": {
+    "cost": 4,
+    "effect": "Played cards with odd rank give +31 Chips when scored (A, 9, 7, 5, 3)",
+    "name": "Odd Todd",
+    "timing": "On Scored",
+    "type": "Chips"
+  },
+  "j_onyx_agate": {
+    "cost": 7,
+    "effect": "Played cards with Club suit give +7 Mult when scored",
+    "name": "Onyx Agate",
+    "timing": "On Scored",
+    "type": "+Mult"
+  },
+  "j_oops": {
+    "cost": 4,
+    "effect": "Doubles all listed probabilities (ex: 1 in 3 -> 2 in 3)",
+    "name": "Oops! All 6s",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_order": {
+    "cost": 8,
+    "effect": "X3 Mult if played hand contains a Straight",
+    "name": "The Order",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_pareidolia": {
+    "cost": 5,
+    "effect": "All cards are considered face cards",
+    "name": "Pareidolia",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_perkeo": {
+    "cost": 20,
+    "effect": "Creates a Negative copy of 1 random consumable card in your possession at the end of the shop",
+    "name": "Perkeo",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_photograph": {
+    "cost": 5,
+    "effect": "First played face card gives X2 Mult when scored",
+    "name": "Photograph",
+    "timing": "On Scored",
+    "type": "xMult"
+  },
+  "j_popcorn": {
+    "cost": 5,
+    "effect": "+20 Mult. -4 Mult per round played",
+    "name": "Popcorn",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_raised_fist": {
+    "cost": 5,
+    "effect": "Adds double the rank of lowest ranked card held in hand to Mult",
+    "name": "Raised Fist",
+    "timing": "On Held",
+    "type": "+Mult"
+  },
+  "j_ramen": {
+    "cost": 6,
+    "effect": "X2 Mult, loses X0.01 Mult per card discarded",
+    "name": "Ramen",
+    "timing": "Mixed",
+    "type": "xMult"
+  },
+  "j_red_card": {
+    "cost": 5,
+    "effect": "This Joker gains +3 Mult when any Booster Pack is skipped",
+    "name": "Red Card",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_reserved_parking": {
+    "cost": 6,
+    "effect": "Each face card held in hand has a 1 in 2 chance to give $1",
+    "name": "Reserved Parking",
+    "timing": "On Held",
+    "type": "Economy"
+  },
+  "j_ride_the_bus": {
+    "cost": 6,
+    "effect": "This Joker gains +1 Mult per consecutive hand played without a scoring face card",
+    "name": "Ride the Bus",
+    "timing": "Mixed",
+    "type": "+Mult"
+  },
+  "j_riff_raff": {
+    "cost": 6,
+    "effect": "When Blind is selected, create 2 Common Jokers",
+    "name": "Riff-Raff",
+    "timing": "On Blind Select",
+    "type": "Effect"
+  },
+  "j_ring_master": {
+    "cost": 5,
+    "effect": "Joker, Tarot, Planet, and Spectral cards may appear multiple times",
+    "name": "Showman",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_rocket": {
+    "cost": 6,
+    "effect": "Earn $1 at end of round. Payout increases by $2 when Boss Blind is defeated",
+    "name": "Rocket",
+    "timing": "Passive",
+    "type": "Economy"
+  },
+  "j_rough_gem": {
+    "cost": 7,
+    "effect": "Played cards with Diamond suit earn $1 when scored",
+    "name": "Rough Gem",
+    "timing": "On Scored",
+    "type": "Economy"
+  },
+  "j_runner": {
+    "cost": 5,
+    "effect": "Gains +15 Chips if played hand contains a Straight",
+    "name": "Runner",
+    "timing": "Mixed",
+    "type": "Chips"
+  },
+  "j_satellite": {
+    "cost": 6,
+    "effect": "Earn $1 at end of round per unique Planet card used this run",
+    "name": "Satellite",
+    "timing": "Passive",
+    "type": "Economy"
+  },
+  "j_scary_face": {
+    "cost": 4,
+    "effect": "Played face cards give +30 Chips when scored",
+    "name": "Scary Face",
+    "timing": "On Scored",
+    "type": "Chips"
+  },
+  "j_scholar": {
+    "cost": 4,
+    "effect": "Played Aces give +20 Chips and +4 Mult when scored",
+    "name": "Scholar",
+    "timing": "On Scored",
+    "type": "Chips+Mult"
+  },
+  "j_seance": {
+    "cost": 6,
+    "effect": "If poker hand is a Straight Flush, create a random Spectral card",
+    "name": "Seance",
+    "timing": "Independent",
+    "type": "Effect"
+  },
+  "j_seeing_double": {
+    "cost": 6,
+    "effect": "X2 Mult if played hand has a scoring Club card and a scoring card of any other suit",
+    "name": "Seeing Double",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_selzer": {
+    "cost": 6,
+    "effect": "Retrigger all cards played for the next 10 hands",
+    "name": "Seltzer",
+    "timing": "On Scored",
+    "type": "Retrigger"
+  },
+  "j_shoot_the_moon": {
+    "cost": 5,
+    "effect": "Each Queen held in hand gives +13 Mult",
+    "name": "Shoot the Moon",
+    "timing": "On Held",
+    "type": "+Mult"
+  },
+  "j_shortcut": {
+    "cost": 7,
+    "effect": "Allows Straights to be made with gaps of 1 rank (ex: 10 8 6 5 3)",
+    "name": "Shortcut",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_sixth_sense": {
+    "cost": 6,
+    "effect": "If first hand of round is a single 6, destroy it and create a Spectral card",
+    "name": "Sixth Sense",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_sly": {
+    "cost": 3,
+    "effect": "+50 Chips if played hand contains a Pair",
+    "name": "Sly Joker",
+    "timing": "Independent",
+    "type": "Chips"
+  },
+  "j_smeared": {
+    "cost": 7,
+    "effect": "Hearts and Diamonds count as the same suit, Spades and Clubs count as the same suit",
+    "name": "Smeared Joker",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_smiley": {
+    "cost": 4,
+    "effect": "Played face cards give +5 Mult when scored",
+    "name": "Smiley Face",
+    "timing": "On Scored",
+    "type": "+Mult"
+  },
+  "j_sock_and_buskin": {
+    "cost": 6,
+    "effect": "Retrigger all played face cards",
+    "name": "Sock and Buskin",
+    "timing": "On Scored",
+    "type": "Retrigger"
+  },
+  "j_space": {
+    "cost": 5,
+    "effect": "1 in 4 chance to upgrade level of played poker hand",
+    "name": "Space Joker",
+    "timing": "On Played",
+    "type": "Effect"
+  },
+  "j_splash": {
+    "cost": 3,
+    "effect": "Every played card counts in scoring",
+    "name": "Splash",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_square": {
+    "cost": 4,
+    "effect": "This Joker gains +4 Chips if played hand has exactly 4 cards",
+    "name": "Square Joker",
+    "timing": "Mixed",
+    "type": "Chips"
+  },
+  "j_steel_joker": {
+    "cost": 7,
+    "effect": "Gives X0.2 Mult for each Steel Card in your full deck",
+    "name": "Steel Joker",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_stencil": {
+    "cost": 8,
+    "effect": "X1 Mult for each empty Joker slot. Joker Stencil included",
+    "name": "Joker Stencil",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_stone": {
+    "cost": 6,
+    "effect": "Gives +25 Chips for each Stone Card in your full deck",
+    "name": "Stone Joker",
+    "timing": "Independent",
+    "type": "Chips"
+  },
+  "j_stuntman": {
+    "cost": 7,
+    "effect": "+250 Chips, -2 hand size",
+    "name": "Stuntman",
+    "timing": "Independent",
+    "type": "Chips"
+  },
+  "j_supernova": {
+    "cost": 5,
+    "effect": "Adds the number of times poker hand has been played this run to Mult",
+    "name": "Supernova",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_superposition": {
+    "cost": 4,
+    "effect": "Create a Tarot card if poker hand contains an Ace and a Straight",
+    "name": "Superposition",
+    "timing": "Independent",
+    "type": "Effect"
+  },
+  "j_swashbuckler": {
+    "cost": 4,
+    "effect": "Adds the sell value of all other owned Jokers to Mult",
+    "name": "Swashbuckler",
+    "timing": "Independent",
+    "type": "+Mult"
+  },
+  "j_throwback": {
+    "cost": 6,
+    "effect": "X0.25 Mult for each Blind skipped this run",
+    "name": "Throwback",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_ticket": {
+    "cost": 5,
+    "effect": "Played Gold cards earn $4 when scored",
+    "name": "Golden Ticket",
+    "timing": "On Scored",
+    "type": "Economy"
+  },
+  "j_to_the_moon": {
+    "cost": 5,
+    "effect": "Earn an extra $1 of interest for every $5 you have at end of round",
+    "name": "To the Moon",
+    "timing": "Passive",
+    "type": "Economy"
+  },
+  "j_todo_list": {
+    "cost": 4,
+    "effect": "Earn $4 if poker hand is a [Poker Hand], poker hand changes at end of round",
+    "name": "To Do List",
+    "timing": "On Played",
+    "type": "Economy"
+  },
+  "j_trading": {
+    "cost": 6,
+    "effect": "If first discard of round has only 1 card, destroy it and earn $3",
+    "name": "Trading Card",
+    "timing": "On Discard",
+    "type": "Economy"
+  },
+  "j_tribe": {
+    "cost": 8,
+    "effect": "X2 Mult if played hand contains a Flush",
+    "name": "The Tribe",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_triboulet": {
+    "cost": 20,
+    "effect": "Played Kings and Queens each give X2 Mult when scored",
+    "name": "Triboulet",
+    "timing": "On Scored",
+    "type": "xMult"
+  },
+  "j_trio": {
+    "cost": 8,
+    "effect": "X3 Mult if played hand contains a Three of a Kind",
+    "name": "The Trio",
+    "timing": "Independent",
+    "type": "xMult"
+  },
+  "j_troubadour": {
+    "cost": 6,
+    "effect": "+2 hand size, -1 hand per round",
+    "name": "Troubadour",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_trousers": {
+    "cost": 6,
+    "effect": "This Joker gains +2 Mult if played hand contains a Two Pair",
+    "name": "Spare Trousers",
+    "timing": "Mixed",
+    "type": "+Mult"
+  },
+  "j_turtle_bean": {
+    "cost": 6,
+    "effect": "+5 hand size, reduces by 1 each round",
+    "name": "Turtle Bean",
+    "timing": "Passive",
+    "type": "Effect"
+  },
+  "j_vagabond": {
+    "cost": 8,
+    "effect": "Create a Tarot card if hand is played with $4 or less",
+    "name": "Vagabond",
+    "timing": "Independent",
+    "type": "Effect"
+  },
+  "j_vampire": {
+    "cost": 7,
+    "effect": "This Joker gains X0.1 Mult per scoring Enhanced card played, removes card Enhancement",
+    "name": "Vampire",
+    "timing": "Mixed",
+    "type": "xMult"
+  },
+  "j_walkie_talkie": {
+    "cost": 4,
+    "effect": "Each played 10 or 4 gives +10 Chips and +4 Mult when scored",
+    "name": "Walkie Talkie",
+    "timing": "On Scored",
+    "type": "Chips+Mult"
+  },
+  "j_wee": {
+    "cost": 8,
+    "effect": "This Joker gains +8 Chips when each played 2 is scored",
+    "name": "Wee Joker",
+    "timing": "Mixed",
+    "type": "Chips"
+  },
+  "j_wily": {
+    "cost": 4,
+    "effect": "+100 Chips if played hand contains a Three of a Kind",
+    "name": "Wily Joker",
+    "timing": "Independent",
+    "type": "Chips"
+  },
+  "j_wrathful_joker": {
+    "cost": 5,
+    "effect": "Played cards with Spade suit give +3 Mult when scored",
+    "name": "Wrathful Joker",
+    "timing": "On Scored",
+    "type": "+Mult"
+  },
+  "j_yorick": {
+    "cost": 20,
+    "effect": "This Joker gains X1 Mult every 23 cards discarded",
+    "name": "Yorick",
+    "timing": "Mixed",
+    "type": "xMult"
+  },
+  "j_zany": {
+    "cost": 4,
+    "effect": "+12 Mult if played hand contains a Three of a Kind",
+    "name": "Zany Joker",
+    "timing": "Independent",
+    "type": "+Mult"
+  }
+}

@@ -178,6 +178,10 @@ class TestFreePackTags:
         if kind == "card":
             assert isinstance(g.booster_choices[0], tuple)
             assert g.booster_choices[0][0] == "card"
+        elif kind == "joker":
+            # Buffoon-pack jokers carry their rolled edition: ("joker", key, edition)
+            assert all(isinstance(c, tuple) and c[0] == "joker" and len(c) == 3
+                       for c in g.booster_choices)
         else:
             assert all(isinstance(c, str) for c in g.booster_choices)
         g.step({"type": "pick_booster", "indices": [0]})

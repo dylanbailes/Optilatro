@@ -367,7 +367,7 @@ class BalatroV7Env(gym.Env):
                         # Luchador: reward if boss blind phase imminent
                         # Diet Cola: always rewarding to sell (free tag)
                         # Invisible Joker: reward if held 2+ rounds
-                        if sold_key == "j_invisible_joker":
+                        if sold_key in ("j_invisible", "j_invisible_joker"):
                             if ante_held >= 2:
                                 reward += R_SELL_SACRIFICIAL_CORRECT
                             else:
@@ -604,7 +604,8 @@ class BalatroV7Env(gym.Env):
             shop = gs.current_shop
             for i, item in enumerate(shop[:7]):
                 if not item.sold and gs.dollars >= item.discounted_price(gs.shop_discount):
-                    if item.kind == "joker" and len(gs.jokers) >= gs.joker_slots:
+                    if item.kind == "joker" and len(gs.jokers) >= gs.joker_slots \
+                            and item.edition != "Negative":
                         pass
                     elif item.kind in ("planet", "tarot", "spectral") and \
                          len(gs.consumable_hand) >= gs.consumable_slots:
@@ -732,7 +733,11 @@ class BalatroV7Env(gym.Env):
                 obs[idx+2] = item.price / 20.0
                 can_afford  = float(gs.dollars >= item.price and not item.sold)
                 obs[idx+3] = can_afford
-                obs[idx+4] = float(len(gs.jokers) < gs.joker_slots) if item.kind == "joker" else 0.0
+                # Negative jokers bypass the slot cap (grant_joker) — the mask
+                # and the obs "has room" feature must mirror that.
+                obs[idx+4] = (float(len(gs.jokers) < gs.joker_slots
+                                    or item.edition == "Negative")
+                              if item.kind == "joker" else 0.0)
                 obs[idx+5] = float(len(gs.consumable_hand) < gs.consumable_slots) if item.kind in ("planet", "tarot", "spectral") else 0.0
             idx += SHOP_FEATURES
 

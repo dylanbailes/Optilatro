@@ -67,5 +67,19 @@ jobs:
       - name: Full suite
         run: python -m pytest tests/ balatro_sim/tests/ -q
 
+      # Joker-layer structural audit (joker-fidelity program): fails on
+      # duplicate registrations (import-order lottery), dead non-canonical
+      # keys, empty stub classes, unresolvable catalogue/spec keys, an effect
+      # class contradicting the reference-doc type column, hook overrides
+      # whose arity diverges from the JokerEffect base (SIG), inst.state
+      # bare-reads without defaults (STATE), or engine-side joker key-scans
+      # instead of capability flags (NOSCAN). The spec (tools/joker_spec.json)
+      # is generated from balatro-mechanics-reference(2).md by
+      # tools/gen_joker_spec.py; behavior is validated by
+      # tests/test_joker_spec.py.
+      - name: Joker-layer static audit
+        working-directory: .
+        run: python tools/audit_jokers_static.py
+
       - name: Seed-exactness gate (cross-process sha256)
         run: python -m pytest tests/test_seed_exactness.py -m ci_gate -v

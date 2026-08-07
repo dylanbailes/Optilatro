@@ -383,8 +383,9 @@ class MultiplayerBalatroEnv:
 
         from .shop import generate_shop
 
-        # Reset to SHOP so they can recover between antes
-        game.current_shop = generate_shop(game)
+        # Reset to SHOP so they can recover between antes. The PvP blind is the
+        # Boss blind, so the Voucher slot restocks (real game §17).
+        game.current_shop = generate_shop(game, restock_voucher=True)
         game.reroll_discount = 0
         game.free_rerolls_remaining = game.free_rerolls_per_round
         game.state = State.SHOP

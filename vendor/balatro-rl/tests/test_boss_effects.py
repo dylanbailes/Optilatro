@@ -83,6 +83,35 @@ class TestLargeBlindScaling:
         blind = _force_boss(g, "bl_hook")
         assert blind.chips_target == BLIND_CHIPS[2][2]
 
+    def test_needle_1x_base_target(self):
+        """The Needle requires 1x base (bl_needle.mult = 1 in game.lua), not
+        the normal boss 2x."""
+        g = BalatroGame(seed=1)
+        g.ante = 2
+        g.blind_idx = 2
+        blind = _force_boss(g, "bl_needle")
+        assert blind.chips_target == BLIND_CHIPS[2][0]
+
+    def test_needle_stays_1x_when_boss_disabled(self):
+        """Unlike The Wall / Violet Vessel (which revert to 2x when boss
+        abilities are disabled), The Needle's 1x requirement is not part of
+        the disableable ability set — it stays 1x (wiki Blinds_and_Antes)."""
+        g = BalatroGame(seed=1)
+        g.ante = 2
+        g.blind_idx = 2
+        g.boss_disabled_override = True
+        blind = _force_boss(g, "bl_needle")
+        assert blind.chips_target == BLIND_CHIPS[2][0]
+
+    def test_wall_reverts_to_2x_when_boss_disabled(self):
+        """Control: The Wall's 4x is an ability — disabling it restores 2x."""
+        g = BalatroGame(seed=1)
+        g.ante = 2
+        g.blind_idx = 2
+        g.boss_disabled_override = True
+        blind = _force_boss(g, "bl_wall")
+        assert blind.chips_target == BLIND_CHIPS[2][2]
+
 
 # ── The Flint (halve base chips AND mult, not final score) ───────────────────
 

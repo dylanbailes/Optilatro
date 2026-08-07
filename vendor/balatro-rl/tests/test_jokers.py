@@ -9,6 +9,9 @@ import random
 import pytest
 
 from balatro_sim.card import Card
+from balatro_sim.game import BalatroGame
+from balatro_sim.consumables import ALL_TAROTS, ALL_SPECTRALS
+from balatro_sim.shop import JOKER_CATALOGUE, sell_joker
 from balatro_sim.jokers.base import JokerInstance, ScoreContext, JOKER_REGISTRY
 from balatro_sim.scoring import score_hand
 
@@ -124,21 +127,23 @@ class TestBasicMultJokers:
 
 class TestXMultJokers:
     def test_the_duo_pair_x2(self):
+        # Canonical key (the old j_the_duo spelling was dead — the shop sold
+        # j_duo, which used to resolve to a wrong +2 additive build in chips.py)
         cards = [Card(10, "Hearts"), Card(10, "Spades")]
-        score_with, _ = _score(cards, ["j_the_duo"])
+        score_with, _ = _score(cards, ["j_duo"])
         score_without, _ = _score(cards, [])
         # x2 mult should roughly double the score
         assert score_with >= score_without * 1.5
 
     def test_the_trio_three_of_kind_x3(self):
         cards = [Card(10, "Hearts"), Card(10, "Spades"), Card(10, "Clubs")]
-        score_with, _ = _score(cards, ["j_the_trio"])
+        score_with, _ = _score(cards, ["j_trio"])
         score_without, _ = _score(cards, [])
         assert score_with >= score_without * 2
 
     def test_the_family_four_of_kind_x4(self):
         cards = [Card(10, s) for s in ["Hearts", "Spades", "Clubs", "Diamonds"]]
-        score_with, _ = _score(cards, ["j_the_family"])
+        score_with, _ = _score(cards, ["j_family"])
         score_without, _ = _score(cards, [])
         assert score_with >= score_without * 3
 
@@ -184,10 +189,10 @@ class TestXMultJokers:
 
 class TestSuitMultJokers:
     @pytest.mark.parametrize("joker_key,suit", [
-        ("j_greedy_mult", "Diamonds"),
-        ("j_lusty_mult", "Hearts"),
-        ("j_wrathful_mult", "Spades"),
-        ("j_gluttonous_mult", "Clubs"),
+        ("j_greedy_joker", "Diamonds"),
+        ("j_lusty_joker", "Hearts"),
+        ("j_wrathful_joker", "Spades"),
+        ("j_gluttonous_joker", "Clubs"),
     ])
     def test_suit_mult_triggers(self, joker_key, suit):
         cards = [Card(10, suit)]
@@ -196,15 +201,14 @@ class TestSuitMultJokers:
         assert score_with > score_without
 
     @pytest.mark.parametrize("joker_key,suit,wrong_suit", [
-        ("j_greedy_mult", "Diamonds", "Spades"),
-        ("j_lusty_mult", "Hearts", "Clubs"),
+        ("j_greedy_joker", "Diamonds", "Spades"),
+        ("j_lusty_joker", "Hearts", "Clubs"),
     ])
     def test_suit_mult_no_trigger_wrong_suit(self, joker_key, suit, wrong_suit):
         cards = [Card(10, wrong_suit)]
         score_with, _ = _score(cards, [joker_key])
-        # The joker uses on_hand_scored which checks suit in scoring_cards
-        # With wrong suit, j_greedy_mult shouldn't add mult
-        # Score should still be higher by flat +4 from base
+        # The joker uses on_score_card which checks suit per scored card
+        # With wrong suit, the joker shouldn't add mult
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -262,8 +266,10 @@ class TestPerCardJokers:
         assert score_with > score_without
 
     def test_wee_joker_on_2(self):
+        # Canonical key (j_wee; the old j_wee_joker alias pointed at a dead
+        # flat +8-per-hand build instead of the permanent-growth real effect)
         cards = [Card(2, "Spades")]
-        score_with, _ = _score(cards, ["j_wee_joker"])
+        score_with, _ = _score(cards, ["j_wee"])
         score_without, _ = _score(cards, [])
         assert score_with > score_without
 
@@ -319,16 +325,17 @@ class TestChipJokers:
     def test_vagabond_creates_tarot_when_broke(self):
         cards = [Card(5, "Spades")]
         jokers = [JokerInstance("j_vagabond")]
-        # Vagabond creates Tarot if $4 or less
+        # Vagabond creates a real random Tarot if $4 or less (M1 B1)
         _, ctx = _score(cards, ["j_vagabond"])
         # Default dollars in _score is 10, so no tarot
-        assert "tarot" not in ctx.pending_consumables
-        # With $4 or less, should create tarot
+        assert ctx.pending_consumables == []
+        # With $4 or less, should create a real random tarot
         ctx2 = _make_ctx(scoring_cards=cards, hand_type="High Card",
                          jokers=[JokerInstance("j_vagabond")], dollars=4)
         effect = JOKER_REGISTRY["j_vagabond"]
         effect.on_hand_scored(jokers[0], ctx2)
-        assert "tarot" in ctx2.pending_consumables
+        assert len(ctx2.pending_consumables) == 1
+        assert ctx2.pending_consumables[0] in ALL_TAROTS
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -606,7 +613,8 @@ class TestConsumableCreatingJokers:
         ctx = _make_ctx(scoring_cards=cards, hand_type="Straight Flush", jokers=[j])
         effect = JOKER_REGISTRY["j_seance"]
         effect.on_hand_scored(j, ctx)
-        assert "spectral" in ctx.pending_consumables
+        assert len(ctx.pending_consumables) == 1
+        assert ctx.pending_consumables[0] in ALL_SPECTRALS
 
     def test_superposition_ace_straight(self):
         cards = [Card(r, "Hearts") for r in [14, 2, 3, 4, 5]]
@@ -615,15 +623,19 @@ class TestConsumableCreatingJokers:
         ctx = _make_ctx(scoring_cards=cards, hand_type="Straight", jokers=[j])
         effect = JOKER_REGISTRY["j_superposition"]
         effect.on_hand_scored(j, ctx)
-        assert "tarot" in ctx.pending_consumables
+        assert len(ctx.pending_consumables) == 1
+        assert ctx.pending_consumables[0] in ALL_TAROTS
 
-    def test_riff_raff_creates_2_jokers(self):
+    def test_riff_raff_parks_two_common_joker_tuples(self):
         j = JokerInstance("j_riff_raff")
         effect = JOKER_REGISTRY["j_riff_raff"]
         ctx = _make_ctx(jokers=[j])
         effect.on_blind_selected(j, ctx)
         pending = j.state.get("pending_consumables", [])
-        assert len(pending) >= 2
+        assert len(pending) == 2
+        for item in pending:
+            assert item[0] == "joker" and item[2] == "None"
+            assert JOKER_CATALOGUE[item[1]]["rarity"] == "Common"
 
     def test_cartomancer_creates_tarot(self):
         j = JokerInstance("j_cartomancer")
@@ -631,7 +643,7 @@ class TestConsumableCreatingJokers:
         ctx = _make_ctx(jokers=[j])
         effect.on_blind_selected(j, ctx)
         pending = j.state.get("pending_consumables", [])
-        assert "tarot" in pending
+        assert len(pending) == 1 and pending[0] in ALL_TAROTS
 
     def test_sixth_sense_single_6(self):
         cards = [Card(6, "Hearts")]
@@ -639,7 +651,8 @@ class TestConsumableCreatingJokers:
         ctx = _make_ctx(scoring_cards=cards, hand_type="High Card", jokers=[j])
         effect = JOKER_REGISTRY["j_sixth_sense"]
         effect.on_hand_scored(j, ctx)
-        assert "spectral" in ctx.pending_consumables
+        assert len(ctx.pending_consumables) == 1
+        assert ctx.pending_consumables[0] in ALL_SPECTRALS
         assert j.state.get("used") is True
 
     def test_sixth_sense_only_fires_once(self):
@@ -649,7 +662,127 @@ class TestConsumableCreatingJokers:
         ctx = _make_ctx(scoring_cards=cards, hand_type="High Card", jokers=[j])
         effect = JOKER_REGISTRY["j_sixth_sense"]
         effect.on_hand_scored(j, ctx)
-        assert "spectral" not in ctx.pending_consumables
+        assert ctx.pending_consumables == []
+
+
+# ════════════════════════════════════════════════════════════════════════════
+# M1 B1: jokers create REAL rewards (M1-fidelity-audit B1)
+# ════════════════════════════════════════════════════════════════════════════
+
+class TestB1RewardResolution:
+    """Consumable/object-creating jokers park real tarot/spectral keys or
+    ("joker"|"card"|"hand_card", ...) tuples — never the legacy unresolvable
+    placeholder strings that used to occupy consumable slots forever. The
+    game-loop integration tests drive the real `_start_blind` / `_grant_pending`
+    path in seed mode (deterministic per seed)."""
+
+    def test_8_ball_parks_real_tarot_keys(self):
+        g = BalatroGame(seed=11, rng_mode="seed")
+        j = JokerInstance("j_8_ball", game=g)
+        effect = JOKER_REGISTRY["j_8_ball"]
+        ctx = _make_ctx(jokers=[j])
+        fired = 0
+        for _ in range(500):         # 1-in-4 trigger, deterministic per seed
+            ctx.pending_consumables.clear()
+            effect.on_score_card(j, Card(8, "Hearts"), ctx)
+            fired += bool(ctx.pending_consumables)
+            for k in ctx.pending_consumables:
+                assert k in ALL_TAROTS
+        assert fired > 0             # (0.75)^500 ≈ 0 for any uniform sequence
+
+    def test_cartomancer_grants_real_tarot_through_game(self):
+        g = BalatroGame(seed=11, rng_mode="seed")
+        j = JokerInstance("j_cartomancer", game=g)
+        g.jokers.append(j)
+        g._start_blind()             # fires on_blind_selected, grants rewards
+        assert len(g.consumable_hand) == 1
+        assert g.consumable_hand[0] in ALL_TAROTS
+
+    def test_riff_raff_grants_two_common_jokers_through_game(self):
+        g = BalatroGame(seed=11, rng_mode="seed")
+        j = JokerInstance("j_riff_raff", game=g)
+        g.jokers.append(j)
+        g._start_blind()
+        created = [x for x in g.jokers if x is not j]
+        assert len(created) == 2
+        for nj in created:
+            assert JOKER_CATALOGUE[nj.key]["rarity"] == "Common"
+
+    def test_marble_adds_stone_card_to_deck(self):
+        g = BalatroGame(seed=11, rng_mode="seed")
+        j = JokerInstance("j_marble", game=g)
+        g.jokers.append(j)
+        total_before = len(g.deck) + len(g.hand)
+        g._start_blind()
+        assert len(g.deck) + len(g.hand) == total_before + 1
+        assert any(c.enhancement == "Stone" for c in g.deck)
+
+    def test_certificate_adds_sealed_card_to_hand(self):
+        g = BalatroGame(seed=11, rng_mode="seed")
+        j = JokerInstance("j_certificate", game=g)
+        g.jokers.append(j)
+        total_before = len(g.deck) + len(g.hand)
+        g._start_blind()
+        sealed = [c for c in g.hand if c.seal != "None"]
+        assert len(sealed) == 1              # the new hand card has a random seal
+        assert len(g.deck) + len(g.hand) == total_before + 1
+        # The card persists: it returns to the run deck next blind and is not
+        # duplicated by the hand-collection (would be +2 total otherwise). Drop
+        # Certificate first so it does not add another card on the second blind.
+        g.jokers.clear()
+        g._start_blind()
+        assert sealed[0] in g.deck or sealed[0] in g.hand
+        assert len(g.deck) + len(g.hand) == total_before + 1
+
+    def test_dna_copies_scored_card_into_hand(self):
+        g = BalatroGame(seed=11, rng_mode="seed")
+        j = JokerInstance("j_dna", game=g)
+        card = Card(7, "Spades", enhancement="Steel", edition="Foil")
+        ctx = _make_ctx(scoring_cards=[card], jokers=[j])
+        JOKER_REGISTRY["j_dna"].on_hand_scored(j, ctx)
+        g._grant_pending(ctx.pending_consumables)
+        assert len(g.deck) == 52            # 52-card run deck unchanged
+        assert len(g.hand) == 1
+        copy = g.hand[0]
+        assert copy is not card
+        assert (copy.rank, copy.suit, copy.enhancement, copy.edition) == \
+               (7, "Spades", "Steel", "Foil")
+
+    def test_invisible_joker_duplicates_random_joker_on_sell(self):
+        g = BalatroGame(seed=11, rng_mode="seed")
+        inv = JokerInstance("j_invisible", game=g)
+        inv.state["rounds"] = 2
+        g.jokers.append(inv)
+        g.jokers.append(JokerInstance("j_joker", "Negative", game=g))
+        sell_joker(g, 0)                     # sell Invisible (index 0)
+        assert len(g.jokers) == 2            # sold 1, duplicated the other
+        # Both j_jokers remain: the original keeps its Negative, the copy's
+        # Negative is removed (real game subtext).
+        editions = {x.edition for x in g.jokers if x.key == "j_joker"}
+        assert editions == {"Negative", "None"}
+
+    def test_invisible_joker_needs_two_rounds(self):
+        g = BalatroGame(seed=11, rng_mode="seed")
+        inv = JokerInstance("j_invisible", game=g)
+        g.jokers.append(inv)
+        g.jokers.append(JokerInstance("j_joker", game=g))
+        sell_joker(g, 0)                     # rounds < 2 → no duplicate
+        assert len(g.jokers) == 1
+
+    def test_diet_cola_queues_double_tag_on_sell(self):
+        g = BalatroGame(seed=11, rng_mode="seed")
+        cola = JokerInstance("j_diet_cola", game=g)
+        g.jokers.append(cola)
+        sell_joker(g, 0)
+        assert g.double_tag_active is True
+
+    def test_perkeo_negative_copy_bypasses_slot_cap(self):
+        g = BalatroGame(seed=11, rng_mode="seed")
+        j = JokerInstance("j_perkeo", game=g)
+        g.consumable_hand = ["c_sun", "c_moon"]
+        JOKER_REGISTRY["j_perkeo"].on_shop_leave(j, None)
+        assert len(g.consumable_hand) == 3
+        assert g.consumable_hand[-1] in ("c_sun", "c_moon")
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -770,10 +903,14 @@ class TestRegistryCompleteness:
         # Passive jokers — effects applied in game.py by key check (not hooks):
         #  - merry_andy/troubadour/juggler/drunkard: _start_blind passives
         #  - chicot: boss disable by presence in _boss_effects_on()
-        #  - ring_master: real-game "Showman" — duplicates already the sim default
+        #  - ring_master: real-game "Showman" — its effect (lifts duplicate
+        #    suppression) is applied at shop/pack generation time by presence,
+        #    not via scoring hooks
+        #  - mime: retriggers held-in-hand abilities — the scoring engine
+        #    detects the key and doubles held Steel / round-end Gold payouts
         PASSIVE_JOKERS = {
             "j_merry_andy", "j_troubadour", "j_juggler", "j_drunkard",
-            "j_chicot", "j_ring_master",
+            "j_chicot", "j_ring_master", "j_mime",
         }
         hooks = [
             "on_score_card", "on_hand_scored", "on_discard", "on_round_end",

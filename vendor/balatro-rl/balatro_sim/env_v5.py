@@ -522,7 +522,11 @@ class BalatroSimEnvV5(gym.Env):
 
         chosen = self._pack_choices[action]
 
-        if isinstance(chosen, tuple) and chosen[0] == "card":
+        if isinstance(chosen, tuple) and chosen[0] == "joker":
+            # Joker from a Buffoon pack — carries its rolled edition. grant_joker
+            # fires on_init so pack-granted jokers init like bought ones (R5).
+            game.grant_joker(chosen[1], chosen[2])
+        elif isinstance(chosen, tuple) and chosen[0] == "card":
             # Standard pack — add card to deck
             card = chosen[1]
             game.deck.append(card)
@@ -547,11 +551,8 @@ class BalatroSimEnvV5(gym.Env):
                     game.consumable_hand.append(key)
                 else:
                     apply_planet(game, key)
-            else:
-                # Joker from Buffoon pack
-                from .jokers.base import JokerInstance
-                if len(game.jokers) < game.joker_slots:
-                    game.jokers.append(JokerInstance(key, game=game))
+            # NOTE: Buffoon-pack jokers arrive as ("joker", key, edition)
+            # tuples (handled above) — never as plain strings.
 
         self._pack_picks_left -= 1
         if self._pack_picks_left <= 0 or not self._pack_choices:
@@ -786,7 +787,9 @@ class BalatroSimEnvV5(gym.Env):
         items = [i for i in game.current_shop if not i.sold and i.kind != "booster"]
         for ii, item in enumerate(items[:6]):
             if game.dollars >= item.discounted_price(game.shop_discount):
-                if item.kind == "joker" and len(game.jokers) < game.joker_slots:
+                # Negative jokers bypass the slot cap (grant_joker) — mirror it
+                if item.kind == "joker" and (len(game.jokers) < game.joker_slots
+                                              or item.edition == "Negative"):
                     mask[2 + ii] = True
                 elif item.kind in ("planet","tarot","spectral") and \
                      len(game.consumable_hand) < game.consumable_slots:

@@ -47,10 +47,9 @@ EARLY_GAME_JOKERS = {
 
 # Flat or x-mult jokers that pay off immediately — preferred late game
 IMMEDIATE_PAYOFF_JOKERS = {
-    "j_joker", "j_stuntman", "j_misprint", "j_half", "j_abstract",
-    "j_cavendish", "j_the_duo", "j_duo", "j_the_trio", "j_trio",
-    "j_the_family", "j_family", "j_the_order", "j_order",
-    "j_the_tribe", "j_tribe", "j_triboulet", "j_perkeo", "j_chicot",
+    "j_joker", "j_stuntman", "j_misprint", "j_half", "j_abstract",      "j_cavendish", "j_duo", "j_trio",
+      "j_family", "j_order",
+      "j_tribe", "j_triboulet", "j_perkeo", "j_chicot",
     "j_caino", "j_supernova", "j_banner", "j_blue_joker",
     "j_mystic_summit", "j_raised_fist", "j_splash", "j_acrobat",
 }
@@ -59,7 +58,7 @@ IMMEDIATE_PAYOFF_JOKERS = {
 SACRIFICIAL_JOKERS = {
     "j_luchador",         # sell vs boss blind
     "j_diet_cola",        # sell for free Double Tag
-    "j_invisible_joker",  # sell (after 2 rounds) to duplicate a joker
+    "j_invisible", "j_invisible_joker",  # sell (after 2 rounds) to duplicate
 }
 
 # Weak/situational jokers — low base synergy
@@ -90,11 +89,10 @@ IMMEDIATE_BONUS_BY_ANTE = {
 }
 
 JOKER_TAGS: dict[str, set[str]] = {
-    # ── Suit-specific mult/chips ──────────────────────────────────────
-    "j_greedy_mult":    {"suit_diamonds"},
-    "j_lusty_mult":     {"suit_hearts"},
-    "j_wrathful_mult":  {"suit_spades"},
-    "j_gluttonous_mult":{"suit_clubs"},
+    # ── Suit-specific mult/chips ──────────────────────────────────────      "j_greedy_joker":   {"suit_diamonds"},
+      "j_lusty_joker":    {"suit_hearts"},
+      "j_wrathful_joker": {"suit_spades"},
+      "j_gluttonous_joker":{"suit_clubs"},
     "j_arrowhead":      {"suit_spades"},
     "j_onyx_agate":     {"suit_clubs"},
     "j_rough_gem":      {"suit_diamonds", "economy"},
@@ -116,17 +114,11 @@ JOKER_TAGS: dict[str, set[str]] = {
     "j_crafty":         {"flush"},
     "j_spare_trousers": {"two_pair"},
 
-    # ── Hand-type x-mult (The family) ─────────────────────────────────
-    "j_duo":            {"pair", "scaling"},
-    "j_the_duo":        {"pair", "scaling"},
-    "j_trio":           {"three_kind", "scaling"},
-    "j_the_trio":       {"three_kind", "scaling"},
-    "j_family":         {"four_kind", "scaling"},
-    "j_the_family":     {"four_kind", "scaling"},
-    "j_order":          {"straight", "scaling"},
-    "j_the_order":      {"straight", "scaling"},
-    "j_tribe":          {"flush", "scaling"},
-    "j_the_tribe":      {"flush", "scaling"},
+    # ── Hand-type x-mult (The family) ─────────────────────────────────      "j_duo":            {"pair", "scaling"},
+      "j_trio":           {"three_kind", "scaling"},
+      "j_family":         {"four_kind", "scaling"},
+      "j_order":          {"straight", "scaling"},
+      "j_tribe":          {"flush", "scaling"},
 
     # ── Straight helpers ──────────────────────────────────────────────
     "j_four_fingers":   {"flush", "straight", "utility"},
@@ -186,10 +178,8 @@ JOKER_TAGS: dict[str, set[str]] = {
     "j_vampire":        {"scaling"},
     "j_throwback":      {"scaling"},
     "j_baseball":       {"scaling"},
-    "j_drivers_license":{"scaling"},
-    "j_wee":            {"scaling"},
-    "j_wee_joker":      {"scaling"},
-    "j_stone_joker":    {"scaling"},
+    "j_drivers_license":{"scaling"},      "j_wee":            {"scaling"},
+      "j_stone_joker":    {"scaling"},
 
     # ── Generic mult/chips (always useful) ────────────────────────────
     "j_joker":          {"generic"},
@@ -204,9 +194,8 @@ JOKER_TAGS: dict[str, set[str]] = {
     "j_swashbuckler":   {"generic"},
     "j_banner":         {"generic", "discard_synergy"},
     "j_mystic_summit":  {"generic", "discard_synergy"},
-    "j_bootstraps":     {"generic", "economy"},
-    "j_splash":         {"generic", "utility"},
-    "j_lucky_joker":    {"generic"},
+    "j_bootstraps":     {"generic", "economy"},      "j_splash":         {"generic", "utility"},
+
 
     # ── Retrigger jokers ──────────────────────────────────────────────
     "j_dusk":           {"retrigger"},
@@ -249,6 +238,7 @@ JOKER_TAGS: dict[str, set[str]] = {
     "j_burnt_joker":    {"utility"},
     "j_cartomancer":    {"utility"},
     "j_astronomer":     {"utility"},
+    "j_invisible": {"utility"},
     "j_invisible_joker":{"utility"},
     "j_perkeo":         {"utility"},
     "j_chicot":         {"utility"},

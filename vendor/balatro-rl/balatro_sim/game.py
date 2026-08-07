@@ -52,8 +52,8 @@ from .consumables import (
 from .shop import ShopItem, generate_shop, buy_item, sell_joker, reroll_shop
 from .seed_rng import (
     make_source, node_boss,
-    DECK_SHUFFLE_NODE, AMBER_NODE, WHEEL_NODE, BELL_NODE, HOOK_NODE,
-    CRIMSON_NODE, MADNESS_NODE, PURPLE_SEAL_NODE,
+    DECK_SHUFFLE_NODE, RESHUFFLE_NODE, AMBER_NODE, WHEEL_NODE, BELL_NODE,
+    HOOK_NODE, CRIMSON_NODE, MADNESS_NODE, PURPLE_SEAL_NODE,
 )
 from .tags import roll_tag, apply_tag, _open_next_pack
 
@@ -64,6 +64,9 @@ _HAND_TYPE_ORDER = [
     "Full House", "Four of a Kind", "Straight Flush", "Five of a Kind",
     "Flush House", "Flush Five",
 ]
+
+#: hand_type -> planet key, for Blue Seal's round-end grant (reference doc §8).
+_HAND_TO_PLANET = {v: k for k, v in PLANET_HAND.items()}
 
 
 class State(Enum):
@@ -218,6 +221,14 @@ class BalatroGame:
         # voucher slot and 2 booster-pack slots.
         self.shop_item_slots = 2
         self.shop_discount = 0.0
+        # Real game: G.GAME.first_shop_buffoon — the first pack generated in a
+        # run is always a normal Buffoon Pack (get_pack in common_events.lua).
+        self.first_shop_buffoon = False
+        # Real game: the shop's Voucher slot restocks only after the Boss Blind
+        # is defeated — the same voucher persists across non-Boss blinds and
+        # rerolls (shop.py generate_shop). None = nothing offered yet (roll on
+        # the run's first shop).
+        self.offered_voucher: Optional[str] = None
         self.reroll_cost = 5
         self.reroll_discount = 0
         self.free_rerolls_per_round = 0
@@ -260,10 +271,15 @@ class BalatroGame:
         # permanently destroyed cards (Hanged Man, Immolate, ...) leave it for
         # good — real Balatro deck behavior.
         self.deck: list[Card] = make_standard_deck()
-        # Cards played or discarded during the current round. They cannot be
-        # redrawn mid-round, but return to the deck at the next blind's start.
+        # Cards played or discarded during the current round. When the deck
+        # runs out mid-round they are reshuffled back in (real game); any
+        # cards still spent return to the deck at the next blind's start.
         self.spent: list[Card] = []
         self.played_hand_types_this_round: set[str] = set()
+        # The LAST (final) hand type played this round — Blue Seal's Planet
+        # grant keys off it (reference doc §8: "final poker hand played that
+        # round"). None until a non-rejected hand is played.
+        self.last_hand_played: Optional[str] = None
 
         # ── Boss-blind runtime state ──────────────────────────────────────
         self.verdant_debuff = False             # Verdant Leaf: all cards debuffed until a joker is sold
@@ -346,10 +362,15 @@ class BalatroGame:
                     0, self.boss_appearances.get(boss_key, 0) - 1
                 )
                 boss_key = self._select_boss(self.ante, exclude=boss_key)
-            # Large-blind bosses scale the required score (base chips = 1x);
-            # scaling is part of the boss ability, so it is skipped when
-            # abilities are disabled (Chicot / Luchador).
-            if self._boss_effects_on():
+            # Large-blind bosses scale the required score (base chips = 1x).
+            # The Wall (4x) and Violet Vessel (6x) scaling is part of the boss
+            # ability, so it is skipped when abilities are disabled (Chicot /
+            # Luchador) — they revert to the normal 2x baseline. The Needle is
+            # a 1x score requirement and stays 1x regardless (real game:
+            # bl_needle.mult = 1; not part of the disableable ability set).
+            if boss_key == "bl_needle":
+                chips = BLIND_CHIPS[self.ante][0]          # The Needle: 1x base
+            elif self._boss_effects_on():
                 if boss_key == "bl_wall":
                     chips = BLIND_CHIPS[self.ante][0] * 4   # The Wall: 4x base
                 elif boss_key == "bl_violet":
@@ -376,23 +397,23 @@ class BalatroGame:
             self.hand_size += self.hand_size_bonus_next_round
             self.hand_size_bonus_next_round = 0
         self.played_hand_types_this_round = set()
+        # Blue Seal keys off the FINAL hand of THIS round — stale from a
+        # previous round must not leak (set by _play_hand on each valid play).
+        self.last_hand_played = None
         # Reset per-blind boss effects
         self.verdant_debuff = False
         self.jokers_flipped = False
         self.bell_card = None
 
-        # Apply passive joker effects (constant while owned, not cumulative)
-        joker_keys = {j.key for j in self.jokers}
-        if "j_juggler" in joker_keys:
-            self.hand_size += 1
-        if "j_drunkard" in joker_keys:
-            self.discards_left += 1
-        if "j_troubadour" in joker_keys:
-            self.hand_size += 2
-            self.hands_left = max(1, self.hands_left - 1)
-        if "j_merry_andy" in joker_keys:
-            self.discards_left += 3
-            self.hand_size = max(1, self.hand_size - 1)
+        # Passive hand-size/discard/hand modifiers from joker effects (R3:
+        # declared per-effect `passives()`, not key scans). Hand size is floored
+        # at 1 AFTER the passives are summed (Stuntman -2, Merry Andy -1).
+        for j in self.jokers:
+            self.hand_size += j.effect.passives(j).get("hand_size", 0)
+            self.discards_left += j.effect.passives(j).get("discards", 0)
+            self.hands_left += j.effect.passives(j).get("hands", 0)
+        self.hand_size = max(1, self.hand_size)
+        self.hands_left = max(1, self.hands_left)
 
         # Apply voucher hand size adjustments
         if "v_paint_brush" in self.vouchers:
@@ -413,15 +434,15 @@ class BalatroGame:
         # Apply boss debuffs (skipped entirely when abilities are disabled)
         if self.current_blind.is_boss and self._boss_effects_on():
             self._apply_boss_start(self.current_blind.boss_key)
-        # Fire blind_selected joker hooks
+        # Fire blind_selected joker hooks; collect created rewards so they apply
+        # AFTER the whole loop — a joker Riff-Raff creates (parked as a
+        # ("joker", ...) tuple) must not have its own on_blind_selected fire
+        # for the same blind (real game).
+        deferred = []
         for j in self.jokers:
-            effect = JOKER_REGISTRY.get(j.key)
-            if effect and hasattr(effect, "on_blind_selected"):
-                effect.on_blind_selected(j, None)
+            j.fire("on_blind_selected", None)
             # Collect pending consumables / planet upgrades from joker state
-            for item in j.state.pop("pending_consumables", []):
-                if len(self.consumable_hand) < self.consumable_slots:
-                    self.consumable_hand.append(item)
+            deferred.extend(j.state.pop("pending_consumables", []))
             if "planet_upgrade" in j.state:
                 ht = j.state.pop("planet_upgrade")
                 self.planet_levels[ht] = self.planet_levels.get(ht, 1) + 1
@@ -431,6 +452,7 @@ class BalatroGame:
                 self.hands_left += extra_hands
             if j.state.pop("zero_discards", False):
                 self.discards_left = 0
+        self._grant_pending(deferred)
         # Ceremonial Dagger: destroy joker to the right, gain 2x sell value as mult
         to_destroy = []
         for i, j in enumerate(self.jokers):
@@ -538,7 +560,24 @@ class BalatroGame:
         if self._boss_effects_on() and self.current_blind.boss_key == "bl_fish":
             played = self.base_hands - self.hands_left
             target = max(1, self.hand_size - played)
-        while len(self.hand) < target and self.deck:
+        while len(self.hand) < target:
+            if not self.deck:
+                # Mid-round deck exhaustion: reshuffle the spent pile (cards
+                # played or discarded this round) back into the deck so play
+                # can continue — real Balatro behavior. Destroyed cards are
+                # never in spent, so they stay removed from the run for good.
+                # If even the spent pile is empty there is nothing left to
+                # draw, so the hand stays short (can happen with heavy
+                # destruction) rather than looping forever.
+                if not self.spent:
+                    break
+                self.deck.extend(self.spent)
+                self.spent = []
+                # RESHUFFLE_NODE is a sim-internal node (like WHEEL_NODE) —
+                # balatro-seed does not pin the in-game reshuffle call site,
+                # so it is deterministic per seed in seed mode but not
+                # byte-exact against the real game.
+                self.rng.node(RESHUFFLE_NODE).shuffle(self.deck)
             c = self.deck.pop()
             self._on_card_drawn(c)
             self.hand.append(c)
@@ -583,10 +622,10 @@ class BalatroGame:
         """False when Boss Blind abilities are disabled: Chicot's permanent
         passive (presence-based — the real game disables every boss while
         owned) or Luchador's sell-to-disable (one-shot override, consumed
-        when the boss blind resolves)."""
+        when the boss blind resolves). Capability flag, not a key scan (R3)."""
         if self.boss_disabled_override:
             return False
-        return not any(j.key == "j_chicot" for j in self.jokers)
+        return not any(j.has_flag("disables_bosses") for j in self.jokers)
 
     def _fire_boss_trigger(self):
         """Fire Matador's on_boss_ability_triggered: +$8 for the current played
@@ -596,9 +635,7 @@ class BalatroGame:
         if not self._boss_effects_on():
             return
         for j in self.jokers:
-            effect = JOKER_REGISTRY.get(j.key)
-            if effect and hasattr(effect, "on_boss_ability_triggered"):
-                effect.on_boss_ability_triggered(j, None)
+            j.fire("on_boss_ability_triggered", None)
             self.dollars += j.state.pop("pending_money", 0)
 
     # ── Main step ────────────────────────────────────────────────────────────
@@ -657,6 +694,9 @@ class BalatroGame:
             if atype == "pick_booster":
                 self._pick_booster(action.get("indices", []))
             elif atype == "skip_booster":
+                # Red Card (j_red_card): +3 Mult permanently per Booster Pack
+                # skipped (M1 B2 on_booster_skipped dispatch).
+                self._fire_joker_hook("on_booster_skipped", None)
                 self.booster_choices = []
                 if self.pending_packs:
                     # Double Tag on a pack tag: another free pack awaits
@@ -797,6 +837,7 @@ class BalatroGame:
             deck_remaining=len(self.deck),
             half_base=(boss == "bl_flint"),
             game=self,
+            held_cards=[c for c in self.hand if c not in selected],
         )
 
         # Boss: tooth — lose $1 per card played
@@ -811,11 +852,14 @@ class BalatroGame:
         self.chips_scored += score
         self.hands_left -= 1
 
-        # Apply pending side-effects from scoring
+        # Apply pending side-effects from scoring (real consumable keys, plus
+        # ("joker"/"card"/"hand_card", ...) tuples from object-creating jokers)
         self.dollars += ctx.pending_money
-        for key in ctx.pending_consumables:
-            if len(self.consumable_hand) < self.consumable_slots:
-                self.consumable_hand.append(key)
+        self._grant_pending(ctx.pending_consumables)
+
+        # Seltzer self-destructs after its 10 hands are spent (sets
+        # state["destroyed"] in on_hand_scored) — remove it immediately.
+        self.jokers = [j for j in self.jokers if not j.state.pop("destroyed", False)]
 
         # Move played cards out of hand (they return to the deck at the next blind)
         for c in selected:
@@ -823,15 +867,10 @@ class BalatroGame:
                 self.hand.remove(c)
                 self.spent.append(c)
 
-        # Glass shatter: shattered cards are destroyed permanently — they do
-        # not return to the deck with the rest of the spent cards.
+        # Glass shatter / Sixth Sense: destroyed cards are removed from the
+        # run permanently — they do not return to the deck with the spent pile.
         for c in ctx.destroyed:
-            if c in self.spent:
-                self.spent.remove(c)
-            if c in self.hand:
-                self.hand.remove(c)
-            if c in self.deck:
-                self.deck.remove(c)
+            self._destroy_card(c)
 
         # Run-wide tracking for boss blinds:
         #  - The Pillar debuffs cards played earlier this ante (and as they are played)
@@ -843,6 +882,8 @@ class BalatroGame:
             for c in selected:
                 self.ante_played_ids.add(c.id)
             self.run_hand_counts[hand_type] = self.run_hand_counts.get(hand_type, 0) + 1
+            # Blue Seal: the Planet keys off the FINAL hand played this round
+            self.last_hand_played = hand_type
 
         # The Mark / The Wheel / The House: face-down cards are revealed once played
         if boss in ("bl_mark", "bl_wheel", "bl_house"):
@@ -860,13 +901,10 @@ class BalatroGame:
         if boss == "bl_cerulean":
             self._maybe_repick_bell_card()
 
-        # Blue seal: add Planet card to consumable hand
-        for c in scoring_cards:
-            if c.seal == "Blue" and len(self.consumable_hand) < self.consumable_slots:
-                hand_to_planet = {v: k for k, v in PLANET_HAND.items()}
-                planet_key = hand_to_planet.get(hand_type)
-                if planet_key:
-                    self.consumable_hand.append(planet_key)
+        # NOTE: Blue Seal does NOT fire here — it keys off cards HELD in hand
+        # at ROUND END, granting the Planet of the final hand played (reference
+        # doc §8; wiki: "Creates the Planet card for final played poker hand of
+        # round if held in hand"). Implemented in _end_round.
 
         # Purple seal: add Tarot card
         for c in selected:
@@ -891,23 +929,31 @@ class BalatroGame:
             return
 
         # Fire on_discard joker hooks; collect pending money/consumables
+        deferred = []
         for j in self.jokers:
-            effect = JOKER_REGISTRY.get(j.key)
-            if effect and hasattr(effect, "on_discard"):
-                effect.on_discard(j, selected, None)
+            j.fire("on_discard", selected, None)
             self.dollars += j.state.pop("pending_money", 0)
-            for item in j.state.pop("pending_consumables", []):
-                if len(self.consumable_hand) < self.consumable_slots:
-                    self.consumable_hand.append(item)
+            deferred.extend(j.state.pop("pending_consumables", []))
 
         for c in selected:
             self.hand.remove(c)
             self.spent.append(c)
         self.discards_left -= 1
+        # Grant AFTER the card-move loop: Trading Card's ("destroy_card", c)
+        # removes the target from hand/spent — it must not still be expected
+        # in the hand-removal loop above (real destroy, B6).
+        self._grant_pending(deferred)
         self._draw_to_full()
         # Cerulean Bell: the forced card was discarded — pick a new one if any remain
         if self._boss_effects_on() and self.current_blind.boss_key == "bl_cerulean":
             self._maybe_repick_bell_card()
+
+    def _fire_joker_hook(self, hook: str, *args):
+        """Dispatch a named hook to every owned joker effect (M1 B2 family).
+        Every hook exists as a no-op on the JokerEffect base, so this is a
+        plain per-instance fire — no registry lookup or hasattr probe (R2)."""
+        for j in self.jokers:
+            j.fire(hook, *args)
 
     def _use_consumable(self, consumable_idx: int, target_cards: list[int]):
         if consumable_idx >= len(self.consumable_hand):
@@ -915,6 +961,9 @@ class BalatroGame:
         key = self.consumable_hand[consumable_idx]
         success = False
 
+        # on_planet_used / on_tarot_used hooks are dispatched inside
+        # apply_planet / apply_tarot (consumables.py) — do NOT re-dispatch here
+        # or Satellite/Constellation/Fortune Teller would double-count.
         if key in PLANET_HAND:
             success = apply_planet(self, key)
         elif key in {t for t in ALL_TAROTS}:
@@ -924,6 +973,71 @@ class BalatroGame:
 
         if success:
             self.consumable_hand.pop(consumable_idx)
+
+    def grant_joker(self, key: str, edition: str = "None", *, fire_init: bool = True):
+        """The SINGLE acquisition path for jokers (R5).
+
+        Slot check, instance construction, state seeding, and on_init dispatch
+        all happen here — buy_item, packs, tags, Judgement/Wraith/Soul,
+        Riff-Raff grants, and the envs all route through this method. Negative
+        edition jokers do not consume a slot (real game).
+
+        Returns the new JokerInstance, or None if the slot was full.
+        """
+        if len(self.jokers) >= self.joker_slots and edition != "Negative":
+            return None
+        j = JokerInstance(key, edition, game=self)
+        self.jokers.append(j)
+        if fire_init:
+            j.fire("on_init")
+        return j
+
+    def _grant_pending(self, items: list):
+        """Materialize joker-created rewards (the `pending_consumables` payloads
+        collected from hooks) into the game.
+
+    Plain entries are real tarot/planet/spectral keys → consumable hand
+    (slot-capped, M1 B1). Tuples carry object creations:
+      ("joker", key, edition)     → a joker slot (Riff-Raff)
+      ("card", card)              → into the run deck (Marble)
+      ("hand_card", card)         → drawn to hand now; returns to the run deck
+                                   at the next blind's start (Certificate, DNA)
+    """
+        for item in items:
+            if isinstance(item, tuple) and item and item[0] == "joker":
+                _, key, edition = item
+                self.grant_joker(key, edition)
+            elif isinstance(item, tuple) and item and item[0] == "card":
+                # Marble: straight into the run deck (the round is already
+                # dealt, so it cannot be drawn until the next blind's shuffle)
+                self.deck.insert(0, item[1])
+                self._fire_joker_hook("on_card_added", None)
+            elif isinstance(item, tuple) and item and item[0] == "destroy_card":
+                # Trading Card: the discarded card is destroyed permanently
+                self._destroy_card(item[1])
+            elif isinstance(item, tuple) and item and item[0] == "hand_card":
+                # Certificate / DNA: drawn to hand now; it returns to the run
+                # deck at the next blind's start (persistent-deck rule), so
+                # only the hand append is needed here — adding it to the deck
+                # too would duplicate the card when the hand is collected.
+                self.hand.append(item[1])
+                # Hologram: X0.25 per card added to the run (M1 B2).
+                self._fire_joker_hook("on_card_added", None)
+            elif len(self.consumable_hand) < self.consumable_slots:
+                self.consumable_hand.append(item)
+
+    def _destroy_card(self, card: Card):
+        """Permanently remove a card from the run (real destroys — Glass
+        shatter, Sixth Sense, Trading Card). The card is dropped from the
+        persistent deck, hand, and spent pile so it never returns to play;
+        Canio gains X1 Mult when a face card is destroyed (M1 B2
+        on_card_destroyed dispatch). Idempotent: duplicate destroy signals
+        (e.g. a Glass 6 that shatters AND is Sixth-Sense'd) are safe."""
+        for pile in (self.deck, self.hand, self.spent):
+            if card in pile:
+                pile.remove(card)
+        if card.is_face_card:
+            self._fire_joker_hook("on_card_destroyed", card, None)
 
     # ── Round end / shop ─────────────────────────────────────────────────────
 
@@ -941,12 +1055,21 @@ class BalatroGame:
         # Garbage Tag: unused discards this round count toward the run total
         self.run_unused_discards += self.discards_left
 
+        # Blue Seal: a Blue-sealed card HELD in hand at round end creates the
+        # Planet of the final hand played this round (reference doc §8 — not
+        # the hand the seal was scored in, and only if still held).
+        if self.last_hand_played is not None:
+            planet_key = _HAND_TO_PLANET.get(self.last_hand_played)
+            if planet_key:
+                for c in self.hand:
+                    if c.seal == "Blue":
+                        if len(self.consumable_hand) >= self.consumable_slots:
+                            break
+                        self.consumable_hand.append(planet_key)
+
         # Boss blind beaten: fire on_boss_beaten hooks
         if self.current_blind.is_boss:
-            for j in self.jokers:
-                effect = JOKER_REGISTRY.get(j.key)
-                if effect and hasattr(effect, "on_boss_beaten"):
-                    effect.on_boss_beaten(j, None)
+            self._fire_joker_hook("on_boss_beaten", None)
             self._undo_boss_debuffs(self.current_blind.boss_key)
             # The Boss Blind resolved — Luchador's one-shot disable is consumed
             self.boss_disabled_override = False
@@ -958,25 +1081,27 @@ class BalatroGame:
         # Pre-compute deck stats for jokers that need them (e.g. Cloud 9)
         deck_nines = sum(1 for c in self.deck + self.hand + self.spent if c.rank == 9)
         # Fire on_round_end hooks; collect pending money and consumables
+        deferred = []
         for j in self.jokers:
             j.state["deck_nines"] = deck_nines  # for Cloud 9
-            effect = JOKER_REGISTRY.get(j.key)
-            if effect and hasattr(effect, "on_round_end"):
-                effect.on_round_end(j, None)
+            j.fire("on_round_end", None)
             self.dollars += j.state.pop("pending_money", 0)
-            for item in j.state.pop("pending_consumables", []):
-                if len(self.consumable_hand) < self.consumable_slots:
-                    self.consumable_hand.append(item)
+            deferred.extend(j.state.pop("pending_consumables", []))
+        self._grant_pending(deferred)
 
-        # Gold seal: $3 per Gold seal card held in hand
+        # Self-destructing jokers (Gros Michel 1/6, Cavendish 1/1000, Turtle
+        # Bean at 0) set state["destroyed"] in on_round_end — honor it.
+        self.jokers = [j for j in self.jokers if not j.state.pop("destroyed", False)]
+
+        # Gold seal / Gold enhancement: $3 per card held in hand at round end.
+        # Mime retriggers held-in-hand abilities (capability flag, R3),
+        # doubling both.
+        gold_mult = 2 if any(j.has_flag("retriggers_held") for j in self.jokers) else 1
         for c in self.hand:
             if c.seal == "Gold":
-                self.dollars += 3
-
-        # Gold enhancement: $3 per Gold card held
-        for c in self.hand:
+                self.dollars += 3 * gold_mult
             if c.enhancement == "Gold":
-                self.dollars += 3
+                self.dollars += 3 * gold_mult
 
         # Reset hand size mods from boss (bl_manacle)
         if self.current_blind.boss_key == "bl_manacle":
@@ -986,11 +1111,19 @@ class BalatroGame:
         self.reroll_cost = 5
         self.free_rerolls_remaining = self.free_rerolls_per_round
 
-        # Generate shop
-        self.current_shop = generate_shop(self)
+        # Generate shop. The Voucher slot restocks only after a Boss Blind is
+        # defeated (real game §17); non-Boss blinds keep the same voucher.
+        self.current_shop = generate_shop(self, restock_voucher=self.current_blind.is_boss)
         self.state = State.SHOP
+        # Entering the shop: Astronomer (free Planets), Chaos (free reroll),
+        # Credit Card (debt) read presence; on_shop_enter also parks any
+        # state the shop logic consumes (M1 B2).
+        self._fire_joker_hook("on_shop_enter", None)
 
     def _end_shop(self):
+        # Perkeo: "Creates a Negative copy of 1 random consumable card in your
+        # possession at the end of the shop" (M1 B2 on_shop_leave dispatch).
+        self._fire_joker_hook("on_shop_leave", None)
         # Advance blind
         self.blind_idx += 1
         if self.blind_idx >= 3:
@@ -1027,14 +1160,19 @@ class BalatroGame:
         new = self._select_boss(self.ante, exclude=cur)
         self.boss_appearances[new] = self.boss_appearances.get(new, 0) + 1
         self.current_blind.boss_key = new
-        # Base boss = 1x; Wall/Violet scale the required score (abilities
-        # disabled by Chicot/Luchador skip the scaling).
-        base = BLIND_CHIPS[self.ante][2]
-        if self._boss_effects_on():
-            if new == "bl_wall":
-                base = BLIND_CHIPS[self.ante][0] * 4
-            elif new == "bl_violet":
-                base = BLIND_CHIPS[self.ante][0] * 6
+        # Base boss = 1x. The Needle requires 1x base (bl_needle.mult = 1, not
+        # part of the disableable ability set — stays 1x regardless); Wall /
+        # Violet scale the required score, but that scaling is an ability, so
+        # it is skipped when abilities are disabled (Chicot / Luchador).
+        if new == "bl_needle":
+            base = BLIND_CHIPS[self.ante][0]          # The Needle: 1x base
+        else:
+            base = BLIND_CHIPS[self.ante][2]
+            if self._boss_effects_on():
+                if new == "bl_wall":
+                    base = BLIND_CHIPS[self.ante][0] * 4
+                elif new == "bl_violet":
+                    base = BLIND_CHIPS[self.ante][0] * 6
         self.current_blind.chips_target = base
 
     def _skip_blind(self):
@@ -1042,10 +1180,7 @@ class BalatroGame:
         if self.current_blind.kind == "Boss":
             return
         # Fire blind_skipped joker hooks
-        for j in self.jokers:
-            effect = JOKER_REGISTRY.get(j.key)
-            if effect and hasattr(effect, "on_blind_skipped"):
-                effect.on_blind_skipped(j, None)
+        self._fire_joker_hook("on_blind_skipped", None)
         # Claim the skip-blind Tag. The Double Tag copies the NEXT tag selected
         # (never itself); every other tag auto-applies at skip time.
         self.skipped_blinds += 1
@@ -1068,24 +1203,32 @@ class BalatroGame:
     def _end_blind_and_enter_shop(self):
         self.reroll_cost = 5
         self.free_rerolls_remaining = self.free_rerolls_per_round
+        # A skipped blind is never a Boss, so the Voucher slot persists
+        # (restock_voucher defaults to False — real game §17).
         self.current_shop = generate_shop(self)
         self.state = State.SHOP
+        self._fire_joker_hook("on_shop_enter", None)
 
     def _pick_booster(self, indices: list[int]):
         picks = min(self.booster_picks_remaining, len(indices))
         for idx in indices[:picks]:
             if idx < len(self.booster_choices):
                 choice = self.booster_choices[idx]
-                if isinstance(choice, str):
-                    # Planet, tarot, spectral, or joker key
-                    if len(self.consumable_hand) < self.consumable_slots:
-                        self.consumable_hand.append(choice)
-                    elif choice in {k for k in JOKER_REGISTRY}:
-                        if len(self.jokers) < self.joker_slots:
-                            self.jokers.append(JokerInstance(choice, game=self))
+                if isinstance(choice, tuple) and choice[0] == "joker":
+                    # Joker from a Buffoon pack — carries its rolled edition
+                    _, key, edition = choice
+                    self.grant_joker(key, edition)
                 elif isinstance(choice, tuple) and choice[0] == "card":
                     # Playing card from Standard pack
                     self.deck.insert(0, choice[1])
+                    # Hologram: X0.25 per card added to the run (M1 B2)
+                    self._fire_joker_hook("on_card_added", None)
+                elif isinstance(choice, str):
+                    # Planet, tarot, or spectral key. Jokers never arrive as
+                    # plain strings (they are ("joker", key, edition) tuples,
+                    # handled above) — keeping them out of the consumable hand.
+                    if len(self.consumable_hand) < self.consumable_slots:
+                        self.consumable_hand.append(choice)
         self.booster_choices = []
         self.booster_picks_remaining = 0
         if self.pending_packs:

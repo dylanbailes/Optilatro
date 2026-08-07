@@ -15,7 +15,10 @@ from balatro_sim.jokers.base import JOKER_REGISTRY
 rows = []
 text = open("vendor/balatro-rs/balatro-types/src/joker.rs", encoding="utf-8", errors="replace").read()
 for m in re.finditer(
-    r'(\w+),\s+"(j_[a-z0-9_]+)",\s+"([^"]+)",\s+(\w+),\s+(\d+)',
+    # \s* between name and rarity: most rows are '"Name",   Rarity' but a few
+    # are '"Name",Rarity' (e.g. Delayed Gratification) — tolerate both so no
+    # real joker is dropped from the catalogue.
+    r'(\w+),\s+"(j_[a-z0-9_]+)",\s+"([^"]+)",\s*(\w+)\s*,\s*(\d+)',
     text,
 ):
     rows.append((m.group(2), m.group(3), m.group(4).capitalize(), int(m.group(5))))
@@ -66,7 +69,8 @@ for cid, cname, rar, cost in rows:
 DELIBERATE_OVERRIDES = {
     "j_ring_master": "j_showman",    # real id of Showman; marker must not shadow
     "j_ticket": "j_golden_ticket",   # scaling._Ticket is not the real effect
-    "j_wee": "j_wee_joker",          # mult.py _WeeJoker is the canonical class
+    # j_wee resolves natively (misc._Wee, the permanent +8-chips-per-2 build);
+    # the old j_wee -> j_wee_joker override pointed at a flat +8-per-hand build.
     # real id is misspelled "gluttenous"; the sim's native key corrects it.
     "j_gluttenous_joker": "j_gluttonous_joker",
 }

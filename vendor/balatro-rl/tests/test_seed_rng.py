@@ -327,9 +327,12 @@ class TestSeedModeGolden:
         # Re-derived after the M2 shop restructure (2026-08-06): the real shop
         # has 2 cdt-polled random slots (Joker 20 / Tarot 4 / Planet 4), a
         # voucher slot, and 2 booster-pack slots. Slot 1 polls a Tarot here.
+        # The first pack of a run is always a normal Buffoon Pack (real game:
+        # G.GAME.first_shop_buffoon), so pack slot 1 is p_buffoon and pack
+        # slot 2 gets the first seeded pack-generic draw.
         ("tarot", "c_sun"), ("joker", "j_mystic_summit"),
         ("voucher", "v_seed_money"),
-        ("booster", "p_standard_jumbo"), ("booster", "p_celestial"),
+        ("booster", "p_buffoon"), ("booster", "p_standard_jumbo"),
     ]
 
     def test_golden_boss_sequence(self):
@@ -351,10 +354,13 @@ class TestSeedModeGolden:
         from balatro_sim.shop import JOKER_CATALOGUE
         from balatro_sim.jokers.base import JOKER_REGISTRY
 
-        # Full real-game pool: 149 jokers (150 - 1; balatro-rs has no duplicate)
-        assert len(JOKER_CATALOGUE) == 149
+        # Full real-game pool: 150 jokers. (The catalogue was 149 because the
+        # generator regex missed Delayed Gratification — "Delayed
+        # Gratification",Common has no space after the name comma. Fixed in the
+        # joker-fidelity program; 150 is the authoritative balatro-rs count.)
+        assert len(JOKER_CATALOGUE) == 150
         names = [v["name"] for v in JOKER_CATALOGUE.values()]
-        assert len(set(names)) == 149, "duplicate joker names in catalogue"
+        assert len(set(names)) == 150, "duplicate joker names in catalogue"
         dead = [k for k in JOKER_CATALOGUE if JOKER_REGISTRY.get(k) is None]
         assert dead == [], f"dead shop jokers: {dead}"
         # The old duplicate keys must be gone (The Duo/Trio/Family/Order/Tribe,

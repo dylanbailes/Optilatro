@@ -74,8 +74,8 @@ class TestBlindSequencing:
 
     def test_blind_chips_match_table(self, game):
         """Chip targets match the BLIND_CHIPS table, except the large-blind
-        bosses (The Wall 4x / Violet Vessel 6x) which scale from the base
-        (small-blind) requirement per the real game."""
+        bosses (The Wall 4x / Violet Vessel 6x / The Needle 1x) which scale
+        from the base (small-blind) requirement per the real game."""
         for ante in range(1, 9):
             for blind_idx in range(3):
                 game.ante = ante
@@ -83,7 +83,9 @@ class TestBlindSequencing:
                 game._prepare_next_blind()
                 expected = BLIND_CHIPS[ante][blind_idx]
                 key = game.current_blind.boss_key
-                if key == "bl_wall":
+                if key == "bl_needle":
+                    expected = BLIND_CHIPS[ante][0]      # 1x base
+                elif key == "bl_wall":
                     expected = BLIND_CHIPS[ante][0] * 4
                 elif key == "bl_violet":
                     expected = BLIND_CHIPS[ante][0] * 6

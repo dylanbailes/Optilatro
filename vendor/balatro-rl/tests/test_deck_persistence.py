@@ -82,7 +82,8 @@ class TestDeckPersistence:
         assert destroyed_1 not in pool
 
     def test_played_cards_not_redrawn_mid_round(self):
-        """Within a round, played cards leave the draw pile (no instant redraw)."""
+        """Within a round, played cards leave the draw pile until the deck is
+        exhausted (no instant redraw before the mid-round reshuffle)."""
         g = BalatroGame(seed=42)
         g.step({"type": "play_blind"})
         played = g.hand[0]
@@ -90,6 +91,73 @@ class TestDeckPersistence:
         # The card is gone from hand and deck for the rest of this round
         assert played not in g.deck
         assert played not in g.hand
+
+
+class TestMidRoundReshuffle:
+    """Real game: when the deck runs out mid-round, the spent pile (cards
+    played/discarded this round) is reshuffled back in so play can continue.
+    Destroyed cards are never in spent, so they stay gone for good."""
+
+    @staticmethod
+    def _exhaust_deck(game):
+        """Leave a single card in hand, park the rest of the round's pool in
+        spent, and empty the deck — forcing the next draw to reshuffle."""
+        pool = list(game.hand) + list(game.deck)
+        game.hand = [pool[0]]
+        game.spent = pool[1:]
+        game.deck = []
+
+    def test_reshuffle_lets_drawing_continue(self):
+        """Deck exhaustion mid-round reshuffles spent back in; draws continue."""
+        g = BalatroGame(seed=42)
+        g.step({"type": "play_blind"})
+        self._exhaust_deck(g)
+        g.step({"type": "discard", "cards": [0]})
+        # The 52 spent cards (51 parked + 1 discarded) reshuffled into the deck
+        # and 8 drawn back to the hand; nothing is lost.
+        assert len(g.hand) == g.hand_size
+        assert g.spent == []
+        assert len(g.deck) == 52 - g.hand_size
+
+    def test_reshuffle_is_seeded_and_deterministic(self):
+        """The reshuffle draw is deterministic per seed (RESHUFFLE_NODE).
+        (Card.id is a global counter, so compare rank/suit instead.)"""
+        def _run(seed):
+            g = BalatroGame(seed=seed, rng_mode="seed")
+            g.step({"type": "play_blind"})
+            self._exhaust_deck(g)
+            g.step({"type": "discard", "cards": [0]})
+            return [(c.rank, c.suit) for c in g.hand]
+        assert _run(11) == _run(11)   # same seed → same reshuffled hand
+        assert _run(11) != _run(12)   # different seed → different draw
+
+    def test_destroyed_cards_stay_gone_through_reshuffle(self):
+        """Permanently destroyed cards are not in spent, so the reshuffle can
+        never bring them back (Hanged Man / Sixth Sense / Glass shatter)."""
+        g = BalatroGame(seed=42)
+        g.step({"type": "play_blind"})
+        pool = list(g.hand) + list(g.deck)
+        victim = pool[0]
+        g._destroy_card(victim)                       # real destroy path
+        remaining = [c for c in pool if c is not victim]
+        g.hand = [remaining[0]]
+        g.spent = remaining[1:]
+        g.deck = []
+        g.step({"type": "discard", "cards": [0]})
+        assert len(g.hand) == g.hand_size             # reshuffle still draws
+        assert victim not in g.hand + g.deck + g.spent  # and never returns it
+
+    def test_no_infinite_loop_when_nothing_to_reshuffle(self):
+        """With deck AND spent both empty there is nothing to draw — the hand
+        simply stays short instead of looping forever."""
+        g = BalatroGame(seed=42)
+        g.step({"type": "play_blind"})
+        g.hand = []
+        g.deck = []
+        g.spent = []
+        g._draw_to_full()
+        assert g.hand == []
+        assert g.state == State.SELECTING_HAND
 
     def test_boss_debuffs_do_not_persist_via_spent(self):
         """A card debuffed and then played under a boss blind returns un-debuffed."""

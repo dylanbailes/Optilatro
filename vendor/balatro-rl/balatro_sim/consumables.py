@@ -57,11 +57,9 @@ def apply_planet(game: "BalatroGame", planet_key: str) -> bool:
     if not hand:
         return False
     game.planet_levels[hand] = game.planet_levels.get(hand, 1) + 1
-    # Fire satellite jokers
+    # Fire satellite jokers (Satellite / Constellation)
     for j in game.jokers:
-        effect = _get_effect(j.key)
-        if effect and hasattr(effect, "on_planet_used"):
-            effect.on_planet_used(j, planet_key)
+        j.fire("on_planet_used", planet_key)
     # Track for Fortune Teller / Constellation
     game.planets_used.append(planet_key)
     return True
@@ -235,12 +233,8 @@ def apply_tarot(
     if tarot_key == "c_judgement":
         # Create a random joker (if slot available)
         from .shop import random_joker_key
-        if len(game.jokers) < game.joker_slots:
-            from .jokers.base import JokerInstance
-            game.jokers.append(JokerInstance(
-                random_joker_key(rng=game.rng, ante=game.ante, source="sho"),
-                game=game,
-            ))
+        _grant_joker(game, random_joker_key(
+            rng=game.rng, ante=game.ante, source="sho", game=game))
         game.tarots_used.append(tarot_key)
         _fire_tarot_hooks(game, tarot_key)
         return True
@@ -248,12 +242,17 @@ def apply_tarot(
     return False
 
 
+def _grant_joker(game: "BalatroGame", key: str, edition: str = "None"):
+    """Append a new joker and fire its on_init hook (To Do List target,
+    Popcorn/Ramen/Ice Cream/Castle initial values). Used by Judgement /
+    Wraith / The Soul — every acquisition path must init (M1 B2)."""
+    game.grant_joker(key, edition)
+
+
 def _fire_tarot_hooks(game: "BalatroGame", tarot_key: str):
     """Notify jokers that a Tarot was used (e.g. Fortune Teller)."""
     for j in game.jokers:
-        effect = _get_effect(j.key)
-        if effect and hasattr(effect, "on_tarot_used"):
-            effect.on_tarot_used(j, None)
+        j.fire("on_tarot_used", tarot_key)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -350,14 +349,10 @@ def apply_spectral(
 
     if spectral_key == "s_wraith":
         # Create random rare joker, lose $3
-        if len(game.jokers) < game.joker_slots:
-            from .shop import random_joker_key
-            from .jokers.base import JokerInstance
-            game.jokers.append(JokerInstance(
-                random_joker_key(rarity="Rare", rng=game.rng, ante=game.ante,
-                                 source="spe"),
-                game=game,
-            ))
+        from .shop import random_joker_key
+        _grant_joker(game, random_joker_key(
+            rarity="Rare", rng=game.rng, ante=game.ante, source="spe",
+            game=game))
         game.dollars = max(0, game.dollars - 3)
         return True
 
@@ -445,15 +440,12 @@ def apply_spectral(
         return True
 
     if spectral_key == "s_soul":
-        # Create random Legendary joker
-        if len(game.jokers) < game.joker_slots:
-            from .shop import random_joker_key
-            from .jokers.base import JokerInstance
-            game.jokers.append(JokerInstance(
-                random_joker_key(rarity="Legendary", rng=game.rng, ante=game.ante,
-                                 source="spe"),
-                game=game,
-            ))
+        # Create random Legendary joker (possession-aware: a second Soul can't
+        # hand out an already-owned Legendary without Showman — real game).
+        from .shop import random_joker_key
+        _grant_joker(game, random_joker_key(
+            rarity="Legendary", rng=game.rng, ante=game.ante, source="spe",
+            game=game))
         return True
 
     if spectral_key == "s_black_hole":
@@ -486,10 +478,10 @@ VOUCHER_NAME = {
     "v_nacho_tong":     "Nacho Tong",      # +1 permanent hand again
     "v_wasteful":       "Wasteful",        # +1 permanent discard
     "v_recyclomancy":   "Recyclomancy",    # +1 permanent discard again
-    "v_tarot_merchant": "Tarot Merchant",  # Tarots appear 2x more
-    "v_tarot_tycoon":   "Tarot Tycoon",    # Tarots appear 4x more
-    "v_planet_merchant":"Planet Merchant", # Planets appear 2x more
-    "v_planet_tycoon":  "Planet Tycoon",   # Planets appear 4x more
+    "v_tarot_merchant": "Tarot Merchant",  # shop Tarot weight 4 -> 9.6 (~28.6%)
+    "v_tarot_tycoon":   "Tarot Tycoon",    # shop Tarot weight 4 -> 32 (~57.1%)
+    "v_planet_merchant":"Planet Merchant", # shop Planet weight 4 -> 9.6
+    "v_planet_tycoon":  "Planet Tycoon",   # shop Planet weight 4 -> 32
     "v_magic_trick":    "Magic Trick",     # Playing cards can appear in shop
     "v_illusion":       "Illusion",        # Playing cards can have editions
     "v_hieroglyph":     "Hieroglyph",      # -1 ante, -1 hand per round
@@ -609,6 +601,4 @@ def _remove_card(game: "BalatroGame", card):
         game.deck.remove(card)
 
 
-def _get_effect(key: str):
-    from .jokers.base import JOKER_REGISTRY
-    return JOKER_REGISTRY.get(key)
+

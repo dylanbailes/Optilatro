@@ -500,7 +500,10 @@ class BalatroSimEnv(gym.Env):
                 obs[idx+2] = item.price / 20.0
                 can_afford  = float(gs.dollars >= item.price and not item.sold)
                 obs[idx+3] = can_afford
-                obs[idx+4] = float(len(gs.jokers) < gs.joker_slots) if item.kind=="joker" else 0.0
+                # Negative jokers bypass the slot cap (grant_joker) — mirror it
+                obs[idx+4] = (float(len(gs.jokers) < gs.joker_slots
+                                    or item.edition == "Negative")
+                              if item.kind=="joker" else 0.0)
                 obs[idx+5] = float(len(gs.consumable_hand) < gs.consumable_slots) if item.kind in ("planet","tarot","spectral") else 0.0
             idx += SHOP_FEATURES
 

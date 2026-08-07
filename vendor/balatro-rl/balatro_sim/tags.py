@@ -158,16 +158,14 @@ def apply_tag(game, key: str) -> None:
 
 def _add_topup_jokers(game) -> None:
     from .shop import random_joker_key
-    from .jokers.base import JokerInstance
 
     for _ in range(2):
-        if len(game.jokers) >= game.joker_slots:
-            break
         key = random_joker_key(rarity="Common", rng=game.rng,
-                               ante=game.ante, source="top")
-        j = JokerInstance(key, "None", game=game)
+                               ante=game.ante, source="top", game=game)
+        j = game.grant_joker(key, "None")   # single acquisition path (R5)
+        if j is None:
+            break
         j.state["sell_value"] = 3
-        game.jokers.append(j)
 
 
 def _open_pack_tag(game, booster_key: str) -> None:

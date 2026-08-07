@@ -245,14 +245,40 @@ def node_shop_pack(ante: int) -> str:
 
 
 def node_stdset(ante: int) -> str:
-    """Standard pack card draw."""
+    """Standard-Pack enhancement poll (real: functions.hpp nextStandardCard)."""
     return f"stdset{ante}"
+
+
+def node_std_enhanced(ante: int) -> str:
+    """Standard-Pack enhancement-type roll (real: EnhancedStandard node)."""
+    return f"Enhancedsta{ante}"
+
+
+def node_std_front(ante: int) -> str:
+    """Standard-Pack base-card draw (real: FrontStandard node)."""
+    return f"frontsta{ante}"
+
+
+def node_std_edition(ante: int) -> str:
+    """Standard-Pack edition poll (real: StandardEdition node)."""
+    return f"standard_edition{ante}"
+
+
+def node_std_seal(ante: int) -> str:
+    """Standard-Pack seal poll (real: StdSeal node)."""
+    return f"stdseal{ante}"
+
+
+def node_std_seal_type(ante: int) -> str:
+    """Standard-Pack seal-type poll (real: StdSealType node)."""
+    return f"stdsealtype{ante}"
 
 
 # Sim-internal node IDs — deterministic per seed, NOT pinned to real Balatro
 # (balatro-seed models shop/pack/tag/voucher/boss only). Documented as the
 # remaining seed-exactness gap: in-game pseudorandom call sites.
 DECK_SHUFFLE_NODE = "shuffle"
+RESHUFFLE_NODE = "reshuffle"    # mid-round spent-pile reshuffle (deck exhausted)
 CHANCE_NODE = "chance"          # joker/consumable/scoring probability triggers
 AMBER_NODE = "amber"            # Amber Acorn: joker order shuffle
 WHEEL_NODE = "wheel"            # The Wheel: 1-in-7 face-down
