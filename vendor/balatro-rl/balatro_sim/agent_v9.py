@@ -257,6 +257,8 @@ ECONOMY_JOKERS = {
     "j_todo_list", "j_trading",
 }
 
+CHIPS_JOKERS = {"j_sly","j_wily","j_clever","j_devious","j_crafty","j_half","j_banner","j_mystic_summit","j_scary_face","j_odd_todd","j_scholar","j_even_steven"}
+
 # ── Lifecycle archetypes (L3.5) ────────────────────────────────────────────
 # Curated from tools/joker_spec.json `type` column + effect strings. These
 # drive the phase-valued bonus curve in joker_value — a joker's worth changes

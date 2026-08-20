@@ -70,6 +70,8 @@ from .agent_v9 import (
     pack_value,
     spectral_value,
     worth_spending,
+    CHIPS_JOKERS,
+    ECONOMY_JOKERS,
 )
 from .agent_l1 import SearchShopV9
 from .graph_v9 import deck_groups
@@ -100,6 +102,12 @@ V10_DEFAULTS = {
     "reshape_tarot_lovers_bonus": 0.04,
     "reshape_tarot_enh_bonus": 0.06,
     "reshape_tarot_anyenh_bonus": 0.03,
+    "ante1_chip_bias": 0.35,
+    "ante1_econ_discount": 0.35,
+    "ante1_voucher_gate": True,
+    "ante1_kd_boost": True,
+    "ante1_good_hand": 0.65,
+    "sell_uses_full_value": True,
 }
 V10_PARAMS = dict(V10_DEFAULTS)
 
@@ -414,6 +422,12 @@ def _v10_rank_shop_items(game, ref, surplus):
             continue
         if item.kind == "joker":
             value = joker_value(game, item.key, item.edition, ref, surplus)
+            if game.ante == 1:
+                if item.key in CHIPS_JOKERS:
+                    value += V10_PARAMS["ante1_chip_bias"]
+                if item.key in ECONOMY_JOKERS:
+                    from .agent_v9 import econ_value as _ev
+                    value -= (1.0 - V10_PARAMS["ante1_econ_discount"]) * _ev(game, item.key)
             has_room = (len(game.jokers) < game.joker_slots
                         or item.edition == "Negative")
             thr = 0.0 if (game.ante <= 2 and not game.jokers) else p["buy_threshold"]
@@ -431,6 +445,9 @@ def _v10_rank_shop_items(game, ref, surplus):
             if value >= p["buy_threshold"]:
                 buys.append((value, i))
         elif item.kind == "voucher":
+            if game.ante == 1 and V10_PARAMS.get("ante1_voucher_gate", True):
+                if len(game.jokers) == 0 and ref.base_c < 120:
+                    continue
             prio = VOUCHER_PRIORITY.get(item.key, 0)
             if (prio >= 2 and len(game.jokers) > 0 and game.ante > 2
                     and game.dollars - price >= 5):
