@@ -470,6 +470,7 @@ def _v10_rank_shop_items(game, ref, surplus):
                 buys.append((value, i))
         elif item.kind == "voucher":
             if game.ante == 1 and V10_PARAMS.get("ante1_voucher_gate", True) and V10_PARAMS["farm_clear_threshold"] < 1.0:
+                # skip only when both: no jokers AND weak ceiling (De Morgan: allow if j!=0 or base>=120)
                 if len(game.jokers) == 0 and ref.base_c < 120:
                     continue
             prio = VOUCHER_PRIORITY.get(item.key, 0)

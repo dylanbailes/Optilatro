@@ -1276,11 +1276,31 @@ def best_discard(game, max_size=None, pool_size=None, base_score=None):
     struct = None
     if p["discard_structure"] and base < remaining:
         min_suit = p["discard_struct_min_suit"]
-        if game._boss_effects_on() and game.current_blind.boss_key in ("bl_goad", "bl_head", "bl_window", "bl_club"):
-            min_suit = 5
-        struct = _structure_pool(hand, min_suit,
-                                 p["discard_struct_min_run"],
-                                 p["discard_struct_min_pairs"])
+        # Boss-aware flush demotion: gated on farming (I1) and suit-specific (I3).
+        # Keep HeuristicV9 byte-identical when farm_clear_threshold>=1.0.
+        # Only demote flush chase (4->5) when chase suit == debuff suit.
+        _BOSS_DEBUFF_SUIT = {"bl_goad": "Spades", "bl_head": "Hearts", "bl_window": "Diamonds", "bl_club": "Clubs"}
+        if game._boss_effects_on() and game.current_blind.boss_key in _BOSS_DEBUFF_SUIT:
+            try:
+                from .agent_v10 import V10_PARAMS as _V10P
+                _farming_on = _V10P.get("farm_clear_threshold", 0.9) < 1.0
+            except Exception:
+                _farming_on = False
+            if _farming_on:
+                _debuff_suit = _BOSS_DEBUFF_SUIT[game.current_blind.boss_key]
+                # Probe with min_suit=4; only demote if flush chase targets debuff suit (I3)
+                _probe = _structure_pool(hand, min_suit, p["discard_struct_min_run"], p["discard_struct_min_pairs"])
+                if _probe[0] is not None and _probe[1] is not None and _probe[1][0] == "flush" and _probe[1][1] == _debuff_suit:
+                    min_suit = 5
+                    struct = _structure_pool(hand, min_suit, p["discard_struct_min_run"], p["discard_struct_min_pairs"])
+                else:
+                    struct = _probe
+            else:
+                struct = _structure_pool(hand, min_suit, p["discard_struct_min_run"], p["discard_struct_min_pairs"])
+        else:
+            struct = _structure_pool(hand, min_suit,
+                                     p["discard_struct_min_run"],
+                                     p["discard_struct_min_pairs"])
     if struct is not None and struct[0]:
         pool_indices, target = struct
         pool = list(pool_indices)
