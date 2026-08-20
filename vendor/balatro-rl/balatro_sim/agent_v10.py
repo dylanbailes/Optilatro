@@ -72,6 +72,7 @@ from .agent_v9 import (
     worth_spending,
     CHIPS_JOKERS,
     ECONOMY_JOKERS,
+    XMULT_JOKERS,
 )
 from .agent_l1 import SearchShopV9
 from .graph_v9 import deck_groups
@@ -125,6 +126,29 @@ def _money_vp(dollars: float) -> float:
 
 def _boss_key(game) -> str:
     return game.current_blind.boss_key if game._boss_effects_on() else ""
+
+
+def _v10_worst_joker_idx(game, ref=None):
+    """Worst-joker via full joker_value (lifecycle + econ + graph), not just ceiling marginal.
+    Protects last xMult like worst_joker_idx but uses lifecycle-aware value so flat
+    chips become worst late. Gated by V10_PARAMS sell_uses_full_value."""
+    if not V10_PARAMS.get("sell_uses_full_value", True):
+        from .agent_v9 import worst_joker_idx as _orig
+        return _orig(game, ref)
+    if not game.jokers:
+        return None
+    owned = [j.key for j in game.jokers]
+    n_xmult = sum(1 for k in owned if k in XMULT_JOKERS)
+    vals = []
+    for i, j in enumerate(game.jokers):
+        if n_xmult <= 1 and j.key in XMULT_JOKERS:
+            continue
+        v = joker_value(game, j.key, j.edition, ref)
+        vals.append((v, i))
+    if not vals:
+        return None
+    vals.sort()
+    return vals[0][1]
 
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -435,7 +459,7 @@ def _v10_rank_shop_items(game, ref, surplus):
                 buys.append((value, i))
             elif not has_room:
                 if worst_cache is None:
-                    worst_cache = worst_joker_idx(game, ref)
+                    worst_cache = _v10_worst_joker_idx(game, ref)
                 if (worst_cache is not None
                         and value - joker_value_of(game, worst_cache, ref)
                         >= p["sell_margin"]):
@@ -1212,7 +1236,7 @@ def _v10_decide_hand(game) -> dict:
     # Pre-actions (unchanged from v9).
     if (game.current_blind.boss_key == "bl_verdant"
             and game.verdant_debuff and game.jokers):
-        worst = worst_joker_idx(game)
+        worst = _v10_worst_joker_idx(game)
         if worst is not None:
             return {"type": "sell_joker", "joker_idx": worst}
 

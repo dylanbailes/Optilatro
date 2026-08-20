@@ -58,3 +58,19 @@ def test_ante1_good_hand_65_with_two_hands():
     from balatro_sim.agent_v10 import V10_PARAMS
     assert V10_PARAMS["ante1_good_hand"] == 0.65
     assert ACTIVE_PARAMS["discard_play_good_hand"] == 0.50
+
+
+def test_sell_uses_full_value_late():
+    from balatro_sim.game import BalatroGame
+    from balatro_sim.jokers.base import JokerInstance
+    from balatro_sim.agent_v9 import reference_hand
+    from balatro_sim.agent_v10 import _v10_worst_joker_idx
+    g = BalatroGame(seed=5, rng_mode="seed")
+    g.ante = 6
+    g.jokers = [JokerInstance("j_sly"), JokerInstance("j_family")]
+    from balatro_sim.card import Card
+    g.deck = [Card(7,"Spades") for _ in range(7)] + [Card(2,"Hearts") for _ in range(45)]
+    g.hand = [Card(7,"Hearts"), Card(7,"Diamonds"), Card(7,"Clubs"), Card(2,"Spades")]
+    ref = reference_hand(g)
+    idx = _v10_worst_joker_idx(g, ref)
+    assert g.jokers[idx].key == "j_sly", f"worst {g.jokers[idx].key} not j_sly"
