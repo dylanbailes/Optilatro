@@ -131,8 +131,8 @@ def _boss_key(game) -> str:
 def _v10_worst_joker_idx(game, ref=None):
     """Worst-joker via full joker_value (lifecycle + econ + graph), not just ceiling marginal.
     Protects last xMult like worst_joker_idx but uses lifecycle-aware value so flat
-    chips become worst late. Gated by V10_PARAMS sell_uses_full_value."""
-    if not V10_PARAMS.get("sell_uses_full_value", True):
+    chips become worst late. Gated by V10_PARAMS sell_uses_full_value and farm gate."""
+    if V10_PARAMS.get("farm_clear_threshold", 0.90) >= 1.0 or not V10_PARAMS.get("sell_uses_full_value", True):
         from .agent_v9 import worst_joker_idx as _orig
         return _orig(game, ref)
     if not game.jokers:
@@ -446,7 +446,7 @@ def _v10_rank_shop_items(game, ref, surplus):
             continue
         if item.kind == "joker":
             value = joker_value(game, item.key, item.edition, ref, surplus)
-            if game.ante == 1:
+            if game.ante == 1 and V10_PARAMS["farm_clear_threshold"] < 1.0:
                 if item.key in CHIPS_JOKERS:
                     value += V10_PARAMS["ante1_chip_bias"]
                 if item.key in ECONOMY_JOKERS:
@@ -469,7 +469,7 @@ def _v10_rank_shop_items(game, ref, surplus):
             if value >= p["buy_threshold"]:
                 buys.append((value, i))
         elif item.kind == "voucher":
-            if game.ante == 1 and V10_PARAMS.get("ante1_voucher_gate", True):
+            if game.ante == 1 and V10_PARAMS.get("ante1_voucher_gate", True) and V10_PARAMS["farm_clear_threshold"] < 1.0:
                 if len(game.jokers) == 0 and ref.base_c < 120:
                     continue
             prio = VOUCHER_PRIORITY.get(item.key, 0)
@@ -935,7 +935,7 @@ def estimate_clear_probability_bounds(game, h=None, d=None, T=None, hand=None,
     M = _value_multiset(game.deck)
     N = sum(M.values())
     hs = max(1, len(hand))
-    if game.ante == 1 and V10_PARAMS.get("ante1_kd_boost", True):
+    if game.ante == 1 and V10_PARAMS.get("ante1_kd_boost", True) and V10_PARAMS["farm_clear_threshold"] < 1.0:
         k_d = min(5, hs)
         k_r = max(2, hs - 4)
     else:
@@ -997,7 +997,7 @@ def _tier1_survive(game, plays):
         clearing.sort(key=lambda e: (len(e[1]), e[0]))
         return {"type": "play", "cards": list(clearing[0][1])}
 
-    good_thresh = V10_PARAMS.get("ante1_good_hand", p["discard_play_good_hand"]) if game.ante == 1 and game.hands_left == 2 else p["discard_play_good_hand"]
+    good_thresh = V10_PARAMS.get("ante1_good_hand", p["discard_play_good_hand"]) if game.ante == 1 and game.hands_left == 2 and V10_PARAMS["farm_clear_threshold"] < 1.0 else p["discard_play_good_hand"]
     good_hand = best_score >= target * good_thresh
     if (not good_hand and game.discards_left > 0 and len(game.deck) > 0
             and p["discard_hold_until_clear"] and game.hands_left >= 2):
