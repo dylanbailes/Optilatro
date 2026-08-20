@@ -40,3 +40,21 @@ def test_ante1_p_clear_kd_boost():
     g2.deck = list(g.deck)
     from balatro_sim.agent_v10 import estimate_clear_probability as ecp2
     assert p_before >= ecp2(g2) - 1e-9
+
+
+def test_structure_pool_boss_debuff_demotes_flush():
+    from balatro_sim.card import Card
+    from balatro_sim.agent_v9 import _structure_pool
+    hand = [Card(2,"Hearts"), Card(5,"Hearts"), Card(9,"Hearts"), Card(11,"Hearts"),
+            Card(7,"Clubs"), Card(8,"Clubs")]
+    pool4, target4 = _structure_pool(hand, min_suit=4, min_run=4, min_pairs=2)
+    assert target4 is not None and target4[0] == "flush"
+    pool5, target5 = _structure_pool(hand, min_suit=5, min_run=4, min_pairs=2)
+    assert target5 is None or target5[0] != "flush"
+
+
+def test_ante1_good_hand_65_with_two_hands():
+    from balatro_sim.agent_v9 import ACTIVE_PARAMS
+    from balatro_sim.agent_v10 import V10_PARAMS
+    assert V10_PARAMS["ante1_good_hand"] == 0.65
+    assert ACTIVE_PARAMS["discard_play_good_hand"] == 0.50

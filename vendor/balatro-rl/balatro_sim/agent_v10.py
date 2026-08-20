@@ -973,7 +973,8 @@ def _tier1_survive(game, plays):
         clearing.sort(key=lambda e: (len(e[1]), e[0]))
         return {"type": "play", "cards": list(clearing[0][1])}
 
-    good_hand = best_score >= target * p["discard_play_good_hand"]
+    good_thresh = V10_PARAMS.get("ante1_good_hand", p["discard_play_good_hand"]) if game.ante == 1 and game.hands_left == 2 else p["discard_play_good_hand"]
+    good_hand = best_score >= target * good_thresh
     if (not good_hand and game.discards_left > 0 and len(game.deck) > 0
             and p["discard_hold_until_clear"] and game.hands_left >= 2):
         dset, dscore = best_discard(game, base_score=best_score)

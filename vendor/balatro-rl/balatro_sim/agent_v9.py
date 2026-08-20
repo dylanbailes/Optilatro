@@ -1275,7 +1275,10 @@ def best_discard(game, max_size=None, pool_size=None, base_score=None):
     remaining = max(0, game.current_blind.chips_target - game.chips_scored)
     struct = None
     if p["discard_structure"] and base < remaining:
-        struct = _structure_pool(hand, p["discard_struct_min_suit"],
+        min_suit = p["discard_struct_min_suit"]
+        if game._boss_effects_on() and game.current_blind.boss_key in ("bl_goad", "bl_head", "bl_window", "bl_club"):
+            min_suit = 5
+        struct = _structure_pool(hand, min_suit,
                                  p["discard_struct_min_run"],
                                  p["discard_struct_min_pairs"])
     if struct is not None and struct[0]:
