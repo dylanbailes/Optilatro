@@ -20,7 +20,7 @@ oracle (which it reuses BY IMPORT — agent_v9 stays frozen as the A/B baseline)
 
 Everything is human-fair (a pure function of the known deck composition; no
 draw-order peek) and side-effect-free on the live game (throwaway seed-0 RNG,
-isolated eval copies). See agent-v10-inblind-spec.md.
+isolated eval copies). See docs/agent-v10-inblind-spec.md.
 """
 from __future__ import annotations
 

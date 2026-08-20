@@ -1,7 +1,7 @@
 """test_agent_v10.py — M12 in-blind goal hierarchy regression tests.
 
 Pins the human-fair / correctness invariants of `agent_v10` (§7 of
-agent-v10-inblind-spec.md) and the value formulas (§5.5/§6):
+docs/agent-v10-inblind-spec.md) and the value formulas (§5.5/§6):
 
   - P(clear) is a pure function of deck COMPOSITION (order-independent,
     deterministic, no live mutation, no draw-order peek).

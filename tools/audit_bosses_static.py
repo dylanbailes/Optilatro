@@ -2,7 +2,7 @@
 fidelity gate.
 
 Verifies the sim's boss tables and game.py boss-effect implementation against
-tools/boss_spec.json, which is generated from balatro-mechanics-reference(2).md
+tools/boss_spec.json, which is generated from docs/reference/balatro-mechanics.md
 §10 + §16 (the project's source of truth).
 
 Gates, each of which must report 0:

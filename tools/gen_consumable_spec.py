@@ -1,5 +1,5 @@
 """Generate tools/consumable_spec.json — machine-readable Tarot / Planet /
-Spectral / Voucher contracts parsed from balatro-mechanics-reference(2).md
+Spectral / Voucher contracts parsed from docs/reference/balatro-mechanics.md
 §3-§5 + §9 (the project's source of truth), keyed by the sim's canonical
 keys (c_*/pl_*/s_*/v_*).
 
@@ -23,15 +23,17 @@ import json
 import re
 import sys
 
-sys.path.insert(0, "vendor/balatro-rl")
+from _paths import REFERENCE_DOC, ROOT, VENDOR_RL
+
+sys.path.insert(0, str(VENDOR_RL))
 from balatro_sim.consumables import (
     ALL_PLANETS, ALL_SPECTRALS, ALL_TAROTS,
     PLANET_HAND, PLANET_NAME, SPECTRAL_NAME, TAROT_NAME,
     VOUCHER_NAME,
 )
 
-DOC = "balatro-mechanics-reference(2).md"
-OUT = "tools/consumable_spec.json"
+DOC = str(REFERENCE_DOC)
+OUT = str(ROOT / "tools" / "consumable_spec.json")
 
 #: family -> (section header, doc cost $, doc sell $)
 FAMILIES = {

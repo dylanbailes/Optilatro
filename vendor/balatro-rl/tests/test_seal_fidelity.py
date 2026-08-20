@@ -1,6 +1,6 @@
 """test_seal_fidelity.py — seal/enhancement fidelity regression tests.
 
-Pins the Phase-0 sim fixes from `agent-v10-inblind-spec.md` §3:
+Pins the Phase-0 sim fixes from `docs/agent-v10-inblind-spec.md` §3:
   - Gold seal pays $3 when SCORED (not when held at round end).
   - Purple seal creates a Tarot when DISCARDED (not when played).
   - Blue seal is retriggered by Mime (2 planets per held Blue seal).
