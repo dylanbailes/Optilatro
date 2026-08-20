@@ -1276,6 +1276,14 @@ def best_discard(game, max_size=None, pool_size=None, base_score=None):
     struct = None
     if p["discard_structure"] and base < remaining:
         min_suit = p["discard_struct_min_suit"]
+        # Small blind ante-1: chase flush for most suited suit (3+), makes Small impossible to lose per §16 300
+        if game.ante == 1 and game.current_blind.kind == "Small":
+            try:
+                from .agent_v10 import V10_PARAMS as _V10P2
+                if _V10P2.get("farm_clear_threshold", 0.9) < 1.0:
+                    min_suit = min(min_suit, 3)
+            except Exception:
+                pass
         # Boss-aware flush demotion: gated on farming (I1) and suit-specific (I3).
         # Keep HeuristicV9 byte-identical when farm_clear_threshold>=1.0.
         # Only demote flush chase (4->5) when chase suit == debuff suit.
@@ -1310,6 +1318,19 @@ def best_discard(game, max_size=None, pool_size=None, base_score=None):
         pool = pool_size if pool_size is not None else p["discard_pool_size"]
         pool = sorted(range(len(hand)),
                       key=lambda i: _card_quality(hand[i]))[:pool]
+    # Joker-aware keep: never discard cards a joker needs (photograph faces, Duo Pair etc) — gated farm<1.0 so farm_off stays identical
+    try:
+        from balatro_sim.agent_v10 import joker_keep_indices as _jk
+        _keep = _jk(hand, game)
+        if _keep:
+            pool = [i for i in pool if i not in _keep]
+            if struct is not None and struct[0]:
+                # keep at least 1 discard if pool emptied but we still need to discard something — fall back to weakest non-keep
+                if not pool:
+                    # pool emptied by joker keep — no joker-breaking discard
+                    return (), base
+    except Exception:
+        pass
     if max_size < 1 or not pool:
         return (), base
 

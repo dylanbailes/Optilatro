@@ -109,6 +109,7 @@ V10_DEFAULTS = {
     "ante1_kd_boost": True,
     "ante1_good_hand": 0.65,
     "sell_uses_full_value": True,
+    "ante1_buffoon_boost": 0.20,
 }
 V10_PARAMS = dict(V10_DEFAULTS)
 
@@ -149,6 +150,90 @@ def _v10_worst_joker_idx(game, ref=None):
         return None
     vals.sort()
     return vals[0][1]
+
+
+# Joker-aware keep: which cards to never discard because a joker wants them.
+# Hand-type affinities for chips/xMult jokers (canonical §2). Keep logic mirrors
+# _structure_pool but is driven by owned jokers, not hand structure.
+_CHIPS_HAND_MAP = {
+    "j_sly": "Pair", "j_wily": "Three of a Kind", "j_clever": "Two Pair",
+    "j_devious": "Straight", "j_crafty": "Flush",
+}
+_XMULT_HAND_MAP = {
+    "j_duo": "Pair", "j_trio": "Three of a Kind", "j_family": "Four of a Kind",
+    "j_order": "Straight", "j_tribe": "Flush",
+}
+
+def _hand_keep_indices(hand, hand_type: str):
+    """Indices of cards in `hand` that support `hand_type` and should not be discarded."""
+    n = len(hand)
+    if hand_type == "High Card":
+        return set()
+    if hand_type in ("Pair", "Three of a Kind", "Four of a Kind", "Full House"):
+        # Keep any rank that appears at least twice (pairs/trips that can become trips/quads/full house)
+        from collections import Counter
+        cnt = Counter(c.rank for c in hand)
+        keep_ranks = {r for r,c in cnt.items() if c >= 2}
+        if hand_type == "Three of a Kind" and not keep_ranks:
+            # No pair to start — keep highest rank as seed for trips
+            keep_ranks = {max(cnt, key=cnt.get)} if cnt else set()
+        return {i for i,c in enumerate(hand) if c.rank in keep_ranks}
+    if hand_type == "Two Pair":
+        from collections import Counter
+        cnt = Counter(c.rank for c in hand)
+        keep_ranks = {r for r,c in cnt.items() if c >= 2}
+        return {i for i,c in enumerate(hand) if c.rank in keep_ranks}
+    if hand_type == "Straight":
+        # Keep longest straight run
+        ranks = sorted({c.rank for c in hand}, reverse=True)
+        best_run = []
+        run = [ranks[0]] if ranks else []
+        for r in ranks[1:]:
+            if run[-1] - r == 1:
+                run.append(r)
+            else:
+                if len(run) > len(best_run):
+                    best_run = run
+                run = [r]
+        if len(run) > len(best_run):
+            best_run = run
+        in_run = set(best_run)
+        return {i for i,c in enumerate(hand) if c.rank in in_run}
+    if hand_type == "Flush":
+        from collections import Counter
+        cnt = Counter(c.suit for c in hand)
+        if not cnt:
+            return set()
+        top_suit = cnt.most_common(1)[0][0]
+        return {i for i,c in enumerate(hand) if c.suit == top_suit}
+    return set()
+
+def joker_keep_indices(hand, game) -> set:
+    """Set of hand indices that should not be discarded because an owned joker needs them.
+    Gated on farming (so farm_off stays byte-identical) and ante-1 only for now."""
+    # Only ante-1 and farming on — keep farm_off identical
+    try:
+        if V10_PARAMS.get("farm_clear_threshold", 0.9) >= 1.0:
+            return set()
+    except Exception:
+        return set()
+    if not getattr(game, "jokers", None):
+        return set()
+    keep = set()
+    owned = {j.key for j in game.jokers}
+    # Photograph — keep all face cards (§2 On Scored x2 first face)
+    if "j_photograph" in owned:
+        keep.update(i for i,c in enumerate(hand) if c.is_face_card)
+    # Chip jokers — keep their hand-type support
+    for key, ht in _CHIPS_HAND_MAP.items():
+        if key in owned:
+            keep.update(_hand_keep_indices(hand, ht))
+    # xMult engines — keep their hand-type support (Duo/Trio/Family/Order/Tribe)
+    for key, ht in _XMULT_HAND_MAP.items():
+        if key in owned:
+            keep.update(_hand_keep_indices(hand, ht))
+    # For chips jokers that want High Card (e.g., j_half) — no keep
+    return keep
 
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -466,6 +551,8 @@ def _v10_rank_shop_items(game, ref, surplus):
                     need_sell = (value, worst_cache)
         elif item.kind == "booster":
             value = pack_value(game, item.key)
+            if game.ante == 1 and item.key.startswith("p_buffoon") and V10_PARAMS["farm_clear_threshold"] < 1.0:
+                value += V10_PARAMS.get("ante1_buffoon_boost", 0.20)
             if value >= p["buy_threshold"]:
                 buys.append((value, i))
         elif item.kind == "voucher":
