@@ -1,0 +1,240 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 80,
+ "truncated": false,
+ "dollars": 21,
+ "jokers": [
+  "j_odd_todd",
+  "j_scholar",
+  "j_vampire"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance",
+   "c_chariot"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_fortune_teller",
+   "j_scholar",
+   "j_dusk",
+   "j_gros_michel",
+   "j_vampire"
+  ],
+  "money_spent": 65,
+  "best_score": 4610,
+  "rerolls": 1,
+  "packs_bought": 7,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_dusk"
+   ],
+   [
+    3,
+    "j_fortune_teller"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_fortune_teller",
+     "j_odd_todd"
+    ],
+    696
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_fortune_teller",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    1056
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_dusk",
+     "j_fortune_teller",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    1192
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_fortune_teller",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    1482
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_dusk",
+     "j_fortune_teller",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    1890
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_fortune_teller",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    2562
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_fortune_teller",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    3108
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    510
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    4100
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    60
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    335
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    41
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    52
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_temperance",
+    [
+     "j_dusk",
+     "j_fortune_teller",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_dusk",
+     "j_fortune_teller",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 59,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

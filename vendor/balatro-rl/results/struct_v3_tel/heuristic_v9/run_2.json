@@ -1,0 +1,215 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 58,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_lusty_joker",
+  "j_ticket",
+  "j_todo_list",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ticket",
+   "j_todo_list"
+  ],
+  "money_spent": 27,
+  "best_score": 1671,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    276
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_lusty_joker"
+    ],
+    104
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker"
+    ],
+    90
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_lusty_joker"
+    ],
+    550
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_ticket"
+    ],
+    290
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_lusty_joker",
+     "j_ticket"
+    ],
+    162
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_lusty_joker",
+     "j_ticket"
+    ],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_lusty_joker",
+     "j_ticket"
+    ],
+    224
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    268
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    496
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    150
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    360
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    1311
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_golden",
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    986
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    168
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_golden",
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    124
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_golden",
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    98
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 2,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

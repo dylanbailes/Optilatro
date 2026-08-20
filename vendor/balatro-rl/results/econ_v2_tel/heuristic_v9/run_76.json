@@ -1,0 +1,103 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 23,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_gluttenous_joker",
+  "j_golden",
+  "j_crazy"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gluttenous_joker",
+   "j_golden",
+   "j_crazy"
+  ],
+  "money_spent": 15,
+  "best_score": 1482,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_gluttenous_joker"
+    ],
+    1482
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_golden"
+    ],
+    248
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_golden"
+    ],
+    90
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_golden"
+    ],
+    100
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_golden"
+    ],
+    120
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 76,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,166 @@
+{
+  "gated": [
+    "t_buffoon",
+    "t_ethereal",
+    "t_garbage",
+    "t_handy",
+    "t_meteor",
+    "t_negative",
+    "t_orbital",
+    "t_standard",
+    "t_top_up"
+  ],
+  "packs": {
+    "t_buffoon": "p_buffoon_mega",
+    "t_charm": "p_arcana_mega",
+    "t_ethereal": "p_spectral",
+    "t_meteor": "p_celestial_mega",
+    "t_standard": "p_standard_mega"
+  },
+  "tags": {
+    "t_boss": {
+      "ante": 1,
+      "effect": "Rerolls the upcoming Boss Blind",
+      "kind": "queue",
+      "name": "Boss Tag"
+    },
+    "t_buffoon": {
+      "ante": 2,
+      "effect": "Gives a free Mega Buffoon Pack",
+      "kind": "instant",
+      "name": "Buffoon Tag"
+    },
+    "t_charm": {
+      "ante": 1,
+      "effect": "Gives a free Mega Arcana Pack",
+      "kind": "instant",
+      "name": "Charm Tag"
+    },
+    "t_coupon": {
+      "ante": 1,
+      "effect": "Jokers, Consumables, and Booster Packs in the next shop's initial stock are free (Vouchers excluded)",
+      "kind": "shop",
+      "name": "Coupon Tag"
+    },
+    "t_d6": {
+      "ante": 1,
+      "effect": "Next shop's rerolls start at $0",
+      "kind": "shop",
+      "name": "D6 Tag"
+    },
+    "t_double": {
+      "ante": 1,
+      "effect": "Doubles the next Tag applied (after skipping another Blind)",
+      "kind": "queue",
+      "name": "Double Tag"
+    },
+    "t_economy": {
+      "ante": 1,
+      "effect": "Doubles your money, capped at +$40",
+      "kind": "instant",
+      "name": "Economy Tag"
+    },
+    "t_ethereal": {
+      "ante": 2,
+      "effect": "Gives a free Spectral Pack",
+      "kind": "instant",
+      "name": "Ethereal Tag"
+    },
+    "t_foil": {
+      "ante": 1,
+      "effect": "Next base-edition Joker in shop is free and becomes Foil",
+      "kind": "shop",
+      "name": "Foil Tag"
+    },
+    "t_garbage": {
+      "ante": 2,
+      "effect": "Gives $1 for each unused discard so far this run",
+      "kind": "instant",
+      "name": "Garbage Tag"
+    },
+    "t_handy": {
+      "ante": 2,
+      "effect": "Gives $1 for each hand played so far this run",
+      "kind": "instant",
+      "name": "Handy Tag"
+    },
+    "t_holographic": {
+      "ante": 1,
+      "effect": "Next base-edition Joker in shop is free and becomes Holographic",
+      "kind": "shop",
+      "name": "Holographic Tag"
+    },
+    "t_investment": {
+      "ante": 1,
+      "effect": "Gain $25 after defeating the next Boss Blind",
+      "kind": "queue",
+      "name": "Investment Tag"
+    },
+    "t_juggle": {
+      "ante": 1,
+      "effect": "+3 hand size for the next round only",
+      "kind": "queue",
+      "name": "Juggle Tag"
+    },
+    "t_meteor": {
+      "ante": 2,
+      "effect": "Gives a free Mega Celestial Pack",
+      "kind": "instant",
+      "name": "Meteor Tag"
+    },
+    "t_negative": {
+      "ante": 2,
+      "effect": "Next base-edition Joker in shop is free and becomes Negative",
+      "kind": "shop",
+      "name": "Negative Tag"
+    },
+    "t_orbital": {
+      "ante": 2,
+      "effect": "Upgrades the poker hand type shown on the tag by 3 levels",
+      "kind": "instant",
+      "name": "Orbital Tag"
+    },
+    "t_polychrome": {
+      "ante": 1,
+      "effect": "Next base-edition Joker in shop is free and becomes Polychrome",
+      "kind": "shop",
+      "name": "Polychrome Tag"
+    },
+    "t_rare": {
+      "ante": 1,
+      "effect": "Next shop guarantees a Rare Joker",
+      "kind": "shop",
+      "name": "Rare Tag"
+    },
+    "t_speed": {
+      "ante": 1,
+      "effect": "Gives $5 for each Blind skipped so far this run, including this one",
+      "kind": "instant",
+      "name": "Speed Tag"
+    },
+    "t_standard": {
+      "ante": 2,
+      "effect": "Gives a free Mega Standard Pack",
+      "kind": "instant",
+      "name": "Standard Tag"
+    },
+    "t_top_up": {
+      "ante": 2,
+      "effect": "Spawns up to 2 Common Jokers with no stickers, filling available slots",
+      "kind": "instant",
+      "name": "Top-up Tag"
+    },
+    "t_uncommon": {
+      "ante": 1,
+      "effect": "Next shop guarantees an Uncommon Joker",
+      "kind": "shop",
+      "name": "Uncommon Tag"
+    },
+    "t_voucher": {
+      "ante": 1,
+      "effect": "Next shop has an additional Voucher available",
+      "kind": "shop",
+      "name": "Voucher Tag"
+    }
+  }
+}

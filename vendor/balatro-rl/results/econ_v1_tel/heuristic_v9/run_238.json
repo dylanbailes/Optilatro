@@ -1,0 +1,314 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 74,
+ "truncated": false,
+ "dollars": 14,
+ "jokers": [
+  "j_joker",
+  "j_shoot_the_moon",
+  "j_credit_card",
+  "j_misprint"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_death",
+   "c_judgement",
+   "c_death",
+   "c_hierophant"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_joker",
+   "j_credit_card",
+   "j_misprint"
+  ],
+  "money_spent": 45,
+  "best_score": 3023,
+  "rerolls": 3,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_sixth_sense"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    312
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_joker"
+    ],
+    480
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_shoot_the_moon"
+    ],
+    836
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_joker",
+     "j_shoot_the_moon",
+     "j_sixth_sense"
+    ],
+    544
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_joker",
+     "j_shoot_the_moon",
+     "j_sixth_sense"
+    ],
+    520
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_shoot_the_moon",
+     "j_sixth_sense"
+    ],
+    608
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_shoot_the_moon",
+     "j_sixth_sense"
+    ],
+    832
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_shoot_the_moon",
+     "j_sixth_sense"
+    ],
+    1638
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_misprint",
+     "j_shoot_the_moon",
+     "j_sixth_sense"
+    ],
+    840
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_misprint",
+     "j_shoot_the_moon",
+     "j_sixth_sense"
+    ],
+    600
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_misprint",
+     "j_shoot_the_moon",
+     "j_sixth_sense"
+    ],
+    1140
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    2555
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    468
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    1564
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_judgement",
+    [
+     "j_joker"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_joker",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_judgement",
+    [
+     "j_joker",
+     "j_shoot_the_moon"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_shoot_the_moon",
+     "j_sixth_sense"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hierophant",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_shoot_the_moon",
+     "j_sixth_sense"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_misprint",
+     "j_shoot_the_moon",
+     "j_sixth_sense"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 238,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

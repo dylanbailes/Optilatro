@@ -1,0 +1,202 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 66,
+ "truncated": false,
+ "dollars": 11,
+ "jokers": [
+  "j_hanging_chad",
+  "j_gluttenous_joker",
+  "j_flower_pot",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [
+   "c_emperor"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hanging_chad",
+   "j_gluttenous_joker",
+   "j_golden",
+   "j_flower_pot",
+   "j_splash"
+  ],
+  "money_spent": 62,
+  "best_score": 2982,
+  "rerolls": 2,
+  "packs_bought": 6,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    3,
+    "j_golden"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    40
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_gluttenous_joker",
+     "j_hanging_chad"
+    ],
+    336
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_hanging_chad"
+    ],
+    160
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    462
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    264
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    1176
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    2121
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    2784
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    2640
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_hanging_chad",
+     "j_splash"
+    ],
+    1792
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_hanging_chad",
+     "j_splash"
+    ],
+    770
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_hanging_chad",
+     "j_splash"
+    ],
+    360
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_hanging_chad",
+     "j_splash"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_emperor",
+    [
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 47,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 50
+ }
+}

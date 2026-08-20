@@ -1,0 +1,863 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 204,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_raised_fist",
+  "j_faceless",
+  "j_sly",
+  "j_dusk",
+  "j_gros_michel"
+ ],
+ "stats": {
+  "tarots": [
+   "c_sun",
+   "c_death",
+   "c_star",
+   "c_temperance",
+   "c_devil",
+   "c_wheel_of_fortune",
+   "c_lovers",
+   "c_devil",
+   "c_strength",
+   "c_magician",
+   "c_world",
+   "c_world",
+   "c_death",
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_uranus",
+   "pl_mercury",
+   "pl_uranus"
+  ],
+  "spectrals": [
+   "s_medium"
+  ],
+  "jokers_bought": [
+   "j_runner",
+   "j_odd_todd",
+   "j_raised_fist",
+   "j_faceless",
+   "j_sly",
+   "j_green_joker",
+   "j_dusk",
+   "j_gros_michel"
+  ],
+  "money_spent": 155,
+  "best_score": 38353,
+  "rerolls": 2,
+  "packs_bought": 21,
+  "packs_opened": 14,
+  "jokers_sold": [
+   [
+    3,
+    "j_todo_list"
+   ],
+   [
+    3,
+    "j_runner"
+   ],
+   [
+    4,
+    "j_odd_todd"
+   ],
+   [
+    5,
+    "j_green_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_todo_list"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_todo_list"
+    ],
+    296
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_runner",
+     "j_todo_list"
+    ],
+    320
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_runner",
+     "j_todo_list"
+    ],
+    76
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_runner",
+     "j_todo_list"
+    ],
+    80
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_runner",
+     "j_todo_list"
+    ],
+    132
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_odd_todd",
+     "j_runner",
+     "j_todo_list"
+    ],
+    540
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_odd_todd",
+     "j_runner",
+     "j_todo_list"
+    ],
+    436
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_runner",
+     "j_todo_list"
+    ],
+    1548
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_runner",
+     "j_todo_list"
+    ],
+    2352
+   ],
+   [
+    3,
+    "Four of a Kind",
+    [
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_runner",
+     "j_todo_list"
+    ],
+    4998
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_runner",
+     "j_todo_list"
+    ],
+    1872
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_runner",
+     "j_todo_list"
+    ],
+    2592
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    5064
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_green_joker",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    4104
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_green_joker",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    1820
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_green_joker",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    7504
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_faceless",
+     "j_green_joker",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    7380
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_green_joker",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    2730
+   ],
+   [
+    5,
+    "Four of a Kind",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_green_joker",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    8200
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_green_joker",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    3250
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    7738
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    8880
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    8478
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    5750
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    8510
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    11960
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    8170
+   ],
+   [
+    6,
+    "Flush House",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    16188
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    8372
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    5502
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    8470
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    6956
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    11110
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    11817
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_sun",
+    [
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_odd_todd",
+     "j_runner",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_star",
+    [
+     "j_odd_todd",
+     "j_runner",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_runner",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_devil",
+    [
+     "j_faceless",
+     "j_green_joker",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "s_medium",
+    [
+     "j_faceless",
+     "j_green_joker",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_wheel_of_fortune",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_green_joker",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_uranus",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_lovers",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_devil",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Purple"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_strength",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_magician",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_world",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_world",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Gold"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_death",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Blue"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_high_priestess",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_uranus",
+    [
+     "j_dusk",
+     "j_faceless",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 11,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

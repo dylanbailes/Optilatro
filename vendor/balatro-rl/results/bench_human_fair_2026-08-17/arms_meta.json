@@ -1,0 +1,39 @@
+{
+ "seed_bank": "0..299 (300 seeds, White Stake, rng_mode=seed)",
+ "notes": [
+  "Human-fair pivot benchmark: agents use only human-known info (deck composition, current shop, revealed boss); draw order / future shops / future bosses are never consulted.",
+  "The comparative search shares _rank_shop_items + the same money gates + the same first-passing-argmax rule as L0, so it is byte-identical to the heuristic — it needs a different decision rule to add value.",
+  "Isolation arm (econ/gen terms OFF) attributes the heuristic drop: 19/300 vs 18/300 — the new mean-measure valuation terms are neutral; the drop vs the recorded M9 heuristic (34/300 = 11.33%) is the discard-EV change (exact draw-order peek -> composition EV).",
+  "The recorded M9 lookahead peak (70/300 = 23.33%) is not reproducible on this code: the rollout policy is now human-fair, so the historic peak bundled the shop-search oracle WITH exact-discard per-hand play."
+ ],
+ "arms": [
+  {
+   "label": "heuristic_v9 (human-fair)",
+   "slug": "hf_ab_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\hf_ab_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policies heuristic_v9,search_shop_v9 --workers 16 --telemetry-dir results/hf_ab_tel"
+  },
+  {
+   "label": "search_shop_v9 (comparative)",
+   "slug": "hf_ab_tel_search_shop_v9",
+   "source": "vendor\\balatro-rl\\results\\hf_ab_tel\\search_shop_v9",
+   "n": 300,
+   "command": "same invocation as heuristic_v9 (human-fair) — one bench run, two policies"
+  },
+  {
+   "label": "search_shop_v9 --lookahead (oracle)",
+   "slug": "lookahead_tel_search_shop_v9",
+   "source": "vendor\\balatro-rl\\results\\lookahead_tel\\search_shop_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policies search_shop_v9 --lookahead --workers 16 --telemetry-dir results/lookahead_tel"
+  },
+  {
+   "label": "heuristic_v9 (econ/gen terms OFF)",
+   "slug": "hf_iso_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\hf_iso_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policies heuristic_v9 --workers 16 --telemetry-dir results/hf_iso_tel --params '{\"econ_value_weight\": 0, \"gen_value_weight\": 0}'"
+  }
+ ]
+}

@@ -1,0 +1,261 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 52,
+ "truncated": false,
+ "dollars": 6,
+ "jokers": [
+  "j_certificate",
+  "j_clever"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon",
+   "c_emperor",
+   "c_sun",
+   "c_empress"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_certificate",
+   "j_clever"
+  ],
+  "money_spent": 18,
+  "best_score": 992,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    68
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_certificate"
+    ],
+    256
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_certificate"
+    ],
+    288
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    360
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    260
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    320
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    284
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    108
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    280
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    292
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    240
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    40
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_moon",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_sun",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Blue"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_certificate",
+     "j_clever"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 277,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

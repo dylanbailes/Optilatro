@@ -1,0 +1,117 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 31,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_satellite",
+  "j_faceless"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_satellite",
+   "j_faceless"
+  ],
+  "money_spent": 10,
+  "best_score": 532,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    112
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    104
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    36
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    64
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_satellite"
+    ],
+    352
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_satellite"
+    ],
+    180
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_satellite"
+    ],
+    88
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_faceless",
+     "j_satellite"
+    ],
+    36
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_faceless",
+     "j_satellite"
+    ],
+    52
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_faceless",
+     "j_satellite"
+    ],
+    15
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 142,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

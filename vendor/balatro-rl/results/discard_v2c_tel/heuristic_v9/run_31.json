@@ -1,0 +1,990 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 301,
+ "truncated": false,
+ "dollars": 22,
+ "jokers": [
+  "j_erosion",
+  "j_bloodstone",
+  "j_cavendish",
+  "j_family",
+  "j_stencil"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_magician",
+   "c_fool",
+   "c_magician",
+   "c_fool",
+   "c_magician",
+   "c_hermit",
+   "c_fool",
+   "c_hermit",
+   "c_hermit",
+   "c_death",
+   "c_devil",
+   "c_wheel_of_fortune",
+   "c_lovers",
+   "c_hermit",
+   "c_hanged_man",
+   "c_star"
+  ],
+  "planets": [],
+  "spectrals": [
+   "s_aura"
+  ],
+  "jokers_bought": [
+   "j_8_ball",
+   "j_ice_cream",
+   "j_bootstraps",
+   "j_ticket",
+   "j_seeing_double",
+   "j_egg",
+   "j_popcorn",
+   "j_sock_and_buskin",
+   "j_erosion",
+   "j_bull",
+   "j_ticket",
+   "j_credit_card",
+   "j_photograph",
+   "j_delayed_grat",
+   "j_bloodstone",
+   "j_ancient",
+   "j_cavendish",
+   "j_family",
+   "j_scary_face",
+   "j_abstract",
+   "j_rocket",
+   "j_runner",
+   "j_stencil"
+  ],
+  "money_spent": 324,
+  "best_score": 98055,
+  "rerolls": 5,
+  "packs_bought": 31,
+  "packs_opened": 21,
+  "jokers_sold": [
+   [
+    2,
+    "j_8_ball"
+   ],
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_egg"
+   ],
+   [
+    4,
+    "j_ice_cream"
+   ],
+   [
+    4,
+    "j_runner"
+   ],
+   [
+    4,
+    "j_bootstraps"
+   ],
+   [
+    4,
+    "j_popcorn"
+   ],
+   [
+    5,
+    "j_ticket"
+   ],
+   [
+    5,
+    "j_credit_card"
+   ],
+   [
+    5,
+    "j_bull"
+   ],
+   [
+    5,
+    "j_seeing_double"
+   ],
+   [
+    5,
+    "j_delayed_grat"
+   ],
+   [
+    5,
+    "j_photograph"
+   ],
+   [
+    6,
+    "j_ancient"
+   ],
+   [
+    7,
+    "j_sock_and_buskin"
+   ],
+   [
+    7,
+    "j_scary_face"
+   ],
+   [
+    7,
+    "j_abstract"
+   ],
+   [
+    7,
+    "j_rocket"
+   ],
+   [
+    8,
+    "j_runner"
+   ],
+   [
+    8,
+    "j_credit_card"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_runner"
+    ],
+    356
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_8_ball",
+     "j_runner"
+    ],
+    858
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_ice_cream",
+     "j_runner"
+    ],
+    882
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_8_ball",
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner"
+    ],
+    1488
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_8_ball",
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner"
+    ],
+    486
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner"
+    ],
+    1320
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner",
+     "j_ticket"
+    ],
+    756
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner",
+     "j_ticket"
+    ],
+    612
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner",
+     "j_ticket"
+    ],
+    520
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner",
+     "j_seeing_double",
+     "j_ticket"
+    ],
+    2032
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner",
+     "j_seeing_double",
+     "j_ticket"
+    ],
+    1440
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner",
+     "j_seeing_double",
+     "j_ticket"
+    ],
+    2340
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    2600
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    2100
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    10368
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    8700
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_bull",
+     "j_erosion",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    13680
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_bull",
+     "j_erosion",
+     "j_seeing_double",
+     "j_sock_and_buskin",
+     "j_ticket"
+    ],
+    12080
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_credit_card",
+     "j_erosion",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    8704
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_credit_card",
+     "j_erosion",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    9568
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_erosion",
+     "j_photograph",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    28336
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_ancient",
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_sock_and_buskin"
+    ],
+    8775
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_ancient",
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_sock_and_buskin"
+    ],
+    23692
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_ancient",
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_sock_and_buskin"
+    ],
+    31050
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_ancient",
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_sock_and_buskin"
+    ],
+    16402
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_ancient",
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_sock_and_buskin"
+    ],
+    11232
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_ancient",
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_sock_and_buskin"
+    ],
+    15210
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_sock_and_buskin"
+    ],
+    2880
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_sock_and_buskin"
+    ],
+    95175
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_scary_face"
+    ],
+    15180
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_scary_face"
+    ],
+    34713
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_scary_face"
+    ],
+    3960
+   ],
+   [
+    7,
+    "Straight",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family"
+    ],
+    4158
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family"
+    ],
+    8928
+   ],
+   [
+    7,
+    "Straight",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family"
+    ],
+    21420
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family"
+    ],
+    45441
+   ],
+   [
+    8,
+    "Flush",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_runner"
+    ],
+    50118
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_stencil"
+    ],
+    10164
+   ],
+   [
+    8,
+    "Full House",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_stencil"
+    ],
+    15624
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_stencil"
+    ],
+    10920
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_stencil"
+    ],
+    13158
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_empress",
+    [
+     "j_8_ball",
+     "j_runner"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_8_ball",
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner",
+     "j_seeing_double",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_bootstraps",
+     "j_ice_cream",
+     "j_runner",
+     "j_seeing_double",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_bull",
+     "j_credit_card",
+     "j_erosion",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_magician",
+    [
+     "j_bull",
+     "j_credit_card",
+     "j_erosion",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Red"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_delayed_grat",
+     "j_erosion",
+     "j_photograph",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_delayed_grat",
+     "j_erosion",
+     "j_photograph",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_delayed_grat",
+     "j_erosion",
+     "j_photograph",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_delayed_grat",
+     "j_erosion",
+     "j_photograph",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_delayed_grat",
+     "j_erosion",
+     "j_photograph",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_devil",
+    [
+     "j_ancient",
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_sock_and_buskin"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "s_aura",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_sock_and_buskin"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_wheel_of_fortune",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_scary_face"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_lovers",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Red"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_hanged_man",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    8,
+    "c_star",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_erosion",
+     "j_family",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 31,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

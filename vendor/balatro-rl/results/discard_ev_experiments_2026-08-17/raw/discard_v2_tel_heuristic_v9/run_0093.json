@@ -1,0 +1,262 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 76,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_stuntman",
+  "j_sock_and_buskin",
+  "j_cloud_9",
+  "j_bull",
+  "j_business"
+ ],
+ "stats": {
+  "tarots": [
+   "c_sun",
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_8_ball",
+   "j_stuntman",
+   "j_sock_and_buskin",
+   "j_cloud_9",
+   "j_bull",
+   "j_business"
+  ],
+  "money_spent": 76,
+  "best_score": 3516,
+  "rerolls": 0,
+  "packs_bought": 7,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_8_ball"
+   ],
+   [
+    3,
+    "j_smiley"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    189
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_smiley"
+    ],
+    1320
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_smiley",
+     "j_stuntman"
+    ],
+    1590
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    612
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    258
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_cloud_9",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    3025
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_cloud_9",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    3420
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_cloud_9",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    3420
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    3516
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_business",
+     "j_cloud_9",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    574
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_business",
+     "j_cloud_9",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    564
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_business",
+     "j_cloud_9",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    582
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_business",
+     "j_cloud_9",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    582
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_sun",
+    [
+     "j_8_ball",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_pluto",
+    [
+     "j_8_ball",
+     "j_cloud_9",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_high_priestess",
+    [
+     "j_8_ball",
+     "j_cloud_9",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 93,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

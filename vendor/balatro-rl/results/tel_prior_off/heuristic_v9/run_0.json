@@ -1,0 +1,886 @@
+{
+ "won": true,
+ "ante": 9,
+ "death_blind": 0,
+ "death_kind": "Boss",
+ "steps": 224,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_half",
+  "j_cavendish",
+  "j_blue_joker",
+  "j_raised_fist",
+  "j_mad"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_fool",
+   "c_death",
+   "c_chariot",
+   "c_fool",
+   "c_hermit",
+   "c_fool",
+   "c_hermit",
+   "c_temperance",
+   "c_hierophant",
+   "c_fool",
+   "c_hierophant",
+   "c_fool",
+   "c_hierophant"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_blue_joker",
+   "j_superposition",
+   "j_ride_the_bus",
+   "j_golden",
+   "j_trading",
+   "j_sly",
+   "j_fibonacci",
+   "j_cavendish",
+   "j_flash",
+   "j_raised_fist",
+   "j_gift",
+   "j_mad"
+  ],
+  "money_spent": 214,
+  "best_score": 110529,
+  "rerolls": 2,
+  "packs_bought": 29,
+  "packs_opened": 17,
+  "jokers_sold": [
+   [
+    3,
+    "j_shoot_the_moon"
+   ],
+   [
+    3,
+    "j_ride_the_bus"
+   ],
+   [
+    4,
+    "j_golden"
+   ],
+   [
+    4,
+    "j_trading"
+   ],
+   [
+    5,
+    "j_superposition"
+   ],
+   [
+    6,
+    "j_fibonacci"
+   ],
+   [
+    6,
+    "j_flash"
+   ],
+   [
+    8,
+    "j_sly"
+   ],
+   [
+    8,
+    "j_gift"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    240
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_shoot_the_moon"
+    ],
+    272
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_shoot_the_moon"
+    ],
+    240
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_shoot_the_moon"
+    ],
+    540
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_shoot_the_moon"
+    ],
+    196
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_shoot_the_moon",
+     "j_superposition"
+    ],
+    852
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_shoot_the_moon",
+     "j_superposition"
+    ],
+    3520
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_shoot_the_moon",
+     "j_superposition"
+    ],
+    4600
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_shoot_the_moon",
+     "j_superposition"
+    ],
+    4884
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_ride_the_bus",
+     "j_shoot_the_moon",
+     "j_superposition"
+    ],
+    5950
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_half",
+     "j_ride_the_bus",
+     "j_superposition"
+    ],
+    4488
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_half",
+     "j_superposition",
+     "j_trading"
+    ],
+    3933
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_half",
+     "j_superposition",
+     "j_trading"
+    ],
+    3129
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_sly",
+     "j_superposition",
+     "j_trading"
+    ],
+    8245
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_sly",
+     "j_superposition",
+     "j_trading"
+    ],
+    6096
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_sly",
+     "j_superposition",
+     "j_trading"
+    ],
+    5616
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_half",
+     "j_sly",
+     "j_superposition"
+    ],
+    9680
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_half",
+     "j_sly",
+     "j_superposition"
+    ],
+    5904
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_half",
+     "j_sly",
+     "j_superposition"
+    ],
+    16884
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_half",
+     "j_sly"
+    ],
+    33264
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_half",
+     "j_sly"
+    ],
+    24273
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_half",
+     "j_sly"
+    ],
+    42159
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_flash",
+     "j_half",
+     "j_sly"
+    ],
+    28737
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_flash",
+     "j_half",
+     "j_sly"
+    ],
+    28179
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    39603
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    47541
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    43071
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    42255
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    38745
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    36285
+   ],
+   [
+    8,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    13959
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    46992
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    37920
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gift",
+     "j_half",
+     "j_raised_fist"
+    ],
+    87480
+   ],
+   [
+    8,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gift",
+     "j_half",
+     "j_raised_fist"
+    ],
+    23049
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_shoot_the_moon",
+     "j_superposition"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_shoot_the_moon",
+     "j_superposition"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_shoot_the_moon",
+     "j_superposition"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_ride_the_bus",
+     "j_superposition"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_chariot",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_half",
+     "j_superposition"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_sly",
+     "j_superposition",
+     "j_trading"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_half",
+     "j_sly",
+     "j_superposition"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_half",
+     "j_sly",
+     "j_superposition"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_half",
+     "j_sly",
+     "j_superposition"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_half",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_half",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_half",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_half",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_half",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_half",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_half",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_hermit",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_flash",
+     "j_half",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_hierophant",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_hierophant",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_hierophant",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    8,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 0,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

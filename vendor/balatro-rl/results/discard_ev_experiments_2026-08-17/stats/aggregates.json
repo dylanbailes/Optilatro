@@ -1,0 +1,1264 @@
+[
+ {
+  "label": "baseline_archived",
+  "slug": "hf_ab_tel_heuristic_v9",
+  "source": "vendor\\balatro-rl\\results\\hf_ab_tel\\heuristic_v9",
+  "n": 300,
+  "wins": 18,
+  "win_rate": 6.0,
+  "ci95": [
+   3.8286055915477437,
+   9.284016248252996
+  ],
+  "mean_ante": 4.133333333333334,
+  "median_ante": 4.0,
+  "mean_steps": 118.29666666666667,
+  "truncated": 0,
+  "death": {
+   "1": 59,
+   "2": 26,
+   "3": 31,
+   "4": 57,
+   "5": 48,
+   "6": 31,
+   "7": 20,
+   "8": 10,
+   "9": 18
+  },
+  "death_pct": {
+   "1": 19.666666666666668,
+   "2": 8.666666666666666,
+   "3": 10.333333333333334,
+   "4": 19.0,
+   "5": 16.0,
+   "6": 10.333333333333334,
+   "7": 6.666666666666667,
+   "8": 3.3333333333333335,
+   "9": 6.0
+  },
+  "survival": {
+   "1": 300,
+   "2": 241,
+   "3": 215,
+   "4": 184,
+   "5": 127,
+   "6": 79,
+   "7": 48,
+   "8": 28,
+   "9": 18
+  },
+  "survival_pct": {
+   "1": 100.0,
+   "2": 80.33333333333333,
+   "3": 71.66666666666667,
+   "4": 61.333333333333336,
+   "5": 42.333333333333336,
+   "6": 26.333333333333332,
+   "7": 16.0,
+   "8": 9.333333333333334,
+   "9": 6.0
+  },
+  "death_blind_kind": [
+   [
+    "Boss",
+    134
+   ],
+   [
+    "Big",
+    94
+   ],
+   [
+    "Small",
+    54
+   ]
+  ],
+  "mean_dollars": 8.896666666666667,
+  "mean_spent": 109.54,
+  "max_score": 1379704,
+  "mean_score": 32007.483333333334,
+  "mean_rerolls": 1.7766666666666666,
+  "mean_packs": 10.163333333333334,
+  "tarots": [
+   [
+    "c_death",
+    161
+   ],
+   [
+    "c_hermit",
+    159
+   ],
+   [
+    "c_fool",
+    136
+   ],
+   [
+    "c_magician",
+    128
+   ],
+   [
+    "c_temperance",
+    124
+   ],
+   [
+    "c_empress",
+    103
+   ],
+   [
+    "c_wheel_of_fortune",
+    97
+   ],
+   [
+    "c_chariot",
+    76
+   ]
+  ],
+  "planets": [
+   [
+    "pl_mercury",
+    258
+   ],
+   [
+    "pl_uranus",
+    75
+   ],
+   [
+    "pl_pluto",
+    59
+   ],
+   [
+    "pl_saturn",
+    43
+   ],
+   [
+    "pl_jupiter",
+    30
+   ],
+   [
+    "pl_venus",
+    14
+   ],
+   [
+    "pl_earth",
+    7
+   ]
+  ],
+  "spectrals": [
+   [
+    "s_black_hole",
+    9
+   ],
+   [
+    "s_ectoplasm",
+    8
+   ],
+   [
+    "s_aura",
+    7
+   ],
+   [
+    "s_talisman",
+    6
+   ],
+   [
+    "s_immolate",
+    6
+   ],
+   [
+    "s_incantation",
+    5
+   ],
+   [
+    "s_deja_vu",
+    5
+   ],
+   [
+    "s_grim",
+    4
+   ]
+  ],
+  "jokers_bought": [
+   [
+    "j_popcorn",
+    69
+   ],
+   [
+    "j_todo_list",
+    66
+   ],
+   [
+    "j_golden",
+    66
+   ],
+   [
+    "j_hanging_chad",
+    63
+   ],
+   [
+    "j_faceless",
+    60
+   ],
+   [
+    "j_egg",
+    56
+   ],
+   [
+    "j_swashbuckler",
+    55
+   ],
+   [
+    "j_business",
+    55
+   ]
+  ],
+  "end_jokers": [
+   [
+    "j_cavendish",
+    48
+   ],
+   [
+    "j_hanging_chad",
+    37
+   ],
+   [
+    "j_splash",
+    36
+   ],
+   [
+    "j_raised_fist",
+    33
+   ],
+   [
+    "j_even_steven",
+    32
+   ],
+   [
+    "j_photograph",
+    31
+   ],
+   [
+    "j_scholar",
+    30
+   ],
+   [
+    "j_abstract",
+    30
+   ]
+  ],
+  "end_with_xmult_pct": 64.33333333333333,
+  "end_with_econ_pct": 40.333333333333336,
+  "end_with_togen_pct": 12.333333333333334,
+  "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policy heuristic_v9 --tel results/hf_ab_tel"
+ },
+ {
+  "label": "v2_all_on",
+  "slug": "discard_v2_tel_heuristic_v9",
+  "source": "vendor\\balatro-rl\\results\\discard_v2_tel\\heuristic_v9",
+  "n": 300,
+  "wins": 12,
+  "win_rate": 4.0,
+  "ci95": [
+   2.302709213793877,
+   6.8604863459978045
+  ],
+  "mean_ante": 4.32,
+  "median_ante": 4.0,
+  "mean_steps": 127.13333333333334,
+  "truncated": 0,
+  "death": {
+   "1": 44,
+   "2": 31,
+   "3": 29,
+   "4": 55,
+   "5": 50,
+   "6": 40,
+   "7": 27,
+   "8": 12,
+   "9": 12
+  },
+  "death_pct": {
+   "1": 14.666666666666666,
+   "2": 10.333333333333334,
+   "3": 9.666666666666666,
+   "4": 18.333333333333332,
+   "5": 16.666666666666668,
+   "6": 13.333333333333334,
+   "7": 9.0,
+   "8": 4.0,
+   "9": 4.0
+  },
+  "survival": {
+   "1": 300,
+   "2": 256,
+   "3": 225,
+   "4": 196,
+   "5": 141,
+   "6": 91,
+   "7": 51,
+   "8": 24,
+   "9": 12
+  },
+  "survival_pct": {
+   "1": 100.0,
+   "2": 85.33333333333333,
+   "3": 75.0,
+   "4": 65.33333333333333,
+   "5": 47.0,
+   "6": 30.333333333333332,
+   "7": 17.0,
+   "8": 8.0,
+   "9": 4.0
+  },
+  "death_blind_kind": [
+   [
+    "Boss",
+    145
+   ],
+   [
+    "Big",
+    80
+   ],
+   [
+    "Small",
+    63
+   ]
+  ],
+  "mean_dollars": 9.31,
+  "mean_spent": 118.82666666666667,
+  "max_score": 13128570,
+  "mean_score": 71086.11333333333,
+  "mean_rerolls": 2.0733333333333333,
+  "mean_packs": 11.206666666666667,
+  "tarots": [
+   [
+    "c_hermit",
+    201
+   ],
+   [
+    "c_death",
+    175
+   ],
+   [
+    "c_fool",
+    148
+   ],
+   [
+    "c_magician",
+    141
+   ],
+   [
+    "c_temperance",
+    129
+   ],
+   [
+    "c_wheel_of_fortune",
+    116
+   ],
+   [
+    "c_empress",
+    111
+   ],
+   [
+    "c_chariot",
+    103
+   ]
+  ],
+  "planets": [
+   [
+    "pl_mercury",
+    271
+   ],
+   [
+    "pl_uranus",
+    105
+   ],
+   [
+    "pl_pluto",
+    41
+   ],
+   [
+    "pl_saturn",
+    33
+   ],
+   [
+    "pl_jupiter",
+    24
+   ],
+   [
+    "pl_venus",
+    20
+   ],
+   [
+    "pl_earth",
+    6
+   ],
+   [
+    "pl_mars",
+    1
+   ]
+  ],
+  "spectrals": [
+   [
+    "s_black_hole",
+    10
+   ],
+   [
+    "s_ectoplasm",
+    10
+   ],
+   [
+    "s_immolate",
+    7
+   ],
+   [
+    "s_talisman",
+    7
+   ],
+   [
+    "s_aura",
+    6
+   ],
+   [
+    "s_grim",
+    6
+   ],
+   [
+    "s_medium",
+    5
+   ],
+   [
+    "s_deja_vu",
+    4
+   ]
+  ],
+  "jokers_bought": [
+   [
+    "j_popcorn",
+    76
+   ],
+   [
+    "j_todo_list",
+    72
+   ],
+   [
+    "j_egg",
+    68
+   ],
+   [
+    "j_reserved_parking",
+    63
+   ],
+   [
+    "j_faceless",
+    62
+   ],
+   [
+    "j_golden",
+    61
+   ],
+   [
+    "j_business",
+    61
+   ],
+   [
+    "j_gros_michel",
+    59
+   ]
+  ],
+  "end_jokers": [
+   [
+    "j_cavendish",
+    54
+   ],
+   [
+    "j_splash",
+    46
+   ],
+   [
+    "j_even_steven",
+    34
+   ],
+   [
+    "j_blue_joker",
+    33
+   ],
+   [
+    "j_hanging_chad",
+    33
+   ],
+   [
+    "j_photograph",
+    29
+   ],
+   [
+    "j_ice_cream",
+    29
+   ],
+   [
+    "j_raised_fist",
+    28
+   ]
+  ],
+  "end_with_xmult_pct": 65.0,
+  "end_with_econ_pct": 44.0,
+  "end_with_togen_pct": 13.0,
+  "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policy heuristic_v9 --params '{\"discard_top_k\": 4, \"discard_flush_bonus\": 0.06, \"discard_target_aware\": true, \"discard_ev_samples\": 6}' --tel results/discard_v2_tel"
+ },
+ {
+  "label": "v2_no_gamble_no_econ",
+  "slug": "discard_v2b_tel_heuristic_v9",
+  "source": "vendor\\balatro-rl\\results\\discard_v2b_tel\\heuristic_v9",
+  "n": 300,
+  "wins": 16,
+  "win_rate": 5.333333333333333,
+  "ci95": [
+   3.309162538404202,
+   8.486983874726851
+  ],
+  "mean_ante": 4.433333333333334,
+  "median_ante": 5.0,
+  "mean_steps": 130.46666666666667,
+  "truncated": 0,
+  "death": {
+   "1": 43,
+   "2": 30,
+   "3": 33,
+   "4": 41,
+   "5": 59,
+   "6": 34,
+   "7": 31,
+   "8": 13,
+   "9": 16
+  },
+  "death_pct": {
+   "1": 14.333333333333334,
+   "2": 10.0,
+   "3": 11.0,
+   "4": 13.666666666666666,
+   "5": 19.666666666666668,
+   "6": 11.333333333333334,
+   "7": 10.333333333333334,
+   "8": 4.333333333333333,
+   "9": 5.333333333333333
+  },
+  "survival": {
+   "1": 300,
+   "2": 257,
+   "3": 227,
+   "4": 194,
+   "5": 153,
+   "6": 94,
+   "7": 60,
+   "8": 29,
+   "9": 16
+  },
+  "survival_pct": {
+   "1": 100.0,
+   "2": 85.66666666666667,
+   "3": 75.66666666666667,
+   "4": 64.66666666666667,
+   "5": 51.0,
+   "6": 31.333333333333332,
+   "7": 20.0,
+   "8": 9.666666666666666,
+   "9": 5.333333333333333
+  },
+  "death_blind_kind": [
+   [
+    "Boss",
+    149
+   ],
+   [
+    "Big",
+    77
+   ],
+   [
+    "Small",
+    58
+   ]
+  ],
+  "mean_dollars": 9.913333333333334,
+  "mean_spent": 123.17,
+  "max_score": 745800,
+  "mean_score": 30690.636666666665,
+  "mean_rerolls": 2.2466666666666666,
+  "mean_packs": 11.916666666666666,
+  "tarots": [
+   [
+    "c_hermit",
+    220
+   ],
+   [
+    "c_death",
+    191
+   ],
+   [
+    "c_fool",
+    173
+   ],
+   [
+    "c_temperance",
+    149
+   ],
+   [
+    "c_magician",
+    149
+   ],
+   [
+    "c_wheel_of_fortune",
+    126
+   ],
+   [
+    "c_empress",
+    125
+   ],
+   [
+    "c_chariot",
+    106
+   ]
+  ],
+  "planets": [
+   [
+    "pl_mercury",
+    291
+   ],
+   [
+    "pl_uranus",
+    107
+   ],
+   [
+    "pl_pluto",
+    56
+   ],
+   [
+    "pl_saturn",
+    54
+   ],
+   [
+    "pl_venus",
+    26
+   ],
+   [
+    "pl_jupiter",
+    14
+   ],
+   [
+    "pl_earth",
+    4
+   ]
+  ],
+  "spectrals": [
+   [
+    "s_black_hole",
+    11
+   ],
+   [
+    "s_aura",
+    8
+   ],
+   [
+    "s_ectoplasm",
+    8
+   ],
+   [
+    "s_medium",
+    7
+   ],
+   [
+    "s_talisman",
+    7
+   ],
+   [
+    "s_grim",
+    6
+   ],
+   [
+    "s_immolate",
+    6
+   ],
+   [
+    "s_deja_vu",
+    6
+   ]
+  ],
+  "jokers_bought": [
+   [
+    "j_popcorn",
+    73
+   ],
+   [
+    "j_egg",
+    66
+   ],
+   [
+    "j_abstract",
+    62
+   ],
+   [
+    "j_swashbuckler",
+    62
+   ],
+   [
+    "j_ice_cream",
+    57
+   ],
+   [
+    "j_golden",
+    56
+   ],
+   [
+    "j_hanging_chad",
+    56
+   ],
+   [
+    "j_gros_michel",
+    55
+   ]
+  ],
+  "end_jokers": [
+   [
+    "j_cavendish",
+    55
+   ],
+   [
+    "j_splash",
+    46
+   ],
+   [
+    "j_abstract",
+    41
+   ],
+   [
+    "j_photograph",
+    40
+   ],
+   [
+    "j_raised_fist",
+    39
+   ],
+   [
+    "j_blue_joker",
+    33
+   ],
+   [
+    "j_even_steven",
+    31
+   ],
+   [
+    "j_misprint",
+    30
+   ]
+  ],
+  "end_with_xmult_pct": 70.33333333333333,
+  "end_with_econ_pct": 32.333333333333336,
+  "end_with_togen_pct": 9.0,
+  "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policy heuristic_v9 --params '{\"discard_top_k\": 4, \"discard_flush_bonus\": 0.06, \"discard_target_aware\": false, \"discard_ev_samples\": 6, \"econ_value_weight\": 0.0, \"gen_value_weight\": 0.0}' --tel results/discard_v2b_tel"
+ },
+ {
+  "label": "v2_gamble_no_econ",
+  "slug": "discard_v2c_tel_heuristic_v9",
+  "source": "vendor\\balatro-rl\\results\\discard_v2c_tel\\heuristic_v9",
+  "n": 300,
+  "wins": 14,
+  "win_rate": 4.666666666666667,
+  "ci95": [
+   2.799867455083086,
+   7.6798035313782815
+  ],
+  "mean_ante": 4.4366666666666665,
+  "median_ante": 4.0,
+  "mean_steps": 130.29,
+  "truncated": 0,
+  "death": {
+   "1": 43,
+   "2": 29,
+   "3": 30,
+   "4": 49,
+   "5": 49,
+   "6": 44,
+   "7": 27,
+   "8": 15,
+   "9": 14
+  },
+  "death_pct": {
+   "1": 14.333333333333334,
+   "2": 9.666666666666666,
+   "3": 10.0,
+   "4": 16.333333333333332,
+   "5": 16.333333333333332,
+   "6": 14.666666666666666,
+   "7": 9.0,
+   "8": 5.0,
+   "9": 4.666666666666667
+  },
+  "survival": {
+   "1": 300,
+   "2": 257,
+   "3": 228,
+   "4": 198,
+   "5": 149,
+   "6": 100,
+   "7": 56,
+   "8": 29,
+   "9": 14
+  },
+  "survival_pct": {
+   "1": 100.0,
+   "2": 85.66666666666667,
+   "3": 76.0,
+   "4": 66.0,
+   "5": 49.666666666666664,
+   "6": 33.333333333333336,
+   "7": 18.666666666666668,
+   "8": 9.666666666666666,
+   "9": 4.666666666666667
+  },
+  "death_blind_kind": [
+   [
+    "Boss",
+    153
+   ],
+   [
+    "Big",
+    71
+   ],
+   [
+    "Small",
+    62
+   ]
+  ],
+  "mean_dollars": 9.77,
+  "mean_spent": 121.63,
+  "max_score": 431568,
+  "mean_score": 29199.97,
+  "mean_rerolls": 2.203333333333333,
+  "mean_packs": 11.893333333333333,
+  "tarots": [
+   [
+    "c_hermit",
+    208
+   ],
+   [
+    "c_death",
+    188
+   ],
+   [
+    "c_fool",
+    159
+   ],
+   [
+    "c_magician",
+    152
+   ],
+   [
+    "c_temperance",
+    137
+   ],
+   [
+    "c_wheel_of_fortune",
+    124
+   ],
+   [
+    "c_empress",
+    122
+   ],
+   [
+    "c_chariot",
+    104
+   ]
+  ],
+  "planets": [
+   [
+    "pl_mercury",
+    296
+   ],
+   [
+    "pl_uranus",
+    111
+   ],
+   [
+    "pl_pluto",
+    43
+   ],
+   [
+    "pl_saturn",
+    40
+   ],
+   [
+    "pl_venus",
+    26
+   ],
+   [
+    "pl_jupiter",
+    17
+   ],
+   [
+    "pl_earth",
+    3
+   ],
+   [
+    "pl_mars",
+    1
+   ]
+  ],
+  "spectrals": [
+   [
+    "s_black_hole",
+    12
+   ],
+   [
+    "s_ectoplasm",
+    10
+   ],
+   [
+    "s_aura",
+    8
+   ],
+   [
+    "s_immolate",
+    7
+   ],
+   [
+    "s_talisman",
+    7
+   ],
+   [
+    "s_medium",
+    5
+   ],
+   [
+    "s_grim",
+    5
+   ],
+   [
+    "s_cryptid",
+    4
+   ]
+  ],
+  "jokers_bought": [
+   [
+    "j_popcorn",
+    82
+   ],
+   [
+    "j_egg",
+    68
+   ],
+   [
+    "j_abstract",
+    60
+   ],
+   [
+    "j_gros_michel",
+    58
+   ],
+   [
+    "j_ice_cream",
+    56
+   ],
+   [
+    "j_misprint",
+    55
+   ],
+   [
+    "j_hanging_chad",
+    55
+   ],
+   [
+    "j_cavendish",
+    54
+   ]
+  ],
+  "end_jokers": [
+   [
+    "j_cavendish",
+    57
+   ],
+   [
+    "j_splash",
+    47
+   ],
+   [
+    "j_blue_joker",
+    34
+   ],
+   [
+    "j_photograph",
+    34
+   ],
+   [
+    "j_abstract",
+    32
+   ],
+   [
+    "j_raised_fist",
+    32
+   ],
+   [
+    "j_hanging_chad",
+    31
+   ],
+   [
+    "j_even_steven",
+    30
+   ]
+  ],
+  "end_with_xmult_pct": 67.33333333333333,
+  "end_with_econ_pct": 37.0,
+  "end_with_togen_pct": 9.0,
+  "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policy heuristic_v9 --params '{\"discard_top_k\": 4, \"discard_flush_bonus\": 0.06, \"discard_target_aware\": true, \"discard_ev_samples\": 6, \"econ_value_weight\": 0.0, \"gen_value_weight\": 0.0}' --tel results/discard_v2c_tel"
+ },
+ {
+  "label": "samples10_no_econ",
+  "slug": "discard_s10_tel_heuristic_v9",
+  "source": "vendor\\balatro-rl\\results\\discard_s10_tel\\heuristic_v9",
+  "n": 300,
+  "wins": 11,
+  "win_rate": 3.6666666666666665,
+  "ci95": [
+   2.0595091468180673,
+   6.445448699638772
+  ],
+  "mean_ante": 4.24,
+  "median_ante": 4.0,
+  "mean_steps": 123.59,
+  "truncated": 0,
+  "death": {
+   "1": 46,
+   "2": 23,
+   "3": 41,
+   "4": 59,
+   "5": 37,
+   "6": 52,
+   "7": 23,
+   "8": 8,
+   "9": 11
+  },
+  "death_pct": {
+   "1": 15.333333333333334,
+   "2": 7.666666666666667,
+   "3": 13.666666666666666,
+   "4": 19.666666666666668,
+   "5": 12.333333333333334,
+   "6": 17.333333333333332,
+   "7": 7.666666666666667,
+   "8": 2.6666666666666665,
+   "9": 3.6666666666666665
+  },
+  "survival": {
+   "1": 300,
+   "2": 254,
+   "3": 231,
+   "4": 190,
+   "5": 131,
+   "6": 94,
+   "7": 42,
+   "8": 19,
+   "9": 11
+  },
+  "survival_pct": {
+   "1": 100.0,
+   "2": 84.66666666666667,
+   "3": 77.0,
+   "4": 63.333333333333336,
+   "5": 43.666666666666664,
+   "6": 31.333333333333332,
+   "7": 14.0,
+   "8": 6.333333333333333,
+   "9": 3.6666666666666665
+  },
+  "death_blind_kind": [
+   [
+    "Boss",
+    150
+   ],
+   [
+    "Big",
+    73
+   ],
+   [
+    "Small",
+    66
+   ]
+  ],
+  "mean_dollars": 9.67,
+  "mean_spent": 115.36333333333333,
+  "max_score": 617076,
+  "mean_score": 27526.966666666667,
+  "mean_rerolls": 1.8333333333333333,
+  "mean_packs": 10.73,
+  "tarots": [
+   [
+    "c_death",
+    174
+   ],
+   [
+    "c_hermit",
+    173
+   ],
+   [
+    "c_fool",
+    162
+   ],
+   [
+    "c_temperance",
+    141
+   ],
+   [
+    "c_magician",
+    122
+   ],
+   [
+    "c_empress",
+    111
+   ],
+   [
+    "c_wheel_of_fortune",
+    106
+   ],
+   [
+    "c_chariot",
+    95
+   ]
+  ],
+  "planets": [
+   [
+    "pl_mercury",
+    257
+   ],
+   [
+    "pl_uranus",
+    85
+   ],
+   [
+    "pl_saturn",
+    61
+   ],
+   [
+    "pl_jupiter",
+    38
+   ],
+   [
+    "pl_pluto",
+    28
+   ],
+   [
+    "pl_venus",
+    18
+   ],
+   [
+    "pl_earth",
+    13
+   ],
+   [
+    "pl_mars",
+    1
+   ]
+  ],
+  "spectrals": [
+   [
+    "s_talisman",
+    9
+   ],
+   [
+    "s_ectoplasm",
+    8
+   ],
+   [
+    "s_immolate",
+    8
+   ],
+   [
+    "s_aura",
+    7
+   ],
+   [
+    "s_black_hole",
+    6
+   ],
+   [
+    "s_cryptid",
+    5
+   ],
+   [
+    "s_incantation",
+    4
+   ],
+   [
+    "s_grim",
+    4
+   ]
+  ],
+  "jokers_bought": [
+   [
+    "j_popcorn",
+    71
+   ],
+   [
+    "j_faceless",
+    70
+   ],
+   [
+    "j_golden",
+    68
+   ],
+   [
+    "j_todo_list",
+    66
+   ],
+   [
+    "j_reserved_parking",
+    63
+   ],
+   [
+    "j_abstract",
+    59
+   ],
+   [
+    "j_mail",
+    58
+   ],
+   [
+    "j_hanging_chad",
+    58
+   ]
+  ],
+  "end_jokers": [
+   [
+    "j_cavendish",
+    49
+   ],
+   [
+    "j_splash",
+    43
+   ],
+   [
+    "j_photograph",
+    39
+   ],
+   [
+    "j_raised_fist",
+    37
+   ],
+   [
+    "j_hanging_chad",
+    33
+   ],
+   [
+    "j_even_steven",
+    33
+   ],
+   [
+    "j_abstract",
+    33
+   ],
+   [
+    "j_blue_joker",
+    32
+   ]
+  ],
+  "end_with_xmult_pct": 68.33333333333333,
+  "end_with_econ_pct": 38.666666666666664,
+  "end_with_togen_pct": 13.333333333333334,
+  "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policy heuristic_v9 --params '{\"discard_ev_samples\": 10, \"econ_value_weight\": 0.0, \"gen_value_weight\": 0.0}' --tel results/discard_s10_tel"
+ }
+]

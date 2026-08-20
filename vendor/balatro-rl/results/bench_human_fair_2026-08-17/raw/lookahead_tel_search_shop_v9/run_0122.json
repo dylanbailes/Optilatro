@@ -1,0 +1,217 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 87,
+ "truncated": false,
+ "dollars": 21,
+ "jokers": [
+  "j_shoot_the_moon",
+  "j_obelisk",
+  "j_hanging_chad",
+  "j_mystic_summit"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_shoot_the_moon",
+   "j_smiley",
+   "j_obelisk",
+   "j_popcorn",
+   "j_hanging_chad",
+   "j_satellite",
+   "j_mystic_summit"
+  ],
+  "money_spent": 53,
+  "best_score": 6480,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_idol"
+   ],
+   [
+    3,
+    "j_smiley"
+   ],
+   [
+    3,
+    "j_satellite"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    288
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    12
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_idol",
+     "j_shoot_the_moon"
+    ],
+    744
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_idol",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_idol",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    360
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_idol",
+     "j_obelisk",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    960
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_idol",
+     "j_obelisk",
+     "j_popcorn",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    1531
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    2204
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    2585
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_hanging_chad",
+     "j_mystic_summit",
+     "j_obelisk",
+     "j_popcorn",
+     "j_shoot_the_moon"
+    ],
+    4568
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_hanging_chad",
+     "j_mystic_summit",
+     "j_obelisk",
+     "j_popcorn",
+     "j_shoot_the_moon"
+    ],
+    6480
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_mystic_summit",
+     "j_obelisk",
+     "j_shoot_the_moon"
+    ],
+    1870
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_mystic_summit",
+     "j_obelisk",
+     "j_shoot_the_moon"
+    ],
+    952
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_mystic_summit",
+     "j_obelisk",
+     "j_shoot_the_moon"
+    ],
+    1440
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_mystic_summit",
+     "j_obelisk",
+     "j_shoot_the_moon"
+    ],
+    576
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 122,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

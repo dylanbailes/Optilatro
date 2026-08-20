@@ -1,0 +1,207 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 72,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_jolly",
+  "j_erosion",
+  "j_clever",
+  "j_ramen",
+  "j_blue_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_hermit",
+   "c_hanged_man"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_jolly",
+   "j_erosion",
+   "j_clever",
+   "j_ramen",
+   "j_blue_joker"
+  ],
+  "money_spent": 65,
+  "best_score": 3215,
+  "rerolls": 2,
+  "packs_bought": 7,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    3,
+    "j_hallucination"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hallucination"
+    ],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hallucination"
+    ],
+    220
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_hallucination"
+    ],
+    180
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hallucination",
+     "j_jolly"
+    ],
+    684
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_hallucination",
+     "j_jolly"
+    ],
+    1080
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_erosion",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    1344
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_erosion",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    1575
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_erosion",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    315
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_clever",
+     "j_erosion",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    2322
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_clever",
+     "j_erosion",
+     "j_hallucination",
+     "j_jolly",
+     "j_ramen"
+    ],
+    3215
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [
+     "j_hallucination",
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_erosion",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_erosion",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ }
+}

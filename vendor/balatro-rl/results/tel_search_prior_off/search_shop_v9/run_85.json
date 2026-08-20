@@ -1,0 +1,795 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 213,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_half",
+  "j_ramen",
+  "j_burglar",
+  "j_onyx_agate"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_magician",
+   "c_emperor",
+   "c_temperance",
+   "c_star",
+   "c_empress",
+   "c_temperance",
+   "c_death",
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_saturn",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_swashbuckler",
+   "j_mad",
+   "j_fortune_teller",
+   "j_cavendish",
+   "j_business",
+   "j_space",
+   "j_mail",
+   "j_banner",
+   "j_walkie_talkie",
+   "j_scary_face",
+   "j_half",
+   "j_egg",
+   "j_to_the_moon",
+   "j_ramen",
+   "j_ice_cream",
+   "j_delayed_grat",
+   "j_green_joker",
+   "j_burglar",
+   "j_onyx_agate"
+  ],
+  "money_spent": 227,
+  "best_score": 136239,
+  "rerolls": 3,
+  "packs_bought": 22,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    2,
+    "j_fortune_teller"
+   ],
+   [
+    2,
+    "j_mad"
+   ],
+   [
+    2,
+    "j_business"
+   ],
+   [
+    3,
+    "j_space"
+   ],
+   [
+    3,
+    "j_mail"
+   ],
+   [
+    4,
+    "j_walkie_talkie"
+   ],
+   [
+    4,
+    "j_scary_face"
+   ],
+   [
+    5,
+    "j_swashbuckler"
+   ],
+   [
+    5,
+    "j_egg"
+   ],
+   [
+    5,
+    "j_to_the_moon"
+   ],
+   [
+    6,
+    "j_arrowhead"
+   ],
+   [
+    7,
+    "j_delayed_grat"
+   ],
+   [
+    7,
+    "j_green_joker"
+   ],
+   [
+    8,
+    "j_banner"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    117
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_arrowhead"
+    ],
+    864
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_arrowhead",
+     "j_mad",
+     "j_swashbuckler"
+    ],
+    1820
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_arrowhead",
+     "j_fortune_teller",
+     "j_mad",
+     "j_swashbuckler"
+    ],
+    1922
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_business",
+     "j_cavendish",
+     "j_mad",
+     "j_swashbuckler"
+    ],
+    1320
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_business",
+     "j_cavendish",
+     "j_space",
+     "j_swashbuckler"
+    ],
+    5280
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_cavendish",
+     "j_mail",
+     "j_space",
+     "j_swashbuckler"
+    ],
+    2139
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_mail",
+     "j_swashbuckler"
+    ],
+    14697
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_mail",
+     "j_swashbuckler"
+    ],
+    14835
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_swashbuckler",
+     "j_walkie_talkie"
+    ],
+    12420
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    14697
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    10557
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_half",
+     "j_swashbuckler"
+    ],
+    21285
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_egg",
+     "j_half"
+    ],
+    20295
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_half",
+     "j_to_the_moon"
+    ],
+    60705
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_half",
+     "j_ramen"
+    ],
+    43656
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_half",
+     "j_ramen"
+    ],
+    132354
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_half",
+     "j_ramen"
+    ],
+    48268
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    136239
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    43517
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    10779
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_banner",
+     "j_green_joker",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    17550
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_banner",
+     "j_green_joker",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    38238
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_banner",
+     "j_green_joker",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    35002
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    9626
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    7655
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    7884
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    7471
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    32945
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    7196
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    32855
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    5913
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    31329
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_onyx_agate",
+     "j_ramen"
+    ],
+    11634
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_onyx_agate",
+     "j_ramen"
+    ],
+    13035
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_onyx_agate",
+     "j_ramen"
+    ],
+    5821
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_onyx_agate",
+     "j_ramen"
+    ],
+    7105
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_burglar",
+     "j_half",
+     "j_onyx_agate",
+     "j_ramen"
+    ],
+    4721
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_burglar",
+     "j_half",
+     "j_onyx_agate",
+     "j_ramen"
+    ],
+    6039
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_burglar",
+     "j_half",
+     "j_onyx_agate",
+     "j_ramen"
+    ],
+    5565
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_arrowhead"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_arrowhead",
+     "j_business",
+     "j_cavendish",
+     "j_mad",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_arrowhead",
+     "j_business",
+     "j_cavendish",
+     "j_space",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_emperor",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_mail",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_temperance",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_mail",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_star",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_cavendish",
+     "j_half",
+     "j_ramen"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_empress",
+    [
+     "j_banner",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_temperance",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_death",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    8,
+    "c_chariot",
+    [
+     "j_banner",
+     "j_burglar",
+     "j_half",
+     "j_ice_cream",
+     "j_ramen"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 85,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

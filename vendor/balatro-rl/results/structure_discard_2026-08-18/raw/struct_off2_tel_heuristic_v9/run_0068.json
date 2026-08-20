@@ -1,0 +1,231 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 93,
+ "truncated": false,
+ "dollars": 24,
+ "jokers": [
+  "j_cavendish",
+  "j_trio",
+  "j_joker",
+  "j_flower_pot"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_walkie_talkie",
+   "j_cavendish",
+   "j_odd_todd",
+   "j_half",
+   "j_trio",
+   "j_joker",
+   "j_flower_pot"
+  ],
+  "money_spent": 60,
+  "best_score": 15309,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_walkie_talkie"
+   ],
+   [
+    3,
+    "j_odd_todd"
+   ],
+   [
+    4,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ticket"
+    ],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_ticket"
+    ],
+    112
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ticket"
+    ],
+    44
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    712
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    2040
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_odd_todd",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    3240
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_odd_todd",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    2340
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_odd_todd",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    2583
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    4500
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_joker",
+     "j_odd_todd",
+     "j_trio"
+    ],
+    6708
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_joker",
+     "j_trio"
+    ],
+    15309
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_flower_pot",
+     "j_joker",
+     "j_trio"
+    ],
+    2835
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_flower_pot",
+     "j_joker",
+     "j_trio"
+    ],
+    900
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_flower_pot",
+     "j_joker",
+     "j_trio"
+    ],
+    504
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_flower_pot",
+     "j_joker",
+     "j_trio"
+    ],
+    1776
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 68,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

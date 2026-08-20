@@ -1,0 +1,543 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 143,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_joker",
+  "j_stuntman",
+  "j_half",
+  "j_raised_fist",
+  "j_jolly"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_emperor",
+   "c_magician",
+   "c_world",
+   "c_moon"
+  ],
+  "planets": [
+   "pl_pluto",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_greedy_joker",
+   "j_joker",
+   "j_stuntman",
+   "j_half",
+   "j_shoot_the_moon",
+   "j_fortune_teller",
+   "j_raised_fist",
+   "j_jolly"
+  ],
+  "money_spent": 118,
+  "best_score": 30908,
+  "rerolls": 5,
+  "packs_bought": 10,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    3,
+    "j_greedy_joker"
+   ],
+   [
+    3,
+    "j_lusty_joker"
+   ],
+   [
+    3,
+    "j_splash"
+   ],
+   [
+    4,
+    "j_shoot_the_moon"
+   ],
+   [
+    5,
+    "j_fortune_teller"
+   ],
+   [
+    6,
+    "j_onyx_agate"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    144
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_onyx_agate"
+    ],
+    576
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    270
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_greedy_joker",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    161
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    252
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_greedy_joker",
+     "j_joker",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    1020
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_joker",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    684
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_joker",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    480
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_joker",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    234
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_greedy_joker",
+     "j_joker",
+     "j_onyx_agate",
+     "j_splash",
+     "j_stuntman"
+    ],
+    1325
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_greedy_joker",
+     "j_joker",
+     "j_onyx_agate",
+     "j_splash",
+     "j_stuntman"
+    ],
+    2088
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_splash",
+     "j_stuntman"
+    ],
+    6500
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    6600
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    6968
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    10413
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    9842
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    13780
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    9826
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    6425
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    8910
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    8352
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    7176
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    7020
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    7020
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    6375
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    17600
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    9579
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_half",
+     "j_joker",
+     "j_jolly",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    18368
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_half",
+     "j_joker",
+     "j_jolly",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    12540
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_half",
+     "j_joker",
+     "j_jolly",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    19592
+   ]
+  ],
+  "consumable_uses": [
+   [
+    3,
+    "c_judgement",
+    [
+     "j_joker",
+     "j_onyx_agate",
+     "j_splash",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_emperor",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_world",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_pluto",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_moon",
+    [
+     "j_half",
+     "j_joker",
+     "j_onyx_agate",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_pluto",
+    [
+     "j_half",
+     "j_joker",
+     "j_jolly",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    []
+   ]
+  ]
+ }
+}

@@ -1,0 +1,273 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 84,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_madness",
+  "j_runner"
+ ],
+ "stats": {
+  "tarots": [
+   "c_chariot",
+   "c_temperance",
+   "c_hermit",
+   "c_magician"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_madness",
+   "j_dusk",
+   "j_egg",
+   "j_ice_cream",
+   "j_todo_list",
+   "j_runner"
+  ],
+  "money_spent": 61,
+  "best_score": 3285,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 6,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_madness"
+    ],
+    462
+   ],
+   [
+    1,
+    "Four of a Kind",
+    [
+     "j_dusk",
+     "j_madness"
+    ],
+    945
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_dusk",
+     "j_madness"
+    ],
+    232
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_dusk",
+     "j_madness"
+    ],
+    672
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_dusk",
+     "j_madness"
+    ],
+    450
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_dusk",
+     "j_madness"
+    ],
+    550
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_dusk",
+     "j_madness"
+    ],
+    290
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_dusk",
+     "j_madness"
+    ],
+    3285
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_madness",
+     "j_todo_list"
+    ],
+    432
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_madness",
+     "j_todo_list"
+    ],
+    1350
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_madness",
+     "j_todo_list"
+    ],
+    276
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_madness"
+    ],
+    518
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_madness"
+    ],
+    1302
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_madness"
+    ],
+    1204
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_madness",
+     "j_runner"
+    ],
+    525
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_madness",
+     "j_runner"
+    ],
+    1260
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_madness",
+     "j_runner"
+    ],
+    651
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_madness",
+     "j_runner"
+    ],
+    420
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_chariot",
+    [
+     "j_dusk",
+     "j_madness"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Gold"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_temperance",
+    [
+     "j_madness",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_madness",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_madness",
+     "j_runner"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 139,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

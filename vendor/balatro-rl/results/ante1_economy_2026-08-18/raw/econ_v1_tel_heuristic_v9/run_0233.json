@@ -1,0 +1,613 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 162,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_raised_fist",
+  "j_photograph",
+  "j_blue_joker",
+  "j_ice_cream",
+  "j_gros_michel"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_world",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_even_steven",
+   "j_reserved_parking",
+   "j_bull",
+   "j_half",
+   "j_raised_fist",
+   "j_seance",
+   "j_photograph",
+   "j_swashbuckler",
+   "j_blue_joker",
+   "j_gros_michel",
+   "j_luchador",
+   "j_reserved_parking",
+   "j_dna",
+   "j_even_steven",
+   "j_ice_cream",
+   "j_gros_michel"
+  ],
+  "money_spent": 144,
+  "best_score": 34311,
+  "rerolls": 6,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    2,
+    "j_half"
+   ],
+   [
+    3,
+    "j_seance"
+   ],
+   [
+    3,
+    "j_swashbuckler"
+   ],
+   [
+    3,
+    "j_bull"
+   ],
+   [
+    4,
+    "j_even_steven"
+   ],
+   [
+    4,
+    "j_luchador"
+   ],
+   [
+    4,
+    "j_reserved_parking"
+   ],
+   [
+    5,
+    "j_dna"
+   ],
+   [
+    6,
+    "j_even_steven"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    40
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_even_steven"
+    ],
+    800
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_reserved_parking"
+    ],
+    728
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_half",
+     "j_reserved_parking"
+    ],
+    900
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_half",
+     "j_raised_fist",
+     "j_reserved_parking"
+    ],
+    2077
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_half",
+     "j_raised_fist",
+     "j_seance"
+    ],
+    1152
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_half",
+     "j_raised_fist",
+     "j_seance"
+    ],
+    714
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_photograph",
+     "j_raised_fist",
+     "j_seance"
+    ],
+    2640
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_photograph",
+     "j_raised_fist",
+     "j_swashbuckler"
+    ],
+    2294
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_photograph",
+     "j_raised_fist",
+     "j_swashbuckler"
+    ],
+    1150
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    4030
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    12870
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    4730
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    3564
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist",
+     "j_reserved_parking"
+    ],
+    5590
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist",
+     "j_reserved_parking"
+    ],
+    3410
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist",
+     "j_reserved_parking"
+    ],
+    2806
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_dna",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    3996
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_dna",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    3894
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_dna",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    3520
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_dna",
+     "j_even_steven",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    5966
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_dna",
+     "j_even_steven",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    7440
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_dna",
+     "j_even_steven",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    4218
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    12576
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    8100
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    2180
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    9828
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    9416
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    3438
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    17472
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    6369
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    5580
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    4890
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    6755
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_empress",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_half",
+     "j_raised_fist",
+     "j_seance"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist",
+     "j_reserved_parking"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_photograph",
+     "j_raised_fist",
+     "j_reserved_parking"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_world",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_magician",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 233,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

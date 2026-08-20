@@ -1,0 +1,168 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 38,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_droll",
+  "j_faceless",
+  "j_ticket",
+  "j_hallucination"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_fool",
+   "c_judgement"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_droll",
+   "j_faceless"
+  ],
+  "money_spent": 20,
+  "best_score": 1008,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    88
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_droll"
+    ],
+    1008
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_droll",
+     "j_faceless"
+    ],
+    308
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_droll",
+     "j_faceless"
+    ],
+    68
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_droll",
+     "j_faceless"
+    ],
+    240
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_droll",
+     "j_faceless",
+     "j_hallucination",
+     "j_ticket"
+    ],
+    360
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_droll",
+     "j_faceless",
+     "j_hallucination",
+     "j_ticket"
+    ],
+    126
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_droll",
+     "j_faceless",
+     "j_hallucination",
+     "j_ticket"
+    ],
+    60
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_droll",
+     "j_faceless",
+     "j_hallucination",
+     "j_ticket"
+    ],
+    16
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_judgement",
+    [
+     "j_droll",
+     "j_faceless"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_fool",
+    [
+     "j_droll",
+     "j_faceless",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_judgement",
+    [
+     "j_droll",
+     "j_faceless",
+     "j_ticket"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 80,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

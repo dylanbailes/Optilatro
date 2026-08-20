@@ -51,8 +51,17 @@ def _effective_suits(cards: list[Card]) -> list[str]:
 def _is_flush(cards: list[Card]) -> bool:
     if len(cards) < 5:
         return False
-    suits = _effective_suits(cards)
-    return len(set(suits)) == 1
+    # Wild cards count as any suit — but they can only ever form ONE suit,
+    # so a flush needs at most one distinct non-wild suit. The old path
+    # built a suit list + set per call (hot: ~225k calls/run); this is a
+    # single pass with early exit on the second distinct non-wild suit.
+    suits = set()
+    for c in cards:
+        if c.enhancement != "Wild":
+            suits.add(c.suit)
+            if len(suits) > 1:
+                return False
+    return True
 
 
 def _is_straight(ranks: list[int]) -> bool:
@@ -78,16 +87,36 @@ def evaluate_hand(cards: list[Card]) -> tuple[str, list[Card]]:
 
     Stone cards are excluded from hand type evaluation but included in scoring_cards.
     """
-    # Separate stone cards (they score but don't contribute to hand type)
-    stones = [c for c in cards if c.enhancement == "Stone" and not c.debuffed]
-    active = [c for c in cards if c.enhancement != "Stone"]
+    # Separate stone cards (they score but don't contribute to hand type).
+    # Fast path: a single scan for stones avoids the two full listcomps on
+    # the overwhelmingly common stone-free hand (~225k calls/run).
+    has_stone = False
+    for c in cards:
+        if c.enhancement == "Stone":
+            has_stone = True
+            break
+    if not has_stone:
+        stones = []
+        active = cards
+    else:
+        stones = [c for c in cards
+                  if c.enhancement == "Stone" and not c.debuffed]
+        active = [c for c in cards if c.enhancement != "Stone"]
 
     if not active:
         return "High Card", cards
 
     ranks = [c.rank for c in active]
-    rank_counts = Counter(ranks)
-    freq = Counter(rank_counts.values())
+    # Hot path (~250k calls/run, the #1 profiled tottime): Counter's
+    # __init__/update machinery (isinstance probes, self_get lookups) cost
+    # ~2x a plain dict count on these tiny inputs. Manual counting is
+    # byte-identical (same dict values).
+    rank_counts = {}
+    for r in ranks:
+        rank_counts[r] = rank_counts.get(r, 0) + 1
+    freq = {}
+    for v in rank_counts.values():
+        freq[v] = freq.get(v, 0) + 1
 
     n = len(active)
     flush = _is_flush(active)

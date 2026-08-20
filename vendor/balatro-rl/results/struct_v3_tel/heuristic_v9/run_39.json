@@ -1,0 +1,284 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 71,
+ "truncated": false,
+ "dollars": 10,
+ "jokers": [
+  "j_ice_cream",
+  "j_clever",
+  "j_hanging_chad",
+  "j_rough_gem",
+  "j_matador"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_hermit",
+   "c_judgement"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ice_cream",
+   "j_golden",
+   "j_devious",
+   "j_clever",
+   "j_hanging_chad",
+   "j_rough_gem"
+  ],
+  "money_spent": 69,
+  "best_score": 2340,
+  "rerolls": 0,
+  "packs_bought": 7,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    3,
+    "j_golden"
+   ],
+   [
+    3,
+    "j_devious"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    92
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    104
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_popcorn"
+    ],
+    528
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    2340
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    1638
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    1160
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    1010
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_clever",
+     "j_devious",
+     "j_golden",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    1592
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_clever",
+     "j_devious",
+     "j_golden",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    558
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_devious",
+     "j_golden",
+     "j_hanging_chad",
+     "j_ice_cream"
+    ],
+    420
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_devious",
+     "j_golden",
+     "j_hanging_chad",
+     "j_ice_cream"
+    ],
+    1218
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_devious",
+     "j_golden",
+     "j_hanging_chad",
+     "j_ice_cream"
+    ],
+    372
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_rough_gem"
+    ],
+    1266
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_rough_gem"
+    ],
+    348
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_matador",
+     "j_rough_gem"
+    ],
+    338
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_matador",
+     "j_rough_gem"
+    ],
+    140
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_empress",
+    [
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_golden",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_judgement",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_rough_gem"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 39,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

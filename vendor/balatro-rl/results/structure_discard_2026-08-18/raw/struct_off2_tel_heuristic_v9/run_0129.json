@@ -1,0 +1,229 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 78,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_wrathful_joker",
+  "j_popcorn",
+  "j_fortune_teller",
+  "j_blue_joker",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_wrathful_joker",
+   "j_popcorn",
+   "j_fortune_teller",
+   "j_blue_joker",
+   "j_reserved_parking"
+  ],
+  "money_spent": 53,
+  "best_score": 4131,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    124
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    84
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    92
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_wrathful_joker"
+    ],
+    1053
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_wrathful_joker"
+    ],
+    220
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_wrathful_joker"
+    ],
+    135
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_wrathful_joker"
+    ],
+    100
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_wrathful_joker"
+    ],
+    290
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_wrathful_joker"
+    ],
+    1349
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    1518
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    1610
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    2006
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    4131
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    1892
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    640
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    616
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    504
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 129,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

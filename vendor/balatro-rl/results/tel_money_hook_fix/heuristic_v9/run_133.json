@@ -1,0 +1,112 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 30,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_runner"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_runner"
+  ],
+  "money_spent": 13,
+  "best_score": 684,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    368
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_runner"
+    ],
+    90
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_runner"
+    ],
+    316
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_runner"
+    ],
+    32
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_runner"
+    ],
+    42
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hierophant",
+    [],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 133,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

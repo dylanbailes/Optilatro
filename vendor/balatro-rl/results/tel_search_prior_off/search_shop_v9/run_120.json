@@ -1,0 +1,483 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 116,
+ "truncated": false,
+ "dollars": 7,
+ "jokers": [
+  "j_walkie_talkie",
+  "j_splash",
+  "j_misprint",
+  "j_egg",
+  "j_business"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gluttenous_joker",
+   "j_reserved_parking",
+   "j_ride_the_bus",
+   "j_gros_michel",
+   "j_campfire",
+   "j_walkie_talkie",
+   "j_splash",
+   "j_misprint",
+   "j_egg",
+   "j_business"
+  ],
+  "money_spent": 86,
+  "best_score": 10722,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 7,
+  "jokers_sold": [
+   [
+    2,
+    "j_to_the_moon"
+   ],
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    2,
+    "j_ride_the_bus"
+   ],
+   [
+    3,
+    "j_campfire"
+   ],
+   [
+    4,
+    "j_gluttenous_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_to_the_moon"
+    ],
+    600
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_to_the_moon"
+    ],
+    546
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_to_the_moon"
+    ],
+    150
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    264
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    630
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    882
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    380
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    1352
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    340
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    1480
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    840
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    2100
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    765
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    420
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    3375
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    342
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    816
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    4116
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    888
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_gros_michel",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    5772
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_egg",
+     "j_gros_michel",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    2448
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_business",
+     "j_egg",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    5775
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_business",
+     "j_egg",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    2340
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_business",
+     "j_egg",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    2604
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_business",
+     "j_egg",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    1692
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_business",
+     "j_egg",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    900
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_business",
+     "j_egg",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    3450
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_business",
+     "j_egg",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    4680
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hierophant",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_wheel_of_fortune",
+    [
+     "j_business",
+     "j_egg",
+     "j_misprint",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 120,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

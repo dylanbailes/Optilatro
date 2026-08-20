@@ -1,0 +1,733 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 215,
+ "truncated": false,
+ "dollars": 21,
+ "jokers": [
+  "j_hanging_chad",
+  "j_even_steven",
+  "j_cavendish",
+  "j_duo",
+  "j_banner"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_hermit",
+   "c_fool",
+   "c_hermit",
+   "c_lovers",
+   "c_death",
+   "c_emperor",
+   "c_death",
+   "c_world",
+   "c_death",
+   "c_temperance",
+   "c_strength",
+   "c_judgement",
+   "c_hermit",
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus",
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gros_michel",
+   "j_golden",
+   "j_jolly",
+   "j_trousers",
+   "j_hanging_chad",
+   "j_odd_todd",
+   "j_scary_face",
+   "j_popcorn",
+   "j_even_steven",
+   "j_erosion",
+   "j_cavendish",
+   "j_dna",
+   "j_duo",
+   "j_banner"
+  ],
+  "money_spent": 263,
+  "best_score": 58320,
+  "rerolls": 8,
+  "packs_bought": 30,
+  "packs_opened": 18,
+  "jokers_sold": [
+   [
+    2,
+    "j_marble"
+   ],
+   [
+    2,
+    "j_golden"
+   ],
+   [
+    2,
+    "j_jolly"
+   ],
+   [
+    2,
+    "j_trousers"
+   ],
+   [
+    2,
+    "j_scary_face"
+   ],
+   [
+    3,
+    "j_gros_michel"
+   ],
+   [
+    3,
+    "j_popcorn"
+   ],
+   [
+    3,
+    "j_raised_fist"
+   ],
+   [
+    5,
+    "j_odd_todd"
+   ],
+   [
+    5,
+    "j_dna"
+   ],
+   [
+    6,
+    "j_erosion"
+   ],
+   [
+    6,
+    "j_crafty"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    308
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_gros_michel",
+     "j_marble"
+    ],
+    1080
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_gros_michel",
+     "j_marble"
+    ],
+    646
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_gros_michel",
+     "j_marble"
+    ],
+    918
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_gros_michel",
+     "j_jolly",
+     "j_marble",
+     "j_raised_fist"
+    ],
+    1248
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_gros_michel",
+     "j_jolly",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    2232
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    2050
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    3212
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    4805
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    6720
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    11220
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    18156
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    14364
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_dna",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    20640
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    15345
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    9120
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_duo",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    35136
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    14832
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    2664
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    6888
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    5712
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    58320
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    13200
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    2304
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    7470
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    1080
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_golden",
+     "j_gros_michel",
+     "j_marble"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_golden",
+     "j_gros_michel",
+     "j_jolly",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_golden",
+     "j_gros_michel",
+     "j_jolly",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_jolly",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_jolly",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_scary_face"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_lovers",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "Stone",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_emperor",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "Stone",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_world",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "Mult",
+      "edition": "Foil",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "Mult",
+      "edition": "Foil",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_temperance",
+    [
+     "j_cavendish",
+     "j_duo",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_strength",
+    [
+     "j_cavendish",
+     "j_duo",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_judgement",
+    [
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_hermit",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_high_priestess",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    7,
+    "pl_jupiter",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_duo",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 111,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

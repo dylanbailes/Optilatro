@@ -1,0 +1,289 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 87,
+ "truncated": false,
+ "dollars": 9,
+ "jokers": [
+  "j_golden",
+  "j_blue_joker",
+  "j_reserved_parking",
+  "j_ride_the_bus"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_fool",
+   "c_empress"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_golden",
+   "j_popcorn",
+   "j_blue_joker",
+   "j_reserved_parking",
+   "j_ride_the_bus"
+  ],
+  "money_spent": 88,
+  "best_score": 4377,
+  "rerolls": 0,
+  "packs_bought": 9,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    117
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gros_michel"
+    ],
+    1330
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gros_michel"
+    ],
+    931
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_golden",
+     "j_gros_michel"
+    ],
+    1045
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_gros_michel",
+     "j_popcorn"
+    ],
+    1230
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_gros_michel",
+     "j_popcorn"
+    ],
+    1914
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_gros_michel",
+     "j_popcorn"
+    ],
+    3248
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_gros_michel",
+     "j_popcorn"
+    ],
+    3500
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    828
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    1240
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    1781
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    528
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    808
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    882
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    854
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    720
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_empress",
+    [
+     "j_golden",
+     "j_gros_michel",
+     "j_popcorn"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_empress",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 129,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

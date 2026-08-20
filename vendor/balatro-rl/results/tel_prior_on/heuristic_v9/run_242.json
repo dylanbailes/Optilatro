@@ -1,0 +1,254 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 57,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_shoot_the_moon",
+  "j_bull",
+  "j_burglar",
+  "j_square",
+  "j_business"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_devil"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_shoot_the_moon",
+   "j_bull",
+   "j_square",
+   "j_business"
+  ],
+  "money_spent": 43,
+  "best_score": 1984,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    308
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    56
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    312
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    30
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_shoot_the_moon"
+    ],
+    1088
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_shoot_the_moon"
+    ],
+    1624
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_burglar",
+     "j_shoot_the_moon",
+     "j_square"
+    ],
+    360
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_burglar",
+     "j_shoot_the_moon",
+     "j_square"
+    ],
+    728
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_burglar",
+     "j_shoot_the_moon",
+     "j_square"
+    ],
+    896
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_burglar",
+     "j_business",
+     "j_shoot_the_moon",
+     "j_square"
+    ],
+    60
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_burglar",
+     "j_business",
+     "j_shoot_the_moon",
+     "j_square"
+    ],
+    124
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_burglar",
+     "j_business",
+     "j_shoot_the_moon",
+     "j_square"
+    ],
+    56
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_burglar",
+     "j_business",
+     "j_shoot_the_moon",
+     "j_square"
+    ],
+    112
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_burglar",
+     "j_business",
+     "j_shoot_the_moon",
+     "j_square"
+    ],
+    76
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_burglar",
+     "j_business",
+     "j_shoot_the_moon",
+     "j_square"
+    ],
+    23
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_burglar",
+     "j_business",
+     "j_shoot_the_moon",
+     "j_square"
+    ],
+    68
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_judgement",
+    [
+     "j_bull",
+     "j_shoot_the_moon"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_devil",
+    [
+     "j_bull",
+     "j_burglar",
+     "j_business",
+     "j_shoot_the_moon",
+     "j_square"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 242,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,292 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 83,
+ "truncated": false,
+ "dollars": 24,
+ "jokers": [
+  "j_even_steven",
+  "j_seeing_double",
+  "j_cloud_9",
+  "j_flower_pot",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_strength"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_even_steven",
+   "j_devious",
+   "j_seeing_double",
+   "j_mail",
+   "j_half",
+   "j_flower_pot",
+   "j_splash"
+  ],
+  "money_spent": 74,
+  "best_score": 4176,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    2,
+    "j_golden"
+   ],
+   [
+    2,
+    "j_devious"
+   ],
+   [
+    3,
+    "j_mail"
+   ],
+   [
+    3,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    332
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_even_steven"
+    ],
+    260
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_even_steven"
+    ],
+    80
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_even_steven"
+    ],
+    75
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_even_steven"
+    ],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_devious",
+     "j_even_steven",
+     "j_golden"
+    ],
+    900
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_even_steven",
+     "j_golden",
+     "j_seeing_double"
+    ],
+    2088
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_devious",
+     "j_even_steven",
+     "j_half",
+     "j_mail",
+     "j_seeing_double"
+    ],
+    4176
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_cloud_9",
+     "j_even_steven",
+     "j_half",
+     "j_mail",
+     "j_seeing_double"
+    ],
+    3360
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_cloud_9",
+     "j_even_steven",
+     "j_half",
+     "j_mail",
+     "j_seeing_double"
+    ],
+    3360
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_cloud_9",
+     "j_even_steven",
+     "j_half",
+     "j_seeing_double"
+    ],
+    2592
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_even_steven",
+     "j_half",
+     "j_seeing_double"
+    ],
+    616
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_cloud_9",
+     "j_even_steven",
+     "j_flower_pot",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    1480
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_even_steven",
+     "j_flower_pot",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    1008
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cloud_9",
+     "j_even_steven",
+     "j_flower_pot",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    672
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_even_steven",
+     "j_flower_pot",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    620
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_cloud_9",
+     "j_even_steven",
+     "j_half",
+     "j_mail",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_cloud_9",
+     "j_even_steven",
+     "j_half",
+     "j_mail",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 97,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

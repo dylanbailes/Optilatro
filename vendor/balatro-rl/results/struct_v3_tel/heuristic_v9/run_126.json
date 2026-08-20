@@ -1,0 +1,218 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 48,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_walkie_talkie",
+  "j_certificate"
+ ],
+ "stats": {
+  "tarots": [
+   "c_high_priestess",
+   "c_magician",
+   "c_sun"
+  ],
+  "planets": [
+   "pl_pluto",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_certificate"
+  ],
+  "money_spent": 27,
+  "best_score": 840,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    64
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_walkie_talkie"
+    ],
+    112
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_walkie_talkie"
+    ],
+    640
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_walkie_talkie"
+    ],
+    104
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_certificate",
+     "j_walkie_talkie"
+    ],
+    728
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_certificate",
+     "j_walkie_talkie"
+    ],
+    808
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_certificate",
+     "j_walkie_talkie"
+    ],
+    296
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_certificate",
+     "j_walkie_talkie"
+    ],
+    268
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_walkie_talkie"
+    ],
+    141
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_walkie_talkie"
+    ],
+    135
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_high_priestess",
+    [
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_magician",
+    [
+     "j_certificate",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_certificate",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_sun",
+    [
+     "j_certificate",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 126,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

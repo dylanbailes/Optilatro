@@ -1,0 +1,348 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 107,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_ceremonial"
+ ],
+ "stats": {
+  "tarots": [
+   "c_chariot",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_earth",
+   "pl_jupiter",
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_cavendish",
+   "j_odd_todd",
+   "j_red_card"
+  ],
+  "money_spent": 70,
+  "best_score": 8040,
+  "rerolls": 1,
+  "packs_bought": 10,
+  "packs_opened": 6,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_ceremonial"
+    ],
+    304
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_ceremonial"
+    ],
+    162
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_ceremonial"
+    ],
+    402
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ceremonial"
+    ],
+    330
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_ceremonial"
+    ],
+    592
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_ceremonial"
+    ],
+    312
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_ceremonial"
+    ],
+    792
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_ceremonial"
+    ],
+    888
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_ceremonial"
+    ],
+    1134
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_ceremonial"
+    ],
+    900
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_ceremonial"
+    ],
+    1136
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_ceremonial"
+    ],
+    880
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_ceremonial"
+    ],
+    1116
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_ceremonial"
+    ],
+    2040
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_ceremonial",
+     "j_hologram"
+    ],
+    968
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_ceremonial",
+     "j_hologram"
+    ],
+    858
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_ceremonial",
+     "j_hologram"
+    ],
+    924
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_ceremonial",
+     "j_hologram"
+    ],
+    1452
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_ceremonial"
+    ],
+    1560
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_ceremonial"
+    ],
+    2730
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_ceremonial"
+    ],
+    2072
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_ceremonial"
+    ],
+    2430
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_ceremonial"
+    ],
+    2760
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_ceremonial"
+    ],
+    2850
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_ceremonial"
+    ],
+    1196
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_ceremonial"
+    ],
+    400
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_ceremonial"
+    ],
+    375
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_ceremonial"
+    ],
+    520
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_chariot",
+    [
+     "j_ceremonial"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_earth",
+    [
+     "j_ceremonial"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_ceremonial",
+     "j_hologram"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_jupiter",
+    [
+     "j_ceremonial"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_jupiter",
+    [
+     "j_ceremonial"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 68,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

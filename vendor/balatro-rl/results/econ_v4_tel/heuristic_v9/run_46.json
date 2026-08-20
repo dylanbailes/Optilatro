@@ -1,0 +1,189 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 53,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_stencil",
+  "j_scholar",
+  "j_jolly",
+  "j_shoot_the_moon",
+  "j_fortune_teller"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_stencil",
+   "j_scholar",
+   "j_mad",
+   "j_shoot_the_moon",
+   "j_fortune_teller"
+  ],
+  "money_spent": 50,
+  "best_score": 1296,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_scary_face"
+   ],
+   [
+    2,
+    "j_mad"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    332
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_scary_face"
+    ],
+    392
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_scary_face"
+    ],
+    64
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_scary_face",
+     "j_stencil"
+    ],
+    540
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_scary_face",
+     "j_stencil"
+    ],
+    144
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_scholar",
+     "j_stencil"
+    ],
+    1296
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_mad",
+     "j_scary_face",
+     "j_scholar",
+     "j_stencil"
+    ],
+    720
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_jolly",
+     "j_mad",
+     "j_scary_face",
+     "j_scholar",
+     "j_stencil"
+    ],
+    536
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_jolly",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_stencil"
+    ],
+    672
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_temperance",
+    [
+     "j_jolly",
+     "j_mad",
+     "j_scary_face",
+     "j_scholar",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_jolly",
+     "j_mad",
+     "j_scary_face",
+     "j_scholar",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_fortune_teller",
+     "j_jolly",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_stencil"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 46,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

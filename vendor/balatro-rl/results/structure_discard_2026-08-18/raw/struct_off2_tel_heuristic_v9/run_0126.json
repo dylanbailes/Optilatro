@@ -1,0 +1,238 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 58,
+ "truncated": false,
+ "dollars": 20,
+ "jokers": [
+  "j_splash",
+  "j_certificate"
+ ],
+ "stats": {
+  "tarots": [
+   "c_high_priestess",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_certificate"
+  ],
+  "money_spent": 21,
+  "best_score": 918,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    32
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    240
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_splash"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_splash"
+    ],
+    260
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    316
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    118
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    153
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    84
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    356
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    102
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    240
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    220
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    324
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    160
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    220
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    98
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_high_priestess",
+    [
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_magician",
+    [
+     "j_certificate",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 126,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

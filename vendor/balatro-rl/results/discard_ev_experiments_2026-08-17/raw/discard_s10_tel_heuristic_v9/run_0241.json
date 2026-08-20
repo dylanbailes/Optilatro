@@ -1,0 +1,252 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 86,
+ "truncated": false,
+ "dollars": 6,
+ "jokers": [
+  "j_cavendish",
+  "j_hanging_chad",
+  "j_green_joker",
+  "j_reserved_parking",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [
+   "c_high_priestess"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hanging_chad",
+   "j_green_joker",
+   "j_reserved_parking",
+   "j_golden"
+  ],
+  "money_spent": 49,
+  "best_score": 56832,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_fortune_teller"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_cavendish"
+    ],
+    486
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_cavendish"
+    ],
+    336
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cavendish"
+    ],
+    180
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cavendish"
+    ],
+    108
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad"
+    ],
+    432
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad"
+    ],
+    180
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad"
+    ],
+    228
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_hanging_chad"
+    ],
+    56832
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_hanging_chad"
+    ],
+    11376
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    720
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    855
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    450
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_reserved_parking"
+    ],
+    2064
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_reserved_parking"
+    ],
+    1080
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_reserved_parking"
+    ],
+    1710
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_reserved_parking"
+    ],
+    882
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_reserved_parking"
+    ],
+    300
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_reserved_parking"
+    ],
+    720
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_high_priestess",
+    [
+     "j_cavendish"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 241,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

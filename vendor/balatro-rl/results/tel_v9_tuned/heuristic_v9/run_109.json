@@ -1,0 +1,283 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 93,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_droll",
+  "j_runner",
+  "j_abstract",
+  "j_popcorn",
+  "j_lusty_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_droll",
+   "j_abstract",
+   "j_popcorn",
+   "j_lusty_joker"
+  ],
+  "money_spent": 78,
+  "best_score": 8013,
+  "rerolls": 3,
+  "packs_bought": 7,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    3,
+    "j_red_card"
+   ],
+   [
+    4,
+    "j_scary_face"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_red_card"
+    ],
+    511
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_red_card",
+     "j_scary_face"
+    ],
+    399
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_red_card",
+     "j_scary_face"
+    ],
+    450
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_droll",
+     "j_red_card",
+     "j_scary_face"
+    ],
+    1782
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_droll",
+     "j_red_card",
+     "j_runner",
+     "j_scary_face"
+    ],
+    630
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_droll",
+     "j_red_card",
+     "j_runner",
+     "j_scary_face"
+    ],
+    630
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_red_card",
+     "j_runner",
+     "j_scary_face"
+    ],
+    2560
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_red_card",
+     "j_runner",
+     "j_scary_face"
+    ],
+    1920
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_red_card",
+     "j_runner",
+     "j_scary_face"
+    ],
+    1221
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_popcorn",
+     "j_runner",
+     "j_scary_face"
+    ],
+    4935
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_popcorn",
+     "j_runner",
+     "j_scary_face"
+    ],
+    6380
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_popcorn",
+     "j_runner",
+     "j_scary_face"
+    ],
+    4284
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_popcorn",
+     "j_runner",
+     "j_scary_face"
+    ],
+    1599
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_lusty_joker",
+     "j_popcorn",
+     "j_runner"
+    ],
+    4128
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_lusty_joker",
+     "j_popcorn",
+     "j_runner"
+    ],
+    3885
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_lusty_joker",
+     "j_popcorn",
+     "j_runner"
+    ],
+    1813
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_lusty_joker",
+     "j_popcorn",
+     "j_runner"
+    ],
+    3404
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_red_card",
+     "j_scary_face"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_jupiter",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_lusty_joker",
+     "j_popcorn",
+     "j_runner"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 109,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -31,6 +31,10 @@ if TYPE_CHECKING:
 
 JOKER_REGISTRY: dict[str, "JokerEffect"] = {}
 
+# fire() cache sentinel: the effect does not override this hook (the base
+# hook is a `...` no-op) — dispatch skips the call entirely.
+_NOOP = object()
+
 
 def full_deck(game) -> list:
     """The run's full deck (undrawn + in-hand + spent). The real game's "full
@@ -173,17 +177,24 @@ class JokerInstance:
     lookups) and seeds state from the effect's STATE_DEFAULTS.
     """
 
-    def __init__(self, key: str, edition: str = "None", game=None):
+    def __init__(self, key: str, edition: str = "None", game=None,
+                 state=None):
         self.key = key
         self.edition = edition
         self.game = game        # owning BalatroGame (for per-node RNG); None in tests
         self.effect: JokerEffect = JOKER_REGISTRY.get(key)  # type: ignore[assignment]
         if self.effect is None:
             raise KeyError(f"no effect registered for joker key {key!r}")
-        # Deep-copied: state_defaults may hold mutable values (sets, dicts),
-        # and the effect object is a shared singleton — each instance must get
-        # its own copy (R4).
-        self.state: dict = deepcopy(self.effect.state_defaults)
+        if state is not None:
+            # Caller-supplied state (eval oracle): already an isolated copy
+            # (R4) — skip the state_defaults deepcopy it would replace.
+            self.state: dict = state
+        else:
+            # Deep-copied: state_defaults may hold mutable values (sets,
+            # dicts), and the effect object is a shared singleton — each
+            # instance must get its own copy (R4).
+            self.state: dict = deepcopy(self.effect.state_defaults)
+        self._hook_cache: dict = {}
 
     def chance(self):
         """RNG for probability triggers: the game's per-node 'chance' source
@@ -195,8 +206,21 @@ class JokerInstance:
 
     def fire(self, hook: str, *args):
         """Dispatch a hook to this joker's effect (base class guarantees the
-        method exists — no hasattr probe)."""
-        getattr(self.effect, hook)(self, *args)
+        method exists — no hasattr probe). The bound hook is cached per
+        instance: `getattr(effect, hook)` was ~450k dict lookups per run for
+        the same methods (fire is the engine's hottest dispatch path). Base
+        hooks are `...` no-ops, so an effect that doesn't override a hook
+        gets the NOOP sentinel and the call is skipped entirely — most
+        (joker, hook) pairs are unoverridden and the Python call frame is
+        the real cost (~1.3M fires/run)."""
+        m = self._hook_cache.get(hook)
+        if m is None:
+            raw = getattr(self.effect, hook)
+            m = raw if raw.__func__ is not getattr(JokerEffect, hook) else _NOOP
+            self._hook_cache[hook] = m
+        if m is _NOOP:
+            return
+        m(self, *args)
 
     def has_flag(self, flag: str) -> bool:
         """Capability check used by the engine instead of key-string scans."""

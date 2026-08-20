@@ -1,0 +1,157 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 48,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_trading",
+  "j_drunkard",
+  "j_egg",
+  "j_golden",
+  "j_todo_list",
+  "j_chaos"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_drunkard",
+   "j_egg",
+   "j_todo_list"
+  ],
+  "money_spent": 36,
+  "best_score": 960,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 5,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    104
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_drunkard",
+     "j_trading"
+    ],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_drunkard",
+     "j_trading"
+    ],
+    256
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_drunkard",
+     "j_trading"
+    ],
+    171
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    960
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_trading"
+    ],
+    960
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_chaos",
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_todo_list",
+     "j_trading"
+    ],
+    92
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_chaos",
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_todo_list",
+     "j_trading"
+    ],
+    88
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_chaos",
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_todo_list",
+     "j_trading"
+    ],
+    260
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_chaos",
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_todo_list",
+     "j_trading"
+    ],
+    296
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 19,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 50
+ }
+}

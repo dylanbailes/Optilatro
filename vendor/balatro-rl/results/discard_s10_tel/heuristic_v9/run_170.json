@@ -1,0 +1,187 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 55,
+ "truncated": false,
+ "dollars": 6,
+ "jokers": [
+  "j_fortune_teller",
+  "j_marble",
+  "j_mail"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_death",
+   "c_fool"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_marble",
+   "j_mail"
+  ],
+  "money_spent": 38,
+  "best_score": 1722,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_fortune_teller"
+    ],
+    484
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_fortune_teller"
+    ],
+    690
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_fortune_teller",
+     "j_marble"
+    ],
+    840
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_marble"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_marble"
+    ],
+    714
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_mail",
+     "j_marble"
+    ],
+    770
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_fortune_teller"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_fortune_teller"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_fortune_teller",
+     "j_marble"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_fortune_teller",
+     "j_marble"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_fortune_teller",
+     "j_marble"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 170,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

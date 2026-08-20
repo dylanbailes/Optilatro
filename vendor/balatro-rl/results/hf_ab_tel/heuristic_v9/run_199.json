@@ -1,0 +1,89 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 27,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_hallucination"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hallucination"
+  ],
+  "money_spent": 14,
+  "best_score": 584,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    332
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    260
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hallucination"
+    ],
+    336
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hallucination"
+    ],
+    60
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_hallucination"
+    ],
+    15
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_hallucination"
+    ],
+    15
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 199,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,518 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 142,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_greedy_joker",
+  "j_hanging_chad",
+  "j_gluttenous_joker",
+  "j_jolly"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_fool",
+   "c_wheel_of_fortune",
+   "c_hermit",
+   "c_hermit",
+   "c_hanged_man",
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_juggler",
+   "j_credit_card",
+   "j_credit_card",
+   "j_hanging_chad",
+   "j_ticket",
+   "j_gluttenous_joker",
+   "j_jolly"
+  ],
+  "money_spent": 87,
+  "best_score": 7532,
+  "rerolls": 1,
+  "packs_bought": 12,
+  "packs_opened": 8,
+  "jokers_sold": [
+   [
+    2,
+    "j_juggler"
+   ],
+   [
+    2,
+    "j_todo_list"
+   ],
+   [
+    3,
+    "j_credit_card"
+   ],
+   [
+    3,
+    "j_credit_card"
+   ],
+   [
+    4,
+    "j_ticket"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    240
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_juggler",
+     "j_todo_list"
+    ],
+    272
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_juggler",
+     "j_todo_list"
+    ],
+    316
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_juggler",
+     "j_todo_list"
+    ],
+    300
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_juggler",
+     "j_todo_list"
+    ],
+    312
+   ],
+   [
+    2,
+    "Four of a Kind",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_juggler",
+     "j_todo_list"
+    ],
+    1000
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_todo_list"
+    ],
+    616
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_todo_list"
+    ],
+    308
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_todo_list"
+    ],
+    385
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    420
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    264
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    700
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    720
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    663
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    1950
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    600
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    1377
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    3168
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    1044
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_jolly",
+     "j_ticket"
+    ],
+    3325
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_jolly",
+     "j_ticket"
+    ],
+    1700
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_jolly"
+    ],
+    3458
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_jolly"
+    ],
+    2618
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_jolly"
+    ],
+    1456
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_jolly"
+    ],
+    2484
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_jolly"
+    ],
+    2548
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_jolly"
+    ],
+    2461
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_credit_card",
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_saturn",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_jolly",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hanged_man",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 156,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

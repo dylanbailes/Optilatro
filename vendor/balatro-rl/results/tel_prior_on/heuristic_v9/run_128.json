@@ -1,0 +1,179 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 49,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_egg",
+  "j_ticket"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ticket"
+  ],
+  "money_spent": 23,
+  "best_score": 1196,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_egg"
+    ],
+    248
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_egg"
+    ],
+    48
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_egg"
+    ],
+    16
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_egg"
+    ],
+    304
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_egg"
+    ],
+    316
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_egg"
+    ],
+    272
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_egg"
+    ],
+    28
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_egg"
+    ],
+    280
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_egg"
+    ],
+    696
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_egg",
+     "j_ticket"
+    ],
+    264
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_ticket"
+    ],
+    220
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_ticket"
+    ],
+    92
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_ticket"
+    ],
+    620
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_empress",
+    [
+     "j_egg"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 128,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

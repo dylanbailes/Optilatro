@@ -1,0 +1,150 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 52,
+ "truncated": false,
+ "dollars": 11,
+ "jokers": [
+  "j_photograph",
+  "j_smiley",
+  "j_scary_face",
+  "j_ice_cream",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_reserved_parking",
+   "j_smiley",
+   "j_scary_face",
+   "j_trousers",
+   "j_egg",
+   "j_ice_cream",
+   "j_reserved_parking"
+  ],
+  "money_spent": 52,
+  "best_score": 3836,
+  "rerolls": 1,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    2,
+    "j_trousers"
+   ],
+   [
+    2,
+    "j_egg"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    208
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_photograph",
+     "j_reserved_parking",
+     "j_smiley"
+    ],
+    720
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_photograph",
+     "j_reserved_parking",
+     "j_scary_face",
+     "j_smiley",
+     "j_trousers"
+    ],
+    2160
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_scary_face",
+     "j_smiley",
+     "j_trousers"
+    ],
+    3836
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_ice_cream",
+     "j_photograph",
+     "j_reserved_parking",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    320
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hermit",
+    [
+     "j_ice_cream",
+     "j_photograph",
+     "j_reserved_parking",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 227,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

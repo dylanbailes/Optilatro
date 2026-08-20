@@ -1,0 +1,134 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 47,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_joker",
+  "j_ticket",
+  "j_abstract",
+  "j_popcorn",
+  "j_cavendish"
+ ],
+ "stats": {
+  "tarots": [
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ticket",
+   "j_abstract",
+   "j_popcorn",
+   "j_cavendish"
+  ],
+  "money_spent": 33,
+  "best_score": 1596,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_ticket"
+    ],
+    336
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_joker",
+     "j_ticket"
+    ],
+    132
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_joker",
+     "j_ticket"
+    ],
+    736
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_joker",
+     "j_ticket"
+    ],
+    870
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_joker",
+     "j_popcorn",
+     "j_ticket"
+    ],
+    1596
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_high_priestess",
+    [
+     "j_abstract",
+     "j_joker",
+     "j_popcorn",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_jupiter",
+    [
+     "j_abstract",
+     "j_joker",
+     "j_popcorn",
+     "j_ticket"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 291,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

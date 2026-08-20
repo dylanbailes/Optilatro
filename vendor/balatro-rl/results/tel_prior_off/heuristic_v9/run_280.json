@@ -1,0 +1,194 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 51,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_todo_list",
+  "j_business",
+  "j_lusty_joker",
+  "j_half"
+ ],
+ "stats": {
+  "tarots": [
+   "c_world",
+   "c_temperance",
+   "c_temperance",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_todo_list",
+   "j_business",
+   "j_half"
+  ],
+  "money_spent": 59,
+  "best_score": 1349,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_todo_list"
+    ],
+    510
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gros_michel",
+     "j_todo_list"
+    ],
+    731
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_gros_michel",
+     "j_lusty_joker",
+     "j_todo_list"
+    ],
+    1349
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_business",
+     "j_lusty_joker",
+     "j_todo_list"
+    ],
+    553
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_business",
+     "j_lusty_joker",
+     "j_todo_list"
+    ],
+    284
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_lusty_joker",
+     "j_todo_list"
+    ],
+    280
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_lusty_joker",
+     "j_todo_list"
+    ],
+    100
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_lusty_joker",
+     "j_todo_list"
+    ],
+    704
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_world",
+    [
+     "j_business",
+     "j_gros_michel",
+     "j_lusty_joker",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_business",
+     "j_lusty_joker",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_business",
+     "j_lusty_joker",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_business",
+     "j_lusty_joker",
+     "j_todo_list"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 280,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

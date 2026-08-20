@@ -1,0 +1,74 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 25,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_drunkard",
+  "j_gros_michel"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gros_michel"
+  ],
+  "money_spent": 17,
+  "best_score": 782,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_drunkard",
+     "j_gros_michel"
+    ],
+    782
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_drunkard",
+     "j_gros_michel"
+    ],
+    192
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_drunkard",
+     "j_gros_michel"
+    ],
+    208
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 111,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_search_shop_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

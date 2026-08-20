@@ -1,0 +1,301 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 86,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_hit_the_road",
+  "j_hanging_chad",
+  "j_misprint",
+  "j_greedy_joker",
+  "j_faceless"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_temperance"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_half",
+   "j_sly",
+   "j_ticket",
+   "j_hit_the_road",
+   "j_business",
+   "j_mail",
+   "j_hanging_chad",
+   "j_misprint",
+   "j_greedy_joker",
+   "j_faceless"
+  ],
+  "money_spent": 89,
+  "best_score": 3582,
+  "rerolls": 1,
+  "packs_bought": 8,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_sly"
+   ],
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_business"
+   ],
+   [
+    3,
+    "j_mail"
+   ],
+   [
+    3,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_half",
+     "j_sly"
+    ],
+    336
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_half",
+     "j_sly"
+    ],
+    147
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half",
+     "j_sly",
+     "j_ticket"
+    ],
+    1364
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_hit_the_road",
+     "j_sly",
+     "j_ticket"
+    ],
+    1760
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_sly",
+     "j_ticket"
+    ],
+    1496
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_sly",
+     "j_ticket"
+    ],
+    1716
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_mail",
+     "j_ticket"
+    ],
+    1863
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_mail",
+     "j_ticket"
+    ],
+    138
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    1978
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    720
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    704
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    1600
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    592
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    315
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    1075
+   ]
+  ],
+  "consumable_uses": [
+   [
+    3,
+    "c_hermit",
+    [
+     "j_business",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_mail"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_temperance",
+    [
+     "j_business",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_mail"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_mercury",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 146,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

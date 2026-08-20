@@ -1,0 +1,177 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 54,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_mail",
+  "j_popcorn",
+  "j_jolly",
+  "j_ticket"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_todo_list",
+   "j_mail",
+   "j_popcorn",
+   "j_jolly",
+   "j_ticket"
+  ],
+  "money_spent": 45,
+  "best_score": 1460,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_obelisk"
+   ],
+   [
+    2,
+    "j_todo_list"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    344
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_obelisk",
+     "j_todo_list"
+    ],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_obelisk",
+     "j_todo_list"
+    ],
+    264
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_obelisk",
+     "j_todo_list"
+    ],
+    67
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mail",
+     "j_obelisk",
+     "j_todo_list"
+    ],
+    94
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mail",
+     "j_obelisk",
+     "j_todo_list"
+    ],
+    100
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_mail",
+     "j_obelisk",
+     "j_todo_list"
+    ],
+    340
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_mail",
+     "j_obelisk",
+     "j_todo_list"
+    ],
+    84
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_mail",
+     "j_obelisk",
+     "j_popcorn",
+     "j_todo_list"
+    ],
+    985
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_jolly",
+     "j_mail",
+     "j_popcorn",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    1460
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_jolly",
+     "j_mail",
+     "j_popcorn",
+     "j_ticket"
+    ],
+    1216
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hermit",
+    [
+     "j_mail",
+     "j_obelisk",
+     "j_popcorn",
+     "j_todo_list"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 174,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,262 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 59,
+ "truncated": false,
+ "dollars": 8,
+ "jokers": [
+  "j_hallucination",
+  "j_gift",
+  "j_marble",
+  "j_vampire",
+  "j_flash"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_magician"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_half",
+   "j_hallucination",
+   "j_gift",
+   "j_vampire",
+   "j_flash"
+  ],
+  "money_spent": 41,
+  "best_score": 1887,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_crafty"
+   ],
+   [
+    2,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_crafty"
+    ],
+    220
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_crafty"
+    ],
+    264
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_crafty",
+     "j_half",
+     "j_hallucination"
+    ],
+    315
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crafty",
+     "j_half",
+     "j_hallucination"
+    ],
+    660
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_crafty",
+     "j_gift",
+     "j_half",
+     "j_hallucination"
+    ],
+    484
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_crafty",
+     "j_gift",
+     "j_half",
+     "j_hallucination"
+    ],
+    396
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crafty",
+     "j_gift",
+     "j_half",
+     "j_hallucination",
+     "j_marble"
+    ],
+    604
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_crafty",
+     "j_gift",
+     "j_half",
+     "j_hallucination",
+     "j_marble"
+    ],
+    315
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_crafty",
+     "j_gift",
+     "j_half",
+     "j_hallucination",
+     "j_marble"
+    ],
+    660
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gift",
+     "j_half",
+     "j_hallucination",
+     "j_marble",
+     "j_vampire"
+    ],
+    1887
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_flash",
+     "j_gift",
+     "j_hallucination",
+     "j_marble",
+     "j_vampire"
+    ],
+    336
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flash",
+     "j_gift",
+     "j_hallucination",
+     "j_marble",
+     "j_vampire"
+    ],
+    105
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flash",
+     "j_gift",
+     "j_hallucination",
+     "j_marble",
+     "j_vampire"
+    ],
+    105
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flash",
+     "j_gift",
+     "j_hallucination",
+     "j_marble",
+     "j_vampire"
+    ],
+    129
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_crafty",
+     "j_gift",
+     "j_half",
+     "j_hallucination",
+     "j_marble"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_flash",
+     "j_gift",
+     "j_hallucination",
+     "j_marble",
+     "j_vampire"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 181,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

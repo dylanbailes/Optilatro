@@ -1,0 +1,180 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 51,
+ "truncated": false,
+ "dollars": 6,
+ "jokers": [
+  "j_todo_list",
+  "j_runner",
+  "j_egg",
+  "j_faceless",
+  "j_gluttenous_joker"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_todo_list",
+   "j_runner",
+   "j_egg",
+   "j_faceless",
+   "j_gluttenous_joker"
+  ],
+  "money_spent": 40,
+  "best_score": 1946,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_droll"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    316
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_droll",
+     "j_todo_list"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_droll",
+     "j_todo_list"
+    ],
+    296
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_droll",
+     "j_runner",
+     "j_todo_list"
+    ],
+    112
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_droll",
+     "j_runner",
+     "j_todo_list"
+    ],
+    490
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_droll",
+     "j_egg",
+     "j_runner",
+     "j_todo_list"
+    ],
+    1176
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_droll",
+     "j_egg",
+     "j_faceless",
+     "j_runner",
+     "j_todo_list"
+    ],
+    910
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_droll",
+     "j_egg",
+     "j_faceless",
+     "j_runner",
+     "j_todo_list"
+    ],
+    1036
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_egg",
+     "j_faceless",
+     "j_gluttenous_joker",
+     "j_runner",
+     "j_todo_list"
+    ],
+    296
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_faceless",
+     "j_gluttenous_joker",
+     "j_runner",
+     "j_todo_list"
+    ],
+    280
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_faceless",
+     "j_gluttenous_joker",
+     "j_runner",
+     "j_todo_list"
+    ],
+    130
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_faceless",
+     "j_gluttenous_joker",
+     "j_runner",
+     "j_todo_list"
+    ],
+    114
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 84,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

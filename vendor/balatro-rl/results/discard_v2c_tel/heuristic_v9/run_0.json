@@ -1,0 +1,302 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 77,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_order",
+  "j_blue_joker",
+  "j_superposition",
+  "j_lusty_joker",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_fool",
+   "c_death"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_order",
+   "j_blue_joker",
+   "j_superposition",
+   "j_lusty_joker",
+   "j_golden"
+  ],
+  "money_spent": 53,
+  "best_score": 5300,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    112
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_order"
+    ],
+    120
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_order"
+    ],
+    364
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_order"
+    ],
+    1560
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    2112
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_order",
+     "j_superposition"
+    ],
+    4071
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    3696
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    3608
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    1484
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    288
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    3528
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    284
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    740
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    740
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    660
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_saturn",
+    [
+     "j_blue_joker",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 0,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,782 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 193,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_banner",
+  "j_half",
+  "j_bloodstone",
+  "j_ice_cream"
+ ],
+ "stats": {
+  "tarots": [
+   "c_fool",
+   "c_magician",
+   "c_hermit",
+   "c_magician",
+   "c_fool",
+   "c_magician",
+   "c_empress",
+   "c_chariot",
+   "c_empress",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_aura"
+  ],
+  "jokers_bought": [
+   "j_banner",
+   "j_sock_and_buskin",
+   "j_bloodstone",
+   "j_luchador",
+   "j_flash",
+   "j_shoot_the_moon",
+   "j_odd_todd",
+   "j_fortune_teller",
+   "j_selzer",
+   "j_ice_cream"
+  ],
+  "money_spent": 177,
+  "best_score": 54004,
+  "rerolls": 2,
+  "packs_bought": 21,
+  "packs_opened": 13,
+  "jokers_sold": [
+   [
+    3,
+    "j_sock_and_buskin"
+   ],
+   [
+    3,
+    "j_luchador"
+   ],
+   [
+    5,
+    "j_flash"
+   ],
+   [
+    5,
+    "j_shoot_the_moon"
+   ],
+   [
+    5,
+    "j_odd_todd"
+   ],
+   [
+    6,
+    "j_fortune_teller"
+   ],
+   [
+    6,
+    "j_wrathful_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    308
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_wrathful_joker"
+    ],
+    480
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    6300
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    8460
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_sock_and_buskin",
+     "j_wrathful_joker"
+    ],
+    8084
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_sock_and_buskin",
+     "j_wrathful_joker"
+    ],
+    7314
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_sock_and_buskin",
+     "j_wrathful_joker"
+    ],
+    8460
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    7920
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    8178
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    11220
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    14332
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    13500
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    9000
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    8600
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    18054
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_odd_todd",
+     "j_wrathful_joker"
+    ],
+    11600
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_odd_todd",
+     "j_wrathful_joker"
+    ],
+    10396
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_odd_todd",
+     "j_wrathful_joker"
+    ],
+    13200
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_fortune_teller",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    19845
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_fortune_teller",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    13230
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_fortune_teller",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    13650
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_fortune_teller",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    11250
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_fortune_teller",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    15228
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_selzer",
+     "j_wrathful_joker"
+    ],
+    13320
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_selzer",
+     "j_wrathful_joker"
+    ],
+    11700
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_selzer",
+     "j_wrathful_joker"
+    ],
+    11178
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_selzer",
+     "j_wrathful_joker"
+    ],
+    5980
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_ice_cream",
+     "j_selzer"
+    ],
+    10800
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_ice_cream",
+     "j_selzer"
+    ],
+    41142
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_ice_cream",
+     "j_selzer"
+    ],
+    11088
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_ice_cream",
+     "j_selzer"
+    ],
+    42916
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_ice_cream",
+     "j_selzer"
+    ],
+    10872
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_ice_cream"
+    ],
+    23085
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_ice_cream"
+    ],
+    10008
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_ice_cream"
+    ],
+    9468
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_banner",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_fool",
+    [
+     "j_banner",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_banner",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_sock_and_buskin",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    4,
+    "s_aura",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_empress",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_flash",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_empress",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_fortune_teller",
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_magician",
+    [
+     "j_banner",
+     "j_bloodstone",
+     "j_half",
+     "j_ice_cream",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 66,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

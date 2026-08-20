@@ -1,0 +1,228 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 62,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_tribe",
+  "j_gift"
+ ],
+ "stats": {
+  "tarots": [
+   "c_high_priestess",
+   "c_empress",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_venus",
+   "pl_uranus",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_tribe"
+  ],
+  "money_spent": 33,
+  "best_score": 1483,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    320
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    153
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    240
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    270
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_tribe"
+    ],
+    162
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_tribe"
+    ],
+    1264
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_gift",
+     "j_tribe"
+    ],
+    295
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_gift",
+     "j_tribe"
+    ],
+    310
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_gift",
+     "j_tribe"
+    ],
+    584
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gift",
+     "j_tribe"
+    ],
+    60
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_gift",
+     "j_tribe"
+    ],
+    385
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_gift",
+     "j_tribe"
+    ],
+    280
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gift",
+     "j_tribe"
+    ],
+    210
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_gift",
+     "j_tribe"
+    ],
+    608
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_venus",
+    [],
+    []
+   ],
+   [
+    1,
+    "c_high_priestess",
+    [],
+    []
+   ],
+   [
+    1,
+    "pl_uranus",
+    [],
+    []
+   ],
+   [
+    1,
+    "c_empress",
+    [],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_pluto",
+    [
+     "j_tribe"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_gift",
+     "j_tribe"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 128,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

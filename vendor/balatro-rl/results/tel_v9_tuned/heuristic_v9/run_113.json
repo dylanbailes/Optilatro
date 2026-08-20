@@ -1,0 +1,193 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 64,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_dusk",
+  "j_fortune_teller"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_earth"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_dusk",
+   "j_fortune_teller"
+  ],
+  "money_spent": 47,
+  "best_score": 2134,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_dusk",
+     "j_selzer"
+    ],
+    632
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_dusk",
+     "j_selzer"
+    ],
+    560
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_dusk",
+     "j_selzer"
+    ],
+    136
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_selzer"
+    ],
+    852
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_selzer"
+    ],
+    1560
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_fortune_teller",
+     "j_selzer"
+    ],
+    708
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_fortune_teller",
+     "j_selzer"
+    ],
+    900
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_dusk",
+     "j_fortune_teller",
+     "j_selzer"
+    ],
+    1206
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_dusk",
+     "j_fortune_teller",
+     "j_selzer"
+    ],
+    728
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_dusk",
+     "j_fortune_teller"
+    ],
+    200
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_dusk",
+     "j_fortune_teller"
+    ],
+    120
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_dusk",
+     "j_fortune_teller"
+    ],
+    272
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_dusk",
+     "j_fortune_teller"
+    ],
+    654
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_dusk",
+     "j_fortune_teller"
+    ],
+    176
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_earth",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_selzer"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 113,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

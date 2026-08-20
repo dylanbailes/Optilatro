@@ -1,0 +1,162 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 38,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_crazy",
+  "j_delayed_grat"
+ ],
+ "stats": {
+  "tarots": [
+   "c_strength",
+   "c_hermit",
+   "c_sun"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gros_michel",
+   "j_delayed_grat"
+  ],
+  "money_spent": 34,
+  "best_score": 816,
+  "rerolls": 1,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    320
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy",
+     "j_gros_michel"
+    ],
+    476
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_gros_michel"
+    ],
+    816
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    324
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    320
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    16
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    15
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_strength",
+    [
+     "j_crazy",
+     "j_gros_michel"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hermit",
+    [
+     "j_crazy"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_sun",
+    [
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 285,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

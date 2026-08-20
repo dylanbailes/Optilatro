@@ -1,0 +1,365 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 127,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_even_steven",
+  "j_selzer",
+  "j_joker",
+  "j_crazy",
+  "j_green_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_death",
+   "c_high_priestess",
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_jupiter",
+   "pl_earth",
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mail",
+   "j_crazy",
+   "j_golden",
+   "j_selzer",
+   "j_hiker",
+   "j_scary_face",
+   "j_joker",
+   "j_crazy",
+   "j_green_joker"
+  ],
+  "money_spent": 129,
+  "best_score": 12600,
+  "rerolls": 2,
+  "packs_bought": 14,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    3,
+    "j_mail"
+   ],
+   [
+    3,
+    "j_crazy"
+   ],
+   [
+    3,
+    "j_golden"
+   ],
+   [
+    3,
+    "j_scary_face"
+   ],
+   [
+    4,
+    "j_hiker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_reserved_parking"
+    ],
+    84
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_reserved_parking"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_reserved_parking"
+    ],
+    220
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_reserved_parking"
+    ],
+    316
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_reserved_parking"
+    ],
+    208
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_reserved_parking"
+    ],
+    92
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_mail",
+     "j_reserved_parking"
+    ],
+    876
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_golden",
+     "j_mail",
+     "j_reserved_parking"
+    ],
+    1320
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_golden",
+     "j_mail",
+     "j_reserved_parking"
+    ],
+    1600
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_golden",
+     "j_mail",
+     "j_selzer"
+    ],
+    3068
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_golden",
+     "j_hiker",
+     "j_selzer"
+    ],
+    4334
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_golden",
+     "j_hiker",
+     "j_scary_face",
+     "j_selzer"
+    ],
+    4818
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_hiker",
+     "j_joker",
+     "j_selzer"
+    ],
+    6612
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_hiker",
+     "j_joker",
+     "j_selzer"
+    ],
+    12600
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_green_joker",
+     "j_joker",
+     "j_selzer"
+    ],
+    558
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_green_joker",
+     "j_joker",
+     "j_selzer"
+    ],
+    2414
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_green_joker",
+     "j_joker",
+     "j_selzer"
+    ],
+    800
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_reserved_parking"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_golden",
+     "j_mail",
+     "j_reserved_parking"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_high_priestess",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_golden",
+     "j_mail",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_jupiter",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_golden",
+     "j_hiker",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_even_steven",
+     "j_golden",
+     "j_hiker",
+     "j_scary_face",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_earth",
+    [
+     "j_even_steven",
+     "j_golden",
+     "j_hiker",
+     "j_scary_face",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_saturn",
+    [
+     "j_crazy",
+     "j_even_steven",
+     "j_green_joker",
+     "j_joker",
+     "j_selzer"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 64,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

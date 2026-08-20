@@ -1,0 +1,158 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 52,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_lusty_joker",
+  "j_ticket",
+  "j_todo_list"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ticket",
+   "j_todo_list"
+  ],
+  "money_spent": 25,
+  "best_score": 1176,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    292
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_lusty_joker"
+    ],
+    288
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker"
+    ],
+    120
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker"
+    ],
+    64
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_lusty_joker",
+     "j_ticket"
+    ],
+    525
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_ticket"
+    ],
+    130
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    720
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    342
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    880
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    130
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    16
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    150
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 2,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

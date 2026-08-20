@@ -1,0 +1,225 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 70,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_ramen",
+  "j_photograph",
+  "j_gluttenous_joker",
+  "j_blue_joker",
+  "j_ancient"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_popcorn",
+   "j_gluttenous_joker",
+   "j_rocket",
+   "j_blue_joker",
+   "j_ancient"
+  ],
+  "money_spent": 63,
+  "best_score": 3849,
+  "rerolls": 0,
+  "packs_bought": 7,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_rocket"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_popcorn",
+     "j_ramen"
+    ],
+    1056
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_photograph",
+     "j_popcorn",
+     "j_ramen"
+    ],
+    2160
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_photograph",
+     "j_popcorn",
+     "j_ramen"
+    ],
+    1760
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_popcorn",
+     "j_ramen"
+    ],
+    3849
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_popcorn",
+     "j_ramen",
+     "j_rocket"
+    ],
+    987
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_popcorn",
+     "j_ramen",
+     "j_rocket"
+    ],
+    960
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_ramen",
+     "j_rocket"
+    ],
+    1067
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_ramen",
+     "j_rocket"
+    ],
+    1102
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_ancient",
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_ramen"
+    ],
+    3032
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_ancient",
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_ramen"
+    ],
+    1488
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_ancient",
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_ramen"
+    ],
+    639
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_ancient",
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_ramen"
+    ],
+    139
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_ancient",
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_ramen"
+    ],
+    181
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_popcorn",
+     "j_ramen"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 197,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

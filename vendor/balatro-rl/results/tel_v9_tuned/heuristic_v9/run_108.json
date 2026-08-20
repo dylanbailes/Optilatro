@@ -1,0 +1,228 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 58,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_runner",
+  "j_gluttenous_joker",
+  "j_flash"
+ ],
+ "stats": {
+  "tarots": [
+   "c_world"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_runner",
+   "j_gluttenous_joker",
+   "j_flash"
+  ],
+  "money_spent": 35,
+  "best_score": 1610,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    276
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_runner"
+    ],
+    216
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_runner"
+    ],
+    220
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_runner"
+    ],
+    152
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_runner"
+    ],
+    480
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_runner"
+    ],
+    160
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_runner"
+    ],
+    608
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_runner"
+    ],
+    560
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_runner"
+    ],
+    148
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_runner"
+    ],
+    608
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_runner"
+    ],
+    520
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_runner"
+    ],
+    1610
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flash",
+     "j_gluttenous_joker",
+     "j_runner"
+    ],
+    636
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_flash",
+     "j_gluttenous_joker",
+     "j_runner"
+    ],
+    316
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_flash",
+     "j_gluttenous_joker",
+     "j_runner"
+    ],
+    312
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_flash",
+     "j_gluttenous_joker",
+     "j_runner"
+    ],
+    308
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_runner"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_runner"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_world",
+    [
+     "j_runner"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 108,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

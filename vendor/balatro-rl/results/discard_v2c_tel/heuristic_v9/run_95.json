@@ -1,0 +1,307 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 90,
+ "truncated": false,
+ "dollars": 7,
+ "jokers": [
+  "j_banner",
+  "j_even_steven",
+  "j_devious",
+  "j_photograph",
+  "j_bull"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_chariot",
+   "c_death"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_stencil",
+   "j_droll",
+   "j_banner",
+   "j_trousers",
+   "j_even_steven",
+   "j_devious",
+   "j_idol",
+   "j_credit_card",
+   "j_photograph",
+   "j_bull"
+  ],
+  "money_spent": 76,
+  "best_score": 5972,
+  "rerolls": 1,
+  "packs_bought": 4,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    3,
+    "j_droll"
+   ],
+   [
+    3,
+    "j_trousers"
+   ],
+   [
+    3,
+    "j_stencil"
+   ],
+   [
+    3,
+    "j_credit_card"
+   ],
+   [
+    4,
+    "j_idol"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_stencil"
+    ],
+    496
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_droll",
+     "j_stencil"
+    ],
+    3318
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_droll",
+     "j_popcorn",
+     "j_stencil"
+    ],
+    1656
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil"
+    ],
+    2412
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    2652
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    840
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    2016
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_banner",
+     "j_devious",
+     "j_even_steven",
+     "j_popcorn",
+     "j_stencil"
+    ],
+    4740
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_banner",
+     "j_devious",
+     "j_even_steven",
+     "j_idol",
+     "j_stencil"
+    ],
+    2768
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_banner",
+     "j_devious",
+     "j_even_steven",
+     "j_idol",
+     "j_photograph"
+    ],
+    5304
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_bull",
+     "j_devious",
+     "j_even_steven",
+     "j_photograph"
+    ],
+    332
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_bull",
+     "j_devious",
+     "j_even_steven",
+     "j_photograph"
+    ],
+    1400
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_bull",
+     "j_devious",
+     "j_even_steven",
+     "j_photograph"
+    ],
+    2880
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_bull",
+     "j_devious",
+     "j_even_steven",
+     "j_photograph"
+    ],
+    1360
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_droll",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 95,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

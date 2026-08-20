@@ -1,0 +1,253 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 70,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_todo_list",
+  "j_bootstraps",
+  "j_scholar",
+  "j_gift"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_todo_list",
+   "j_scholar"
+  ],
+  "money_spent": 32,
+  "best_score": 1292,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_todo_list"
+    ],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_todo_list"
+    ],
+    240
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_bootstraps",
+     "j_todo_list"
+    ],
+    117
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_todo_list"
+    ],
+    228
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_todo_list"
+    ],
+    308
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bootstraps",
+     "j_todo_list"
+    ],
+    172
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_todo_list"
+    ],
+    120
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_todo_list"
+    ],
+    124
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_bootstraps",
+     "j_todo_list"
+    ],
+    324
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_todo_list"
+    ],
+    474
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    60
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    92
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_bootstraps",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    824
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    316
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_bootstraps",
+     "j_gift",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    296
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_gift",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    120
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bootstraps",
+     "j_gift",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    15
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bootstraps",
+     "j_gift",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    180
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_bootstraps",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 166,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,707 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 172,
+ "truncated": false,
+ "dollars": 12,
+ "jokers": [
+  "j_ramen",
+  "j_fortune_teller",
+  "j_trio",
+  "j_business",
+  "j_hallucination"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_fool",
+   "c_magician",
+   "c_fool",
+   "c_temperance",
+   "c_magician",
+   "c_emperor",
+   "c_hanged_man",
+   "c_fool",
+   "c_hanged_man",
+   "c_death",
+   "c_wheel_of_fortune",
+   "c_wheel_of_fortune",
+   "c_death"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ramen",
+   "j_todo_list",
+   "j_scary_face",
+   "j_8_ball",
+   "j_half",
+   "j_even_steven",
+   "j_vagabond",
+   "j_popcorn",
+   "j_fortune_teller",
+   "j_half",
+   "j_flash",
+   "j_gluttenous_joker",
+   "j_trio",
+   "j_business",
+   "j_hallucination"
+  ],
+  "money_spent": 154,
+  "best_score": 14072,
+  "rerolls": 2,
+  "packs_bought": 14,
+  "packs_opened": 11,
+  "jokers_sold": [
+   [
+    2,
+    "j_todo_list"
+   ],
+   [
+    2,
+    "j_smiley"
+   ],
+   [
+    3,
+    "j_scary_face"
+   ],
+   [
+    3,
+    "j_8_ball"
+   ],
+   [
+    3,
+    "j_half"
+   ],
+   [
+    3,
+    "j_even_steven"
+   ],
+   [
+    4,
+    "j_vagabond"
+   ],
+   [
+    4,
+    "j_half"
+   ],
+   [
+    4,
+    "j_flash"
+   ],
+   [
+    4,
+    "j_gluttenous_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_smiley"
+    ],
+    576
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ramen",
+     "j_smiley"
+    ],
+    2671
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_ramen",
+     "j_smiley",
+     "j_todo_list"
+    ],
+    177
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_ramen",
+     "j_smiley",
+     "j_todo_list"
+    ],
+    1215
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_ramen",
+     "j_scary_face",
+     "j_smiley",
+     "j_todo_list"
+    ],
+    2084
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_half",
+     "j_ramen",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    849
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_even_steven",
+     "j_half",
+     "j_ramen",
+     "j_scary_face"
+    ],
+    3781
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_8_ball",
+     "j_even_steven",
+     "j_half",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    1788
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_even_steven",
+     "j_half",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    1214
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    4963
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    2471
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    2428
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    3447
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    3180
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    8139
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_flash",
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen"
+    ],
+    4390
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_flash",
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen"
+    ],
+    6623
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_ramen",
+     "j_trio"
+    ],
+    7370
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_ramen",
+     "j_trio"
+    ],
+    2585
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_ramen",
+     "j_trio"
+    ],
+    3077
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_business",
+     "j_fortune_teller",
+     "j_hallucination",
+     "j_ramen",
+     "j_trio"
+    ],
+    2550
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_business",
+     "j_fortune_teller",
+     "j_hallucination",
+     "j_ramen",
+     "j_trio"
+    ],
+    2483
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_business",
+     "j_fortune_teller",
+     "j_hallucination",
+     "j_ramen",
+     "j_trio"
+    ],
+    4396
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_business",
+     "j_fortune_teller",
+     "j_hallucination",
+     "j_ramen",
+     "j_trio"
+    ],
+    4643
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_magician",
+    [
+     "j_8_ball",
+     "j_half",
+     "j_ramen",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_8_ball",
+     "j_half",
+     "j_ramen",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_8_ball",
+     "j_half",
+     "j_ramen",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_8_ball",
+     "j_even_steven",
+     "j_half",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_temperance",
+    [
+     "j_8_ball",
+     "j_even_steven",
+     "j_half",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_8_ball",
+     "j_even_steven",
+     "j_half",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_emperor",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hanged_man",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hanged_man",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_wheel_of_fortune",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen",
+     "j_vagabond"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_wheel_of_fortune",
+    [
+     "j_flash",
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_flash",
+     "j_fortune_teller",
+     "j_half",
+     "j_popcorn",
+     "j_ramen"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_flash",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_popcorn",
+     "j_ramen"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Blue"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 252,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

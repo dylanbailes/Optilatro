@@ -1,0 +1,276 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 69,
+ "truncated": false,
+ "dollars": 25,
+ "jokers": [
+  "j_smiley",
+  "j_photograph",
+  "j_selzer",
+  "j_odd_todd",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_smiley",
+   "j_blue_joker",
+   "j_crafty",
+   "j_blackboard",
+   "j_raised_fist",
+   "j_selzer",
+   "j_odd_todd",
+   "j_reserved_parking"
+  ],
+  "money_spent": 67,
+  "best_score": 5120,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    2,
+    "j_crafty"
+   ],
+   [
+    2,
+    "j_blackboard"
+   ],
+   [
+    2,
+    "j_blue_joker"
+   ],
+   [
+    3,
+    "j_raised_fist"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_smiley"
+    ],
+    1458
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_crafty",
+     "j_smiley"
+    ],
+    1416
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_blue_joker",
+     "j_crafty",
+     "j_photograph",
+     "j_smiley"
+    ],
+    2832
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_blue_joker",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    2016
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_odd_todd",
+     "j_photograph",
+     "j_raised_fist",
+     "j_selzer",
+     "j_smiley"
+    ],
+    1782
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_photograph",
+     "j_raised_fist",
+     "j_selzer",
+     "j_smiley"
+    ],
+    4480
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_photograph",
+     "j_raised_fist",
+     "j_selzer",
+     "j_smiley"
+    ],
+    1920
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_odd_todd",
+     "j_photograph",
+     "j_raised_fist",
+     "j_selzer",
+     "j_smiley"
+    ],
+    2574
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_photograph",
+     "j_raised_fist",
+     "j_selzer",
+     "j_smiley"
+    ],
+    5120
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking",
+     "j_selzer",
+     "j_smiley"
+    ],
+    320
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking",
+     "j_selzer",
+     "j_smiley"
+    ],
+    288
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking",
+     "j_selzer",
+     "j_smiley"
+    ],
+    224
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking",
+     "j_selzer",
+     "j_smiley"
+    ],
+    1168
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_temperance",
+    [
+     "j_blackboard",
+     "j_blue_joker",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_odd_todd",
+     "j_photograph",
+     "j_raised_fist",
+     "j_selzer",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_odd_todd",
+     "j_photograph",
+     "j_raised_fist",
+     "j_selzer",
+     "j_smiley"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 261,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

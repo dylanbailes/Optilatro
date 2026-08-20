@@ -1,0 +1,375 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 110,
+ "truncated": false,
+ "dollars": 22,
+ "jokers": [
+  "j_cavendish",
+  "j_seeing_double",
+  "j_golden",
+  "j_splash",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [
+   "c_sun",
+   "c_temperance",
+   "c_temperance"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_todo_list",
+   "j_business",
+   "j_photograph",
+   "j_drunkard",
+   "j_half",
+   "j_cavendish",
+   "j_crazy",
+   "j_seeing_double",
+   "j_golden",
+   "j_splash",
+   "j_reserved_parking"
+  ],
+  "money_spent": 93,
+  "best_score": 7425,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_todo_list"
+   ],
+   [
+    3,
+    "j_business"
+   ],
+   [
+    3,
+    "j_drunkard"
+   ],
+   [
+    3,
+    "j_photograph"
+   ],
+   [
+    3,
+    "j_half"
+   ],
+   [
+    4,
+    "j_crazy"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    153
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    16
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_todo_list"
+    ],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_todo_list"
+    ],
+    288
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_todo_list"
+    ],
+    200
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_business",
+     "j_todo_list"
+    ],
+    316
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_business",
+     "j_todo_list"
+    ],
+    288
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_gros_michel",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    1216
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_drunkard",
+     "j_gros_michel",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    1368
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_drunkard",
+     "j_gros_michel",
+     "j_half",
+     "j_photograph"
+    ],
+    814
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_cavendish",
+     "j_drunkard",
+     "j_half",
+     "j_photograph"
+    ],
+    3960
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_crazy",
+     "j_half",
+     "j_photograph",
+     "j_seeing_double"
+    ],
+    3960
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_crazy",
+     "j_golden",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    3312
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_crazy",
+     "j_golden",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    2301
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_crazy",
+     "j_golden",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    2664
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_crazy",
+     "j_golden",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    2160
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_crazy",
+     "j_golden",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    1008
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_reserved_parking",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    3600
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_reserved_parking",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    2448
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_reserved_parking",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    1080
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_reserved_parking",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    297
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_sun",
+    [
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_business",
+     "j_gros_michel",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_business",
+     "j_gros_michel",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_jupiter",
+    [
+     "j_business",
+     "j_drunkard",
+     "j_gros_michel",
+     "j_half",
+     "j_photograph"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 280,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,228 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 67,
+ "truncated": false,
+ "dollars": 16,
+ "jokers": [
+  "j_ice_cream",
+  "j_blue_joker",
+  "j_constellation",
+  "j_scholar"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ice_cream",
+   "j_blue_joker",
+   "j_smiley",
+   "j_8_ball",
+   "j_egg",
+   "j_mad",
+   "j_constellation",
+   "j_scholar"
+  ],
+  "money_spent": 62,
+  "best_score": 4503,
+  "rerolls": 3,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_smiley"
+   ],
+   [
+    3,
+    "j_8_ball"
+   ],
+   [
+    3,
+    "j_egg"
+   ],
+   [
+    3,
+    "j_mad"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    304
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_ice_cream"
+    ],
+    324
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ice_cream"
+    ],
+    230
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_ice_cream"
+    ],
+    400
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_ice_cream"
+    ],
+    184
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_ice_cream"
+    ],
+    166
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_smiley"
+    ],
+    852
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_smiley"
+    ],
+    4503
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_egg",
+     "j_ice_cream",
+     "j_smiley"
+    ],
+    2220
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_egg",
+     "j_ice_cream",
+     "j_mad"
+    ],
+    2280
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_egg",
+     "j_ice_cream",
+     "j_mad"
+    ],
+    2196
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_egg",
+     "j_ice_cream",
+     "j_mad"
+    ],
+    1896
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    788
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    1760
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    688
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    220
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 34,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

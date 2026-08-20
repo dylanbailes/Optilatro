@@ -1,0 +1,186 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 50,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_credit_card",
+  "j_ice_cream",
+  "j_photograph",
+  "j_egg"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_chariot"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ice_cream",
+   "j_photograph",
+   "j_egg"
+  ],
+  "money_spent": 38,
+  "best_score": 1458,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    368
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card"
+    ],
+    240
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card"
+    ],
+    296
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_ice_cream"
+    ],
+    712
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_ice_cream"
+    ],
+    1026
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_ice_cream",
+     "j_photograph"
+    ],
+    608
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_ice_cream",
+     "j_photograph"
+    ],
+    274
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_ice_cream",
+     "j_photograph"
+    ],
+    576
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_ice_cream",
+     "j_photograph"
+    ],
+    91
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_ice_cream",
+     "j_photograph"
+    ],
+    84
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_ice_cream",
+     "j_photograph"
+    ],
+    380
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_ice_cream",
+     "j_photograph"
+    ],
+    75
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_credit_card"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_chariot",
+    [
+     "j_credit_card",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 94,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

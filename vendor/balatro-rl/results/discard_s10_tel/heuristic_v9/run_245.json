@@ -1,0 +1,291 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 102,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_ice_cream",
+  "j_odd_todd",
+  "j_zany",
+  "j_cavendish",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [
+   "c_lovers",
+   "c_hermit",
+   "c_temperance"
+  ],
+  "planets": [
+   "pl_earth"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_business",
+   "j_gros_michel",
+   "j_red_card",
+   "j_ice_cream",
+   "j_sly",
+   "j_odd_todd",
+   "j_faceless",
+   "j_zany",
+   "j_reserved_parking",
+   "j_runner",
+   "j_vagabond",
+   "j_cavendish",
+   "j_splash"
+  ],
+  "money_spent": 102,
+  "best_score": 5436,
+  "rerolls": 2,
+  "packs_bought": 7,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    2,
+    "j_business"
+   ],
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    2,
+    "j_green_joker"
+   ],
+   [
+    3,
+    "j_faceless"
+   ],
+   [
+    3,
+    "j_reserved_parking"
+   ],
+   [
+    3,
+    "j_runner"
+   ],
+   [
+    3,
+    "j_vagabond"
+   ],
+   [
+    3,
+    "j_sly"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_business",
+     "j_green_joker"
+    ],
+    460
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_green_joker",
+     "j_gros_michel"
+    ],
+    1000
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_green_joker",
+     "j_gros_michel"
+    ],
+    1080
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_business",
+     "j_green_joker",
+     "j_gros_michel",
+     "j_red_card"
+    ],
+    1480
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_red_card",
+     "j_sly"
+    ],
+    3173
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    3927
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_sly",
+     "j_zany"
+    ],
+    3706
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_reserved_parking",
+     "j_sly",
+     "j_zany"
+    ],
+    5436
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_splash",
+     "j_zany"
+    ],
+    1032
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_splash",
+     "j_zany"
+    ],
+    1434
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_splash",
+     "j_zany"
+    ],
+    1296
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_splash",
+     "j_zany"
+    ],
+    810
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_lovers",
+    [
+     "j_business",
+     "j_green_joker",
+     "j_gros_michel"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_business",
+     "j_green_joker",
+     "j_gros_michel"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_earth",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 245,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

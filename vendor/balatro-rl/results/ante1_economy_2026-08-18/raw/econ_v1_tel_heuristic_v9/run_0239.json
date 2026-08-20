@@ -1,0 +1,238 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 67,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_crazy",
+  "j_banner",
+  "j_stencil",
+  "j_juggler",
+  "j_dna"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_banner",
+   "j_dna"
+  ],
+  "money_spent": 40,
+  "best_score": 2800,
+  "rerolls": 3,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    104
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_crazy"
+    ],
+    344
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy"
+    ],
+    116
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_banner",
+     "j_crazy"
+    ],
+    652
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    524
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    540
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    2800
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    488
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    1920
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_dna",
+     "j_juggler",
+     "j_stencil"
+    ],
+    680
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_dna",
+     "j_juggler",
+     "j_stencil"
+    ],
+    644
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_dna",
+     "j_juggler",
+     "j_stencil"
+    ],
+    556
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_dna",
+     "j_juggler",
+     "j_stencil"
+    ],
+    156
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_dna",
+     "j_juggler",
+     "j_stencil"
+    ],
+    600
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_dna",
+     "j_juggler",
+     "j_stencil"
+    ],
+    372
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_dna",
+     "j_juggler",
+     "j_stencil"
+    ],
+    324
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_dna",
+     "j_juggler",
+     "j_stencil"
+    ],
+    144
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 239,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

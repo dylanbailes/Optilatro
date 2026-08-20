@@ -1,0 +1,267 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 71,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_faceless",
+  "j_mad",
+  "j_sly",
+  "j_blue_joker",
+  "j_scary_face"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hallucination",
+   "j_faceless",
+   "j_mad",
+   "j_sly",
+   "j_blue_joker",
+   "j_scary_face"
+  ],
+  "money_spent": 39,
+  "best_score": 2384,
+  "rerolls": 3,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [
+   [
+    3,
+    "j_hallucination"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    40
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hallucination"
+    ],
+    276
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_hallucination"
+    ],
+    153
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_hallucination"
+    ],
+    16
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hallucination"
+    ],
+    36
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_hallucination"
+    ],
+    112
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_faceless",
+     "j_hallucination"
+    ],
+    256
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_hallucination"
+    ],
+    104
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_faceless",
+     "j_hallucination"
+    ],
+    200
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_hallucination",
+     "j_mad"
+    ],
+    600
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_faceless",
+     "j_hallucination",
+     "j_mad"
+    ],
+    292
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_faceless",
+     "j_hallucination",
+     "j_mad"
+    ],
+    756
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_hallucination",
+     "j_mad"
+    ],
+    456
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_faceless",
+     "j_hallucination",
+     "j_mad",
+     "j_sly"
+    ],
+    1554
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_hallucination",
+     "j_mad",
+     "j_sly"
+    ],
+    156
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_faceless",
+     "j_hallucination",
+     "j_mad",
+     "j_sly"
+    ],
+    584
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_faceless",
+     "j_hallucination",
+     "j_mad",
+     "j_sly"
+    ],
+    1800
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_faceless",
+     "j_mad",
+     "j_scary_face",
+     "j_sly"
+    ],
+    984
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_faceless",
+     "j_mad",
+     "j_scary_face",
+     "j_sly"
+    ],
+    512
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_faceless",
+     "j_mad",
+     "j_scary_face",
+     "j_sly"
+    ],
+    244
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_faceless",
+     "j_mad",
+     "j_scary_face",
+     "j_sly"
+    ],
+    228
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 82,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

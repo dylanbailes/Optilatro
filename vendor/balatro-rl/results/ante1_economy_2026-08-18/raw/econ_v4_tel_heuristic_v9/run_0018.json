@@ -1,0 +1,575 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 137,
+ "truncated": false,
+ "dollars": 7,
+ "jokers": [
+  "j_blackboard",
+  "j_family",
+  "j_abstract",
+  "j_arrowhead",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_empress",
+   "c_fool",
+   "c_empress",
+   "c_death"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_misprint",
+   "j_reserved_parking",
+   "j_blackboard",
+   "j_zany",
+   "j_delayed_grat",
+   "j_family",
+   "j_abstract",
+   "j_credit_card",
+   "j_8_ball",
+   "j_half",
+   "j_green_joker",
+   "j_runner",
+   "j_blue_joker",
+   "j_arrowhead",
+   "j_splash"
+  ],
+  "money_spent": 115,
+  "best_score": 26196,
+  "rerolls": 1,
+  "packs_bought": 8,
+  "packs_opened": 6,
+  "jokers_sold": [
+   [
+    3,
+    "j_reserved_parking"
+   ],
+   [
+    3,
+    "j_zany"
+   ],
+   [
+    3,
+    "j_delayed_grat"
+   ],
+   [
+    3,
+    "j_credit_card"
+   ],
+   [
+    4,
+    "j_8_ball"
+   ],
+   [
+    4,
+    "j_half"
+   ],
+   [
+    4,
+    "j_green_joker"
+   ],
+   [
+    4,
+    "j_runner"
+   ],
+   [
+    4,
+    "j_misprint"
+   ],
+   [
+    5,
+    "j_blue_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_misprint"
+    ],
+    432
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_misprint"
+    ],
+    162
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    1260
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    960
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    840
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    800
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_zany"
+    ],
+    1782
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_delayed_grat",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_zany"
+    ],
+    2448
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_delayed_grat",
+     "j_family",
+     "j_misprint"
+    ],
+    780
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_delayed_grat",
+     "j_family",
+     "j_misprint"
+    ],
+    2295
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blackboard",
+     "j_credit_card",
+     "j_family",
+     "j_misprint"
+    ],
+    3348
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blackboard",
+     "j_credit_card",
+     "j_family",
+     "j_misprint"
+    ],
+    1155
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_abstract",
+     "j_blackboard",
+     "j_family",
+     "j_misprint"
+    ],
+    3393
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_abstract",
+     "j_blackboard",
+     "j_family",
+     "j_misprint"
+    ],
+    1200
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_abstract",
+     "j_blackboard",
+     "j_family",
+     "j_misprint"
+    ],
+    2871
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_abstract",
+     "j_blackboard",
+     "j_family",
+     "j_half",
+     "j_misprint"
+    ],
+    7752
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_blackboard",
+     "j_family",
+     "j_misprint",
+     "j_runner"
+    ],
+    6720
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blackboard",
+     "j_family",
+     "j_misprint",
+     "j_runner"
+    ],
+    2275
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blackboard",
+     "j_family",
+     "j_misprint",
+     "j_runner"
+    ],
+    1782
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blackboard",
+     "j_blue_joker",
+     "j_family"
+    ],
+    26196
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blackboard",
+     "j_family",
+     "j_splash"
+    ],
+    7056
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blackboard",
+     "j_family",
+     "j_splash"
+    ],
+    4047
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blackboard",
+     "j_family",
+     "j_splash"
+    ],
+    3749
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blackboard",
+     "j_family",
+     "j_splash"
+    ],
+    2052
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blackboard",
+     "j_family",
+     "j_splash"
+    ],
+    7467
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blackboard",
+     "j_family",
+     "j_splash"
+    ],
+    2983
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blackboard",
+     "j_family",
+     "j_splash"
+    ],
+    2489
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blackboard",
+     "j_family",
+     "j_splash"
+    ],
+    2147
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_zany"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_blackboard",
+     "j_delayed_grat",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_blackboard",
+     "j_delayed_grat",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_zany"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_blackboard",
+     "j_delayed_grat",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_abstract",
+     "j_blackboard",
+     "j_family",
+     "j_misprint",
+     "j_runner"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_blackboard",
+     "j_blue_joker",
+     "j_family",
+     "j_misprint"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 18,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

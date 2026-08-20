@@ -1,0 +1,631 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 178,
+ "truncated": false,
+ "dollars": 24,
+ "jokers": [
+  "j_bull",
+  "j_fibonacci",
+  "j_raised_fist",
+  "j_duo",
+  "j_business"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_empress",
+   "c_temperance",
+   "c_hanged_man",
+   "c_temperance",
+   "c_death",
+   "c_magician",
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_greedy_joker",
+   "j_raised_fist",
+   "j_jolly",
+   "j_8_ball",
+   "j_half",
+   "j_golden",
+   "j_odd_todd",
+   "j_red_card",
+   "j_popcorn",
+   "j_duo",
+   "j_business"
+  ],
+  "money_spent": 172,
+  "best_score": 23766,
+  "rerolls": 3,
+  "packs_bought": 17,
+  "packs_opened": 11,
+  "jokers_sold": [
+   [
+    1,
+    "j_cloud_9"
+   ],
+   [
+    2,
+    "j_greedy_joker"
+   ],
+   [
+    2,
+    "j_jolly"
+   ],
+   [
+    3,
+    "j_8_ball"
+   ],
+   [
+    4,
+    "j_half"
+   ],
+   [
+    4,
+    "j_golden"
+   ],
+   [
+    4,
+    "j_odd_todd"
+   ],
+   [
+    5,
+    "j_red_card"
+   ],
+   [
+    5,
+    "j_diet_cola"
+   ],
+   [
+    6,
+    "j_popcorn"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    32
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_cloud_9",
+     "j_diet_cola"
+    ],
+    572
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_cloud_9",
+     "j_diet_cola",
+     "j_greedy_joker"
+    ],
+    340
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_diet_cola",
+     "j_greedy_joker"
+    ],
+    148
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_diet_cola",
+     "j_greedy_joker"
+    ],
+    138
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_raised_fist"
+    ],
+    890
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_jolly",
+     "j_raised_fist"
+    ],
+    1485
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_jolly",
+     "j_raised_fist"
+    ],
+    1615
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_raised_fist"
+    ],
+    1577
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_raised_fist"
+    ],
+    806
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_half",
+     "j_raised_fist"
+    ],
+    3655
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_half",
+     "j_raised_fist"
+    ],
+    5123
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_half",
+     "j_raised_fist"
+    ],
+    5504
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_golden",
+     "j_raised_fist"
+    ],
+    4092
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_golden",
+     "j_raised_fist"
+    ],
+    4323
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_odd_todd",
+     "j_raised_fist"
+    ],
+    6633
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_odd_todd",
+     "j_raised_fist"
+    ],
+    3456
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_raised_fist",
+     "j_red_card"
+    ],
+    12296
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    7056
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    8004
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    4089
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_bull",
+     "j_duo",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    10416
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_bull",
+     "j_duo",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    9440
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_bull",
+     "j_duo",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    3910
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_duo",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    7448
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_bull",
+     "j_duo",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    13200
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_business",
+     "j_duo",
+     "j_fibonacci",
+     "j_raised_fist"
+    ],
+    7200
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_business",
+     "j_duo",
+     "j_fibonacci",
+     "j_raised_fist"
+    ],
+    9600
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_bull",
+     "j_business",
+     "j_duo",
+     "j_fibonacci",
+     "j_raised_fist"
+    ],
+    2790
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_bull",
+     "j_business",
+     "j_duo",
+     "j_fibonacci",
+     "j_raised_fist"
+    ],
+    3570
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_cloud_9",
+     "j_diet_cola",
+     "j_greedy_joker"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_empress",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_jolly",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_jolly",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_8_ball",
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_8_ball",
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_bull",
+     "j_diet_cola",
+     "j_fibonacci",
+     "j_odd_todd",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_chariot",
+    [
+     "j_bull",
+     "j_business",
+     "j_duo",
+     "j_fibonacci",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 249,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

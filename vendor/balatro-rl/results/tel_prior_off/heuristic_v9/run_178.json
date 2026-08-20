@@ -1,0 +1,412 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 110,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_half",
+  "j_red_card",
+  "j_photograph",
+  "j_ticket",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_death",
+   "c_temperance",
+   "c_empress"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_half",
+   "j_red_card",
+   "j_walkie_talkie",
+   "j_photograph",
+   "j_ticket",
+   "j_golden"
+  ],
+  "money_spent": 87,
+  "best_score": 7594,
+  "rerolls": 0,
+  "packs_bought": 11,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    3,
+    "j_shoot_the_moon"
+   ],
+   [
+    3,
+    "j_tribe"
+   ],
+   [
+    4,
+    "j_walkie_talkie"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    264
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_shoot_the_moon"
+    ],
+    312
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_shoot_the_moon"
+    ],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    540
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    70
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    840
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_half",
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    1088
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_half",
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    2940
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    1620
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_half",
+     "j_red_card",
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    2584
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_half",
+     "j_red_card",
+     "j_shoot_the_moon",
+     "j_tribe",
+     "j_walkie_talkie"
+    ],
+    2015
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_half",
+     "j_red_card",
+     "j_shoot_the_moon",
+     "j_tribe",
+     "j_walkie_talkie"
+    ],
+    1081
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_tribe",
+     "j_walkie_talkie"
+    ],
+    3040
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_tribe",
+     "j_walkie_talkie"
+    ],
+    1488
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    2176
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    1488
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    1344
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    3120
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    2800
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    1674
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_golden",
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_ticket"
+    ],
+    1782
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_half",
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_half",
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_half",
+     "j_red_card",
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_mercury",
+    [
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_tribe",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_temperance",
+    [
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_empress",
+    [
+     "j_golden",
+     "j_half",
+     "j_photograph",
+     "j_red_card",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 178,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

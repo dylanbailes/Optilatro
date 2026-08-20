@@ -1,0 +1,296 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 76,
+ "truncated": false,
+ "dollars": 23,
+ "jokers": [
+  "j_photograph",
+  "j_delayed_grat",
+  "j_lusty_joker",
+  "j_scholar",
+  "j_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_fool",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_photograph",
+   "j_gros_michel",
+   "j_delayed_grat",
+   "j_lusty_joker",
+   "j_scholar",
+   "j_joker"
+  ],
+  "money_spent": 54,
+  "best_score": 3282,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_ride_the_bus"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_photograph",
+     "j_ride_the_bus"
+    ],
+    592
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_photograph",
+     "j_ride_the_bus"
+    ],
+    1020
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_gros_michel",
+     "j_photograph",
+     "j_ride_the_bus"
+    ],
+    864
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_gros_michel",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_ride_the_bus"
+    ],
+    1200
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_ride_the_bus",
+     "j_scholar"
+    ],
+    2828
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    1092
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    1738
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    688
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    900
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    1694
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    540
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    1224
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    96
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    544
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_delayed_grat",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_ride_the_bus",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 167,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

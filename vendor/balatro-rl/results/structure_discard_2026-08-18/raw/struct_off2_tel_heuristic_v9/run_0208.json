@@ -1,0 +1,374 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 79,
+ "truncated": false,
+ "dollars": 10,
+ "jokers": [
+  "j_egg",
+  "j_to_the_moon",
+  "j_scholar",
+  "j_rough_gem",
+  "j_rocket"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_temperance",
+   "c_hanged_man",
+   "c_death",
+   "c_hanged_man",
+   "c_hermit",
+   "c_hanged_man",
+   "c_empress"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_popcorn",
+   "j_hallucination",
+   "j_to_the_moon",
+   "j_scholar",
+   "j_rough_gem",
+   "j_rocket"
+  ],
+  "money_spent": 67,
+  "best_score": 2337,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_devious"
+   ],
+   [
+    3,
+    "j_hallucination"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_devious",
+     "j_popcorn"
+    ],
+    528
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    840
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    580
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    720
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    832
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_rough_gem",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    2337
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_egg",
+     "j_rocket",
+     "j_rough_gem",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    1048
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_egg",
+     "j_rocket",
+     "j_rough_gem",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    60
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_egg",
+     "j_rocket",
+     "j_rough_gem",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    153
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_egg",
+     "j_rocket",
+     "j_rough_gem",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    288
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_judgement",
+    [
+     "j_devious",
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_temperance",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 208,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

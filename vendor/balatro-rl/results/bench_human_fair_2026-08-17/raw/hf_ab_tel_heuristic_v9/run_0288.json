@@ -1,0 +1,304 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 87,
+ "truncated": false,
+ "dollars": 19,
+ "jokers": [
+  "j_splash",
+  "j_odd_todd",
+  "j_smiley",
+  "j_sock_and_buskin",
+  "j_faceless"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant",
+   "c_hermit"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_golden",
+   "j_red_card",
+   "j_hanging_chad",
+   "j_splash",
+   "j_odd_todd",
+   "j_smiley",
+   "j_sock_and_buskin",
+   "j_faceless"
+  ],
+  "money_spent": 75,
+  "best_score": 4984,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_golden"
+   ],
+   [
+    2,
+    "j_popcorn"
+   ],
+   [
+    2,
+    "j_hanging_chad"
+   ],
+   [
+    3,
+    "j_abstract"
+   ],
+   [
+    3,
+    "j_red_card"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_abstract",
+     "j_golden"
+    ],
+    720
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_abstract",
+     "j_golden",
+     "j_popcorn"
+    ],
+    620
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_golden",
+     "j_popcorn",
+     "j_red_card"
+    ],
+    1080
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_hanging_chad",
+     "j_popcorn",
+     "j_red_card",
+     "j_splash"
+    ],
+    1292
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_red_card",
+     "j_splash"
+    ],
+    3120
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_odd_todd",
+     "j_red_card",
+     "j_smiley",
+     "j_splash"
+    ],
+    1209
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_odd_todd",
+     "j_red_card",
+     "j_smiley",
+     "j_splash"
+    ],
+    960
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_red_card",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    1850
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_red_card",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    1190
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    1232
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    1100
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    2040
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    3608
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    693
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    275
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_smiley",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    408
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_golden",
+     "j_popcorn"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_odd_todd",
+     "j_red_card",
+     "j_smiley",
+     "j_splash"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 288,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

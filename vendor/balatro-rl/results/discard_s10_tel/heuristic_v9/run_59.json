@@ -1,0 +1,307 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 83,
+ "truncated": false,
+ "dollars": 20,
+ "jokers": [
+  "j_odd_todd",
+  "j_scholar",
+  "j_dusk",
+  "j_misprint",
+  "j_lusty_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance",
+   "c_chariot",
+   "c_moon"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scholar",
+   "j_scary_face",
+   "j_dusk",
+   "j_gros_michel",
+   "j_misprint",
+   "j_lusty_joker"
+  ],
+  "money_spent": 59,
+  "best_score": 4183,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_scary_face"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_odd_todd"
+    ],
+    952
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    432
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    40
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    180
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1340
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1530
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_gros_michel",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    3150
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_dusk",
+     "j_gros_michel",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    2583
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_dusk",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    2934
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_dusk",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    945
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_dusk",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    3629
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_dusk",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    510
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_dusk",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    2070
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_dusk",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    922
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_dusk",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    891
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_dusk",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    300
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_temperance",
+    [
+     "j_dusk",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_dusk",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_moon",
+    [
+     "j_dusk",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 59,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

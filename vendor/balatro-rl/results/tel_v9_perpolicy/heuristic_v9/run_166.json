@@ -1,0 +1,182 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 52,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_mad",
+  "j_egg",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mad",
+   "j_egg",
+   "j_greedy_joker"
+  ],
+  "money_spent": 31,
+  "best_score": 1348,
+  "rerolls": 1,
+  "packs_bought": 2,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mad"
+    ],
+    552
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mad"
+    ],
+    528
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mad"
+    ],
+    384
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_egg",
+     "j_mad"
+    ],
+    952
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_mad"
+    ],
+    308
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_mad"
+    ],
+    744
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_mad"
+    ],
+    296
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_greedy_joker",
+     "j_mad"
+    ],
+    44
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_greedy_joker",
+     "j_mad"
+    ],
+    40
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_greedy_joker",
+     "j_mad"
+    ],
+    48
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_greedy_joker",
+     "j_mad"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_mad"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 166,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

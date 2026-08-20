@@ -1,0 +1,218 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 56,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_scholar",
+  "j_even_steven",
+  "j_gift",
+  "j_bull",
+  "j_8_ball"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_hermit"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scholar",
+   "j_even_steven",
+   "j_gift",
+   "j_bull",
+   "j_clever",
+   "j_credit_card",
+   "j_8_ball"
+  ],
+  "money_spent": 52,
+  "best_score": 1984,
+  "rerolls": 3,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_clever"
+   ],
+   [
+    2,
+    "j_credit_card"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    332
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_scholar"
+    ],
+    960
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_scholar"
+    ],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_scholar"
+    ],
+    500
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_gift",
+     "j_scholar"
+    ],
+    520
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_gift",
+     "j_scholar"
+    ],
+    420
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_gift",
+     "j_scholar"
+    ],
+    1050
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_gift",
+     "j_scholar"
+    ],
+    414
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_bull",
+     "j_credit_card",
+     "j_even_steven",
+     "j_gift",
+     "j_scholar"
+    ],
+    1656
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_bull",
+     "j_even_steven",
+     "j_gift",
+     "j_scholar"
+    ],
+    204
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_bull",
+     "j_even_steven",
+     "j_gift",
+     "j_scholar"
+    ],
+    140
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_bull",
+     "j_even_steven",
+     "j_gift",
+     "j_scholar"
+    ],
+    840
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_bull",
+     "j_even_steven",
+     "j_gift",
+     "j_scholar"
+    ],
+    800
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_gift",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_bull",
+     "j_even_steven",
+     "j_gift",
+     "j_scholar"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 163,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,282 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 70,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_business",
+  "j_credit_card",
+  "j_ice_cream",
+  "j_to_the_moon",
+  "j_ticket"
+ ],
+ "stats": {
+  "tarots": [
+   "c_strength",
+   "c_fool"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_golden",
+   "j_popcorn",
+   "j_red_card",
+   "j_satellite",
+   "j_business",
+   "j_credit_card",
+   "j_ice_cream",
+   "j_to_the_moon",
+   "j_ticket"
+  ],
+  "money_spent": 75,
+  "best_score": 2832,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    1,
+    "j_golden"
+   ],
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    2,
+    "j_wrathful_joker"
+   ],
+   [
+    3,
+    "j_satellite"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    312
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_wrathful_joker"
+    ],
+    290
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_golden",
+     "j_wrathful_joker"
+    ],
+    272
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_popcorn",
+     "j_red_card",
+     "j_wrathful_joker"
+    ],
+    858
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_popcorn",
+     "j_red_card",
+     "j_satellite",
+     "j_wrathful_joker"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_popcorn",
+     "j_satellite",
+     "j_wrathful_joker"
+    ],
+    1210
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_popcorn",
+     "j_satellite",
+     "j_wrathful_joker"
+    ],
+    1998
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_satellite"
+    ],
+    1472
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_satellite"
+    ],
+    678
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_ice_cream",
+     "j_ticket",
+     "j_to_the_moon"
+    ],
+    720
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_ice_cream",
+     "j_ticket",
+     "j_to_the_moon"
+    ],
+    740
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_ice_cream",
+     "j_ticket",
+     "j_to_the_moon"
+    ],
+    688
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_ice_cream",
+     "j_ticket",
+     "j_to_the_moon"
+    ],
+    684
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_strength",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_popcorn",
+     "j_satellite",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_satellite"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_satellite"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_satellite"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 141,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

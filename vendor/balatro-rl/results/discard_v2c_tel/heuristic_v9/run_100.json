@@ -1,0 +1,259 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 63,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_photograph"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_death",
+   "c_chariot",
+   "c_fool",
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 32,
+  "best_score": 1287,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_photograph"
+    ],
+    648
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_photograph"
+    ],
+    560
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_photograph"
+    ],
+    56
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_photograph"
+    ],
+    496
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_photograph"
+    ],
+    308
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_photograph"
+    ],
+    600
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_photograph"
+    ],
+    296
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_photograph"
+    ],
+    280
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_photograph"
+    ],
+    111
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_photograph"
+    ],
+    864
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_photograph"
+    ],
+    328
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_photograph"
+    ],
+    15
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_photograph"
+    ],
+    15
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_photograph"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_photograph"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_photograph"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_photograph"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_photograph"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_photograph"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 100,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,327 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 98,
+ "truncated": false,
+ "dollars": 20,
+ "jokers": [
+  "j_flash",
+  "j_joker",
+  "j_hack",
+  "j_devious",
+  "j_crazy"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_saturn",
+   "pl_saturn",
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_golden",
+   "j_credit_card",
+   "j_todo_list",
+   "j_fortune_teller",
+   "j_flash",
+   "j_egg",
+   "j_joker",
+   "j_hack",
+   "j_devious",
+   "j_crazy"
+  ],
+  "money_spent": 81,
+  "best_score": 9385,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    2,
+    "j_golden"
+   ],
+   [
+    2,
+    "j_credit_card"
+   ],
+   [
+    2,
+    "j_todo_list"
+   ],
+   [
+    2,
+    "j_half"
+   ],
+   [
+    3,
+    "j_fortune_teller"
+   ],
+   [
+    3,
+    "j_egg"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    288
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    316
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_golden",
+     "j_half"
+    ],
+    693
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_fortune_teller",
+     "j_golden",
+     "j_half",
+     "j_todo_list"
+    ],
+    1380
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_flash",
+     "j_fortune_teller",
+     "j_half",
+     "j_todo_list"
+    ],
+    2079
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_flash",
+     "j_fortune_teller",
+     "j_half",
+     "j_joker"
+    ],
+    504
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_flash",
+     "j_fortune_teller",
+     "j_half",
+     "j_joker"
+    ],
+    1152
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_egg",
+     "j_flash",
+     "j_fortune_teller",
+     "j_hack",
+     "j_joker"
+    ],
+    3096
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_devious",
+     "j_egg",
+     "j_flash",
+     "j_hack",
+     "j_joker"
+    ],
+    5736
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_egg",
+     "j_flash",
+     "j_hack",
+     "j_joker"
+    ],
+    960
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_egg",
+     "j_flash",
+     "j_hack",
+     "j_joker"
+    ],
+    864
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_devious",
+     "j_egg",
+     "j_flash",
+     "j_hack",
+     "j_joker"
+    ],
+    352
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_devious",
+     "j_egg",
+     "j_flash",
+     "j_hack",
+     "j_joker"
+    ],
+    7209
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_flash",
+     "j_hack",
+     "j_joker"
+    ],
+    352
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_flash",
+     "j_hack",
+     "j_joker"
+    ],
+    896
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_flash",
+     "j_hack",
+     "j_joker"
+    ],
+    288
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_flash",
+     "j_hack",
+     "j_joker"
+    ],
+    512
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_credit_card",
+     "j_golden",
+     "j_half"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_egg",
+     "j_flash",
+     "j_fortune_teller",
+     "j_half",
+     "j_joker"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_saturn",
+    [
+     "j_devious",
+     "j_egg",
+     "j_flash",
+     "j_hack",
+     "j_joker"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 271,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

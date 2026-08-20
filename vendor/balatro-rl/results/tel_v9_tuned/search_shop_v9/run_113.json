@@ -1,0 +1,220 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 70,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_odd_todd",
+  "j_runner",
+  "j_fortune_teller",
+  "j_scary_face",
+  "j_gift"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_judgement"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_odd_todd",
+   "j_fortune_teller",
+   "j_scary_face"
+  ],
+  "money_spent": 56,
+  "best_score": 3588,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_odd_todd",
+     "j_selzer"
+    ],
+    508
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_odd_todd",
+     "j_selzer"
+    ],
+    852
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_odd_todd",
+     "j_runner",
+     "j_selzer"
+    ],
+    1320
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_odd_todd",
+     "j_runner",
+     "j_selzer"
+    ],
+    1284
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_odd_todd",
+     "j_runner",
+     "j_selzer"
+    ],
+    3588
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_fortune_teller",
+     "j_odd_todd",
+     "j_runner",
+     "j_selzer"
+    ],
+    1384
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_fortune_teller",
+     "j_odd_todd",
+     "j_runner",
+     "j_selzer"
+    ],
+    1086
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_fortune_teller",
+     "j_odd_todd",
+     "j_runner",
+     "j_scary_face",
+     "j_selzer"
+    ],
+    2032
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_fortune_teller",
+     "j_odd_todd",
+     "j_runner",
+     "j_scary_face",
+     "j_selzer"
+    ],
+    1050
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_odd_todd",
+     "j_runner",
+     "j_scary_face"
+    ],
+    500
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_gift",
+     "j_odd_todd",
+     "j_runner",
+     "j_scary_face"
+    ],
+    180
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_gift",
+     "j_odd_todd",
+     "j_runner",
+     "j_scary_face"
+    ],
+    132
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_fortune_teller",
+     "j_gift",
+     "j_odd_todd",
+     "j_runner",
+     "j_scary_face"
+    ],
+    154
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_judgement",
+    [
+     "j_cavendish",
+     "j_odd_todd",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_judgement",
+    [
+     "j_fortune_teller",
+     "j_odd_todd",
+     "j_runner",
+     "j_scary_face"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 113,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

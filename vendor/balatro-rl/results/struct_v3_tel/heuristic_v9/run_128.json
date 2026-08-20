@@ -1,0 +1,241 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 60,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_lusty_joker",
+  "j_throwback",
+  "j_scholar",
+  "j_ride_the_bus",
+  "j_shoot_the_moon"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_throwback",
+   "j_scholar",
+   "j_ticket",
+   "j_ride_the_bus",
+   "j_shoot_the_moon"
+  ],
+  "money_spent": 42,
+  "best_score": 2973,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_ticket"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_lusty_joker",
+     "j_throwback"
+    ],
+    350
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_throwback"
+    ],
+    110
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_throwback"
+    ],
+    480
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_throwback"
+    ],
+    140
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_throwback"
+    ],
+    455
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_throwback"
+    ],
+    220
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_throwback"
+    ],
+    88
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_throwback"
+    ],
+    80
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_throwback",
+     "j_ticket"
+    ],
+    1326
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_throwback",
+     "j_ticket"
+    ],
+    360
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_throwback",
+     "j_ticket"
+    ],
+    1414
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    1944
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    112
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    1053
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    720
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    750
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    450
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 128,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

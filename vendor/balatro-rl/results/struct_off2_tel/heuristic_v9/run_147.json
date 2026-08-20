@@ -1,0 +1,581 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 197,
+ "truncated": false,
+ "dollars": 16,
+ "jokers": [
+  "j_raised_fist",
+  "j_cavendish",
+  "j_even_steven",
+  "j_sly",
+  "j_photograph"
+ ],
+ "stats": {
+  "tarots": [
+   "c_chariot",
+   "c_fool",
+   "c_chariot",
+   "c_magician",
+   "c_magician",
+   "c_high_priestess",
+   "c_star"
+  ],
+  "planets": [
+   "pl_mars"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_greedy_joker",
+   "j_business",
+   "j_raised_fist",
+   "j_hanging_chad",
+   "j_trousers",
+   "j_cavendish",
+   "j_faceless",
+   "j_ride_the_bus",
+   "j_mail",
+   "j_scary_face",
+   "j_reserved_parking",
+   "j_8_ball",
+   "j_walkie_talkie",
+   "j_banner",
+   "j_madness",
+   "j_even_steven",
+   "j_golden",
+   "j_sly",
+   "j_photograph"
+  ],
+  "money_spent": 180,
+  "best_score": 30135,
+  "rerolls": 2,
+  "packs_bought": 16,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    2,
+    "j_business"
+   ],
+   [
+    3,
+    "j_trousers"
+   ],
+   [
+    3,
+    "j_greedy_joker"
+   ],
+   [
+    4,
+    "j_faceless"
+   ],
+   [
+    4,
+    "j_ride_the_bus"
+   ],
+   [
+    4,
+    "j_mail"
+   ],
+   [
+    4,
+    "j_ice_cream"
+   ],
+   [
+    4,
+    "j_reserved_parking"
+   ],
+   [
+    5,
+    "j_8_ball"
+   ],
+   [
+    5,
+    "j_walkie_talkie"
+   ],
+   [
+    5,
+    "j_hanging_chad"
+   ],
+   [
+    5,
+    "j_madness"
+   ],
+   [
+    5,
+    "j_scary_face"
+   ],
+   [
+    6,
+    "j_golden"
+   ],
+   [
+    6,
+    "j_banner"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    480
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    625
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    1014
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    600
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    735
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_raised_fist"
+    ],
+    3307
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    2356
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    1284
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    4200
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    3752
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    536
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_raised_fist"
+    ],
+    8217
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    8505
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_raised_fist",
+     "j_scary_face"
+    ],
+    13080
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_scary_face"
+    ],
+    11748
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_walkie_talkie"
+    ],
+    17160
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_scary_face"
+    ],
+    18060
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_scary_face"
+    ],
+    4392
+   ],
+   [
+    6,
+    "Four of a Kind",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_even_steven",
+     "j_golden",
+     "j_raised_fist"
+    ],
+    15912
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_even_steven",
+     "j_golden",
+     "j_raised_fist"
+    ],
+    4860
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    8232
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    15360
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    2223
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    4320
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_photograph",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    12012
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_chariot",
+    [
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_fool",
+    [
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_chariot",
+    [
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_high_priestess",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_raised_fist",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_mars",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_even_steven",
+     "j_golden",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_star",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_photograph",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 147,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

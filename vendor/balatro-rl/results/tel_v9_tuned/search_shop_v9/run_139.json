@@ -1,0 +1,288 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 68,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_abstract",
+  "j_egg",
+  "j_ice_cream",
+  "j_droll",
+  "j_red_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_emperor",
+   "c_moon",
+   "c_emperor",
+   "c_hanged_man",
+   "c_judgement",
+   "c_lovers"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_crafty",
+   "j_dusk",
+   "j_egg",
+   "j_superposition",
+   "j_ice_cream",
+   "j_red_card"
+  ],
+  "money_spent": 61,
+  "best_score": 4392,
+  "rerolls": 2,
+  "packs_bought": 4,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_crafty"
+   ],
+   [
+    2,
+    "j_dusk"
+   ],
+   [
+    2,
+    "j_superposition"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_abstract",
+     "j_crafty"
+    ],
+    550
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_abstract",
+     "j_crafty",
+     "j_dusk"
+    ],
+    923
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_crafty",
+     "j_dusk",
+     "j_egg",
+     "j_superposition"
+    ],
+    1326
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_dusk",
+     "j_egg",
+     "j_ice_cream",
+     "j_superposition"
+    ],
+    3060
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_dusk",
+     "j_egg",
+     "j_ice_cream",
+     "j_superposition"
+    ],
+    2771
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_egg",
+     "j_ice_cream",
+     "j_red_card"
+    ],
+    2793
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_egg",
+     "j_ice_cream",
+     "j_red_card"
+    ],
+    4392
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_egg",
+     "j_ice_cream",
+     "j_red_card"
+    ],
+    3190
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_abstract",
+     "j_dusk",
+     "j_egg",
+     "j_ice_cream",
+     "j_superposition"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_abstract",
+     "j_dusk",
+     "j_egg",
+     "j_ice_cream",
+     "j_superposition"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_moon",
+    [
+     "j_abstract",
+     "j_dusk",
+     "j_egg",
+     "j_ice_cream",
+     "j_superposition"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_abstract",
+     "j_dusk",
+     "j_egg",
+     "j_ice_cream",
+     "j_superposition"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_abstract",
+     "j_dusk",
+     "j_egg",
+     "j_ice_cream",
+     "j_superposition"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_judgement",
+    [
+     "j_abstract",
+     "j_egg",
+     "j_ice_cream",
+     "j_superposition"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_lovers",
+    [
+     "j_abstract",
+     "j_droll",
+     "j_egg",
+     "j_ice_cream",
+     "j_red_card"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 139,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

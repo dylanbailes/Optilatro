@@ -1,0 +1,264 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 80,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_half",
+  "j_hit_the_road",
+  "j_hanging_chad",
+  "j_misprint",
+  "j_faceless"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_half",
+   "j_sly",
+   "j_ticket",
+   "j_hit_the_road",
+   "j_business",
+   "j_mail",
+   "j_hanging_chad",
+   "j_misprint",
+   "j_faceless"
+  ],
+  "money_spent": 72,
+  "best_score": 4696,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 0,
+  "jokers_sold": [
+   [
+    2,
+    "j_sly"
+   ],
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_business"
+   ],
+   [
+    3,
+    "j_mail"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    344
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half",
+     "j_sly"
+    ],
+    1540
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half",
+     "j_sly",
+     "j_ticket"
+    ],
+    1364
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_hit_the_road",
+     "j_sly",
+     "j_ticket"
+    ],
+    1408
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_sly",
+     "j_ticket"
+    ],
+    1760
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_sly",
+     "j_ticket"
+    ],
+    1760
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_mail",
+     "j_ticket"
+    ],
+    1449
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_mail",
+     "j_ticket"
+    ],
+    484
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_mail",
+     "j_ticket"
+    ],
+    572
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_mail",
+     "j_misprint"
+    ],
+    2640
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_mail",
+     "j_misprint"
+    ],
+    680
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_faceless",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    2805
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_faceless",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    1584
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    2200
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    870
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    696
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    930
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 146,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

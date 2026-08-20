@@ -1,0 +1,196 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 68,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_wee",
+  "j_smiley"
+ ],
+ "stats": {
+  "tarots": [
+   "c_chariot"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_smiley"
+  ],
+  "money_spent": 37,
+  "best_score": 1636,
+  "rerolls": 0,
+  "packs_bought": 7,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_wee"
+    ],
+    332
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_wee"
+    ],
+    112
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_wee"
+    ],
+    68
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    268
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    138
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    456
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    1496
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    1496
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    264
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    1372
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    810
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    186
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    132
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    186
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_chariot",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 223,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

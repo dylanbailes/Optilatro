@@ -1,0 +1,841 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 187,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_photograph",
+  "j_swashbuckler",
+  "j_stuntman",
+  "j_bull",
+  "j_half",
+  "j_odd_todd"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_sun",
+   "c_magician",
+   "c_hierophant",
+   "c_empress",
+   "c_magician",
+   "c_hierophant"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [
+   "s_ectoplasm"
+  ],
+  "jokers_bought": [
+   "j_photograph",
+   "j_swashbuckler",
+   "j_ice_cream",
+   "j_stuntman",
+   "j_bull",
+   "j_shoot_the_moon",
+   "j_splash",
+   "j_lusty_joker",
+   "j_mad",
+   "j_crafty",
+   "j_gluttenous_joker",
+   "j_bull",
+   "j_half",
+   "j_scary_face",
+   "j_odd_todd"
+  ],
+  "money_spent": 148,
+  "best_score": 56526,
+  "rerolls": 2,
+  "packs_bought": 13,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    2,
+    "j_tribe"
+   ],
+   [
+    3,
+    "j_bull"
+   ],
+   [
+    3,
+    "j_ice_cream"
+   ],
+   [
+    3,
+    "j_splash"
+   ],
+   [
+    4,
+    "j_shoot_the_moon"
+   ],
+   [
+    4,
+    "j_mad"
+   ],
+   [
+    5,
+    "j_crafty"
+   ],
+   [
+    6,
+    "j_lusty_joker"
+   ],
+   [
+    6,
+    "j_gluttenous_joker"
+   ],
+   [
+    6,
+    "j_scary_face"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    7
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_tribe"
+    ],
+    280
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_tribe"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_photograph",
+     "j_tribe"
+    ],
+    568
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_photograph",
+     "j_tribe"
+    ],
+    40
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_photograph",
+     "j_swashbuckler",
+     "j_tribe"
+    ],
+    1180
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_ice_cream",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler",
+     "j_tribe"
+    ],
+    4224
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    4615
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    4446
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_ice_cream",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    8280
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_splash",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    6720
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_lusty_joker",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    7245
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_lusty_joker",
+     "j_mad",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    6360
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_lusty_joker",
+     "j_mad",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    3096
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_crafty",
+     "j_lusty_joker",
+     "j_mad",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    9010
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_crafty",
+     "j_lusty_joker",
+     "j_mad",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    3612
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_crafty",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    7420
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_crafty",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    3626
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_crafty",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    9010
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_crafty",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    4505
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_crafty",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    3612
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_bull",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    14536
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    6644
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_bull",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    3945
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_bull",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    14768
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_bull",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    5680
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_bull",
+     "j_gluttenous_joker",
+     "j_half",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    21840
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_bull",
+     "j_gluttenous_joker",
+     "j_half",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    8995
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_bull",
+     "j_half",
+     "j_photograph",
+     "j_scary_face",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    20650
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_bull",
+     "j_half",
+     "j_photograph",
+     "j_scary_face",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    10290
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_bull",
+     "j_half",
+     "j_photograph",
+     "j_scary_face",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    9170
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    19110
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    13608
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    9275
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    20826
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    14184
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    10008
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    9065
+   ],
+   [
+    7,
+    "Three of a Kind",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    23088
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    11235
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    10395
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    11808
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_tribe"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_sun",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_splash",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "s_ectoplasm",
+    [
+     "j_lusty_joker",
+     "j_mad",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_crafty",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_empress",
+    [
+     "j_bull",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_magician",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_hierophant",
+    [
+     "j_bull",
+     "j_half",
+     "j_odd_todd",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 57,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,250 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 63,
+ "truncated": false,
+ "dollars": 18,
+ "jokers": [
+  "j_misprint",
+  "j_stencil",
+  "j_egg"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_wheel_of_fortune",
+   "c_chariot",
+   "c_magician"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_misprint",
+   "j_egg"
+  ],
+  "money_spent": 49,
+  "best_score": 3268,
+  "rerolls": 1,
+  "packs_bought": 7,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Pair",
+    [],
+    28
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    84
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    304
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_misprint",
+     "j_stencil"
+    ],
+    1056
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_misprint",
+     "j_stencil"
+    ],
+    864
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    1080
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    1792
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    416
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    1440
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    1104
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    1098
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    1140
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    1392
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    736
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    720
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_misprint",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 160,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

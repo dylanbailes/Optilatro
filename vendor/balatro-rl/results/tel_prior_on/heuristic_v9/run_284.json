@@ -1,0 +1,139 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 40,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_business",
+  "j_square",
+  "j_crafty",
+  "j_lusty_joker"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gros_michel",
+   "j_square",
+   "j_crafty",
+   "j_lusty_joker"
+  ],
+  "money_spent": 40,
+  "best_score": 1539,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    292
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_business",
+     "j_gros_michel"
+    ],
+    510
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gros_michel"
+    ],
+    748
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_gros_michel",
+     "j_square"
+    ],
+    1026
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_business",
+     "j_crafty",
+     "j_gros_michel",
+     "j_square"
+    ],
+    1539
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_crafty",
+     "j_lusty_joker",
+     "j_square"
+    ],
+    250
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_crafty",
+     "j_lusty_joker",
+     "j_square"
+    ],
+    100
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_crafty",
+     "j_lusty_joker",
+     "j_square"
+    ],
+    260
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_crafty",
+     "j_lusty_joker",
+     "j_square"
+    ],
+    320
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 284,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

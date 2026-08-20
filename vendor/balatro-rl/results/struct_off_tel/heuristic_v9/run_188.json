@@ -1,0 +1,86 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 12,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_odd_todd",
+  "j_throwback"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_throwback"
+  ],
+  "money_spent": 10,
+  "best_score": 336,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    336
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_throwback"
+    ],
+    44
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_odd_todd",
+     "j_throwback"
+    ],
+    47
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_odd_todd",
+     "j_throwback"
+    ],
+    45
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_odd_todd",
+     "j_throwback"
+    ],
+    43
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 188,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

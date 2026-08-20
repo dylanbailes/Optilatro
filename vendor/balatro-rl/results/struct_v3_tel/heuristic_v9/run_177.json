@@ -1,0 +1,597 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 132,
+ "truncated": false,
+ "dollars": 21,
+ "jokers": [
+  "j_raised_fist",
+  "j_misprint",
+  "j_joker",
+  "j_cavendish",
+  "j_jolly",
+  "j_burglar"
+ ],
+ "stats": {
+  "tarots": [
+   "c_chariot",
+   "c_hierophant",
+   "c_magician",
+   "c_hierophant",
+   "c_fool",
+   "c_hierophant"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_ectoplasm",
+   "s_talisman"
+  ],
+  "jokers_bought": [
+   "j_ice_cream",
+   "j_raised_fist",
+   "j_misprint",
+   "j_joker",
+   "j_delayed_grat",
+   "j_egg",
+   "j_wily",
+   "j_cavendish",
+   "j_8_ball",
+   "j_jolly",
+   "j_burglar"
+  ],
+  "money_spent": 123,
+  "best_score": 19725,
+  "rerolls": 0,
+  "packs_bought": 14,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    3,
+    "j_delayed_grat"
+   ],
+   [
+    3,
+    "j_egg"
+   ],
+   [
+    4,
+    "j_wily"
+   ],
+   [
+    5,
+    "j_8_ball"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    112
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_ice_cream"
+    ],
+    462
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_raised_fist"
+    ],
+    1562
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_raised_fist"
+    ],
+    1215
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    3192
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    2650
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    4884
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_egg",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    2688
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_egg",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    2040
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    4320
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    2025
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    2880
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    2550
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    4557
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    2640
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    2668
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    4440
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    7350
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    9729
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    4455
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    10545
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    6844
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_burglar",
+     "j_cavendish",
+     "j_joker",
+     "j_jolly",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    6900
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_burglar",
+     "j_cavendish",
+     "j_joker",
+     "j_jolly",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    10980
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_burglar",
+     "j_cavendish",
+     "j_joker",
+     "j_jolly",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    1845
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_ice_cream",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_chariot",
+    [
+     "j_ice_cream",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_hierophant",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "s_ectoplasm",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hierophant",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    5,
+    "s_talisman",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_jolly",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "Steel",
+      "edition": "None",
+      "seal": "Blue"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 177,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

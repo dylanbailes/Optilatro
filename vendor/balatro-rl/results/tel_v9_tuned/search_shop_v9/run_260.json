@@ -1,0 +1,154 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 52,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_scary_face",
+  "j_arrowhead"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_pluto",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face"
+  ],
+  "money_spent": 35,
+  "best_score": 2816,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    16
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    600
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    712
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    1700
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    684
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    640
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    872
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    544
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    860
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    540
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 260,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

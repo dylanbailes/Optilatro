@@ -1,0 +1,92 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 28,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_crazy"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 12,
+  "best_score": 1232,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    252
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_crazy"
+    ],
+    1232
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy"
+    ],
+    78
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy"
+    ],
+    86
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy"
+    ],
+    64
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy"
+    ],
+    100
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 224,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

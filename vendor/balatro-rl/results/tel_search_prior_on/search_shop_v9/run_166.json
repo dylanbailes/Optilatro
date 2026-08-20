@@ -1,0 +1,215 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 53,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_bootstraps",
+  "j_mad",
+  "j_scholar",
+  "j_trousers"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_hanged_man"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mad",
+   "j_scholar",
+   "j_trousers"
+  ],
+  "money_spent": 33,
+  "best_score": 1352,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_mad"
+    ],
+    552
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_mad"
+    ],
+    528
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_mad"
+    ],
+    384
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_mad"
+    ],
+    528
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_mad"
+    ],
+    432
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_mad",
+     "j_scholar"
+    ],
+    576
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_mad",
+     "j_scholar"
+    ],
+    296
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_mad",
+     "j_scholar"
+    ],
+    480
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_mad",
+     "j_scholar",
+     "j_trousers"
+    ],
+    52
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bootstraps",
+     "j_mad",
+     "j_scholar",
+     "j_trousers"
+    ],
+    180
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bootstraps",
+     "j_mad",
+     "j_scholar",
+     "j_trousers"
+    ],
+    15
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_bootstraps",
+     "j_mad"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_bootstraps",
+     "j_mad"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 166,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

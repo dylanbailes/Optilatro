@@ -1,0 +1,554 @@
+{
+  "planets": {
+    "pl_ceres": {
+      "cost": 3,
+      "hand_type": "Flush House",
+      "name": "Ceres",
+      "sell": 1
+    },
+    "pl_earth": {
+      "cost": 3,
+      "hand_type": "Full House",
+      "name": "Earth",
+      "sell": 1
+    },
+    "pl_eris": {
+      "cost": 3,
+      "hand_type": "Flush Five",
+      "name": "Eris",
+      "sell": 1
+    },
+    "pl_jupiter": {
+      "cost": 3,
+      "hand_type": "Flush",
+      "name": "Jupiter",
+      "sell": 1
+    },
+    "pl_mars": {
+      "cost": 3,
+      "hand_type": "Four of a Kind",
+      "name": "Mars",
+      "sell": 1
+    },
+    "pl_mercury": {
+      "cost": 3,
+      "hand_type": "Pair",
+      "name": "Mercury",
+      "sell": 1
+    },
+    "pl_neptune": {
+      "cost": 3,
+      "hand_type": "Straight Flush",
+      "name": "Neptune",
+      "sell": 1
+    },
+    "pl_planet_x": {
+      "cost": 3,
+      "hand_type": "Five of a Kind",
+      "name": "Planet X",
+      "sell": 1
+    },
+    "pl_pluto": {
+      "cost": 3,
+      "hand_type": "High Card",
+      "name": "Pluto",
+      "sell": 1
+    },
+    "pl_saturn": {
+      "cost": 3,
+      "hand_type": "Straight",
+      "name": "Saturn",
+      "sell": 1
+    },
+    "pl_uranus": {
+      "cost": 3,
+      "hand_type": "Two Pair",
+      "name": "Uranus",
+      "sell": 1
+    },
+    "pl_venus": {
+      "cost": 3,
+      "hand_type": "Three of a Kind",
+      "name": "Venus",
+      "sell": 1
+    }
+  },
+  "spectrals": {
+    "s_ankh": {
+      "cost": 4,
+      "effect": "Creates a copy of a random Joker, destroys all other Jokers",
+      "name": "Ankh",
+      "sell": 2,
+      "targets": 0
+    },
+    "s_aura": {
+      "cost": 4,
+      "effect": "Adds Foil, Holographic, or Polychrome to 1 selected card",
+      "name": "Aura",
+      "sell": 2,
+      "targets": 1
+    },
+    "s_black_hole": {
+      "cost": 4,
+      "effect": "Upgrades every poker hand type by 1 level",
+      "name": "Black Hole",
+      "sell": 2,
+      "targets": 0
+    },
+    "s_cryptid": {
+      "cost": 4,
+      "effect": "Creates 2 copies of 1 selected card",
+      "name": "Cryptid",
+      "sell": 2,
+      "targets": 1
+    },
+    "s_deja_vu": {
+      "cost": 4,
+      "effect": "Adds a Red Seal to 1 selected card",
+      "name": "Deja Vu",
+      "sell": 2,
+      "targets": 1
+    },
+    "s_ectoplasm": {
+      "cost": 4,
+      "effect": "Adds Negative edition to a random Joker, -1 hand size (permanent)",
+      "name": "Ectoplasm",
+      "sell": 2,
+      "targets": 0
+    },
+    "s_familiar": {
+      "cost": 4,
+      "effect": "Destroys 1 random card in hand, adds 3 random Enhanced face cards to hand",
+      "name": "Familiar",
+      "sell": 2,
+      "targets": 0
+    },
+    "s_grim": {
+      "cost": 4,
+      "effect": "Destroys 1 random card in hand, adds 2 random Enhanced Aces to hand",
+      "name": "Grim",
+      "sell": 2,
+      "targets": 0
+    },
+    "s_hex": {
+      "cost": 4,
+      "effect": "Adds Polychrome to a random Joker, destroys all other Jokers",
+      "name": "Hex",
+      "sell": 2,
+      "targets": 0
+    },
+    "s_immolate": {
+      "cost": 4,
+      "effect": "Destroys 5 random cards in hand, gain $20",
+      "name": "Immolate",
+      "sell": 2,
+      "targets": 0
+    },
+    "s_incantation": {
+      "cost": 4,
+      "effect": "Destroys 1 random card in hand, adds 4 random Enhanced numbered cards to hand",
+      "name": "Incantation",
+      "sell": 2,
+      "targets": 0
+    },
+    "s_medium": {
+      "cost": 4,
+      "effect": "Adds a Purple Seal to 1 selected card",
+      "name": "Medium",
+      "sell": 2,
+      "targets": 1
+    },
+    "s_ouija": {
+      "cost": 4,
+      "effect": "Converts all cards in hand to a single random rank, -1 hand size (permanent)",
+      "name": "Ouija",
+      "sell": 2,
+      "targets": 0
+    },
+    "s_sigil": {
+      "cost": 4,
+      "effect": "Converts all cards in hand to a single random suit",
+      "name": "Sigil",
+      "sell": 2,
+      "targets": 0
+    },
+    "s_soul": {
+      "cost": 4,
+      "effect": "Creates a Legendary Joker (must have room)",
+      "name": "The Soul",
+      "sell": 2,
+      "targets": 0
+    },
+    "s_talisman": {
+      "cost": 4,
+      "effect": "Adds a Gold Seal to 1 selected card",
+      "name": "Talisman",
+      "sell": 2,
+      "targets": 1
+    },
+    "s_trance": {
+      "cost": 4,
+      "effect": "Adds a Blue Seal to 1 selected card",
+      "name": "Trance",
+      "sell": 2,
+      "targets": 1
+    },
+    "s_wraith": {
+      "cost": 4,
+      "effect": "Creates a random Rare Joker (must have room), sets money to $0",
+      "name": "Wraith",
+      "sell": 2,
+      "targets": 0
+    }
+  },
+  "tarots": {
+    "c_chariot": {
+      "cost": 3,
+      "effect": "Enhances 1 selected card into a Steel Card",
+      "name": "The Chariot",
+      "sell": 1,
+      "targets": 1
+    },
+    "c_death": {
+      "cost": 3,
+      "effect": "Select 2 cards: converts the left card into a copy of the right card (rank, suit, enhancement, edition, seal)",
+      "name": "Death",
+      "sell": 1,
+      "targets": 2
+    },
+    "c_devil": {
+      "cost": 3,
+      "effect": "Enhances 1 selected card into a Gold Card",
+      "name": "The Devil",
+      "sell": 1,
+      "targets": 1
+    },
+    "c_emperor": {
+      "cost": 3,
+      "effect": "Creates up to 2 random Tarot cards (must have room)",
+      "name": "The Emperor",
+      "sell": 1,
+      "targets": 0
+    },
+    "c_empress": {
+      "cost": 3,
+      "effect": "Enhances up to 2 selected cards into Mult Cards",
+      "name": "The Empress",
+      "sell": 1,
+      "targets": 2
+    },
+    "c_fool": {
+      "cost": 3,
+      "effect": "Creates a copy of the last Tarot or Planet card used this run (The Fool itself excluded)",
+      "name": "The Fool",
+      "sell": 1,
+      "targets": 0
+    },
+    "c_hanged_man": {
+      "cost": 3,
+      "effect": "Destroys up to 2 selected cards",
+      "name": "The Hanged Man",
+      "sell": 1,
+      "targets": 2
+    },
+    "c_hermit": {
+      "cost": 3,
+      "effect": "Doubles money in hand, up to a gain of $20",
+      "name": "The Hermit",
+      "sell": 1,
+      "targets": 0
+    },
+    "c_hierophant": {
+      "cost": 3,
+      "effect": "Enhances up to 2 selected cards into Bonus Cards",
+      "name": "The Hierophant",
+      "sell": 1,
+      "targets": 2
+    },
+    "c_high_priestess": {
+      "cost": 3,
+      "effect": "Creates up to 2 random Planet cards (must have room)",
+      "name": "The High Priestess",
+      "sell": 1,
+      "targets": 0
+    },
+    "c_judgement": {
+      "cost": 3,
+      "effect": "Creates a random Joker card (must have room)",
+      "name": "Judgement",
+      "sell": 1,
+      "targets": 0
+    },
+    "c_justice": {
+      "cost": 3,
+      "effect": "Enhances 1 selected card into a Glass Card",
+      "name": "Justice",
+      "sell": 1,
+      "targets": 1
+    },
+    "c_lovers": {
+      "cost": 3,
+      "effect": "Enhances 1 selected card into a Wild Card",
+      "name": "The Lovers",
+      "sell": 1,
+      "targets": 1
+    },
+    "c_magician": {
+      "cost": 3,
+      "effect": "Enhances up to 2 selected cards into Lucky Cards",
+      "name": "The Magician",
+      "sell": 1,
+      "targets": 2
+    },
+    "c_moon": {
+      "cost": 3,
+      "effect": "Converts up to 3 selected cards to Clubs",
+      "name": "The Moon",
+      "sell": 1,
+      "targets": 3
+    },
+    "c_star": {
+      "cost": 3,
+      "effect": "Converts up to 3 selected cards to Diamonds",
+      "name": "The Star",
+      "sell": 1,
+      "targets": 3
+    },
+    "c_strength": {
+      "cost": 3,
+      "effect": "Increases the rank of up to 2 selected cards by 1",
+      "name": "Strength",
+      "sell": 1,
+      "targets": 2
+    },
+    "c_sun": {
+      "cost": 3,
+      "effect": "Converts up to 3 selected cards to Hearts",
+      "name": "The Sun",
+      "sell": 1,
+      "targets": 3
+    },
+    "c_temperance": {
+      "cost": 3,
+      "effect": "Gives total sell value of all owned Jokers as money, capped at $50",
+      "name": "Temperance",
+      "sell": 1,
+      "targets": 0
+    },
+    "c_tower": {
+      "cost": 3,
+      "effect": "Enhances 1 selected card into a Stone Card",
+      "name": "The Tower",
+      "sell": 1,
+      "targets": 1
+    },
+    "c_wheel_of_fortune": {
+      "cost": 3,
+      "effect": "1 in 4 chance to add Foil, Holographic, or Polychrome to a random Joker",
+      "name": "The Wheel of Fortune",
+      "sell": 1,
+      "targets": 0
+    },
+    "c_world": {
+      "cost": 3,
+      "effect": "Converts up to 3 selected cards to Spades",
+      "name": "The World",
+      "sell": 1,
+      "targets": 3
+    }
+  },
+  "vouchers": {
+    "v_antimatter": {
+      "base": false,
+      "effect": "+1 Joker slot",
+      "name": "Antimatter",
+      "upgrade_of": "v_blank"
+    },
+    "v_blank": {
+      "base": true,
+      "effect": "Does nothing",
+      "name": "Blank",
+      "upgrade_of": ""
+    },
+    "v_clearance_sale": {
+      "base": true,
+      "effect": "All cards & packs in shop are 25% off",
+      "name": "Clearance Sale",
+      "upgrade_of": ""
+    },
+    "v_crystal_ball": {
+      "base": true,
+      "effect": "+1 consumable slot",
+      "name": "Crystal Ball",
+      "upgrade_of": ""
+    },
+    "v_directors_cut": {
+      "base": true,
+      "effect": "Reroll the Boss Blind once per Ante, $10 per reroll",
+      "name": "Director's Cut",
+      "upgrade_of": ""
+    },
+    "v_glow_up": {
+      "base": false,
+      "effect": "...4x more often",
+      "name": "Glow Up",
+      "upgrade_of": "v_hone"
+    },
+    "v_grabber": {
+      "base": true,
+      "effect": "+1 hand per round",
+      "name": "Grabber",
+      "upgrade_of": ""
+    },
+    "v_hieroglyph": {
+      "base": true,
+      "effect": "-1 Ante, -1 hand per round",
+      "name": "Hieroglyph",
+      "upgrade_of": ""
+    },
+    "v_hone": {
+      "base": true,
+      "effect": "Foil/Holo/Polychrome cards appear 2x more often",
+      "name": "Hone",
+      "upgrade_of": ""
+    },
+    "v_illusion": {
+      "base": false,
+      "effect": "Shop playing cards may have an Enhancement, Edition, and/or Seal",
+      "name": "Illusion",
+      "upgrade_of": "v_magic_trick"
+    },
+    "v_liquidation": {
+      "base": false,
+      "effect": "All cards & packs in shop are 50% off",
+      "name": "Liquidation",
+      "upgrade_of": "v_clearance_sale"
+    },
+    "v_magic_trick": {
+      "base": true,
+      "effect": "Playing cards can be purchased from the shop",
+      "name": "Magic Trick",
+      "upgrade_of": ""
+    },
+    "v_money_tree": {
+      "base": false,
+      "effect": "Raises interest cap by $10 more",
+      "name": "Money Tree",
+      "upgrade_of": "v_seed_money"
+    },
+    "v_nacho_tong": {
+      "base": false,
+      "effect": "+1 additional hand per round",
+      "name": "Nacho Tong",
+      "upgrade_of": "v_grabber"
+    },
+    "v_observatory": {
+      "base": false,
+      "effect": "Planet cards in your consumables give X1.5 Mult for their hand",
+      "name": "Observatory",
+      "upgrade_of": "v_telescope"
+    },
+    "v_omen_globe": {
+      "base": false,
+      "effect": "Spectral cards may appear in Arcana Packs",
+      "name": "Omen Globe",
+      "upgrade_of": "v_crystal_ball"
+    },
+    "v_overstock": {
+      "base": true,
+      "effect": "+1 card slot in shop",
+      "name": "Overstock",
+      "upgrade_of": ""
+    },
+    "v_overstock_plus": {
+      "base": false,
+      "effect": "+1 additional card slot in shop",
+      "name": "Overstock Plus",
+      "upgrade_of": "v_overstock"
+    },
+    "v_paint_brush": {
+      "base": true,
+      "effect": "+1 hand size",
+      "name": "Paint Brush",
+      "upgrade_of": ""
+    },
+    "v_palette": {
+      "base": false,
+      "effect": "+1 additional hand size",
+      "name": "Palette",
+      "upgrade_of": "v_paint_brush"
+    },
+    "v_petroglyph": {
+      "base": false,
+      "effect": "-1 Ante, -1 discard per round",
+      "name": "Petroglyph",
+      "upgrade_of": "v_hieroglyph"
+    },
+    "v_planet_merchant": {
+      "base": true,
+      "effect": "Planet cards appear 2x more often in shop",
+      "name": "Planet Merchant",
+      "upgrade_of": ""
+    },
+    "v_planet_tycoon": {
+      "base": false,
+      "effect": "...4x more often",
+      "name": "Planet Tycoon",
+      "upgrade_of": "v_planet_merchant"
+    },
+    "v_recyclomancy": {
+      "base": false,
+      "effect": "+1 additional discard per round",
+      "name": "Recyclomancy",
+      "upgrade_of": "v_wasteful"
+    },
+    "v_reroll_glut": {
+      "base": false,
+      "effect": "Rerolls cost $2 less again",
+      "name": "Reroll Glut",
+      "upgrade_of": "v_reroll_surplus"
+    },
+    "v_reroll_surplus": {
+      "base": true,
+      "effect": "Rerolls cost $2 less",
+      "name": "Reroll Surplus",
+      "upgrade_of": ""
+    },
+    "v_retcon": {
+      "base": false,
+      "effect": "Reroll the Boss Blind unlimited times per Ante, $10 per reroll",
+      "name": "Retcon",
+      "upgrade_of": "v_directors_cut"
+    },
+    "v_seed_money": {
+      "base": true,
+      "effect": "Raises interest cap by $5",
+      "name": "Seed Money",
+      "upgrade_of": ""
+    },
+    "v_tarot_merchant": {
+      "base": true,
+      "effect": "Tarot cards appear 2x more often in shop",
+      "name": "Tarot Merchant",
+      "upgrade_of": ""
+    },
+    "v_tarot_tycoon": {
+      "base": false,
+      "effect": "...4x more often",
+      "name": "Tarot Tycoon",
+      "upgrade_of": "v_tarot_merchant"
+    },
+    "v_telescope": {
+      "base": true,
+      "effect": "Celestial Packs always contain the Planet card for your most-played hand",
+      "name": "Telescope",
+      "upgrade_of": ""
+    },
+    "v_wasteful": {
+      "base": true,
+      "effect": "+1 discard per round",
+      "name": "Wasteful",
+      "upgrade_of": ""
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 22,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_hologram",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hologram",
+   "j_credit_card"
+  ],
+  "money_spent": 12,
+  "best_score": 540,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    308
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hologram"
+    ],
+    88
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hologram"
+    ],
+    316
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hologram"
+    ],
+    64
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_hologram"
+    ],
+    44
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_hologram"
+    ],
+    296
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_hologram"
+    ],
+    104
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_hologram"
+    ],
+    96
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 196,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 24,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_odd_todd",
+  "j_scholar"
+ ],
+ "stats": {
+  "tarots": [
+   "c_chariot"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scholar"
+  ],
+  "money_spent": 12,
+  "best_score": 579,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    112
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    108
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_odd_todd"
+    ],
+    67
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd"
+    ],
+    234
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd"
+    ],
+    90
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd"
+    ],
+    188
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    164
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    36
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    44
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_chariot",
+    [
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 214,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

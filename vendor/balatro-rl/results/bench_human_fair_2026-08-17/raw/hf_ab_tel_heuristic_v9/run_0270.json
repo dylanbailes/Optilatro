@@ -1,0 +1,284 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 89,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_joker",
+  "j_odd_todd",
+  "j_red_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_hierophant",
+   "c_devil",
+   "c_emperor",
+   "c_chariot"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_odd_todd",
+   "j_red_card"
+  ],
+  "money_spent": 52,
+  "best_score": 2984,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_joker"
+    ],
+    632
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_joker"
+    ],
+    372
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_joker"
+    ],
+    80
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_joker"
+    ],
+    75
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_joker"
+    ],
+    96
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_joker"
+    ],
+    744
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_joker"
+    ],
+    120
+   ],
+   [
+    2,
+    "Four of a Kind",
+    [
+     "j_joker"
+    ],
+    1430
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_joker",
+     "j_odd_todd"
+    ],
+    816
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_joker",
+     "j_odd_todd"
+    ],
+    235
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_joker",
+     "j_odd_todd"
+    ],
+    225
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_joker",
+     "j_odd_todd"
+    ],
+    880
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_joker",
+     "j_odd_todd"
+    ],
+    1504
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_joker",
+     "j_odd_todd"
+    ],
+    1056
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_joker",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    1092
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_joker",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    180
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_joker",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    1088
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    624
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_joker"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_joker"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_devil",
+    [
+     "j_joker"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_joker"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 270,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

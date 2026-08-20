@@ -1,0 +1,738 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 204,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_blue_joker",
+  "j_abstract",
+  "j_cavendish",
+  "j_ice_cream",
+  "j_mail"
+ ],
+ "stats": {
+  "tarots": [
+   "c_sun",
+   "c_fool",
+   "c_sun",
+   "c_empress",
+   "c_emperor",
+   "c_wheel_of_fortune",
+   "c_judgement",
+   "c_fool",
+   "c_world"
+  ],
+  "planets": [
+   "pl_venus",
+   "pl_venus",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_fibonacci",
+   "j_fortune_teller",
+   "j_abstract",
+   "j_shortcut",
+   "j_lusty_joker",
+   "j_half",
+   "j_shoot_the_moon",
+   "j_bloodstone",
+   "j_gros_michel",
+   "j_cavendish",
+   "j_jolly",
+   "j_popcorn",
+   "j_ice_cream",
+   "j_mail"
+  ],
+  "money_spent": 182,
+  "best_score": 90570,
+  "rerolls": 2,
+  "packs_bought": 17,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_shortcut"
+   ],
+   [
+    3,
+    "j_lusty_joker"
+   ],
+   [
+    3,
+    "j_golden"
+   ],
+   [
+    4,
+    "j_fibonacci"
+   ],
+   [
+    4,
+    "j_shoot_the_moon"
+   ],
+   [
+    5,
+    "j_half"
+   ],
+   [
+    5,
+    "j_fortune_teller"
+   ],
+   [
+    6,
+    "j_bloodstone"
+   ],
+   [
+    6,
+    "j_jolly"
+   ],
+   [
+    7,
+    "j_popcorn"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller"
+    ],
+    1836
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller"
+    ],
+    3591
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller"
+    ],
+    1212
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller"
+    ],
+    4508
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller"
+    ],
+    5344
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_shortcut"
+    ],
+    3744
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_lusty_joker"
+    ],
+    4056
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_half"
+    ],
+    6321
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_half",
+     "j_shoot_the_moon"
+    ],
+    11480
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_half"
+    ],
+    15876
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_half"
+    ],
+    7304
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_half"
+    ],
+    6864
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_gros_michel"
+    ],
+    43380
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel"
+    ],
+    24192
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel"
+    ],
+    30294
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_jolly"
+    ],
+    24444
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_jolly"
+    ],
+    23940
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_popcorn"
+    ],
+    36540
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_popcorn"
+    ],
+    28512
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_popcorn"
+    ],
+    31200
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_popcorn"
+    ],
+    18753
+   ],
+   [
+    7,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_popcorn"
+    ],
+    35478
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_popcorn"
+    ],
+    25668
+   ],
+   [
+    7,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    33705
+   ],
+   [
+    7,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    33402
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    23463
+   ],
+   [
+    8,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    28356
+   ],
+   [
+    8,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    28866
+   ],
+   [
+    8,
+    "Flush",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    29376
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    24057
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    21582
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_mail"
+    ],
+    8835
+   ],
+   [
+    8,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_mail"
+    ],
+    10404
+   ],
+   [
+    8,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_mail"
+    ],
+    9588
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_mail"
+    ],
+    4032
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_sun",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_sun",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_venus",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_emperor",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_lusty_joker"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_wheel_of_fortune",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_lusty_joker"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_judgement",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_fibonacci",
+     "j_fortune_teller"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_venus",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_half"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_gros_michel"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel"
+    ],
+    []
+   ],
+   [
+    8,
+    "c_world",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 920
+}

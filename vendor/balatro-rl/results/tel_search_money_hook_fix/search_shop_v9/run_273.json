@@ -1,0 +1,374 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 109,
+ "truncated": false,
+ "dollars": 14,
+ "jokers": [
+  "j_blue_joker",
+  "j_abstract",
+  "j_shoot_the_moon",
+  "j_misprint",
+  "j_even_steven"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_magician",
+   "c_magician",
+   "c_magician",
+   "c_hermit",
+   "c_death"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_blue_joker",
+   "j_swashbuckler",
+   "j_abstract",
+   "j_zany",
+   "j_walkie_talkie",
+   "j_shoot_the_moon",
+   "j_misprint",
+   "j_even_steven"
+  ],
+  "money_spent": 117,
+  "best_score": 8016,
+  "rerolls": 3,
+  "packs_bought": 14,
+  "packs_opened": 11,
+  "jokers_sold": [
+   [
+    3,
+    "j_walkie_talkie"
+   ],
+   [
+    3,
+    "j_swashbuckler"
+   ],
+   [
+    3,
+    "j_zany"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    316
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_blue_joker"
+    ],
+    608
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_swashbuckler"
+    ],
+    847
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_swashbuckler"
+    ],
+    2250
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    2079
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_swashbuckler",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    3556
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_misprint",
+     "j_shoot_the_moon",
+     "j_zany"
+    ],
+    3537
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_misprint",
+     "j_shoot_the_moon",
+     "j_zany"
+    ],
+    5358
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_even_steven",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    6812
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_even_steven",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    8016
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_even_steven",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    7300
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_blue_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_swashbuckler",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_swashbuckler",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_even_steven",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_even_steven",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_even_steven",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_even_steven",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_even_steven",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 273,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

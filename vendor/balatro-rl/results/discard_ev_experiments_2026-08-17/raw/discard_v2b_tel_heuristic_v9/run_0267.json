@@ -1,0 +1,238 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 79,
+ "truncated": false,
+ "dollars": 10,
+ "jokers": [
+  "j_campfire",
+  "j_gluttenous_joker",
+  "j_droll",
+  "j_splash",
+  "j_photograph"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_chaos",
+   "j_lusty_joker",
+   "j_seance",
+   "j_gluttenous_joker",
+   "j_mad",
+   "j_droll",
+   "j_splash",
+   "j_photograph"
+  ],
+  "money_spent": 58,
+  "best_score": 3118,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_chaos"
+   ],
+   [
+    2,
+    "j_seance"
+   ],
+   [
+    2,
+    "j_jolly"
+   ],
+   [
+    3,
+    "j_lusty_joker"
+   ],
+   [
+    3,
+    "j_mad"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_campfire",
+     "j_chaos"
+    ],
+    288
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_campfire",
+     "j_chaos"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_campfire",
+     "j_chaos",
+     "j_lusty_joker"
+    ],
+    1120
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_campfire",
+     "j_chaos",
+     "j_jolly",
+     "j_lusty_joker",
+     "j_seance"
+    ],
+    832
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_jolly",
+     "j_lusty_joker",
+     "j_mad"
+    ],
+    1215
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_jolly",
+     "j_lusty_joker",
+     "j_mad"
+    ],
+    1896
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_campfire",
+     "j_droll",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_mad"
+    ],
+    2791
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_campfire",
+     "j_droll",
+     "j_gluttenous_joker",
+     "j_splash"
+    ],
+    2100
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_campfire",
+     "j_droll",
+     "j_gluttenous_joker",
+     "j_splash"
+    ],
+    651
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_droll",
+     "j_gluttenous_joker",
+     "j_splash"
+    ],
+    367
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_campfire",
+     "j_droll",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_splash"
+    ],
+    1148
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_droll",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_splash"
+    ],
+    150
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_campfire",
+     "j_droll",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_splash"
+    ],
+    288
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_droll",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_splash"
+    ],
+    133
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 267,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

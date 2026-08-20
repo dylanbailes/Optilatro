@@ -1,0 +1,119 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 28,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_lusty_joker",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_lusty_joker"
+  ],
+  "money_spent": 13,
+  "best_score": 470,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_splash"
+    ],
+    215
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_splash"
+    ],
+    150
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_splash"
+    ],
+    105
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_splash"
+    ],
+    106
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_lusty_joker",
+     "j_splash"
+    ],
+    26
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_splash"
+    ],
+    72
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_splash"
+    ],
+    58
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 54,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,190 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 52,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_scary_face",
+  "j_throwback",
+  "j_egg",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death"
+  ],
+  "planets": [
+   "pl_venus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_egg",
+   "j_credit_card"
+  ],
+  "money_spent": 27,
+  "best_score": 960,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    36
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_scary_face",
+     "j_throwback"
+    ],
+    450
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_throwback"
+    ],
+    548
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_throwback"
+    ],
+    144
+   ],
+   [
+    2,
+    "Straight Flush",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_throwback"
+    ],
+    960
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_throwback"
+    ],
+    424
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_throwback"
+    ],
+    200
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_throwback"
+    ],
+    96
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_throwback"
+    ],
+    45
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_venus",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_throwback"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_throwback"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 152,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

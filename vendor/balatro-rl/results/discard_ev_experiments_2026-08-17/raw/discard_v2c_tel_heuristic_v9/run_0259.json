@@ -1,0 +1,108 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 35,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_stencil",
+  "j_faceless"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_faceless"
+  ],
+  "money_spent": 25,
+  "best_score": 1264,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    104
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    256
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_stencil"
+    ],
+    1264
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_faceless",
+     "j_stencil"
+    ],
+    996
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_stencil"
+    ],
+    132
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_faceless",
+     "j_stencil"
+    ],
+    48
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_stencil"
+    ],
+    156
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_faceless",
+     "j_stencil"
+    ],
+    48
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 259,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

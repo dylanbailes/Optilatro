@@ -1,0 +1,263 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 78,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_gluttenous_joker",
+  "j_banner",
+  "j_scary_face",
+  "j_fortune_teller",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gluttenous_joker",
+   "j_business",
+   "j_reserved_parking",
+   "j_banner",
+   "j_mail",
+   "j_red_card",
+   "j_scary_face",
+   "j_fortune_teller",
+   "j_splash"
+  ],
+  "money_spent": 63,
+  "best_score": 3375,
+  "rerolls": 3,
+  "packs_bought": 1,
+  "packs_opened": 0,
+  "jokers_sold": [
+   [
+    2,
+    "j_business"
+   ],
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    2,
+    "j_mail"
+   ],
+   [
+    3,
+    "j_red_card"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gluttenous_joker"
+    ],
+    270
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gluttenous_joker"
+    ],
+    270
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker"
+    ],
+    200
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker"
+    ],
+    250
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker"
+    ],
+    220
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_reserved_parking"
+    ],
+    910
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_business",
+     "j_gluttenous_joker",
+     "j_reserved_parking"
+    ],
+    750
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_business",
+     "j_gluttenous_joker",
+     "j_reserved_parking"
+    ],
+    710
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_gluttenous_joker",
+     "j_mail",
+     "j_red_card",
+     "j_reserved_parking"
+    ],
+    240
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner",
+     "j_gluttenous_joker",
+     "j_mail",
+     "j_red_card",
+     "j_reserved_parking"
+    ],
+    2033
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_red_card",
+     "j_scary_face"
+    ],
+    1827
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_red_card",
+     "j_scary_face"
+    ],
+    360
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_scary_face",
+     "j_splash"
+    ],
+    1620
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_scary_face",
+     "j_splash"
+    ],
+    1095
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_scary_face",
+     "j_splash"
+    ],
+    660
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_scary_face",
+     "j_splash"
+    ],
+    1528
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_scary_face",
+     "j_splash"
+    ],
+    605
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 250,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

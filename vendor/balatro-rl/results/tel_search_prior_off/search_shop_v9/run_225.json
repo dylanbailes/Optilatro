@@ -1,0 +1,624 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 153,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_joker",
+  "j_vampire",
+  "j_swashbuckler",
+  "j_blue_joker",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_hanged_man",
+   "c_hermit",
+   "c_hierophant",
+   "c_fool",
+   "c_hierophant",
+   "c_lovers",
+   "c_devil",
+   "c_sun"
+  ],
+  "planets": [
+   "pl_saturn",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_joker",
+   "j_vampire",
+   "j_popcorn",
+   "j_odd_todd",
+   "j_swashbuckler",
+   "j_blue_joker",
+   "j_gros_michel",
+   "j_seance",
+   "j_greedy_joker"
+  ],
+  "money_spent": 115,
+  "best_score": 28831,
+  "rerolls": 0,
+  "packs_bought": 13,
+  "packs_opened": 8,
+  "jokers_sold": [
+   [
+    3,
+    "j_odd_todd"
+   ],
+   [
+    5,
+    "j_seance"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_joker"
+    ],
+    624
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_joker",
+     "j_vampire"
+    ],
+    644
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_joker",
+     "j_vampire"
+    ],
+    952
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_joker",
+     "j_popcorn",
+     "j_vampire"
+    ],
+    2080
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_joker",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_vampire"
+    ],
+    1995
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_joker",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    3828
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    2550
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_joker",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    3200
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_popcorn",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    5928
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    6006
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    3240
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    5894
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    3524
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    4092
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    2574
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    4840
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    4444
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    4514
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    13188
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    3830
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    9710
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    9485
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    3189
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    10186
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    5842
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    7452
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    11062
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    6831
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    5865
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    5073
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [],
+    []
+   ],
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_joker",
+     "j_vampire"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_joker",
+     "j_vampire"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_joker",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hierophant",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "Polychrome",
+      "seal": "Purple"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_lovers",
+    [
+     "j_blue_joker",
+     "j_joker",
+     "j_seance",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_devil",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_sun",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 225,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

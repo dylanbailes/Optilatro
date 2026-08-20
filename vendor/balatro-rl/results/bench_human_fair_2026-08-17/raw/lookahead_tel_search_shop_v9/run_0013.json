@@ -1,0 +1,273 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 75,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_blue_joker",
+  "j_red_card",
+  "j_scholar",
+  "j_business",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_world",
+   "c_wheel_of_fortune",
+   "c_hermit"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_red_card",
+   "j_scholar",
+   "j_business",
+   "j_credit_card"
+  ],
+  "money_spent": 48,
+  "best_score": 1820,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 5,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    16
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_blue_joker"
+    ],
+    92
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_blue_joker"
+    ],
+    89
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blue_joker"
+    ],
+    188
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blue_joker"
+    ],
+    188
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_blue_joker"
+    ],
+    640
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_red_card"
+    ],
+    624
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_red_card"
+    ],
+    208
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_business",
+     "j_red_card",
+     "j_scholar"
+    ],
+    1424
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_business",
+     "j_red_card",
+     "j_scholar"
+    ],
+    1820
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_business",
+     "j_credit_card",
+     "j_red_card",
+     "j_scholar"
+    ],
+    580
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_business",
+     "j_credit_card",
+     "j_red_card",
+     "j_scholar"
+    ],
+    500
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_business",
+     "j_credit_card",
+     "j_red_card",
+     "j_scholar"
+    ],
+    184
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_business",
+     "j_credit_card",
+     "j_red_card",
+     "j_scholar"
+    ],
+    232
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_blue_joker"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_world",
+    [
+     "j_blue_joker"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_blue_joker",
+     "j_business",
+     "j_red_card",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_blue_joker",
+     "j_business",
+     "j_credit_card",
+     "j_red_card",
+     "j_scholar"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 13,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,251 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 73,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_hologram",
+  "j_business",
+  "j_crazy",
+  "j_odd_todd"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_strength"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gros_michel",
+   "j_delayed_grat",
+   "j_business",
+   "j_crazy",
+   "j_odd_todd"
+  ],
+  "money_spent": 47,
+  "best_score": 2992,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    2,
+    "j_ticket"
+   ],
+   [
+    2,
+    "j_delayed_grat"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_ticket"
+    ],
+    540
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gros_michel",
+     "j_ticket"
+    ],
+    986
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_gros_michel",
+     "j_hologram",
+     "j_ticket"
+    ],
+    1869
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_gros_michel",
+     "j_hologram",
+     "j_ticket"
+    ],
+    1020
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_gros_michel",
+     "j_hologram",
+     "j_ticket"
+    ],
+    272
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_gros_michel",
+     "j_hologram",
+     "j_ticket"
+    ],
+    816
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_crazy",
+     "j_gros_michel",
+     "j_hologram",
+     "j_odd_todd"
+    ],
+    2992
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_business",
+     "j_crazy",
+     "j_hologram",
+     "j_odd_todd"
+    ],
+    720
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_crazy",
+     "j_hologram",
+     "j_odd_todd"
+    ],
+    112
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_business",
+     "j_crazy",
+     "j_hologram",
+     "j_odd_todd"
+    ],
+    47
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_crazy",
+     "j_hologram",
+     "j_odd_todd"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_jupiter",
+    [
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_gros_michel",
+     "j_hologram",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_gros_michel",
+     "j_hologram",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 136,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

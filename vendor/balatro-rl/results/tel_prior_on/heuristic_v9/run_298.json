@@ -1,0 +1,177 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 43,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_jolly",
+  "j_lusty_joker",
+  "j_trousers",
+  "j_splash",
+  "j_smiley"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_lusty_joker",
+   "j_trousers",
+   "j_smiley"
+  ],
+  "money_spent": 32,
+  "best_score": 1242,
+  "rerolls": 1,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    312
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_jolly"
+    ],
+    340
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_jolly"
+    ],
+    300
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_lusty_joker"
+    ],
+    650
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_splash",
+     "j_trousers"
+    ],
+    390
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_splash",
+     "j_trousers"
+    ],
+    390
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_splash",
+     "j_trousers"
+    ],
+    13
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_splash",
+     "j_trousers"
+    ],
+    390
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_splash",
+     "j_trousers"
+    ],
+    792
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_splash",
+     "j_trousers"
+    ],
+    450
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash",
+     "j_trousers"
+    ],
+    400
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash",
+     "j_trousers"
+    ],
+    78
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash",
+     "j_trousers"
+    ],
+    351
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 298,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

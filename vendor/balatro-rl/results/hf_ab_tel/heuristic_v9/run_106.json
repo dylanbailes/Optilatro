@@ -1,0 +1,289 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 92,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_drunkard",
+  "j_splash",
+  "j_misprint",
+  "j_hanging_chad"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_fool",
+   "c_magician"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mystic_summit",
+   "j_droll",
+   "j_drunkard",
+   "j_splash",
+   "j_smiley",
+   "j_misprint",
+   "j_hanging_chad",
+   "j_gros_michel"
+  ],
+  "money_spent": 59,
+  "best_score": 5587,
+  "rerolls": 1,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_mystic_summit"
+   ],
+   [
+    2,
+    "j_droll"
+   ],
+   [
+    2,
+    "j_smiley"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_droll",
+     "j_mystic_summit"
+    ],
+    324
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_droll",
+     "j_mystic_summit"
+    ],
+    1022
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_droll",
+     "j_drunkard",
+     "j_mystic_summit"
+    ],
+    1360
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_droll",
+     "j_drunkard",
+     "j_mystic_summit",
+     "j_splash"
+    ],
+    1394
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_droll",
+     "j_drunkard",
+     "j_mystic_summit",
+     "j_smiley",
+     "j_splash"
+    ],
+    1495
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_smiley",
+     "j_splash"
+    ],
+    4400
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_splash"
+    ],
+    1440
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_splash"
+    ],
+    1728
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_drunkard",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_splash"
+    ],
+    2907
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_splash"
+    ],
+    1056
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_drunkard",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_splash"
+    ],
+    2718
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_drunkard",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_splash"
+    ],
+    864
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_drunkard",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_splash"
+    ],
+    1785
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_drunkard",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_splash"
+    ],
+    220
+   ]
+  ],
+  "consumable_uses": [
+   [
+    3,
+    "c_magician",
+    [
+     "j_drunkard",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_drunkard",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_drunkard",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 106,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

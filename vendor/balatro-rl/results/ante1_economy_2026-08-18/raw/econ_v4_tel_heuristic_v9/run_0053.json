@@ -1,0 +1,698 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 157,
+ "truncated": false,
+ "dollars": 26,
+ "jokers": [
+  "j_erosion",
+  "j_splash",
+  "j_hanging_chad",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_magician",
+   "c_hermit",
+   "c_hermit",
+   "c_hierophant",
+   "c_strength",
+   "c_world",
+   "c_death"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_even_steven",
+   "j_swashbuckler",
+   "j_erosion",
+   "j_turtle_bean",
+   "j_business",
+   "j_raised_fist",
+   "j_walkie_talkie",
+   "j_hanging_chad",
+   "j_splash",
+   "j_8_ball",
+   "j_popcorn",
+   "j_business",
+   "j_ticket",
+   "j_hanging_chad",
+   "j_delayed_grat",
+   "j_reserved_parking"
+  ],
+  "money_spent": 167,
+  "best_score": 20096,
+  "rerolls": 3,
+  "packs_bought": 15,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    2,
+    "j_business"
+   ],
+   [
+    2,
+    "j_turtle_bean"
+   ],
+   [
+    2,
+    "j_swashbuckler"
+   ],
+   [
+    3,
+    "j_raised_fist"
+   ],
+   [
+    3,
+    "j_hanging_chad"
+   ],
+   [
+    3,
+    "j_8_ball"
+   ],
+   [
+    4,
+    "j_popcorn"
+   ],
+   [
+    4,
+    "j_walkie_talkie"
+   ],
+   [
+    5,
+    "j_even_steven"
+   ],
+   [
+    5,
+    "j_business"
+   ],
+   [
+    5,
+    "j_ticket"
+   ],
+   [
+    5,
+    "j_delayed_grat"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    276
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_swashbuckler"
+    ],
+    448
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_swashbuckler"
+    ],
+    50
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_swashbuckler"
+    ],
+    882
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_swashbuckler",
+     "j_turtle_bean"
+    ],
+    3696
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_swashbuckler",
+     "j_turtle_bean"
+    ],
+    2940
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_swashbuckler",
+     "j_turtle_bean"
+    ],
+    1820
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_walkie_talkie"
+    ],
+    2867
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_walkie_talkie"
+    ],
+    2376
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_walkie_talkie"
+    ],
+    1240
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    2760
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    779
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    1197
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_popcorn",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    3472
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_popcorn",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    4980
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    4160
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    2881
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    3268
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    2888
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    4680
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    2088
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    1476
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    3888
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    3468
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    2418
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    1480
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_erosion",
+     "j_hanging_chad",
+     "j_splash",
+     "j_ticket"
+    ],
+    6300
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_erosion",
+     "j_hanging_chad",
+     "j_splash",
+     "j_ticket"
+    ],
+    6216
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_erosion",
+     "j_hanging_chad",
+     "j_splash",
+     "j_ticket"
+    ],
+    3034
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_erosion",
+     "j_hanging_chad",
+     "j_splash",
+     "j_ticket"
+    ],
+    1440
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_erosion",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_splash"
+    ],
+    7500
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_erosion",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_splash"
+    ],
+    2542
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_erosion",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_splash"
+    ],
+    4158
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_erosion",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_splash"
+    ],
+    5896
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_strength",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_world",
+    [
+     "j_business",
+     "j_erosion",
+     "j_even_steven",
+     "j_splash",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "Bonus",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_delayed_grat",
+     "j_erosion",
+     "j_hanging_chad",
+     "j_splash",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "Bonus",
+      "edition": "None",
+      "seal": "Gold"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 53,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

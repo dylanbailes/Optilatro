@@ -1,0 +1,830 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 298,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_egg",
+  "j_swashbuckler",
+  "j_stuntman",
+  "j_flower_pot",
+  "j_madness"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon",
+   "c_death",
+   "c_magician",
+   "c_hermit",
+   "c_hermit",
+   "c_emperor",
+   "c_temperance",
+   "c_hanged_man",
+   "c_temperance",
+   "c_wheel_of_fortune",
+   "c_empress",
+   "c_temperance",
+   "c_emperor",
+   "c_devil",
+   "c_high_priestess",
+   "c_empress",
+   "c_wheel_of_fortune",
+   "c_chariot",
+   "c_world"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_pluto"
+  ],
+  "spectrals": [
+   "s_immolate"
+  ],
+  "jokers_bought": [
+   "j_egg",
+   "j_to_the_moon",
+   "j_photograph",
+   "j_sock_and_buskin",
+   "j_stuntman",
+   "j_todo_list",
+   "j_fortune_teller",
+   "j_banner",
+   "j_satellite",
+   "j_golden",
+   "j_business",
+   "j_greedy_joker",
+   "j_raised_fist",
+   "j_satellite",
+   "j_to_the_moon",
+   "j_flower_pot",
+   "j_flower_pot",
+   "j_rocket",
+   "j_todo_list",
+   "j_even_steven",
+   "j_madness"
+  ],
+  "money_spent": 466,
+  "best_score": 73498,
+  "rerolls": 16,
+  "packs_bought": 55,
+  "packs_opened": 27,
+  "jokers_sold": [
+   [
+    2,
+    "j_to_the_moon"
+   ],
+   [
+    4,
+    "j_sock_and_buskin"
+   ],
+   [
+    4,
+    "j_even_steven"
+   ],
+   [
+    4,
+    "j_todo_list"
+   ],
+   [
+    5,
+    "j_fortune_teller"
+   ],
+   [
+    5,
+    "j_banner"
+   ],
+   [
+    5,
+    "j_satellite"
+   ],
+   [
+    5,
+    "j_golden"
+   ],
+   [
+    5,
+    "j_business"
+   ],
+   [
+    5,
+    "j_greedy_joker"
+   ],
+   [
+    6,
+    "j_raised_fist"
+   ],
+   [
+    6,
+    "j_satellite"
+   ],
+   [
+    6,
+    "j_to_the_moon"
+   ],
+   [
+    6,
+    "j_photograph"
+   ],
+   [
+    7,
+    "j_flower_pot"
+   ],
+   [
+    7,
+    "j_rocket"
+   ],
+   [
+    7,
+    "j_todo_list"
+   ],
+   [
+    7,
+    "j_even_steven"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    320
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_egg",
+     "j_swashbuckler"
+    ],
+    568
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_swashbuckler",
+     "j_to_the_moon"
+    ],
+    638
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_swashbuckler",
+     "j_to_the_moon"
+    ],
+    4608
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_swashbuckler",
+     "j_to_the_moon"
+    ],
+    1566
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    580
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    1500
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    3300
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    3100
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    2200
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    7568
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    10062
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler",
+     "j_todo_list"
+    ],
+    12126
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_egg",
+     "j_fortune_teller",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    12768
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_banner",
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    18144
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_egg",
+     "j_golden",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    27560
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    20370
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    34100
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler",
+     "j_to_the_moon"
+    ],
+    46800
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_flower_pot",
+     "j_flower_pot",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    24800
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_egg",
+     "j_flower_pot",
+     "j_flower_pot",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    20596
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_egg",
+     "j_flower_pot",
+     "j_flower_pot",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    26730
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_egg",
+     "j_flower_pot",
+     "j_flower_pot",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    25675
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_egg",
+     "j_flower_pot",
+     "j_flower_pot",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    21093
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_egg",
+     "j_flower_pot",
+     "j_madness",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    49896
+   ]
+  ],
+  "consumable_uses": [
+   [
+    4,
+    "c_moon",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_egg",
+     "j_fortune_teller",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "s_immolate",
+    [
+     "j_banner",
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_banner",
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_banner",
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_emperor",
+    [
+     "j_banner",
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_temperance",
+    [
+     "j_banner",
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hanged_man",
+    [
+     "j_banner",
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_temperance",
+    [
+     "j_banner",
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_wheel_of_fortune",
+    [
+     "j_banner",
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_empress",
+    [
+     "j_egg",
+     "j_golden",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Purple"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_temperance",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_emperor",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_devil",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_high_priestess",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_pluto",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_empress",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_wheel_of_fortune",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_chariot",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_world",
+    [
+     "j_egg",
+     "j_flower_pot",
+     "j_madness",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "Wild",
+      "edition": "Foil",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 272,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

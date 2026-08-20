@@ -1,0 +1,119 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 20,
+ "truncated": false,
+ "dollars": 10,
+ "jokers": [
+  "j_todo_list",
+  "j_sock_and_buskin",
+  "j_certificate"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_todo_list",
+   "j_certificate"
+  ],
+  "money_spent": 14,
+  "best_score": 592,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_sock_and_buskin",
+     "j_todo_list"
+    ],
+    160
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_sock_and_buskin",
+     "j_todo_list"
+    ],
+    344
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_certificate",
+     "j_sock_and_buskin",
+     "j_todo_list"
+    ],
+    212
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_certificate",
+     "j_sock_and_buskin",
+     "j_todo_list"
+    ],
+    210
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_sock_and_buskin",
+     "j_todo_list"
+    ],
+    76
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_sock_and_buskin",
+     "j_todo_list"
+    ],
+    94
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_certificate",
+     "j_sock_and_buskin",
+     "j_todo_list"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 242,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

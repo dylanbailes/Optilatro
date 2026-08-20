@@ -1,0 +1,516 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 130,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_wrathful_joker",
+  "j_shoot_the_moon",
+  "j_jolly",
+  "j_abstract",
+  "j_swashbuckler"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_empress",
+   "c_fool",
+   "c_empress",
+   "c_wheel_of_fortune",
+   "c_hermit",
+   "c_hanged_man",
+   "c_temperance",
+   "c_chariot",
+   "c_star",
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_shoot_the_moon",
+   "j_jolly",
+   "j_abstract",
+   "j_castle",
+   "j_golden",
+   "j_wily",
+   "j_swashbuckler"
+  ],
+  "money_spent": 106,
+  "best_score": 8925,
+  "rerolls": 2,
+  "packs_bought": 11,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    3,
+    "j_castle"
+   ],
+   [
+    3,
+    "j_golden"
+   ],
+   [
+    4,
+    "j_wily"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    264
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_wrathful_joker"
+    ],
+    518
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    624
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    2100
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    1344
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    3397
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    2244
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    2790
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    234
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    4092
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    1550
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    1554
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    1599
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    1485
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    5280
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    1755
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    1890
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_swashbuckler",
+     "j_wrathful_joker"
+    ],
+    6688
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_empress",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_star",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_high_priestess",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_swashbuckler",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_uranus",
+    [
+     "j_abstract",
+     "j_jolly",
+     "j_shoot_the_moon",
+     "j_swashbuckler",
+     "j_wrathful_joker"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 38,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

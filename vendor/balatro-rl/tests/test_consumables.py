@@ -131,16 +131,70 @@ class TestTarotSuitConversion:
 class TestTarotSpecial:
     def test_fool_copies_last_tarot(self):
         g = _game_with_hand([(10, "Hearts")])
-        g.tarots_used = ["c_magician"]
+        g.consumables_used = ["c_magician"]
         apply_tarot(g, "c_fool")
         assert "c_magician" in g.consumable_hand
 
     def test_fool_copies_last_planet_if_no_tarot(self):
         g = _game_with_hand([(10, "Hearts")])
-        g.tarots_used = []
-        g.planets_used = ["pl_mercury"]
+        g.consumables_used = ["pl_mercury"]
         apply_tarot(g, "c_fool")
         assert "pl_mercury" in g.consumable_hand
+
+    def test_fool_never_copies_itself(self):
+        # Reference doc §3: "The Fool itself excluded".
+        g = _game_with_hand([(10, "Hearts")])
+        g.consumables_used = ["c_magician"]
+        apply_tarot(g, "c_fool")
+        apply_tarot(g, "c_fool")  # second Fool must copy the magician again
+        assert g.consumable_hand == ["c_magician", "c_magician"]
+
+    def test_fool_copies_most_recent_across_families(self):
+        # The last USED card wins, tarot or planet (planet used after tarot).
+        g = _game_with_hand([(10, "Hearts")])
+        g.consumables_used = ["c_magician", "pl_mercury"]
+        apply_tarot(g, "c_fool")
+        assert g.consumable_hand == ["pl_mercury"]
+
+    def test_high_priestess_respects_room(self):
+        # Full consumable area, used directly (card not yet consumed): 0 room.
+        g = _game_with_hand()
+        g.consumable_hand = ["c_fool", "c_star"]
+        apply_tarot(g, "c_high_priestess")
+        assert len(g.consumable_hand) == 2
+
+    def test_high_priestess_builds_into_freed_slot(self):
+        # Via the game path the used card is consumed first, freeing its slot.
+        g = _game_with_hand()
+        g.consumable_hand = ["c_fool", "c_high_priestess"]
+        g._use_consumable(1, [])
+        assert len(g.consumable_hand) == 2 and g.consumable_hand[0] == "c_fool"
+
+    def test_emperor_respects_room(self):
+        g = _game_with_hand()
+        g.consumable_hand = ["c_fool", "c_star"]
+        apply_tarot(g, "c_emperor")
+        assert len(g.consumable_hand) == 2
+
+    def test_lovers_enhances_exactly_one_card(self):
+        # Doc Targets: 1 — the second index must be ignored.
+        g = _game_with_hand([(10, "Hearts"), (5, "Spades")])
+        apply_tarot(g, "c_lovers", target_indices=[0, 1])
+        assert g.hand[0].enhancement == "Wild"
+        assert g.hand[1].enhancement == "None"
+
+    def test_death_copies_edition_and_seal(self):
+        # Doc §3: Death converts left into a copy of right (rank, suit,
+        # enhancement, edition, seal).
+        g = _game_with_hand([(10, "Hearts"), (5, "Spades")])
+        g.hand[1].enhancement = "Mult"
+        g.hand[1].edition = "Holographic"
+        g.hand[1].seal = "Red"
+        apply_tarot(g, "c_death", target_indices=[0, 1])
+        assert g.hand[0].rank == 5 and g.hand[0].suit == "Spades"
+        assert g.hand[0].enhancement == "Mult"
+        assert g.hand[0].edition == "Holographic"
+        assert g.hand[0].seal == "Red"
 
     def test_high_priestess_creates_2_planets(self):
         g = _game_with_hand()
@@ -228,27 +282,29 @@ class TestTarotSpecial:
 # ════════════════════════════════════════════════════════════════════════════
 
 class TestSpectrals:
-    def test_familiar_destroys_and_adds_face_cards(self):
+    def test_familiar_destroys_and_adds_face_cards_to_hand(self):
+        # Reference doc §5: the 3 Enhanced face cards go TO HAND (the sim
+        # previously inserted them into the deck).
         g = _game_with_hand([(5, "Hearts"), (10, "Spades")])
         random.seed(42)
-        prev_deck = len(g.deck)
         apply_spectral(g, "s_familiar", target_indices=[0])
-        assert len(g.hand) == 1  # one card destroyed
-        assert len(g.deck) >= prev_deck + 3  # 3 face cards added
+        assert len(g.hand) == 4  # 1 destroyed + 3 added to hand
+        assert all(c.rank in (11, 12, 13) for c in g.hand[1:])
+        assert all(c.enhancement != "None" for c in g.hand[1:])
 
-    def test_grim_destroys_and_adds_aces(self):
+    def test_grim_destroys_and_adds_aces_to_hand(self):
         g = _game_with_hand([(5, "Hearts")])
         random.seed(42)
-        prev_deck = len(g.deck)
         apply_spectral(g, "s_grim", target_indices=[0])
-        assert len(g.deck) >= prev_deck + 2
+        assert len(g.hand) == 2  # 1 destroyed + 2 aces to hand
+        assert all(c.rank == 14 for c in g.hand)
 
-    def test_incantation_destroys_and_adds_number_cards(self):
+    def test_incantation_destroys_and_adds_number_cards_to_hand(self):
         g = _game_with_hand([(5, "Hearts")])
         random.seed(42)
-        prev_deck = len(g.deck)
         apply_spectral(g, "s_incantation", target_indices=[0])
-        assert len(g.deck) >= prev_deck + 4
+        assert len(g.hand) == 4  # 1 destroyed + 4 numbers to hand
+        assert all(2 <= c.rank <= 10 for c in g.hand)
 
     def test_talisman_adds_gold_seal(self):
         g = _game_with_hand([(10, "Hearts")])
@@ -270,14 +326,15 @@ class TestSpectrals:
         apply_spectral(g, "s_medium", target_indices=[0])
         assert g.hand[0].seal == "Purple"
 
-    def test_wraith_creates_rare_joker(self):
+    def test_wraith_creates_rare_joker_and_zeroes_money(self):
+        # Reference doc §5: "sets money to $0" (was a bogus -$3).
         g = _game_with_hand()
         g.jokers = []
         g.dollars = 10
         random.seed(42)
         apply_spectral(g, "s_wraith")
         assert len(g.jokers) == 1
-        assert g.dollars == 7  # -$3
+        assert g.dollars == 0
 
     def test_sigil_converts_all_to_single_suit(self):
         g = _game_with_hand([(2, "Hearts"), (3, "Spades"), (4, "Clubs")])
@@ -294,12 +351,27 @@ class TestSpectrals:
         ranks = {c.rank for c in g.hand}
         assert len(ranks) == 1  # all same rank
         assert g.hand_size == prev_hand_size - 1
+        assert g.hand_size_mod == -1  # PERMANENT (survives the per-blind reset)
 
-    def test_ectoplasm_adds_joker_slot(self):
+    def test_ectoplasm_negatives_joker_and_shrinks_hand(self):
+        # Reference doc §5: Negative on a random Joker + permanent -1 hand size.
+        g = _game_with_hand()
+        g.jokers = [JokerInstance("j_joker"), JokerInstance("j_half")]
+        prev_slots = g.joker_slots
+        prev_size = g.hand_size
+        random.seed(42)
+        apply_spectral(g, "s_ectoplasm")
+        assert sum(1 for j in g.jokers if j.edition == "Negative") == 1
+        assert g.joker_slots == prev_slots + 1  # negatived joker freed its slot
+        assert g.hand_size_mod == -1            # PERMANENT
+        assert g.hand_size == prev_size - 1
+
+    def test_ectoplasm_noop_without_jokers(self):
         g = _game_with_hand()
         prev_slots = g.joker_slots
         apply_spectral(g, "s_ectoplasm")
-        assert g.joker_slots == prev_slots + 1
+        assert g.joker_slots == prev_slots
+        assert g.hand_size_mod == 0
 
     def test_immolate_destroys_5_gives_20(self):
         g = _game_with_hand([(i, "Hearts") for i in range(2, 10)])
@@ -308,12 +380,15 @@ class TestSpectrals:
         apply_spectral(g, "s_immolate")
         assert g.dollars == prev_dollars + 20
 
-    def test_ankh_keeps_one_joker(self):
+    def test_ankh_keeps_original_and_copy(self):
+        # Reference doc §5: destroys all OTHER jokers — the chosen original
+        # survives alongside its copy (2 jokers).
         g = _game_with_hand()
         g.jokers = [JokerInstance("j_joker"), JokerInstance("j_half"), JokerInstance("j_abstract")]
         random.seed(42)
         apply_spectral(g, "s_ankh")
-        assert len(g.jokers) == 1
+        assert len(g.jokers) == 2
+        assert g.jokers[0].key == g.jokers[1].key
 
     def test_hex_polychrome_one_joker(self):
         g = _game_with_hand()
@@ -323,11 +398,12 @@ class TestSpectrals:
         assert len(g.jokers) == 1
         assert g.jokers[0].edition == "Polychrome"
 
-    def test_cryptid_copies_card(self):
+    def test_cryptid_copies_card_to_hand(self):
+        # Reference doc §5: the 2 copies go TO HAND (sim previously used deck).
         g = _game_with_hand([(10, "Hearts")])
-        prev_deck = len(g.deck)
         apply_spectral(g, "s_cryptid", target_indices=[0])
-        assert len(g.deck) == prev_deck + 2
+        assert len(g.hand) == 3  # original + 2 copies
+        assert all(c.rank == 10 and c.suit == "Hearts" for c in g.hand)
 
     def test_soul_creates_legendary_joker(self):
         g = _game_with_hand()
@@ -343,12 +419,14 @@ class TestSpectrals:
         for hand_type in prev_levels:
             assert g.planet_levels[hand_type] == prev_levels[hand_type] + 1
 
-    def test_aura_adds_edition_to_joker(self):
-        g = _game_with_hand()
+    def test_aura_adds_edition_to_card(self):
+        # Reference doc §5: Aura targets a PLAYING CARD, not a joker.
+        g = _game_with_hand([(10, "Hearts")])
         g.jokers = [JokerInstance("j_joker")]
         random.seed(42)
         apply_spectral(g, "s_aura", target_indices=[0])
-        assert g.jokers[0].edition in ("Foil", "Holographic", "Polychrome")
+        assert g.hand[0].edition in ("Foil", "Holographic", "Polychrome")
+        assert g.jokers[0].edition == "None"  # NOT the joker
 
 
 # ════════════════════════════════════════════════════════════════════════════

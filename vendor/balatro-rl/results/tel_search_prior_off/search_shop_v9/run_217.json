@@ -1,0 +1,103 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 24,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_scary_face",
+  "j_cavendish",
+  "j_todo_list"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_todo_list"
+  ],
+  "money_spent": 12,
+  "best_score": 456,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_scary_face"
+    ],
+    264
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_scary_face"
+    ],
+    192
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_scary_face",
+     "j_todo_list"
+    ],
+    135
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_scary_face",
+     "j_todo_list"
+    ],
+    48
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_scary_face",
+     "j_todo_list"
+    ],
+    42
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 217,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

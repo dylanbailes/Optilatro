@@ -1,0 +1,66 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 21,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_half",
+  "j_wrathful_joker"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_half",
+   "j_wrathful_joker"
+  ],
+  "money_spent": 14,
+  "best_score": 528,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    124
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    104
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half"
+    ],
+    528
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 209,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

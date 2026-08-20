@@ -1,0 +1,187 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 50,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_marble",
+  "j_hallucination"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_marble",
+   "j_hallucination"
+  ],
+  "money_spent": 23,
+  "best_score": 969,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    284
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    52
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    40
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    308
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    272
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    280
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    256
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    304
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    665
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    136
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    120
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    124
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    76
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_hallucination",
+     "j_marble"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 165,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

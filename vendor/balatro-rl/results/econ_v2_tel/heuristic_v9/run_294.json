@@ -1,0 +1,265 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 61,
+ "truncated": false,
+ "dollars": 9,
+ "jokers": [
+  "j_smiley",
+  "j_splash",
+  "j_lusty_joker",
+  "j_even_steven"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_splash",
+   "j_even_steven"
+  ],
+  "money_spent": 34,
+  "best_score": 3244,
+  "rerolls": 3,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    200
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_smiley"
+    ],
+    552
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    416
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    150
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    36
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    510
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    132
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    120
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    110
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    600
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    306
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    135
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    360
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    1500
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    784
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    960
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    2484
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    1260
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    931
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    322
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_splash"
+    ],
+    230
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 294,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

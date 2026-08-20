@@ -1,0 +1,254 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 74,
+ "truncated": false,
+ "dollars": 21,
+ "jokers": [
+  "j_joker",
+  "j_stencil",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [
+   "c_lovers"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_joker",
+   "j_stencil"
+  ],
+  "money_spent": 48,
+  "best_score": 3216,
+  "rerolls": 3,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_joker"
+    ],
+    336
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_joker"
+    ],
+    132
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_stencil"
+    ],
+    900
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_stencil"
+    ],
+    720
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_joker",
+     "j_stencil"
+    ],
+    432
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    600
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    576
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    168
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    952
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    360
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    896
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    1264
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    896
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    1312
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    1136
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    756
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    1072
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_golden",
+     "j_joker",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 201,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

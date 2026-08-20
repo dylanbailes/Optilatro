@@ -1,0 +1,635 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 161,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_gros_michel",
+  "j_misprint",
+  "j_blue_joker",
+  "j_family",
+  "j_tribe"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_hermit",
+   "c_death",
+   "c_fool",
+   "c_death",
+   "c_empress",
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_saturn",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_baron",
+   "j_lucky_cat",
+   "j_gros_michel",
+   "j_sly",
+   "j_credit_card",
+   "j_misprint",
+   "j_acrobat",
+   "j_clever",
+   "j_blue_joker",
+   "j_clever",
+   "j_todo_list",
+   "j_reserved_parking",
+   "j_family",
+   "j_ticket",
+   "j_tribe"
+  ],
+  "money_spent": 159,
+  "best_score": 28352,
+  "rerolls": 2,
+  "packs_bought": 15,
+  "packs_opened": 11,
+  "jokers_sold": [
+   [
+    2,
+    "j_lucky_cat"
+   ],
+   [
+    2,
+    "j_credit_card"
+   ],
+   [
+    2,
+    "j_acrobat"
+   ],
+   [
+    2,
+    "j_sly"
+   ],
+   [
+    3,
+    "j_clever"
+   ],
+   [
+    4,
+    "j_clever"
+   ],
+   [
+    4,
+    "j_todo_list"
+   ],
+   [
+    4,
+    "j_reserved_parking"
+   ],
+   [
+    4,
+    "j_baron"
+   ],
+   [
+    5,
+    "j_ticket"
+   ],
+   [
+    6,
+    "j_reserved_parking"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    7
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_baron"
+    ],
+    498
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_baron",
+     "j_lucky_cat"
+    ],
+    438
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_baron",
+     "j_lucky_cat"
+    ],
+    474
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_baron",
+     "j_gros_michel",
+     "j_lucky_cat"
+    ],
+    1224
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_baron",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_lucky_cat",
+     "j_sly"
+    ],
+    2040
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_baron",
+     "j_gros_michel",
+     "j_misprint",
+     "j_sly"
+    ],
+    3078
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_baron",
+     "j_gros_michel",
+     "j_misprint",
+     "j_sly"
+    ],
+    3510
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_baron",
+     "j_blue_joker",
+     "j_clever",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    5440
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_baron",
+     "j_blue_joker",
+     "j_clever",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    4408
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_baron",
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    9945
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baron",
+     "j_blue_joker",
+     "j_clever",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    6636
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_baron",
+     "j_blue_joker",
+     "j_clever",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    12936
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baron",
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    11700
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_ticket"
+    ],
+    7174
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_ticket"
+    ],
+    7293
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_ticket"
+    ],
+    7272
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_ticket"
+    ],
+    6076
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_ticket"
+    ],
+    7544
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    10879
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    4992
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    3720
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    7134
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    16497
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    10368
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_tribe"
+    ],
+    4730
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_tribe"
+    ],
+    13287
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_tribe"
+    ],
+    8127
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_tribe"
+    ],
+    2208
+   ]
+  ],
+  "consumable_uses": [
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_baron",
+     "j_blue_joker",
+     "j_clever",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_baron",
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hanged_man",
+    [
+     "j_baron",
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_misprint",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_baron",
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_baron",
+     "j_blue_joker",
+     "j_gros_michel",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_empress",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_high_priestess",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_saturn",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_family",
+     "j_gros_michel",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 222,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,374 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 85,
+ "truncated": false,
+ "dollars": 19,
+ "jokers": [
+  "j_sly",
+  "j_abstract",
+  "j_jolly",
+  "j_family",
+  "j_trading"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant",
+   "c_emperor",
+   "c_world",
+   "c_sun",
+   "c_hanged_man",
+   "c_star",
+   "c_temperance",
+   "c_fool",
+   "c_temperance",
+   "c_hermit"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_sly",
+   "j_abstract",
+   "j_cartomancer",
+   "j_jolly",
+   "j_family",
+   "j_trading"
+  ],
+  "money_spent": 81,
+  "best_score": 3328,
+  "rerolls": 2,
+  "packs_bought": 7,
+  "packs_opened": 6,
+  "jokers_sold": [
+   [
+    2,
+    "j_odd_todd"
+   ],
+   [
+    3,
+    "j_cartomancer"
+   ],
+   [
+    3,
+    "j_lusty_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_lusty_joker",
+     "j_odd_todd"
+    ],
+    756
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    320
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    660
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    1156
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    3328
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    2413
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_jolly",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    3136
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_family",
+     "j_jolly",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    3080
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_family",
+     "j_jolly",
+     "j_sly",
+     "j_trading"
+    ],
+    3190
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_lusty_joker",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_world",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_sun",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "Bonus",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_star",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "Bonus",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_jolly",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 179,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

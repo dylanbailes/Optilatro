@@ -1,0 +1,423 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 128,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_fibonacci",
+  "j_ice_cream",
+  "j_greedy_joker",
+  "j_even_steven"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_hanged_man",
+   "c_hermit",
+   "c_hermit",
+   "c_fool"
+  ],
+  "planets": [
+   "pl_jupiter",
+   "pl_jupiter",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ice_cream",
+   "j_fortune_teller",
+   "j_popcorn",
+   "j_gift",
+   "j_even_steven"
+  ],
+  "money_spent": 114,
+  "best_score": 16259,
+  "rerolls": 1,
+  "packs_bought": 16,
+  "packs_opened": 11,
+  "jokers_sold": [
+   [
+    3,
+    "j_mail"
+   ],
+   [
+    3,
+    "j_fortune_teller"
+   ],
+   [
+    4,
+    "j_gift"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_fibonacci"
+    ],
+    468
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_fibonacci"
+    ],
+    312
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_fibonacci"
+    ],
+    576
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_fibonacci"
+    ],
+    171
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_fibonacci"
+    ],
+    1116
+   ],
+   [
+    2,
+    "Four of a Kind",
+    [
+     "j_fibonacci",
+     "j_ice_cream"
+    ],
+    1400
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_ice_cream"
+    ],
+    3168
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    3486
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_mail"
+    ],
+    3888
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_fibonacci",
+     "j_gift",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    8750
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_fibonacci",
+     "j_gift",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    5590
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_fibonacci",
+     "j_gift",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    8832
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    8036
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    4836
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    5768
+   ],
+   [
+    5,
+    "Four of a Kind",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    6600
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    5985
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    7869
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    1274
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    1131
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_jupiter",
+    [
+     "j_fibonacci"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_jupiter",
+    [
+     "j_fibonacci"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_magician",
+    [
+     "j_fibonacci"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_fibonacci"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_mail"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_fibonacci",
+     "j_gift",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_fibonacci",
+     "j_gift",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 184,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

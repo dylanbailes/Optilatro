@@ -1,0 +1,297 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 86,
+ "truncated": false,
+ "dollars": 16,
+ "jokers": [
+  "j_flower_pot",
+  "j_splash",
+  "j_hanging_chad",
+  "j_onyx_agate"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_saturn",
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_red_card",
+   "j_flower_pot",
+   "j_splash",
+   "j_egg",
+   "j_hanging_chad",
+   "j_ticket",
+   "j_onyx_agate"
+  ],
+  "money_spent": 82,
+  "best_score": 5658,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    2,
+    "j_egg"
+   ],
+   [
+    2,
+    "j_ticket"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_red_card"
+    ],
+    510
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_red_card"
+    ],
+    884
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_red_card"
+    ],
+    1482
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_egg",
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_red_card",
+     "j_splash"
+    ],
+    1501
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_egg",
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_splash"
+    ],
+    1350
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_egg",
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_splash"
+    ],
+    1134
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    1596
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    340
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    272
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_flower_pot",
+     "j_hanging_chad",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    3315
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_hanging_chad",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    5658
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_hanging_chad",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    3360
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_hanging_chad",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    1296
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_hanging_chad",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    252
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_hanging_chad",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_red_card"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_egg",
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_splash",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_flower_pot",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_onyx_agate",
+     "j_splash"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 26,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

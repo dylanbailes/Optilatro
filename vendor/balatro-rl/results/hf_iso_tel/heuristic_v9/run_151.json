@@ -1,0 +1,299 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 90,
+ "truncated": false,
+ "dollars": 18,
+ "jokers": [
+  "j_gluttenous_joker",
+  "j_scary_face",
+  "j_greedy_joker",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_blue_joker",
+   "j_ticket",
+   "j_selzer",
+   "j_gluttenous_joker",
+   "j_half",
+   "j_scary_face",
+   "j_greedy_joker",
+   "j_splash"
+  ],
+  "money_spent": 55,
+  "best_score": 7071,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    4,
+    "j_half"
+   ],
+   [
+    4,
+    "j_blue_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    348
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_ticket"
+    ],
+    292
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_ticket"
+    ],
+    560
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_ticket"
+    ],
+    608
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_ticket"
+    ],
+    2576
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_ticket"
+    ],
+    672
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_ticket"
+    ],
+    432
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_ticket"
+    ],
+    184
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_selzer",
+     "j_ticket"
+    ],
+    796
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_selzer",
+     "j_ticket"
+    ],
+    504
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_selzer",
+     "j_ticket"
+    ],
+    516
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_selzer",
+     "j_ticket"
+    ],
+    1890
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_selzer",
+     "j_ticket"
+    ],
+    272
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_half",
+     "j_selzer",
+     "j_ticket"
+    ],
+    3105
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_half",
+     "j_selzer"
+    ],
+    3105
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    3528
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_half",
+     "j_scary_face"
+    ],
+    4321
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_half",
+     "j_scary_face"
+    ],
+    2750
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_splash"
+    ],
+    650
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_splash"
+    ],
+    1392
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_splash"
+    ],
+    1748
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_splash"
+    ],
+    1710
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_blue_joker",
+     "j_ticket"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 151,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

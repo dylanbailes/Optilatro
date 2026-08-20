@@ -1,0 +1,244 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 73,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_ride_the_bus",
+  "j_raised_fist",
+  "j_banner",
+  "j_fortune_teller"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_death"
+  ],
+  "planets": [
+   "pl_pluto",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gluttenous_joker",
+   "j_business",
+   "j_raised_fist",
+   "j_banner",
+   "j_reserved_parking",
+   "j_fortune_teller"
+  ],
+  "money_spent": 67,
+  "best_score": 3550,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_gluttenous_joker"
+   ],
+   [
+    2,
+    "j_business"
+   ],
+   [
+    3,
+    "j_reserved_parking"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_ride_the_bus"
+    ],
+    70
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_ride_the_bus"
+    ],
+    432
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_ride_the_bus"
+    ],
+    690
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    1196
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_banner",
+     "j_business",
+     "j_gluttenous_joker",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    2520
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_business",
+     "j_raised_fist",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    1800
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_raised_fist",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    2088
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    3536
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    3550
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_banner",
+     "j_business",
+     "j_raised_fist",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_death",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 250,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

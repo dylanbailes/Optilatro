@@ -1,0 +1,150 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 54,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_smeared"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 24,
+  "best_score": 1028,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    84
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    64
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_smeared"
+    ],
+    264
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_smeared"
+    ],
+    308
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_smeared"
+    ],
+    100
+   ],
+   [
+    1,
+    "Straight Flush",
+    [
+     "j_smeared"
+    ],
+    928
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_smeared"
+    ],
+    308
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_smeared"
+    ],
+    344
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_smeared"
+    ],
+    153
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_smeared"
+    ],
+    276
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_smeared"
+    ],
+    108
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_smeared"
+    ],
+    220
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_smeared"
+    ],
+    112
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 2,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

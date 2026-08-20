@@ -1,0 +1,59 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 6,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 0,
+  "best_score": 288,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    76
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    64
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 224,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

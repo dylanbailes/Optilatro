@@ -1,0 +1,254 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 83,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_castle",
+  "j_even_steven",
+  "j_fortune_teller",
+  "j_red_card",
+  "j_gluttenous_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_magician",
+   "c_emperor",
+   "c_temperance",
+   "c_temperance"
+  ],
+  "planets": [
+   "pl_saturn",
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_even_steven",
+   "j_rocket",
+   "j_fortune_teller",
+   "j_red_card",
+   "j_gluttenous_joker"
+  ],
+  "money_spent": 108,
+  "best_score": 5124,
+  "rerolls": 2,
+  "packs_bought": 8,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_rocket"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_castle",
+     "j_even_steven"
+    ],
+    496
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_rocket"
+    ],
+    600
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_rocket"
+    ],
+    1344
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_rocket"
+    ],
+    1216
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_red_card",
+     "j_rocket"
+    ],
+    2196
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_red_card"
+    ],
+    2379
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_red_card"
+    ],
+    5124
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_red_card"
+    ],
+    2106
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_rocket"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_red_card",
+     "j_rocket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_red_card",
+     "j_rocket"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_red_card",
+     "j_rocket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_red_card",
+     "j_rocket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_red_card",
+     "j_rocket"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_castle",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_red_card"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 176,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_search_shop_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

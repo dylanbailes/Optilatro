@@ -1,0 +1,596 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 173,
+ "truncated": false,
+ "dollars": 43,
+ "jokers": [
+  "j_odd_todd",
+  "j_green_joker",
+  "j_gros_michel",
+  "j_trio",
+  "j_seeing_double"
+ ],
+ "stats": {
+  "tarots": [
+   "c_devil",
+   "c_hermit",
+   "c_judgement",
+   "c_magician",
+   "c_hermit",
+   "c_magician",
+   "c_hermit",
+   "c_hanged_man",
+   "c_fool",
+   "c_hanged_man"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_odd_todd",
+   "j_devious",
+   "j_fortune_teller",
+   "j_cartomancer",
+   "j_gift",
+   "j_gros_michel",
+   "j_todo_list",
+   "j_banner",
+   "j_trio",
+   "j_seeing_double"
+  ],
+  "money_spent": 186,
+  "best_score": 49500,
+  "rerolls": 4,
+  "packs_bought": 21,
+  "packs_opened": 12,
+  "jokers_sold": [
+   [
+    2,
+    "j_runner"
+   ],
+   [
+    3,
+    "j_devious"
+   ],
+   [
+    3,
+    "j_cartomancer"
+   ],
+   [
+    3,
+    "j_gift"
+   ],
+   [
+    4,
+    "j_todo_list"
+   ],
+   [
+    4,
+    "j_fortune_teller"
+   ],
+   [
+    5,
+    "j_banner"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    588
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    1092
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_green_joker",
+     "j_odd_todd",
+     "j_runner"
+    ],
+    1170
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_devious",
+     "j_green_joker",
+     "j_odd_todd",
+     "j_runner"
+    ],
+    1440
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_devious",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    2430
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cartomancer",
+     "j_devious",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    2924
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_cartomancer",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    2740
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cartomancer",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    900
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_gift",
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd"
+    ],
+    1665
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_gift",
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd"
+    ],
+    3686
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd"
+    ],
+    9918
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd"
+    ],
+    8094
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_trio"
+    ],
+    10360
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_banner",
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_trio"
+    ],
+    26568
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    11880
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    1504
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    3535
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    10912
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    2970
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    3060
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    19152
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    49500
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    6262
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    2475
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    14592
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    5412
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_devil",
+    [
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hermit",
+    [
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_judgement",
+    [
+     "j_cavendish",
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_cavendish",
+     "j_green_joker",
+     "j_odd_todd",
+     "j_runner"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_cavendish",
+     "j_devious",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_cartomancer",
+     "j_devious",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_cartomancer",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_cartomancer",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_odd_todd"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hanged_man",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hanged_man",
+    [
+     "j_green_joker",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 113,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

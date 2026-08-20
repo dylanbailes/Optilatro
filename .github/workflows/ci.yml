@@ -77,9 +77,40 @@ jobs:
       # is generated from balatro-mechanics-reference(2).md by
       # tools/gen_joker_spec.py; behavior is validated by
       # tests/test_joker_spec.py.
-      - name: Joker-layer static audit
+      # Consumables-layer structural audit (tarot/planet/spectral fidelity):
+      # fails on display-name mismatches vs the reference doc, wrong counts,
+      # a planet leveling up the wrong hand type, target-count violations, an
+      # apply_* branch contradicting the doc's effect (wrong enhancement/suit,
+      # Hermit/Temperance caps, Death not copying edition+seal, Wraith not
+      # zeroing money, Fool self-copying, missing room checks), unreachable
+      # keys, or generation/use dispatch not wired to the ALL_* pools. The
+      # spec (tools/consumable_spec.json) is generated from
+      # balatro-mechanics-reference(2).md §3-§5 by tools/gen_consumable_spec.py;
+      # behavior is validated per-card by tests/test_consumable_spec.py.
+      - name: Consumables static audit (tarot/planet/spectral vs reference doc)
         working-directory: .
-        run: python tools/audit_jokers_static.py
+        run: python tools/audit_consumables_static.py
+
+      # Boss-Blind structural audit (selection/effects/Matador fidelity):
+      # fails on wrong min-ante eligibility, Showdown-pool leaks, a Matador
+      # trigger table that disagrees with the doc's 13, large-blind scaling
+      # (Wall 4x / Violet 6x / Needle 1x), or effect code that stops matching
+      # the doc semantics. The spec (tools/boss_spec.json) is generated from
+      # balatro-mechanics-reference(2).md §10+§16 by tools/gen_boss_spec.py;
+      # behavior is validated by tests/test_boss_spec.py + test_boss_effects.py.
+      - name: Boss-blind static audit (selection/effects/Matador vs reference doc)
+        working-directory: .
+        run: python tools/audit_bosses_static.py
+
+      # Tag-layer structural audit (skip-blind fidelity): fails on wrong tag
+      # names/counts, a non-wiki ante-gate list, or an apply/consumption site
+      # that stops matching the doc semantics (incl. the Economy Tag's
+      # gain-cap formula). The spec (tools/tag_spec.json) is generated from
+      # balatro-mechanics-reference(2).md §14 by tools/gen_tag_spec.py;
+      # behavior is validated by tests/test_tag_spec.py + test_tags.py.
+      - name: Tag static audit (catalogue/roll/apply vs reference doc)
+        working-directory: .
+        run: python tools/audit_tags_static.py
 
       - name: Seed-exactness gate (cross-process sha256)
         run: python -m pytest tests/test_seed_exactness.py -m ci_gate -v

@@ -31,11 +31,19 @@ def _old_draw_to_full(self):
         self.hand.append(c)
 
 
-def bench_winrate(n_games: int) -> tuple[int, int, dict[int, int]]:
+def _fmt_eta(seconds: float) -> str:
+    seconds = max(0, int(seconds))
+    h, rem = divmod(seconds, 3600)
+    m, s = divmod(rem, 60)
+    return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
+
+
+def bench_winrate(n_games: int, batch_size: int = 0) -> tuple[int, int, dict[int, int]]:
     wins = 0
     losses = 0
     death_by_ante: dict[int, int] = {}
-    for _ in range(n_games):
+    t0 = time.perf_counter()
+    for i in range(1, n_games + 1):
         env = BalatroSimEnv(seed=random.randrange(1_000_000_000))
         env.reset()
         steps = 0
@@ -57,6 +65,13 @@ def bench_winrate(n_games: int) -> tuple[int, int, dict[int, int]]:
                 else:
                     losses += 1
                 break
+        if batch_size and i % batch_size == 0:
+            total = wins + losses
+            rate = i / (time.perf_counter() - t0)
+            eta = (n_games - i) / rate if rate else 0.0
+            pct = 100.0 * wins / total if total else 0.0
+            print(f"  {i}/{n_games} games | {wins} wins ({pct:.2f}%) | "
+                  f"{rate:.1f} games/s | ETA {_fmt_eta(eta)}", flush=True)
     return wins, losses, death_by_ante
 
 
@@ -66,12 +81,15 @@ def main() -> None:
     ap.add_argument("--games", type=int, default=1000)
     ap.add_argument("--no-reshuffle", action="store_true",
                     help="disable the mid-round reshuffle (A/B)")
+    ap.add_argument("--batch-size", type=int, default=100,
+                    help="print a flushed progress line every N games "
+                         "(0 = end only)")
     args = ap.parse_args()
     if args.no_reshuffle:
         BalatroGame._draw_to_full = _old_draw_to_full
 
     t0 = time.perf_counter()
-    wins, losses, death_by_ante = bench_winrate(args.games)
+    wins, losses, death_by_ante = bench_winrate(args.games, args.batch_size)
     dt = time.perf_counter() - t0
     total = wins + losses
     mode = "no-reshuffle" if args.no_reshuffle else "with-reshuffle"

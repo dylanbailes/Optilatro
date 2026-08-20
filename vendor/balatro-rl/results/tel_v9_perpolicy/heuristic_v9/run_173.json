@@ -1,0 +1,232 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 74,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_green_joker",
+  "j_greedy_joker",
+  "j_sly",
+  "j_bull",
+  "j_abstract"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_green_joker",
+   "j_sly",
+   "j_bull",
+   "j_runner",
+   "j_abstract"
+  ],
+  "money_spent": 58,
+  "best_score": 3588,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_drunkard"
+   ],
+   [
+    3,
+    "j_walkie_talkie"
+   ],
+   [
+    3,
+    "j_runner"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    126
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_drunkard",
+     "j_green_joker"
+    ],
+    162
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_drunkard",
+     "j_green_joker"
+    ],
+    430
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_drunkard",
+     "j_greedy_joker",
+     "j_green_joker"
+    ],
+    847
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_drunkard",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_walkie_talkie"
+    ],
+    2166
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_drunkard",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_walkie_talkie"
+    ],
+    1053
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_walkie_talkie"
+    ],
+    180
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_drunkard",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_sly",
+     "j_walkie_talkie"
+    ],
+    1760
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_bull",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_sly",
+     "j_walkie_talkie"
+    ],
+    1751
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_sly",
+     "j_walkie_talkie"
+    ],
+    792
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_runner",
+     "j_sly"
+    ],
+    1320
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_runner",
+     "j_sly"
+    ],
+    1176
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_runner",
+     "j_sly"
+    ],
+    1092
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_bull",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_sly"
+    ],
+    3136
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_drunkard",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_walkie_talkie"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 173,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

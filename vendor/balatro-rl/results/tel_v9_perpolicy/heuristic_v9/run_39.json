@@ -1,0 +1,180 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 54,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_ice_cream",
+  "j_clever",
+  "j_hanging_chad"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ice_cream",
+   "j_clever",
+   "j_hanging_chad"
+  ],
+  "money_spent": 37,
+  "best_score": 2412,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    312
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gros_michel"
+    ],
+    680
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    1989
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    2412
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_ice_cream"
+    ],
+    632
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_ice_cream"
+    ],
+    632
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_clever",
+     "j_ice_cream"
+    ],
+    540
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_clever",
+     "j_ice_cream"
+    ],
+    624
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_clever",
+     "j_ice_cream"
+    ],
+    339
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_clever",
+     "j_ice_cream"
+    ],
+    336
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_ice_cream"
+    ],
+    408
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_ice_cream"
+    ],
+    484
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_ice_cream"
+    ],
+    516
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_ice_cream"
+    ],
+    516
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 39,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

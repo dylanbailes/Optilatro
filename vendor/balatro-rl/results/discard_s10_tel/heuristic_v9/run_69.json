@@ -1,0 +1,258 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 75,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_seeing_double",
+  "j_faceless",
+  "j_runner",
+  "j_shoot_the_moon"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_rocket",
+   "j_popcorn",
+   "j_faceless",
+   "j_runner",
+   "j_shoot_the_moon"
+  ],
+  "money_spent": 67,
+  "best_score": 2304,
+  "rerolls": 1,
+  "packs_bought": 8,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_rocket"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    240
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    288
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_popcorn",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    968
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    1080
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_rocket",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    1568
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    2304
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    1440
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    348
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    329
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    270
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    900
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_faceless",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    288
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    123
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hermit",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 69,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

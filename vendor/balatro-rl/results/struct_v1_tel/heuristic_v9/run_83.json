@@ -1,0 +1,240 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 61,
+ "truncated": false,
+ "dollars": 14,
+ "jokers": [
+  "j_even_steven",
+  "j_popcorn",
+  "j_madness"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant",
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_even_steven",
+   "j_misprint",
+   "j_popcorn",
+   "j_madness"
+  ],
+  "money_spent": 43,
+  "best_score": 5152,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    32
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_jolly"
+    ],
+    380
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_jolly"
+    ],
+    240
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_jolly"
+    ],
+    1248
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_jolly"
+    ],
+    864
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_jolly",
+     "j_misprint"
+    ],
+    1320
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_jolly",
+     "j_misprint",
+     "j_popcorn"
+    ],
+    2460
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_madness",
+     "j_misprint",
+     "j_popcorn"
+    ],
+    1710
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_madness",
+     "j_misprint",
+     "j_popcorn"
+    ],
+    1209
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_madness",
+     "j_popcorn"
+    ],
+    5152
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_madness",
+     "j_popcorn"
+    ],
+    792
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_madness",
+     "j_popcorn"
+    ],
+    1080
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_madness",
+     "j_popcorn"
+    ],
+    1152
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_madness",
+     "j_popcorn"
+    ],
+    400
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_chariot",
+    [
+     "j_even_steven",
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_even_steven",
+     "j_jolly",
+     "j_misprint",
+     "j_popcorn"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 83,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

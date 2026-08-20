@@ -1,0 +1,791 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 188,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_flower_pot",
+  "j_abstract",
+  "j_splash",
+  "j_raised_fist",
+  "j_blue_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_hierophant",
+   "c_fool",
+   "c_hierophant",
+   "c_hanged_man",
+   "c_hermit",
+   "c_hanged_man",
+   "c_strength",
+   "c_devil",
+   "c_devil"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mad",
+   "j_flower_pot",
+   "j_sly",
+   "j_red_card",
+   "j_half",
+   "j_ticket",
+   "j_greedy_joker",
+   "j_abstract",
+   "j_bloodstone",
+   "j_delayed_grat",
+   "j_splash",
+   "j_faceless",
+   "j_raised_fist",
+   "j_to_the_moon",
+   "j_stencil",
+   "j_runner",
+   "j_castle",
+   "j_blue_joker"
+  ],
+  "money_spent": 196,
+  "best_score": 39620,
+  "rerolls": 5,
+  "packs_bought": 13,
+  "packs_opened": 8,
+  "jokers_sold": [
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    2,
+    "j_half"
+   ],
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_greedy_joker"
+   ],
+   [
+    4,
+    "j_bloodstone"
+   ],
+   [
+    5,
+    "j_delayed_grat"
+   ],
+   [
+    5,
+    "j_faceless"
+   ],
+   [
+    5,
+    "j_sly"
+   ],
+   [
+    5,
+    "j_mad"
+   ],
+   [
+    6,
+    "j_to_the_moon"
+   ],
+   [
+    6,
+    "j_stencil"
+   ],
+   [
+    6,
+    "j_runner"
+   ],
+   [
+    6,
+    "j_castle"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_mad"
+    ],
+    330
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_mad"
+    ],
+    128
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    340
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    1704
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_flower_pot",
+     "j_mad",
+     "j_red_card",
+     "j_sly"
+    ],
+    472
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_flower_pot",
+     "j_mad",
+     "j_red_card",
+     "j_sly"
+    ],
+    258
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_mad",
+     "j_red_card",
+     "j_sly"
+    ],
+    232
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_half",
+     "j_mad",
+     "j_red_card",
+     "j_sly"
+    ],
+    2596
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_half",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    2684
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    2556
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    3600
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly"
+    ],
+    4800
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    2508
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    3834
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    16038
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    11826
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    4266
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    4698
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    1536
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    928
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly",
+     "j_splash"
+    ],
+    8760
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly",
+     "j_splash"
+    ],
+    5576
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly",
+     "j_splash"
+    ],
+    2280
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_mad",
+     "j_raised_fist",
+     "j_splash"
+    ],
+    17388
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_mad",
+     "j_raised_fist",
+     "j_splash"
+    ],
+    3528
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_mad",
+     "j_raised_fist",
+     "j_splash"
+    ],
+    1334
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_splash",
+     "j_to_the_moon"
+    ],
+    9006
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_splash",
+     "j_to_the_moon"
+    ],
+    13110
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_runner",
+     "j_splash"
+    ],
+    7968
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_runner",
+     "j_splash"
+    ],
+    3075
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_runner",
+     "j_splash"
+    ],
+    14877
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_runner",
+     "j_splash"
+    ],
+    7632
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_splash"
+    ],
+    18690
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_splash"
+    ],
+    14490
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_splash"
+    ],
+    4340
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_splash"
+    ],
+    2100
+   ]
+  ],
+  "consumable_uses": [
+   [
+    4,
+    "c_empress",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hanged_man",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hanged_man",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_mad",
+     "j_raised_fist",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_uranus",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_splash",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_strength",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_runner",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_devil",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_runner",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_devil",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_raised_fist",
+     "j_runner",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 104,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

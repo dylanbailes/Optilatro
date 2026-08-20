@@ -1,0 +1,229 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 83,
+ "truncated": false,
+ "dollars": 15,
+ "jokers": [
+  "j_photograph",
+  "j_faceless",
+  "j_jolly",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_walkie_talkie",
+   "j_mad",
+   "j_faceless",
+   "j_jolly",
+   "j_reserved_parking"
+  ],
+  "money_spent": 49,
+  "best_score": 3558,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_walkie_talkie"
+   ],
+   [
+    3,
+    "j_mad"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_photograph"
+    ],
+    616
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_mad",
+     "j_photograph",
+     "j_walkie_talkie"
+    ],
+    1296
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_mad",
+     "j_photograph",
+     "j_walkie_talkie"
+    ],
+    1248
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_mad",
+     "j_photograph",
+     "j_walkie_talkie"
+    ],
+    624
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_faceless",
+     "j_mad",
+     "j_photograph",
+     "j_walkie_talkie"
+    ],
+    1456
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_mad",
+     "j_photograph",
+     "j_walkie_talkie"
+    ],
+    1976
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_mad",
+     "j_photograph",
+     "j_walkie_talkie"
+    ],
+    2610
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_mad",
+     "j_photograph",
+     "j_walkie_talkie"
+    ],
+    600
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_mad",
+     "j_photograph",
+     "j_walkie_talkie"
+    ],
+    2958
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    1760
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    924
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    180
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    220
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_mad",
+     "j_photograph",
+     "j_walkie_talkie"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 202,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

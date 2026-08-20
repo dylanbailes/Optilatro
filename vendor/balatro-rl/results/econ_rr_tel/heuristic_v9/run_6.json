@@ -1,0 +1,218 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 57,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_credit_card",
+  "j_cloud_9",
+  "j_delayed_grat",
+  "j_todo_list"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_lovers"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_selzer",
+   "j_credit_card",
+   "j_cloud_9",
+   "j_delayed_grat",
+   "j_todo_list"
+  ],
+  "money_spent": 53,
+  "best_score": 2788,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    56
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_selzer"
+    ],
+    270
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_selzer"
+    ],
+    168
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_selzer"
+    ],
+    52
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_selzer"
+    ],
+    100
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_selzer"
+    ],
+    2688
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_selzer"
+    ],
+    450
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_selzer"
+    ],
+    440
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_selzer",
+     "j_todo_list"
+    ],
+    576
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_selzer",
+     "j_todo_list"
+    ],
+    176
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_todo_list"
+    ],
+    184
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_todo_list"
+    ],
+    220
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [
+     "j_credit_card",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_lovers",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 6,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

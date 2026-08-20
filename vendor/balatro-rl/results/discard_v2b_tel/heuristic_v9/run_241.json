@@ -1,0 +1,239 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 83,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_cavendish",
+  "j_hanging_chad",
+  "j_green_joker",
+  "j_fortune_teller",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [
+   "c_high_priestess"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hanging_chad",
+   "j_green_joker",
+   "j_golden"
+  ],
+  "money_spent": 47,
+  "best_score": 3600,
+  "rerolls": 0,
+  "packs_bought": 7,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_cavendish"
+    ],
+    486
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cavendish"
+    ],
+    156
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_cavendish"
+    ],
+    48
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_cavendish"
+    ],
+    888
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_hanging_chad"
+    ],
+    1272
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_hanging_chad"
+    ],
+    1212
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad"
+    ],
+    3600
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    945
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    720
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    480
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    2160
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    630
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    210
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_golden",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    750
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_golden",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    180
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_golden",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    288
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_golden",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    315
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_high_priestess",
+    [
+     "j_cavendish"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 241,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

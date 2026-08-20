@@ -1,0 +1,741 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 183,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_greedy_joker",
+  "j_even_steven",
+  "j_odd_todd",
+  "j_throwback",
+  "j_order"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_star",
+   "c_strength",
+   "c_magician",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_familiar"
+  ],
+  "jokers_bought": [
+   "j_lusty_joker",
+   "j_ice_cream",
+   "j_greedy_joker",
+   "j_superposition",
+   "j_clever",
+   "j_even_steven",
+   "j_sly",
+   "j_rough_gem",
+   "j_faceless",
+   "j_to_the_moon",
+   "j_cloud_9",
+   "j_fortune_teller",
+   "j_selzer",
+   "j_odd_todd",
+   "j_mystic_summit",
+   "j_egg",
+   "j_throwback",
+   "j_order"
+  ],
+  "money_spent": 179,
+  "best_score": 25980,
+  "rerolls": 6,
+  "packs_bought": 10,
+  "packs_opened": 8,
+  "jokers_sold": [
+   [
+    2,
+    "j_superposition"
+   ],
+   [
+    2,
+    "j_clever"
+   ],
+   [
+    3,
+    "j_lusty_joker"
+   ],
+   [
+    3,
+    "j_ice_cream"
+   ],
+   [
+    3,
+    "j_faceless"
+   ],
+   [
+    4,
+    "j_to_the_moon"
+   ],
+   [
+    4,
+    "j_cloud_9"
+   ],
+   [
+    4,
+    "j_fortune_teller"
+   ],
+   [
+    4,
+    "j_sly"
+   ],
+   [
+    5,
+    "j_rough_gem"
+   ],
+   [
+    5,
+    "j_mystic_summit"
+   ],
+   [
+    5,
+    "j_egg"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_lusty_joker"
+    ],
+    790
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ice_cream",
+     "j_lusty_joker"
+    ],
+    1050
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_superposition"
+    ],
+    660
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_superposition"
+    ],
+    600
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_superposition"
+    ],
+    995
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_clever",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_superposition"
+    ],
+    360
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_lusty_joker"
+    ],
+    1448
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_clever",
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_lusty_joker"
+    ],
+    445
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    1677
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    700
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_rough_gem",
+     "j_sly"
+    ],
+    4179
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_sly"
+    ],
+    2124
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_sly"
+    ],
+    1602
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_sly"
+    ],
+    295
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_sly"
+    ],
+    1890
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_sly"
+    ],
+    4550
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_sly"
+    ],
+    3696
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_sly"
+    ],
+    3388
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_sly"
+    ],
+    356
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_sly"
+    ],
+    120
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_selzer",
+     "j_sly"
+    ],
+    6672
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_selzer"
+    ],
+    5764
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_selzer"
+    ],
+    5360
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_selzer"
+    ],
+    9052
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_selzer"
+    ],
+    508
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_selzer"
+    ],
+    9760
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_selzer"
+    ],
+    13356
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_selzer"
+    ],
+    7192
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_selzer"
+    ],
+    5432
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_throwback"
+    ],
+    10950
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_throwback"
+    ],
+    2904
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_throwback"
+    ],
+    1080
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_throwback"
+    ],
+    6396
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_order",
+     "j_throwback"
+    ],
+    1420
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_order",
+     "j_throwback"
+    ],
+    2838
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_order",
+     "j_throwback"
+    ],
+    3255
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_order",
+     "j_throwback"
+    ],
+    2064
+   ]
+  ],
+  "consumable_uses": [
+   [
+    4,
+    "c_magician",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_sly",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_star",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_greedy_joker",
+     "j_rough_gem",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_strength",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_magician",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_mystic_summit",
+     "j_odd_todd",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_magician",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_throwback"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Purple"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Gold"
+     }
+    ]
+   ],
+   [
+    6,
+    "s_familiar",
+    [
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_odd_todd",
+     "j_throwback"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 150,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

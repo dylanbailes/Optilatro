@@ -1,0 +1,293 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 73,
+ "truncated": false,
+ "dollars": 24,
+ "jokers": [
+  "j_gluttenous_joker",
+  "j_gros_michel",
+  "j_campfire",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gluttenous_joker",
+   "j_reserved_parking",
+   "j_ride_the_bus",
+   "j_gros_michel",
+   "j_campfire",
+   "j_sock_and_buskin",
+   "j_splash"
+  ],
+  "money_spent": 47,
+  "best_score": 3497,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    2,
+    "j_ride_the_bus"
+   ],
+   [
+    3,
+    "j_sock_and_buskin"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    36
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_gluttenous_joker"
+    ],
+    1387
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking"
+    ],
+    350
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking"
+    ],
+    230
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking"
+    ],
+    120
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    518
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    150
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    345
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    1160
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    396
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_sock_and_buskin"
+    ],
+    1181
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_sock_and_buskin"
+    ],
+    800
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    1665
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    918
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash"
+    ],
+    2080
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash"
+    ],
+    1417
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash"
+    ],
+    1966
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_splash"
+    ],
+    1386
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_temperance",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_campfire",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 120,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

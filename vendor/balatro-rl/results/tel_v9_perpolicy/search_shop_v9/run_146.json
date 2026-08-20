@@ -1,0 +1,282 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 81,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_half",
+  "j_gluttenous_joker",
+  "j_hanging_chad",
+  "j_misprint",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon",
+   "c_lovers"
+  ],
+  "planets": [
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_half",
+   "j_gluttenous_joker",
+   "j_hanging_chad",
+   "j_misprint",
+   "j_greedy_joker"
+  ],
+  "money_spent": 50,
+  "best_score": 3262,
+  "rerolls": 1,
+  "packs_bought": 4,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    344
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half"
+    ],
+    704
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    336
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    288
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    962
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    660
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    572
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    384
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    315
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    440
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    988
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    770
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    704
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    528
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_hanging_chad"
+    ],
+    2475
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_hanging_chad"
+    ],
+    750
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_half",
+     "j_hanging_chad",
+     "j_misprint"
+    ],
+    1677
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_half",
+     "j_hanging_chad",
+     "j_misprint"
+    ],
+    675
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_greedy_joker",
+     "j_half",
+     "j_hanging_chad",
+     "j_misprint"
+    ],
+    910
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_moon",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_pluto",
+    [
+     "j_gluttenous_joker",
+     "j_half"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 146,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_search_shop_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,114 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 33,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_square",
+  "j_golden",
+  "j_lucky_cat"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_square"
+  ],
+  "money_spent": 18,
+  "best_score": 547,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_square"
+    ],
+    128
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_golden",
+     "j_square"
+    ],
+    316
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_golden",
+     "j_square"
+    ],
+    40
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_golden",
+     "j_lucky_cat",
+     "j_square"
+    ],
+    332
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_lucky_cat",
+     "j_square"
+    ],
+    140
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_golden",
+     "j_lucky_cat",
+     "j_square"
+    ],
+    52
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_golden",
+     "j_lucky_cat",
+     "j_square"
+    ],
+    23
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 99,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

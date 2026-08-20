@@ -1,0 +1,199 @@
+{
+  "bosses": {
+    "bl_amber": {
+      "effect": "Flips all Jokers face down and shuffles their positions",
+      "finisher": true,
+      "min_ante": 8,
+      "name": "Amber Acorn"
+    },
+    "bl_cerulean": {
+      "effect": "Forces a random card to always be selected each hand",
+      "finisher": true,
+      "min_ante": 8,
+      "name": "Cerulean Bell"
+    },
+    "bl_club": {
+      "effect": "Debuffs all Club cards",
+      "finisher": false,
+      "min_ante": 1,
+      "name": "The Club"
+    },
+    "bl_crimson": {
+      "effect": "Debuffs a random Joker each hand",
+      "finisher": true,
+      "min_ante": 8,
+      "name": "Crimson Heart"
+    },
+    "bl_eye": {
+      "effect": "Cannot play the same poker hand type twice in a row",
+      "finisher": false,
+      "min_ante": 3,
+      "name": "The Eye"
+    },
+    "bl_fish": {
+      "effect": "Cards are drawn face down after each played/discarded hand, accumulating",
+      "finisher": false,
+      "min_ante": 2,
+      "name": "The Fish"
+    },
+    "bl_flint": {
+      "effect": "Halves all base Chips and Mult for played hands",
+      "finisher": false,
+      "min_ante": 2,
+      "name": "The Flint"
+    },
+    "bl_goad": {
+      "effect": "Debuffs all Spade cards",
+      "finisher": false,
+      "min_ante": 1,
+      "name": "The Goad"
+    },
+    "bl_grim": {
+      "effect": "Decreases the level of the played poker hand by 1 (floor of level 1; permanent for the rest of the run)",
+      "finisher": false,
+      "min_ante": 2,
+      "name": "The Arm"
+    },
+    "bl_head": {
+      "effect": "Debuffs all Heart cards",
+      "finisher": false,
+      "min_ante": 1,
+      "name": "The Head"
+    },
+    "bl_hook": {
+      "effect": "Discards 2 random unplayed cards after every played hand",
+      "finisher": false,
+      "min_ante": 1,
+      "name": "The Hook"
+    },
+    "bl_house": {
+      "effect": "First hand of the round is dealt face down",
+      "finisher": false,
+      "min_ante": 2,
+      "name": "The House"
+    },
+    "bl_manacle": {
+      "effect": "-1 hand size",
+      "finisher": false,
+      "min_ante": 1,
+      "name": "The Manacle"
+    },
+    "bl_mark": {
+      "effect": "Face cards are dealt face down",
+      "finisher": false,
+      "min_ante": 2,
+      "name": "The Mark"
+    },
+    "bl_mouth": {
+      "effect": "Only the poker hand type of the first played hand can be played this round",
+      "finisher": false,
+      "min_ante": 2,
+      "name": "The Mouth"
+    },
+    "bl_needle": {
+      "effect": "Only 1 hand may be played the entire round (score requirement is 1x base \u2014 see Section 16)",
+      "finisher": false,
+      "min_ante": 2,
+      "name": "The Needle"
+    },
+    "bl_ox": {
+      "effect": "Sets money to $0 when your most-played poker hand is played",
+      "finisher": false,
+      "min_ante": 6,
+      "name": "The Ox"
+    },
+    "bl_pillar": {
+      "effect": "Cards already played earlier this Ante are debuffed",
+      "finisher": false,
+      "min_ante": 1,
+      "name": "The Pillar"
+    },
+    "bl_plant": {
+      "effect": "Debuffs all face cards",
+      "finisher": false,
+      "min_ante": 4,
+      "name": "The Plant"
+    },
+    "bl_psychic": {
+      "effect": "Must play exactly 5 cards every hand",
+      "finisher": false,
+      "min_ante": 1,
+      "name": "The Psychic"
+    },
+    "bl_serpent": {
+      "effect": "Draw 3 cards after each played/discarded hand, regardless of hand size",
+      "finisher": false,
+      "min_ante": 5,
+      "name": "The Serpent"
+    },
+    "bl_tooth": {
+      "effect": "Lose $1 per card played",
+      "finisher": false,
+      "min_ante": 3,
+      "name": "The Tooth"
+    },
+    "bl_verdant": {
+      "effect": "All cards are debuffed until a Joker is sold",
+      "finisher": true,
+      "min_ante": 8,
+      "name": "Verdant Leaf"
+    },
+    "bl_violet": {
+      "effect": "Requires 6x base Chips instead of 2x",
+      "finisher": true,
+      "min_ante": 8,
+      "name": "Violet Vessel"
+    },
+    "bl_wall": {
+      "effect": "Requires 4x base Chips instead of 2x",
+      "finisher": false,
+      "min_ante": 2,
+      "name": "The Wall"
+    },
+    "bl_water": {
+      "effect": "Start the round with 0 discards",
+      "finisher": false,
+      "min_ante": 2,
+      "name": "The Water"
+    },
+    "bl_wheel": {
+      "effect": "1 in 7 chance for each card *drawn* (not played) to be dealt face down",
+      "finisher": false,
+      "min_ante": 2,
+      "name": "The Wheel"
+    },
+    "bl_window": {
+      "effect": "Debuffs all Diamond cards",
+      "finisher": false,
+      "min_ante": 1,
+      "name": "The Window"
+    }
+  },
+  "matador": [
+    "bl_ox",
+    "bl_grim",
+    "bl_club",
+    "bl_psychic",
+    "bl_goad",
+    "bl_window",
+    "bl_eye",
+    "bl_mouth",
+    "bl_plant",
+    "bl_pillar",
+    "bl_head",
+    "bl_flint",
+    "bl_verdant"
+  ],
+  "scaling": {
+    "bl_needle": 1,
+    "bl_violet": 6,
+    "bl_wall": 4
+  },
+  "showdown": [
+    "bl_amber",
+    "bl_cerulean",
+    "bl_crimson",
+    "bl_verdant",
+    "bl_violet"
+  ]
+}

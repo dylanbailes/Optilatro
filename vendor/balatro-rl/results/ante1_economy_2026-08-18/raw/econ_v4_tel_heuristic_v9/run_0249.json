@@ -1,0 +1,798 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 206,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_jolly",
+  "j_hallucination",
+  "j_stuntman",
+  "j_order",
+  "j_walkie_talkie"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_high_priestess",
+   "c_hanged_man",
+   "c_temperance",
+   "c_temperance",
+   "c_death",
+   "c_death",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus",
+   "pl_mercury",
+   "pl_pluto",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_greedy_joker",
+   "j_jolly",
+   "j_8_ball",
+   "j_hallucination",
+   "j_stuntman",
+   "j_golden",
+   "j_odd_todd",
+   "j_red_card",
+   "j_order",
+   "j_popcorn",
+   "j_walkie_talkie"
+  ],
+  "money_spent": 208,
+  "best_score": 46641,
+  "rerolls": 4,
+  "packs_bought": 22,
+  "packs_opened": 13,
+  "jokers_sold": [
+   [
+    2,
+    "j_cloud_9"
+   ],
+   [
+    2,
+    "j_8_ball"
+   ],
+   [
+    3,
+    "j_greedy_joker"
+   ],
+   [
+    4,
+    "j_diet_cola"
+   ],
+   [
+    4,
+    "j_golden"
+   ],
+   [
+    4,
+    "j_odd_todd"
+   ],
+   [
+    4,
+    "j_red_card"
+   ],
+   [
+    5,
+    "j_constellation"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    32
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_cloud_9"
+    ],
+    372
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_cloud_9"
+    ],
+    92
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_cloud_9",
+     "j_greedy_joker"
+    ],
+    372
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_cloud_9",
+     "j_greedy_joker"
+    ],
+    200
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_greedy_joker"
+    ],
+    60
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker"
+    ],
+    400
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_cloud_9",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker"
+    ],
+    260
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_cloud_9",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker"
+    ],
+    244
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cloud_9",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker",
+     "j_jolly"
+    ],
+    2016
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker",
+     "j_jolly"
+    ],
+    2556
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    2097
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_constellation",
+     "j_diet_cola",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    2211
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_constellation",
+     "j_diet_cola",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    815
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_constellation",
+     "j_diet_cola",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    4290
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_constellation",
+     "j_diet_cola",
+     "j_hallucination",
+     "j_jolly",
+     "j_stuntman"
+    ],
+    4518
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_constellation",
+     "j_diet_cola",
+     "j_hallucination",
+     "j_jolly",
+     "j_stuntman"
+    ],
+    4418
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_constellation",
+     "j_golden",
+     "j_hallucination",
+     "j_jolly",
+     "j_stuntman"
+    ],
+    7998
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_constellation",
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_stuntman"
+    ],
+    8053
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_constellation",
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_stuntman"
+    ],
+    3675
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_constellation",
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_stuntman"
+    ],
+    6955
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_constellation",
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_stuntman"
+    ],
+    6753
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    16582
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    19836
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    12093
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    10725
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    10387
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    15210
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    12658
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    8725
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    10987
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    15873
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    7267
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    7089
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    12606
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    8644
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    6552
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    7312
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    14850
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    8797
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    10552
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    12442
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_cloud_9",
+     "j_greedy_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_high_priestess",
+    [
+     "j_cloud_9",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker",
+     "j_jolly"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_cloud_9",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker",
+     "j_jolly"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_cloud_9",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker",
+     "j_jolly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_cloud_9",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker",
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_cloud_9",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker",
+     "j_jolly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_8_ball",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker",
+     "j_jolly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_8_ball",
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker",
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_mercury",
+    [
+     "j_constellation",
+     "j_diet_cola",
+     "j_greedy_joker",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_death",
+    [
+     "j_constellation",
+     "j_diet_cola",
+     "j_hallucination",
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_constellation",
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_pluto",
+    [
+     "j_constellation",
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_pluto",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_order",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 249,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,190 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 57,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_scary_face",
+  "j_arrowhead",
+  "j_cloud_9",
+  "j_8_ball",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_cloud_9",
+   "j_8_ball",
+   "j_golden"
+  ],
+  "money_spent": 44,
+  "best_score": 2192,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    40
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    600
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    580
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    96
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_arrowhead",
+     "j_cloud_9",
+     "j_scary_face"
+    ],
+    1560
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_8_ball",
+     "j_arrowhead",
+     "j_cloud_9",
+     "j_scary_face"
+    ],
+    928
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_8_ball",
+     "j_arrowhead",
+     "j_cloud_9",
+     "j_scary_face"
+    ],
+    416
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_arrowhead",
+     "j_cloud_9",
+     "j_golden",
+     "j_scary_face"
+    ],
+    584
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_8_ball",
+     "j_arrowhead",
+     "j_cloud_9",
+     "j_golden",
+     "j_scary_face"
+    ],
+    960
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_arrowhead",
+     "j_cloud_9",
+     "j_golden",
+     "j_scary_face"
+    ],
+    200
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_arrowhead",
+     "j_cloud_9",
+     "j_golden",
+     "j_scary_face"
+    ],
+    448
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_arrowhead",
+     "j_scary_face"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_8_ball",
+     "j_arrowhead",
+     "j_cloud_9",
+     "j_golden",
+     "j_scary_face"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 260,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

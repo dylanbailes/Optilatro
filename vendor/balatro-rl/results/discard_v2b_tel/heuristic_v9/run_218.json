@@ -1,0 +1,157 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 40,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_business",
+  "j_delayed_grat"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_venus",
+   "pl_venus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_delayed_grat"
+  ],
+  "money_spent": 21,
+  "best_score": 780,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    264
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    56
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_business"
+    ],
+    264
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_business"
+    ],
+    189
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_business",
+     "j_delayed_grat"
+    ],
+    260
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_business",
+     "j_delayed_grat"
+    ],
+    260
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_delayed_grat"
+    ],
+    156
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_delayed_grat"
+    ],
+    120
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_delayed_grat"
+    ],
+    44
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_business",
+     "j_delayed_grat"
+    ],
+    308
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_delayed_grat"
+    ],
+    308
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_venus",
+    [
+     "j_business",
+     "j_delayed_grat"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_venus",
+    [
+     "j_business",
+     "j_delayed_grat"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 218,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

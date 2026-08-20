@@ -1,0 +1,71 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 24,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_swashbuckler",
+  "j_rocket",
+  "j_cavendish"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_earth"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_swashbuckler",
+   "j_cavendish"
+  ],
+  "money_spent": 16,
+  "best_score": 672,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    308
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_rocket",
+     "j_swashbuckler"
+    ],
+    672
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_earth",
+    [
+     "j_cavendish",
+     "j_rocket",
+     "j_swashbuckler"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 211,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_search_shop_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

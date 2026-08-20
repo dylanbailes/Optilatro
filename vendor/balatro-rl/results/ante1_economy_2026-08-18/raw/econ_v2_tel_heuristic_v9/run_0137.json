@@ -1,0 +1,204 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 54,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_hallucination",
+  "j_lucky_cat",
+  "j_sly"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_lucky_cat",
+   "j_sly"
+  ],
+  "money_spent": 18,
+  "best_score": 828,
+  "rerolls": 1,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    124
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    126
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    56
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_hallucination"
+    ],
+    312
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hallucination"
+    ],
+    100
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hallucination"
+    ],
+    32
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_hallucination"
+    ],
+    8
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_lucky_cat"
+    ],
+    72
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_lucky_cat"
+    ],
+    28
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hallucination",
+     "j_lucky_cat"
+    ],
+    280
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_hallucination",
+     "j_lucky_cat"
+    ],
+    280
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_lucky_cat"
+    ],
+    124
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_hallucination",
+     "j_lucky_cat"
+    ],
+    292
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_lucky_cat"
+    ],
+    120
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_hallucination",
+     "j_lucky_cat"
+    ],
+    292
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_lucky_cat",
+     "j_sly"
+    ],
+    200
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_lucky_cat",
+     "j_sly"
+    ],
+    188
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_lucky_cat",
+     "j_sly"
+    ],
+    160
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_lucky_cat",
+     "j_sly"
+    ],
+    200
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 137,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

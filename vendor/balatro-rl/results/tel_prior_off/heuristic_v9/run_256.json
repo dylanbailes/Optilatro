@@ -1,0 +1,234 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 53,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_splash",
+  "j_stencil",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_lovers"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_splash",
+   "j_greedy_joker"
+  ],
+  "money_spent": 35,
+  "best_score": 1900,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    200
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_splash",
+     "j_stencil"
+    ],
+    348
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_splash",
+     "j_stencil"
+    ],
+    120
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    460
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    172
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    612
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    280
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    1100
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    120
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    720
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    592
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    276
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    16
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    800
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    660
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    260
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    180
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_lovers",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 256,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

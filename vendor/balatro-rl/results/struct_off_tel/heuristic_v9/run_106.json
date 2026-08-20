@@ -1,0 +1,111 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 19,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_troubadour",
+  "j_mystic_summit"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mystic_summit"
+  ],
+  "money_spent": 11,
+  "best_score": 556,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    124
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    88
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    80
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    40
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_troubadour"
+    ],
+    316
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_troubadour"
+    ],
+    240
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mystic_summit",
+     "j_troubadour"
+    ],
+    184
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mystic_summit",
+     "j_troubadour"
+    ],
+    184
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_mystic_summit",
+     "j_troubadour"
+    ],
+    66
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 106,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

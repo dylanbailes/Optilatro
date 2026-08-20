@@ -1,0 +1,220 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 64,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_madness"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_empress"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ramen",
+   "j_madness",
+   "j_joker",
+   "j_seeing_double",
+   "j_hologram"
+  ],
+  "money_spent": 45,
+  "best_score": 2820,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ramen"
+    ],
+    437
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ramen"
+    ],
+    87
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_madness",
+     "j_ramen"
+    ],
+    628
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    522
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    378
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    744
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    714
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    1216
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    384
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    1840
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    270
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_madness"
+    ],
+    852
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_madness"
+    ],
+    948
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_madness"
+    ],
+    180
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_madness"
+    ],
+    840
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_empress",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 105,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

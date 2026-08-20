@@ -1,0 +1,262 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 88,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_madness",
+  "j_sly"
+ ],
+ "stats": {
+  "tarots": [
+   "c_lovers",
+   "c_hierophant",
+   "c_hanged_man"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scholar",
+   "j_popcorn",
+   "j_sly"
+  ],
+  "money_spent": 54,
+  "best_score": 4525,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    84
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_madness"
+    ],
+    558
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_madness"
+    ],
+    288
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_madness"
+    ],
+    384
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_madness"
+    ],
+    632
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_madness"
+    ],
+    240
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_madness"
+    ],
+    700
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_madness"
+    ],
+    610
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_madness"
+    ],
+    1130
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_madness"
+    ],
+    700
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_madness"
+    ],
+    2919
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_madness"
+    ],
+    1120
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_madness"
+    ],
+    3405
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_madness",
+     "j_sly"
+    ],
+    798
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_madness",
+     "j_sly"
+    ],
+    756
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_madness",
+     "j_sly"
+    ],
+    682
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_madness",
+     "j_sly"
+    ],
+    357
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_lovers",
+    [
+     "j_madness"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_madness"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_madness"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_madness"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 189,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

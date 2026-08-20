@@ -1,0 +1,238 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 70,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_todo_list",
+  "j_ticket",
+  "j_credit_card",
+  "j_hanging_chad"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_fool",
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_jupiter",
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gros_michel",
+   "j_credit_card",
+   "j_hanging_chad"
+  ],
+  "money_spent": 63,
+  "best_score": 1981,
+  "rerolls": 1,
+  "packs_bought": 8,
+  "packs_opened": 5,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    162
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    280
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_gros_michel",
+     "j_todo_list"
+    ],
+    1080
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    1122
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    1326
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    460
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    440
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    480
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    420
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    321
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    1240
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_hanging_chad",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    260
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_hanging_chad",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    488
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_hanging_chad",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    496
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_hanging_chad",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    560
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hermit",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_jupiter",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_jupiter",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 89,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

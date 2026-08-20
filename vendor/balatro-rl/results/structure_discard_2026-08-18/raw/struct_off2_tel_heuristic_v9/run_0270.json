@@ -1,0 +1,303 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 93,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_joker",
+  "j_mail",
+  "j_odd_todd",
+  "j_red_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_hierophant"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_odd_todd",
+   "j_red_card"
+  ],
+  "money_spent": 50,
+  "best_score": 2380,
+  "rerolls": 1,
+  "packs_bought": 7,
+  "packs_opened": 5,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_joker"
+    ],
+    720
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    378
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    80
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    75
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    70
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    648
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    600
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    552
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    228
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    568
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_joker",
+     "j_mail",
+     "j_odd_todd"
+    ],
+    960
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_joker",
+     "j_mail",
+     "j_odd_todd"
+    ],
+    1112
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_mail",
+     "j_odd_todd"
+    ],
+    1372
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_joker",
+     "j_mail",
+     "j_odd_todd"
+    ],
+    540
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_joker",
+     "j_mail",
+     "j_odd_todd"
+    ],
+    468
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_mail",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    924
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_mail",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    952
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_joker",
+     "j_mail",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    235
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_joker",
+     "j_mail",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    180
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_joker",
+     "j_mail",
+     "j_odd_todd"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 270,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,216 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 61,
+ "truncated": false,
+ "dollars": 19,
+ "jokers": [
+  "j_stencil",
+  "j_blue_joker",
+  "j_smiley"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant",
+   "c_empress"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_stencil",
+   "j_blue_joker",
+   "j_smiley"
+  ],
+  "money_spent": 40,
+  "best_score": 3686,
+  "rerolls": 2,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_stencil"
+    ],
+    1104
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_stencil"
+    ],
+    624
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    1236
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    1188
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    448
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    1704
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    1224
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    2448
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    2736
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    950
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    3216
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hierophant",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 237,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,300 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 87,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_business",
+  "j_wily",
+  "j_wrathful_joker",
+  "j_half",
+  "j_hanging_chad"
+ ],
+ "stats": {
+  "tarots": [
+   "c_strength",
+   "c_wheel_of_fortune",
+   "c_world"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_business",
+   "j_wily",
+   "j_wrathful_joker",
+   "j_half",
+   "j_hanging_chad"
+  ],
+  "money_spent": 60,
+  "best_score": 4088,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    284
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_business"
+    ],
+    140
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_business"
+    ],
+    320
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_business"
+    ],
+    284
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    816
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    480
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    448
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    124
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    444
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    532
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    2470
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_business",
+     "j_half",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    1536
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_business",
+     "j_half",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    1239
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_business",
+     "j_half",
+     "j_hanging_chad",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    2460
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hanging_chad",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    1628
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_business",
+     "j_half",
+     "j_hanging_chad",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    1659
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_business",
+     "j_half",
+     "j_hanging_chad",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    1281
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_strength",
+    [
+     "j_business"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_business",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_world",
+    [
+     "j_business",
+     "j_half",
+     "j_wily",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 162,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_search_shop_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

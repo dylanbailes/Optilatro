@@ -1,0 +1,252 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 76,
+ "truncated": false,
+ "dollars": 18,
+ "jokers": [
+  "j_lusty_joker",
+  "j_throwback",
+  "j_scholar",
+  "j_shoot_the_moon"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_throwback",
+   "j_scholar",
+   "j_ticket",
+   "j_ride_the_bus",
+   "j_shoot_the_moon"
+  ],
+  "money_spent": 44,
+  "best_score": 3484,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_ride_the_bus"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_lusty_joker",
+     "j_throwback"
+    ],
+    328
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_lusty_joker",
+     "j_throwback"
+    ],
+    1216
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_lusty_joker",
+     "j_throwback"
+    ],
+    962
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_throwback"
+    ],
+    392
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_throwback"
+    ],
+    869
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_throwback",
+     "j_ticket"
+    ],
+    1408
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_throwback",
+     "j_ticket"
+    ],
+    1515
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_throwback",
+     "j_ticket"
+    ],
+    150
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    2100
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    3484
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    225
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    60
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    432
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    42
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_empress",
+    [
+     "j_lusty_joker",
+     "j_scholar",
+     "j_throwback"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_lusty_joker",
+     "j_ride_the_bus",
+     "j_scholar",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 128,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

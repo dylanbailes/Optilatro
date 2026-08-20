@@ -1,0 +1,328 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 129,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_madness"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_madness",
+   "j_fortune_teller",
+   "j_jolly",
+   "j_raised_fist",
+   "j_hologram",
+   "j_ride_the_bus",
+   "j_banner",
+   "j_joker",
+   "j_arrowhead"
+  ],
+  "money_spent": 107,
+  "best_score": 25987,
+  "rerolls": 3,
+  "packs_bought": 10,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    240
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_madness"
+    ],
+    462
+   ],
+   [
+    1,
+    "Straight Flush",
+    [
+     "j_fortune_teller",
+     "j_madness"
+    ],
+    1764
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_fortune_teller",
+     "j_madness"
+    ],
+    640
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_fortune_teller",
+     "j_madness"
+    ],
+    216
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_madness",
+     "j_raised_fist"
+    ],
+    1980
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    1650
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_jolly",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    4620
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_madness",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    3136
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_madness",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    5320
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_madness",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    13248
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_joker",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    9072
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_joker",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    13230
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_joker",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    12757
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    7440
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_joker",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    4485
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_madness",
+     "j_raised_fist"
+    ],
+    9295
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_madness",
+     "j_raised_fist"
+    ],
+    6776
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_madness",
+     "j_raised_fist"
+    ],
+    1732
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_arrowhead",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    22880
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_madness",
+     "j_raised_fist"
+    ],
+    9048
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_madness",
+     "j_raised_fist"
+    ],
+    5670
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_madness",
+     "j_raised_fist"
+    ],
+    4050
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_madness",
+     "j_raised_fist"
+    ],
+    2970
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_madness"
+    ],
+    2184
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_madness"
+    ],
+    916
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_madness"
+    ],
+    2288
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_madness"
+    ],
+    877
+   ]
+  ],
+  "consumable_uses": [
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_banner",
+     "j_joker",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 187,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_search_shop_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

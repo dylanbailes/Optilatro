@@ -1,0 +1,263 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 54,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_square",
+  "j_faceless",
+  "j_pareidolia"
+ ],
+ "stats": {
+  "tarots": [
+   "c_strength"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_square",
+   "j_faceless"
+  ],
+  "money_spent": 21,
+  "best_score": 1230,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    108
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    92
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_square"
+    ],
+    156
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_square"
+    ],
+    160
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_square"
+    ],
+    66
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_square"
+    ],
+    132
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    120
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    152
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    144
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    440
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    144
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    512
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    168
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    342
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    204
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    508
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    176
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    220
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    78
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    77
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    180
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_strength",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 103,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

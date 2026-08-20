@@ -1,0 +1,862 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 228,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_erosion",
+  "j_even_steven",
+  "j_blue_joker",
+  "j_sock_and_buskin",
+  "j_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_death",
+   "c_devil",
+   "c_lovers",
+   "c_hermit",
+   "c_strength",
+   "c_emperor",
+   "c_fool",
+   "c_judgement",
+   "c_emperor",
+   "c_lovers",
+   "c_temperance",
+   "c_chariot",
+   "c_hermit",
+   "c_death",
+   "c_empress"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hallucination",
+   "j_half",
+   "j_marble",
+   "j_erosion",
+   "j_even_steven",
+   "j_ride_the_bus",
+   "j_red_card",
+   "j_sly",
+   "j_blue_joker",
+   "j_swashbuckler",
+   "j_sock_and_buskin",
+   "j_faceless",
+   "j_joker"
+  ],
+  "money_spent": 175,
+  "best_score": 36877,
+  "rerolls": 4,
+  "packs_bought": 17,
+  "packs_opened": 13,
+  "jokers_sold": [
+   [
+    3,
+    "j_hallucination"
+   ],
+   [
+    4,
+    "j_half"
+   ],
+   [
+    4,
+    "j_marble"
+   ],
+   [
+    4,
+    "j_drunkard"
+   ],
+   [
+    4,
+    "j_red_card"
+   ],
+   [
+    4,
+    "j_ride_the_bus"
+   ],
+   [
+    5,
+    "j_hanging_chad"
+   ],
+   [
+    5,
+    "j_swashbuckler"
+   ],
+   [
+    5,
+    "j_sly"
+   ],
+   [
+    5,
+    "j_faceless"
+   ],
+   [
+    5,
+    "j_golden"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    153
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    356
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hallucination"
+    ],
+    616
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_hallucination"
+    ],
+    660
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_half",
+     "j_hallucination"
+    ],
+    147
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_hallucination",
+     "j_marble"
+    ],
+    528
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_hallucination",
+     "j_marble"
+    ],
+    572
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_hallucination",
+     "j_marble"
+    ],
+    308
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_hallucination",
+     "j_hanging_chad",
+     "j_marble"
+    ],
+    1100
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_hallucination",
+     "j_hanging_chad",
+     "j_marble"
+    ],
+    528
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_half",
+     "j_hallucination",
+     "j_hanging_chad",
+     "j_marble"
+    ],
+    1100
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_half",
+     "j_hallucination",
+     "j_hanging_chad",
+     "j_marble"
+    ],
+    1716
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_erosion",
+     "j_half",
+     "j_hallucination",
+     "j_hanging_chad",
+     "j_marble"
+    ],
+    7595
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_erosion",
+     "j_half",
+     "j_hanging_chad",
+     "j_marble"
+    ],
+    8512
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_half",
+     "j_hanging_chad",
+     "j_marble"
+    ],
+    3672
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_half",
+     "j_hanging_chad",
+     "j_marble"
+    ],
+    1620
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_red_card",
+     "j_ride_the_bus"
+    ],
+    1848
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_red_card",
+     "j_ride_the_bus"
+    ],
+    5418
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_red_card",
+     "j_ride_the_bus"
+    ],
+    2340
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    1080
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    4865
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    4368
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_sly"
+    ],
+    3820
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_sly"
+    ],
+    7412
+   ],
+   [
+    5,
+    "Four of a Kind",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_faceless",
+     "j_sock_and_buskin"
+    ],
+    13572
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_faceless",
+     "j_sock_and_buskin"
+    ],
+    3737
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_faceless",
+     "j_sock_and_buskin"
+    ],
+    8320
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_faceless",
+     "j_sock_and_buskin"
+    ],
+    9248
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_faceless",
+     "j_sock_and_buskin"
+    ],
+    4455
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    5160
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    8820
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    6156
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    7164
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    18944
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    5589
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    9240
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    7912
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    11025
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    8700
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_empress",
+    [
+     "j_hallucination"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_hallucination"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_devil",
+    [
+     "j_hallucination"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_half",
+     "j_hallucination",
+     "j_hanging_chad",
+     "j_marble"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_half",
+     "j_hallucination",
+     "j_hanging_chad",
+     "j_marble"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_half",
+     "j_hallucination",
+     "j_hanging_chad",
+     "j_marble"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_emperor",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_marble",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_marble",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_judgement",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_emperor",
+    [
+     "j_drunkard",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_lovers",
+    [
+     "j_drunkard",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_ride_the_bus"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_temperance",
+    [
+     "j_drunkard",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_red_card",
+     "j_ride_the_bus"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_sly",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "Gold",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_empress",
+    [
+     "j_blue_joker",
+     "j_erosion",
+     "j_even_steven",
+     "j_joker",
+     "j_sock_and_buskin"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 199,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

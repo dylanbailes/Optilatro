@@ -1,0 +1,188 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 41,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_throwback",
+  "j_egg",
+  "j_ticket"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress"
+  ],
+  "planets": [
+   "pl_venus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_throwback",
+   "j_ticket"
+  ],
+  "money_spent": 25,
+  "best_score": 804,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_egg",
+     "j_throwback"
+    ],
+    320
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_egg",
+     "j_throwback"
+    ],
+    153
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_throwback"
+    ],
+    120
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_egg",
+     "j_throwback"
+    ],
+    270
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_egg",
+     "j_throwback"
+    ],
+    260
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_throwback"
+    ],
+    220
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_egg",
+     "j_throwback"
+    ],
+    584
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_egg",
+     "j_throwback",
+     "j_ticket"
+    ],
+    295
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_egg",
+     "j_throwback",
+     "j_ticket"
+    ],
+    288
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_throwback",
+     "j_ticket"
+    ],
+    76
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_throwback",
+     "j_ticket"
+    ],
+    48
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_venus",
+    [
+     "j_egg",
+     "j_throwback"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_empress",
+    [
+     "j_egg",
+     "j_throwback"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 128,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

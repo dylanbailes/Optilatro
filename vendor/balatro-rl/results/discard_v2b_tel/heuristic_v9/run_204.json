@@ -1,0 +1,907 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 229,
+ "truncated": false,
+ "dollars": 20,
+ "jokers": [
+  "j_madness",
+  "j_ride_the_bus",
+  "j_mystic_summit"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon",
+   "c_chariot",
+   "c_empress",
+   "c_fool",
+   "c_empress",
+   "c_star",
+   "c_hierophant",
+   "c_devil",
+   "c_hermit",
+   "c_judgement",
+   "c_hanged_man",
+   "c_fool",
+   "c_hanged_man",
+   "c_death",
+   "c_chariot",
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_immolate"
+  ],
+  "jokers_bought": [
+   "j_hologram",
+   "j_selzer",
+   "j_cartomancer",
+   "j_scholar",
+   "j_madness",
+   "j_rocket",
+   "j_mystic_summit",
+   "j_sly",
+   "j_green_joker",
+   "j_misprint",
+   "j_greedy_joker",
+   "j_lucky_cat",
+   "j_green_joker",
+   "j_mad",
+   "j_clever",
+   "j_ride_the_bus",
+   "j_even_steven",
+   "j_hack",
+   "j_riff_raff",
+   "j_egg",
+   "j_mystic_summit",
+   "j_rocket"
+  ],
+  "money_spent": 183,
+  "best_score": 33105,
+  "rerolls": 4,
+  "packs_bought": 9,
+  "packs_opened": 7,
+  "jokers_sold": [
+   [
+    2,
+    "j_hologram"
+   ],
+   [
+    3,
+    "j_rocket"
+   ],
+   [
+    4,
+    "j_greedy_joker"
+   ],
+   [
+    4,
+    "j_lucky_cat"
+   ],
+   [
+    4,
+    "j_dusk"
+   ],
+   [
+    4,
+    "j_green_joker"
+   ],
+   [
+    4,
+    "j_mad"
+   ],
+   [
+    5,
+    "j_clever"
+   ],
+   [
+    6,
+    "j_hack"
+   ],
+   [
+    6,
+    "j_riff_raff"
+   ],
+   [
+    6,
+    "j_egg"
+   ],
+   [
+    6,
+    "j_rocket"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hologram"
+    ],
+    360
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hologram"
+    ],
+    108
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hologram",
+     "j_selzer"
+    ],
+    432
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hologram",
+     "j_selzer"
+    ],
+    192
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_cartomancer",
+     "j_hologram",
+     "j_selzer"
+    ],
+    708
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cartomancer",
+     "j_hologram",
+     "j_selzer"
+    ],
+    152
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cartomancer",
+     "j_hologram",
+     "j_scholar",
+     "j_selzer"
+    ],
+    3312
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_cartomancer",
+     "j_hologram",
+     "j_madness",
+     "j_scholar",
+     "j_selzer"
+    ],
+    760
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cartomancer",
+     "j_hologram",
+     "j_madness",
+     "j_scholar",
+     "j_selzer"
+    ],
+    200
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_cartomancer",
+     "j_hologram",
+     "j_madness",
+     "j_scholar",
+     "j_selzer"
+    ],
+    644
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_rocket",
+     "j_scholar"
+    ],
+    2520
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_mystic_summit"
+    ],
+    3444
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    2464
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    8058
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    3380
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    5440
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    8190
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_cartomancer",
+     "j_lucky_cat",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    7581
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_cartomancer",
+     "j_lucky_cat",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    5400
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cartomancer",
+     "j_clever",
+     "j_madness",
+     "j_sly"
+    ],
+    4914
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_cartomancer",
+     "j_clever",
+     "j_madness",
+     "j_sly"
+    ],
+    3612
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cartomancer",
+     "j_clever",
+     "j_madness",
+     "j_sly"
+    ],
+    1596
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cartomancer",
+     "j_clever",
+     "j_madness",
+     "j_sly"
+    ],
+    882
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_clever",
+     "j_madness",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    5400
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_madness",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    6480
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_clever",
+     "j_madness",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    5166
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_madness",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    20196
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_madness",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    7380
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_madness",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    5985
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_madness",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    4950
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_madness",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    8100
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_madness",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    3024
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_madness",
+     "j_mystic_summit",
+     "j_ride_the_bus"
+    ],
+    14500
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_madness",
+     "j_mystic_summit",
+     "j_ride_the_bus"
+    ],
+    8250
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_madness",
+     "j_mystic_summit",
+     "j_ride_the_bus"
+    ],
+    4550
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_madness",
+     "j_mystic_summit",
+     "j_ride_the_bus"
+    ],
+    5805
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_madness",
+     "j_mystic_summit",
+     "j_ride_the_bus"
+    ],
+    9045
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_madness",
+     "j_mystic_summit",
+     "j_ride_the_bus"
+    ],
+    4400
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_madness",
+     "j_mystic_summit",
+     "j_ride_the_bus"
+    ],
+    5640
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_madness",
+     "j_mystic_summit",
+     "j_ride_the_bus"
+    ],
+    1235
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_moon",
+    [
+     "j_cartomancer",
+     "j_hologram",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_cartomancer",
+     "j_hologram",
+     "j_scholar",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_rocket",
+     "j_scholar",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_rocket",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_empress",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_rocket",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_star",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_mystic_summit"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_hierophant",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_devil",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_judgement",
+    [
+     "j_cartomancer",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hanged_man",
+    [
+     "j_cartomancer",
+     "j_green_joker",
+     "j_madness",
+     "j_mystic_summit",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_cartomancer",
+     "j_clever",
+     "j_madness",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hanged_man",
+    [
+     "j_cartomancer",
+     "j_clever",
+     "j_madness",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_cartomancer",
+     "j_clever",
+     "j_madness",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_chariot",
+    [
+     "j_clever",
+     "j_madness",
+     "j_ride_the_bus",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "s_immolate",
+    [
+     "j_hack",
+     "j_madness",
+     "j_ride_the_bus",
+     "j_riff_raff",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_egg",
+     "j_madness",
+     "j_ride_the_bus",
+     "j_riff_raff",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_hermit",
+    [
+     "j_madness",
+     "j_mystic_summit",
+     "j_ride_the_bus"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 204,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

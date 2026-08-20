@@ -1,0 +1,77 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 20,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_smiley",
+  "j_banner",
+  "j_flash"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_banner"
+  ],
+  "money_spent": 15,
+  "best_score": 1800,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    300
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_banner",
+     "j_smiley"
+    ],
+    1800
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_banner",
+     "j_flash",
+     "j_smiley"
+    ],
+    101
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_banner",
+     "j_flash",
+     "j_smiley"
+    ],
+    105
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 171,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

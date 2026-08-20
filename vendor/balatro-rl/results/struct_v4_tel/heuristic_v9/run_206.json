@@ -1,0 +1,671 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 177,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_seeing_double",
+  "j_scary_face",
+  "j_raised_fist",
+  "j_sock_and_buskin",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_hermit",
+   "c_moon",
+   "c_empress",
+   "c_death",
+   "c_temperance",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_delayed_grat",
+   "j_joker",
+   "j_hanging_chad",
+   "j_green_joker",
+   "j_scary_face",
+   "j_photograph",
+   "j_swashbuckler",
+   "j_swashbuckler",
+   "j_gros_michel",
+   "j_business",
+   "j_ice_cream",
+   "j_golden",
+   "j_faceless",
+   "j_marble",
+   "j_raised_fist",
+   "j_dna",
+   "j_sly",
+   "j_sock_and_buskin",
+   "j_greedy_joker"
+  ],
+  "money_spent": 189,
+  "best_score": 45458,
+  "rerolls": 3,
+  "packs_bought": 12,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    2,
+    "j_delayed_grat"
+   ],
+   [
+    2,
+    "j_green_joker"
+   ],
+   [
+    3,
+    "j_joker"
+   ],
+   [
+    3,
+    "j_hanging_chad"
+   ],
+   [
+    3,
+    "j_swashbuckler"
+   ],
+   [
+    3,
+    "j_swashbuckler"
+   ],
+   [
+    3,
+    "j_business"
+   ],
+   [
+    4,
+    "j_ice_cream"
+   ],
+   [
+    4,
+    "j_golden"
+   ],
+   [
+    4,
+    "j_faceless"
+   ],
+   [
+    5,
+    "j_photograph"
+   ],
+   [
+    5,
+    "j_marble"
+   ],
+   [
+    5,
+    "j_dna"
+   ],
+   [
+    6,
+    "j_sly"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    300
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_seeing_double"
+    ],
+    306
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_seeing_double"
+    ],
+    92
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_seeing_double"
+    ],
+    56
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_seeing_double"
+    ],
+    504
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_joker",
+     "j_seeing_double"
+    ],
+    96
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_joker",
+     "j_seeing_double"
+    ],
+    1280
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_joker",
+     "j_seeing_double"
+    ],
+    756
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_joker",
+     "j_seeing_double"
+    ],
+    644
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_joker",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    3060
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_joker",
+     "j_photograph",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    5440
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_photograph",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_swashbuckler",
+     "j_swashbuckler"
+    ],
+    12240
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_gros_michel",
+     "j_photograph",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_swashbuckler"
+    ],
+    10640
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_gros_michel",
+     "j_photograph",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    2916
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_photograph",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    3996
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_photograph",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    4144
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_photograph",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    3375
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_gros_michel",
+     "j_photograph",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    13176
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_gros_michel",
+     "j_marble",
+     "j_photograph",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    5724
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_gros_michel",
+     "j_marble",
+     "j_photograph",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    4060
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_marble",
+     "j_photograph",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    4860
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_gros_michel",
+     "j_marble",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    13448
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_gros_michel",
+     "j_marble",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    3456
+   ],
+   [
+    5,
+    "Four of a Kind",
+    [
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sly",
+     "j_sock_and_buskin"
+    ],
+    23220
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sly",
+     "j_sock_and_buskin"
+    ],
+    6760
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sly",
+     "j_sock_and_buskin"
+    ],
+    7488
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sly",
+     "j_sock_and_buskin"
+    ],
+    7990
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sly",
+     "j_sock_and_buskin"
+    ],
+    16240
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sly",
+     "j_sock_and_buskin"
+    ],
+    5000
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    6048
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    10296
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_greedy_joker",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    2970
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    3328
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_joker",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_gros_michel",
+     "j_marble",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_moon",
+    [
+     "j_gros_michel",
+     "j_marble",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_gros_michel",
+     "j_marble",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_empress",
+    [
+     "j_dna",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sly",
+     "j_sock_and_buskin"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_death",
+    [
+     "j_greedy_joker",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_greedy_joker",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_wheel_of_fortune",
+    [
+     "j_greedy_joker",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_sock_and_buskin"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 206,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

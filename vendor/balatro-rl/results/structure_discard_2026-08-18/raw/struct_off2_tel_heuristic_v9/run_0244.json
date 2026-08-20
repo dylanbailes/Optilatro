@@ -1,0 +1,183 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 45,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_lusty_joker",
+  "j_crazy",
+  "j_crafty",
+  "j_constellation"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_lusty_joker",
+   "j_crazy",
+   "j_crafty",
+   "j_constellation"
+  ],
+  "money_spent": 28,
+  "best_score": 2812,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    300
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_lusty_joker"
+    ],
+    108
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_crazy",
+     "j_lusty_joker"
+    ],
+    64
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy",
+     "j_lusty_joker"
+    ],
+    28
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_crazy",
+     "j_lusty_joker"
+    ],
+    324
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crafty",
+     "j_crazy",
+     "j_lusty_joker"
+    ],
+    2812
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_crafty",
+     "j_crazy",
+     "j_lusty_joker"
+    ],
+    900
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_constellation",
+     "j_crafty",
+     "j_crazy",
+     "j_lusty_joker"
+    ],
+    330
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_constellation",
+     "j_crafty",
+     "j_crazy",
+     "j_lusty_joker"
+    ],
+    352
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_constellation",
+     "j_crafty",
+     "j_crazy",
+     "j_lusty_joker"
+    ],
+    300
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_constellation",
+     "j_crafty",
+     "j_crazy",
+     "j_lusty_joker"
+    ],
+    56
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_crafty",
+     "j_crazy",
+     "j_lusty_joker"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 244,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 12,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_todo_list",
+  "j_obelisk"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_todo_list"
+  ],
+  "money_spent": 8,
+  "best_score": 344,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    344
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_obelisk",
+     "j_todo_list"
+    ],
+    120
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_obelisk",
+     "j_todo_list"
+    ],
+    43
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_obelisk",
+     "j_todo_list"
+    ],
+    56
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_obelisk",
+     "j_todo_list"
+    ],
+    28
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 174,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

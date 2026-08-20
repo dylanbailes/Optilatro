@@ -1,0 +1,218 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 64,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_odd_todd",
+  "j_red_card",
+  "j_faceless",
+  "j_walkie_talkie"
+ ],
+ "stats": {
+  "tarots": [
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_saturn",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_red_card",
+   "j_faceless",
+   "j_walkie_talkie"
+  ],
+  "money_spent": 40,
+  "best_score": 1731,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    304
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_odd_todd"
+    ],
+    676
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_odd_todd"
+    ],
+    272
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_odd_todd"
+    ],
+    516
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    592
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    232
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    1246
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    1134
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    327
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    135
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    135
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    87
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    123
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    95
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_odd_todd",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    135
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_high_priestess",
+    [
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 192,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

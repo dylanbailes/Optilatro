@@ -1,0 +1,169 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 30,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_fibonacci",
+  "j_idol"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_temperance",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_idol"
+  ],
+  "money_spent": 27,
+  "best_score": 888,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_fibonacci"
+    ],
+    468
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    312
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    576
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    171
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    252
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    117
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_jupiter",
+    [
+     "j_fibonacci"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_magician",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_temperance",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 184,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,288 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 94,
+ "truncated": false,
+ "dollars": 21,
+ "jokers": [
+  "j_scholar",
+  "j_campfire",
+  "j_onyx_agate",
+  "j_scary_face",
+  "j_cloud_9"
+ ],
+ "stats": {
+  "tarots": [
+   "c_lovers"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_red_card",
+   "j_scholar",
+   "j_credit_card",
+   "j_onyx_agate",
+   "j_obelisk",
+   "j_scary_face",
+   "j_certificate",
+   "j_cloud_9"
+  ],
+  "money_spent": 71,
+  "best_score": 7489,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_credit_card"
+   ],
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    3,
+    "j_obelisk"
+   ],
+   [
+    3,
+    "j_odd_todd"
+   ],
+   [
+    4,
+    "j_certificate"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    344
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_odd_todd",
+     "j_red_card"
+    ],
+    468
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_campfire",
+     "j_odd_todd",
+     "j_red_card",
+     "j_scholar"
+    ],
+    624
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_campfire",
+     "j_credit_card",
+     "j_odd_todd",
+     "j_red_card",
+     "j_scholar"
+    ],
+    1485
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_campfire",
+     "j_credit_card",
+     "j_odd_todd",
+     "j_red_card",
+     "j_scholar"
+    ],
+    1441
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_campfire",
+     "j_odd_todd",
+     "j_onyx_agate",
+     "j_red_card",
+     "j_scholar"
+    ],
+    1680
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_campfire",
+     "j_obelisk",
+     "j_odd_todd",
+     "j_onyx_agate",
+     "j_scholar"
+    ],
+    3052
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_campfire",
+     "j_obelisk",
+     "j_odd_todd",
+     "j_onyx_agate",
+     "j_scholar"
+    ],
+    6405
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_campfire",
+     "j_odd_todd",
+     "j_onyx_agate",
+     "j_scholar"
+    ],
+    3780
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_odd_todd",
+     "j_onyx_agate",
+     "j_scholar"
+    ],
+    405
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_campfire",
+     "j_certificate",
+     "j_onyx_agate",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    3802
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_campfire",
+     "j_certificate",
+     "j_onyx_agate",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1200
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_campfire",
+     "j_cloud_9",
+     "j_onyx_agate",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1638
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_campfire",
+     "j_cloud_9",
+     "j_onyx_agate",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    3699
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_campfire",
+     "j_cloud_9",
+     "j_onyx_agate",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1080
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_campfire",
+     "j_cloud_9",
+     "j_onyx_agate",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1072
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_lovers",
+    [
+     "j_campfire",
+     "j_credit_card",
+     "j_odd_todd",
+     "j_red_card",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_jupiter",
+    [
+     "j_campfire",
+     "j_cloud_9",
+     "j_onyx_agate",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 214,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

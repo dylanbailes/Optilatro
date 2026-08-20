@@ -1,0 +1,622 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 173,
+ "truncated": false,
+ "dollars": 21,
+ "jokers": [
+  "j_raised_fist",
+  "j_hallucination",
+  "j_odd_todd",
+  "j_popcorn",
+  "j_business"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_high_priestess",
+   "c_death",
+   "c_magician",
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus",
+   "pl_mercury",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_greedy_joker",
+   "j_raised_fist",
+   "j_jolly",
+   "j_hallucination",
+   "j_golden",
+   "j_odd_todd",
+   "j_popcorn",
+   "j_business"
+  ],
+  "money_spent": 173,
+  "best_score": 23384,
+  "rerolls": 9,
+  "packs_bought": 14,
+  "packs_opened": 8,
+  "jokers_sold": [
+   [
+    2,
+    "j_cloud_9"
+   ],
+   [
+    3,
+    "j_greedy_joker"
+   ],
+   [
+    4,
+    "j_golden"
+   ],
+   [
+    5,
+    "j_sly"
+   ],
+   [
+    6,
+    "j_jolly"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    32
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_cloud_9"
+    ],
+    372
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_cloud_9"
+    ],
+    92
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_cloud_9",
+     "j_greedy_joker"
+    ],
+    372
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_cloud_9",
+     "j_greedy_joker"
+    ],
+    200
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_greedy_joker"
+    ],
+    60
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_greedy_joker",
+     "j_raised_fist"
+    ],
+    570
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_greedy_joker",
+     "j_raised_fist"
+    ],
+    510
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_greedy_joker",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    1216
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_greedy_joker",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    1541
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_cloud_9",
+     "j_greedy_joker",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    63
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    2624
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    1584
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    2755
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    3649
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    375
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    3569
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    2425
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    4352
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_golden",
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    3999
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    6665
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    4416
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    7980
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    3135
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    11248
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    8910
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    12720
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    8640
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    1782
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    12528
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    4600
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    3885
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_business",
+     "j_hallucination",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    10168
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_hallucination",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    2100
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_business",
+     "j_hallucination",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    9072
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_business",
+     "j_hallucination",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    2044
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_cloud_9",
+     "j_greedy_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_high_priestess",
+    [
+     "j_cloud_9",
+     "j_greedy_joker",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_greedy_joker",
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_greedy_joker",
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_mercury",
+    [
+     "j_greedy_joker",
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_death",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Blue"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Gold"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_pluto",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_high_priestess",
+    [
+     "j_hallucination",
+     "j_jolly",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 249,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

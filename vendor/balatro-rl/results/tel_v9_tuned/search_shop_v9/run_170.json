@@ -1,0 +1,105 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 26,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_superposition",
+  "j_fortune_teller"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_superposition"
+  ],
+  "money_spent": 12,
+  "best_score": 588,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    296
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    7
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_fortune_teller",
+     "j_superposition"
+    ],
+    224
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_fortune_teller",
+     "j_superposition"
+    ],
+    208
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_superposition"
+    ],
+    156
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_superposition"
+    ],
+    160
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_fortune_teller",
+     "j_superposition"
+    ],
+    66
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_fortune_teller",
+     "j_superposition"
+    ],
+    62
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 170,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

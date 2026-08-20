@@ -1,0 +1,300 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 83,
+ "truncated": false,
+ "dollars": 14,
+ "jokers": [
+  "j_stuntman",
+  "j_abstract",
+  "j_wrathful_joker",
+  "j_acrobat",
+  "j_hallucination"
+ ],
+ "stats": {
+  "tarots": [
+   "c_emperor",
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_stuntman",
+   "j_sly",
+   "j_card_sharp",
+   "j_red_card",
+   "j_abstract",
+   "j_trousers",
+   "j_cartomancer",
+   "j_joker",
+   "j_wrathful_joker",
+   "j_acrobat",
+   "j_hallucination"
+  ],
+  "money_spent": 85,
+  "best_score": 26817,
+  "rerolls": 1,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    2,
+    "j_trousers"
+   ],
+   [
+    2,
+    "j_cartomancer"
+   ],
+   [
+    3,
+    "j_sly"
+   ],
+   [
+    4,
+    "j_joker"
+   ],
+   [
+    4,
+    "j_card_sharp"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    292
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    9
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_stuntman"
+    ],
+    266
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_stuntman"
+    ],
+    258
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_sly",
+     "j_stuntman"
+    ],
+    634
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_card_sharp",
+     "j_sly",
+     "j_stuntman"
+    ],
+    660
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_card_sharp",
+     "j_sly",
+     "j_stuntman"
+    ],
+    540
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_card_sharp",
+     "j_red_card",
+     "j_sly",
+     "j_stuntman"
+    ],
+    660
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_card_sharp",
+     "j_red_card",
+     "j_sly",
+     "j_stuntman"
+    ],
+    540
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_sly",
+     "j_stuntman",
+     "j_trousers"
+    ],
+    4590
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_joker",
+     "j_sly",
+     "j_stuntman"
+    ],
+    5607
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_joker",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    6783
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_joker",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    7488
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_joker",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    6762
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_joker",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    6846
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_joker",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    19971
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_hallucination",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    7560
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_sly",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_emperor",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_hallucination",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_hallucination",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 62,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

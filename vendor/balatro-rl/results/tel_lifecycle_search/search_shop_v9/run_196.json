@@ -1,0 +1,204 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 50,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_photograph",
+  "j_ramen",
+  "j_credit_card",
+  "j_splash",
+  "j_castle"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_credit_card",
+   "j_splash",
+   "j_castle"
+  ],
+  "money_spent": 32,
+  "best_score": 1433,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    308
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_photograph",
+     "j_ramen"
+    ],
+    176
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_photograph",
+     "j_ramen"
+    ],
+    1257
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_photograph",
+     "j_ramen"
+    ],
+    413
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_photograph",
+     "j_ramen"
+    ],
+    475
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_photograph",
+     "j_ramen",
+     "j_splash"
+    ],
+    439
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_photograph",
+     "j_ramen",
+     "j_splash"
+    ],
+    553
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_photograph",
+     "j_ramen",
+     "j_splash"
+    ],
+    1263
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_photograph",
+     "j_ramen",
+     "j_splash"
+    ],
+    210
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_photograph",
+     "j_ramen",
+     "j_splash"
+    ],
+    183
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_photograph",
+     "j_ramen",
+     "j_splash"
+    ],
+    264
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_photograph",
+     "j_ramen",
+     "j_splash"
+    ],
+    181
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_photograph",
+     "j_ramen",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 196,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

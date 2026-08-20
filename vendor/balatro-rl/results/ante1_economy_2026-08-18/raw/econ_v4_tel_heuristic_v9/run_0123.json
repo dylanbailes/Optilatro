@@ -1,0 +1,225 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 55,
+ "truncated": false,
+ "dollars": 6,
+ "jokers": [
+  "j_green_joker",
+  "j_hologram",
+  "j_reserved_parking",
+  "j_runner",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_venus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_green_joker",
+   "j_reserved_parking",
+   "j_runner",
+   "j_greedy_joker"
+  ],
+  "money_spent": 31,
+  "best_score": 1321,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_green_joker"
+    ],
+    144
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_green_joker"
+    ],
+    136
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_green_joker"
+    ],
+    150
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_green_joker"
+    ],
+    84
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_green_joker",
+     "j_hologram"
+    ],
+    567
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_hologram"
+    ],
+    108
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_green_joker",
+     "j_hologram",
+     "j_reserved_parking"
+    ],
+    553
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_green_joker",
+     "j_hologram",
+     "j_reserved_parking"
+    ],
+    330
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_green_joker",
+     "j_hologram",
+     "j_reserved_parking",
+     "j_runner"
+    ],
+    658
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_green_joker",
+     "j_hologram",
+     "j_reserved_parking",
+     "j_runner"
+    ],
+    390
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_hologram",
+     "j_reserved_parking",
+     "j_runner"
+    ],
+    273
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_hologram",
+     "j_reserved_parking",
+     "j_runner"
+    ],
+    1157
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_green_joker",
+     "j_hologram",
+     "j_reserved_parking"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_high_priestess",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_hologram",
+     "j_reserved_parking",
+     "j_runner"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_venus",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_hologram",
+     "j_reserved_parking",
+     "j_runner"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 123,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

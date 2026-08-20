@@ -1,0 +1,221 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 64,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_onyx_agate",
+  "j_egg",
+  "j_abstract",
+  "j_half",
+  "j_arrowhead"
+ ],
+ "stats": {
+  "tarots": [
+   "c_emperor",
+   "c_world"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_onyx_agate",
+   "j_egg",
+   "j_abstract",
+   "j_half",
+   "j_arrowhead"
+  ],
+  "money_spent": 58,
+  "best_score": 4884,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    3,
+    "j_odd_todd"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd"
+    ],
+    156
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_odd_todd"
+    ],
+    528
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    448
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    188
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    1044
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_egg",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    1722
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_egg",
+     "j_half",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    1692
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_egg",
+     "j_half",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    3784
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_abstract",
+     "j_egg",
+     "j_half",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    4884
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_egg",
+     "j_half",
+     "j_onyx_agate"
+    ],
+    540
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_egg",
+     "j_half",
+     "j_onyx_agate"
+    ],
+    576
+   ]
+  ],
+  "consumable_uses": [
+   [
+    3,
+    "c_emperor",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_egg",
+     "j_half",
+     "j_onyx_agate"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_world",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_egg",
+     "j_half",
+     "j_onyx_agate"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 10,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

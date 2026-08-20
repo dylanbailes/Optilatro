@@ -1,0 +1,129 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 41,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_scary_face",
+  "j_scholar",
+  "j_raised_fist",
+  "j_shoot_the_moon"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_scholar",
+   "j_raised_fist",
+   "j_shoot_the_moon"
+  ],
+  "money_spent": 33,
+  "best_score": 1944,
+  "rerolls": 3,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    332
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_scary_face"
+    ],
+    392
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_scary_face"
+    ],
+    64
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_scary_face",
+     "j_scholar"
+    ],
+    564
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_scary_face",
+     "j_scholar"
+    ],
+    52
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_raised_fist",
+     "j_scary_face",
+     "j_scholar",
+     "j_shoot_the_moon"
+    ],
+    1944
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_raised_fist",
+     "j_scary_face",
+     "j_scholar",
+     "j_shoot_the_moon"
+    ],
+    1080
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_raised_fist",
+     "j_scary_face",
+     "j_scholar",
+     "j_shoot_the_moon"
+    ],
+    192
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_raised_fist",
+     "j_scary_face",
+     "j_scholar",
+     "j_shoot_the_moon"
+    ],
+    544
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 46,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

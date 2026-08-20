@@ -1,0 +1,290 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 84,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_mail",
+  "j_abstract",
+  "j_faceless",
+  "j_bootstraps",
+  "j_misprint"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon",
+   "c_hermit",
+   "c_lovers"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_abstract",
+   "j_faceless",
+   "j_bootstraps",
+   "j_misprint"
+  ],
+  "money_spent": 57,
+  "best_score": 3732,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_mail"
+    ],
+    324
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_mail"
+    ],
+    144
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_mail"
+    ],
+    288
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_mail"
+    ],
+    114
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_mail"
+    ],
+    308
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_mail"
+    ],
+    288
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_mail"
+    ],
+    320
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_mail"
+    ],
+    260
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_abstract",
+     "j_mail"
+    ],
+    880
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_mail"
+    ],
+    400
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_mail"
+    ],
+    720
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_mail"
+    ],
+    220
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_mail"
+    ],
+    150
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_mail"
+    ],
+    650
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_abstract",
+     "j_bootstraps",
+     "j_faceless",
+     "j_mail"
+    ],
+    1040
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_abstract",
+     "j_bootstraps",
+     "j_faceless",
+     "j_mail"
+    ],
+    1264
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_abstract",
+     "j_bootstraps",
+     "j_faceless",
+     "j_mail",
+     "j_misprint"
+    ],
+    2952
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_bootstraps",
+     "j_faceless",
+     "j_mail",
+     "j_misprint"
+    ],
+    780
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_abstract",
+     "j_bootstraps",
+     "j_faceless",
+     "j_mail",
+     "j_misprint"
+    ],
+    1470
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_moon",
+    [
+     "j_mail"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_mail"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_lovers",
+    [
+     "j_abstract",
+     "j_bootstraps",
+     "j_faceless",
+     "j_mail",
+     "j_misprint"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 87,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

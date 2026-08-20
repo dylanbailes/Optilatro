@@ -1,0 +1,78 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 17,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_ticket"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 9,
+  "best_score": 372,
+  "rerolls": 1,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_ticket"
+    ],
+    180
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ticket"
+    ],
+    52
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ticket"
+    ],
+    44
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ticket"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 68,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

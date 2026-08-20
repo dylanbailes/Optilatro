@@ -1,0 +1,152 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 48,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_dusk",
+  "j_ice_cream",
+  "j_red_card"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_dusk",
+   "j_ice_cream",
+   "j_red_card"
+  ],
+  "money_spent": 29,
+  "best_score": 1344,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    308
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_dusk"
+    ],
+    272
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_dusk"
+    ],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_dusk"
+    ],
+    44
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_dusk"
+    ],
+    328
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_dusk"
+    ],
+    368
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_dusk"
+    ],
+    100
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_dusk"
+    ],
+    126
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_dusk",
+     "j_ice_cream"
+    ],
+    640
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_dusk",
+     "j_ice_cream"
+    ],
+    704
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_dusk",
+     "j_ice_cream",
+     "j_red_card"
+    ],
+    332
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 139,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

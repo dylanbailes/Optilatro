@@ -1,0 +1,170 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 54,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_walkie_talkie",
+  "j_bootstraps",
+  "j_hanging_chad",
+  "j_scholar",
+  "j_cartomancer"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_bootstraps",
+   "j_hanging_chad",
+   "j_scholar",
+   "j_cartomancer"
+  ],
+  "money_spent": 40,
+  "best_score": 1800,
+  "rerolls": 3,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    344
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_walkie_talkie"
+    ],
+    56
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_walkie_talkie"
+    ],
+    600
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_walkie_talkie"
+    ],
+    660
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_walkie_talkie"
+    ],
+    728
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_walkie_talkie"
+    ],
+    52
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bootstraps",
+     "j_walkie_talkie"
+    ],
+    125
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_walkie_talkie"
+    ],
+    1584
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_hanging_chad",
+     "j_walkie_talkie"
+    ],
+    1800
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_cartomancer",
+     "j_hanging_chad",
+     "j_scholar",
+     "j_walkie_talkie"
+    ],
+    160
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_cartomancer",
+     "j_hanging_chad",
+     "j_scholar",
+     "j_walkie_talkie"
+    ],
+    52
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bootstraps",
+     "j_cartomancer",
+     "j_hanging_chad",
+     "j_scholar",
+     "j_walkie_talkie"
+    ],
+    125
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_cartomancer",
+     "j_hanging_chad",
+     "j_scholar",
+     "j_walkie_talkie"
+    ],
+    48
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 126,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

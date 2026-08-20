@@ -1,0 +1,283 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 73,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_ride_the_bus",
+  "j_gros_michel",
+  "j_campfire",
+  "j_walkie_talkie",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gluttenous_joker",
+   "j_reserved_parking",
+   "j_ride_the_bus",
+   "j_gros_michel",
+   "j_campfire",
+   "j_walkie_talkie",
+   "j_splash"
+  ],
+  "money_spent": 58,
+  "best_score": 3852,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    2,
+    "j_gluttenous_joker"
+   ],
+   [
+    2,
+    "j_to_the_moon"
+   ],
+   [
+    2,
+    "j_reserved_parking"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_to_the_moon"
+    ],
+    600
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_to_the_moon"
+    ],
+    546
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_to_the_moon"
+    ],
+    150
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    264
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    630
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    882
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    380
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_campfire",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    1040
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_campfire",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    720
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_campfire",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    1710
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    741
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_campfire",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    2194
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    756
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    684
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_campfire",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    2475
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_campfire",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    1071
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_campfire",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    306
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_campfire",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 120,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

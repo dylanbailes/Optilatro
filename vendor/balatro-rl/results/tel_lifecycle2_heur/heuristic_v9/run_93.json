@@ -1,0 +1,259 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 90,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_stuntman",
+  "j_golden",
+  "j_hack",
+  "j_bull",
+  "j_business"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance",
+   "c_fool",
+   "c_temperance",
+   "c_temperance"
+  ],
+  "planets": [
+   "pl_venus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_stuntman",
+   "j_sock_and_buskin",
+   "j_mad",
+   "j_hack",
+   "j_bull",
+   "j_business"
+  ],
+  "money_spent": 97,
+  "best_score": 4464,
+  "rerolls": 2,
+  "packs_bought": 11,
+  "packs_opened": 7,
+  "jokers_sold": [
+   [
+    2,
+    "j_juggler"
+   ],
+   [
+    3,
+    "j_sock_and_buskin"
+   ],
+   [
+    3,
+    "j_mad"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_juggler"
+    ],
+    356
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_juggler"
+    ],
+    104
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_juggler",
+     "j_stuntman"
+    ],
+    870
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_juggler",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    885
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_juggler",
+     "j_mad",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    560
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_juggler",
+     "j_mad",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    867
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_juggler",
+     "j_mad",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    4464
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_hack",
+     "j_mad",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    4224
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_business",
+     "j_golden",
+     "j_hack",
+     "j_stuntman"
+    ],
+    564
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_business",
+     "j_golden",
+     "j_hack",
+     "j_stuntman"
+    ],
+    268
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_business",
+     "j_golden",
+     "j_hack",
+     "j_stuntman"
+    ],
+    267
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_bull",
+     "j_business",
+     "j_golden",
+     "j_hack",
+     "j_stuntman"
+    ],
+    1504
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_temperance",
+    [
+     "j_juggler",
+     "j_mad",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_juggler",
+     "j_mad",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_juggler",
+     "j_mad",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_venus",
+    [
+     "j_juggler",
+     "j_mad",
+     "j_sock_and_buskin",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_temperance",
+    [
+     "j_bull",
+     "j_golden",
+     "j_hack",
+     "j_mad",
+     "j_stuntman"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 93,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

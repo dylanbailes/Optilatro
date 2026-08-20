@@ -1,0 +1,274 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 80,
+ "truncated": false,
+ "dollars": 11,
+ "jokers": [
+  "j_misprint",
+  "j_gluttenous_joker",
+  "j_photograph",
+  "j_business",
+  "j_zany"
+ ],
+ "stats": {
+  "tarots": [
+   "c_lovers",
+   "c_fool",
+   "c_lovers",
+   "c_temperance"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_wrathful_joker",
+   "j_joker",
+   "j_misprint",
+   "j_gluttenous_joker",
+   "j_scary_face",
+   "j_golden",
+   "j_photograph",
+   "j_delayed_grat",
+   "j_business",
+   "j_zany"
+  ],
+  "money_spent": 70,
+  "best_score": 6438,
+  "rerolls": 1,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_wrathful_joker"
+   ],
+   [
+    2,
+    "j_golden"
+   ],
+   [
+    2,
+    "j_joker"
+   ],
+   [
+    3,
+    "j_scary_face"
+   ],
+   [
+    3,
+    "j_delayed_grat"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    332
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_wrathful_joker"
+    ],
+    672
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_joker",
+     "j_misprint",
+     "j_wrathful_joker"
+    ],
+    450
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_joker",
+     "j_misprint",
+     "j_wrathful_joker"
+    ],
+    144
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_joker",
+     "j_misprint",
+     "j_wrathful_joker"
+    ],
+    70
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_joker",
+     "j_misprint",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    1260
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_joker",
+     "j_misprint",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    1755
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_joker",
+     "j_misprint",
+     "j_scary_face"
+    ],
+    3750
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_gluttenous_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_scary_face"
+    ],
+    1130
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_gluttenous_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_scary_face"
+    ],
+    1080
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_gluttenous_joker",
+     "j_misprint",
+     "j_photograph"
+    ],
+    6438
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_zany"
+    ],
+    1472
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_lovers",
+    [
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_joker",
+     "j_misprint",
+     "j_scary_face"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_joker",
+     "j_misprint",
+     "j_scary_face"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_joker",
+     "j_misprint",
+     "j_scary_face"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_delayed_grat",
+     "j_gluttenous_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_scary_face"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 201,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,318 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 85,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_bootstraps",
+  "j_bull",
+  "j_ride_the_bus",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [
+   "c_fool"
+  ],
+  "planets": [
+   "pl_saturn",
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ride_the_bus",
+   "j_golden"
+  ],
+  "money_spent": 39,
+  "best_score": 3321,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 5,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    312
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bootstraps",
+     "j_bull"
+    ],
+    304
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_bull"
+    ],
+    332
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    335
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    300
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    430
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    336
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    54
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    402
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    332
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    285
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    192
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    930
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    252
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    343
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    96
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    384
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    1176
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    320
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    1441
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_golden",
+     "j_ride_the_bus"
+    ],
+    372
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_golden",
+     "j_ride_the_bus"
+    ],
+    120
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_golden",
+     "j_ride_the_bus"
+    ],
+    1390
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_golden",
+     "j_ride_the_bus"
+    ],
+    174
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_bootstraps",
+     "j_bull",
+     "j_ride_the_bus"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 205,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

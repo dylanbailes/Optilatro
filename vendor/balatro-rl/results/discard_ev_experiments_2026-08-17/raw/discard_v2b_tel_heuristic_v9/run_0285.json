@@ -1,0 +1,241 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 63,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_crazy",
+  "j_delayed_grat",
+  "j_abstract"
+ ],
+ "stats": {
+  "tarots": [
+   "c_strength",
+   "c_hermit",
+   "c_sun"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gros_michel",
+   "j_delayed_grat",
+   "j_abstract"
+  ],
+  "money_spent": 42,
+  "best_score": 2950,
+  "rerolls": 1,
+  "packs_bought": 4,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_crazy",
+     "j_gros_michel"
+    ],
+    756
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_gros_michel"
+    ],
+    1054
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    360
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    124
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    800
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    286
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    330
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_abstract",
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    793
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    682
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    1188
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    540
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    540
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_strength",
+    [
+     "j_crazy",
+     "j_gros_michel"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hermit",
+    [
+     "j_crazy"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_sun",
+    [
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_crazy",
+     "j_delayed_grat"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 285,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

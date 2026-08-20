@@ -1,0 +1,64 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 15,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 10,
+  "best_score": 336,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    324
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    124
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 181,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

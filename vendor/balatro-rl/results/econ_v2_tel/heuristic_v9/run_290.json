@@ -1,0 +1,155 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 41,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_delayed_grat",
+  "j_reserved_parking",
+  "j_hallucination"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_delayed_grat",
+   "j_reserved_parking",
+   "j_hallucination"
+  ],
+  "money_spent": 19,
+  "best_score": 676,
+  "rerolls": 1,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    276
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_delayed_grat"
+    ],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_delayed_grat"
+    ],
+    108
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_delayed_grat"
+    ],
+    52
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_reserved_parking"
+    ],
+    135
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_reserved_parking"
+    ],
+    120
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_delayed_grat",
+     "j_reserved_parking"
+    ],
+    328
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_reserved_parking"
+    ],
+    60
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_reserved_parking"
+    ],
+    276
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_reserved_parking"
+    ],
+    264
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_reserved_parking"
+    ],
+    100
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_reserved_parking"
+    ],
+    36
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 290,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

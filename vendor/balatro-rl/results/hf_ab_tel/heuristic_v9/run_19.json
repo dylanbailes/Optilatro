@@ -1,0 +1,119 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 33,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_trading",
+  "j_drunkard",
+  "j_egg"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_venus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_drunkard",
+   "j_egg"
+  ],
+  "money_spent": 18,
+  "best_score": 485,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_drunkard",
+     "j_trading"
+    ],
+    296
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_drunkard",
+     "j_trading"
+    ],
+    189
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    56
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    52
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    64
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_venus",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 19,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

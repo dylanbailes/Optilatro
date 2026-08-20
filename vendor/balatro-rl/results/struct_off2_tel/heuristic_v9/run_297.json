@@ -1,0 +1,382 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 125,
+ "truncated": false,
+ "dollars": 7,
+ "jokers": [
+  "j_madness",
+  "j_swashbuckler"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_hierophant"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [
+   "s_incantation"
+  ],
+  "jokers_bought": [
+   "j_reserved_parking",
+   "j_jolly",
+   "j_todo_list",
+   "j_vampire",
+   "j_lusty_joker",
+   "j_madness",
+   "j_runner",
+   "j_credit_card",
+   "j_cavendish",
+   "j_raised_fist",
+   "j_faceless",
+   "j_swashbuckler",
+   "j_faceless"
+  ],
+  "money_spent": 107,
+  "best_score": 17902,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    3,
+    "j_todo_list"
+   ],
+   [
+    3,
+    "j_credit_card"
+   ],
+   [
+    3,
+    "j_lusty_joker"
+   ],
+   [
+    4,
+    "j_faceless"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    36
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_reserved_parking"
+    ],
+    520
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    600
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    600
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    220
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list",
+     "j_vampire"
+    ],
+    460
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list",
+     "j_vampire"
+    ],
+    1116
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_reserved_parking",
+     "j_todo_list",
+     "j_vampire"
+    ],
+    1501
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_reserved_parking",
+     "j_todo_list",
+     "j_vampire"
+    ],
+    260
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_jolly",
+     "j_lusty_joker",
+     "j_madness",
+     "j_todo_list"
+    ],
+    2484
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_jolly",
+     "j_lusty_joker",
+     "j_madness"
+    ],
+    3240
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_jolly",
+     "j_lusty_joker",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    4692
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    5805
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_madness",
+     "j_raised_fist"
+    ],
+    7920
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_madness",
+     "j_raised_fist",
+     "j_swashbuckler"
+    ],
+    5130
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_madness",
+     "j_swashbuckler"
+    ],
+    8778
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_madness",
+     "j_swashbuckler"
+    ],
+    9124
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_madness",
+     "j_swashbuckler"
+    ],
+    2520
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_madness",
+     "j_swashbuckler"
+    ],
+    2880
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_madness",
+     "j_swashbuckler"
+    ],
+    2604
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_madness",
+     "j_swashbuckler"
+    ],
+    4464
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hierophant",
+    [
+     "j_cavendish",
+     "j_madness",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_uranus",
+    [
+     "j_cavendish",
+     "j_madness",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "s_incantation",
+    [
+     "j_cavendish",
+     "j_madness",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 297,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

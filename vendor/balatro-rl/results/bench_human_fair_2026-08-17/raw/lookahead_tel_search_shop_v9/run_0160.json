@@ -1,0 +1,586 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 205,
+ "truncated": false,
+ "dollars": 19,
+ "jokers": [
+  "j_seeing_double",
+  "j_cavendish",
+  "j_trio",
+  "j_hanging_chad",
+  "j_marble"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_hierophant",
+   "c_chariot",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus",
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_misprint",
+   "j_ride_the_bus",
+   "j_reserved_parking",
+   "j_runner",
+   "j_seeing_double",
+   "j_rocket",
+   "j_rough_gem",
+   "j_cavendish",
+   "j_trio",
+   "j_business",
+   "j_greedy_joker",
+   "j_mime",
+   "j_hanging_chad",
+   "j_shoot_the_moon",
+   "j_marble"
+  ],
+  "money_spent": 197,
+  "best_score": 108660,
+  "rerolls": 2,
+  "packs_bought": 22,
+  "packs_opened": 14,
+  "jokers_sold": [
+   [
+    3,
+    "j_reserved_parking"
+   ],
+   [
+    3,
+    "j_runner"
+   ],
+   [
+    3,
+    "j_rocket"
+   ],
+   [
+    4,
+    "j_rough_gem"
+   ],
+   [
+    4,
+    "j_ride_the_bus"
+   ],
+   [
+    4,
+    "j_misprint"
+   ],
+   [
+    4,
+    "j_business"
+   ],
+   [
+    5,
+    "j_greedy_joker"
+   ],
+   [
+    5,
+    "j_mime"
+   ],
+   [
+    6,
+    "j_abstract"
+   ],
+   [
+    6,
+    "j_shoot_the_moon"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    252
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_misprint"
+    ],
+    1364
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_misprint",
+     "j_ride_the_bus"
+    ],
+    864
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_misprint",
+     "j_ride_the_bus"
+    ],
+    1200
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    1020
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    480
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_runner"
+    ],
+    1066
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_runner"
+    ],
+    600
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    4320
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_misprint",
+     "j_ride_the_bus",
+     "j_rocket",
+     "j_rough_gem",
+     "j_seeing_double"
+    ],
+    2112
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_misprint",
+     "j_ride_the_bus",
+     "j_rocket",
+     "j_rough_gem",
+     "j_seeing_double"
+    ],
+    1600
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_misprint",
+     "j_ride_the_bus",
+     "j_rough_gem",
+     "j_seeing_double"
+    ],
+    2528
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_ride_the_bus",
+     "j_rough_gem",
+     "j_seeing_double"
+    ],
+    10080
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_business",
+     "j_cavendish",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    10260
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_business",
+     "j_cavendish",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    10944
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_greedy_joker",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    21924
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_mime",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    14592
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_mime",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    4536
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    24684
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    6726
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    17496
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    13680
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    29160
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    29172
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    7290
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    19872
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    52326
+   ],
+   [
+    7,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_marble",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    16698
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_marble",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    1417
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_marble",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    67
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_marble",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    126
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_misprint",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_ride_the_bus",
+     "j_rough_gem",
+     "j_seeing_double"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_uranus",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_ride_the_bus",
+     "j_rough_gem",
+     "j_seeing_double"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_misprint",
+     "j_ride_the_bus",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_saturn",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_magician",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_marble",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 160,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

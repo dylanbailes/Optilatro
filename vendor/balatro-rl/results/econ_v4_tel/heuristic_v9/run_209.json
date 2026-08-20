@@ -1,0 +1,136 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 37,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_wrathful_joker",
+  "j_mail",
+  "j_card_sharp",
+  "j_photograph",
+  "j_scary_face"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_half",
+   "j_wrathful_joker",
+   "j_card_sharp",
+   "j_photograph",
+   "j_scary_face"
+  ],
+  "money_spent": 38,
+  "best_score": 2052,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    308
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half"
+    ],
+    660
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half",
+     "j_wrathful_joker"
+    ],
+    616
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_card_sharp",
+     "j_half",
+     "j_mail",
+     "j_wrathful_joker"
+    ],
+    600
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_card_sharp",
+     "j_half",
+     "j_mail",
+     "j_wrathful_joker"
+    ],
+    1452
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_card_sharp",
+     "j_half",
+     "j_mail",
+     "j_photograph",
+     "j_wrathful_joker"
+    ],
+    630
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_card_sharp",
+     "j_half",
+     "j_mail",
+     "j_photograph",
+     "j_wrathful_joker"
+    ],
+    660
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_card_sharp",
+     "j_mail",
+     "j_photograph",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    576
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 209,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

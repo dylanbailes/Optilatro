@@ -1,0 +1,292 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 84,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_hanging_chad",
+  "j_rough_gem",
+  "j_reserved_parking",
+  "j_faceless",
+  "j_cavendish"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_fool",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_credit_card",
+   "j_hanging_chad",
+   "j_rough_gem",
+   "j_reserved_parking",
+   "j_faceless",
+   "j_cavendish"
+  ],
+  "money_spent": 70,
+  "best_score": 3100,
+  "rerolls": 1,
+  "packs_bought": 9,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    3,
+    "j_credit_card"
+   ],
+   [
+    3,
+    "j_even_steven"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_even_steven"
+    ],
+    864
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    672
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    1100
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    494
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    1200
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_rough_gem"
+    ],
+    1512
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_rough_gem"
+    ],
+    376
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem"
+    ],
+    2688
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem"
+    ],
+    2200
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem"
+    ],
+    900
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem"
+    ],
+    105
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem"
+    ],
+    45
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem"
+    ],
+    180
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 90,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

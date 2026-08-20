@@ -1,0 +1,155 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 39,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_selzer",
+  "j_mail"
+ ],
+ "stats": {
+  "tarots": [
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_venus",
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_selzer",
+   "j_mail"
+  ],
+  "money_spent": 21,
+  "best_score": 920,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    126
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_selzer"
+    ],
+    496
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_selzer"
+    ],
+    450
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_selzer"
+    ],
+    470
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_mail",
+     "j_selzer"
+    ],
+    108
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_mail",
+     "j_selzer"
+    ],
+    25
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_mail",
+     "j_selzer"
+    ],
+    84
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_mail",
+     "j_selzer"
+    ],
+    176
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_venus",
+    [
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_chariot",
+    [
+     "j_mail",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 172,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

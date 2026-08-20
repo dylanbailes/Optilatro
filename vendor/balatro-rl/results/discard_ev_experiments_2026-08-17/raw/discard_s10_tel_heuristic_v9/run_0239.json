@@ -1,0 +1,232 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 82,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_crazy",
+  "j_cavendish",
+  "j_idol",
+  "j_gluttenous_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_fool",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_banner",
+   "j_cavendish",
+   "j_idol",
+   "j_gluttenous_joker"
+  ],
+  "money_spent": 62,
+  "best_score": 7680,
+  "rerolls": 1,
+  "packs_bought": 7,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_stencil"
+   ],
+   [
+    3,
+    "j_banner"
+   ],
+   [
+    3,
+    "j_juggler"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_crazy"
+    ],
+    1296
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_crazy"
+    ],
+    352
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_banner",
+     "j_crazy"
+    ],
+    284
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    2800
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    880
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    189
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    104
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    36
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    1764
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_crazy",
+     "j_juggler",
+     "j_stencil"
+    ],
+    7680
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_banner",
+     "j_cavendish",
+     "j_crazy",
+     "j_idol",
+     "j_juggler"
+    ],
+    3696
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_idol"
+    ],
+    3990
+   ]
+  ],
+  "consumable_uses": [
+   [
+    3,
+    "c_wheel_of_fortune",
+    [
+     "j_cavendish",
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_idol"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_cavendish",
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_idol"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_wheel_of_fortune",
+    [
+     "j_cavendish",
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_idol"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 239,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,450 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 103,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_ice_cream",
+  "j_red_card",
+  "j_green_joker",
+  "j_reserved_parking",
+  "j_to_the_moon"
+ ],
+ "stats": {
+  "tarots": [
+   "c_world",
+   "c_chariot",
+   "c_empress",
+   "c_death",
+   "c_judgement",
+   "c_hierophant",
+   "c_wheel_of_fortune",
+   "c_lovers"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ice_cream",
+   "j_green_joker",
+   "j_reserved_parking",
+   "j_to_the_moon"
+  ],
+  "money_spent": 62,
+  "best_score": 7317,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 7,
+  "jokers_sold": [
+   [
+    3,
+    "j_hallucination"
+   ],
+   [
+    4,
+    "j_scholar"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_scholar"
+    ],
+    112
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_hallucination",
+     "j_scholar"
+    ],
+    736
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    1528
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    1014
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    945
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    315
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_red_card",
+     "j_scholar"
+    ],
+    1104
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_red_card",
+     "j_scholar"
+    ],
+    588
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_red_card",
+     "j_scholar"
+    ],
+    1576
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_red_card",
+     "j_scholar"
+    ],
+    562
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_green_joker",
+     "j_hallucination",
+     "j_ice_cream",
+     "j_red_card",
+     "j_scholar"
+    ],
+    2052
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_green_joker",
+     "j_hallucination",
+     "j_ice_cream",
+     "j_red_card",
+     "j_scholar"
+    ],
+    990
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_green_joker",
+     "j_hallucination",
+     "j_ice_cream",
+     "j_red_card",
+     "j_scholar"
+    ],
+    1302
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_green_joker",
+     "j_hallucination",
+     "j_ice_cream",
+     "j_red_card",
+     "j_scholar"
+    ],
+    3042
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_red_card",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    4300
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_red_card",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    2132
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_red_card",
+     "j_reserved_parking",
+     "j_to_the_moon"
+    ],
+    936
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_red_card",
+     "j_reserved_parking",
+     "j_to_the_moon"
+    ],
+    2369
+   ],
+   [
+    4,
+    "Four of a Kind",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_red_card",
+     "j_reserved_parking",
+     "j_to_the_moon"
+    ],
+    2700
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_red_card",
+     "j_reserved_parking",
+     "j_to_the_moon"
+    ],
+    1312
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_world",
+    [
+     "j_hallucination",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_chariot",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_empress",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "Steel",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_judgement",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hierophant",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_red_card",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_red_card",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_hallucination",
+     "j_ice_cream",
+     "j_red_card",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "Foil",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 153,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

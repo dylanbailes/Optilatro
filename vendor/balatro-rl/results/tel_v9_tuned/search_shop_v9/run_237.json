@@ -1,0 +1,89 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 33,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_half",
+  "j_joker",
+  "j_blue_joker",
+  "j_ice_cream"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_half",
+   "j_blue_joker",
+   "j_ice_cream"
+  ],
+  "money_spent": 34,
+  "best_score": 5512,
+  "rerolls": 1,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half",
+     "j_joker"
+    ],
+    572
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_joker"
+    ],
+    3429
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_joker"
+    ],
+    2375
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_ice_cream",
+     "j_joker"
+    ],
+    5512
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 237,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

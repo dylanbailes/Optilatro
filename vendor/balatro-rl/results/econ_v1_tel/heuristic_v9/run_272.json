@@ -1,0 +1,173 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 63,
+ "truncated": false,
+ "dollars": 16,
+ "jokers": [
+  "j_egg",
+  "j_swashbuckler",
+  "j_photograph",
+  "j_sock_and_buskin",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_egg",
+   "j_swashbuckler",
+   "j_photograph",
+   "j_bootstraps",
+   "j_sock_and_buskin",
+   "j_credit_card"
+  ],
+  "money_spent": 46,
+  "best_score": 3000,
+  "rerolls": 3,
+  "packs_bought": 1,
+  "packs_opened": 0,
+  "jokers_sold": [
+   [
+    2,
+    "j_bootstraps"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    320
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_egg"
+    ],
+    340
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_egg"
+    ],
+    288
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_swashbuckler"
+    ],
+    405
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_swashbuckler"
+    ],
+    306
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_swashbuckler"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_egg",
+     "j_photograph",
+     "j_swashbuckler"
+    ],
+    748
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_egg",
+     "j_photograph",
+     "j_swashbuckler"
+    ],
+    528
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_egg",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    2184
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    2700
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    3000
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    990
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 272,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

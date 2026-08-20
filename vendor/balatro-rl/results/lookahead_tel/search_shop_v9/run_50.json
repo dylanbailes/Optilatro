@@ -1,0 +1,103 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 38,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_photograph"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_photograph"
+  ],
+  "money_spent": 24,
+  "best_score": 776,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_photograph"
+    ],
+    656
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_photograph"
+    ],
+    348
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_photograph"
+    ],
+    200
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_photograph"
+    ],
+    120
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_photograph"
+    ],
+    108
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 50,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

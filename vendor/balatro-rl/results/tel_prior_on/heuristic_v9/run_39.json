@@ -1,0 +1,240 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 74,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_ice_cream",
+  "j_clever",
+  "j_drunkard",
+  "j_joker",
+  "j_rough_gem"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_judgement",
+   "c_wheel_of_fortune",
+   "c_fool",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ice_cream",
+   "j_golden",
+   "j_clever",
+   "j_joker",
+   "j_rough_gem"
+  ],
+  "money_spent": 86,
+  "best_score": 3790,
+  "rerolls": 1,
+  "packs_bought": 9,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    3,
+    "j_golden"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    312
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_popcorn"
+    ],
+    528
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    2106
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    1750
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    1200
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_clever",
+     "j_golden",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    1600
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_drunkard",
+     "j_golden",
+     "j_ice_cream",
+     "j_joker"
+    ],
+    1224
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_clever",
+     "j_drunkard",
+     "j_golden",
+     "j_ice_cream",
+     "j_joker"
+    ],
+    1000
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_clever",
+     "j_drunkard",
+     "j_ice_cream",
+     "j_joker",
+     "j_rough_gem"
+    ],
+    1552
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_drunkard",
+     "j_ice_cream",
+     "j_joker",
+     "j_rough_gem"
+    ],
+    1398
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_clever",
+     "j_drunkard",
+     "j_ice_cream",
+     "j_joker",
+     "j_rough_gem"
+    ],
+    840
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_clever",
+     "j_drunkard",
+     "j_ice_cream",
+     "j_joker",
+     "j_rough_gem"
+    ],
+    1816
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hermit",
+    [
+     "j_golden",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_judgement",
+    [
+     "j_clever",
+     "j_golden",
+     "j_ice_cream"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_wheel_of_fortune",
+    [
+     "j_clever",
+     "j_drunkard",
+     "j_ice_cream",
+     "j_joker",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_clever",
+     "j_drunkard",
+     "j_ice_cream",
+     "j_joker",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_wheel_of_fortune",
+    [
+     "j_clever",
+     "j_drunkard",
+     "j_ice_cream",
+     "j_joker",
+     "j_rough_gem"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 39,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

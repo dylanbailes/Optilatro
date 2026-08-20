@@ -1,0 +1,157 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 46,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_photograph",
+  "j_scary_face",
+  "j_trousers",
+  "j_egg",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_reserved_parking",
+   "j_smiley",
+   "j_scary_face",
+   "j_trousers",
+   "j_egg",
+   "j_reserved_parking"
+  ],
+  "money_spent": 41,
+  "best_score": 3836,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    2,
+    "j_smiley"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    208
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_photograph",
+     "j_reserved_parking",
+     "j_smiley"
+    ],
+    720
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_photograph",
+     "j_reserved_parking",
+     "j_scary_face",
+     "j_smiley",
+     "j_trousers"
+    ],
+    2160
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_scary_face",
+     "j_smiley",
+     "j_trousers"
+    ],
+    3836
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_reserved_parking",
+     "j_scary_face",
+     "j_trousers"
+    ],
+    1432
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_empress",
+    [
+     "j_egg",
+     "j_photograph",
+     "j_scary_face",
+     "j_smiley",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 227,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

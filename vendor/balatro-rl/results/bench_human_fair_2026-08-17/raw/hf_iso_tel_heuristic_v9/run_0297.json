@@ -1,0 +1,171 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 41,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_reserved_parking",
+  "j_jolly",
+  "j_todo_list",
+  "j_vampire"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_reserved_parking",
+   "j_jolly",
+   "j_todo_list",
+   "j_vampire"
+  ],
+  "money_spent": 37,
+  "best_score": 1052,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    64
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_reserved_parking"
+    ],
+    520
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    600
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    600
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    220
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list",
+     "j_vampire"
+    ],
+    440
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list",
+     "j_vampire"
+    ],
+    16
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list",
+     "j_vampire"
+    ],
+    280
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list",
+     "j_vampire"
+    ],
+    316
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_jolly",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 297,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

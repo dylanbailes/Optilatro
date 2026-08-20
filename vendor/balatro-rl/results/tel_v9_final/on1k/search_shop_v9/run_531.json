@@ -1,0 +1,129 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 39,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_trading",
+  "j_misprint",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_trading",
+   "j_misprint",
+   "j_greedy_joker"
+  ],
+  "money_spent": 39,
+  "best_score": 2160,
+  "rerolls": 1,
+  "packs_bought": 1,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    292
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    36
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_trading"
+    ],
+    153
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_trading"
+    ],
+    316
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_misprint",
+     "j_trading"
+    ],
+    390
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_misprint",
+     "j_trading"
+    ],
+    238
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_misprint",
+     "j_trading"
+    ],
+    2160
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_greedy_joker",
+     "j_misprint",
+     "j_trading"
+    ],
+    1350
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_greedy_joker",
+     "j_misprint",
+     "j_trading"
+    ],
+    240
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_greedy_joker",
+     "j_misprint",
+     "j_trading"
+    ],
+    364
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_misprint",
+     "j_trading"
+    ],
+    520
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 531
+}

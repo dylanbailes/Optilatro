@@ -1,0 +1,159 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 47,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_campfire",
+  "j_delayed_grat"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_campfire",
+   "j_delayed_grat"
+  ],
+  "money_spent": 27,
+  "best_score": 847,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    368
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_campfire"
+    ],
+    260
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_campfire"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_campfire",
+     "j_delayed_grat"
+    ],
+    192
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_campfire",
+     "j_delayed_grat"
+    ],
+    328
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_campfire",
+     "j_delayed_grat"
+    ],
+    92
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_campfire",
+     "j_delayed_grat"
+    ],
+    749
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_campfire",
+     "j_delayed_grat"
+    ],
+    60
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_campfire",
+     "j_delayed_grat"
+    ],
+    728
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_campfire",
+     "j_delayed_grat"
+    ],
+    44
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_campfire",
+     "j_delayed_grat"
+    ],
+    60
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_campfire",
+     "j_delayed_grat"
+    ],
+    15
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_campfire",
+     "j_delayed_grat"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 251,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

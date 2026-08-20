@@ -1,0 +1,282 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 91,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_swashbuckler",
+  "j_smiley",
+  "j_egg",
+  "j_green_joker",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_devil",
+   "c_strength"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_astronomer",
+   "j_mail",
+   "j_golden",
+   "j_ticket",
+   "j_egg",
+   "j_green_joker",
+   "j_credit_card"
+  ],
+  "money_spent": 89,
+  "best_score": 3856,
+  "rerolls": 1,
+  "packs_bought": 9,
+  "packs_opened": 6,
+  "jokers_sold": [
+   [
+    2,
+    "j_mail"
+   ],
+   [
+    2,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_golden"
+   ],
+   [
+    3,
+    "j_astronomer"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_swashbuckler"
+    ],
+    420
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_swashbuckler"
+    ],
+    80
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_astronomer",
+     "j_swashbuckler"
+    ],
+    720
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_astronomer",
+     "j_mail",
+     "j_swashbuckler"
+    ],
+    924
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_astronomer",
+     "j_golden",
+     "j_mail",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    1584
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_astronomer",
+     "j_golden",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    1860
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_astronomer",
+     "j_egg",
+     "j_golden",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    1628
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_astronomer",
+     "j_egg",
+     "j_golden",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    750
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_astronomer",
+     "j_egg",
+     "j_green_joker",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    3000
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_green_joker",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    1000
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_green_joker",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    1029
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_green_joker",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    1452
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_green_joker",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    375
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_devil",
+    [
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_jupiter",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_green_joker",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_strength",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_green_joker",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 88,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,230 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 83,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_hanging_chad",
+  "j_ramen",
+  "j_abstract",
+  "j_green_joker",
+  "j_devious"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_earth",
+   "pl_earth",
+   "pl_earth",
+   "pl_earth"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hanging_chad",
+   "j_abstract",
+   "j_green_joker",
+   "j_devious"
+  ],
+  "money_spent": 53,
+  "best_score": 7320,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    216
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    514
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    663
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    760
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    331
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    764
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    229
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    307
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    2232
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    7320
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    7303
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    1175
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    977
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_earth",
+    [
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_earth",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_earth",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_earth",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_green_joker",
+     "j_hanging_chad",
+     "j_ramen"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 92,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 27,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_cavendish"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 14,
+  "best_score": 576,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_cavendish"
+    ],
+    576
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_cavendish"
+    ],
+    48
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_cavendish"
+    ],
+    45
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cavendish"
+    ],
+    180
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_cavendish"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_cavendish"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 217,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

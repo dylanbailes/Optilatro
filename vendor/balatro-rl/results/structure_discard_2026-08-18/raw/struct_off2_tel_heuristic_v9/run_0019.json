@@ -1,0 +1,219 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 66,
+ "truncated": false,
+ "dollars": 10,
+ "jokers": [
+  "j_trading",
+  "j_drunkard",
+  "j_egg",
+  "j_golden",
+  "j_todo_list",
+  "j_chaos"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_drunkard",
+   "j_egg",
+   "j_todo_list"
+  ],
+  "money_spent": 34,
+  "best_score": 968,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_drunkard",
+     "j_trading"
+    ],
+    372
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_trading"
+    ],
+    44
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_trading"
+    ],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    64
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    96
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    220
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_trading"
+    ],
+    252
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_trading"
+    ],
+    316
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_trading"
+    ],
+    180
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_trading"
+    ],
+    220
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_chaos",
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_todo_list",
+     "j_trading"
+    ],
+    368
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_chaos",
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_todo_list",
+     "j_trading"
+    ],
+    104
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_chaos",
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_todo_list",
+     "j_trading"
+    ],
+    96
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_chaos",
+     "j_drunkard",
+     "j_egg",
+     "j_golden",
+     "j_todo_list",
+     "j_trading"
+    ],
+    84
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 19,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

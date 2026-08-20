@@ -1,0 +1,305 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 84,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_scary_face",
+  "j_rocket",
+  "j_misprint",
+  "j_fortune_teller",
+  "j_even_steven"
+ ],
+ "stats": {
+  "tarots": [
+   "c_strength",
+   "c_world"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_rocket",
+   "j_misprint",
+   "j_fortune_teller",
+   "j_even_steven"
+  ],
+  "money_spent": 58,
+  "best_score": 4111,
+  "rerolls": 0,
+  "packs_bought": 7,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    288
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_scary_face"
+    ],
+    416
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_scary_face"
+    ],
+    64
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_scary_face"
+    ],
+    176
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_scary_face"
+    ],
+    180
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_scary_face"
+    ],
+    244
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_rocket",
+     "j_scary_face"
+    ],
+    388
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_rocket",
+     "j_scary_face"
+    ],
+    450
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    810
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    900
+   ],
+   [
+    2,
+    "Four of a Kind",
+    [
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    960
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    3151
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_fortune_teller",
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    3050
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    1890
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    900
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    414
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    512
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    273
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    2040
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    450
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_strength",
+    [
+     "j_scary_face"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_world",
+    [
+     "j_fortune_teller",
+     "j_misprint",
+     "j_rocket",
+     "j_scary_face"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 276,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

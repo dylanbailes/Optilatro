@@ -1,0 +1,87 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 21,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_satellite"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 4,
+  "best_score": 520,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    104
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    296
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_satellite"
+    ],
+    100
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_satellite"
+    ],
+    15
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_satellite"
+    ],
+    16
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_satellite"
+    ],
+    15
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 167,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

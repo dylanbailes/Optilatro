@@ -1,0 +1,261 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 69,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_todo_list",
+  "j_business",
+  "j_photograph",
+  "j_drunkard"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_world",
+   "c_temperance",
+   "c_temperance",
+   "c_wheel_of_fortune",
+   "c_death"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_todo_list",
+   "j_business",
+   "j_photograph",
+   "j_drunkard"
+  ],
+  "money_spent": 54,
+  "best_score": 1240,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 6,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_gros_michel",
+     "j_todo_list"
+    ],
+    864
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gros_michel",
+     "j_todo_list"
+    ],
+    612
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    276
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    360
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_business",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    200
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_business",
+     "j_drunkard",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    284
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_business",
+     "j_drunkard",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    600
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_business",
+     "j_drunkard",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    296
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_drunkard",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    60
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_drunkard",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    536
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_business",
+     "j_gros_michel",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_world",
+    [
+     "j_business",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_business",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_business",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_business",
+     "j_drunkard",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_business",
+     "j_drunkard",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 280,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

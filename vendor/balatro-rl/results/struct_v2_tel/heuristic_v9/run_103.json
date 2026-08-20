@@ -1,0 +1,242 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 58,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_square",
+  "j_faceless",
+  "j_pareidolia"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_strength"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_square",
+   "j_faceless"
+  ],
+  "money_spent": 28,
+  "best_score": 1388,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_square"
+    ],
+    468
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    228
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    488
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    524
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    396
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    528
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    156
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    396
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    184
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    548
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    496
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    184
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    160
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_faceless",
+     "j_square"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_faceless",
+     "j_pareidolia",
+     "j_square"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 103,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

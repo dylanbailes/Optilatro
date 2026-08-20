@@ -1,0 +1,200 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 50,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_popcorn",
+  "j_ramen",
+  "j_green_joker",
+  "j_rocket",
+  "j_fortune_teller"
+ ],
+ "stats": {
+  "tarots": [
+   "c_devil"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_popcorn",
+   "j_green_joker",
+   "j_golden",
+   "j_red_card",
+   "j_rocket",
+   "j_fortune_teller"
+  ],
+  "money_spent": 50,
+  "best_score": 2000,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_golden"
+   ],
+   [
+    2,
+    "j_red_card"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    296
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_popcorn",
+     "j_ramen"
+    ],
+    462
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen"
+    ],
+    2000
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_red_card"
+    ],
+    960
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_golden",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_red_card"
+    ],
+    1650
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_rocket"
+    ],
+    685
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_rocket"
+    ],
+    307
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_rocket"
+    ],
+    230
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_fortune_teller",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_rocket"
+    ],
+    259
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_jupiter",
+    [
+     "j_golden",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_red_card"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_devil",
+    [
+     "j_golden",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_red_card"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 197,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

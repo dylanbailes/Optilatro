@@ -1,0 +1,203 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 55,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_bull",
+  "j_matador",
+  "j_mail",
+  "j_mime",
+  "j_square"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_high_priestess"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_bull",
+   "j_matador",
+   "j_mail",
+   "j_mime"
+  ],
+  "money_spent": 44,
+  "best_score": 808,
+  "rerolls": 1,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bull"
+    ],
+    356
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bull"
+    ],
+    252
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bull",
+     "j_matador"
+    ],
+    312
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bull",
+     "j_matador"
+    ],
+    228
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_bull",
+     "j_matador"
+    ],
+    116
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_mime"
+    ],
+    360
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_mime"
+    ],
+    356
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_mime"
+    ],
+    92
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_mime",
+     "j_square"
+    ],
+    360
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_mime",
+     "j_square"
+    ],
+    140
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_mime",
+     "j_square"
+    ],
+    64
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_mime",
+     "j_square"
+    ],
+    76
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_judgement",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_mime"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_high_priestess",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_mime",
+     "j_square"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 1,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

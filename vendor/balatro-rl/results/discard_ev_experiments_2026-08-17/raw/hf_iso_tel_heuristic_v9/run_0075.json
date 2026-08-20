@@ -1,0 +1,306 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 86,
+ "truncated": false,
+ "dollars": 20,
+ "jokers": [
+  "j_scholar",
+  "j_banner",
+  "j_ice_cream",
+  "j_zany"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_swashbuckler",
+   "j_banner",
+   "j_ice_cream",
+   "j_zany",
+   "j_delayed_grat",
+   "j_faceless"
+  ],
+  "money_spent": 62,
+  "best_score": 7014,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_swashbuckler"
+   ],
+   [
+    2,
+    "j_delayed_grat"
+   ],
+   [
+    3,
+    "j_faceless"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    320
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_scholar",
+     "j_swashbuckler"
+    ],
+    1400
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_scholar",
+     "j_swashbuckler"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_scholar",
+     "j_swashbuckler"
+    ],
+    2800
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_swashbuckler"
+    ],
+    5192
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    5060
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_faceless",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    3185
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_banner",
+     "j_faceless",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    3615
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    3107
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    3402
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    1417
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    1222
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    2898
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    1470
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    1372
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    1274
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_scholar",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_banner",
+     "j_faceless",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_banner",
+     "j_ice_cream",
+     "j_scholar",
+     "j_zany"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 75,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

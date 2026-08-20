@@ -1,0 +1,113 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 24,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_crazy"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 8,
+  "best_score": 408,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    28
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crazy"
+    ],
+    324
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy"
+    ],
+    52
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_crazy"
+    ],
+    16
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_crazy"
+    ],
+    16
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_crazy"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 223,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 19,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_even_steven",
+  "j_cartomancer"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_cartomancer"
+  ],
+  "money_spent": 17,
+  "best_score": 800,
+  "rerolls": 1,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    332
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_even_steven"
+    ],
+    800
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_moon",
+    [
+     "j_cartomancer",
+     "j_even_steven"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 204,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

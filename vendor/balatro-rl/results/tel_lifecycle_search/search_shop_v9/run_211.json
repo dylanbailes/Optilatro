@@ -1,0 +1,830 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 207,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_cavendish",
+  "j_sixth_sense",
+  "j_misprint",
+  "j_hanging_chad",
+  "j_lusty_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_hermit",
+   "c_death",
+   "c_fool",
+   "c_death",
+   "c_lovers",
+   "c_fool",
+   "c_lovers",
+   "c_temperance",
+   "c_hierophant",
+   "c_hierophant",
+   "c_hierophant"
+  ],
+  "planets": [
+   "pl_earth"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_swashbuckler",
+   "j_cavendish",
+   "j_dusk",
+   "j_scary_face",
+   "j_chaos",
+   "j_crafty",
+   "j_hallucination",
+   "j_popcorn",
+   "j_seeing_double",
+   "j_sixth_sense",
+   "j_hanging_chad",
+   "j_jolly",
+   "j_photograph",
+   "j_splash",
+   "j_vampire",
+   "j_misprint",
+   "j_blackboard",
+   "j_constellation",
+   "j_lusty_joker"
+  ],
+  "money_spent": 207,
+  "best_score": 57144,
+  "rerolls": 3,
+  "packs_bought": 18,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    2,
+    "j_dusk"
+   ],
+   [
+    3,
+    "j_chaos"
+   ],
+   [
+    3,
+    "j_crafty"
+   ],
+   [
+    3,
+    "j_hallucination"
+   ],
+   [
+    4,
+    "j_scary_face"
+   ],
+   [
+    4,
+    "j_seeing_double"
+   ],
+   [
+    4,
+    "j_popcorn"
+   ],
+   [
+    4,
+    "j_hanging_chad"
+   ],
+   [
+    5,
+    "j_jolly"
+   ],
+   [
+    5,
+    "j_splash"
+   ],
+   [
+    6,
+    "j_vampire"
+   ],
+   [
+    6,
+    "j_swashbuckler"
+   ],
+   [
+    6,
+    "j_photograph"
+   ],
+   [
+    7,
+    "j_blackboard"
+   ],
+   [
+    7,
+    "j_constellation"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    308
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_swashbuckler"
+    ],
+    504
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_swashbuckler"
+    ],
+    576
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_swashbuckler"
+    ],
+    105
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_swashbuckler"
+    ],
+    1392
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    2160
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_chaos",
+     "j_dusk",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    3240
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_chaos",
+     "j_crafty",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    3240
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_crafty",
+     "j_hallucination",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    14850
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_popcorn",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_swashbuckler"
+    ],
+    4356
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_popcorn",
+     "j_scary_face",
+     "j_seeing_double",
+     "j_swashbuckler"
+    ],
+    7830
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    10692
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    20640
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_jolly",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    7056
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_jolly",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    4788
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_jolly",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    4914
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_jolly",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    10620
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_jolly",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    4662
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    10800
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    5895
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    4017
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    2496
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    9519
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_swashbuckler",
+     "j_vampire"
+    ],
+    16942
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_blackboard",
+     "j_cavendish",
+     "j_misprint",
+     "j_photograph",
+     "j_sixth_sense"
+    ],
+    25740
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_blackboard",
+     "j_cavendish",
+     "j_misprint",
+     "j_photograph",
+     "j_sixth_sense"
+    ],
+    2310
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_cavendish",
+     "j_misprint",
+     "j_photograph",
+     "j_sixth_sense"
+    ],
+    4440
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_blackboard",
+     "j_cavendish",
+     "j_misprint",
+     "j_photograph",
+     "j_sixth_sense"
+    ],
+    3924
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_cavendish",
+     "j_misprint",
+     "j_photograph",
+     "j_sixth_sense"
+    ],
+    19872
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_blackboard",
+     "j_cavendish",
+     "j_misprint",
+     "j_photograph",
+     "j_sixth_sense"
+    ],
+    9396
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_cavendish",
+     "j_misprint",
+     "j_photograph",
+     "j_sixth_sense"
+    ],
+    13770
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_cavendish",
+     "j_constellation",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_sixth_sense"
+    ],
+    17640
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_cavendish",
+     "j_constellation",
+     "j_hanging_chad",
+     "j_misprint",
+     "j_sixth_sense"
+    ],
+    17640
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_sixth_sense"
+    ],
+    6240
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_sixth_sense"
+    ],
+    8424
+   ],
+   [
+    7,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_sixth_sense"
+    ],
+    22896
+   ],
+   [
+    7,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_sixth_sense"
+    ],
+    19584
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_sixth_sense"
+    ],
+    17466
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [],
+    [
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "pl_earth",
+    [
+     "j_cavendish",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_chaos",
+     "j_dusk",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_cavendish",
+     "j_chaos",
+     "j_dusk",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_chaos",
+     "j_dusk",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_lovers",
+    [
+     "j_cavendish",
+     "j_crafty",
+     "j_hallucination",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_lovers",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_temperance",
+    [
+     "j_cavendish",
+     "j_jolly",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hierophant",
+    [
+     "j_cavendish",
+     "j_jolly",
+     "j_photograph",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_hierophant",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_sixth_sense"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_hierophant",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_sixth_sense"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 211,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 41,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_ancient",
+  "j_shoot_the_moon",
+  "j_delayed_grat"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ancient",
+   "j_delayed_grat"
+  ],
+  "money_spent": 33,
+  "best_score": 1188,
+  "rerolls": 1,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_ancient"
+    ],
+    308
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_ancient"
+    ],
+    126
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ancient"
+    ],
+    72
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_ancient",
+     "j_shoot_the_moon"
+    ],
+    102
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ancient",
+     "j_shoot_the_moon"
+    ],
+    675
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_ancient",
+     "j_delayed_grat",
+     "j_shoot_the_moon"
+    ],
+    780
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_ancient",
+     "j_delayed_grat",
+     "j_shoot_the_moon"
+    ],
+    315
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_ancient",
+     "j_delayed_grat",
+     "j_shoot_the_moon"
+    ],
+    540
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_ancient",
+     "j_delayed_grat",
+     "j_shoot_the_moon"
+    ],
+    162
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_ancient",
+     "j_delayed_grat",
+     "j_shoot_the_moon"
+    ],
+    171
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_ancient",
+     "j_delayed_grat",
+     "j_shoot_the_moon"
+    ],
+    315
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_empress",
+    [
+     "j_ancient",
+     "j_delayed_grat",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 216,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,656 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 210,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_stuntman",
+  "j_cavendish",
+  "j_half",
+  "j_gros_michel",
+  "j_scary_face"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_death",
+   "c_wheel_of_fortune",
+   "c_sun",
+   "c_emperor",
+   "c_death",
+   "c_devil",
+   "c_judgement"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_clever",
+   "j_gluttenous_joker",
+   "j_blue_joker",
+   "j_stuntman",
+   "j_even_steven",
+   "j_cavendish",
+   "j_constellation",
+   "j_half",
+   "j_delayed_grat",
+   "j_green_joker",
+   "j_delayed_grat",
+   "j_ride_the_bus",
+   "j_scary_face"
+  ],
+  "money_spent": 205,
+  "best_score": 202380,
+  "rerolls": 4,
+  "packs_bought": 23,
+  "packs_opened": 10,
+  "jokers_sold": [
+   [
+    4,
+    "j_clever"
+   ],
+   [
+    4,
+    "j_gluttenous_joker"
+   ],
+   [
+    4,
+    "j_constellation"
+   ],
+   [
+    5,
+    "j_even_steven"
+   ],
+   [
+    6,
+    "j_delayed_grat"
+   ],
+   [
+    7,
+    "j_green_joker"
+   ],
+   [
+    7,
+    "j_delayed_grat"
+   ],
+   [
+    8,
+    "j_ride_the_bus"
+   ],
+   [
+    8,
+    "j_blue_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    240
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_clever"
+    ],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_clever"
+    ],
+    208
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_clever"
+    ],
+    150
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_clever"
+    ],
+    60
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_clever",
+     "j_gluttenous_joker"
+    ],
+    1027
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_gluttenous_joker"
+    ],
+    680
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_gluttenous_joker"
+    ],
+    630
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_clever",
+     "j_gluttenous_joker"
+    ],
+    1648
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_clever",
+     "j_gluttenous_joker"
+    ],
+    1020
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_clever",
+     "j_gluttenous_joker"
+    ],
+    1030
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_clever",
+     "j_gluttenous_joker",
+     "j_stuntman"
+    ],
+    3664
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_clever",
+     "j_gluttenous_joker",
+     "j_stuntman"
+    ],
+    2947
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_clever",
+     "j_even_steven",
+     "j_gluttenous_joker",
+     "j_stuntman"
+    ],
+    9870
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_constellation",
+     "j_even_steven",
+     "j_stuntman"
+    ],
+    11280
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_half",
+     "j_stuntman"
+    ],
+    43440
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_half",
+     "j_stuntman"
+    ],
+    33108
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_half",
+     "j_stuntman"
+    ],
+    33294
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_half",
+     "j_stuntman"
+    ],
+    39552
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_half",
+     "j_stuntman"
+    ],
+    37851
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_half",
+     "j_stuntman"
+    ],
+    37665
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_green_joker",
+     "j_half",
+     "j_stuntman"
+    ],
+    34944
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_green_joker",
+     "j_half",
+     "j_stuntman"
+    ],
+    36924
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_green_joker",
+     "j_half",
+     "j_stuntman"
+    ],
+    39270
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_half",
+     "j_stuntman"
+    ],
+    34875
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_half",
+     "j_stuntman"
+    ],
+    33015
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_ride_the_bus",
+     "j_stuntman"
+    ],
+    37386
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_ride_the_bus",
+     "j_stuntman"
+    ],
+    33984
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_ride_the_bus",
+     "j_stuntman"
+    ],
+    44730
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_ride_the_bus",
+     "j_stuntman"
+    ],
+    33015
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_ride_the_bus",
+     "j_stuntman"
+    ],
+    37026
+   ],
+   [
+    8,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_ride_the_bus",
+     "j_stuntman"
+    ],
+    40635
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_half",
+     "j_scary_face",
+     "j_stuntman"
+    ],
+    56280
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_half",
+     "j_scary_face",
+     "j_stuntman"
+    ],
+    49560
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_half",
+     "j_scary_face",
+     "j_stuntman"
+    ],
+    49560
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_half",
+     "j_scary_face",
+     "j_stuntman"
+    ],
+    46980
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_clever",
+     "j_gluttenous_joker"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_clever",
+     "j_gluttenous_joker",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_wheel_of_fortune",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_half",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_sun",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_ride_the_bus",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_emperor",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_ride_the_bus",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_ride_the_bus",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_devil",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_ride_the_bus",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    8,
+    "c_judgement",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_half",
+     "j_stuntman"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 131,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

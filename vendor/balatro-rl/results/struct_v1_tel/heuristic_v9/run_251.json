@@ -1,0 +1,246 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 64,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_hallucination",
+  "j_acrobat",
+  "j_delayed_grat"
+ ],
+ "stats": {
+  "tarots": [
+   "c_strength"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hallucination",
+   "j_delayed_grat"
+  ],
+  "money_spent": 30,
+  "best_score": 1564,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    312
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_acrobat",
+     "j_hallucination"
+    ],
+    316
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_acrobat",
+     "j_hallucination"
+    ],
+    180
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    336
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    124
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    76
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    78
+   ],
+   [
+    2,
+    "Four of a Kind",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    700
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    108
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    316
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    240
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    288
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    720
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    176
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    192
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    108
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    180
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_strength",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 251,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

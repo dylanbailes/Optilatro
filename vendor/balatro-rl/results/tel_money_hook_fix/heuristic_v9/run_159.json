@@ -1,0 +1,279 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 56,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_even_steven",
+  "j_credit_card",
+  "j_bloodstone"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_devil",
+   "c_hermit",
+   "c_death",
+   "c_emperor",
+   "c_strength",
+   "c_moon"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_credit_card",
+   "j_bloodstone"
+  ],
+  "money_spent": 50,
+  "best_score": 3063,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 5,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    344
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_even_steven"
+    ],
+    630
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    1280
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    976
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    930
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    2133
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    936
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    135
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    180
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    80
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_even_steven"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_devil",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "Gold",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_moon",
+    [
+     "j_bloodstone",
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "Gold",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 159,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

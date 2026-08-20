@@ -1,0 +1,145 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 23,
+ "truncated": false,
+ "dollars": 7,
+ "jokers": [
+  "j_vagabond"
+ ],
+ "stats": {
+  "tarots": [
+   "c_devil",
+   "c_death"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_vagabond"
+  ],
+  "money_spent": 8,
+  "best_score": 460,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    16
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_vagabond"
+    ],
+    340
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_vagabond"
+    ],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_vagabond"
+    ],
+    312
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_vagabond"
+    ],
+    16
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_vagabond"
+    ],
+    15
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_vagabond"
+    ],
+    16
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_devil",
+    [
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 100,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

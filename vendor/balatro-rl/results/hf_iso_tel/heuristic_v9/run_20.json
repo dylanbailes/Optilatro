@@ -1,0 +1,235 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 57,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_faceless",
+  "j_green_joker",
+  "j_greedy_joker",
+  "j_mime"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_faceless",
+   "j_greedy_joker",
+   "j_mime"
+  ],
+  "money_spent": 31,
+  "best_score": 2574,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    292
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    150
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    255
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    140
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    385
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    48
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    434
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    948
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker"
+    ],
+    1185
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker"
+    ],
+    472
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_mime"
+    ],
+    504
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_mime"
+    ],
+    972
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_mime"
+    ],
+    396
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_mime"
+    ],
+    702
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 20,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

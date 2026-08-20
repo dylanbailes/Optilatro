@@ -1,0 +1,283 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 79,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_odd_todd",
+  "j_photograph",
+  "j_mail",
+  "j_reserved_parking",
+  "j_business"
+ ],
+ "stats": {
+  "tarots": [
+   "c_fool"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_photograph",
+   "j_egg",
+   "j_mail",
+   "j_reserved_parking",
+   "j_business"
+  ],
+  "money_spent": 61,
+  "best_score": 2580,
+  "rerolls": 1,
+  "packs_bought": 7,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_egg"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    112
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    153
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    64
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_odd_todd"
+    ],
+    448
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd"
+    ],
+    87
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_odd_todd",
+     "j_photograph"
+    ],
+    620
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_odd_todd",
+     "j_photograph"
+    ],
+    864
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_odd_todd",
+     "j_photograph"
+    ],
+    480
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_egg",
+     "j_odd_todd",
+     "j_photograph"
+    ],
+    488
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_odd_todd",
+     "j_photograph"
+    ],
+    240
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_egg",
+     "j_mail",
+     "j_odd_todd",
+     "j_photograph"
+    ],
+    1336
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_egg",
+     "j_mail",
+     "j_odd_todd",
+     "j_photograph"
+    ],
+    572
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_egg",
+     "j_mail",
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    464
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_egg",
+     "j_mail",
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    896
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_egg",
+     "j_mail",
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    448
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_egg",
+     "j_mail",
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    360
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_mail",
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    988
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_business",
+     "j_mail",
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    808
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_business",
+     "j_mail",
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    544
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_mail",
+     "j_odd_todd",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    240
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_odd_todd"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_fool",
+    [
+     "j_odd_todd",
+     "j_photograph"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_odd_todd",
+     "j_photograph"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 50,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

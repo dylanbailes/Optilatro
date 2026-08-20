@@ -1,0 +1,269 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 93,
+ "truncated": false,
+ "dollars": 20,
+ "jokers": [
+  "j_abstract",
+  "j_banner",
+  "j_misprint",
+  "j_lucky_cat",
+  "j_raised_fist"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_high_priestess"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_abstract",
+   "j_clever",
+   "j_chaos",
+   "j_banner",
+   "j_misprint",
+   "j_sly",
+   "j_lucky_cat",
+   "j_raised_fist"
+  ],
+  "money_spent": 75,
+  "best_score": 11034,
+  "rerolls": 1,
+  "packs_bought": 7,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_crazy"
+   ],
+   [
+    3,
+    "j_clever"
+   ],
+   [
+    3,
+    "j_chaos"
+   ],
+   [
+    4,
+    "j_sly"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy"
+    ],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crazy"
+    ],
+    260
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy"
+    ],
+    100
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crazy"
+    ],
+    300
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_crazy"
+    ],
+    880
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_abstract",
+     "j_clever",
+     "j_crazy"
+    ],
+    1750
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_chaos",
+     "j_clever",
+     "j_crazy"
+    ],
+    1988
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_chaos",
+     "j_clever",
+     "j_misprint"
+    ],
+    2850
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_chaos",
+     "j_clever",
+     "j_misprint"
+    ],
+    2982
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_lucky_cat",
+     "j_misprint",
+     "j_sly"
+    ],
+    4826
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_lucky_cat",
+     "j_misprint",
+     "j_sly"
+    ],
+    4968
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_lucky_cat",
+     "j_misprint",
+     "j_sly"
+    ],
+    3780
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_lucky_cat",
+     "j_misprint",
+     "j_sly"
+    ],
+    7254
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_lucky_cat",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    8930
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_lucky_cat",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    6600
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_lucky_cat",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    3007
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_chaos",
+     "j_clever",
+     "j_misprint"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_high_priestess",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_chaos",
+     "j_clever",
+     "j_misprint"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 3,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 50
+ }
+}

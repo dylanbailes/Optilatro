@@ -1,0 +1,246 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 89,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_juggler",
+  "j_greedy_joker",
+  "j_hanging_chad"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_juggler",
+   "j_hanging_chad"
+  ],
+  "money_spent": 49,
+  "best_score": 3567,
+  "rerolls": 0,
+  "packs_bought": 9,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    240
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_juggler"
+    ],
+    272
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_juggler"
+    ],
+    316
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_juggler"
+    ],
+    300
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_juggler"
+    ],
+    312
+   ],
+   [
+    2,
+    "Four of a Kind",
+    [
+     "j_greedy_joker",
+     "j_juggler"
+    ],
+    1000
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    616
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    749
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    1287
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    336
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    679
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    1110
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    290
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    1261
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    1417
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    777
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    1270
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    1105
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    352
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_juggler"
+    ],
+    840
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_greedy_joker",
+     "j_juggler"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 156,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

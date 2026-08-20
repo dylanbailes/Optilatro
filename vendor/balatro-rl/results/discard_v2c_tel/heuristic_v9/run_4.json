@@ -1,0 +1,631 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 169,
+ "truncated": false,
+ "dollars": 23,
+ "jokers": [
+  "j_green_joker",
+  "j_photograph",
+  "j_ice_cream",
+  "j_smiley",
+  "j_selzer"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_hermit",
+   "c_fool",
+   "c_hermit",
+   "c_lovers",
+   "c_wheel_of_fortune",
+   "c_wheel_of_fortune",
+   "c_magician",
+   "c_devil",
+   "c_empress"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_to_the_moon",
+   "j_misprint",
+   "j_splash",
+   "j_photograph",
+   "j_dusk",
+   "j_luchador",
+   "j_wily",
+   "j_ice_cream",
+   "j_faceless",
+   "j_egg",
+   "j_castle",
+   "j_smiley",
+   "j_bootstraps",
+   "j_jolly",
+   "j_selzer"
+  ],
+  "money_spent": 174,
+  "best_score": 22368,
+  "rerolls": 4,
+  "packs_bought": 16,
+  "packs_opened": 10,
+  "jokers_sold": [
+   [
+    2,
+    "j_to_the_moon"
+   ],
+   [
+    2,
+    "j_dusk"
+   ],
+   [
+    2,
+    "j_luchador"
+   ],
+   [
+    3,
+    "j_wily"
+   ],
+   [
+    3,
+    "j_splash"
+   ],
+   [
+    4,
+    "j_faceless"
+   ],
+   [
+    4,
+    "j_egg"
+   ],
+   [
+    4,
+    "j_castle"
+   ],
+   [
+    4,
+    "j_misprint"
+   ],
+   [
+    5,
+    "j_bootstraps"
+   ],
+   [
+    5,
+    "j_jolly"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Four of a Kind",
+    [
+     "j_green_joker",
+     "j_to_the_moon"
+    ],
+    800
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_misprint",
+     "j_splash",
+     "j_to_the_moon"
+    ],
+    660
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_splash",
+     "j_to_the_moon"
+    ],
+    900
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_green_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_splash"
+    ],
+    1786
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_luchador",
+     "j_misprint",
+     "j_photograph",
+     "j_splash"
+    ],
+    1200
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_luchador",
+     "j_misprint",
+     "j_photograph",
+     "j_splash"
+    ],
+    580
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_green_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_splash",
+     "j_wily"
+    ],
+    1344
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_splash",
+     "j_wily"
+    ],
+    1540
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_green_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_splash"
+    ],
+    2686
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_splash"
+    ],
+    1364
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_splash"
+    ],
+    4488
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph"
+    ],
+    5760
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph"
+    ],
+    8990
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_smiley"
+    ],
+    11400
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_bootstraps",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_smiley"
+    ],
+    11600
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_jolly",
+     "j_photograph",
+     "j_smiley"
+    ],
+    9520
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_jolly",
+     "j_photograph",
+     "j_smiley"
+    ],
+    2432
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_jolly",
+     "j_photograph",
+     "j_smiley"
+    ],
+    6480
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_selzer",
+     "j_smiley"
+    ],
+    2610
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_selzer",
+     "j_smiley"
+    ],
+    12308
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_selzer",
+     "j_smiley"
+    ],
+    2640
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_selzer",
+     "j_smiley"
+    ],
+    4810
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_selzer",
+     "j_smiley"
+    ],
+    10640
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_selzer",
+     "j_smiley"
+    ],
+    1430
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_selzer",
+     "j_smiley"
+    ],
+    1840
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_selzer",
+     "j_smiley"
+    ],
+    1530
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_green_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_splash",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_green_joker",
+     "j_luchador",
+     "j_misprint",
+     "j_photograph",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_faceless",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_lovers",
+    [
+     "j_bootstraps",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_wheel_of_fortune",
+    [
+     "j_bootstraps",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_wheel_of_fortune",
+    [
+     "j_bootstraps",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_magician",
+    [
+     "j_bootstraps",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_devil",
+    [
+     "j_bootstraps",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_empress",
+    [
+     "j_green_joker",
+     "j_ice_cream",
+     "j_jolly",
+     "j_photograph",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 4,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

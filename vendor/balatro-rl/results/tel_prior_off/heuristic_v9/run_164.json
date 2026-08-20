@@ -1,0 +1,202 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 44,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_crazy",
+  "j_runner",
+  "j_devious",
+  "j_to_the_moon"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_sun"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_crazy",
+   "j_runner",
+   "j_devious",
+   "j_to_the_moon"
+  ],
+  "money_spent": 31,
+  "best_score": 3136,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    268
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_crazy",
+     "j_runner"
+    ],
+    352
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_runner"
+    ],
+    120
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_runner"
+    ],
+    224
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_runner"
+    ],
+    368
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_runner"
+    ],
+    52
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_runner",
+     "j_to_the_moon"
+    ],
+    3136
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_runner",
+     "j_to_the_moon"
+    ],
+    225
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_runner",
+     "j_to_the_moon"
+    ],
+    146
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_runner",
+     "j_to_the_moon"
+    ],
+    74
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_runner",
+     "j_to_the_moon"
+    ],
+    560
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hermit",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_runner",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_sun",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_runner",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "Foil",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 164,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

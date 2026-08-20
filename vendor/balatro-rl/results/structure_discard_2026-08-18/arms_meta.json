@@ -1,0 +1,29 @@
+{
+ "seed_bank": "0-299 (shared)",
+ "notes": [
+  "Structure-aware discard + hand-play refinement (2026-08-18). Goal: ante-1 clear via the user's rule — discard toward the most likely best hand, play good hands that score near the blind target. Three rules: (1) structural discard POOL committed to the best line (pairs > flush > straight — the old quality-weakest pool broke pairs/suits: seed 65 discarded its 8s+As pairs chasing a 1-card flush and died on High Card 16), (2) hold-until-clear (weak hands keep discarding instead of burning a hand on a non-clearing play), (3) play-good-hand (a hand scoring >= 50% of the REMAINING target is played — seed 228 held its 240 straight chasing a 5-heart flush and died 298/300; now wins the full run)."
+ ],
+ "arms": [
+  {
+   "label": "baseline_archived (2026-08-17)",
+   "slug": "hf_ab_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\hf_ab_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policies heuristic_v9 --telemetry-dir results/hf_ab_tel"
+  },
+  {
+   "label": "structure_rules_OFF (control)",
+   "slug": "struct_off2_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\struct_off2_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policies heuristic_v9 --params '{\"discard_structure\": false, \"discard_hold_until_clear\": false, \"discard_play_good_hand\": 2.0}' --telemetry-dir results/struct_off2_tel"
+  },
+  {
+   "label": "structure_v4 (all rules ON)",
+   "slug": "struct_v4_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\struct_v4_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policies heuristic_v9 --telemetry-dir results/struct_v4_tel"
+  }
+ ]
+}

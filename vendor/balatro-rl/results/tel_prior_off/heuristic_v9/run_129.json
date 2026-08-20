@@ -1,0 +1,272 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 90,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_wrathful_joker",
+  "j_blue_joker",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [
+   "c_fool"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_wrathful_joker",
+   "j_golden",
+   "j_popcorn",
+   "j_blue_joker",
+   "j_reserved_parking"
+  ],
+  "money_spent": 82,
+  "best_score": 5159,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    3,
+    "j_golden"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    117
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_wrathful_joker"
+    ],
+    455
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_wrathful_joker"
+    ],
+    385
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_wrathful_joker"
+    ],
+    288
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_wrathful_joker"
+    ],
+    480
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_golden",
+     "j_wrathful_joker"
+    ],
+    356
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    1518
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    462
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_golden",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    1300
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    3150
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    2052
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    1000
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    1640
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    3519
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    1640
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    696
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    1660
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    444
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_golden",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_blue_joker",
+     "j_reserved_parking",
+     "j_wrathful_joker"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 129,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

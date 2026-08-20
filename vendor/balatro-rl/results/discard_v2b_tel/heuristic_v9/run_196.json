@@ -1,0 +1,182 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 45,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_hologram",
+  "j_credit_card",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hologram",
+   "j_credit_card",
+   "j_splash"
+  ],
+  "money_spent": 21,
+  "best_score": 1187,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    308
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hologram"
+    ],
+    316
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hologram"
+    ],
+    280
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_hologram"
+    ],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_hologram"
+    ],
+    316
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_hologram"
+    ],
+    144
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_hologram",
+     "j_splash"
+    ],
+    410
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_hologram",
+     "j_splash"
+    ],
+    132
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_hologram",
+     "j_splash"
+    ],
+    206
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_hologram",
+     "j_splash"
+    ],
+    350
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_hologram",
+     "j_splash"
+    ],
+    460
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_hologram",
+     "j_splash"
+    ],
+    450
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_hologram",
+     "j_splash"
+    ],
+    202
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_hologram",
+     "j_splash"
+    ],
+    75
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 196,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

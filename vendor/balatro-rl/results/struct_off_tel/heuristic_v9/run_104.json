@@ -1,0 +1,284 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 61,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_mad",
+  "j_flower_pot",
+  "j_sly",
+  "j_ticket",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon",
+   "c_fool",
+   "c_moon"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mad",
+   "j_flower_pot",
+   "j_sly",
+   "j_red_card",
+   "j_half",
+   "j_scary_face",
+   "j_ticket",
+   "j_greedy_joker"
+  ],
+  "money_spent": 75,
+  "best_score": 2724,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    2,
+    "j_delayed_grat"
+   ],
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    2,
+    "j_half"
+   ],
+   [
+    2,
+    "j_scary_face"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_mad"
+    ],
+    330
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_mad"
+    ],
+    128
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    224
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    512
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_red_card",
+     "j_sly"
+    ],
+    1752
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_half",
+     "j_mad",
+     "j_scary_face",
+     "j_sly"
+    ],
+    2596
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_mad",
+     "j_scary_face",
+     "j_sly",
+     "j_ticket"
+    ],
+    228
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_mad",
+     "j_scary_face",
+     "j_sly",
+     "j_ticket"
+    ],
+    2496
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    504
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    488
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    600
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    260
+   ]
+  ],
+  "consumable_uses": [
+   [
+    3,
+    "c_moon",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_moon",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 104,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,215 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 64,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_troubadour",
+  "j_gluttenous_joker",
+  "j_half",
+  "j_hanging_chad"
+ ],
+ "stats": {
+  "tarots": [
+   "c_emperor"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ticket",
+   "j_business",
+   "j_turtle_bean",
+   "j_gluttenous_joker",
+   "j_half",
+   "j_hanging_chad"
+  ],
+  "money_spent": 57,
+  "best_score": 3648,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_business"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_ticket",
+     "j_troubadour"
+    ],
+    507
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_ticket",
+     "j_troubadour"
+    ],
+    650
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_business",
+     "j_ticket",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    840
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_business",
+     "j_ticket",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    1302
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_ticket",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    1720
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_half",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    1134
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_half",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    936
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_hanging_chad",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    2880
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_hanging_chad",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    768
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_hanging_chad",
+     "j_troubadour"
+    ],
+    434
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_hanging_chad",
+     "j_troubadour"
+    ],
+    496
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_hanging_chad",
+     "j_troubadour"
+    ],
+    465
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_emperor",
+    [
+     "j_business",
+     "j_ticket",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 162,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

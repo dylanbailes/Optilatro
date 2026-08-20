@@ -1,0 +1,190 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 34,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_vagabond"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_strength",
+   "c_wheel_of_fortune",
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 11,
+  "best_score": 588,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_vagabond"
+    ],
+    308
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_vagabond"
+    ],
+    120
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_vagabond"
+    ],
+    144
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_vagabond"
+    ],
+    135
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_vagabond"
+    ],
+    240
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_vagabond"
+    ],
+    108
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_vagabond"
+    ],
+    105
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_strength",
+    [
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_vagabond"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_high_priestess",
+    [
+     "j_vagabond"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_vagabond"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 132,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

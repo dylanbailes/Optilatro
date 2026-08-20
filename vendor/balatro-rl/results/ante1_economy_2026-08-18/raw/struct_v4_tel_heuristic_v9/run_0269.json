@@ -1,0 +1,271 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 67,
+ "truncated": false,
+ "dollars": 20,
+ "jokers": [
+  "j_sly",
+  "j_cavendish",
+  "j_misprint",
+  "j_fortune_teller"
+ ],
+ "stats": {
+  "tarots": [
+   "c_emperor",
+   "c_empress",
+   "c_strength"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_sly",
+   "j_cavendish",
+   "j_misprint",
+   "j_golden",
+   "j_seance",
+   "j_fortune_teller"
+  ],
+  "money_spent": 48,
+  "best_score": 5904,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_devious"
+   ],
+   [
+    2,
+    "j_golden"
+   ],
+   [
+    3,
+    "j_seance"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_devious"
+    ],
+    372
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_devious"
+    ],
+    116
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_devious",
+     "j_sly"
+    ],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_sly"
+    ],
+    180
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_devious",
+     "j_sly"
+    ],
+    138
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_devious",
+     "j_sly"
+    ],
+    564
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_devious",
+     "j_sly"
+    ],
+    408
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_devious",
+     "j_misprint",
+     "j_sly"
+    ],
+    1050
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_devious",
+     "j_misprint",
+     "j_sly"
+    ],
+    3240
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_devious",
+     "j_golden",
+     "j_misprint",
+     "j_sly"
+    ],
+    2574
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_seance",
+     "j_sly"
+    ],
+    5904
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_sly"
+    ],
+    3672
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_sly"
+    ],
+    1728
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_emperor",
+    [
+     "j_cavendish",
+     "j_devious",
+     "j_misprint",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_cavendish",
+     "j_devious",
+     "j_misprint",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_cavendish",
+     "j_devious",
+     "j_misprint",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 269,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

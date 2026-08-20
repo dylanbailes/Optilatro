@@ -1,0 +1,262 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 57,
+ "truncated": false,
+ "dollars": 13,
+ "jokers": [
+  "j_hallucination",
+  "j_egg",
+  "j_scholar",
+  "j_todo_list",
+  "j_rough_gem"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_hanged_man",
+   "c_judgement"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_popcorn",
+   "j_hallucination",
+   "j_egg",
+   "j_scholar",
+   "j_rough_gem"
+  ],
+  "money_spent": 39,
+  "best_score": 1416,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_devious"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    208
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_devious",
+     "j_popcorn"
+    ],
+    660
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    756
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    756
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    252
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    1104
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    200
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    1416
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_rough_gem",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    1020
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_rough_gem",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    116
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_rough_gem",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    28
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_rough_gem",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    180
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_empress",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_judgement",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_scholar"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 208,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

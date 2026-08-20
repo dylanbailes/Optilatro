@@ -1,0 +1,302 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 76,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_hallucination",
+  "j_acrobat",
+  "j_delayed_grat",
+  "j_zany",
+  "j_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_strength"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hallucination",
+   "j_delayed_grat",
+   "j_zany",
+   "j_joker"
+  ],
+  "money_spent": 35,
+  "best_score": 2969,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    312
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_acrobat",
+     "j_hallucination"
+    ],
+    316
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_acrobat",
+     "j_hallucination"
+    ],
+    180
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    336
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    124
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    76
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    78
+   ],
+   [
+    2,
+    "Four of a Kind",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    700
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    108
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    316
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    240
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    320
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    660
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_zany"
+    ],
+    308
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_zany"
+    ],
+    720
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_zany"
+    ],
+    186
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_zany"
+    ],
+    1755
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_joker",
+     "j_zany"
+    ],
+    624
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_joker",
+     "j_zany"
+    ],
+    434
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_joker",
+     "j_zany"
+    ],
+    180
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_joker",
+     "j_zany"
+    ],
+    288
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_strength",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_hallucination"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 251,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

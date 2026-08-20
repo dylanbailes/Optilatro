@@ -1,0 +1,535 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 117,
+ "truncated": false,
+ "dollars": 21,
+ "jokers": [
+  "j_hanging_chad",
+  "j_odd_todd",
+  "j_banner",
+  "j_scholar"
+ ],
+ "stats": {
+  "tarots": [
+   "c_emperor",
+   "c_hierophant",
+   "c_moon",
+   "c_hanged_man",
+   "c_fool",
+   "c_hanged_man",
+   "c_emperor",
+   "c_death",
+   "c_sun"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_jupiter",
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mail",
+   "j_juggler",
+   "j_popcorn",
+   "j_onyx_agate",
+   "j_scary_face",
+   "j_gros_michel",
+   "j_odd_todd",
+   "j_banner",
+   "j_scholar"
+  ],
+  "money_spent": 100,
+  "best_score": 17820,
+  "rerolls": 1,
+  "packs_bought": 10,
+  "packs_opened": 7,
+  "jokers_sold": [
+   [
+    2,
+    "j_mail"
+   ],
+   [
+    3,
+    "j_juggler"
+   ],
+   [
+    4,
+    "j_scary_face"
+   ],
+   [
+    4,
+    "j_onyx_agate"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    276
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_mail"
+    ],
+    136
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hanging_chad",
+     "j_mail"
+    ],
+    308
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_mail"
+    ],
+    64
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_hanging_chad",
+     "j_juggler",
+     "j_mail"
+    ],
+    910
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_hanging_chad",
+     "j_juggler",
+     "j_mail",
+     "j_popcorn"
+    ],
+    3135
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_hanging_chad",
+     "j_juggler",
+     "j_mail",
+     "j_popcorn"
+    ],
+    3335
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_juggler",
+     "j_mail",
+     "j_onyx_agate",
+     "j_popcorn"
+    ],
+    1728
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_juggler",
+     "j_onyx_agate",
+     "j_popcorn",
+     "j_scary_face"
+    ],
+    2499
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_juggler",
+     "j_onyx_agate",
+     "j_popcorn",
+     "j_scary_face"
+    ],
+    3154
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_juggler",
+     "j_onyx_agate",
+     "j_scary_face"
+    ],
+    4500
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate",
+     "j_scary_face"
+    ],
+    5180
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    10829
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    17820
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    11165
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_banner",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    6479
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_banner",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    785
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_banner",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    1608
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_banner",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    448
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_hanging_chad",
+     "j_juggler",
+     "j_onyx_agate",
+     "j_popcorn",
+     "j_scary_face"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_emperor",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_moon",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "Bonus",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hanged_man",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hanged_man",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_emperor",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_onyx_agate"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "Holographic",
+      "seal": "Blue"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_sun",
+    [
+     "j_banner",
+     "j_gros_michel",
+     "j_hanging_chad",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_jupiter",
+    [
+     "j_banner",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_jupiter",
+    [
+     "j_banner",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 36,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 50
+ }
+}

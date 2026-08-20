@@ -35,7 +35,7 @@ class TestCatalogue:
         for key in ["v_seed_money", "v_money_tree", "v_blank",
                     "v_antimatter", "v_retcon"]:
             assert key in ALL_VOUCHERS
-        assert len(VOUCHER_BASE) == 15
+        assert len(VOUCHER_BASE) == 16
 
     def test_pairs_point_at_real_bases(self):
         for upgrade, base in VOUCHER_BASE.items():
@@ -53,7 +53,19 @@ class TestPairUnlock:
         assert not (seen & set(VOUCHER_BASE))  # no upgrade before its base
         assert "v_seed_money" in seen
         assert "v_blank" in seen
-        assert "v_crystal_ball" in seen or "v_omen_globe" in seen  # standalone
+        assert "v_crystal_ball" in seen  # base is always offerable
+
+    def test_omen_globe_locked_behind_crystal_ball(self):
+        # Doc §9 pairs Crystal Ball -> Omen Globe; the sim previously treated
+        # Omen Globe as standalone (missing VOUCHER_BASE entry).
+        g = BalatroGame(seed=5, rng_mode="seed")
+        seen = {_random_voucher(g) for _ in range(400)}
+        assert "v_omen_globe" not in seen      # upgrade: pair-locked
+        assert "v_crystal_ball" in seen        # base always offerable
+        g2 = BalatroGame(seed=5, rng_mode="seed")
+        apply_voucher(g2, "v_crystal_ball")
+        seen2 = {_random_voucher(g2) for _ in range(600)}
+        assert "v_omen_globe" in seen2
 
     def test_upgrade_appears_after_base_owned(self):
         g = BalatroGame(seed=5, rng_mode="seed")
@@ -280,26 +292,32 @@ class TestObservatory:
 
 
 class TestBossReroll:
+    """Boss rerolls fire in the shop BEFORE the boss — the upcoming Boss
+    Blind is pre-selected at shop entry (game.next_boss_key), and the reroll
+    re-keys it. The rerolled boss's score scaling (Wall / Violet / Needle) is
+    applied when the blind is set up (_prepare_next_blind at shop end)."""
+
     def _shop_before_boss(self, seed=11):
         g = BalatroGame(seed=seed, rng_mode="seed")
         g.ante = 3   # gives access to wall/violet for scaling checks
-        g.blind_idx = 2
-        g._prepare_next_blind()
+        g.blind_idx = 1
+        g._preselect_next_boss()   # shop entry: the upcoming boss is known
         g.state = State.SHOP
+        assert g.next_boss_key is not None
         return g
 
     def test_directors_cut_rerolls_once_per_ante(self):
         g = self._shop_before_boss()
         apply_voucher(g, "v_directors_cut")
-        assert g.current_blind.kind == "Boss"
+        assert g.current_blind.kind != "Boss"   # the boss is UPCOMING
         g.dollars = 100
-        old = g.current_blind.boss_key
+        old = g.next_boss_key
         g.step({"type": "reroll_boss"})
-        assert g.current_blind.boss_key != old
+        assert g.next_boss_key != old
         assert g.dollars == 90
-        old2 = g.current_blind.boss_key
+        old2 = g.next_boss_key
         g.step({"type": "reroll_boss"})
-        assert g.current_blind.boss_key == old2   # blocked: once per Ante
+        assert g.next_boss_key == old2   # blocked: once per Ante
         assert g.dollars == 90
 
     def test_retcon_unlimited(self):
@@ -307,30 +325,51 @@ class TestBossReroll:
         apply_voucher(g, "v_directors_cut")
         apply_voucher(g, "v_retcon")
         g.dollars = 100
-        seen = {g.current_blind.boss_key}
+        seen = {g.next_boss_key}
         for _ in range(4):
             g.step({"type": "reroll_boss"})
-            seen.add(g.current_blind.boss_key)
+            seen.add(g.next_boss_key)
         assert len(seen) > 1
         assert g.dollars == 60
 
     def test_reroll_boss_not_available_without_voucher(self):
         g = self._shop_before_boss()
         g.dollars = 100
+        old = g.next_boss_key
+        g.step({"type": "reroll_boss"})
+        assert g.next_boss_key == old
+        assert g.dollars == 100
+
+    def test_reroll_after_boss_is_a_noop(self):
+        """The old bug: rerolling after the boss was beaten (kind == "Boss")
+        wasted $10 on the ALREADY-BEATEN boss. With next_boss_key set only
+        before the boss, that waste is impossible."""
+        g = BalatroGame(seed=11, rng_mode="seed")
+        apply_voucher(g, "v_directors_cut")
+        g.blind_idx = 2
+        g._prepare_next_blind()      # the Boss blind is the CURRENT blind now
+        assert g.current_blind.kind == "Boss"
+        assert g.next_boss_key is None
+        g.dollars = 100
         old = g.current_blind.boss_key
         g.step({"type": "reroll_boss"})
         assert g.current_blind.boss_key == old
-        assert g.dollars == 100
+        assert g.dollars == 100      # no $10 waste on the beaten boss
 
     def test_reroll_to_wall_scales_chips(self):
+        """Rerolling onto The Wall gives it a 4x target when the boss blind is
+        set up at shop end (_prepare_next_blind) — Wall/Violet scaling is part
+        of the ability set applied there."""
         g = self._shop_before_boss()
         apply_voucher(g, "v_directors_cut")
         apply_voucher(g, "v_retcon")
         g.dollars = 500
         for _ in range(30):
-            if g.current_blind.boss_key == "bl_wall":
+            if g.next_boss_key == "bl_wall":
                 break
             g.step({"type": "reroll_boss"})
+        g._end_shop()
+        assert g.current_blind.is_boss
         if g.current_blind.boss_key == "bl_wall":
             assert g.current_blind.chips_target == BLIND_CHIPS[g.ante][0] * 4
         else:
@@ -340,16 +379,18 @@ class TestBossReroll:
             )
 
     def test_reroll_to_needle_scales_chips(self):
-        """Rerolling onto The Needle sets its 1x base target, mirroring the
-        _prepare_next_blind rule (bl_needle.mult = 1, non-disableable)."""
+        """Rerolling onto The Needle gives its 1x base target at shop end
+        (bl_needle.mult = 1, non-disableable)."""
         g = self._shop_before_boss(seed=7)
         apply_voucher(g, "v_directors_cut")
         apply_voucher(g, "v_retcon")
         g.dollars = 500
         for _ in range(30):
-            if g.current_blind.boss_key == "bl_needle":
+            if g.next_boss_key == "bl_needle":
                 break
             g.step({"type": "reroll_boss"})
+        g._end_shop()
+        assert g.current_blind.is_boss
         assert g.current_blind.boss_key == "bl_needle"
         assert g.current_blind.chips_target == BLIND_CHIPS[g.ante][0]
 

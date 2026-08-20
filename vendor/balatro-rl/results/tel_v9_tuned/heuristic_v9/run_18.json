@@ -1,0 +1,257 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 71,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_misprint",
+  "j_splash",
+  "j_blackboard",
+  "j_red_card",
+  "j_abstract"
+ ],
+ "stats": {
+  "tarots": [
+   "c_lovers"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_misprint",
+   "j_blackboard",
+   "j_red_card",
+   "j_abstract"
+  ],
+  "money_spent": 48,
+  "best_score": 4104,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    312
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_misprint",
+     "j_splash"
+    ],
+    264
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_misprint",
+     "j_splash"
+    ],
+    126
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_misprint",
+     "j_splash"
+    ],
+    420
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_splash"
+    ],
+    640
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_splash"
+    ],
+    532
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_splash"
+    ],
+    154
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_splash"
+    ],
+    1560
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_splash"
+    ],
+    1026
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_splash"
+    ],
+    60
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_splash"
+    ],
+    510
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_splash"
+    ],
+    2601
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_splash"
+    ],
+    4104
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_red_card",
+     "j_splash"
+    ],
+    2448
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_red_card",
+     "j_splash"
+    ],
+    130
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_red_card",
+     "j_splash"
+    ],
+    312
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_red_card",
+     "j_splash"
+    ],
+    300
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blackboard",
+     "j_misprint",
+     "j_red_card",
+     "j_splash"
+    ],
+    3162
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blackboard",
+     "j_misprint",
+     "j_red_card",
+     "j_splash"
+    ],
+    432
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_lovers",
+    [
+     "j_blackboard",
+     "j_misprint",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 18,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

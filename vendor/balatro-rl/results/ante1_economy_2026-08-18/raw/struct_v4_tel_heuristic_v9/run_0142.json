@@ -1,0 +1,310 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 82,
+ "truncated": false,
+ "dollars": 13,
+ "jokers": [
+  "j_lusty_joker",
+  "j_photograph",
+  "j_scholar",
+  "j_bloodstone",
+  "j_trousers"
+ ],
+ "stats": {
+  "tarots": [
+   "c_chariot"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_satellite",
+   "j_faceless",
+   "j_half",
+   "j_photograph",
+   "j_scholar",
+   "j_bloodstone",
+   "j_trousers"
+  ],
+  "money_spent": 45,
+  "best_score": 6364,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_satellite"
+   ],
+   [
+    2,
+    "j_faceless"
+   ],
+   [
+    2,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    248
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_satellite"
+    ],
+    348
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_satellite"
+    ],
+    104
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_faceless",
+     "j_lusty_joker",
+     "j_satellite"
+    ],
+    240
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_lusty_joker",
+     "j_satellite"
+    ],
+    260
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_lusty_joker",
+     "j_satellite"
+    ],
+    240
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_faceless",
+     "j_half",
+     "j_lusty_joker",
+     "j_satellite"
+    ],
+    1242
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_faceless",
+     "j_half",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_satellite"
+    ],
+    720
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_half",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_satellite"
+    ],
+    528
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_faceless",
+     "j_half",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    936
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_half",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    858
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_bloodstone",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar",
+     "j_trousers"
+    ],
+    1616
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_bloodstone",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar",
+     "j_trousers"
+    ],
+    351
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bloodstone",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar",
+     "j_trousers"
+    ],
+    36
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_bloodstone",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar",
+     "j_trousers"
+    ],
+    1552
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_bloodstone",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar",
+     "j_trousers"
+    ],
+    4812
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_bloodstone",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar",
+     "j_trousers"
+    ],
+    504
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_bloodstone",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar",
+     "j_trousers"
+    ],
+    102
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bloodstone",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar",
+     "j_trousers"
+    ],
+    30
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bloodstone",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar",
+     "j_trousers"
+    ],
+    195
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_chariot",
+    [
+     "j_faceless",
+     "j_half",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 142,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

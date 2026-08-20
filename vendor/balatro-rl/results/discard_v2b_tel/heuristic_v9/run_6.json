@@ -1,0 +1,301 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 72,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_credit_card",
+  "j_cloud_9",
+  "j_delayed_grat",
+  "j_todo_list",
+  "j_egg"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_lovers",
+   "c_death",
+   "c_hermit",
+   "c_emperor",
+   "c_hierophant"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_selzer",
+   "j_credit_card",
+   "j_cloud_9",
+   "j_delayed_grat",
+   "j_todo_list",
+   "j_egg"
+  ],
+  "money_spent": 79,
+  "best_score": 3200,
+  "rerolls": 2,
+  "packs_bought": 8,
+  "packs_opened": 6,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    296
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_selzer"
+    ],
+    208
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_selzer"
+    ],
+    100
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_selzer"
+    ],
+    92
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_selzer"
+    ],
+    52
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_selzer"
+    ],
+    320
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_selzer"
+    ],
+    2880
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_selzer"
+    ],
+    1062
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_selzer",
+     "j_todo_list"
+    ],
+    348
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_selzer",
+     "j_todo_list"
+    ],
+    452
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_todo_list"
+    ],
+    484
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_egg",
+     "j_todo_list"
+    ],
+    296
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [
+     "j_credit_card",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_lovers",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_selzer",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_egg",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_egg",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hierophant",
+    [
+     "j_cloud_9",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_egg",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 6,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

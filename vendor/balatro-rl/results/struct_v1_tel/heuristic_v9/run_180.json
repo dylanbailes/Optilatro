@@ -1,0 +1,113 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 33,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_faceless",
+  "j_crafty",
+  "j_reserved_parking",
+  "j_certificate"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_faceless",
+   "j_reserved_parking",
+   "j_certificate"
+  ],
+  "money_spent": 24,
+  "best_score": 612,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    316
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crafty",
+     "j_faceless"
+    ],
+    612
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crafty",
+     "j_faceless",
+     "j_reserved_parking"
+    ],
+    604
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_reserved_parking"
+    ],
+    48
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_reserved_parking"
+    ],
+    124
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_reserved_parking"
+    ],
+    40
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_reserved_parking"
+    ],
+    52
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 180,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

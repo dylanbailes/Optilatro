@@ -1,0 +1,175 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 49,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_smeared",
+  "j_ticket",
+  "j_todo_list",
+  "j_hologram"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ticket",
+   "j_todo_list",
+   "j_hologram"
+  ],
+  "money_spent": 24,
+  "best_score": 1028,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    84
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    64
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_smeared"
+    ],
+    264
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_smeared"
+    ],
+    308
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_smeared",
+     "j_ticket"
+    ],
+    100
+   ],
+   [
+    1,
+    "Straight Flush",
+    [
+     "j_smeared",
+     "j_ticket"
+    ],
+    928
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_smeared",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    308
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_smeared",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    344
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_smeared",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    153
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_hologram",
+     "j_smeared",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    276
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hologram",
+     "j_smeared",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    108
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_hologram",
+     "j_smeared",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    220
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hologram",
+     "j_smeared",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    112
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 2,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

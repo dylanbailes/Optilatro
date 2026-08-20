@@ -1,0 +1,465 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 130,
+ "truncated": false,
+ "dollars": 20,
+ "jokers": [
+  "j_stencil",
+  "j_smiley",
+  "j_ice_cream",
+  "j_lusty_joker",
+  "j_mime"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_judgement",
+   "c_temperance",
+   "c_fool",
+   "c_temperance",
+   "c_chariot",
+   "c_magician",
+   "c_fool",
+   "c_magician"
+  ],
+  "planets": [],
+  "spectrals": [
+   "s_black_hole",
+   "s_ectoplasm"
+  ],
+  "jokers_bought": [
+   "j_stencil",
+   "j_blue_joker",
+   "j_smiley",
+   "j_ice_cream",
+   "j_lusty_joker",
+   "j_gros_michel",
+   "j_wrathful_joker",
+   "j_mime"
+  ],
+  "money_spent": 129,
+  "best_score": 11092,
+  "rerolls": 4,
+  "packs_bought": 14,
+  "packs_opened": 10,
+  "jokers_sold": [
+   [
+    2,
+    "j_blue_joker"
+   ],
+   [
+    3,
+    "j_droll"
+   ],
+   [
+    4,
+    "j_wrathful_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_stencil"
+    ],
+    1104
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_stencil"
+    ],
+    624
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    1236
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_droll",
+     "j_ice_cream",
+     "j_smiley",
+     "j_stencil"
+    ],
+    3472
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_droll",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    3097
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_droll",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    3150
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_droll",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    2926
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_droll",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    1650
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    4252
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    5994
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    8322
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_mime",
+     "j_smiley",
+     "j_stencil"
+    ],
+    8415
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_mime",
+     "j_smiley",
+     "j_stencil"
+    ],
+    2677
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_mime",
+     "j_smiley",
+     "j_stencil"
+    ],
+    7740
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_mime",
+     "j_smiley",
+     "j_stencil"
+    ],
+    816
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_mime",
+     "j_smiley",
+     "j_stencil"
+    ],
+    1150
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_mime",
+     "j_smiley",
+     "j_stencil"
+    ],
+    770
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_judgement",
+    [
+     "j_blue_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_blue_joker",
+     "j_droll",
+     "j_ice_cream",
+     "j_smiley",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_droll",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_droll",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_droll",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_smiley",
+     "j_stencil",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Gold"
+     },
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "s_black_hole",
+    [
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_mime",
+     "j_smiley",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    4,
+    "s_ectoplasm",
+    [
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_mime",
+     "j_smiley",
+     "j_stencil"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 237,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

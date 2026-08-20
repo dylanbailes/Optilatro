@@ -8,7 +8,10 @@ test_boss_effects.py — Regression tests for the implemented boss blind effects
   The Wheel (1-in-7 cards drawn face down), The House (opening hand face down),
   The Arm (permanently decrease played hand level by 1), plus the corrected
   The Flint (halve base chips+mult) and The Eye / The Mouth
-  (a disallowed hand still plays and wastes a hand but scores 0).
+  (a disallowed hand still plays and wastes a hand but scores 0). Also
+  The Fish (cards drawn after a PLAYED hand are face down; discard-draws
+  face up; hand size unchanged) and The Serpent (draw 3 after every play
+  AND discard, ignoring hand size — overfills the hand).
 
 Effects verified against the Balatro wiki (balatrowiki.org/w/Blinds_and_Antes).
 """
@@ -539,3 +542,84 @@ class TestEyeMouth:
         assert g.hands_left == hands_before - 1           # rejected play still wastes a hand
         assert g.chips_scored == chips_before             # and scores nothing
         assert g.played_hand_types_this_round == {"Pair"}   # rejected type does not relock
+
+
+# ── The Fish (cards drawn after a PLAYED hand are face down) ─────────────────
+
+class TestFish:
+    def test_play_draws_are_face_down(self):
+        g = BalatroGame(seed=42)
+        _setup_boss(g, "bl_fish")
+        assert g.hand and all(not c.flipped for c in g.hand)  # opening deal face up
+        g.step({"type": "play", "cards": [0]})
+        drawn = g.hand[-1]                    # the replacement draw
+        assert drawn.flipped, "replacement draw after a play must be face down"
+        assert sum(c.flipped for c in g.hand) == 1
+
+    def test_discard_draws_are_face_up(self):
+        g = BalatroGame(seed=42)
+        _setup_boss(g, "bl_fish")
+        g.step({"type": "discard", "cards": [0]})
+        assert not g.hand[-1].flipped, "draws after a discard must be face up"
+        assert not any(c.flipped for c in g.hand)
+
+    def test_hand_size_unchanged_after_play(self):
+        """The real Fish reduces information, not hand size — the old
+        'draw 1 fewer card per play' model was a bug."""
+        g = BalatroGame(seed=42)
+        _setup_boss(g, "bl_fish")
+        for idx in (0, 1, 2):
+            g.step({"type": "play", "cards": [0]})
+        assert len(g.hand) == g.hand_size, f"hand shrank to {len(g.hand)}"
+
+    def test_unflipped_after_round(self):
+        g = BalatroGame(seed=42)
+        _setup_boss(g, "bl_fish")
+        g.step({"type": "play", "cards": [0]})
+        assert any(c.flipped for c in g.hand)
+        g._undo_boss_debuffs("bl_fish")
+        assert not any(c.flipped for c in g.hand + g.deck + g.spent)
+
+
+# ── The Serpent (draw 3 after every play AND discard, ignoring hand size) ────
+
+class TestSerpent:
+    def test_play_overfills_hand_by_three(self):
+        g = BalatroGame(seed=42)
+        _setup_boss(g, "bl_serpent")
+        n = len(g.hand)                       # 8 (hand_size)
+        g.step({"type": "play", "cards": [0]})
+        assert len(g.hand) == n - 1 + 3, f"hand {len(g.hand)} != {n - 1 + 3}"
+        assert len(g.hand) > g.hand_size      # overfills past the limit
+
+    def test_discard_overfills_hand_by_three(self):
+        g = BalatroGame(seed=42)
+        _setup_boss(g, "bl_serpent")
+        n = len(g.hand)
+        g.step({"type": "discard", "cards": [0]})
+        assert len(g.hand) == n - 1 + 3
+        assert len(g.hand) > g.hand_size
+
+    def test_does_not_dump_the_hand(self):
+        """The old 'discard the hand and redraw to full' model was a bug —
+        the remaining hand is kept and 3 cards are drawn on top of it."""
+        g = BalatroGame(seed=42)
+        _setup_boss(g, "bl_serpent")
+        kept = g.hand[1:]                     # every card except the one we play
+        g.step({"type": "play", "cards": [0]})
+        assert all(any(k is h for h in g.hand) for k in kept), \
+            "the remaining hand was dumped instead of kept"
+
+    def test_stops_cleanly_when_deck_exhausted(self):
+        """Deck + spent both empty: draw nothing, no infinite loop.
+
+        Calls the private _draw_cards directly on purpose: through `step`, the
+        played card always lands in `spent` (the reshuffle source), so true
+        exhaustion is unreachable via a play."""
+        g = BalatroGame(seed=42)
+        _setup_boss(g, "bl_serpent")
+        g.deck = []
+        g.spent = []
+        n = len(g.hand)
+        assert g._draw_cards(3) == 0          # returns the count actually drawn
+        assert len(g.hand) == n               # untouched, no hang

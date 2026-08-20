@@ -1,0 +1,144 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 34,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_crafty",
+  "j_credit_card",
+  "j_crazy"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_crafty",
+   "j_credit_card"
+  ],
+  "money_spent": 19,
+  "best_score": 1264,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    56
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_crafty",
+     "j_crazy",
+     "j_credit_card"
+    ],
+    1264
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crafty",
+     "j_crazy",
+     "j_credit_card"
+    ],
+    616
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_crafty",
+     "j_crazy",
+     "j_credit_card"
+    ],
+    64
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_crafty",
+     "j_crazy",
+     "j_credit_card"
+    ],
+    16
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_crafty",
+     "j_crazy",
+     "j_credit_card"
+    ],
+    36
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_crafty",
+     "j_crazy",
+     "j_credit_card"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_crafty",
+     "j_crazy",
+     "j_credit_card"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 41,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

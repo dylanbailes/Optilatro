@@ -1,0 +1,231 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 68,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_seeing_double",
+  "j_devious",
+  "j_runner",
+  "j_shoot_the_moon"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_magician"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_rocket",
+   "j_popcorn",
+   "j_faceless",
+   "j_runner",
+   "j_shoot_the_moon"
+  ],
+  "money_spent": 67,
+  "best_score": 2161,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_rocket"
+   ],
+   [
+    2,
+    "j_faceless"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    616
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_popcorn",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    968
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    1800
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    1568
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    1040
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_devious",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    2016
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_devious",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    768
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    900
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_devious",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    225
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    268
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_empress",
+    [
+     "j_popcorn",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_devious",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 69,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

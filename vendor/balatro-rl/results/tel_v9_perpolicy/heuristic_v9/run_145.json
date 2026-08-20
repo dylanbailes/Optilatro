@@ -1,0 +1,121 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 37,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_hanging_chad",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_splash"
+  ],
+  "money_spent": 22,
+  "best_score": 798,
+  "rerolls": 1,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_hanging_chad"
+    ],
+    372
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_hanging_chad"
+    ],
+    180
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hanging_chad"
+    ],
+    428
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hanging_chad"
+    ],
+    308
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_splash"
+    ],
+    138
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_hanging_chad",
+     "j_splash"
+    ],
+    324
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_hanging_chad",
+     "j_splash"
+    ],
+    276
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_splash"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 145,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,309 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 75,
+ "truncated": false,
+ "dollars": 11,
+ "jokers": [
+  "j_lusty_joker",
+  "j_lucky_cat",
+  "j_sly",
+  "j_faceless",
+  "j_cavendish"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_lovers"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_lusty_joker",
+   "j_lucky_cat",
+   "j_sly",
+   "j_faceless",
+   "j_cavendish"
+  ],
+  "money_spent": 41,
+  "best_score": 2880,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    124
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    126
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    56
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_lusty_joker"
+    ],
+    532
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_lucky_cat",
+     "j_lusty_joker"
+    ],
+    420
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_lucky_cat",
+     "j_lusty_joker"
+    ],
+    280
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_lucky_cat",
+     "j_lusty_joker"
+    ],
+    574
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_lucky_cat",
+     "j_lusty_joker"
+    ],
+    310
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    880
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    204
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    136
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    320
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    500
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    550
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    400
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    1110
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    540
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    1230
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    1650
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    456
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    180
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    480
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hermit",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_cavendish",
+     "j_faceless",
+     "j_lucky_cat",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 137,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

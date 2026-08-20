@@ -1,0 +1,288 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 98,
+ "truncated": false,
+ "dollars": 22,
+ "jokers": [
+  "j_cavendish",
+  "j_swashbuckler",
+  "j_popcorn",
+  "j_ancient",
+  "j_hallucination"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_jupiter",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_joker",
+   "j_greedy_joker",
+   "j_cavendish",
+   "j_ride_the_bus",
+   "j_swashbuckler",
+   "j_half",
+   "j_hanging_chad",
+   "j_popcorn",
+   "j_8_ball",
+   "j_marble",
+   "j_reserved_parking",
+   "j_ancient",
+   "j_hallucination"
+  ],
+  "money_spent": 93,
+  "best_score": 8370,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    2,
+    "j_greedy_joker"
+   ],
+   [
+    2,
+    "j_ride_the_bus"
+   ],
+   [
+    2,
+    "j_runner"
+   ],
+   [
+    3,
+    "j_half"
+   ],
+   [
+    3,
+    "j_hanging_chad"
+   ],
+   [
+    3,
+    "j_8_ball"
+   ],
+   [
+    4,
+    "j_marble"
+   ],
+   [
+    4,
+    "j_reserved_parking"
+   ],
+   [
+    4,
+    "j_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight Flush",
+    [],
+    960
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_runner"
+    ],
+    268
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_runner"
+    ],
+    284
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_joker",
+     "j_runner"
+    ],
+    512
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_joker",
+     "j_runner"
+    ],
+    180
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_joker",
+     "j_runner"
+    ],
+    540
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_joker",
+     "j_runner"
+    ],
+    270
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_greedy_joker",
+     "j_joker",
+     "j_ride_the_bus",
+     "j_runner"
+    ],
+    1794
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_joker",
+     "j_runner",
+     "j_swashbuckler"
+    ],
+    3150
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_hanging_chad",
+     "j_joker",
+     "j_swashbuckler"
+    ],
+    2730
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_joker",
+     "j_popcorn",
+     "j_swashbuckler"
+    ],
+    3150
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_joker",
+     "j_popcorn",
+     "j_swashbuckler"
+    ],
+    2790
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_joker",
+     "j_popcorn",
+     "j_swashbuckler"
+    ],
+    1302
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_marble",
+     "j_popcorn",
+     "j_swashbuckler"
+    ],
+    5208
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_swashbuckler"
+    ],
+    8004
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_ancient",
+     "j_cavendish",
+     "j_hallucination",
+     "j_popcorn",
+     "j_swashbuckler"
+    ],
+    8370
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_jupiter",
+    [
+     "j_joker",
+     "j_runner"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_uranus",
+    [
+     "j_ancient",
+     "j_cavendish",
+     "j_hallucination",
+     "j_popcorn",
+     "j_swashbuckler"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 22,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

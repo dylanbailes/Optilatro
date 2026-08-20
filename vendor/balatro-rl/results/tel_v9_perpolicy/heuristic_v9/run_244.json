@@ -1,0 +1,205 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 57,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_constellation",
+  "j_green_joker",
+  "j_hanging_chad"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant",
+   "c_fool",
+   "c_hierophant"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_constellation",
+   "j_green_joker"
+  ],
+  "money_spent": 41,
+  "best_score": 1927,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    88
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    256
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_popcorn"
+    ],
+    572
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_popcorn"
+    ],
+    612
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_popcorn"
+    ],
+    944
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_constellation",
+     "j_popcorn"
+    ],
+    400
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_constellation",
+     "j_popcorn"
+    ],
+    1332
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_constellation",
+     "j_popcorn"
+    ],
+    1200
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_constellation",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    1075
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_constellation",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    180
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_constellation",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    492
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_constellation",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    180
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_popcorn"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_fool",
+    [
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_popcorn"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 244,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

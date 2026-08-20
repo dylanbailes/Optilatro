@@ -1,0 +1,159 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 27,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_shoot_the_moon",
+  "j_fortune_teller",
+  "j_egg",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_shoot_the_moon",
+   "j_fortune_teller",
+   "j_egg",
+   "j_credit_card"
+  ],
+  "money_spent": 16,
+  "best_score": 865,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    64
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_shoot_the_moon"
+    ],
+    96
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_shoot_the_moon"
+    ],
+    316
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_shoot_the_moon"
+    ],
+    280
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_fortune_teller",
+     "j_shoot_the_moon"
+    ],
+    595
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_shoot_the_moon"
+    ],
+    270
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_fortune_teller",
+     "j_shoot_the_moon"
+    ],
+    84
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_fortune_teller",
+     "j_shoot_the_moon"
+    ],
+    44
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_fortune_teller",
+     "j_shoot_the_moon"
+    ],
+    324
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_fortune_teller",
+     "j_shoot_the_moon"
+    ],
+    40
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 12,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

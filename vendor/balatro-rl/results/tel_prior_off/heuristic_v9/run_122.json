@@ -1,0 +1,286 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 82,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_reserved_parking",
+  "j_obelisk",
+  "j_popcorn",
+  "j_hanging_chad",
+  "j_satellite"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_reserved_parking",
+   "j_obelisk",
+   "j_popcorn",
+   "j_hanging_chad",
+   "j_satellite"
+  ],
+  "money_spent": 62,
+  "best_score": 3165,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    3,
+    "j_business"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    288
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_business"
+    ],
+    352
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_business"
+    ],
+    124
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_business",
+     "j_reserved_parking"
+    ],
+    320
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_business",
+     "j_reserved_parking"
+    ],
+    288
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_obelisk",
+     "j_reserved_parking"
+    ],
+    96
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_obelisk",
+     "j_reserved_parking"
+    ],
+    379
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_business",
+     "j_obelisk",
+     "j_reserved_parking"
+    ],
+    341
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking"
+    ],
+    1987
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking"
+    ],
+    1101
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_business",
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking"
+    ],
+    510
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_business",
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking"
+    ],
+    2780
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_satellite"
+    ],
+    540
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_satellite"
+    ],
+    1080
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_satellite"
+    ],
+    1545
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_satellite"
+    ],
+    616
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_satellite"
+    ],
+    96
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_satellite"
+    ],
+    884
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_satellite"
+    ],
+    896
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_business",
+     "j_reserved_parking"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_satellite"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 122,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

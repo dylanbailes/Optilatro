@@ -1,0 +1,927 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 223,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_swashbuckler",
+  "j_stuntman",
+  "j_hiker",
+  "j_duo",
+  "j_abstract"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_magician",
+   "c_hierophant",
+   "c_hermit",
+   "c_empress",
+   "c_devil",
+   "c_hierophant",
+   "c_world",
+   "c_high_priestess",
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_pluto",
+   "pl_pluto",
+   "pl_pluto",
+   "pl_pluto",
+   "pl_pluto",
+   "pl_earth",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_shoot_the_moon",
+   "j_photograph",
+   "j_ice_cream",
+   "j_swashbuckler",
+   "j_stuntman",
+   "j_bull",
+   "j_todo_list",
+   "j_mad",
+   "j_hiker",
+   "j_duo",
+   "j_bull",
+   "j_half",
+   "j_abstract"
+  ],
+  "money_spent": 208,
+  "best_score": 88124,
+  "rerolls": 3,
+  "packs_bought": 24,
+  "packs_opened": 13,
+  "jokers_sold": [
+   [
+    2,
+    "j_tribe"
+   ],
+   [
+    2,
+    "j_shoot_the_moon"
+   ],
+   [
+    3,
+    "j_photograph"
+   ],
+   [
+    4,
+    "j_todo_list"
+   ],
+   [
+    4,
+    "j_bull"
+   ],
+   [
+    5,
+    "j_mad"
+   ],
+   [
+    5,
+    "j_ice_cream"
+   ],
+   [
+    6,
+    "j_bull"
+   ],
+   [
+    7,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    7
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    450
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_tribe"
+    ],
+    648
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_swashbuckler",
+     "j_tribe"
+    ],
+    3100
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_ice_cream",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    4224
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    4563
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    4485
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    11418
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_stuntman",
+     "j_swashbuckler",
+     "j_todo_list"
+    ],
+    4886
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_stuntman",
+     "j_swashbuckler",
+     "j_todo_list"
+    ],
+    5685
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_mad",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    6304
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_mad",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    4816
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_mad",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    5640
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_mad",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    5025
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_hiker",
+     "j_ice_cream",
+     "j_mad",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    12075
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_duo",
+     "j_hiker",
+     "j_ice_cream",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    16956
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_bull",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    20520
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_bull",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    15568
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_bull",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    16800
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_bull",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    8910
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    29140
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    14308
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    31350
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    14950
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    26226
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    14900
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    29328
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    27260
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    26508
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    16320
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    25568
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    15708
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    24360
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    24360
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    14122
+   ],
+   [
+    8,
+    "Full House",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    33948
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    25576
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    28600
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    19406
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    16794
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    4256
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    18360
+   ]
+  ],
+  "consumable_uses": [
+   [
+    3,
+    "c_death",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_pluto",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_photograph",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_pluto",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_stuntman",
+     "j_swashbuckler",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_mad",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_pluto",
+    [
+     "j_bull",
+     "j_ice_cream",
+     "j_mad",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_bull",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_empress",
+    [
+     "j_bull",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_devil",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "Holographic",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_pluto",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    7,
+    "pl_pluto",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_hierophant",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Blue"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_world",
+    [
+     "j_duo",
+     "j_half",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    8,
+    "c_high_priestess",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    8,
+    "pl_earth",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    8,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    8,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    8,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_hiker",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 57,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

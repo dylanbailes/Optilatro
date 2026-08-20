@@ -1,0 +1,253 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 56,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_smeared",
+  "j_sly",
+  "j_cavendish",
+  "j_misprint"
+ ],
+ "stats": {
+  "tarots": [
+   "c_sun",
+   "c_emperor",
+   "c_empress",
+   "c_strength"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_sly",
+   "j_cavendish",
+   "j_misprint"
+  ],
+  "money_spent": 29,
+  "best_score": 4740,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    40
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_smeared"
+    ],
+    120
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_smeared"
+    ],
+    96
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_smeared"
+    ],
+    240
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_sly",
+     "j_smeared"
+    ],
+    140
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_sly",
+     "j_smeared"
+    ],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_sly",
+     "j_smeared"
+    ],
+    174
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_sly",
+     "j_smeared"
+    ],
+    136
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_sly",
+     "j_smeared"
+    ],
+    840
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_sly",
+     "j_smeared"
+    ],
+    1140
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_sly",
+     "j_smeared"
+    ],
+    3600
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_sly",
+     "j_smeared"
+    ],
+    330
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_sun",
+    [
+     "j_sly",
+     "j_smeared"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_sly",
+     "j_smeared"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_sly",
+     "j_smeared"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_sly",
+     "j_smeared"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 269,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_search_shop_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

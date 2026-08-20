@@ -1,0 +1,262 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 70,
+ "truncated": false,
+ "dollars": 13,
+ "jokers": [
+  "j_order",
+  "j_blue_joker",
+  "j_superposition",
+  "j_lusty_joker",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_temperance",
+   "c_strength"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_order",
+   "j_blue_joker",
+   "j_superposition",
+   "j_red_card",
+   "j_lusty_joker",
+   "j_golden"
+  ],
+  "money_spent": 64,
+  "best_score": 4966,
+  "rerolls": 1,
+  "packs_bought": 4,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    3,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    112
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_order"
+    ],
+    660
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_order"
+    ],
+    612
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_order",
+     "j_red_card",
+     "j_superposition"
+    ],
+    892
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_order",
+     "j_red_card",
+     "j_superposition"
+    ],
+    3564
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    3696
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    4966
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    3204
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    580
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    556
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    780
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_golden",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    292
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_blue_joker",
+     "j_half",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_strength",
+    [
+     "j_blue_joker",
+     "j_lusty_joker",
+     "j_order",
+     "j_superposition"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 0,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

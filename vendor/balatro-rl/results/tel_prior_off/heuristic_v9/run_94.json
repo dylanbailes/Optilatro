@@ -1,0 +1,190 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 49,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_credit_card",
+  "j_ice_cream",
+  "j_obelisk",
+  "j_egg"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_empress"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ice_cream",
+   "j_obelisk",
+   "j_egg"
+  ],
+  "money_spent": 36,
+  "best_score": 2030,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    368
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card"
+    ],
+    240
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card"
+    ],
+    316
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_ice_cream"
+    ],
+    672
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_ice_cream",
+     "j_obelisk"
+    ],
+    250
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_ice_cream",
+     "j_obelisk"
+    ],
+    720
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_ice_cream",
+     "j_obelisk"
+    ],
+    2030
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_ice_cream",
+     "j_obelisk"
+    ],
+    145
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_ice_cream",
+     "j_obelisk"
+    ],
+    90
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_ice_cream",
+     "j_obelisk"
+    ],
+    85
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_credit_card"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_empress",
+    [
+     "j_credit_card",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 94,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 56,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_baseball",
+  "j_ticket"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_emperor",
+   "c_fool"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_baseball",
+   "j_ticket"
+  ],
+  "money_spent": 27,
+  "best_score": 1004,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_baseball"
+    ],
+    332
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_baseball"
+    ],
+    76
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_baseball"
+    ],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    200
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    224
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    56
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    228
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    316
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    200
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    312
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    240
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    88
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    316
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    360
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hermit",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_baseball",
+     "j_ticket"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 223,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

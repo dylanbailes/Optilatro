@@ -1,0 +1,243 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 86,
+ "truncated": false,
+ "dollars": 23,
+ "jokers": [
+  "j_madness",
+  "j_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ramen",
+   "j_madness",
+   "j_joker",
+   "j_seeing_double",
+   "j_wily",
+   "j_hologram",
+   "j_stuntman"
+  ],
+  "money_spent": 54,
+  "best_score": 5068,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    352
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_ramen"
+    ],
+    744
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_madness",
+     "j_ramen"
+    ],
+    1434
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_madness"
+    ],
+    1050
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_madness"
+    ],
+    1568
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_madness",
+     "j_wily"
+    ],
+    3080
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_even_steven",
+     "j_hologram",
+     "j_joker",
+     "j_madness"
+    ],
+    1520
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_hologram",
+     "j_joker",
+     "j_madness"
+    ],
+    1050
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_hologram",
+     "j_joker",
+     "j_madness"
+    ],
+    1872
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_hologram",
+     "j_joker",
+     "j_madness"
+    ],
+    1197
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_hologram",
+     "j_joker",
+     "j_madness"
+    ],
+    3726
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_hologram",
+     "j_joker",
+     "j_madness"
+    ],
+    540
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    1092
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    1932
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    2044
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    528
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    2528
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    480
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_joker",
+     "j_madness"
+    ],
+    300
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_madness"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 105,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

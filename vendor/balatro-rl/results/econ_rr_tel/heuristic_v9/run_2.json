@@ -1,0 +1,169 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 53,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_lusty_joker",
+  "j_ticket",
+  "j_todo_list",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ticket",
+   "j_todo_list"
+  ],
+  "money_spent": 34,
+  "best_score": 1265,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    292
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    36
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_lusty_joker"
+    ],
+    550
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_lusty_joker",
+     "j_ticket"
+    ],
+    880
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    416
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    288
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    100
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    810
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    455
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_golden",
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    110
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_golden",
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    33
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    17
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_golden",
+     "j_lusty_joker",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    18
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 2,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

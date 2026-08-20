@@ -1,0 +1,661 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 198,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_stuntman",
+  "j_even_steven",
+  "j_photograph",
+  "j_smiley",
+  "j_gluttenous_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_strength",
+   "c_hierophant",
+   "c_hermit",
+   "c_temperance",
+   "c_fool",
+   "c_temperance"
+  ],
+  "planets": [
+   "pl_pluto",
+   "pl_pluto",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_stuntman",
+   "j_card_sharp",
+   "j_red_card",
+   "j_cartomancer",
+   "j_joker",
+   "j_wrathful_joker",
+   "j_shoot_the_moon",
+   "j_acrobat",
+   "j_joker",
+   "j_even_steven",
+   "j_baron",
+   "j_green_joker",
+   "j_fortune_teller",
+   "j_ice_cream",
+   "j_photograph",
+   "j_smiley",
+   "j_gluttenous_joker"
+  ],
+  "money_spent": 189,
+  "best_score": 44920,
+  "rerolls": 2,
+  "packs_bought": 16,
+  "packs_opened": 11,
+  "jokers_sold": [
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    3,
+    "j_cartomancer"
+   ],
+   [
+    3,
+    "j_joker"
+   ],
+   [
+    4,
+    "j_wrathful_joker"
+   ],
+   [
+    4,
+    "j_card_sharp"
+   ],
+   [
+    4,
+    "j_joker"
+   ],
+   [
+    5,
+    "j_abstract"
+   ],
+   [
+    5,
+    "j_acrobat"
+   ],
+   [
+    5,
+    "j_green_joker"
+   ],
+   [
+    5,
+    "j_fortune_teller"
+   ],
+   [
+    6,
+    "j_ice_cream"
+   ],
+   [
+    6,
+    "j_baron"
+   ],
+   [
+    6,
+    "j_shoot_the_moon"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    288
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    13
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_stuntman"
+    ],
+    1308
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_stuntman"
+    ],
+    560
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_stuntman"
+    ],
+    530
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_card_sharp",
+     "j_stuntman"
+    ],
+    840
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_red_card",
+     "j_stuntman"
+    ],
+    4155
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_red_card",
+     "j_stuntman"
+    ],
+    4522
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_joker",
+     "j_stuntman"
+    ],
+    6670
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_joker",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    7889
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_joker",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    7705
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_shoot_the_moon",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    6555
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_shoot_the_moon",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    7546
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    10816
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    11616
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    10741
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_fortune_teller",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    10350
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    6240
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    9240
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    7395
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    3440
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    8841
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    8652
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    10320
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    5220
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    7272
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    8358
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    6624
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    13294
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    13032
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    11970
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_smiley",
+     "j_stuntman"
+    ],
+    8280
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_smiley",
+     "j_stuntman"
+    ],
+    4134
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_smiley",
+     "j_stuntman"
+    ],
+    4186
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_smiley",
+     "j_stuntman"
+    ],
+    3105
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_judgement",
+    [
+     "j_card_sharp",
+     "j_red_card",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_red_card",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_joker",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_joker",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_hermit",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_even_steven",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_smiley",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_fool",
+    [
+     "j_even_steven",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_smiley",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_even_steven",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_smiley",
+     "j_stuntman"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 62,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

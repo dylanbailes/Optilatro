@@ -1,0 +1,208 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 66,
+ "truncated": false,
+ "dollars": 16,
+ "jokers": [
+  "j_green_joker",
+  "j_blackboard",
+  "j_scholar",
+  "j_sly",
+  "j_abstract"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_green_joker",
+   "j_reserved_parking",
+   "j_blackboard",
+   "j_scholar",
+   "j_arrowhead",
+   "j_sly",
+   "j_bull",
+   "j_abstract"
+  ],
+  "money_spent": 50,
+  "best_score": 5004,
+  "rerolls": 2,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    2,
+    "j_arrowhead"
+   ],
+   [
+    3,
+    "j_bull"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    292
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_green_joker"
+    ],
+    385
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_green_joker"
+    ],
+    104
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_green_joker",
+     "j_reserved_parking"
+    ],
+    390
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_reserved_parking"
+    ],
+    150
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_reserved_parking"
+    ],
+    96
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_green_joker",
+     "j_reserved_parking"
+    ],
+    882
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_blackboard",
+     "j_green_joker",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    1197
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_blackboard",
+     "j_green_joker",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    336
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_arrowhead",
+     "j_blackboard",
+     "j_green_joker",
+     "j_scholar",
+     "j_sly"
+    ],
+    2016
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_green_joker",
+     "j_scholar",
+     "j_sly"
+    ],
+    2322
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_green_joker",
+     "j_scholar",
+     "j_sly"
+    ],
+    2808
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_green_joker",
+     "j_scholar",
+     "j_sly"
+    ],
+    2196
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blackboard",
+     "j_green_joker",
+     "j_scholar",
+     "j_sly"
+    ],
+    3131
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 173,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

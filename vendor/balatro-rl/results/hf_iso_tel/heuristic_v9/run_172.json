@@ -1,0 +1,146 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 38,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_selzer",
+  "j_mail"
+ ],
+ "stats": {
+  "tarots": [
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_selzer",
+   "j_mail"
+  ],
+  "money_spent": 22,
+  "best_score": 636,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    68
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_selzer"
+    ],
+    528
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_selzer"
+    ],
+    576
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_selzer"
+    ],
+    60
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_mail",
+     "j_selzer"
+    ],
+    270
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_mail",
+     "j_selzer"
+    ],
+    27
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_mail",
+     "j_selzer"
+    ],
+    84
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_mail",
+     "j_selzer"
+    ],
+    92
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_chariot",
+    [
+     "j_mail",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 172,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

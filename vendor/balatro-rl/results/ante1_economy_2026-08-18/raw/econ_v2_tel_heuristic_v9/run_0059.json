@@ -1,0 +1,216 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 62,
+ "truncated": false,
+ "dollars": 18,
+ "jokers": [
+  "j_odd_todd",
+  "j_scholar",
+  "j_misprint",
+  "j_vampire"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scholar",
+   "j_scary_face",
+   "j_dusk",
+   "j_gros_michel",
+   "j_misprint",
+   "j_vampire"
+  ],
+  "money_spent": 43,
+  "best_score": 5762,
+  "rerolls": 2,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_scary_face"
+   ],
+   [
+    2,
+    "j_dusk"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    248
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    40
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_odd_todd"
+    ],
+    556
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    640
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_dusk",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    660
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    164
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1462
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_gros_michel",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    5762
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gros_michel",
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    4756
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    868
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    3886
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    1508
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    1340
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    260
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_misprint",
+     "j_odd_todd",
+     "j_scholar",
+     "j_vampire"
+    ],
+    286
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 59,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,777 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 229,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_cavendish",
+  "j_gros_michel",
+  "j_droll",
+  "j_shoot_the_moon"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_death",
+   "c_empress",
+   "c_hermit",
+   "c_strength",
+   "c_wheel_of_fortune",
+   "c_magician",
+   "c_death"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_cryptid"
+  ],
+  "jokers_bought": [
+   "j_marble",
+   "j_mystic_summit",
+   "j_cavendish",
+   "j_egg",
+   "j_gros_michel",
+   "j_ice_cream",
+   "j_faceless",
+   "j_mystic_summit",
+   "j_todo_list",
+   "j_runner",
+   "j_acrobat",
+   "j_popcorn",
+   "j_flower_pot",
+   "j_8_ball",
+   "j_trousers",
+   "j_droll",
+   "j_constellation",
+   "j_shoot_the_moon"
+  ],
+  "money_spent": 232,
+  "best_score": 65178,
+  "rerolls": 3,
+  "packs_bought": 23,
+  "packs_opened": 15,
+  "jokers_sold": [
+   [
+    3,
+    "j_marble"
+   ],
+   [
+    4,
+    "j_mystic_summit"
+   ],
+   [
+    4,
+    "j_egg"
+   ],
+   [
+    4,
+    "j_faceless"
+   ],
+   [
+    4,
+    "j_todo_list"
+   ],
+   [
+    4,
+    "j_runner"
+   ],
+   [
+    4,
+    "j_acrobat"
+   ],
+   [
+    5,
+    "j_mystic_summit"
+   ],
+   [
+    5,
+    "j_flower_pot"
+   ],
+   [
+    5,
+    "j_8_ball"
+   ],
+   [
+    5,
+    "j_trousers"
+   ],
+   [
+    6,
+    "j_popcorn"
+   ],
+   [
+    6,
+    "j_constellation"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_marble"
+    ],
+    284
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_marble"
+    ],
+    52
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_marble"
+    ],
+    40
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_marble"
+    ],
+    308
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_marble"
+    ],
+    240
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_marble"
+    ],
+    316
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_marble"
+    ],
+    55
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_marble",
+     "j_mystic_summit"
+    ],
+    243
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_marble",
+     "j_mystic_summit"
+    ],
+    308
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_marble",
+     "j_mystic_summit"
+    ],
+    260
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_marble",
+     "j_mystic_summit"
+    ],
+    1054
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_marble",
+     "j_mystic_summit"
+    ],
+    810
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_egg",
+     "j_marble",
+     "j_mystic_summit"
+    ],
+    1836
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_egg",
+     "j_gros_michel",
+     "j_marble",
+     "j_mystic_summit"
+    ],
+    2538
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_egg",
+     "j_gros_michel",
+     "j_mystic_summit"
+    ],
+    3168
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_egg",
+     "j_gros_michel",
+     "j_mystic_summit"
+    ],
+    4800
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_egg",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_mystic_summit"
+    ],
+    5328
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_egg",
+     "j_faceless",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    7560
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_egg",
+     "j_faceless",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    10098
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_mystic_summit",
+     "j_popcorn"
+    ],
+    16530
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_trousers"
+    ],
+    20412
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_trousers"
+    ],
+    21285
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_trousers"
+    ],
+    14256
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    22113
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    9750
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    23985
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    25872
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    14150
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_shoot_the_moon"
+    ],
+    41535
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_shoot_the_moon"
+    ],
+    23040
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_shoot_the_moon"
+    ],
+    24975
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_shoot_the_moon"
+    ],
+    4680
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_shoot_the_moon"
+    ],
+    24564
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_shoot_the_moon"
+    ],
+    9360
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_shoot_the_moon"
+    ],
+    8775
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_gros_michel",
+     "j_shoot_the_moon"
+    ],
+    22479
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_marble"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_marble",
+     "j_mystic_summit"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_egg",
+     "j_faceless",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "Stone",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_empress",
+    [
+     "j_cavendish",
+     "j_egg",
+     "j_faceless",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_mystic_summit"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_mystic_summit",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_strength",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_8_ball",
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    5,
+    "s_cryptid",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "Stone",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_wheel_of_fortune",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_magician",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "Stone",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "pl_mercury",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_shoot_the_moon"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 165,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,286 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 69,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_odd_todd",
+  "j_lucky_cat",
+  "j_fortune_teller",
+  "j_8_ball",
+  "j_scary_face"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon",
+   "c_fool",
+   "c_moon",
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_walkie_talkie",
+   "j_odd_todd",
+   "j_lucky_cat",
+   "j_fortune_teller",
+   "j_8_ball",
+   "j_scary_face"
+  ],
+  "money_spent": 50,
+  "best_score": 2119,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_walkie_talkie"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    368
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_walkie_talkie"
+    ],
+    728
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    680
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    1264
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    1344
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    1683
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_8_ball",
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    1392
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_8_ball",
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    672
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_scary_face"
+    ],
+    696
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_scary_face"
+    ],
+    235
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_scary_face"
+    ],
+    540
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_scary_face"
+    ],
+    648
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_moon",
+    [
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_moon",
+    [
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_8_ball",
+     "j_fortune_teller",
+     "j_lucky_cat",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 114,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

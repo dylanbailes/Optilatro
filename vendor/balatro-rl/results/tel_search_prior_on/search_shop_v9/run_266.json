@@ -1,0 +1,95 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 24,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_space",
+  "j_arrowhead",
+  "j_delayed_grat"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_delayed_grat"
+  ],
+  "money_spent": 12,
+  "best_score": 576,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_arrowhead",
+     "j_space"
+    ],
+    280
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_arrowhead",
+     "j_space"
+    ],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_delayed_grat",
+     "j_space"
+    ],
+    60
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_arrowhead",
+     "j_delayed_grat",
+     "j_space"
+    ],
+    15
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_judgement",
+    [
+     "j_space"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 266,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

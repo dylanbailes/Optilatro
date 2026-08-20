@@ -1,0 +1,173 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 54,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_banner",
+  "j_juggler",
+  "j_bootstraps"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_earth",
+   "pl_earth"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_banner",
+   "j_juggler",
+   "j_bootstraps"
+  ],
+  "money_spent": 34,
+  "best_score": 1408,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    348
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    264
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    324
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    1048
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_banner"
+    ],
+    416
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner"
+    ],
+    236
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_banner"
+    ],
+    124
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner"
+    ],
+    60
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner",
+     "j_juggler"
+    ],
+    760
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner",
+     "j_juggler"
+    ],
+    648
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_banner",
+     "j_bootstraps",
+     "j_juggler"
+    ],
+    928
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_bootstraps",
+     "j_juggler"
+    ],
+    124
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_bootstraps",
+     "j_juggler"
+    ],
+    80
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_bootstraps",
+     "j_juggler"
+    ],
+    48
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_earth",
+    [],
+    []
+   ],
+   [
+    1,
+    "pl_earth",
+    [],
+    []
+   ]
+  ]
+ },
+ "seed": 219,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

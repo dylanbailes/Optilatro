@@ -1,0 +1,365 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 82,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_credit_card",
+  "j_greedy_joker",
+  "j_hanging_chad",
+  "j_ticket",
+  "j_scary_face"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_fool",
+   "c_death",
+   "c_fool",
+   "c_death",
+   "c_death"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_credit_card",
+   "j_credit_card",
+   "j_hanging_chad",
+   "j_ticket",
+   "j_scary_face"
+  ],
+  "money_spent": 49,
+  "best_score": 2932,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 7,
+  "jokers_sold": [
+   [
+    2,
+    "j_todo_list"
+   ],
+   [
+    2,
+    "j_credit_card"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    240
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_todo_list"
+    ],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_todo_list"
+    ],
+    120
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_todo_list"
+    ],
+    56
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_todo_list"
+    ],
+    372
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_todo_list"
+    ],
+    268
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_todo_list"
+    ],
+    790
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_todo_list"
+    ],
+    150
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_todo_list"
+    ],
+    1584
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_ticket"
+    ],
+    2000
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_scary_face",
+     "j_ticket"
+    ],
+    1152
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_scary_face",
+     "j_ticket"
+    ],
+    1183
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_scary_face",
+     "j_ticket"
+    ],
+    1250
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_scary_face",
+     "j_ticket"
+    ],
+    550
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_scary_face",
+     "j_ticket"
+    ],
+    532
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_scary_face",
+     "j_ticket"
+    ],
+    600
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_fool",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_credit_card",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_scary_face",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_scary_face",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_scary_face",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 156,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,300 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 100,
+ "truncated": false,
+ "dollars": 11,
+ "jokers": [
+  "j_family",
+  "j_hanging_chad",
+  "j_smiley",
+  "j_business",
+  "j_8_ball"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_family",
+   "j_selzer",
+   "j_even_steven",
+   "j_satellite",
+   "j_hanging_chad",
+   "j_smiley",
+   "j_business",
+   "j_business",
+   "j_8_ball"
+  ],
+  "money_spent": 82,
+  "best_score": 9360,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_satellite"
+   ],
+   [
+    3,
+    "j_green_joker"
+   ],
+   [
+    3,
+    "j_even_steven"
+   ],
+   [
+    3,
+    "j_business"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Four of a Kind",
+    [
+     "j_family"
+    ],
+    2800
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_family"
+    ],
+    284
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_family"
+    ],
+    36
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_family"
+    ],
+    264
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_family"
+    ],
+    44
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_family",
+     "j_selzer"
+    ],
+    528
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_family",
+     "j_selzer"
+    ],
+    208
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_family",
+     "j_selzer"
+    ],
+    198
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_family",
+     "j_selzer"
+    ],
+    1440
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_family",
+     "j_satellite",
+     "j_selzer"
+    ],
+    2540
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_family",
+     "j_green_joker",
+     "j_satellite",
+     "j_selzer"
+    ],
+    2541
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_family",
+     "j_hanging_chad",
+     "j_selzer"
+    ],
+    3172
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_family",
+     "j_hanging_chad",
+     "j_selzer",
+     "j_smiley"
+    ],
+    5202
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_family",
+     "j_hanging_chad",
+     "j_selzer",
+     "j_smiley"
+    ],
+    5568
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_family",
+     "j_hanging_chad",
+     "j_smiley"
+    ],
+    9360
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_business",
+     "j_family",
+     "j_hanging_chad",
+     "j_smiley"
+    ],
+    147
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_8_ball",
+     "j_business",
+     "j_family",
+     "j_hanging_chad",
+     "j_smiley"
+    ],
+    1617
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_8_ball",
+     "j_business",
+     "j_family",
+     "j_hanging_chad",
+     "j_smiley"
+    ],
+    216
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_business",
+     "j_family",
+     "j_hanging_chad",
+     "j_smiley"
+    ],
+    135
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_empress",
+    [
+     "j_even_steven",
+     "j_family",
+     "j_green_joker",
+     "j_satellite",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 254,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

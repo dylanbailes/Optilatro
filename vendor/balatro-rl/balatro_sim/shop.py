@@ -706,6 +706,8 @@ def buy_item(game: "BalatroGame", item: ShopItem) -> bool:
             return False
         j.state["sell_value"] = max(1, effective_price // 2) + item.sell_bonus
         game.dollars -= effective_price
+        game.run_stats["money_spent"] += effective_price
+        game.run_stats["jokers_bought"].append(item.key)
         item.sold = True
         return True
 
@@ -714,6 +716,8 @@ def buy_item(game: "BalatroGame", item: ShopItem) -> bool:
             return False
         game.consumable_hand.append(item.key)
         game.dollars -= effective_price
+        game.run_stats["money_spent"] += effective_price
+        game.run_stats["consumables_bought"] += 1
         item.sold = True
         return True
 
@@ -721,6 +725,8 @@ def buy_item(game: "BalatroGame", item: ShopItem) -> bool:
         from .consumables import apply_voucher
         if apply_voucher(game, item.key):
             game.dollars -= effective_price
+            game.run_stats["money_spent"] += effective_price
+            game.run_stats["vouchers_bought"] += 1
             item.sold = True
             return True
         return False
@@ -734,11 +740,15 @@ def buy_item(game: "BalatroGame", item: ShopItem) -> bool:
         for j in game.jokers:
             j.fire("on_card_added", None)
         game.dollars -= effective_price
+        game.run_stats["money_spent"] += effective_price
+        game.run_stats["cards_bought"] += 1
         item.sold = True
         return True
 
     if item.kind == "booster":
         game.dollars -= effective_price
+        game.run_stats["money_spent"] += effective_price
+        game.run_stats["packs_bought"] += 1
         item.sold = True
         _open_booster(game, item.key)
         from .game import State
@@ -755,6 +765,9 @@ def sell_joker(game: "BalatroGame", joker_idx: int) -> int:
     j = game.jokers.pop(joker_idx)
     sell_value = j.state.get("sell_value", 2)
     game.dollars += sell_value
+    # Synergy-tree telemetry (observation-only): (ante, key) on sale — pairs
+    # with run_stats["jokers_bought"] / co_owned to reconstruct loadouts.
+    game.run_stats["jokers_sold"].append((game.ante, j.key))
     # Fire on_sell hooks on the sold joker itself (Luchador, Invisible Joker,
     # Diet Cola — they need the sold instance's own state)
     j.fire("on_sell", None)
@@ -786,6 +799,8 @@ def reroll_shop(game: "BalatroGame") -> bool:
     if game.dollars < cost:
         return False
     game.dollars -= cost
+    game.run_stats["money_spent"] += cost
+    game.run_stats["rerolls"] += 1
     game.reroll_cost += 1
     # Flash Card (j_flash): +2 Mult permanently per shop reroll used (M1 B2
     # on_reroll hook dispatch). Fires whether or not the reroll is free.

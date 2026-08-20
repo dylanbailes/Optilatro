@@ -1,0 +1,257 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 76,
+ "truncated": false,
+ "dollars": 18,
+ "jokers": [
+  "j_gluttenous_joker",
+  "j_gros_michel",
+  "j_sock_and_buskin",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gluttenous_joker",
+   "j_reserved_parking",
+   "j_ride_the_bus",
+   "j_gros_michel",
+   "j_sock_and_buskin",
+   "j_splash"
+  ],
+  "money_spent": 47,
+  "best_score": 3670,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_to_the_moon"
+   ],
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    3,
+    "j_ride_the_bus"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_to_the_moon"
+    ],
+    550
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_to_the_moon"
+    ],
+    240
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_to_the_moon"
+    ],
+    287
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_to_the_moon"
+    ],
+    100
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    672
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    268
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    1296
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_sock_and_buskin"
+    ],
+    1620
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    1680
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    850
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    1610
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    1596
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    3024
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    646
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ride_the_bus",
+     "j_sock_and_buskin"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 120,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

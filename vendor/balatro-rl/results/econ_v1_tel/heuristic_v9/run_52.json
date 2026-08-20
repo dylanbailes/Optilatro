@@ -1,0 +1,272 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 81,
+ "truncated": false,
+ "dollars": 21,
+ "jokers": [
+  "j_bull",
+  "j_cavendish",
+  "j_sly",
+  "j_ice_cream",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_bull",
+   "j_reserved_parking",
+   "j_gros_michel",
+   "j_popcorn",
+   "j_cavendish",
+   "j_sly",
+   "j_ice_cream",
+   "j_golden"
+  ],
+  "money_spent": 62,
+  "best_score": 6360,
+  "rerolls": 2,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    3,
+    "j_reserved_parking"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    336
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bull"
+    ],
+    348
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_bull"
+    ],
+    177
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bull",
+     "j_reserved_parking"
+    ],
+    340
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_reserved_parking"
+    ],
+    106
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bull",
+     "j_reserved_parking"
+    ],
+    172
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_gros_michel",
+     "j_reserved_parking"
+    ],
+    952
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_gros_michel",
+     "j_popcorn",
+     "j_reserved_parking"
+    ],
+    1258
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_gros_michel",
+     "j_popcorn",
+     "j_reserved_parking"
+    ],
+    2112
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_popcorn",
+     "j_reserved_parking"
+    ],
+    4176
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_popcorn",
+     "j_sly"
+    ],
+    6360
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_popcorn",
+     "j_sly"
+    ],
+    2160
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_popcorn",
+     "j_sly"
+    ],
+    1755
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_popcorn",
+     "j_sly"
+    ],
+    576
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_sly"
+    ],
+    3168
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_sly"
+    ],
+    1266
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_ice_cream",
+     "j_sly"
+    ],
+    1248
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_golden",
+     "j_ice_cream",
+     "j_sly"
+    ],
+    2520
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_golden",
+     "j_ice_cream",
+     "j_sly"
+    ],
+    1212
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_golden",
+     "j_ice_cream",
+     "j_sly"
+    ],
+    1134
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_golden",
+     "j_ice_cream",
+     "j_sly"
+    ],
+    384
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 52,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

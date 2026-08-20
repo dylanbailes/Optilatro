@@ -1,0 +1,154 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 46,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_shoot_the_moon",
+  "j_fortune_teller",
+  "j_egg",
+  "j_credit_card",
+  "j_selzer"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_shoot_the_moon",
+   "j_fortune_teller",
+   "j_egg",
+   "j_credit_card",
+   "j_selzer"
+  ],
+  "money_spent": 26,
+  "best_score": 1235,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    248
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gros_michel",
+     "j_shoot_the_moon"
+    ],
+    1235
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_fortune_teller",
+     "j_shoot_the_moon"
+    ],
+    352
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_fortune_teller",
+     "j_shoot_the_moon"
+    ],
+    150
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_fortune_teller",
+     "j_shoot_the_moon"
+    ],
+    112
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_fortune_teller",
+     "j_shoot_the_moon"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_fortune_teller",
+     "j_selzer",
+     "j_shoot_the_moon"
+    ],
+    552
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_fortune_teller",
+     "j_selzer",
+     "j_shoot_the_moon"
+    ],
+    60
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_fortune_teller",
+     "j_selzer",
+     "j_shoot_the_moon"
+    ],
+    192
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_fortune_teller",
+     "j_selzer",
+     "j_shoot_the_moon"
+    ],
+    168
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 12,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

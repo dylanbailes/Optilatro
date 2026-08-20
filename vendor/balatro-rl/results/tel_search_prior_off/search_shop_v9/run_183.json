@@ -1,0 +1,688 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 174,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_raised_fist",
+  "j_misprint",
+  "j_even_steven",
+  "j_cavendish",
+  "j_ice_cream"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_star",
+   "c_sun",
+   "c_magician",
+   "c_lovers",
+   "c_fool",
+   "c_lovers",
+   "c_fool",
+   "c_lovers",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_venus",
+   "pl_venus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_crazy",
+   "j_wily",
+   "j_misprint",
+   "j_tribe",
+   "j_even_steven",
+   "j_egg",
+   "j_delayed_grat",
+   "j_cavendish",
+   "j_faceless",
+   "j_ice_cream"
+  ],
+  "money_spent": 133,
+  "best_score": 33735,
+  "rerolls": 1,
+  "packs_bought": 16,
+  "packs_opened": 11,
+  "jokers_sold": [
+   [
+    3,
+    "j_crazy"
+   ],
+   [
+    3,
+    "j_wily"
+   ],
+   [
+    4,
+    "j_tribe"
+   ],
+   [
+    4,
+    "j_egg"
+   ],
+   [
+    5,
+    "j_delayed_grat"
+   ],
+   [
+    5,
+    "j_faceless"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy",
+     "j_raised_fist"
+    ],
+    528
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    616
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_crazy",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    973
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_crazy",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    5143
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crazy",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    1748
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_crazy",
+     "j_misprint",
+     "j_raised_fist",
+     "j_tribe",
+     "j_wily"
+    ],
+    3297
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist",
+     "j_tribe",
+     "j_wily"
+    ],
+    5143
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist",
+     "j_tribe"
+    ],
+    6290
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist",
+     "j_tribe"
+    ],
+    2880
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist",
+     "j_tribe"
+    ],
+    4898
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist",
+     "j_tribe"
+    ],
+    3136
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist",
+     "j_tribe"
+    ],
+    2214
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist",
+     "j_tribe"
+    ],
+    6808
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    2376
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    3828
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    4500
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    10164
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    1440
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    5700
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    4797
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    5760
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    3762
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_faceless",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    14025
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_faceless",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    7680
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_faceless",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    975
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    27348
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    19260
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    7920
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    6555
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    28620
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_crazy",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_crazy",
+     "j_misprint",
+     "j_raised_fist",
+     "j_wily"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_star",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist",
+     "j_tribe"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_venus",
+    [
+     "j_delayed_grat",
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_venus",
+    [
+     "j_delayed_grat",
+     "j_egg",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_sun",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_magician",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_lovers",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_fool",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_lovers",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_fool",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_lovers",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_wheel_of_fortune",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_ice_cream",
+     "j_misprint",
+     "j_raised_fist"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 183,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

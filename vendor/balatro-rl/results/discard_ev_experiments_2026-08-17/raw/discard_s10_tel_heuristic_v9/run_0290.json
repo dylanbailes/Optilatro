@@ -1,0 +1,832 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 209,
+ "truncated": false,
+ "dollars": 41,
+ "jokers": [
+  "j_order",
+  "j_raised_fist",
+  "j_splash",
+  "j_scholar",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_temperance",
+   "c_hermit",
+   "c_temperance",
+   "c_death",
+   "c_magician",
+   "c_emperor",
+   "c_death",
+   "c_strength",
+   "c_chariot",
+   "c_death",
+   "c_sun",
+   "c_fool",
+   "c_sun"
+  ],
+  "planets": [
+   "pl_saturn",
+   "pl_saturn",
+   "pl_saturn"
+  ],
+  "spectrals": [
+   "s_grim",
+   "s_immolate",
+   "s_trance"
+  ],
+  "jokers_bought": [
+   "j_delayed_grat",
+   "j_reserved_parking",
+   "j_hallucination",
+   "j_castle",
+   "j_order",
+   "j_shoot_the_moon",
+   "j_smiley",
+   "j_scary_face",
+   "j_splash",
+   "j_abstract",
+   "j_marble",
+   "j_delayed_grat",
+   "j_scholar",
+   "j_devious",
+   "j_egg",
+   "j_greedy_joker"
+  ],
+  "money_spent": 222,
+  "best_score": 37665,
+  "rerolls": 6,
+  "packs_bought": 22,
+  "packs_opened": 18,
+  "jokers_sold": [
+   [
+    2,
+    "j_delayed_grat"
+   ],
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    2,
+    "j_hallucination"
+   ],
+   [
+    2,
+    "j_shoot_the_moon"
+   ],
+   [
+    3,
+    "j_castle"
+   ],
+   [
+    3,
+    "j_credit_card"
+   ],
+   [
+    4,
+    "j_smiley"
+   ],
+   [
+    4,
+    "j_scary_face"
+   ],
+   [
+    4,
+    "j_marble"
+   ],
+   [
+    5,
+    "j_delayed_grat"
+   ],
+   [
+    5,
+    "j_abstract"
+   ],
+   [
+    5,
+    "j_devious"
+   ],
+   [
+    6,
+    "j_egg"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_delayed_grat"
+    ],
+    496
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_reserved_parking"
+    ],
+    420
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_reserved_parking"
+    ],
+    184
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_reserved_parking"
+    ],
+    178
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_reserved_parking"
+    ],
+    166
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_reserved_parking"
+    ],
+    75
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_reserved_parking"
+    ],
+    973
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_hallucination",
+     "j_order",
+     "j_reserved_parking"
+    ],
+    3486
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_order",
+     "j_raised_fist",
+     "j_shoot_the_moon"
+    ],
+    2047
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_order",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    2136
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_splash"
+    ],
+    2975
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_splash"
+    ],
+    290
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_splash"
+    ],
+    29295
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_splash"
+    ],
+    15750
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_splash"
+    ],
+    3408
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_splash"
+    ],
+    3950
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_splash"
+    ],
+    1216
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_splash"
+    ],
+    6996
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_splash"
+    ],
+    4150
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_order",
+     "j_raised_fist",
+     "j_splash"
+    ],
+    19494
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_abstract",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    37665
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_devious",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    24849
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_egg",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    25785
+   ],
+   [
+    6,
+    "Four of a Kind",
+    [
+     "j_greedy_joker",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    9288
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    12024
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    676
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_greedy_joker",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    414
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_reserved_parking"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_hermit",
+    [
+     "j_credit_card",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_reserved_parking"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_order",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_order",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hermit",
+    [
+     "j_castle",
+     "j_credit_card",
+     "j_order",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_saturn",
+    [
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_temperance",
+    [
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_death",
+    [
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "s_grim",
+    [
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_abstract",
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_emperor",
+    [
+     "j_abstract",
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_abstract",
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_strength",
+    [
+     "j_abstract",
+     "j_order",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_order",
+     "j_raised_fist",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_abstract",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "s_immolate",
+    [
+     "j_abstract",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    5,
+    "s_trance",
+    [
+     "j_abstract",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_sun",
+    [
+     "j_egg",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_fool",
+    [
+     "j_greedy_joker",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_sun",
+    [
+     "j_greedy_joker",
+     "j_order",
+     "j_raised_fist",
+     "j_scholar",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "Bonus",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 290,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,312 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 101,
+ "truncated": false,
+ "dollars": 20,
+ "jokers": [
+  "j_photograph",
+  "j_gluttenous_joker",
+  "j_lusty_joker",
+  "j_ice_cream",
+  "j_scholar"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_photograph",
+   "j_business",
+   "j_gluttenous_joker",
+   "j_lusty_joker",
+   "j_flash",
+   "j_ice_cream",
+   "j_scholar"
+  ],
+  "money_spent": 52,
+  "best_score": 6810,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_business"
+   ],
+   [
+    3,
+    "j_todo_list"
+   ],
+   [
+    3,
+    "j_flash"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    124
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    15
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_photograph"
+    ],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_photograph"
+    ],
+    224
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_photograph"
+    ],
+    600
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_photograph"
+    ],
+    408
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_photograph"
+    ],
+    672
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_photograph"
+    ],
+    816
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_photograph"
+    ],
+    376
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_photograph"
+    ],
+    60
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    1428
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    336
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flash",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    940
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_flash",
+     "j_gluttenous_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_todo_list"
+    ],
+    1620
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flash",
+     "j_gluttenous_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    2800
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_flash",
+     "j_gluttenous_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    605
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    4524
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    6810
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    3600
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    1490
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    450
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_ice_cream",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    445
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_photograph"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_photograph"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 108,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

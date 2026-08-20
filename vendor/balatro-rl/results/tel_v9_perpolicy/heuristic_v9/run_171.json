@@ -1,0 +1,91 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 22,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_banner",
+  "j_flash"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_banner"
+  ],
+  "money_spent": 15,
+  "best_score": 668,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    300
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_banner"
+    ],
+    668
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_banner",
+     "j_flash"
+    ],
+    130
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_banner",
+     "j_flash"
+    ],
+    135
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_banner",
+     "j_flash"
+    ],
+    104
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_banner",
+     "j_flash"
+    ],
+    75
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 171,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

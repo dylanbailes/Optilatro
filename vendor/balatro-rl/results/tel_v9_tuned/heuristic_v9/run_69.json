@@ -1,0 +1,187 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 57,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_seeing_double",
+  "j_acrobat",
+  "j_runner"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_popcorn",
+   "j_runner"
+  ],
+  "money_spent": 43,
+  "best_score": 4752,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_acrobat",
+     "j_seeing_double"
+    ],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_seeing_double"
+    ],
+    192
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_popcorn",
+     "j_seeing_double"
+    ],
+    1320
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_popcorn",
+     "j_seeing_double"
+    ],
+    1080
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_popcorn",
+     "j_seeing_double"
+    ],
+    2280
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    4752
+   ],
+   [
+    3,
+    "Four of a Kind",
+    [
+     "j_acrobat",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    1672
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_acrobat",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    399
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    456
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_acrobat",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    560
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    180
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    1710
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_acrobat",
+     "j_popcorn",
+     "j_seeing_double"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 69,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

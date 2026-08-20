@@ -1,0 +1,124 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 43,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_abstract",
+  "j_square",
+  "j_runner",
+  "j_luchador",
+  "j_green_joker"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_abstract",
+   "j_square",
+   "j_runner",
+   "j_luchador",
+   "j_green_joker"
+  ],
+  "money_spent": 32,
+  "best_score": 1280,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    320
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_abstract"
+    ],
+    490
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_square"
+    ],
+    344
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_abstract",
+     "j_square"
+    ],
+    272
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_luchador",
+     "j_runner",
+     "j_square"
+    ],
+    952
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_abstract",
+     "j_luchador",
+     "j_runner",
+     "j_square"
+    ],
+    1280
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_luchador",
+     "j_runner",
+     "j_square"
+    ],
+    391
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_luchador",
+     "j_runner",
+     "j_square"
+    ],
+    408
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 203,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

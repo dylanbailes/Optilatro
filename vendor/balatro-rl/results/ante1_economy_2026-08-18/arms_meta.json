@@ -1,0 +1,43 @@
+{
+ "seed_bank": "0-299 (shared)",
+ "notes": [
+  "Ante-1 economy audit + fix attempts (2026-08-18). MOTIVATION: seeds die at the ante-1 Boss with /usr/bin/bash-2 and 1-3 weak commons. AUDIT FINDINGS: interest is paid on dollars at round end (min(dollars//5, cap)) but the agent enters the Big blind with /usr/bin/bash-4 in 287/300 seeds and the Boss with /usr/bin/bash-4 in 282/300 — interest collected in all of ante 1 totals ~3 across 100 seeds (near zero). Base income is fine (-11/blind at 0 held: 4 hands +  interest + -5 reward). VERDICT: every fix measured FLAT or WORSE and all were REVERTED — the bank's ante-1 ceiling is the lookahead oracle's 91.3% (26 deaths; the 18 Boss-death seeds hold 1-3 weak commons (Crazy/Square/Ticket/Droll) that the exact-draw oracle also cannot turn into clears); preserving cash at the expense of joker/booster power leaves runs underpowered."
+ ],
+ "arms": [
+  {
+   "label": "struct_v4 baseline (best)",
+   "slug": "struct_v4_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\struct_v4_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policies heuristic_v9 --telemetry-dir results/struct_v4_tel"
+  },
+  {
+   "label": "blanket_floor (hold >= $5)",
+   "slug": "econ_v1_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\econ_v1_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policies heuristic_v9 --telemetry-dir results/econ_v1_tel"
+  },
+  {
+   "label": "joker_exempt_floor",
+   "slug": "econ_v2_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\econ_v2_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policies heuristic_v9 --telemetry-dir results/econ_v2_tel"
+  },
+  {
+   "label": "reroll_gate (max1, min$10)",
+   "slug": "econ_rr_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\econ_rr_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policies heuristic_v9 --params '{\"reroll_max\": 1, \"reroll_min_money\": 10}' --telemetry-dir results/econ_rr_tel"
+  },
+  {
+   "label": "floor_joker_exempt + reroll_gate",
+   "slug": "econ_v4_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\econ_v4_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policies heuristic_v9 --params '{\"reroll_max\": 1, \"reroll_min_money\": 10}' --telemetry-dir results/econ_v4_tel"
+  }
+ ]
+}

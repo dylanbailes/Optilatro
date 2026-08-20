@@ -1,0 +1,197 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 68,
+ "truncated": false,
+ "dollars": 16,
+ "jokers": [
+  "j_gluttenous_joker",
+  "j_ride_the_bus",
+  "j_raised_fist",
+  "j_banner",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gluttenous_joker",
+   "j_business",
+   "j_raised_fist",
+   "j_banner",
+   "j_reserved_parking",
+   "j_red_card",
+   "j_fortune_teller",
+   "j_splash"
+  ],
+  "money_spent": 51,
+  "best_score": 3960,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_business"
+   ],
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    3,
+    "j_fortune_teller"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_ride_the_bus"
+    ],
+    150
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_gluttenous_joker",
+     "j_ride_the_bus"
+    ],
+    1311
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_ride_the_bus"
+    ],
+    413
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_ride_the_bus"
+    ],
+    264
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    910
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_business",
+     "j_gluttenous_joker",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    1242
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_gluttenous_joker",
+     "j_raised_fist",
+     "j_red_card",
+     "j_ride_the_bus"
+    ],
+    1680
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_fortune_teller",
+     "j_gluttenous_joker",
+     "j_raised_fist",
+     "j_ride_the_bus"
+    ],
+    2336
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_banner",
+     "j_gluttenous_joker",
+     "j_raised_fist",
+     "j_ride_the_bus",
+     "j_splash"
+    ],
+    2379
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_gluttenous_joker",
+     "j_raised_fist",
+     "j_ride_the_bus",
+     "j_splash"
+    ],
+    1460
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_gluttenous_joker",
+     "j_raised_fist",
+     "j_ride_the_bus",
+     "j_splash"
+    ],
+    3960
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 250,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

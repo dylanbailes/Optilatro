@@ -1,0 +1,240 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 75,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_faceless",
+  "j_devious",
+  "j_runner",
+  "j_shoot_the_moon"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_saturn",
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_rocket",
+   "j_popcorn",
+   "j_faceless",
+   "j_runner",
+   "j_shoot_the_moon"
+  ],
+  "money_spent": 64,
+  "best_score": 2584,
+  "rerolls": 1,
+  "packs_bought": 8,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_rocket"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_rocket"
+    ],
+    316
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_rocket"
+    ],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_popcorn",
+     "j_rocket"
+    ],
+    616
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_rocket"
+    ],
+    900
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_rocket",
+     "j_runner"
+    ],
+    1216
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_shoot_the_moon"
+    ],
+    816
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_shoot_the_moon"
+    ],
+    1102
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_shoot_the_moon"
+    ],
+    874
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_shoot_the_moon"
+    ],
+    608
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_runner",
+     "j_shoot_the_moon"
+    ],
+    16
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_runner",
+     "j_shoot_the_moon"
+    ],
+    120
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_runner",
+     "j_shoot_the_moon"
+    ],
+    352
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_runner",
+     "j_shoot_the_moon"
+    ],
+    296
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_popcorn",
+     "j_rocket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_rocket"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_shoot_the_moon"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 69,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

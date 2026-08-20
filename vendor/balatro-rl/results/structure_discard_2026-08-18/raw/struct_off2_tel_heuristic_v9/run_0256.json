@@ -1,0 +1,309 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 65,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_splash",
+  "j_stencil",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_emperor",
+   "c_strength",
+   "c_lovers",
+   "c_hermit"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_splash",
+   "j_greedy_joker"
+  ],
+  "money_spent": 40,
+  "best_score": 1810,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_splash",
+     "j_stencil"
+    ],
+    348
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_splash",
+     "j_stencil"
+    ],
+    120
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    460
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    390
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    330
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    320
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    96
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    140
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    560
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    460
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    120
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    64
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    660
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    720
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    300
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    832
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    480
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    330
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    168
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_emperor",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_strength",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_greedy_joker",
+     "j_splash",
+     "j_stencil"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 256,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 41,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_delayed_grat",
+  "j_drunkard",
+  "j_egg",
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_drunkard",
+   "j_egg"
+  ],
+  "money_spent": 24,
+  "best_score": 1192,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    308
+   ],
+   [
+    1,
+    "Straight Flush",
+    [
+     "j_delayed_grat",
+     "j_drunkard"
+    ],
+    1192
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_drunkard",
+     "j_egg"
+    ],
+    840
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_drunkard",
+     "j_egg",
+     "j_golden"
+    ],
+    296
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_drunkard",
+     "j_egg",
+     "j_golden"
+    ],
+    304
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_drunkard",
+     "j_egg",
+     "j_golden"
+    ],
+    72
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_delayed_grat",
+     "j_drunkard",
+     "j_egg",
+     "j_golden"
+    ],
+    16
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 19,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

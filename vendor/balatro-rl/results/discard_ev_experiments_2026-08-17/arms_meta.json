@@ -1,0 +1,43 @@
+{
+ "seed_bank": "0..N-1 (per arm n)",
+ "notes": [
+  "Archived discard-EV A/B vs the 2026-08-17 human-fair baseline (18/300 = 6.00%, tel hf_ab_tel). All arms on the same 300-seed bank (0-299). v2 variants: structure-aware ceiling + top-K EV sampling, target-aware gamble, samples=10. Verdict: every variant measured WORSE than archived v1 (A 12, B 16, C 14, s10 11 vs 18/19); default reverted to v1-equivalent with samples=6."
+ ],
+ "arms": [
+  {
+   "label": "baseline_archived",
+   "slug": "hf_ab_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\hf_ab_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policy heuristic_v9 --tel results/hf_ab_tel"
+  },
+  {
+   "label": "v2_all_on",
+   "slug": "discard_v2_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\discard_v2_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policy heuristic_v9 --params '{\"discard_top_k\": 4, \"discard_flush_bonus\": 0.06, \"discard_target_aware\": true, \"discard_ev_samples\": 6}' --tel results/discard_v2_tel"
+  },
+  {
+   "label": "v2_no_gamble_no_econ",
+   "slug": "discard_v2b_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\discard_v2b_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policy heuristic_v9 --params '{\"discard_top_k\": 4, \"discard_flush_bonus\": 0.06, \"discard_target_aware\": false, \"discard_ev_samples\": 6, \"econ_value_weight\": 0.0, \"gen_value_weight\": 0.0}' --tel results/discard_v2b_tel"
+  },
+  {
+   "label": "v2_gamble_no_econ",
+   "slug": "discard_v2c_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\discard_v2c_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policy heuristic_v9 --params '{\"discard_top_k\": 4, \"discard_flush_bonus\": 0.06, \"discard_target_aware\": true, \"discard_ev_samples\": 6, \"econ_value_weight\": 0.0, \"gen_value_weight\": 0.0}' --tel results/discard_v2c_tel"
+  },
+  {
+   "label": "samples10_no_econ",
+   "slug": "discard_s10_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\discard_s10_tel\\heuristic_v9",
+   "n": 300,
+   "command": "cd vendor/balatro-rl && python ../../bench/bench_v9.py --games 300 --policy heuristic_v9 --params '{\"discard_ev_samples\": 10, \"econ_value_weight\": 0.0, \"gen_value_weight\": 0.0}' --tel results/discard_s10_tel"
+  }
+ ]
+}

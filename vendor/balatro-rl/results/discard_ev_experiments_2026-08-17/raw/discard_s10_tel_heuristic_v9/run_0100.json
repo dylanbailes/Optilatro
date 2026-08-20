@@ -1,0 +1,192 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 35,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_vagabond",
+  "j_flash"
+ ],
+ "stats": {
+  "tarots": [
+   "c_devil",
+   "c_death",
+   "c_hermit",
+   "c_judgement",
+   "c_death"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_vagabond"
+  ],
+  "money_spent": 24,
+  "best_score": 536,
+  "rerolls": 1,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_vagabond"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_vagabond"
+    ],
+    200
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    315
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    128
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    45
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    48
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_devil",
+    [
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "Gold",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hermit",
+    [
+     "j_vagabond"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_judgement",
+    [
+     "j_vagabond"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 100,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

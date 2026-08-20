@@ -1,0 +1,193 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 57,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_credit_card",
+  "j_reserved_parking",
+  "j_trousers",
+  "j_egg",
+  "j_ice_cream"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_reserved_parking",
+   "j_trousers",
+   "j_egg",
+   "j_ice_cream"
+  ],
+  "money_spent": 33,
+  "best_score": 1536,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_reserved_parking"
+    ],
+    44
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_reserved_parking"
+    ],
+    332
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_reserved_parking"
+    ],
+    116
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_reserved_parking"
+    ],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_reserved_parking"
+    ],
+    220
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_reserved_parking"
+    ],
+    364
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_reserved_parking",
+     "j_trousers"
+    ],
+    324
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_reserved_parking",
+     "j_trousers"
+    ],
+    280
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_reserved_parking",
+     "j_trousers"
+    ],
+    200
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_reserved_parking",
+     "j_trousers"
+    ],
+    360
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_reserved_parking",
+     "j_trousers"
+    ],
+    232
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_reserved_parking",
+     "j_trousers"
+    ],
+    486
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_reserved_parking",
+     "j_trousers"
+    ],
+    312
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_ice_cream",
+     "j_reserved_parking",
+     "j_trousers"
+    ],
+    1536
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 227,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,509 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 128,
+ "truncated": false,
+ "dollars": 23,
+ "jokers": [
+  "j_misprint",
+  "j_abstract",
+  "j_stuntman",
+  "j_ice_cream",
+  "j_shoot_the_moon"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_strength",
+   "c_chariot",
+   "c_hierophant",
+   "c_death",
+   "c_sun",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_pluto",
+   "pl_pluto",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_misprint",
+   "j_odd_todd",
+   "j_abstract",
+   "j_half",
+   "j_stuntman",
+   "j_todo_list",
+   "j_golden",
+   "j_hallucination",
+   "j_ice_cream",
+   "j_green_joker",
+   "j_shoot_the_moon"
+  ],
+  "money_spent": 126,
+  "best_score": 32495,
+  "rerolls": 2,
+  "packs_bought": 10,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    2,
+    "j_fibonacci"
+   ],
+   [
+    3,
+    "j_half"
+   ],
+   [
+    3,
+    "j_odd_todd"
+   ],
+   [
+    3,
+    "j_todo_list"
+   ],
+   [
+    4,
+    "j_golden"
+   ],
+   [
+    4,
+    "j_hallucination"
+   ],
+   [
+    5,
+    "j_green_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_fibonacci",
+     "j_misprint"
+    ],
+    1440
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_misprint",
+     "j_odd_todd"
+    ],
+    2632
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_fibonacci",
+     "j_half",
+     "j_misprint",
+     "j_odd_todd"
+    ],
+    2745
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_fibonacci",
+     "j_half",
+     "j_misprint",
+     "j_odd_todd"
+    ],
+    2205
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_half",
+     "j_misprint",
+     "j_odd_todd",
+     "j_stuntman"
+    ],
+    14617
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_half",
+     "j_misprint",
+     "j_odd_todd",
+     "j_stuntman"
+    ],
+    17595
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_misprint",
+     "j_odd_todd",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    7725
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_golden",
+     "j_hallucination",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    10230
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_golden",
+     "j_hallucination",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    10850
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_golden",
+     "j_hallucination",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    10780
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_hallucination",
+     "j_ice_cream",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    11050
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    10550
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    21945
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_abstract",
+     "j_ice_cream",
+     "j_misprint",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    19475
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_ice_cream",
+     "j_misprint",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    14875
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_fibonacci",
+     "j_misprint",
+     "j_odd_todd"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_abstract",
+     "j_half",
+     "j_misprint",
+     "j_odd_todd",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_strength",
+    [
+     "j_abstract",
+     "j_golden",
+     "j_hallucination",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_golden",
+     "j_hallucination",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_golden",
+     "j_hallucination",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_misprint",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_abstract",
+     "j_ice_cream",
+     "j_misprint",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "Steel",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_sun",
+    [
+     "j_abstract",
+     "j_ice_cream",
+     "j_misprint",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Blue"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_magician",
+    [
+     "j_abstract",
+     "j_ice_cream",
+     "j_misprint",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 21,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

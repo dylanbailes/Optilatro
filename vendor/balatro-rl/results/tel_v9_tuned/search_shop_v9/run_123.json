@@ -1,0 +1,133 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 48,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_green_joker",
+  "j_hologram",
+  "j_blue_joker",
+  "j_runner"
+ ],
+ "stats": {
+  "tarots": [
+   "c_high_priestess"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_green_joker",
+   "j_runner"
+  ],
+  "money_spent": 36,
+  "best_score": 1492,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_green_joker",
+     "j_hologram"
+    ],
+    174
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_green_joker",
+     "j_hologram"
+    ],
+    365
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_green_joker",
+     "j_hologram"
+    ],
+    948
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_green_joker",
+     "j_hologram"
+    ],
+    960
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_green_joker",
+     "j_hologram",
+     "j_runner"
+    ],
+    972
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_green_joker",
+     "j_hologram",
+     "j_runner"
+    ],
+    520
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_green_joker",
+     "j_hologram",
+     "j_runner"
+    ],
+    804
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_high_priestess",
+    [
+     "j_blue_joker",
+     "j_green_joker",
+     "j_hologram",
+     "j_runner"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 123,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

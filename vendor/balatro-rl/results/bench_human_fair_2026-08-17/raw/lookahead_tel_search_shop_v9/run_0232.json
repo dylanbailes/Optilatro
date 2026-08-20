@@ -1,0 +1,112 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 25,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_8_ball",
+  "j_satellite",
+  "j_dusk"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_8_ball",
+   "j_dusk"
+  ],
+  "money_spent": 14,
+  "best_score": 596,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    264
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_satellite"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_satellite"
+    ],
+    200
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_satellite"
+    ],
+    340
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_satellite"
+    ],
+    120
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_satellite"
+    ],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_satellite"
+    ],
+    76
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 232,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,965 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 252,
+ "truncated": false,
+ "dollars": 22,
+ "jokers": [
+  "j_fibonacci",
+  "j_greedy_joker",
+  "j_cavendish",
+  "j_hanging_chad",
+  "j_constellation"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_temperance",
+   "c_wheel_of_fortune",
+   "c_fool",
+   "c_strength",
+   "c_strength",
+   "c_wheel_of_fortune",
+   "c_death",
+   "c_hermit",
+   "c_magician",
+   "c_death",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_jupiter",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_deja_vu",
+   "s_black_hole"
+  ],
+  "jokers_bought": [
+   "j_idol",
+   "j_ice_cream",
+   "j_fortune_teller",
+   "j_photograph",
+   "j_popcorn",
+   "j_baron",
+   "j_sock_and_buskin",
+   "j_even_steven",
+   "j_to_the_moon",
+   "j_hit_the_road",
+   "j_faceless",
+   "j_cavendish",
+   "j_gros_michel",
+   "j_jolly",
+   "j_scholar",
+   "j_gros_michel",
+   "j_droll",
+   "j_popcorn",
+   "j_hanging_chad",
+   "j_abstract",
+   "j_constellation"
+  ],
+  "money_spent": 269,
+  "best_score": 70407,
+  "rerolls": 6,
+  "packs_bought": 25,
+  "packs_opened": 18,
+  "jokers_sold": [
+   [
+    3,
+    "j_fortune_teller"
+   ],
+   [
+    3,
+    "j_idol"
+   ],
+   [
+    3,
+    "j_popcorn"
+   ],
+   [
+    4,
+    "j_photograph"
+   ],
+   [
+    4,
+    "j_sock_and_buskin"
+   ],
+   [
+    4,
+    "j_even_steven"
+   ],
+   [
+    4,
+    "j_to_the_moon"
+   ],
+   [
+    4,
+    "j_baron"
+   ],
+   [
+    4,
+    "j_faceless"
+   ],
+   [
+    4,
+    "j_hit_the_road"
+   ],
+   [
+    6,
+    "j_ice_cream"
+   ],
+   [
+    6,
+    "j_scholar"
+   ],
+   [
+    6,
+    "j_droll"
+   ],
+   [
+    7,
+    "j_jolly"
+   ],
+   [
+    7,
+    "j_popcorn"
+   ],
+   [
+    7,
+    "j_abstract"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_fibonacci"
+    ],
+    468
+   ],
+   [
+    1,
+    "Four of a Kind",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    630
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    888
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_idol"
+    ],
+    2376
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_ice_cream",
+     "j_idol"
+    ],
+    2070
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_idol"
+    ],
+    2772
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_idol",
+     "j_photograph"
+    ],
+    3129
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_photograph",
+     "j_popcorn"
+    ],
+    4002
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_baron",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_photograph"
+    ],
+    28755
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baron",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_sock_and_buskin"
+    ],
+    1485
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_baron",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_sock_and_buskin"
+    ],
+    1768
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_baron",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_sock_and_buskin"
+    ],
+    1593
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_baron",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_sock_and_buskin"
+    ],
+    3150
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_baron",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_to_the_moon"
+    ],
+    8601
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_baron",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_to_the_moon"
+    ],
+    4563
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    19920
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    18315
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    19200
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_jolly"
+    ],
+    14751
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_jolly"
+    ],
+    13500
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_jolly"
+    ],
+    22197
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_jolly"
+    ],
+    20727
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_jolly",
+     "j_popcorn"
+    ],
+    24021
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_jolly",
+     "j_popcorn"
+    ],
+    22185
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_jolly",
+     "j_popcorn"
+    ],
+    14994
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_jolly",
+     "j_popcorn"
+    ],
+    15606
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_jolly",
+     "j_popcorn"
+    ],
+    20445
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_popcorn"
+    ],
+    27387
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_popcorn"
+    ],
+    15855
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_popcorn"
+    ],
+    10890
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad"
+    ],
+    30030
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad"
+    ],
+    13260
+   ],
+   [
+    7,
+    "Straight",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad"
+    ],
+    15939
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad"
+    ],
+    11178
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad"
+    ],
+    21840
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad"
+    ],
+    22704
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad"
+    ],
+    5610
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad"
+    ],
+    21840
+   ],
+   [
+    8,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad"
+    ],
+    15840
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad"
+    ],
+    22704
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_constellation",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad"
+    ],
+    4320
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_jupiter",
+    [
+     "j_fibonacci"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_magician",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_temperance",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_baron",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream",
+     "j_sock_and_buskin"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_strength",
+    [
+     "j_baron",
+     "j_even_steven",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hit_the_road",
+     "j_ice_cream"
+    ],
+    []
+   ],
+   [
+    5,
+    "s_deja_vu",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_strength",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_jolly",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_wheel_of_fortune",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_jolly"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_droll",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Red"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_hermit",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_jolly",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_magician",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_popcorn"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_popcorn"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "s_black_hole",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_wheel_of_fortune",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_greedy_joker",
+     "j_hanging_chad",
+     "j_popcorn"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 184,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

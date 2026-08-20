@@ -1,0 +1,189 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 55,
+ "truncated": false,
+ "dollars": 15,
+ "jokers": [
+  "j_egg",
+  "j_swashbuckler",
+  "j_photograph",
+  "j_even_steven",
+  "j_sock_and_buskin"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_egg",
+   "j_to_the_moon",
+   "j_photograph",
+   "j_sock_and_buskin"
+  ],
+  "money_spent": 44,
+  "best_score": 4400,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_to_the_moon"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    92
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_egg",
+     "j_swashbuckler"
+    ],
+    552
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_egg",
+     "j_swashbuckler",
+     "j_to_the_moon"
+    ],
+    264
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_egg",
+     "j_swashbuckler",
+     "j_to_the_moon"
+    ],
+    352
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_swashbuckler",
+     "j_to_the_moon"
+    ],
+    1508
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_swashbuckler",
+     "j_to_the_moon"
+    ],
+    2015
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    4260
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    4400
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    3100
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    1344
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_egg",
+     "j_even_steven",
+     "j_photograph",
+     "j_sock_and_buskin",
+     "j_swashbuckler"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 272,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

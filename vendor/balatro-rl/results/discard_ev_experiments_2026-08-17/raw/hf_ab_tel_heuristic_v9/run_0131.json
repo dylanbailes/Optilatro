@@ -1,0 +1,218 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 67,
+ "truncated": false,
+ "dollars": 6,
+ "jokers": [
+  "j_scary_face",
+  "j_gluttenous_joker",
+  "j_selzer",
+  "j_stuntman",
+  "j_photograph"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_marble",
+   "j_gluttenous_joker",
+   "j_8_ball",
+   "j_selzer",
+   "j_blue_joker",
+   "j_stuntman",
+   "j_photograph"
+  ],
+  "money_spent": 57,
+  "best_score": 3861,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_crazy"
+   ],
+   [
+    2,
+    "j_marble"
+   ],
+   [
+    3,
+    "j_8_ball"
+   ],
+   [
+    3,
+    "j_blue_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_scary_face"
+    ],
+    336
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy",
+     "j_scary_face"
+    ],
+    140
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_crazy",
+     "j_marble",
+     "j_scary_face"
+    ],
+    2080
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_marble",
+     "j_scary_face"
+    ],
+    370
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_marble",
+     "j_scary_face"
+    ],
+    264
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_marble",
+     "j_scary_face"
+    ],
+    280
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_8_ball",
+     "j_crazy",
+     "j_gluttenous_joker",
+     "j_marble",
+     "j_scary_face"
+    ],
+    1200
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_scary_face",
+     "j_selzer"
+    ],
+    932
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_scary_face",
+     "j_selzer"
+    ],
+    1001
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_scary_face",
+     "j_selzer"
+    ],
+    2592
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_scary_face",
+     "j_selzer",
+     "j_stuntman"
+    ],
+    2989
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_scary_face",
+     "j_selzer",
+     "j_stuntman"
+    ],
+    872
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_scary_face",
+     "j_selzer",
+     "j_stuntman"
+    ],
+    1090
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 131,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

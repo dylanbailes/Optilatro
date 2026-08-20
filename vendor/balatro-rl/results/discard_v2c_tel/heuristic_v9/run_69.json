@@ -1,0 +1,252 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 82,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_seeing_double",
+  "j_faceless",
+  "j_devious",
+  "j_runner",
+  "j_red_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_rocket",
+   "j_popcorn",
+   "j_faceless",
+   "j_runner",
+   "j_red_card"
+  ],
+  "money_spent": 70,
+  "best_score": 3108,
+  "rerolls": 0,
+  "packs_bought": 9,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    2,
+    "j_rocket"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    592
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_popcorn",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    968
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_popcorn",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    972
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    2832
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    1000
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    1200
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    648
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    644
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    3108
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_red_card",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    1266
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_red_card",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    275
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_red_card",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    275
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_red_card",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    657
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_empress",
+    [
+     "j_popcorn",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_devious",
+     "j_faceless",
+     "j_popcorn",
+     "j_runner",
+     "j_seeing_double"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 69,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,943 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 244,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_stuntman",
+  "j_obelisk",
+  "j_raised_fist",
+  "j_trio",
+  "j_misprint"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_lovers",
+   "c_devil",
+   "c_star",
+   "c_hermit",
+   "c_hermit",
+   "c_empress",
+   "c_hanged_man",
+   "c_hermit",
+   "c_temperance",
+   "c_death",
+   "c_magician",
+   "c_empress",
+   "c_temperance",
+   "c_death",
+   "c_emperor",
+   "c_magician",
+   "c_fool",
+   "c_magician",
+   "c_death"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_bull",
+   "j_matador",
+   "j_mail",
+   "j_obelisk",
+   "j_raised_fist",
+   "j_onyx_agate",
+   "j_mail",
+   "j_shoot_the_moon",
+   "j_to_the_moon",
+   "j_trio",
+   "j_business",
+   "j_wily",
+   "j_bloodstone",
+   "j_misprint"
+  ],
+  "money_spent": 289,
+  "best_score": 54947,
+  "rerolls": 8,
+  "packs_bought": 30,
+  "packs_opened": 24,
+  "jokers_sold": [
+   [
+    2,
+    "j_matador"
+   ],
+   [
+    3,
+    "j_mail"
+   ],
+   [
+    3,
+    "j_square"
+   ],
+   [
+    3,
+    "j_bull"
+   ],
+   [
+    4,
+    "j_mail"
+   ],
+   [
+    4,
+    "j_onyx_agate"
+   ],
+   [
+    5,
+    "j_to_the_moon"
+   ],
+   [
+    5,
+    "j_shoot_the_moon"
+   ],
+   [
+    5,
+    "j_business"
+   ],
+   [
+    6,
+    "j_wily"
+   ],
+   [
+    7,
+    "j_bloodstone"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    336
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_bull",
+     "j_stuntman"
+    ],
+    528
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bull",
+     "j_matador",
+     "j_stuntman"
+    ],
+    1304
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_stuntman"
+    ],
+    1332
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_square",
+     "j_stuntman"
+    ],
+    1284
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_square",
+     "j_stuntman"
+    ],
+    1308
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_square",
+     "j_stuntman"
+    ],
+    552
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_mail",
+     "j_obelisk",
+     "j_square",
+     "j_stuntman"
+    ],
+    572
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_mail",
+     "j_obelisk",
+     "j_square",
+     "j_stuntman"
+    ],
+    572
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_bull",
+     "j_mail",
+     "j_obelisk",
+     "j_square",
+     "j_stuntman"
+    ],
+    326
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_mail",
+     "j_obelisk",
+     "j_square",
+     "j_stuntman"
+    ],
+    568
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_square",
+     "j_stuntman"
+    ],
+    3780
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_obelisk",
+     "j_onyx_agate",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    7050
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_mail",
+     "j_obelisk",
+     "j_onyx_agate",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    5834
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_obelisk",
+     "j_onyx_agate",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    7560
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_obelisk",
+     "j_onyx_agate",
+     "j_raised_fist",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    12288
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_shoot_the_moon",
+     "j_stuntman",
+     "j_to_the_moon"
+    ],
+    12600
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_shoot_the_moon",
+     "j_stuntman",
+     "j_trio"
+    ],
+    23990
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_shoot_the_moon",
+     "j_stuntman",
+     "j_trio"
+    ],
+    30780
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    11818
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    10868
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    10500
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    9180
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    12403
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_bloodstone",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    27770
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_bloodstone",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    27177
+   ],
+   [
+    7,
+    "Three of a Kind",
+    [
+     "j_bloodstone",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    48076
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_misprint",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    16000
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_misprint",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    11900
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_misprint",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    7770
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_misprint",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    16320
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_judgement",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_square",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Gold"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_devil",
+    [
+     "j_bull",
+     "j_mail",
+     "j_matador",
+     "j_square",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_obelisk",
+     "j_onyx_agate",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_star",
+    [
+     "j_obelisk",
+     "j_onyx_agate",
+     "j_raised_fist",
+     "j_shoot_the_moon",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_empress",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hanged_man",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_hermit",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_death",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_magician",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_empress",
+    [
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio",
+     "j_wily"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_bloodstone",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_bloodstone",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_death",
+    [
+     "j_bloodstone",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "Gold",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_emperor",
+    [
+     "j_bloodstone",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_magician",
+    [
+     "j_bloodstone",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_fool",
+    [
+     "j_bloodstone",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_magician",
+    [
+     "j_bloodstone",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_bloodstone",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_death",
+    [
+     "j_misprint",
+     "j_obelisk",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 1,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

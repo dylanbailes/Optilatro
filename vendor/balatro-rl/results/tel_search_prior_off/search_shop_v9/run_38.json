@@ -1,0 +1,475 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 109,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_jolly",
+  "j_abstract",
+  "j_castle",
+  "j_swashbuckler",
+  "j_raised_fist"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_fool",
+   "c_death",
+   "c_wheel_of_fortune",
+   "c_hermit",
+   "c_devil",
+   "c_hanged_man",
+   "c_star",
+   "c_chariot"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_shoot_the_moon",
+   "j_jolly",
+   "j_abstract",
+   "j_card_sharp",
+   "j_castle",
+   "j_swashbuckler",
+   "j_golden",
+   "j_ticket",
+   "j_raised_fist"
+  ],
+  "money_spent": 88,
+  "best_score": 8418,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    3,
+    "j_shoot_the_moon"
+   ],
+   [
+    3,
+    "j_card_sharp"
+   ],
+   [
+    3,
+    "j_golden"
+   ],
+   [
+    4,
+    "j_ticket"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    264
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_jolly",
+     "j_shoot_the_moon"
+    ],
+    800
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_jolly",
+     "j_shoot_the_moon"
+    ],
+    1450
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_jolly",
+     "j_shoot_the_moon"
+    ],
+    2100
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_castle",
+     "j_jolly",
+     "j_shoot_the_moon"
+    ],
+    1558
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_castle",
+     "j_jolly",
+     "j_shoot_the_moon"
+    ],
+    2394
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_castle",
+     "j_jolly",
+     "j_shoot_the_moon"
+    ],
+    2214
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    2592
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    1008
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    2668
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    1470
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    2552
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    2520
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    2800
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    3770
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    1680
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_raised_fist",
+     "j_swashbuckler"
+    ],
+    8418
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_jolly",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_jolly",
+     "j_shoot_the_moon"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_jolly",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_jolly",
+     "j_shoot_the_moon"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_castle",
+     "j_jolly",
+     "j_shoot_the_moon"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_devil",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_hanged_man",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_star",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_castle",
+     "j_jolly",
+     "j_raised_fist",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 38,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

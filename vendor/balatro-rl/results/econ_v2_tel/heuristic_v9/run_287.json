@@ -1,0 +1,89 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 20,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_credit_card"
+  ],
+  "money_spent": 6,
+  "best_score": 372,
+  "rerolls": 1,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    171
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_credit_card"
+    ],
+    264
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_credit_card"
+    ],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_credit_card"
+    ],
+    32
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_credit_card"
+    ],
+    16
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 287,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

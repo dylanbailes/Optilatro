@@ -1,0 +1,895 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 262,
+ "truncated": false,
+ "dollars": 43,
+ "jokers": [
+  "j_swashbuckler",
+  "j_duo",
+  "j_fortune_teller",
+  "j_abstract",
+  "j_misprint"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance",
+   "c_fool",
+   "c_temperance",
+   "c_fool",
+   "c_temperance",
+   "c_wheel_of_fortune",
+   "c_magician",
+   "c_hermit",
+   "c_chariot",
+   "c_strength",
+   "c_wheel_of_fortune",
+   "c_magician",
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_saturn",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_grim",
+   "s_cryptid"
+  ],
+  "jokers_bought": [
+   "j_swashbuckler",
+   "j_card_sharp",
+   "j_delayed_grat",
+   "j_jolly",
+   "j_red_card",
+   "j_ice_cream",
+   "j_cartomancer",
+   "j_red_card",
+   "j_trousers",
+   "j_banner",
+   "j_smiley",
+   "j_duo",
+   "j_fortune_teller",
+   "j_abstract",
+   "j_half",
+   "j_runner",
+   "j_misprint"
+  ],
+  "money_spent": 264,
+  "best_score": 78960,
+  "rerolls": 7,
+  "packs_bought": 28,
+  "packs_opened": 20,
+  "jokers_sold": [
+   [
+    2,
+    "j_delayed_grat"
+   ],
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    2,
+    "j_cartomancer"
+   ],
+   [
+    3,
+    "j_red_card"
+   ],
+   [
+    3,
+    "j_trousers"
+   ],
+   [
+    3,
+    "j_jolly"
+   ],
+   [
+    4,
+    "j_ice_cream"
+   ],
+   [
+    4,
+    "j_smiley"
+   ],
+   [
+    4,
+    "j_card_sharp"
+   ],
+   [
+    5,
+    "j_banner"
+   ],
+   [
+    5,
+    "j_half"
+   ],
+   [
+    5,
+    "j_runner"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_swashbuckler"
+    ],
+    780
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_card_sharp",
+     "j_swashbuckler"
+    ],
+    1140
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_card_sharp",
+     "j_delayed_grat",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    1150
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_card_sharp",
+     "j_delayed_grat",
+     "j_jolly",
+     "j_red_card",
+     "j_swashbuckler"
+    ],
+    2025
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_ice_cream",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    4654
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_card_sharp",
+     "j_ice_cream",
+     "j_jolly",
+     "j_red_card",
+     "j_swashbuckler"
+    ],
+    3937
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_card_sharp",
+     "j_ice_cream",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    3841
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_card_sharp",
+     "j_ice_cream",
+     "j_jolly",
+     "j_swashbuckler",
+     "j_trousers"
+    ],
+    4352
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_card_sharp",
+     "j_ice_cream",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    5184
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_card_sharp",
+     "j_duo",
+     "j_fortune_teller",
+     "j_swashbuckler"
+    ],
+    11200
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_card_sharp",
+     "j_duo",
+     "j_fortune_teller",
+     "j_swashbuckler"
+    ],
+    10528
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_duo",
+     "j_fortune_teller",
+     "j_swashbuckler"
+    ],
+    15792
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_duo",
+     "j_fortune_teller",
+     "j_swashbuckler"
+    ],
+    16800
+   ],
+   [
+    5,
+    "Four of a Kind",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_duo",
+     "j_fortune_teller",
+     "j_swashbuckler"
+    ],
+    12648
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_duo",
+     "j_fortune_teller",
+     "j_swashbuckler"
+    ],
+    5494
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_duo",
+     "j_fortune_teller",
+     "j_swashbuckler"
+    ],
+    4080
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    17080
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    4747
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    12330
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    11440
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    12400
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    22680
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    16128
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    15008
+   ],
+   [
+    7,
+    "Five of a Kind",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    39600
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    27540
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    15456
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    12596
+   ],
+   [
+    7,
+    "Four of a Kind",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    23214
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    15552
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    20496
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    19698
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    20480
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    14784
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    11660
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    11628
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    14336
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    10800
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    13728
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    21888
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_temperance",
+    [
+     "j_card_sharp",
+     "j_delayed_grat",
+     "j_jolly",
+     "j_red_card",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_card_sharp",
+     "j_delayed_grat",
+     "j_jolly",
+     "j_red_card",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_card_sharp",
+     "j_delayed_grat",
+     "j_jolly",
+     "j_red_card",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_card_sharp",
+     "j_ice_cream",
+     "j_jolly",
+     "j_red_card",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_card_sharp",
+     "j_ice_cream",
+     "j_jolly",
+     "j_red_card",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_ice_cream",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_card_sharp",
+     "j_ice_cream",
+     "j_jolly",
+     "j_red_card",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "s_grim",
+    [
+     "j_banner",
+     "j_card_sharp",
+     "j_duo",
+     "j_fortune_teller",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_saturn",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_duo",
+     "j_fortune_teller",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "s_cryptid",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_duo",
+     "j_fortune_teller",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_runner",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_strength",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_wheel_of_fortune",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_magician",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    8,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_duo",
+     "j_fortune_teller",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 119,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

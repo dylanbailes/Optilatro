@@ -1,0 +1,181 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 25,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_hanging_chad"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_world"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hanging_chad"
+  ],
+  "money_spent": 11,
+  "best_score": 588,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    112
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    64
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    40
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hanging_chad"
+    ],
+    44
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hanging_chad"
+    ],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_hanging_chad"
+    ],
+    272
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hanging_chad"
+    ],
+    92
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hanging_chad"
+    ],
+    148
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hanging_chad"
+    ],
+    100
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hanging_chad"
+    ],
+    84
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_hanging_chad"
+    ],
+    256
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_hanging_chad"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_world",
+    [
+     "j_hanging_chad"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 13,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

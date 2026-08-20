@@ -1,0 +1,77 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 15,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_golden"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_golden"
+  ],
+  "money_spent": 6,
+  "best_score": 448,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_golden"
+    ],
+    288
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_golden"
+    ],
+    40
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_golden"
+    ],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_golden"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 288,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

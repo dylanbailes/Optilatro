@@ -60,7 +60,9 @@ def apply_planet(game: "BalatroGame", planet_key: str) -> bool:
     # Fire satellite jokers (Satellite / Constellation)
     for j in game.jokers:
         j.fire("on_planet_used", planet_key)
-    # Track for Fortune Teller / Constellation
+    # Track for the Fool's copy source (tarots + planets, in order) and for
+    # Fortune Teller / Constellation
+    game.consumables_used.append(planet_key)
     game.planets_used.append(planet_key)
     return True
 
@@ -116,6 +118,23 @@ TAROT_SUIT = {
     "c_world": "Spades",
 }
 
+# Max cards each card-targeting tarot can affect (reference doc §3 Targets
+# column: 1 = single-card tarots like The Lovers, 2 = "1-2" tarots, Death = 2).
+# Suit-conversion tarots are handled by the shared TAROT_SUIT branch (up to 3).
+TAROT_MAX_TARGETS = {
+    "c_magician":    2,
+    "c_empress":     2,
+    "c_hierophant":  2,
+    "c_lovers":      1,
+    "c_chariot":     1,
+    "c_justice":     1,
+    "c_devil":       1,
+    "c_tower":       1,
+    "c_strength":    2,
+    "c_hanged_man":  2,
+    "c_death":       2,
+}
+
 
 def apply_tarot(
     game: "BalatroGame",
@@ -130,13 +149,12 @@ def apply_tarot(
     """
     targets = [game.hand[i] for i in (target_indices or []) if i < len(game.hand)]
 
-    # Enhancement tarots (1-2 cards)
+    # Enhancement tarots (doc Targets: 1 card or 1-2 cards)
     if tarot_key in TAROT_ENHANCEMENT:
         enh = TAROT_ENHANCEMENT[tarot_key]
-        for card in targets[:2]:
+        for card in targets[:TAROT_MAX_TARGETS.get(tarot_key, 2)]:
             card.enhancement = enh
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+        _note_use(game, tarot_key)
         return True
 
     # Suit conversion tarots (up to 3 cards)
@@ -144,43 +162,43 @@ def apply_tarot(
         suit = TAROT_SUIT[tarot_key]
         for card in targets[:3]:
             card.suit = suit
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+        _note_use(game, tarot_key)
         return True
 
     # Special tarots
     if tarot_key == "c_fool":
-        # Create a copy of last used Tarot or Planet
-        if game.tarots_used:
-            game.consumable_hand.append(game.tarots_used[-1])
-        elif game.planets_used:
-            game.consumable_hand.append(game.planets_used[-1])
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+        # Copy the LAST used Tarot or Planet (The Fool itself excluded — it is
+        # never recorded in game.consumables_used, so it can never copy
+        # itself; reference doc §3).
+        if game.consumables_used:
+            game.consumable_hand.append(game.consumables_used[-1])
+        _note_use(game, tarot_key)
         return True
 
     if tarot_key == "c_high_priestess":
-        # Create 2 random Planet cards
+        # Create up to 2 random Planet cards, room permitting (doc: "must have
+        # room"). The used card is consumed before the effect resolves, so its
+        # own slot frees up for the creation.
         for _ in range(2):
-            game.consumable_hand.append(game.rng.node(CHANCE_NODE).choice(ALL_PLANETS))
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+            if len(game.consumable_hand) < game.consumable_slots:
+                game.consumable_hand.append(game.rng.node(CHANCE_NODE).choice(ALL_PLANETS))
+        _note_use(game, tarot_key)
         return True
 
     if tarot_key == "c_emperor":
-        # Create 2 random Tarot cards
+        # Create up to 2 random Tarot cards, room permitting (doc: "must have
+        # room").
         for _ in range(2):
-            game.consumable_hand.append(game.rng.node(CHANCE_NODE).choice(ALL_TAROTS))
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+            if len(game.consumable_hand) < game.consumable_slots:
+                game.consumable_hand.append(game.rng.node(CHANCE_NODE).choice(ALL_TAROTS))
+        _note_use(game, tarot_key)
         return True
 
     if tarot_key == "c_hermit":
         # Double money, max $20 gain
         gain = min(game.dollars, 20)
         game.dollars += gain
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+        _note_use(game, tarot_key)
         return True
 
     if tarot_key == "c_wheel_of_fortune":
@@ -188,16 +206,14 @@ def apply_tarot(
         if game.jokers and game.rng.node(CHANCE_NODE).random() < 0.25:
             j = game.rng.node(CHANCE_NODE).choice(game.jokers)
             j.edition = game.rng.node(CHANCE_NODE).choice(["Foil", "Holographic", "Polychrome"])
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+        _note_use(game, tarot_key)
         return True
 
     if tarot_key == "c_strength":
         # Increase rank of up to 2 cards by 1 (wraps A back to 2)
         for card in targets[:2]:
             card.rank = (card.rank % 14) + 1 if card.rank < 14 else 2
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+        _note_use(game, tarot_key)
         return True
 
     if tarot_key == "c_hanged_man":
@@ -207,27 +223,27 @@ def apply_tarot(
                 game.hand.remove(card)
             if card in game.deck:
                 game.deck.remove(card)
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+        _note_use(game, tarot_key)
         return True
 
     if tarot_key == "c_death":
-        # Convert left card to copy of right card (both selected)
+        # Convert left card to copy of right card (both selected) — rank,
+        # suit, enhancement, edition, AND seal (reference doc §3).
         if len(targets) >= 2:
             left, right = targets[0], targets[1]
             left.rank = right.rank
             left.suit = right.suit
             left.enhancement = right.enhancement
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+            left.edition = right.edition
+            left.seal = right.seal
+        _note_use(game, tarot_key)
         return True
 
     if tarot_key == "c_temperance":
         # Give $ equal to total joker sell value (max $50)
         sell_total = sum(j.state.get("sell_value", 2) for j in game.jokers)
         game.dollars += min(sell_total, 50)
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+        _note_use(game, tarot_key)
         return True
 
     if tarot_key == "c_judgement":
@@ -235,8 +251,7 @@ def apply_tarot(
         from .shop import random_joker_key
         _grant_joker(game, random_joker_key(
             rng=game.rng, ante=game.ante, source="sho", game=game))
-        game.tarots_used.append(tarot_key)
-        _fire_tarot_hooks(game, tarot_key)
+        _note_use(game, tarot_key)
         return True
 
     return False
@@ -247,6 +262,18 @@ def _grant_joker(game: "BalatroGame", key: str, edition: str = "None"):
     Popcorn/Ramen/Ice Cream/Castle initial values). Used by Judgement /
     Wraith / The Soul — every acquisition path must init (M1 B2)."""
     game.grant_joker(key, edition)
+
+
+def _note_use(game: "BalatroGame", tarot_key: str):
+    """Record a tarot use and dispatch on_tarot_used hooks.
+
+    game.consumables_used (the Fool's copy source) records every tarot AND
+    planet used, in order — The Fool itself is excluded so it can never copy
+    itself (reference doc §3)."""
+    if tarot_key != "c_fool":
+        game.consumables_used.append(tarot_key)
+    game.tarots_used.append(tarot_key)
+    _fire_tarot_hooks(game, tarot_key)
 
 
 def _fire_tarot_hooks(game: "BalatroGame", tarot_key: str):
@@ -290,9 +317,13 @@ def apply_spectral(
 ) -> bool:
     """Apply a Spectral card effect. Returns True on success."""
     targets = [game.hand[i] for i in (target_indices or []) if i < len(game.hand)]
+    # Observation-only usage tally (every recognized key succeeds — see
+    # game._use_consumable's invariant). No RNG, so seed-exactness is safe.
+    game.spectrals_used.append(spectral_key)
 
     if spectral_key == "s_familiar":
-        # Destroy 1 held card, add 3 random enhanced face cards
+        # Destroy 1 held card, add 3 random Enhanced face cards TO HAND
+        # (reference doc §5 — the sim previously inserted into the deck).
         if targets:
             _remove_card(game, targets[0])
         from .card import Card
@@ -303,11 +334,11 @@ def apply_spectral(
             c = Card(rank=game.rng.node(CHANCE_NODE).choice(face_ranks),
                      suit=game.rng.node(CHANCE_NODE).choice(suits))
             c.enhancement = game.rng.node(CHANCE_NODE).choice(enhs)
-            game.deck.insert(0, c)
+            game.hand.append(c)
         return True
 
     if spectral_key == "s_grim":
-        # Destroy 1 held card, add 2 random enhanced Aces
+        # Destroy 1 held card, add 2 random Enhanced Aces TO HAND
         if targets:
             _remove_card(game, targets[0])
         from .card import Card
@@ -316,11 +347,11 @@ def apply_spectral(
         for _ in range(2):
             c = Card(rank=14, suit=game.rng.node(CHANCE_NODE).choice(suits))
             c.enhancement = game.rng.node(CHANCE_NODE).choice(enhs)
-            game.deck.insert(0, c)
+            game.hand.append(c)
         return True
 
     if spectral_key == "s_incantation":
-        # Destroy 1 held card, add 4 random enhanced number cards (2-10)
+        # Destroy 1 held card, add 4 random Enhanced number cards (2-10) TO HAND
         if targets:
             _remove_card(game, targets[0])
         from .card import Card
@@ -330,7 +361,7 @@ def apply_spectral(
             c = Card(rank=game.rng.node(CHANCE_NODE).randint(2, 10),
                      suit=game.rng.node(CHANCE_NODE).choice(suits))
             c.enhancement = game.rng.node(CHANCE_NODE).choice(enhs)
-            game.deck.insert(0, c)
+            game.hand.append(c)
         return True
 
     if spectral_key == "s_talisman":
@@ -340,20 +371,22 @@ def apply_spectral(
         return True
 
     if spectral_key == "s_aura":
-        # Add random edition to 1 selected joker (target_indices[0] = joker index)
-        if target_indices and target_indices[0] < len(game.jokers):
-            game.jokers[target_indices[0]].edition = game.rng.node(CHANCE_NODE).choice(
+        # Add Foil/Holographic/Polychrome to 1 selected PLAYING CARD in hand
+        # (reference doc §5 + balatro-rs core/src/spectral.rs — Aura targets a
+        # card, NOT a joker; the sim previously had this backwards).
+        for card in targets[:1]:
+            card.edition = game.rng.node(CHANCE_NODE).choice(
                 ["Foil", "Holographic", "Polychrome"]
             )
         return True
 
     if spectral_key == "s_wraith":
-        # Create random rare joker, lose $3
+        # Create a random Rare Joker, sets money to $0 (reference doc §5)
         from .shop import random_joker_key
         _grant_joker(game, random_joker_key(
             rarity="Rare", rng=game.rng, ante=game.ante, source="spe",
             game=game))
-        game.dollars = max(0, game.dollars - 3)
+        game.dollars = 0
         return True
 
     if spectral_key == "s_sigil":
@@ -366,18 +399,31 @@ def apply_spectral(
 
     if spectral_key == "s_ouija":
         # Convert all cards in hand to single random rank, -1 hand size
+        # (PERMANENT — reference doc §5; hand_size resets every blind, so the
+        # -1 lives in game.hand_size_mod and is re-applied in _start_blind).
         rank = game.rng.node(CHANCE_NODE).randint(2, 14)
         for card in game.hand:
             if card.enhancement != "Stone":
                 card.rank = rank
+        game.hand_size_mod -= 1
         game.hand_size = max(1, game.hand_size - 1)
         return True
 
     if spectral_key == "s_ectoplasm":
-        # +1 joker slot, all jokers get permanent -1 mult (tracked in state)
-        game.joker_slots += 1
-        for j in game.jokers:
-            j.state["ectoplasm_penalty"] = j.state.get("ectoplasm_penalty", 0) + 1
+        # Add Negative to a random Joker, -1 hand size (PERMANENT) — reference
+        # doc §5 + balatro-rs core/src/spectral.rs. No-op with no jokers (the
+        # real game has nothing to target; balatro-rs test confirms).
+        if game.jokers:
+            j = game.rng.node(CHANCE_NODE).choice(game.jokers)
+            # A re-targeted already-Negative joker grants NO new slot (the
+            # Negative is wasted) — only bump the slot for a fresh target.
+            if j.edition != "Negative":
+                j.edition = "Negative"
+                # The negatived joker no longer occupies a slot (real game),
+                # so a future buy has one more slot available.
+                game.joker_slots += 1
+            game.hand_size_mod -= 1
+            game.hand_size = max(1, game.hand_size - 1)
         return True
 
     if spectral_key == "s_immolate":
@@ -391,13 +437,17 @@ def apply_spectral(
         return True
 
     if spectral_key == "s_ankh":
-        # Create copy of random joker, destroy all others
+        # Copy a random joker, destroy all OTHER jokers — the original SURVIVES
+        # alongside its copy (reference doc §5 + balatro-rs: `vec![original,
+        # clone]`). The copy strips Negative (real game — same rule as Invisible
+        # Joker's copy); the original keeps its edition.
         if game.jokers:
             keep = game.rng.node(CHANCE_NODE).choice(game.jokers)
             from .jokers.base import JokerInstance
-            copy = JokerInstance(keep.key, keep.edition, game=game)
+            copy_edition = "None" if keep.edition == "Negative" else keep.edition
+            copy = JokerInstance(keep.key, copy_edition, game=game)
             copy.state = dict(keep.state)
-            game.jokers = [copy]
+            game.jokers = [keep, copy]
         return True
 
     if spectral_key == "s_deja_vu":
@@ -427,7 +477,8 @@ def apply_spectral(
         return True
 
     if spectral_key == "s_cryptid":
-        # Create 2 copies of 1 selected card
+        # Create 2 copies of 1 selected card INTO HAND (reference doc §5 — the
+        # sim previously inserted into the deck).
         if targets:
             from .card import Card
             orig = targets[0]
@@ -436,7 +487,7 @@ def apply_spectral(
                 c.enhancement = orig.enhancement
                 c.edition = orig.edition
                 c.seal = orig.seal
-                game.deck.insert(0, c)
+                game.hand.append(c)
         return True
 
     if spectral_key == "s_soul":
@@ -489,8 +540,8 @@ VOUCHER_NAME = {
     "v_directors_cut":  "Director's Cut",  # Reroll Boss Blind 1 time per Ante, $10
     "v_paint_brush":    "Paint Brush",     # +1 hand size
     "v_palette":        "Palette",         # +1 hand size again
-    "v_seed_money":     "Seed Money",      # interest cap $10
-    "v_money_tree":     "Money Tree",      # interest cap $20
+    "v_seed_money":     "Seed Money",      # interest cap 5 -> $10
+    "v_money_tree":     "Money Tree",      # interest cap -> $20
     "v_blank":          "Blank",           # does nothing (unlocks Antimatter)
     "v_antimatter":     "Antimatter",      # +1 joker slot
     "v_retcon":         "Retcon",          # reroll Boss Blind unlimited times
@@ -507,9 +558,9 @@ VOUCHER_BASE = {
     "v_observatory":     "v_telescope",
     "v_nacho_tong":      "v_grabber",
     "v_recyclomancy":    "v_wasteful",
-    "v_tarot_tycoon":    "v_tarot_merchant",
-    "v_planet_tycoon":   "v_planet_merchant",
+    "v_tarot_tycoon":    "v_tarot_merchant",    "v_planet_tycoon":  "v_planet_merchant",
     "v_illusion":        "v_magic_trick",
+    "v_omen_globe":      "v_crystal_ball",
     "v_petroglyph":      "v_hieroglyph",
     "v_retcon":          "v_directors_cut",
     "v_palette":         "v_paint_brush",
@@ -579,6 +630,8 @@ def apply_voucher(game: "BalatroGame", voucher_key: str) -> bool:
     elif voucher_key == "v_magic_trick" or voucher_key == "v_illusion":
         pass  # playing cards in the shop — applied in shop._random_shop_item
     elif voucher_key == "v_seed_money":
+        # Reference doc §9 "raises interest cap by $5" = 5 -> 10 (absolute
+        # caps, wiki-confirmed: Seed Money $10 / Money Tree $20).
         game.interest_cap = 10
     elif voucher_key == "v_money_tree":
         game.interest_cap = 20

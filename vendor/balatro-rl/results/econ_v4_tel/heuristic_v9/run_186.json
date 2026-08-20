@@ -1,0 +1,656 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 183,
+ "truncated": false,
+ "dollars": 40,
+ "jokers": [
+  "j_fibonacci",
+  "j_trio",
+  "j_cavendish",
+  "j_hanging_chad",
+  "j_matador"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance",
+   "c_fool",
+   "c_temperance",
+   "c_empress",
+   "c_lovers",
+   "c_magician",
+   "c_temperance",
+   "c_death"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_photograph",
+   "j_red_card",
+   "j_abstract",
+   "j_mystic_summit",
+   "j_scholar",
+   "j_baseball",
+   "j_onyx_agate",
+   "j_swashbuckler",
+   "j_ceremonial",
+   "j_trio",
+   "j_ring_master",
+   "j_cavendish",
+   "j_hanging_chad",
+   "j_golden",
+   "j_even_steven",
+   "j_matador"
+  ],
+  "money_spent": 203,
+  "best_score": 42120,
+  "rerolls": 4,
+  "packs_bought": 17,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    2,
+    "j_abstract"
+   ],
+   [
+    4,
+    "j_photograph"
+   ],
+   [
+    4,
+    "j_scholar"
+   ],
+   [
+    4,
+    "j_mystic_summit"
+   ],
+   [
+    5,
+    "j_ceremonial"
+   ],
+   [
+    5,
+    "j_swashbuckler"
+   ],
+   [
+    5,
+    "j_ring_master"
+   ],
+   [
+    5,
+    "j_onyx_agate"
+   ],
+   [
+    6,
+    "j_baseball"
+   ],
+   [
+    6,
+    "j_golden"
+   ],
+   [
+    6,
+    "j_even_steven"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_fibonacci"
+    ],
+    288
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_fibonacci"
+    ],
+    92
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_fibonacci"
+    ],
+    144
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_fibonacci",
+     "j_photograph"
+    ],
+    874
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_fibonacci",
+     "j_photograph",
+     "j_red_card"
+    ],
+    3000
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_red_card"
+    ],
+    2112
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    2400
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    1677
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    1728
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    5724
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    4080
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    2880
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    2160
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_onyx_agate"
+    ],
+    6385
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_onyx_agate"
+    ],
+    1154
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_onyx_agate",
+     "j_swashbuckler"
+    ],
+    15682
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_onyx_agate",
+     "j_swashbuckler"
+    ],
+    5778
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_baseball",
+     "j_ceremonial",
+     "j_fibonacci",
+     "j_onyx_agate",
+     "j_swashbuckler"
+    ],
+    13078
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_onyx_agate",
+     "j_ring_master",
+     "j_trio"
+    ],
+    21687
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_onyx_agate",
+     "j_trio"
+    ],
+    13608
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_onyx_agate",
+     "j_trio"
+    ],
+    8363
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_onyx_agate",
+     "j_trio"
+    ],
+    2531
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_hanging_chad",
+     "j_trio"
+    ],
+    12978
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_hanging_chad",
+     "j_trio"
+    ],
+    5764
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_fibonacci",
+     "j_hanging_chad",
+     "j_trio"
+    ],
+    1507
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_fibonacci",
+     "j_hanging_chad",
+     "j_trio"
+    ],
+    42120
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_hanging_chad",
+     "j_matador",
+     "j_trio"
+    ],
+    3420
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_hanging_chad",
+     "j_matador",
+     "j_trio"
+    ],
+    2412
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_hanging_chad",
+     "j_matador",
+     "j_trio"
+    ],
+    2460
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_fibonacci",
+     "j_hanging_chad",
+     "j_matador",
+     "j_trio"
+    ],
+    5325
+   ]
+  ],
+  "consumable_uses": [
+   [
+    3,
+    "c_temperance",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_temperance",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_mercury",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_empress",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_mercury",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_lovers",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_onyx_agate",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_temperance",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_onyx_agate",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_baseball",
+     "j_fibonacci",
+     "j_mystic_summit",
+     "j_onyx_agate",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_even_steven",
+     "j_fibonacci",
+     "j_hanging_chad",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 186,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

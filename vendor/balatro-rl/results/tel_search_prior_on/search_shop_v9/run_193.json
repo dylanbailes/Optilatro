@@ -1,0 +1,130 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 48,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_clever",
+  "j_hanging_chad",
+  "j_selzer",
+  "j_photograph",
+  "j_odd_todd"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_clever",
+   "j_selzer",
+   "j_photograph",
+   "j_odd_todd"
+  ],
+  "money_spent": 41,
+  "best_score": 2521,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_hanging_chad"
+    ],
+    272
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_clever",
+     "j_hanging_chad"
+    ],
+    296
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_selzer"
+    ],
+    640
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_selzer"
+    ],
+    2521
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_selzer"
+    ],
+    2112
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_photograph",
+     "j_selzer"
+    ],
+    259
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_clever",
+     "j_hanging_chad",
+     "j_odd_todd",
+     "j_photograph",
+     "j_selzer"
+    ],
+    50
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 193,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,216 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 61,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_abstract",
+  "j_misprint",
+  "j_swashbuckler",
+  "j_madness",
+  "j_sly"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_misprint",
+   "j_ride_the_bus",
+   "j_swashbuckler",
+   "j_luchador",
+   "j_green_joker",
+   "j_banner",
+   "j_madness",
+   "j_sly"
+  ],
+  "money_spent": 54,
+  "best_score": 4527,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_luchador"
+   ],
+   [
+    3,
+    "j_ride_the_bus"
+   ],
+   [
+    3,
+    "j_green_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    108
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_abstract"
+    ],
+    240
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_abstract"
+    ],
+    190
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_abstract"
+    ],
+    110
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_misprint"
+    ],
+    315
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_abstract",
+     "j_misprint"
+    ],
+    352
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_misprint",
+     "j_ride_the_bus"
+    ],
+    390
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_misprint",
+     "j_ride_the_bus"
+    ],
+    396
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_misprint",
+     "j_ride_the_bus"
+    ],
+    168
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_misprint",
+     "j_ride_the_bus",
+     "j_swashbuckler"
+    ],
+    1350
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_misprint",
+     "j_ride_the_bus",
+     "j_swashbuckler"
+    ],
+    1840
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_misprint",
+     "j_ride_the_bus",
+     "j_swashbuckler"
+    ],
+    2100
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_madness",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    2772
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_madness",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    1755
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_madness",
+     "j_misprint",
+     "j_sly",
+     "j_swashbuckler"
+    ],
+    3192
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 194,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

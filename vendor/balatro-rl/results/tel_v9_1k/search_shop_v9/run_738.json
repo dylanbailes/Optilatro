@@ -1,0 +1,660 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 205,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_misprint",
+  "j_stuntman",
+  "j_gros_michel",
+  "j_raised_fist",
+  "j_abstract"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon",
+   "c_hierophant"
+  ],
+  "planets": [
+   "pl_pluto",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_abstract",
+   "j_wily",
+   "j_faceless",
+   "j_raised_fist",
+   "j_blue_joker",
+   "j_arrowhead",
+   "j_even_steven",
+   "j_jolly",
+   "j_bull",
+   "j_gros_michel",
+   "j_misprint"
+  ],
+  "money_spent": 164,
+  "best_score": 83540,
+  "rerolls": 5,
+  "packs_bought": 19,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_wily"
+   ],
+   [
+    4,
+    "j_faceless"
+   ],
+   [
+    5,
+    "j_blue_joker"
+   ],
+   [
+    6,
+    "j_even_steven"
+   ],
+   [
+    6,
+    "j_jolly"
+   ],
+   [
+    6,
+    "j_bull"
+   ],
+   [
+    7,
+    "j_arrowhead"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_abstract",
+     "j_stuntman"
+    ],
+    1820
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_abstract",
+     "j_stuntman",
+     "j_wily"
+    ],
+    2937
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_stuntman",
+     "j_wily"
+    ],
+    3738
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_wily"
+    ],
+    5628
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_wily"
+    ],
+    7888
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_wily"
+    ],
+    5607
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_faceless",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    7581
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_faceless",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    10556
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_faceless",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    9300
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    9150
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    11129
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    13090
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    16642
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    34648
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    15950
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    6160
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_jolly",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    24440
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_jolly",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    6138
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_bull",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    12540
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_bull",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    12408
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_bull",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    12556
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_bull",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    7202
+   ],
+   [
+    7,
+    "Full House",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    23684
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_gros_michel",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    11726
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    23240
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    17080
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    12555
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    20720
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    20128
+   ],
+   [
+    7,
+    "Full House",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    24750
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    12972
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    21390
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    22496
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    11480
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    17980
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    16884
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    19404
+   ],
+   [
+    8,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    24010
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    17696
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    21904
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    22800
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    21140
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_stuntman",
+     "j_wily"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_arrowhead",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_moon",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_misprint",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 738
+}

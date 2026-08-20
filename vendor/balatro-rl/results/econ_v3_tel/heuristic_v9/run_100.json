@@ -1,0 +1,224 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 52,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_vagabond",
+  "j_flash"
+ ],
+ "stats": {
+  "tarots": [
+   "c_devil",
+   "c_death",
+   "c_death",
+   "c_hermit"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_vagabond",
+   "j_flash"
+  ],
+  "money_spent": 36,
+  "best_score": 904,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    16
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_vagabond"
+    ],
+    340
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_vagabond"
+    ],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_vagabond"
+    ],
+    312
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_vagabond"
+    ],
+    288
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    368
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    336
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    200
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    312
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    60
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    16
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_flash",
+     "j_vagabond"
+    ],
+    52
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_devil",
+    [
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_vagabond"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "Gold",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hermit",
+    [
+     "j_vagabond"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 100,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

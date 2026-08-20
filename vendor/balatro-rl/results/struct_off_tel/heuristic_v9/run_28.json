@@ -1,0 +1,156 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 28,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_blue_joker",
+  "j_selzer",
+  "j_runner"
+ ],
+ "stats": {
+  "tarots": [
+   "c_fool"
+  ],
+  "planets": [
+   "pl_earth",
+   "pl_earth"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_blue_joker",
+   "j_runner"
+  ],
+  "money_spent": 23,
+  "best_score": 792,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    308
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_selzer"
+    ],
+    344
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_selzer"
+    ],
+    228
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_runner",
+     "j_selzer"
+    ],
+    792
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_runner",
+     "j_selzer"
+    ],
+    368
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_runner",
+     "j_selzer"
+    ],
+    107
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_runner",
+     "j_selzer"
+    ],
+    103
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_runner",
+     "j_selzer"
+    ],
+    101
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_earth",
+    [
+     "j_blue_joker",
+     "j_runner",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_runner",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_earth",
+    [
+     "j_blue_joker",
+     "j_runner",
+     "j_selzer"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 28,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

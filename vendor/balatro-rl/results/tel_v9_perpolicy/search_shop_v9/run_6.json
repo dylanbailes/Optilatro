@@ -1,0 +1,145 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 54,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_egg"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_selzer",
+   "j_egg"
+  ],
+  "money_spent": 29,
+  "best_score": 1277,
+  "rerolls": 1,
+  "packs_bought": 3,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    88
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_selzer"
+    ],
+    484
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_selzer"
+    ],
+    528
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_selzer"
+    ],
+    108
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_selzer"
+    ],
+    320
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_selzer"
+    ],
+    200
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_selzer"
+    ],
+    192
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_selzer"
+    ],
+    100
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_selzer"
+    ],
+    472
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_selzer"
+    ],
+    528
+   ],
+   [
+    2,
+    "Two Pair",
+    [],
+    160
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [],
+    117
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg"
+    ],
+    324
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 6,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_search_shop_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,296 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 101,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_troubadour",
+  "j_throwback",
+  "j_gluttenous_joker",
+  "j_devious",
+  "j_misprint"
+ ],
+ "stats": {
+  "tarots": [
+   "c_emperor"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ticket",
+   "j_business",
+   "j_turtle_bean",
+   "j_throwback",
+   "j_gluttenous_joker",
+   "j_hanging_chad",
+   "j_devious",
+   "j_misprint"
+  ],
+  "money_spent": 87,
+  "best_score": 7783,
+  "rerolls": 1,
+  "packs_bought": 7,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_business"
+   ],
+   [
+    4,
+    "j_hanging_chad"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_ticket",
+     "j_troubadour"
+    ],
+    507
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_ticket",
+     "j_troubadour"
+    ],
+    650
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_business",
+     "j_ticket",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    840
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_business",
+     "j_throwback",
+     "j_ticket",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    1260
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_throwback",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    1680
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_throwback",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    720
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_throwback",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    2117
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_gluttenous_joker",
+     "j_hanging_chad",
+     "j_throwback",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    1904
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_hanging_chad",
+     "j_throwback",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    1190
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_hanging_chad",
+     "j_throwback",
+     "j_troubadour"
+    ],
+    960
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_gluttenous_joker",
+     "j_hanging_chad",
+     "j_throwback",
+     "j_troubadour"
+    ],
+    2059
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_gluttenous_joker",
+     "j_hanging_chad",
+     "j_throwback",
+     "j_troubadour"
+    ],
+    1134
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_devious",
+     "j_gluttenous_joker",
+     "j_hanging_chad",
+     "j_throwback",
+     "j_troubadour"
+    ],
+    2444
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_devious",
+     "j_gluttenous_joker",
+     "j_hanging_chad",
+     "j_throwback",
+     "j_troubadour"
+    ],
+    3009
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_devious",
+     "j_gluttenous_joker",
+     "j_misprint",
+     "j_throwback",
+     "j_troubadour"
+    ],
+    7783
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_devious",
+     "j_gluttenous_joker",
+     "j_misprint",
+     "j_throwback",
+     "j_troubadour"
+    ],
+    3439
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_devious",
+     "j_gluttenous_joker",
+     "j_misprint",
+     "j_throwback",
+     "j_troubadour"
+    ],
+    2184
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_devious",
+     "j_gluttenous_joker",
+     "j_misprint",
+     "j_throwback",
+     "j_troubadour"
+    ],
+    2016
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_emperor",
+    [
+     "j_business",
+     "j_ticket",
+     "j_troubadour",
+     "j_turtle_bean"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 162,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

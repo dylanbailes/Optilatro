@@ -1,0 +1,584 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 151,
+ "truncated": false,
+ "dollars": 24,
+ "jokers": [
+  "j_joker",
+  "j_splash",
+  "j_popcorn",
+  "j_even_steven",
+  "j_swashbuckler"
+ ],
+ "stats": {
+  "tarots": [
+   "c_fool",
+   "c_chariot",
+   "c_fool",
+   "c_temperance",
+   "c_chariot",
+   "c_lovers"
+  ],
+  "planets": [
+   "pl_jupiter",
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_delayed_grat",
+   "j_half",
+   "j_red_card",
+   "j_crafty",
+   "j_joker",
+   "j_ticket",
+   "j_golden",
+   "j_splash",
+   "j_popcorn",
+   "j_even_steven"
+  ],
+  "money_spent": 99,
+  "best_score": 10274,
+  "rerolls": 1,
+  "packs_bought": 9,
+  "packs_opened": 7,
+  "jokers_sold": [
+   [
+    2,
+    "j_delayed_grat"
+   ],
+   [
+    2,
+    "j_rough_gem"
+   ],
+   [
+    2,
+    "j_half"
+   ],
+   [
+    3,
+    "j_red_card"
+   ],
+   [
+    3,
+    "j_crafty"
+   ],
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_golden"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    64
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_rough_gem"
+    ],
+    300
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_rough_gem"
+    ],
+    304
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_half",
+     "j_red_card",
+     "j_rough_gem"
+    ],
+    897
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_half",
+     "j_red_card",
+     "j_rough_gem"
+    ],
+    660
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_half",
+     "j_red_card",
+     "j_rough_gem"
+    ],
+    966
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crafty",
+     "j_delayed_grat",
+     "j_half",
+     "j_red_card",
+     "j_rough_gem"
+    ],
+    984
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_crafty",
+     "j_delayed_grat",
+     "j_half",
+     "j_red_card",
+     "j_rough_gem"
+    ],
+    660
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_crafty",
+     "j_half",
+     "j_joker",
+     "j_red_card",
+     "j_ticket"
+    ],
+    1701
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_crafty",
+     "j_golden",
+     "j_joker",
+     "j_red_card",
+     "j_ticket"
+    ],
+    2244
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_crafty",
+     "j_golden",
+     "j_joker",
+     "j_splash",
+     "j_ticket"
+    ],
+    2208
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_golden",
+     "j_joker",
+     "j_splash",
+     "j_ticket"
+    ],
+    348
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_golden",
+     "j_joker",
+     "j_splash",
+     "j_ticket"
+    ],
+    300
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_crafty",
+     "j_golden",
+     "j_joker",
+     "j_splash",
+     "j_ticket"
+    ],
+    180
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_popcorn",
+     "j_splash",
+     "j_ticket"
+    ],
+    1196
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_popcorn",
+     "j_splash",
+     "j_ticket"
+    ],
+    1456
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_popcorn",
+     "j_splash",
+     "j_ticket"
+    ],
+    1040
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_popcorn",
+     "j_splash",
+     "j_ticket"
+    ],
+    780
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    2242
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    1971
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    528
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    660
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    2640
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    3392
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    3672
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    4800
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    2546
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    1728
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    1200
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    3591
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    2448
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    1794
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    693
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_jupiter",
+    [
+     "j_delayed_grat",
+     "j_half",
+     "j_red_card",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_crafty",
+     "j_half",
+     "j_joker",
+     "j_red_card",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_jupiter",
+    [
+     "j_crafty",
+     "j_half",
+     "j_joker",
+     "j_red_card",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_temperance",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_lovers",
+    [
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 116,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

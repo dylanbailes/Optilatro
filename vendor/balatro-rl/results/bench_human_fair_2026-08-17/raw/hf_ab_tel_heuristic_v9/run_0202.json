@@ -1,0 +1,94 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 30,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_photograph",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 14,
+  "best_score": 608,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_photograph"
+    ],
+    608
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    176
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    316
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    52
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    32
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 202,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

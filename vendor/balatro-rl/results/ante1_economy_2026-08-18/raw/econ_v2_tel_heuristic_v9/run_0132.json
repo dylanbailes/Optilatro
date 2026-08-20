@@ -1,0 +1,198 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 56,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_ticket",
+  "j_photograph",
+  "j_todo_list"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ticket",
+   "j_photograph",
+   "j_todo_list"
+  ],
+  "money_spent": 32,
+  "best_score": 1284,
+  "rerolls": 2,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    348
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ticket"
+    ],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_ticket"
+    ],
+    96
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_ticket"
+    ],
+    15
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_ticket"
+    ],
+    15
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_ticket"
+    ],
+    300
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ticket"
+    ],
+    172
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_ticket"
+    ],
+    88
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ticket"
+    ],
+    48
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_photograph",
+     "j_ticket"
+    ],
+    312
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_photograph",
+     "j_ticket"
+    ],
+    584
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_photograph",
+     "j_ticket"
+    ],
+    600
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_photograph",
+     "j_ticket"
+    ],
+    364
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_photograph",
+     "j_ticket"
+    ],
+    320
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_photograph",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    248
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_photograph",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    28
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_photograph",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    116
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_photograph",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    32
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 132,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

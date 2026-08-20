@@ -1,0 +1,104 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 25,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_crazy",
+  "j_ticket",
+  "j_runner"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_crazy",
+   "j_ticket",
+   "j_runner"
+  ],
+  "money_spent": 14,
+  "best_score": 1040,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_crazy",
+     "j_ticket"
+    ],
+    1040
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_runner",
+     "j_ticket"
+    ],
+    104
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_crazy",
+     "j_runner",
+     "j_ticket"
+    ],
+    16
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_crazy",
+     "j_runner",
+     "j_ticket"
+    ],
+    15
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy",
+     "j_runner",
+     "j_ticket"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 291,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

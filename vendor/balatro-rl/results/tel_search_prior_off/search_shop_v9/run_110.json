@@ -1,0 +1,931 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 232,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_stuntman",
+  "j_half",
+  "j_misprint",
+  "j_ticket",
+  "j_jolly"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon",
+   "c_hanged_man",
+   "c_devil",
+   "c_hanged_man",
+   "c_fool",
+   "c_devil",
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_pluto",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_pluto",
+   "pl_pluto"
+  ],
+  "spectrals": [
+   "s_deja_vu",
+   "s_talisman",
+   "s_immolate"
+  ],
+  "jokers_bought": [
+   "j_walkie_talkie",
+   "j_popcorn",
+   "j_stuntman",
+   "j_gift",
+   "j_half",
+   "j_runner",
+   "j_misprint",
+   "j_gluttenous_joker",
+   "j_golden",
+   "j_business",
+   "j_ticket",
+   "j_banner",
+   "j_jolly"
+  ],
+  "money_spent": 229,
+  "best_score": 75662,
+  "rerolls": 2,
+  "packs_bought": 26,
+  "packs_opened": 12,
+  "jokers_sold": [
+   [
+    3,
+    "j_walkie_talkie"
+   ],
+   [
+    3,
+    "j_delayed_grat"
+   ],
+   [
+    4,
+    "j_todo_list"
+   ],
+   [
+    4,
+    "j_gift"
+   ],
+   [
+    5,
+    "j_gluttenous_joker"
+   ],
+   [
+    5,
+    "j_golden"
+   ],
+   [
+    5,
+    "j_business"
+   ],
+   [
+    6,
+    "j_runner"
+   ],
+   [
+    8,
+    "j_banner"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    84
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_walkie_talkie"
+    ],
+    536
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_popcorn",
+     "j_walkie_talkie"
+    ],
+    792
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_popcorn",
+     "j_walkie_talkie"
+    ],
+    1300
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_popcorn",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    3419
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_delayed_grat",
+     "j_popcorn",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    2385
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_popcorn",
+     "j_stuntman",
+     "j_todo_list",
+     "j_walkie_talkie"
+    ],
+    2688
+   ],
+   [
+    3,
+    "Four of a Kind",
+    [
+     "j_delayed_grat",
+     "j_gift",
+     "j_stuntman",
+     "j_todo_list",
+     "j_walkie_talkie"
+    ],
+    2422
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_gift",
+     "j_stuntman",
+     "j_todo_list",
+     "j_walkie_talkie"
+    ],
+    584
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_delayed_grat",
+     "j_gift",
+     "j_half",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    5439
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_gift",
+     "j_half",
+     "j_runner",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    6468
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_gift",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    7368
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_gift",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    7392
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    10527
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    9720
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    9222
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_golden",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    10075
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_golden",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    9827
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    14040
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_business",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    10725
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    10880
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    15582
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    13035
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    16813
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    14042
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    21070
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    19646
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    20540
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    18576
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    14220
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    18032
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    19750
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    13545
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    21369
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    15050
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    16720
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    20790
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    22360
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    17724
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    19208
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    32238
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    15656
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    13104
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    14664
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_half",
+     "j_jolly",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    18666
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_half",
+     "j_jolly",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    19530
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_half",
+     "j_jolly",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    11210
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_half",
+     "j_jolly",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    16192
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_moon",
+    [
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_popcorn",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_pluto",
+    [
+     "j_gift",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    4,
+    "s_deja_vu",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "s_talisman",
+    [
+     "j_gluttenous_joker",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Red"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_devil",
+    [
+     "j_business",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hanged_man",
+    [
+     "j_business",
+     "j_half",
+     "j_misprint",
+     "j_runner",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_fool",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_devil",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Gold"
+     }
+    ]
+   ],
+   [
+    8,
+    "c_hermit",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    8,
+    "s_immolate",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    8,
+    "pl_pluto",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    8,
+    "pl_pluto",
+    [
+     "j_banner",
+     "j_half",
+     "j_misprint",
+     "j_stuntman",
+     "j_ticket"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 110,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

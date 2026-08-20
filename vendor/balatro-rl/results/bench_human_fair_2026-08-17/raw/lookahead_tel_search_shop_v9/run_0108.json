@@ -1,0 +1,210 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 65,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_photograph",
+  "j_business",
+  "j_gluttenous_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_high_priestess"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_photograph",
+   "j_business",
+   "j_gluttenous_joker"
+  ],
+  "money_spent": 29,
+  "best_score": 1256,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    124
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    117
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_photograph"
+    ],
+    240
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_photograph"
+    ],
+    260
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_photograph"
+    ],
+    640
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_photograph"
+    ],
+    632
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_photograph"
+    ],
+    48
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_photograph"
+    ],
+    60
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_photograph"
+    ],
+    60
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_photograph"
+    ],
+    648
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_business",
+     "j_photograph"
+    ],
+    288
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_business",
+     "j_photograph"
+    ],
+    260
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_photograph"
+    ],
+    60
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_photograph"
+    ],
+    432
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_photograph"
+    ],
+    120
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_photograph"
+    ],
+    432
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_gluttenous_joker",
+     "j_photograph"
+    ],
+    88
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_high_priestess",
+    [
+     "j_photograph"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 108,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

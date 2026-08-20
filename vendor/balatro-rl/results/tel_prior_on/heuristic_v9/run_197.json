@@ -1,0 +1,278 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 80,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_ramen",
+  "j_green_joker",
+  "j_rocket",
+  "j_blue_joker",
+  "j_seeing_double"
+ ],
+ "stats": {
+  "tarots": [
+   "c_devil",
+   "c_death"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_popcorn",
+   "j_green_joker",
+   "j_golden",
+   "j_red_card",
+   "j_gluttenous_joker",
+   "j_rocket",
+   "j_blue_joker",
+   "j_seeing_double"
+  ],
+  "money_spent": 75,
+  "best_score": 3478,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_golden"
+   ],
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    2,
+    "j_gluttenous_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_popcorn",
+     "j_ramen"
+    ],
+    1056
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen"
+    ],
+    1140
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_golden",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_red_card"
+    ],
+    1980
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_gluttenous_joker",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_red_card"
+    ],
+    2245
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_rocket"
+    ],
+    705
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_rocket"
+    ],
+    980
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_green_joker",
+     "j_ramen",
+     "j_rocket"
+    ],
+    526
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_ramen",
+     "j_rocket"
+    ],
+    407
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_green_joker",
+     "j_ramen",
+     "j_rocket"
+    ],
+    1040
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_ramen",
+     "j_rocket"
+    ],
+    634
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_green_joker",
+     "j_ramen",
+     "j_rocket"
+    ],
+    1984
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_green_joker",
+     "j_ramen",
+     "j_rocket"
+    ],
+    1494
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_green_joker",
+     "j_ramen",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    3115
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_gluttenous_joker",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_red_card"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_devil",
+    [
+     "j_gluttenous_joker",
+     "j_green_joker",
+     "j_popcorn",
+     "j_ramen",
+     "j_red_card"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_green_joker",
+     "j_ramen",
+     "j_rocket",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 197,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

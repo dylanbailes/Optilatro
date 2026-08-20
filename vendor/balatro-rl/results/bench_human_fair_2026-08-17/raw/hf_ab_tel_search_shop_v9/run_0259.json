@@ -1,0 +1,822 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 218,
+ "truncated": false,
+ "dollars": 21,
+ "jokers": [
+  "j_trio",
+  "j_baseball",
+  "j_seeing_double",
+  "j_abstract",
+  "j_smeared"
+ ],
+ "stats": {
+  "tarots": [
+   "c_star",
+   "c_magician",
+   "c_devil",
+   "c_world",
+   "c_hermit",
+   "c_hermit",
+   "c_fool",
+   "c_hermit",
+   "c_temperance",
+   "c_wheel_of_fortune",
+   "c_sun"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hallucination",
+   "j_lusty_joker",
+   "j_gros_michel",
+   "j_red_card",
+   "j_misprint",
+   "j_trio",
+   "j_castle",
+   "j_baseball",
+   "j_seeing_double",
+   "j_photograph",
+   "j_smiley",
+   "j_abstract",
+   "j_dusk",
+   "j_burglar",
+   "j_smeared"
+  ],
+  "money_spent": 209,
+  "best_score": 45848,
+  "rerolls": 4,
+  "packs_bought": 19,
+  "packs_opened": 12,
+  "jokers_sold": [
+   [
+    3,
+    "j_hallucination"
+   ],
+   [
+    4,
+    "j_stencil"
+   ],
+   [
+    4,
+    "j_red_card"
+   ],
+   [
+    5,
+    "j_lusty_joker"
+   ],
+   [
+    5,
+    "j_castle"
+   ],
+   [
+    5,
+    "j_photograph"
+   ],
+   [
+    5,
+    "j_smiley"
+   ],
+   [
+    5,
+    "j_misprint"
+   ],
+   [
+    5,
+    "j_dusk"
+   ],
+   [
+    6,
+    "j_burglar"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    240
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hallucination",
+     "j_stencil"
+    ],
+    732
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_stencil"
+    ],
+    240
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_hallucination",
+     "j_stencil"
+    ],
+    306
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_stencil"
+    ],
+    120
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    640
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    300
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    560
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    1188
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    688
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    68
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    180
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    1950
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gros_michel",
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    1200
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gros_michel",
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    952
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    510
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_gros_michel",
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    1914
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    476
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_gros_michel",
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    128
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gros_michel",
+     "j_lusty_joker",
+     "j_red_card",
+     "j_stencil"
+    ],
+    920
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_gros_michel",
+     "j_lusty_joker",
+     "j_red_card",
+     "j_stencil"
+    ],
+    2887
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_lusty_joker",
+     "j_red_card",
+     "j_stencil"
+    ],
+    306
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_gros_michel",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_red_card",
+     "j_stencil"
+    ],
+    5928
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_lusty_joker",
+     "j_misprint",
+     "j_red_card",
+     "j_trio"
+    ],
+    6966
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_lusty_joker",
+     "j_misprint",
+     "j_red_card",
+     "j_trio"
+    ],
+    1404
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_baseball",
+     "j_castle",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_trio"
+    ],
+    6331
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_baseball",
+     "j_castle",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_trio"
+    ],
+    5643
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_baseball",
+     "j_castle",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_trio"
+    ],
+    10692
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_baseball",
+     "j_castle",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_trio"
+    ],
+    270
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_baseball",
+     "j_castle",
+     "j_lusty_joker",
+     "j_misprint",
+     "j_trio"
+    ],
+    838
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_baseball",
+     "j_misprint",
+     "j_seeing_double",
+     "j_smiley",
+     "j_trio"
+    ],
+    27126
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    4617
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    5600
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    9832
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    7759
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    4275
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    9405
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    4360
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    27459
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_seeing_double",
+     "j_smeared",
+     "j_trio"
+    ],
+    8550
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_seeing_double",
+     "j_smeared",
+     "j_trio"
+    ],
+    5557
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_seeing_double",
+     "j_smeared",
+     "j_trio"
+    ],
+    4531
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_seeing_double",
+     "j_smeared",
+     "j_trio"
+    ],
+    9405
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_star",
+    [
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_hallucination",
+     "j_lusty_joker",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_devil",
+    [
+     "j_gros_michel",
+     "j_lusty_joker",
+     "j_red_card",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Red"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_world",
+    [
+     "j_lusty_joker",
+     "j_misprint",
+     "j_red_card",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "Gold",
+      "edition": "None",
+      "seal": "Blue"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_baseball",
+     "j_castle",
+     "j_misprint",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_baseball",
+     "j_castle",
+     "j_misprint",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_baseball",
+     "j_misprint",
+     "j_seeing_double",
+     "j_smiley",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_baseball",
+     "j_misprint",
+     "j_seeing_double",
+     "j_smiley",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_baseball",
+     "j_misprint",
+     "j_seeing_double",
+     "j_smiley",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_temperance",
+    [
+     "j_baseball",
+     "j_misprint",
+     "j_seeing_double",
+     "j_smiley",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_baseball",
+     "j_misprint",
+     "j_seeing_double",
+     "j_smiley",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_wheel_of_fortune",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_misprint",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_sun",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_seeing_double",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 259,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

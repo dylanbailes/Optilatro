@@ -1,0 +1,289 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 90,
+ "truncated": false,
+ "dollars": 8,
+ "jokers": [
+  "j_fibonacci",
+  "j_shoot_the_moon",
+  "j_bloodstone",
+  "j_duo",
+  "j_abstract"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_devil"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_fibonacci",
+   "j_ticket",
+   "j_shoot_the_moon",
+   "j_popcorn",
+   "j_bloodstone",
+   "j_duo",
+   "j_abstract"
+  ],
+  "money_spent": 77,
+  "best_score": 7780,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    3,
+    "j_ticket"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_fibonacci"
+    ],
+    756
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_fibonacci",
+     "j_ticket"
+    ],
+    924
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_fibonacci",
+     "j_shoot_the_moon",
+     "j_ticket"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_popcorn",
+     "j_shoot_the_moon",
+     "j_ticket"
+    ],
+    1536
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bloodstone",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_shoot_the_moon",
+     "j_ticket"
+    ],
+    3078
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_bloodstone",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_shoot_the_moon",
+     "j_ticket"
+    ],
+    3465
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_bloodstone",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_shoot_the_moon",
+     "j_ticket"
+    ],
+    3060
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_bloodstone",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_shoot_the_moon"
+    ],
+    3066
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bloodstone",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_shoot_the_moon"
+    ],
+    1450
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_bloodstone",
+     "j_duo",
+     "j_fibonacci",
+     "j_shoot_the_moon"
+    ],
+    6240
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_duo",
+     "j_fibonacci",
+     "j_shoot_the_moon"
+    ],
+    6160
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_duo",
+     "j_fibonacci",
+     "j_shoot_the_moon"
+    ],
+    1620
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_duo",
+     "j_fibonacci",
+     "j_shoot_the_moon"
+    ],
+    1920
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_duo",
+     "j_fibonacci",
+     "j_shoot_the_moon"
+    ],
+    2400
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_duo",
+     "j_fibonacci",
+     "j_shoot_the_moon"
+    ],
+    2240
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_bloodstone",
+     "j_duo",
+     "j_fibonacci",
+     "j_shoot_the_moon"
+    ],
+    752
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_fibonacci",
+     "j_shoot_the_moon",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_devil",
+    [
+     "j_bloodstone",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_shoot_the_moon",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_bloodstone",
+     "j_fibonacci",
+     "j_popcorn",
+     "j_shoot_the_moon"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 182,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

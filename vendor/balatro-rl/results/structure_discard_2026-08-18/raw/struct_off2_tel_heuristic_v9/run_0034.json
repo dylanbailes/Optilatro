@@ -1,0 +1,269 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 91,
+ "truncated": false,
+ "dollars": 23,
+ "jokers": [
+  "j_blue_joker",
+  "j_onyx_agate",
+  "j_mad",
+  "j_scholar",
+  "j_todo_list"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ice_cream",
+   "j_blue_joker",
+   "j_onyx_agate",
+   "j_8_ball",
+   "j_egg",
+   "j_mad",
+   "j_scholar",
+   "j_todo_list"
+  ],
+  "money_spent": 77,
+  "best_score": 9243,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_8_ball"
+   ],
+   [
+    2,
+    "j_egg"
+   ],
+   [
+    3,
+    "j_joker"
+   ],
+   [
+    4,
+    "j_ice_cream"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    336
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_joker"
+    ],
+    780
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_joker"
+    ],
+    1278
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_joker",
+     "j_onyx_agate"
+    ],
+    950
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_joker",
+     "j_onyx_agate"
+    ],
+    1218
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_egg",
+     "j_ice_cream",
+     "j_joker",
+     "j_onyx_agate"
+    ],
+    2244
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_joker",
+     "j_mad",
+     "j_onyx_agate"
+    ],
+    2405
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_mad",
+     "j_onyx_agate"
+    ],
+    5974
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_mad",
+     "j_onyx_agate"
+    ],
+    9243
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_mad",
+     "j_onyx_agate",
+     "j_scholar"
+    ],
+    3724
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_mad",
+     "j_onyx_agate",
+     "j_scholar"
+    ],
+    286
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_mad",
+     "j_onyx_agate",
+     "j_scholar"
+    ],
+    992
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_mad",
+     "j_onyx_agate",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    8680
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_mad",
+     "j_onyx_agate",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    728
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_ice_cream",
+     "j_joker",
+     "j_mad",
+     "j_onyx_agate"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_mad",
+     "j_onyx_agate",
+     "j_scholar",
+     "j_todo_list"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 34,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

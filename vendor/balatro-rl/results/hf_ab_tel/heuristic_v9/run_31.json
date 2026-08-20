@@ -1,0 +1,300 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 78,
+ "truncated": false,
+ "dollars": 7,
+ "jokers": [
+  "j_red_card",
+  "j_mystic_summit",
+  "j_ticket",
+  "j_seeing_double",
+  "j_wily"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_magician"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_banner",
+   "j_8_ball",
+   "j_mystic_summit",
+   "j_ticket",
+   "j_seeing_double",
+   "j_wily"
+  ],
+  "money_spent": 42,
+  "best_score": 2905,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_8_ball"
+   ],
+   [
+    3,
+    "j_banner"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    348
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_banner"
+    ],
+    104
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_8_ball",
+     "j_banner"
+    ],
+    288
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_banner"
+    ],
+    56
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_banner"
+    ],
+    32
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_banner",
+     "j_red_card"
+    ],
+    72
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_banner",
+     "j_red_card"
+    ],
+    64
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_banner",
+     "j_red_card"
+    ],
+    592
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_banner",
+     "j_mystic_summit",
+     "j_red_card"
+    ],
+    1608
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_banner",
+     "j_mystic_summit",
+     "j_red_card"
+    ],
+    1054
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_banner",
+     "j_mystic_summit",
+     "j_red_card"
+    ],
+    408
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_banner",
+     "j_mystic_summit",
+     "j_red_card",
+     "j_ticket"
+    ],
+    1050
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_banner",
+     "j_mystic_summit",
+     "j_red_card",
+     "j_ticket"
+    ],
+    560
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_mystic_summit",
+     "j_red_card",
+     "j_seeing_double",
+     "j_ticket"
+    ],
+    2240
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_mystic_summit",
+     "j_red_card",
+     "j_seeing_double",
+     "j_ticket",
+     "j_wily"
+    ],
+    700
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_mystic_summit",
+     "j_red_card",
+     "j_seeing_double",
+     "j_ticket",
+     "j_wily"
+    ],
+    1440
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_mystic_summit",
+     "j_red_card",
+     "j_seeing_double",
+     "j_ticket",
+     "j_wily"
+    ],
+    480
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_mystic_summit",
+     "j_red_card",
+     "j_seeing_double",
+     "j_ticket",
+     "j_wily"
+    ],
+    285
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_empress",
+    [
+     "j_8_ball",
+     "j_banner"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_8_ball",
+     "j_banner",
+     "j_mystic_summit",
+     "j_red_card"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 31,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,206 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 75,
+ "truncated": false,
+ "dollars": 6,
+ "jokers": [
+  "j_scary_face",
+  "j_8_ball",
+  "j_selzer",
+  "j_stuntman",
+  "j_photograph"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_marble",
+   "j_wrathful_joker",
+   "j_8_ball",
+   "j_selzer",
+   "j_stuntman",
+   "j_photograph"
+  ],
+  "money_spent": 56,
+  "best_score": 3760,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_crazy"
+   ],
+   [
+    3,
+    "j_marble"
+   ],
+   [
+    3,
+    "j_wrathful_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crazy",
+     "j_scary_face"
+    ],
+    612
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_marble",
+     "j_scary_face"
+    ],
+    180
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_marble",
+     "j_scary_face"
+    ],
+    380
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crazy",
+     "j_marble",
+     "j_scary_face"
+    ],
+    200
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_crazy",
+     "j_marble",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    2640
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_crazy",
+     "j_marble",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    768
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_crazy",
+     "j_marble",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    220
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_crazy",
+     "j_marble",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    280
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_marble",
+     "j_scary_face",
+     "j_selzer",
+     "j_wrathful_joker"
+    ],
+    2080
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_8_ball",
+     "j_marble",
+     "j_scary_face",
+     "j_selzer",
+     "j_wrathful_joker"
+    ],
+    2880
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_scary_face",
+     "j_selzer",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    3760
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_photograph",
+     "j_scary_face",
+     "j_selzer",
+     "j_stuntman"
+    ],
+    1880
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 131,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_target_aware": false,
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

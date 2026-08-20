@@ -1,0 +1,135 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 33,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_golden",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant",
+   "c_empress"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_credit_card"
+  ],
+  "money_spent": 20,
+  "best_score": 576,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    264
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    312
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    12
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    12
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_empress",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 118,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 35,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_hologram",
+  "j_selzer",
+  "j_photograph",
+  "j_fortune_teller"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hologram",
+   "j_selzer",
+   "j_photograph",
+   "j_fortune_teller"
+  ],
+  "money_spent": 28,
+  "best_score": 1050,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    332
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hologram"
+    ],
+    220
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_hologram"
+    ],
+    180
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hologram"
+    ],
+    56
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hologram",
+     "j_selzer"
+    ],
+    280
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hologram",
+     "j_selzer"
+    ],
+    512
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_hologram",
+     "j_photograph",
+     "j_selzer"
+    ],
+    896
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_hologram",
+     "j_photograph",
+     "j_selzer"
+    ],
+    68
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_fortune_teller",
+     "j_hologram",
+     "j_photograph",
+     "j_selzer"
+    ],
+    50
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_fortune_teller",
+     "j_hologram",
+     "j_photograph",
+     "j_selzer"
+    ],
+    496
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_fortune_teller",
+     "j_hologram",
+     "j_photograph",
+     "j_selzer"
+    ],
+    436
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 204,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

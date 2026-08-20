@@ -1,0 +1,242 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 71,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_gluttenous_joker",
+  "j_ride_the_bus",
+  "j_gros_michel",
+  "j_splash",
+  "j_walkie_talkie"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gluttenous_joker",
+   "j_ride_the_bus",
+   "j_gros_michel",
+   "j_splash",
+   "j_walkie_talkie"
+  ],
+  "money_spent": 57,
+  "best_score": 3956,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gluttenous_joker"
+    ],
+    600
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_gluttenous_joker"
+    ],
+    546
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gluttenous_joker"
+    ],
+    150
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_ride_the_bus"
+    ],
+    264
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_gluttenous_joker",
+     "j_ride_the_bus"
+    ],
+    630
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus"
+    ],
+    882
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus"
+    ],
+    380
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus"
+    ],
+    1944
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    2132
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    2675
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    736
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    2760
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    1196
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_temperance",
+    [
+     "j_gluttenous_joker",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_splash",
+     "j_walkie_talkie"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 120,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

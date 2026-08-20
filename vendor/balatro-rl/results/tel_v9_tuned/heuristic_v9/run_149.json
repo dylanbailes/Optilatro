@@ -1,0 +1,122 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 43,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_selzer",
+  "j_abstract",
+  "j_blue_joker",
+  "j_odd_todd",
+  "j_erosion"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hanging_chad",
+   "j_abstract",
+   "j_blue_joker",
+   "j_odd_todd",
+   "j_erosion"
+  ],
+  "money_spent": 38,
+  "best_score": 2380,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_hanging_chad"
+   ],
+   [
+    2,
+    "j_mad"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    112
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    276
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_mad"
+    ],
+    768
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_mad",
+     "j_selzer"
+    ],
+    936
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_hanging_chad",
+     "j_mad",
+     "j_selzer"
+    ],
+    2380
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_mad",
+     "j_odd_todd",
+     "j_selzer"
+    ],
+    2346
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_judgement",
+    [
+     "j_hanging_chad",
+     "j_mad"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 149,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

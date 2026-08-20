@@ -1,0 +1,702 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 200,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_abstract",
+  "j_smiley",
+  "j_blue_joker",
+  "j_fortune_teller",
+  "j_campfire",
+  "j_mail"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance",
+   "c_fool",
+   "c_temperance",
+   "c_high_priestess",
+   "c_chariot",
+   "c_fool",
+   "c_chariot",
+   "c_death",
+   "c_lovers",
+   "c_hierophant"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_venus",
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_ectoplasm",
+   "s_deja_vu"
+  ],
+  "jokers_bought": [
+   "j_abstract",
+   "j_wily",
+   "j_smiley",
+   "j_blue_joker",
+   "j_golden",
+   "j_gift",
+   "j_rough_gem",
+   "j_sly",
+   "j_wily",
+   "j_loyalty_card",
+   "j_mail",
+   "j_shoot_the_moon",
+   "j_clever",
+   "j_fortune_teller",
+   "j_campfire",
+   "j_mail"
+  ],
+  "money_spent": 196,
+  "best_score": 24599,
+  "rerolls": 4,
+  "packs_bought": 19,
+  "packs_opened": 11,
+  "jokers_sold": [
+   [
+    2,
+    "j_wily"
+   ],
+   [
+    3,
+    "j_golden"
+   ],
+   [
+    3,
+    "j_gift"
+   ],
+   [
+    3,
+    "j_rough_gem"
+   ],
+   [
+    4,
+    "j_wily"
+   ],
+   [
+    4,
+    "j_sly"
+   ],
+   [
+    4,
+    "j_mail"
+   ],
+   [
+    5,
+    "j_shoot_the_moon"
+   ],
+   [
+    5,
+    "j_clever"
+   ],
+   [
+    5,
+    "j_loyalty_card"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    272
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    32
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_wily"
+    ],
+    1467
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_abstract",
+     "j_smiley",
+     "j_wily"
+    ],
+    630
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_smiley",
+     "j_wily"
+    ],
+    1624
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_golden",
+     "j_smiley",
+     "j_wily"
+    ],
+    3186
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_gift",
+     "j_golden",
+     "j_smiley"
+    ],
+    5814
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_gift",
+     "j_golden",
+     "j_smiley"
+    ],
+    2328
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_gift",
+     "j_rough_gem",
+     "j_smiley"
+    ],
+    3240
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_rough_gem",
+     "j_sly",
+     "j_smiley"
+    ],
+    4131
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_sly",
+     "j_smiley",
+     "j_wily"
+    ],
+    5270
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_sly",
+     "j_smiley",
+     "j_wily"
+    ],
+    9380
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_sly",
+     "j_smiley"
+    ],
+    4464
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_sly",
+     "j_smiley"
+    ],
+    4232
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_sly",
+     "j_smiley"
+    ],
+    2600
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    5460
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    2700
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    5440
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    6510
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    10800
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    14175
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    10424
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_campfire",
+     "j_fortune_teller",
+     "j_mail",
+     "j_smiley"
+    ],
+    4843
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_campfire",
+     "j_fortune_teller",
+     "j_mail",
+     "j_smiley"
+    ],
+    7342
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_campfire",
+     "j_fortune_teller",
+     "j_mail",
+     "j_smiley"
+    ],
+    9125
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_campfire",
+     "j_fortune_teller",
+     "j_mail",
+     "j_smiley"
+    ],
+    4921
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_campfire",
+     "j_fortune_teller",
+     "j_mail",
+     "j_smiley"
+    ],
+    4766
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_campfire",
+     "j_fortune_teller",
+     "j_mail",
+     "j_smiley"
+    ],
+    3570
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_campfire",
+     "j_fortune_teller",
+     "j_mail",
+     "j_smiley"
+    ],
+    2090
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_gift",
+     "j_golden",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_gift",
+     "j_golden",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_gift",
+     "j_golden",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_high_priestess",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_gift",
+     "j_golden",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_gift",
+     "j_rough_gem",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_venus",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_sly",
+     "j_smiley",
+     "j_wily"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_sly",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_sly",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_sly",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_lovers",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_loyalty_card",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "s_ectoplasm",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_loyalty_card",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    5,
+    "s_deja_vu",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_fortune_teller",
+     "j_loyalty_card",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "Steel",
+      "edition": "None",
+      "seal": "Red"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 140,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

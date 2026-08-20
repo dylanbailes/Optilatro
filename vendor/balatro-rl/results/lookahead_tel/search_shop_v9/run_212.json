@@ -1,0 +1,155 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 47,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_zany",
+  "j_sock_and_buskin",
+  "j_ramen"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_zany",
+   "j_ramen"
+  ],
+  "money_spent": 22,
+  "best_score": 628,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    404
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    128
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    36
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    60
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_ramen",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    192
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_ramen",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    48
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_ramen",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    48
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_ramen",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    48
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_ramen",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 212,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

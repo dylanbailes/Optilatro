@@ -1,0 +1,195 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 56,
+ "truncated": false,
+ "dollars": 12,
+ "jokers": [
+  "j_ticket",
+  "j_todo_list"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ticket",
+   "j_todo_list"
+  ],
+  "money_spent": 28,
+  "best_score": 1324,
+  "rerolls": 3,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    348
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ticket"
+    ],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_ticket"
+    ],
+    96
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_ticket"
+    ],
+    15
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_ticket"
+    ],
+    15
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_ticket"
+    ],
+    300
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ticket"
+    ],
+    172
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_ticket"
+    ],
+    88
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ticket"
+    ],
+    48
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_ticket"
+    ],
+    328
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_ticket"
+    ],
+    292
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_ticket"
+    ],
+    189
+   ],
+   [
+    2,
+    "Four of a Kind",
+    [
+     "j_ticket"
+    ],
+    700
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_ticket"
+    ],
+    308
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_ticket"
+    ],
+    316
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    284
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    220
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    60
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_ticket",
+     "j_todo_list"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 132,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

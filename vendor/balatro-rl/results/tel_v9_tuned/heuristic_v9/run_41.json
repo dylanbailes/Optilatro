@@ -1,0 +1,300 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 82,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_crafty",
+  "j_droll",
+  "j_misprint",
+  "j_green_joker",
+  "j_rocket"
+ ],
+ "stats": {
+  "tarots": [
+   "c_world"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_crafty",
+   "j_droll",
+   "j_misprint",
+   "j_green_joker",
+   "j_rocket"
+  ],
+  "money_spent": 51,
+  "best_score": 8190,
+  "rerolls": 2,
+  "packs_bought": 4,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    3,
+    "j_crafty"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    56
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_crafty",
+     "j_crafty"
+    ],
+    316
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crafty",
+     "j_crafty"
+    ],
+    948
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll"
+    ],
+    100
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll"
+    ],
+    2730
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll"
+    ],
+    3220
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll"
+    ],
+    3346
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll",
+     "j_misprint"
+    ],
+    1368
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll",
+     "j_misprint"
+    ],
+    192
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll",
+     "j_misprint"
+    ],
+    15
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll",
+     "j_misprint"
+    ],
+    25
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll",
+     "j_misprint"
+    ],
+    260
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll",
+     "j_misprint"
+    ],
+    550
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll",
+     "j_misprint"
+    ],
+    2184
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll",
+     "j_green_joker",
+     "j_misprint"
+    ],
+    8190
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_crafty",
+     "j_droll",
+     "j_green_joker",
+     "j_misprint",
+     "j_rocket"
+    ],
+    648
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_crafty",
+     "j_droll",
+     "j_green_joker",
+     "j_misprint",
+     "j_rocket"
+    ],
+    888
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_crafty",
+     "j_droll",
+     "j_green_joker",
+     "j_misprint",
+     "j_rocket"
+    ],
+    2349
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_crafty",
+     "j_droll",
+     "j_green_joker",
+     "j_misprint",
+     "j_rocket"
+    ],
+    98
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_world",
+    [
+     "j_crafty",
+     "j_crafty",
+     "j_droll"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_jupiter",
+    [
+     "j_crafty",
+     "j_droll",
+     "j_green_joker",
+     "j_misprint",
+     "j_rocket"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 41,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,252 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 80,
+ "truncated": false,
+ "dollars": 10,
+ "jokers": [
+  "j_wrathful_joker",
+  "j_egg",
+  "j_credit_card",
+  "j_even_steven",
+  "j_odd_todd"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_wrathful_joker",
+   "j_egg",
+   "j_credit_card",
+   "j_even_steven",
+   "j_odd_todd"
+  ],
+  "money_spent": 51,
+  "best_score": 4188,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_scary_face"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    900
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    848
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    1320
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    1200
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    1600
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    2370
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_odd_todd",
+     "j_wrathful_joker"
+    ],
+    2460
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_odd_todd",
+     "j_wrathful_joker"
+    ],
+    1728
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_odd_todd",
+     "j_wrathful_joker"
+    ],
+    2760
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_odd_todd",
+     "j_wrathful_joker"
+    ],
+    220
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_odd_todd",
+     "j_wrathful_joker"
+    ],
+    126
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_odd_todd",
+     "j_wrathful_joker"
+    ],
+    390
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_scary_face",
+     "j_wrathful_joker"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 152,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

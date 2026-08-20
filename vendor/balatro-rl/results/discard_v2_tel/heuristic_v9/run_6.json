@@ -1,0 +1,83 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 19,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_selzer"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_selzer"
+  ],
+  "money_spent": 6,
+  "best_score": 444,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_selzer"
+    ],
+    200
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_selzer"
+    ],
+    192
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_selzer"
+    ],
+    27
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_selzer"
+    ],
+    25
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 6,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

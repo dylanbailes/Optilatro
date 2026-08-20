@@ -1,0 +1,132 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 38,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_business",
+  "j_bootstraps",
+  "j_hanging_chad"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_business",
+   "j_gros_michel",
+   "j_hanging_chad"
+  ],
+  "money_spent": 21,
+  "best_score": 867,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_bootstraps",
+     "j_business"
+    ],
+    304
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_bootstraps",
+     "j_business"
+    ],
+    16
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bootstraps",
+     "j_business"
+    ],
+    272
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_business",
+     "j_gros_michel"
+    ],
+    867
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_bootstraps",
+     "j_business",
+     "j_hanging_chad"
+    ],
+    396
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_business",
+     "j_hanging_chad"
+    ],
+    48
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_business",
+     "j_hanging_chad"
+    ],
+    64
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_business",
+     "j_hanging_chad"
+    ],
+    92
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 234,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

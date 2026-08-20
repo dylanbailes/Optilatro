@@ -1,0 +1,340 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 106,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_greedy_joker",
+  "j_scholar",
+  "j_faceless",
+  "j_satellite",
+  "j_wrathful_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_scholar",
+   "j_banner",
+   "j_selzer",
+   "j_faceless",
+   "j_satellite",
+   "j_wrathful_joker"
+  ],
+  "money_spent": 82,
+  "best_score": 6166,
+  "rerolls": 1,
+  "packs_bought": 8,
+  "packs_opened": 6,
+  "jokers_sold": [
+   [
+    3,
+    "j_scary_face"
+   ],
+   [
+    3,
+    "j_banner"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    28
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_greedy_joker"
+    ],
+    570
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    700
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1300
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1650
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    908
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    2115
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    705
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    783
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    2115
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    3240
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar",
+     "j_selzer"
+    ],
+    3906
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar",
+     "j_selzer"
+    ],
+    2260
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar",
+     "j_selzer"
+    ],
+    2250
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar"
+    ],
+    2562
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar"
+    ],
+    427
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar",
+     "j_wrathful_joker"
+    ],
+    801
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar",
+     "j_wrathful_joker"
+    ],
+    427
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar",
+     "j_wrathful_joker"
+    ],
+    765
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar",
+     "j_wrathful_joker"
+    ],
+    3648
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_greedy_joker"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 195,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

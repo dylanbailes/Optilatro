@@ -1,0 +1,409 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 112,
+ "truncated": false,
+ "dollars": 24,
+ "jokers": [
+  "j_constellation",
+  "j_gros_michel",
+  "j_greedy_joker",
+  "j_banner",
+  "j_todo_list"
+ ],
+ "stats": {
+  "tarots": [
+   "c_chariot",
+   "c_temperance",
+   "c_hanged_man",
+   "c_fool",
+   "c_hanged_man",
+   "c_lovers"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_constellation",
+   "j_trousers",
+   "j_8_ball",
+   "j_joker",
+   "j_gros_michel",
+   "j_greedy_joker",
+   "j_banner",
+   "j_to_the_moon",
+   "j_droll",
+   "j_todo_list"
+  ],
+  "money_spent": 102,
+  "best_score": 10659,
+  "rerolls": 1,
+  "packs_bought": 7,
+  "packs_opened": 6,
+  "jokers_sold": [
+   [
+    2,
+    "j_8_ball"
+   ],
+   [
+    3,
+    "j_joker"
+   ],
+   [
+    4,
+    "j_trousers"
+   ],
+   [
+    4,
+    "j_blue_joker"
+   ],
+   [
+    4,
+    "j_to_the_moon"
+   ],
+   [
+    4,
+    "j_droll"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_blue_joker"
+    ],
+    576
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_constellation"
+    ],
+    660
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_trousers"
+    ],
+    864
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_constellation",
+     "j_trousers"
+    ],
+    816
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_constellation",
+     "j_trousers"
+    ],
+    672
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_constellation",
+     "j_joker",
+     "j_trousers"
+    ],
+    2068
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_gros_michel",
+     "j_joker",
+     "j_trousers"
+    ],
+    4345
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_trousers"
+    ],
+    3465
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_trousers"
+    ],
+    6243
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_trousers"
+    ],
+    5237
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_banner",
+     "j_constellation",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_to_the_moon"
+    ],
+    5500
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_constellation",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_to_the_moon"
+    ],
+    2842
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_constellation",
+     "j_droll",
+     "j_greedy_joker",
+     "j_gros_michel"
+    ],
+    10659
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_constellation",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_todo_list"
+    ],
+    1346
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_banner",
+     "j_constellation",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_todo_list"
+    ],
+    396
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_banner",
+     "j_constellation",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_todo_list"
+    ],
+    598
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_banner",
+     "j_constellation",
+     "j_greedy_joker",
+     "j_gros_michel",
+     "j_todo_list"
+    ],
+    523
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_chariot",
+    [
+     "j_blue_joker"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_jupiter",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_constellation",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_constellation",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_constellation",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_gros_michel",
+     "j_joker",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_gros_michel",
+     "j_joker",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_lovers",
+    [
+     "j_banner",
+     "j_constellation",
+     "j_droll",
+     "j_greedy_joker",
+     "j_gros_michel"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 96,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

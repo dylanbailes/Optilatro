@@ -1,0 +1,162 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 54,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_photograph",
+  "j_mad",
+  "j_faceless",
+  "j_jolly"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mad",
+   "j_faceless",
+   "j_jolly"
+  ],
+  "money_spent": 35,
+  "best_score": 2028,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_photograph"
+    ],
+    568
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mad",
+     "j_photograph"
+    ],
+    1056
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_faceless",
+     "j_mad",
+     "j_photograph"
+    ],
+    632
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_mad",
+     "j_photograph"
+    ],
+    480
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_mad",
+     "j_photograph"
+    ],
+    2028
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_mad",
+     "j_photograph"
+    ],
+    225
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_mad",
+     "j_photograph"
+    ],
+    189
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_mad",
+     "j_photograph"
+    ],
+    99
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_jolly",
+     "j_mad",
+     "j_photograph"
+    ],
+    450
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_faceless",
+     "j_mad",
+     "j_photograph"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 202,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

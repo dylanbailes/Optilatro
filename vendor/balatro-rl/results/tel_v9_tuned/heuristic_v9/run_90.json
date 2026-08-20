@@ -1,0 +1,168 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 72,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_even_steven",
+  "j_hanging_chad",
+  "j_walkie_talkie",
+  "j_erosion",
+  "j_cavendish"
+ ],
+ "stats": {
+  "tarots": [
+   "c_fool"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hanging_chad",
+   "j_walkie_talkie",
+   "j_cavendish"
+  ],
+  "money_spent": 55,
+  "best_score": 6448,
+  "rerolls": 0,
+  "packs_bought": 10,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_even_steven"
+    ],
+    864
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_even_steven"
+    ],
+    672
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    1100
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    494
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    1200
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    1824
+   ],
+   [
+    3,
+    "Four of a Kind",
+    [
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_walkie_talkie"
+    ],
+    3348
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_walkie_talkie"
+    ],
+    6448
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_walkie_talkie"
+    ],
+    2574
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 90,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

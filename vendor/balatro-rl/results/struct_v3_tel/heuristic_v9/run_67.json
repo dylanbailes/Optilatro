@@ -1,0 +1,185 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 39,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_hallucination",
+  "j_8_ball"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gros_michel",
+   "j_hallucination",
+   "j_8_ball"
+  ],
+  "money_spent": 24,
+  "best_score": 1368,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    76
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    76
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    36
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gros_michel"
+    ],
+    374
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gros_michel"
+    ],
+    306
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_hallucination"
+    ],
+    810
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_gros_michel",
+     "j_hallucination"
+    ],
+    558
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_gros_michel",
+     "j_hallucination"
+    ],
+    810
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_8_ball",
+     "j_hallucination"
+    ],
+    368
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_hallucination"
+    ],
+    129
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_hallucination"
+    ],
+    135
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_hallucination"
+    ],
+    123
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_gros_michel",
+     "j_hallucination"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_8_ball",
+     "j_hallucination"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 67,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

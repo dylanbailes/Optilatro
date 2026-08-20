@@ -1,0 +1,110 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 26,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_bull",
+  "j_ticket",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_bull",
+   "j_reserved_parking"
+  ],
+  "money_spent": 16,
+  "best_score": 592,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    336
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bull",
+     "j_ticket"
+    ],
+    324
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_bull",
+     "j_ticket"
+    ],
+    153
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bull",
+     "j_reserved_parking",
+     "j_ticket"
+    ],
+    320
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_bull",
+     "j_reserved_parking",
+     "j_ticket"
+    ],
+    44
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_bull",
+     "j_reserved_parking",
+     "j_ticket"
+    ],
+    24
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bull",
+     "j_reserved_parking",
+     "j_ticket"
+    ],
+    204
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 52,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

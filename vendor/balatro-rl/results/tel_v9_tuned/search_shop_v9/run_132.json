@@ -1,0 +1,248 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 96,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_cavendish",
+  "j_misprint",
+  "j_abstract",
+  "j_green_joker",
+  "j_delayed_grat"
+ ],
+ "stats": {
+  "tarots": [
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_earth"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_cavendish",
+   "j_misprint",
+   "j_abstract",
+   "j_green_joker",
+   "j_gros_michel",
+   "j_delayed_grat"
+  ],
+  "money_spent": 70,
+  "best_score": 17475,
+  "rerolls": 0,
+  "packs_bought": 8,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    4,
+    "j_sly"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    288
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    312
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_sly"
+    ],
+    2646
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_sly"
+    ],
+    624
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_sly"
+    ],
+    660
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_sly"
+    ],
+    1230
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_sly"
+    ],
+    5472
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_sly"
+    ],
+    4032
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_misprint",
+     "j_sly"
+    ],
+    7605
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_green_joker",
+     "j_misprint",
+     "j_sly"
+    ],
+    7326
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_green_joker",
+     "j_misprint",
+     "j_sly"
+    ],
+    7140
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_green_joker",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    4440
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_green_joker",
+     "j_gros_michel",
+     "j_misprint"
+    ],
+    13035
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_green_joker",
+     "j_misprint"
+    ],
+    7410
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_high_priestess",
+    [],
+    []
+   ],
+   [
+    2,
+    "pl_earth",
+    [
+     "j_cavendish",
+     "j_sly"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 132,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

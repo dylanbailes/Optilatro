@@ -1,0 +1,84 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 25,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_mad"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [],
+  "money_spent": 12,
+  "best_score": 504,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mad"
+    ],
+    504
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_mad"
+    ],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_mad"
+    ],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_mad"
+    ],
+    60
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_mad"
+    ],
+    16
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 235,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

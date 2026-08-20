@@ -1,0 +1,947 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 245,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_stuntman",
+  "j_mystic_summit",
+  "j_constellation",
+  "j_abstract",
+  "j_acrobat"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_strength",
+   "c_hierophant",
+   "c_death",
+   "c_chariot",
+   "c_hermit",
+   "c_temperance",
+   "c_fool",
+   "c_temperance",
+   "c_lovers",
+   "c_hierophant",
+   "c_fool",
+   "c_hierophant"
+  ],
+  "planets": [
+   "pl_pluto",
+   "pl_pluto",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_stuntman",
+   "j_card_sharp",
+   "j_red_card",
+   "j_cartomancer",
+   "j_joker",
+   "j_wrathful_joker",
+   "j_shoot_the_moon",
+   "j_acrobat",
+   "j_joker",
+   "j_even_steven",
+   "j_hanging_chad",
+   "j_mystic_summit",
+   "j_constellation"
+  ],
+  "money_spent": 208,
+  "best_score": 84334,
+  "rerolls": 5,
+  "packs_bought": 17,
+  "packs_opened": 11,
+  "jokers_sold": [
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    3,
+    "j_cartomancer"
+   ],
+   [
+    3,
+    "j_joker"
+   ],
+   [
+    4,
+    "j_shoot_the_moon"
+   ],
+   [
+    4,
+    "j_card_sharp"
+   ],
+   [
+    4,
+    "j_joker"
+   ],
+   [
+    4,
+    "j_wrathful_joker"
+   ],
+   [
+    6,
+    "j_hanging_chad"
+   ],
+   [
+    8,
+    "j_even_steven"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    292
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    10
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_stuntman"
+    ],
+    1308
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_stuntman"
+    ],
+    1212
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_card_sharp",
+     "j_stuntman"
+    ],
+    612
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_card_sharp",
+     "j_stuntman"
+    ],
+    536
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_red_card",
+     "j_stuntman"
+    ],
+    3752
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_red_card",
+     "j_stuntman"
+    ],
+    4573
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_joker",
+     "j_stuntman"
+    ],
+    6094
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_joker",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    7238
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_joker",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    7150
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_shoot_the_moon",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    5886
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_shoot_the_moon",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    8558
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_stuntman"
+    ],
+    10800
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    11022
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    18050
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    15088
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    7950
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    12342
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    8052
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    14970
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    12078
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    7370
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    14924
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    7370
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    7370
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    21978
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    13275
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    21256
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    12395
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    13002
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    16896
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    13148
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    35088
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    7958
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    13110
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    13110
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    38874
+   ],
+   [
+    8,
+    "Full House",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    20412
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    19722
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    13110
+   ],
+   [
+    8,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    16200
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    14934
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    14098
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    39102
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_constellation",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    9775
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_constellation",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    8407
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_constellation",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    8407
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_constellation",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    27531
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_judgement",
+    [
+     "j_card_sharp",
+     "j_red_card",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_red_card",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_joker",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_cartomancer",
+     "j_joker",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    7,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_lovers",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    8,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    8,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    8,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_acrobat",
+     "j_even_steven",
+     "j_mystic_summit",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 62,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

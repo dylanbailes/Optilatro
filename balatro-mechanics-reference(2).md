@@ -359,7 +359,7 @@ Seals apply only to playing cards, independent of Enhancement/Edition.
 
 | Seal | Effect |
 |---|---|
-| **Red Seal** | Retriggers this card's scoring effects 1 extra time |
+| **Red Seal** | Retriggers this card's scoring AND held-in-hand effects 1 extra time |
 | **Gold Seal** | Earns $3 when this card is scored |
 | **Blue Seal** | If held in hand at end of round, creates the Planet card matching the *final poker hand played that round* (not random; must have room) |
 | **Purple Seal** | Creates a Tarot card when this card is discarded (must have room) |

@@ -1,0 +1,88 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 21,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_misprint",
+  "j_zany"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_misprint",
+   "j_zany"
+  ],
+  "money_spent": 11,
+  "best_score": 1540,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    288
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    28
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_misprint",
+     "j_zany"
+    ],
+    1540
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_misprint",
+     "j_zany"
+    ],
+    300
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_misprint",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ }
+}

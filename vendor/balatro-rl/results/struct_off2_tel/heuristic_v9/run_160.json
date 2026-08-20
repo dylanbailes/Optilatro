@@ -1,0 +1,523 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 158,
+ "truncated": false,
+ "dollars": 50,
+ "jokers": [
+  "j_cavendish",
+  "j_trio",
+  "j_mime",
+  "j_hanging_chad",
+  "j_cartomancer"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_chariot",
+   "c_magician",
+   "c_hermit",
+   "c_hierophant",
+   "c_chariot",
+   "c_hermit",
+   "c_fool",
+   "c_hermit",
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_venus",
+   "pl_venus",
+   "pl_venus",
+   "pl_venus",
+   "pl_venus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_misprint",
+   "j_reserved_parking",
+   "j_cavendish",
+   "j_hack",
+   "j_trio",
+   "j_business",
+   "j_mime",
+   "j_hanging_chad",
+   "j_cartomancer"
+  ],
+  "money_spent": 169,
+  "best_score": 64935,
+  "rerolls": 5,
+  "packs_bought": 20,
+  "packs_opened": 17,
+  "jokers_sold": [
+   [
+    4,
+    "j_stencil"
+   ],
+   [
+    4,
+    "j_reserved_parking"
+   ],
+   [
+    4,
+    "j_hack"
+   ],
+   [
+    5,
+    "j_business"
+   ],
+   [
+    5,
+    "j_misprint"
+   ],
+   [
+    5,
+    "j_abstract"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    252
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_misprint",
+     "j_stencil"
+    ],
+    1980
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_misprint",
+     "j_stencil"
+    ],
+    3420
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_misprint",
+     "j_stencil"
+    ],
+    1620
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    1320
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    1508
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    616
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    1098
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    2100
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    5800
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    7084
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    9828
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hack",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    11433
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_business",
+     "j_cavendish",
+     "j_misprint",
+     "j_trio"
+    ],
+    47880
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_abstract",
+     "j_business",
+     "j_cavendish",
+     "j_misprint",
+     "j_trio"
+    ],
+    10791
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_business",
+     "j_cavendish",
+     "j_misprint",
+     "j_trio"
+    ],
+    54144
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cartomancer",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_mime",
+     "j_trio"
+    ],
+    2502
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cartomancer",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_mime",
+     "j_trio"
+    ],
+    84
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_cartomancer",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_mime",
+     "j_trio"
+    ],
+    1140
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cartomancer",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_mime",
+     "j_trio"
+    ],
+    567
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_misprint",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_venus",
+    [
+     "j_misprint",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    1,
+    "pl_venus",
+    [
+     "j_misprint",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_venus",
+    [
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_venus",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hack",
+     "j_misprint",
+     "j_reserved_parking"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Blue"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_business",
+     "j_cavendish",
+     "j_misprint",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_venus",
+    [
+     "j_abstract",
+     "j_business",
+     "j_cavendish",
+     "j_misprint",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_mime",
+     "j_misprint",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_mime",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_mime",
+     "j_trio"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_cartomancer",
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_mime",
+     "j_trio"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 160,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

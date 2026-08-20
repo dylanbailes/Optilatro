@@ -1,0 +1,625 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 168,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_jolly",
+  "j_scary_face",
+  "j_smiley",
+  "j_zany",
+  "j_swashbuckler"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_hanged_man",
+   "c_magician",
+   "c_lovers",
+   "c_fool",
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_golden",
+   "j_faceless",
+   "j_joker",
+   "j_scary_face",
+   "j_mad",
+   "j_smiley",
+   "j_zany",
+   "j_ride_the_bus",
+   "j_lusty_joker",
+   "j_todo_list",
+   "j_swashbuckler"
+  ],
+  "money_spent": 152,
+  "best_score": 28354,
+  "rerolls": 1,
+  "packs_bought": 18,
+  "packs_opened": 11,
+  "jokers_sold": [
+   [
+    2,
+    "j_golden"
+   ],
+   [
+    2,
+    "j_faceless"
+   ],
+   [
+    2,
+    "j_mad"
+   ],
+   [
+    4,
+    "j_joker"
+   ],
+   [
+    4,
+    "j_ride_the_bus"
+   ],
+   [
+    4,
+    "j_lusty_joker"
+   ],
+   [
+    4,
+    "j_todo_list"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    332
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_golden",
+     "j_jolly"
+    ],
+    600
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_golden",
+     "j_joker",
+     "j_jolly"
+    ],
+    864
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_golden",
+     "j_joker",
+     "j_jolly",
+     "j_scary_face"
+    ],
+    624
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_golden",
+     "j_joker",
+     "j_jolly",
+     "j_scary_face"
+    ],
+    528
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_faceless",
+     "j_joker",
+     "j_jolly",
+     "j_mad",
+     "j_scary_face"
+    ],
+    1908
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_joker",
+     "j_jolly",
+     "j_mad",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    2805
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_joker",
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_zany"
+    ],
+    4725
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_joker",
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_zany"
+    ],
+    4864
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_joker",
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_zany"
+    ],
+    5396
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_joker",
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_zany"
+    ],
+    1989
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_joker",
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_zany"
+    ],
+    1575
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_joker",
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_zany"
+    ],
+    4725
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_jolly",
+     "j_ride_the_bus",
+     "j_scary_face",
+     "j_smiley",
+     "j_zany"
+    ],
+    4305
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_jolly",
+     "j_ride_the_bus",
+     "j_scary_face",
+     "j_smiley",
+     "j_zany"
+    ],
+    4305
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_todo_list",
+     "j_zany"
+    ],
+    6669
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_todo_list",
+     "j_zany"
+    ],
+    2646
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_todo_list",
+     "j_zany"
+    ],
+    2541
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    11480
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    12690
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    9990
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    8188
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    2948
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    5280
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    9360
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    12040
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    2684
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    7290
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    8385
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    9555
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    3124
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    7290
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_faceless",
+     "j_golden",
+     "j_joker",
+     "j_jolly",
+     "j_scary_face"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_faceless",
+     "j_golden",
+     "j_joker",
+     "j_jolly",
+     "j_scary_face"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_faceless",
+     "j_joker",
+     "j_jolly",
+     "j_mad",
+     "j_scary_face"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_joker",
+     "j_jolly",
+     "j_mad",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_joker",
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_zany"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_jolly",
+     "j_ride_the_bus",
+     "j_scary_face",
+     "j_smiley",
+     "j_zany"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_jolly",
+     "j_ride_the_bus",
+     "j_scary_face",
+     "j_smiley",
+     "j_zany"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_todo_list",
+     "j_zany"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_jolly",
+     "j_scary_face",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 191,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,241 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 63,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_stencil",
+  "j_droll",
+  "j_popcorn",
+  "j_banner",
+  "j_trousers"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_chariot",
+   "c_death"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_stencil",
+   "j_droll",
+   "j_banner",
+   "j_trousers"
+  ],
+  "money_spent": 41,
+  "best_score": 4076,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    260
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_stencil"
+    ],
+    464
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_droll",
+     "j_stencil"
+    ],
+    996
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_droll",
+     "j_popcorn",
+     "j_stencil"
+    ],
+    880
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil"
+    ],
+    2520
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    960
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    960
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    2156
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    384
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    644
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    544
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    240
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_droll",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_banner",
+     "j_droll",
+     "j_popcorn",
+     "j_stencil",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 95,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,292 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 78,
+ "truncated": false,
+ "dollars": 18,
+ "jokers": [
+  "j_odd_todd",
+  "j_scholar",
+  "j_scary_face",
+  "j_lusty_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scholar",
+   "j_dusk",
+   "j_gros_michel",
+   "j_scary_face",
+   "j_lusty_joker"
+  ],
+  "money_spent": 50,
+  "best_score": 4106,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_dusk"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    248
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    40
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_odd_todd"
+    ],
+    556
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    440
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    156
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    40
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    291
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    1639
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    1746
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_dusk",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1890
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_dusk",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    3173
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    3864
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    3154
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    952
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1640
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    420
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    480
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    192
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_dusk",
+     "j_odd_todd",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_moon",
+    [
+     "j_dusk",
+     "j_gros_michel",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_mercury",
+    [
+     "j_odd_todd",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 59,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -101,8 +101,16 @@ def roll_tag(game) -> Optional[str]:
 def apply_tag(game, key: str) -> None:
     """Apply a Tag's effect immediately (auto-apply on blind skip)."""
     if key == "t_economy":
-        # Economy Tag: doubles your money (max of $40)
-        game.dollars = min(game.dollars * 2, 40)
+        # Economy Tag: doubles your money if it is below $40, otherwise adds
+        # $40 (gain capped at +$40 — real game: "Doubles your money (Max of
+        # $40)"; wiki: below $40 doubled, else +$40). A negative balance is
+        # zeroed (the tag wastes on debt — wiki note), never left negative.
+        if game.dollars < 0:
+            game.dollars = 0
+        elif game.dollars < 40:
+            game.dollars *= 2
+        else:
+            game.dollars += 40
     elif key == "t_speed":
         # Speed Tag: $5 per skipped Blind this run (counts this skip)
         game.dollars += 5 * game.skipped_blinds

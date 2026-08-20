@@ -1,0 +1,317 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 83,
+ "truncated": false,
+ "dollars": 23,
+ "jokers": [
+  "j_trio",
+  "j_cavendish",
+  "j_splash",
+  "j_hanging_chad",
+  "j_jolly"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_constellation",
+   "j_gros_michel",
+   "j_business",
+   "j_joker",
+   "j_devious",
+   "j_trio",
+   "j_shoot_the_moon",
+   "j_cavendish",
+   "j_splash",
+   "j_hanging_chad",
+   "j_jolly"
+  ],
+  "money_spent": 63,
+  "best_score": 5985,
+  "rerolls": 3,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [
+   [
+    2,
+    "j_business"
+   ],
+   [
+    2,
+    "j_constellation"
+   ],
+   [
+    3,
+    "j_devious"
+   ],
+   [
+    3,
+    "j_joker"
+   ],
+   [
+    4,
+    "j_shoot_the_moon"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_constellation"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_constellation"
+    ],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_constellation",
+     "j_gros_michel"
+    ],
+    561
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_constellation",
+     "j_gros_michel"
+    ],
+    80
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_constellation",
+     "j_gros_michel",
+     "j_joker"
+    ],
+    630
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_constellation",
+     "j_gros_michel",
+     "j_joker"
+    ],
+    378
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_constellation",
+     "j_gros_michel",
+     "j_joker"
+    ],
+    924
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_constellation",
+     "j_gros_michel",
+     "j_joker"
+    ],
+    630
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_constellation",
+     "j_devious",
+     "j_gros_michel",
+     "j_joker"
+    ],
+    924
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_constellation",
+     "j_devious",
+     "j_gros_michel",
+     "j_joker"
+    ],
+    966
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_devious",
+     "j_gros_michel",
+     "j_joker",
+     "j_shoot_the_moon",
+     "j_trio"
+    ],
+    5985
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_shoot_the_moon",
+     "j_trio"
+    ],
+    1710
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_shoot_the_moon",
+     "j_trio"
+    ],
+    1824
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_shoot_the_moon",
+     "j_trio"
+    ],
+    5832
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_shoot_the_moon",
+     "j_splash",
+     "j_trio"
+    ],
+    2916
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_shoot_the_moon",
+     "j_splash",
+     "j_trio"
+    ],
+    1350
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_shoot_the_moon",
+     "j_splash",
+     "j_trio"
+    ],
+    1680
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_jolly",
+     "j_splash",
+     "j_trio"
+    ],
+    2640
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_jolly",
+     "j_splash",
+     "j_trio"
+    ],
+    1800
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_jolly",
+     "j_splash",
+     "j_trio"
+    ],
+    75
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_jolly",
+     "j_splash",
+     "j_trio"
+    ],
+    1320
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 79,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

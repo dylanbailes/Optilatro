@@ -1,0 +1,198 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 67,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_smiley",
+  "j_obelisk",
+  "j_hanging_chad",
+  "j_zany",
+  "j_satellite"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_shoot_the_moon",
+   "j_smiley",
+   "j_obelisk",
+   "j_popcorn",
+   "j_hanging_chad",
+   "j_zany",
+   "j_satellite"
+  ],
+  "money_spent": 52,
+  "best_score": 3948,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_shoot_the_moon"
+   ],
+   [
+    2,
+    "j_idol"
+   ],
+   [
+    3,
+    "j_popcorn"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    288
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    12
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_idol",
+     "j_shoot_the_moon"
+    ],
+    744
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_idol",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_idol",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    360
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_idol",
+     "j_obelisk",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    960
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_idol",
+     "j_obelisk",
+     "j_popcorn",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    1531
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_hanging_chad",
+     "j_idol",
+     "j_obelisk",
+     "j_popcorn",
+     "j_smiley"
+    ],
+    3948
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_popcorn",
+     "j_smiley",
+     "j_zany"
+    ],
+    2720
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_satellite",
+     "j_smiley",
+     "j_zany"
+    ],
+    80
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_satellite",
+     "j_smiley",
+     "j_zany"
+    ],
+    116
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_satellite",
+     "j_smiley",
+     "j_zany"
+    ],
+    1320
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_obelisk",
+     "j_satellite",
+     "j_smiley",
+     "j_zany"
+    ],
+    48
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 122,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

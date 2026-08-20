@@ -1,0 +1,145 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 44,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_photograph",
+  "j_mail"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_photograph"
+  ],
+  "money_spent": 24,
+  "best_score": 652,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_mail",
+     "j_photograph"
+    ],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mail",
+     "j_photograph"
+    ],
+    200
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mail",
+     "j_photograph"
+    ],
+    216
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_mail",
+     "j_photograph"
+    ],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_mail",
+     "j_photograph"
+    ],
+    216
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_mail",
+     "j_photograph"
+    ],
+    104
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_mail",
+     "j_photograph"
+    ],
+    52
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_mail",
+     "j_photograph"
+    ],
+    216
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_mail",
+     "j_photograph"
+    ],
+    88
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_mail",
+     "j_photograph"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 108,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

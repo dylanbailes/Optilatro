@@ -1,0 +1,122 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 28,
+ "truncated": false,
+ "dollars": 8,
+ "jokers": [
+  "j_trading",
+  "j_drunkard",
+  "j_egg"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_drunkard",
+   "j_egg"
+  ],
+  "money_spent": 12,
+  "best_score": 564,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    104
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_drunkard",
+     "j_trading"
+    ],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_drunkard",
+     "j_trading"
+    ],
+    256
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_drunkard",
+     "j_trading"
+    ],
+    171
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    120
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    112
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    16
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_drunkard",
+     "j_egg",
+     "j_trading"
+    ],
+    316
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 19,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

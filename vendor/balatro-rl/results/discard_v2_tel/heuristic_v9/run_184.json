@@ -1,0 +1,430 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 131,
+ "truncated": false,
+ "dollars": 21,
+ "jokers": [
+  "j_ice_cream",
+  "j_photograph",
+  "j_to_the_moon",
+  "j_odd_todd",
+  "j_wrathful_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_temperance",
+   "c_wheel_of_fortune",
+   "c_fool",
+   "c_strength"
+  ],
+  "planets": [
+   "pl_jupiter",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_idol",
+   "j_ice_cream",
+   "j_fortune_teller",
+   "j_photograph",
+   "j_popcorn",
+   "j_mystic_summit",
+   "j_gift",
+   "j_sock_and_buskin",
+   "j_even_steven",
+   "j_hack",
+   "j_to_the_moon",
+   "j_odd_todd",
+   "j_wrathful_joker"
+  ],
+  "money_spent": 134,
+  "best_score": 12172,
+  "rerolls": 1,
+  "packs_bought": 12,
+  "packs_opened": 9,
+  "jokers_sold": [
+   [
+    3,
+    "j_fortune_teller"
+   ],
+   [
+    3,
+    "j_idol"
+   ],
+   [
+    3,
+    "j_reserved_parking"
+   ],
+   [
+    3,
+    "j_mystic_summit"
+   ],
+   [
+    3,
+    "j_gift"
+   ],
+   [
+    4,
+    "j_sock_and_buskin"
+   ],
+   [
+    4,
+    "j_popcorn"
+   ],
+   [
+    4,
+    "j_hack"
+   ],
+   [
+    4,
+    "j_fibonacci"
+   ],
+   [
+    4,
+    "j_even_steven"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_fibonacci"
+    ],
+    468
+   ],
+   [
+    1,
+    "Four of a Kind",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    630
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    888
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_idol"
+    ],
+    2376
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_ice_cream",
+     "j_idol"
+    ],
+    2070
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_fibonacci",
+     "j_fortune_teller",
+     "j_ice_cream",
+     "j_idol",
+     "j_reserved_parking"
+    ],
+    2412
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_idol",
+     "j_photograph",
+     "j_reserved_parking"
+    ],
+    3300
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_popcorn"
+    ],
+    4840
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_popcorn"
+    ],
+    5547
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_popcorn",
+     "j_sock_and_buskin"
+    ],
+    12172
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_to_the_moon"
+    ],
+    3360
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_to_the_moon"
+    ],
+    6768
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_photograph",
+     "j_to_the_moon",
+     "j_wrathful_joker"
+    ],
+    2282
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_photograph",
+     "j_to_the_moon",
+     "j_wrathful_joker"
+    ],
+    5304
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_photograph",
+     "j_to_the_moon",
+     "j_wrathful_joker"
+    ],
+    810
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_photograph",
+     "j_to_the_moon",
+     "j_wrathful_joker"
+    ],
+    732
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_jupiter",
+    [
+     "j_fibonacci"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_magician",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_temperance",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_popcorn",
+     "j_sock_and_buskin"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_hack",
+     "j_ice_cream",
+     "j_photograph"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_strength",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_photograph",
+     "j_to_the_moon",
+     "j_wrathful_joker"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 184,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

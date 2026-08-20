@@ -1,0 +1,239 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 65,
+ "truncated": false,
+ "dollars": 12,
+ "jokers": [
+  "j_even_steven",
+  "j_hanging_chad",
+  "j_scary_face",
+  "j_faceless"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_credit_card",
+   "j_hanging_chad",
+   "j_scary_face",
+   "j_rough_gem",
+   "j_reserved_parking",
+   "j_faceless"
+  ],
+  "money_spent": 50,
+  "best_score": 3060,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_credit_card"
+   ],
+   [
+    3,
+    "j_rough_gem"
+   ],
+   [
+    3,
+    "j_reserved_parking"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_even_steven"
+    ],
+    480
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    644
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    900
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_scary_face"
+    ],
+    1558
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_rough_gem",
+     "j_scary_face"
+    ],
+    3060
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem",
+     "j_scary_face"
+    ],
+    2432
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_hanging_chad",
+     "j_scary_face"
+    ],
+    494
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_hanging_chad",
+     "j_scary_face"
+    ],
+    140
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_hanging_chad",
+     "j_scary_face"
+    ],
+    1540
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_hanging_chad",
+     "j_scary_face"
+    ],
+    414
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem",
+     "j_scary_face"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 90,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

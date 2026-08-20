@@ -1,0 +1,172 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 40,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_scary_face",
+  "j_hanging_chad",
+  "j_red_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_death",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_hanging_chad",
+   "j_red_card"
+  ],
+  "money_spent": 25,
+  "best_score": 960,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    344
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_hanging_chad",
+     "j_scary_face"
+    ],
+    528
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hanging_chad",
+     "j_scary_face"
+    ],
+    960
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_red_card",
+     "j_scary_face"
+    ],
+    108
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_red_card",
+     "j_scary_face"
+    ],
+    180
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_red_card",
+     "j_scary_face"
+    ],
+    180
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_red_card",
+     "j_scary_face"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_hanging_chad",
+     "j_scary_face"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_hanging_chad",
+     "j_scary_face"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_hanging_chad",
+     "j_red_card",
+     "j_scary_face"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 13,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

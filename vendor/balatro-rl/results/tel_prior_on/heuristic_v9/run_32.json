@@ -1,0 +1,271 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 72,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_arrowhead",
+  "j_luchador",
+  "j_business",
+  "j_ride_the_bus",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_death"
+  ],
+  "planets": [
+   "pl_earth"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_arrowhead",
+   "j_banner",
+   "j_luchador",
+   "j_business",
+   "j_ride_the_bus",
+   "j_credit_card"
+  ],
+  "money_spent": 48,
+  "best_score": 2721,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    3,
+    "j_banner"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    324
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_arrowhead"
+    ],
+    1086
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_arrowhead"
+    ],
+    570
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_arrowhead"
+    ],
+    40
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_arrowhead"
+    ],
+    180
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_arrowhead"
+    ],
+    1448
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_arrowhead",
+     "j_banner"
+    ],
+    1314
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_luchador"
+    ],
+    1060
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_luchador"
+    ],
+    548
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_business",
+     "j_luchador"
+    ],
+    906
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_business",
+     "j_luchador"
+    ],
+    954
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_business",
+     "j_luchador"
+    ],
+    660
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_arrowhead",
+     "j_business",
+     "j_credit_card",
+     "j_luchador",
+     "j_ride_the_bus"
+    ],
+    1665
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_arrowhead",
+     "j_business",
+     "j_credit_card",
+     "j_luchador",
+     "j_ride_the_bus"
+    ],
+    416
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_arrowhead",
+     "j_business",
+     "j_credit_card",
+     "j_luchador",
+     "j_ride_the_bus"
+    ],
+    420
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_arrowhead",
+     "j_business",
+     "j_credit_card",
+     "j_luchador",
+     "j_ride_the_bus"
+    ],
+    220
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_earth",
+    [
+     "j_arrowhead"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_empress",
+    [
+     "j_arrowhead"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_arrowhead",
+     "j_banner",
+     "j_business",
+     "j_luchador"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 32,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

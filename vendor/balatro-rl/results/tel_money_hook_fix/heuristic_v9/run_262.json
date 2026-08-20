@@ -1,0 +1,217 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 63,
+ "truncated": false,
+ "dollars": 6,
+ "jokers": [
+  "j_droll",
+  "j_hanging_chad",
+  "j_rough_gem",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_world",
+   "c_hermit",
+   "c_judgement",
+   "c_lovers"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hanging_chad",
+   "j_rough_gem"
+  ],
+  "money_spent": 49,
+  "best_score": 1696,
+  "rerolls": 0,
+  "packs_bought": 7,
+  "packs_opened": 5,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    28
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_droll"
+    ],
+    1148
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_droll"
+    ],
+    280
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_droll"
+    ],
+    320
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_droll",
+     "j_hanging_chad"
+    ],
+    404
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_droll",
+     "j_hanging_chad"
+    ],
+    966
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_droll",
+     "j_hanging_chad",
+     "j_rough_gem"
+    ],
+    328
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_droll",
+     "j_hanging_chad",
+     "j_rough_gem"
+    ],
+    360
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_droll",
+     "j_hanging_chad",
+     "j_rough_gem"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_droll",
+     "j_hanging_chad",
+     "j_rough_gem"
+    ],
+    336
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hermit",
+    [
+     "j_droll",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_world",
+    [
+     "j_droll",
+     "j_hanging_chad",
+     "j_rough_gem"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_droll",
+     "j_hanging_chad",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_judgement",
+    [
+     "j_droll",
+     "j_hanging_chad",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_credit_card",
+     "j_droll",
+     "j_hanging_chad",
+     "j_rough_gem"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 262,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

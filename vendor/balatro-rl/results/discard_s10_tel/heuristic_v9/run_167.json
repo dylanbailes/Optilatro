@@ -1,0 +1,265 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 73,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_photograph",
+  "j_even_steven",
+  "j_delayed_grat",
+  "j_scholar",
+  "j_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_fool",
+   "c_hanged_man"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_photograph",
+   "j_gros_michel",
+   "j_even_steven",
+   "j_delayed_grat",
+   "j_scholar",
+   "j_joker"
+  ],
+  "money_spent": 59,
+  "best_score": 4848,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 4,
+  "jokers_sold": [
+   [
+    2,
+    "j_satellite"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    316
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_photograph",
+     "j_satellite"
+    ],
+    544
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_gros_michel",
+     "j_photograph",
+     "j_satellite"
+    ],
+    648
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_gros_michel",
+     "j_photograph",
+     "j_satellite"
+    ],
+    1020
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_gros_michel",
+     "j_photograph",
+     "j_satellite"
+    ],
+    1300
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_photograph",
+     "j_satellite",
+     "j_scholar"
+    ],
+    4040
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    2464
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    4848
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    2200
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    1000
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    468
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    150
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 167,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

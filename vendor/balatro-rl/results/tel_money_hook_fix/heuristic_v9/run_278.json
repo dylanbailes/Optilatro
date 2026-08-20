@@ -1,0 +1,266 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 67,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_swashbuckler",
+  "j_troubadour",
+  "j_hiker",
+  "j_loyalty_card",
+  "j_faceless"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_smiley",
+   "j_troubadour",
+   "j_hiker",
+   "j_loyalty_card",
+   "j_faceless"
+  ],
+  "money_spent": 49,
+  "best_score": 3534,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    3,
+    "j_smiley"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    264
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    560
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_smiley",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    836
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hiker",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_hiker",
+     "j_loyalty_card",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    2370
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_hiker",
+     "j_loyalty_card",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    1095
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_hiker",
+     "j_loyalty_card",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    714
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_hiker",
+     "j_loyalty_card",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    1980
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_hiker",
+     "j_loyalty_card",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    416
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_hiker",
+     "j_loyalty_card",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    2756
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_hiker",
+     "j_loyalty_card",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    416
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_hiker",
+     "j_loyalty_card",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    663
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_faceless",
+     "j_hiker",
+     "j_loyalty_card",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    1746
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_faceless",
+     "j_hiker",
+     "j_loyalty_card",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    1125
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_death",
+    [
+     "j_hiker",
+     "j_loyalty_card",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_hiker",
+     "j_loyalty_card",
+     "j_smiley",
+     "j_swashbuckler",
+     "j_troubadour"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 278,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

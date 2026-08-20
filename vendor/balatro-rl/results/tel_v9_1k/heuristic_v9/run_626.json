@@ -1,0 +1,401 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 129,
+ "truncated": false,
+ "dollars": 7,
+ "jokers": [
+  "j_red_card",
+  "j_misprint",
+  "j_business",
+  "j_sly",
+  "j_green_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_moon",
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_saturn",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_popcorn",
+   "j_square",
+   "j_business",
+   "j_green_joker"
+  ],
+  "money_spent": 107,
+  "best_score": 19246,
+  "rerolls": 1,
+  "packs_bought": 14,
+  "packs_opened": 5,
+  "jokers_sold": [
+   [
+    5,
+    "j_square"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    308
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_popcorn",
+     "j_red_card"
+    ],
+    704
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_popcorn",
+     "j_red_card",
+     "j_square"
+    ],
+    1050
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_popcorn",
+     "j_red_card",
+     "j_square"
+    ],
+    3570
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_misprint",
+     "j_popcorn",
+     "j_red_card",
+     "j_square"
+    ],
+    2072
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_misprint",
+     "j_popcorn",
+     "j_red_card",
+     "j_square"
+    ],
+    1083
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_misprint",
+     "j_popcorn",
+     "j_red_card",
+     "j_square"
+    ],
+    696
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_misprint",
+     "j_red_card",
+     "j_square"
+    ],
+    1539
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_misprint",
+     "j_red_card",
+     "j_square"
+    ],
+    832
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_square"
+    ],
+    4061
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_square"
+    ],
+    2646
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_square"
+    ],
+    2088
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_square"
+    ],
+    5616
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_sly",
+     "j_square"
+    ],
+    4264
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_sly",
+     "j_square"
+    ],
+    4736
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_sly",
+     "j_square"
+    ],
+    4851
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_sly",
+     "j_square"
+    ],
+    4743
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_sly",
+     "j_square"
+    ],
+    4448
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_sly",
+     "j_square"
+    ],
+    12672
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_business",
+     "j_green_joker",
+     "j_misprint",
+     "j_red_card",
+     "j_sly"
+    ],
+    7293
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_business",
+     "j_green_joker",
+     "j_misprint",
+     "j_red_card",
+     "j_sly"
+    ],
+    7520
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_business",
+     "j_green_joker",
+     "j_misprint",
+     "j_red_card",
+     "j_sly"
+    ],
+    4433
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_business",
+     "j_green_joker",
+     "j_misprint",
+     "j_red_card",
+     "j_sly"
+    ],
+    6160
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [
+     "j_popcorn",
+     "j_red_card",
+     "j_square"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_moon",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_square"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_sly",
+     "j_square"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_high_priestess",
+    [
+     "j_business",
+     "j_misprint",
+     "j_red_card",
+     "j_sly",
+     "j_square"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_saturn",
+    [
+     "j_business",
+     "j_green_joker",
+     "j_misprint",
+     "j_red_card",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_business",
+     "j_green_joker",
+     "j_misprint",
+     "j_red_card",
+     "j_sly"
+    ],
+    []
+   ]
+  ]
+ }
+}

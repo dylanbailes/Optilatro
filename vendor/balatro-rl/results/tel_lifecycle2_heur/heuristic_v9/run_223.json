@@ -1,0 +1,314 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 100,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_wee",
+  "j_smiley",
+  "j_hanging_chad",
+  "j_space",
+  "j_walkie_talkie"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_hermit",
+   "c_emperor",
+   "c_fool"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_smiley",
+   "j_hanging_chad",
+   "j_space",
+   "j_walkie_talkie"
+  ],
+  "money_spent": 72,
+  "best_score": 6028,
+  "rerolls": 1,
+  "packs_bought": 10,
+  "packs_opened": 5,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_wee"
+    ],
+    332
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_wee"
+    ],
+    356
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    621
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    816
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    128
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    1470
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    888
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    2166
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    1442
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    744
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_hanging_chad",
+     "j_smiley",
+     "j_wee"
+    ],
+    3408
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_smiley",
+     "j_space",
+     "j_wee"
+    ],
+    3108
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_hanging_chad",
+     "j_smiley",
+     "j_space",
+     "j_wee"
+    ],
+    470
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_hanging_chad",
+     "j_smiley",
+     "j_space",
+     "j_wee"
+    ],
+    470
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_smiley",
+     "j_space",
+     "j_wee"
+    ],
+    3344
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_hanging_chad",
+     "j_smiley",
+     "j_space",
+     "j_wee"
+    ],
+    2226
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_smiley",
+     "j_space",
+     "j_walkie_talkie",
+     "j_wee"
+    ],
+    3520
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_smiley",
+     "j_space",
+     "j_walkie_talkie",
+     "j_wee"
+    ],
+    1344
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_hanging_chad",
+     "j_smiley",
+     "j_space",
+     "j_walkie_talkie",
+     "j_wee"
+    ],
+    582
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_hanging_chad",
+     "j_smiley",
+     "j_space",
+     "j_walkie_talkie",
+     "j_wee"
+    ],
+    582
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_wee"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hermit",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_smiley",
+     "j_wee"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 223,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

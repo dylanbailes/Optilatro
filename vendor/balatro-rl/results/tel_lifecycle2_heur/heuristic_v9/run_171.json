@@ -1,0 +1,269 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 73,
+ "truncated": false,
+ "dollars": 7,
+ "jokers": [
+  "j_banner",
+  "j_flash",
+  "j_ramen",
+  "j_credit_card",
+  "j_raised_fist"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_empress",
+   "c_temperance",
+   "c_hermit",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_banner",
+   "j_credit_card",
+   "j_raised_fist"
+  ],
+  "money_spent": 66,
+  "best_score": 3850,
+  "rerolls": 1,
+  "packs_bought": 8,
+  "packs_opened": 6,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    300
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_banner"
+    ],
+    668
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_banner",
+     "j_flash"
+    ],
+    680
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_banner",
+     "j_flash",
+     "j_ramen"
+    ],
+    1034
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_ramen"
+    ],
+    1520
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_ramen"
+    ],
+    2204
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_ramen"
+    ],
+    1115
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_ramen"
+    ],
+    1008
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_raised_fist",
+     "j_ramen"
+    ],
+    3850
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_raised_fist",
+     "j_ramen"
+    ],
+    916
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_raised_fist",
+     "j_ramen"
+    ],
+    893
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_raised_fist",
+     "j_ramen"
+    ],
+    1145
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_raised_fist",
+     "j_ramen"
+    ],
+    550
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_judgement",
+    [
+     "j_banner",
+     "j_flash"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_ramen"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_ramen"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_ramen"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_ramen"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_banner",
+     "j_credit_card",
+     "j_flash",
+     "j_ramen"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 171,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

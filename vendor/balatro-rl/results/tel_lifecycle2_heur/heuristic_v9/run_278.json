@@ -1,0 +1,180 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 48,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_hologram"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hologram"
+  ],
+  "money_spent": 21,
+  "best_score": 981,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hologram"
+    ],
+    88
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hologram"
+    ],
+    280
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hologram"
+    ],
+    324
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hologram"
+    ],
+    224
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hologram"
+    ],
+    368
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hologram"
+    ],
+    60
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_hologram"
+    ],
+    400
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hologram"
+    ],
+    140
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_hologram"
+    ],
+    405
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hologram"
+    ],
+    150
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_hologram"
+    ],
+    570
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_hologram"
+    ],
+    131
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hologram"
+    ],
+    130
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hierophant",
+    [
+     "j_hologram"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 278,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

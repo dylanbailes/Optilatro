@@ -1,0 +1,595 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 197,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_cavendish",
+  "j_blue_joker",
+  "j_even_steven",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [
+   "c_star",
+   "c_hermit",
+   "c_fool",
+   "c_hermit",
+   "c_fool",
+   "c_chariot",
+   "c_hermit",
+   "c_temperance",
+   "c_fool",
+   "c_temperance",
+   "c_devil",
+   "c_hierophant"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus",
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [
+   "s_black_hole"
+  ],
+  "jokers_bought": [
+   "j_red_card",
+   "j_certificate",
+   "j_popcorn",
+   "j_even_steven",
+   "j_sly",
+   "j_bloodstone",
+   "j_acrobat",
+   "j_crazy",
+   "j_splash"
+  ],
+  "money_spent": 208,
+  "best_score": 78246,
+  "rerolls": 4,
+  "packs_bought": 28,
+  "packs_opened": 19,
+  "jokers_sold": [
+   [
+    3,
+    "j_mail"
+   ],
+   [
+    4,
+    "j_certificate"
+   ],
+   [
+    4,
+    "j_red_card"
+   ],
+   [
+    4,
+    "j_joker"
+   ],
+   [
+    5,
+    "j_sly"
+   ],
+   [
+    5,
+    "j_bloodstone"
+   ],
+   [
+    6,
+    "j_acrobat"
+   ],
+   [
+    7,
+    "j_crazy"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_joker"
+    ],
+    476
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    910
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    930
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    1221
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_mail"
+    ],
+    2112
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_mail"
+    ],
+    2808
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_mail",
+     "j_red_card"
+    ],
+    3531
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_joker",
+     "j_mail",
+     "j_red_card"
+    ],
+    5211
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_certificate",
+     "j_joker",
+     "j_red_card"
+    ],
+    5010
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn"
+    ],
+    17745
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_popcorn"
+    ],
+    13689
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_popcorn",
+     "j_sly"
+    ],
+    19380
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_popcorn",
+     "j_sly"
+    ],
+    21978
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_popcorn",
+     "j_selzer"
+    ],
+    25758
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer"
+    ],
+    32274
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer"
+    ],
+    31482
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_acrobat",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer"
+    ],
+    52852
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_crazy",
+     "j_even_steven",
+     "j_selzer"
+    ],
+    78246
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_splash"
+    ],
+    7686
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_splash"
+    ],
+    28152
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_splash"
+    ],
+    12489
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_splash"
+    ],
+    4350
+   ],
+   [
+    7,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_splash"
+    ],
+    10452
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "s_black_hole",
+    [],
+    []
+   ],
+   [
+    1,
+    "c_star",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_joker",
+     "j_mail"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_mail"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_cavendish",
+     "j_joker",
+     "j_mail",
+     "j_red_card"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_uranus",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_hermit",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_crazy",
+     "j_even_steven",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_crazy",
+     "j_even_steven",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_chariot",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_crazy",
+     "j_even_steven",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_hermit",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_crazy",
+     "j_even_steven",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_temperance",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_temperance",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_devil",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "Foil",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_hierophant",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 270,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,262 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 98,
+ "truncated": false,
+ "dollars": 7,
+ "jokers": [
+  "j_blue_joker",
+  "j_gluttenous_joker",
+  "j_reserved_parking",
+  "j_runner"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_pluto",
+   "pl_pluto",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_blue_joker",
+   "j_reserved_parking",
+   "j_runner"
+  ],
+  "money_spent": 74,
+  "best_score": 5006,
+  "rerolls": 0,
+  "packs_bought": 13,
+  "packs_opened": 7,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    308
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_selzer"
+    ],
+    450
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_selzer"
+    ],
+    721
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_selzer"
+    ],
+    1072
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_selzer"
+    ],
+    2040
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_selzer"
+    ],
+    1161
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_selzer"
+    ],
+    740
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_selzer"
+    ],
+    2120
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_selzer"
+    ],
+    4847
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_selzer"
+    ],
+    2848
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_reserved_parking"
+    ],
+    1200
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_reserved_parking"
+    ],
+    3654
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_reserved_parking"
+    ],
+    800
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_reserved_parking"
+    ],
+    552
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_runner"
+    ],
+    903
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_runner"
+    ],
+    2574
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_runner"
+    ],
+    194
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_runner"
+    ],
+    812
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_pluto",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_pluto",
+    [
+     "j_blue_joker",
+     "j_gluttenous_joker",
+     "j_reserved_parking",
+     "j_selzer"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 28,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

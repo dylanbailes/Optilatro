@@ -1,0 +1,658 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 178,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_green_joker",
+  "j_stuntman",
+  "j_popcorn",
+  "j_half",
+  "j_rocket"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_death",
+   "c_magician",
+   "c_death"
+  ],
+  "planets": [
+   "pl_pluto"
+  ],
+  "spectrals": [
+   "s_black_hole"
+  ],
+  "jokers_bought": [
+   "j_chaos",
+   "j_abstract",
+   "j_diet_cola",
+   "j_lusty_joker",
+   "j_blue_joker",
+   "j_gros_michel",
+   "j_green_joker",
+   "j_stuntman",
+   "j_delayed_grat",
+   "j_ride_the_bus",
+   "j_egg",
+   "j_delayed_grat",
+   "j_joker",
+   "j_ice_cream",
+   "j_popcorn",
+   "j_half",
+   "j_rocket"
+  ],
+  "money_spent": 180,
+  "best_score": 62183,
+  "rerolls": 2,
+  "packs_bought": 17,
+  "packs_opened": 10,
+  "jokers_sold": [
+   [
+    2,
+    "j_chaos"
+   ],
+   [
+    2,
+    "j_tribe"
+   ],
+   [
+    2,
+    "j_diet_cola"
+   ],
+   [
+    3,
+    "j_lusty_joker"
+   ],
+   [
+    4,
+    "j_delayed_grat"
+   ],
+   [
+    4,
+    "j_ride_the_bus"
+   ],
+   [
+    4,
+    "j_egg"
+   ],
+   [
+    4,
+    "j_delayed_grat"
+   ],
+   [
+    6,
+    "j_joker"
+   ],
+   [
+    6,
+    "j_blue_joker"
+   ],
+   [
+    7,
+    "j_ice_cream"
+   ],
+   [
+    7,
+    "j_abstract"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    268
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    153
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_chaos",
+     "j_tribe"
+    ],
+    108
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_chaos",
+     "j_tribe"
+    ],
+    528
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_abstract",
+     "j_chaos",
+     "j_tribe"
+    ],
+    1820
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_chaos",
+     "j_diet_cola",
+     "j_lusty_joker",
+     "j_tribe"
+    ],
+    560
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_chaos",
+     "j_diet_cola",
+     "j_lusty_joker",
+     "j_tribe"
+    ],
+    240
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_diet_cola",
+     "j_lusty_joker",
+     "j_tribe"
+    ],
+    2200
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_diet_cola",
+     "j_gros_michel",
+     "j_lusty_joker"
+    ],
+    3780
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_gros_michel",
+     "j_lusty_joker"
+    ],
+    3564
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_lusty_joker",
+     "j_stuntman"
+    ],
+    6318
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_lusty_joker",
+     "j_stuntman"
+    ],
+    6688
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_delayed_grat",
+     "j_green_joker",
+     "j_stuntman"
+    ],
+    6980
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_egg",
+     "j_green_joker",
+     "j_stuntman"
+    ],
+    7539
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_egg",
+     "j_green_joker",
+     "j_stuntman"
+    ],
+    7876
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_egg",
+     "j_green_joker",
+     "j_stuntman"
+    ],
+    7981
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_stuntman"
+    ],
+    11426
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_stuntman"
+    ],
+    11749
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_stuntman"
+    ],
+    11129
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_stuntman"
+    ],
+    12969
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_stuntman"
+    ],
+    11847
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_stuntman"
+    ],
+    13804
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_stuntman"
+    ],
+    12635
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_stuntman"
+    ],
+    21489
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_stuntman"
+    ],
+    14528
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    19875
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    20140
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    18250
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    17952
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_half",
+     "j_popcorn",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    15317
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_green_joker",
+     "j_half",
+     "j_popcorn",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    15444
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_green_joker",
+     "j_half",
+     "j_popcorn",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    15675
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_green_joker",
+     "j_half",
+     "j_popcorn",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    15680
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_green_joker",
+     "j_half",
+     "j_popcorn",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    15960
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_green_joker",
+     "j_half",
+     "j_popcorn",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    15158
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_green_joker",
+     "j_half",
+     "j_popcorn",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    15390
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_green_joker",
+     "j_half",
+     "j_popcorn",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    15675
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_diet_cola",
+     "j_gros_michel",
+     "j_lusty_joker"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_egg",
+     "j_green_joker",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_magician",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "s_black_hole",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_death",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_ice_cream",
+     "j_popcorn",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 30,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

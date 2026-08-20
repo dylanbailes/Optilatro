@@ -1,0 +1,98 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 24,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_hit_the_road"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_hit_the_road"
+  ],
+  "money_spent": 12,
+  "best_score": 600,
+  "rerolls": 0,
+  "packs_bought": 1,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    28
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_hit_the_road"
+    ],
+    328
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_hit_the_road"
+    ],
+    272
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hit_the_road"
+    ],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hit_the_road"
+    ],
+    112
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hit_the_road"
+    ],
+    80
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_hit_the_road"
+    ],
+    76
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 262,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

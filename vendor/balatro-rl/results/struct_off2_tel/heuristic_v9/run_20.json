@@ -1,0 +1,205 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 58,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_faceless",
+  "j_green_joker",
+  "j_greedy_joker",
+  "j_mime"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_faceless",
+   "j_greedy_joker",
+   "j_mime"
+  ],
+  "money_spent": 33,
+  "best_score": 1380,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    312
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    370
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    84
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    188
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    438
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    787
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    472
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker"
+    ],
+    540
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker"
+    ],
+    135
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker"
+    ],
+    634
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_mime"
+    ],
+    282
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_mime"
+    ],
+    483
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_mime"
+    ],
+    435
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_mime"
+    ],
+    180
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_faceless",
+     "j_green_joker"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 20,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 2.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

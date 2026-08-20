@@ -57,14 +57,20 @@ class Card:
         return f"{self.rank_name}{self.suit[0]}{e}{ed}{s}{d}"
 
     def copy(self) -> "Card":
-        return Card(
-            rank=self.rank,
-            suit=self.suit,
-            enhancement=self.enhancement,
-            edition=self.edition,
-            seal=self.seal,
-            debuffed=self.debuffed,
-        )
+        # __new__-based: identical fields + a fresh id, but avoids the
+        # dataclass __init__ machinery (Card.copy is ~200k calls/run on the
+        # eval-oracle path). Semantics are byte-identical to the old
+        # constructor (flipped defaults to False, as before).
+        c = Card.__new__(Card)
+        c.rank = self.rank
+        c.suit = self.suit
+        c.enhancement = self.enhancement
+        c.edition = self.edition
+        c.seal = self.seal
+        c.debuffed = self.debuffed
+        c.flipped = False
+        c.id = Card._next_id()
+        return c
 
 
 def make_standard_deck() -> list[Card]:

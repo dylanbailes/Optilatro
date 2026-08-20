@@ -1,0 +1,363 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 94,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_red_card",
+  "j_misprint",
+  "j_walkie_talkie",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_hierophant",
+   "c_chariot",
+   "c_wheel_of_fortune",
+   "c_hanged_man"
+  ],
+  "planets": [
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mail",
+   "j_popcorn",
+   "j_misprint",
+   "j_walkie_talkie",
+   "j_credit_card"
+  ],
+  "money_spent": 67,
+  "best_score": 6026,
+  "rerolls": 0,
+  "packs_bought": 9,
+  "packs_opened": 6,
+  "jokers_sold": [
+   [
+    2,
+    "j_mail"
+   ],
+   [
+    3,
+    "j_even_steven"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    40
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_mail",
+     "j_red_card"
+    ],
+    200
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_mail",
+     "j_red_card"
+    ],
+    108
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_mail",
+     "j_red_card"
+    ],
+    308
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_mail",
+     "j_red_card"
+    ],
+    1089
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_mail",
+     "j_popcorn",
+     "j_red_card"
+    ],
+    1320
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_mail",
+     "j_misprint",
+     "j_popcorn",
+     "j_red_card"
+    ],
+    1394
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_mail",
+     "j_misprint",
+     "j_popcorn",
+     "j_red_card"
+    ],
+    4251
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_misprint",
+     "j_popcorn",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    2650
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_popcorn",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    1050
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_popcorn",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    1116
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_popcorn",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    1584
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    2516
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    3510
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    1610
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    2691
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    308
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    323
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_saturn",
+    [
+     "j_mail",
+     "j_red_card"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_judgement",
+    [
+     "j_mail",
+     "j_red_card"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hierophant",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_popcorn",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_chariot",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_popcorn",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_wheel_of_fortune",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_hanged_man",
+    [
+     "j_credit_card",
+     "j_misprint",
+     "j_red_card",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 220,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

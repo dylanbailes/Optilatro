@@ -1,0 +1,278 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 51,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_popcorn",
+  "j_hallucination",
+  "j_egg",
+  "j_to_the_moon",
+  "j_fortune_teller"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_temperance",
+   "c_hanged_man",
+   "c_death",
+   "c_hanged_man",
+   "c_empress",
+   "c_hanged_man",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_popcorn",
+   "j_hallucination",
+   "j_to_the_moon"
+  ],
+  "money_spent": 48,
+  "best_score": 1422,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_popcorn"
+    ],
+    528
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    900
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    900
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_fortune_teller",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    1422
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_egg",
+     "j_fortune_teller",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    480
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_judgement",
+    [
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_temperance",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_egg",
+     "j_fortune_teller",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_egg",
+     "j_fortune_teller",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_egg",
+     "j_fortune_teller",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_egg",
+     "j_fortune_teller",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 208,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

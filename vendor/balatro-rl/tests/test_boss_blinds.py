@@ -108,12 +108,24 @@ class TestBossBlindInPlay:
             game.step({"type": "play", "cards": [0, 1, 2, 3, 4]})
             assert game.chips_scored > prev_chips or game.state != State.SELECTING_HAND
 
-    def test_hook_discards_2_from_play(self, game):
+    def test_hook_discards_2_unplayed_after_full_score(self, game):
+        """The Hook: the played hand is scored FULLY; 2 random UNPLAYED
+        cards are discarded afterwards (reference doc §10 / balatro-rs:
+        "Discards 2 random unplayed cards after every played hand")."""
         _setup_boss(game, "bl_hook")
-        hand_before = list(game.hand)
-        if len(game.hand) >= 4:
-            game.step({"type": "play", "cards": [0, 1, 2, 3]})
-            # Hook discards 2 from the selected cards, so at most 2 score
+        n_hand = len(game.hand)
+        if n_hand < 5:
+            return
+        played_ids = {id(c) for c in game.hand[:5]}
+        chips_before = game.chips_scored
+        game.step({"type": "play", "cards": [0, 1, 2, 3, 4]})
+        # The full 5-card play scored (Hook no longer removes played cards)
+        assert game.chips_scored > chips_before
+        # played cards left the hand for the spent pile
+        assert not any(id(c) in played_ids for c in game.hand)
+        # post-draw the hook discarded exactly 2 unplayed cards: full hand
+        # refills to hand_size, then 2 leave -> n_hand - 2 net
+        assert len(game.hand) == n_hand - 2
 
     def test_tooth_loses_money_per_card(self, game):
         _setup_boss(game, "bl_tooth")

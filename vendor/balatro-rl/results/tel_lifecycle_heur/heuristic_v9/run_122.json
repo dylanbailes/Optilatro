@@ -1,0 +1,158 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 35,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_throwback",
+  "j_reserved_parking",
+  "j_obelisk"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_throwback",
+   "j_reserved_parking",
+   "j_obelisk"
+  ],
+  "money_spent": 23,
+  "best_score": 920,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    288
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_throwback"
+    ],
+    352
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_throwback"
+    ],
+    124
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_reserved_parking",
+     "j_throwback"
+    ],
+    320
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_reserved_parking",
+     "j_throwback"
+    ],
+    288
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_obelisk",
+     "j_reserved_parking",
+     "j_throwback"
+    ],
+    96
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_obelisk",
+     "j_reserved_parking",
+     "j_throwback"
+    ],
+    379
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_obelisk",
+     "j_reserved_parking",
+     "j_throwback"
+    ],
+    341
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_obelisk",
+     "j_reserved_parking",
+     "j_throwback"
+    ],
+    416
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_obelisk",
+     "j_reserved_parking",
+     "j_throwback"
+    ],
+    276
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_obelisk",
+     "j_reserved_parking",
+     "j_throwback"
+    ],
+    116
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_obelisk",
+     "j_reserved_parking",
+     "j_throwback"
+    ],
+    112
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 122,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

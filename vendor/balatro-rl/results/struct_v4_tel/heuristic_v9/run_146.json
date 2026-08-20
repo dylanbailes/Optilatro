@@ -1,0 +1,208 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 57,
+ "truncated": false,
+ "dollars": 6,
+ "jokers": [
+  "j_sly",
+  "j_ticket",
+  "j_business",
+  "j_mail",
+  "j_hanging_chad"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_half",
+   "j_sly",
+   "j_ticket",
+   "j_business",
+   "j_mail",
+   "j_hanging_chad"
+  ],
+  "money_spent": 47,
+  "best_score": 3212,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    3,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_half",
+     "j_sly"
+    ],
+    336
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_half",
+     "j_sly"
+    ],
+    147
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half",
+     "j_sly",
+     "j_ticket"
+    ],
+    1364
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_sly",
+     "j_ticket"
+    ],
+    1760
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_half",
+     "j_sly",
+     "j_ticket"
+    ],
+    1380
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_sly",
+     "j_ticket"
+    ],
+    1540
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_half",
+     "j_sly",
+     "j_ticket"
+    ],
+    1452
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_mail",
+     "j_sly",
+     "j_ticket"
+    ],
+    1804
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_mail",
+     "j_sly",
+     "j_ticket"
+    ],
+    1408
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_business",
+     "j_hanging_chad",
+     "j_mail",
+     "j_sly",
+     "j_ticket"
+    ],
+    388
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_business",
+     "j_hanging_chad",
+     "j_mail",
+     "j_sly",
+     "j_ticket"
+    ],
+    16
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_business",
+     "j_hanging_chad",
+     "j_mail",
+     "j_sly",
+     "j_ticket"
+    ],
+    220
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_hanging_chad",
+     "j_mail",
+     "j_sly",
+     "j_ticket"
+    ],
+    132
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 146,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 58,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_bootstraps",
+  "j_walkie_talkie",
+  "j_zany",
+  "j_satellite",
+  "j_ride_the_bus"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_satellite",
+   "j_ride_the_bus"
+  ],
+  "money_spent": 36,
+  "best_score": 2640,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_walkie_talkie"
+    ],
+    696
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_bootstraps",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    690
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_bootstraps",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    2430
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_bootstraps",
+     "j_satellite",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    2640
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_ride_the_bus",
+     "j_satellite",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    531
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_ride_the_bus",
+     "j_satellite",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    708
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bootstraps",
+     "j_ride_the_bus",
+     "j_satellite",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    200
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bootstraps",
+     "j_ride_the_bus",
+     "j_satellite",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    80
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 205,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

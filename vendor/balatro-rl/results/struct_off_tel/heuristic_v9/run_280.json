@@ -1,0 +1,147 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 21,
+ "truncated": false,
+ "dollars": 6,
+ "jokers": [
+  "j_todo_list",
+  "j_business"
+ ],
+ "stats": {
+  "tarots": [
+   "c_sun"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_todo_list",
+   "j_business"
+  ],
+  "money_spent": 11,
+  "best_score": 572,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    92
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_todo_list"
+    ],
+    312
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_todo_list"
+    ],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_business",
+     "j_todo_list"
+    ],
+    56
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_business",
+     "j_todo_list"
+    ],
+    30
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_business",
+     "j_todo_list"
+    ],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_business",
+     "j_todo_list"
+    ],
+    44
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_sun",
+    [
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 280,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_structure": false,
+   "discard_hold_until_clear": false,
+   "discard_play_good_hand": 0.0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

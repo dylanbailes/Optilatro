@@ -1,0 +1,238 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 64,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_scholar",
+  "j_ticket",
+  "j_castle",
+  "j_joker",
+  "j_8_ball"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scholar",
+   "j_ticket",
+   "j_joker",
+   "j_8_ball"
+  ],
+  "money_spent": 35,
+  "best_score": 1428,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_reserved_parking"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    304
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    1020
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_castle",
+     "j_reserved_parking",
+     "j_scholar",
+     "j_ticket"
+    ],
+    236
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_castle",
+     "j_reserved_parking",
+     "j_scholar",
+     "j_ticket"
+    ],
+    106
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_castle",
+     "j_reserved_parking",
+     "j_scholar",
+     "j_ticket"
+    ],
+    195
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_castle",
+     "j_reserved_parking",
+     "j_scholar",
+     "j_ticket"
+    ],
+    220
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_castle",
+     "j_joker",
+     "j_reserved_parking",
+     "j_scholar",
+     "j_ticket"
+    ],
+    637
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_castle",
+     "j_joker",
+     "j_reserved_parking",
+     "j_scholar",
+     "j_ticket"
+    ],
+    270
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_castle",
+     "j_joker",
+     "j_reserved_parking",
+     "j_scholar",
+     "j_ticket"
+    ],
+    1428
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_castle",
+     "j_joker",
+     "j_scholar",
+     "j_ticket"
+    ],
+    264
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_castle",
+     "j_joker",
+     "j_scholar",
+     "j_ticket"
+    ],
+    540
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_castle",
+     "j_joker",
+     "j_scholar",
+     "j_ticket"
+    ],
+    195
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_castle",
+     "j_joker",
+     "j_scholar",
+     "j_ticket"
+    ],
+    324
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_castle",
+     "j_joker",
+     "j_reserved_parking",
+     "j_scholar",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_castle",
+     "j_joker",
+     "j_reserved_parking",
+     "j_scholar",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 27,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

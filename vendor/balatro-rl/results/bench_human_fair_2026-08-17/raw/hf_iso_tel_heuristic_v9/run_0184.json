@@ -1,0 +1,174 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 42,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_fibonacci",
+  "j_idol",
+  "j_blackboard"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_temperance",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_idol",
+   "j_blackboard"
+  ],
+  "money_spent": 33,
+  "best_score": 1958,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_fibonacci"
+    ],
+    468
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    1116
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    1958
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_fibonacci",
+     "j_idol"
+    ],
+    360
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blackboard",
+     "j_fibonacci",
+     "j_idol"
+    ],
+    144
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blackboard",
+     "j_fibonacci",
+     "j_idol"
+    ],
+    144
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_fibonacci",
+     "j_idol"
+    ],
+    252
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_jupiter",
+    [
+     "j_fibonacci"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_magician",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_temperance",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_fibonacci",
+     "j_idol"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 184,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

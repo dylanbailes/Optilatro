@@ -1,0 +1,306 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 96,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_hit_the_road",
+  "j_hanging_chad",
+  "j_misprint",
+  "j_jolly",
+  "j_8_ball"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_half",
+   "j_sly",
+   "j_ticket",
+   "j_hit_the_road",
+   "j_business",
+   "j_mail",
+   "j_hanging_chad",
+   "j_misprint",
+   "j_faceless",
+   "j_jolly",
+   "j_8_ball"
+  ],
+  "money_spent": 84,
+  "best_score": 5704,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_sly"
+   ],
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_business"
+   ],
+   [
+    3,
+    "j_mail"
+   ],
+   [
+    4,
+    "j_faceless"
+   ],
+   [
+    4,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    344
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half",
+     "j_sly"
+    ],
+    1540
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half",
+     "j_sly",
+     "j_ticket"
+    ],
+    1364
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_hit_the_road",
+     "j_sly",
+     "j_ticket"
+    ],
+    1408
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_sly",
+     "j_ticket"
+    ],
+    1760
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_sly",
+     "j_ticket"
+    ],
+    1760
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_mail",
+     "j_ticket"
+    ],
+    1449
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_mail",
+     "j_ticket"
+    ],
+    484
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_half",
+     "j_hit_the_road",
+     "j_mail",
+     "j_ticket"
+    ],
+    572
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_mail",
+     "j_misprint"
+    ],
+    2640
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_mail",
+     "j_misprint"
+    ],
+    680
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_faceless",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    4207
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    2100
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    1320
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_faceless",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    754
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_faceless",
+     "j_half",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_misprint"
+    ],
+    1530
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_8_ball",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_jolly",
+     "j_misprint"
+    ],
+    1656
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_jolly",
+     "j_misprint"
+    ],
+    1260
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_jolly",
+     "j_misprint"
+    ],
+    792
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_hanging_chad",
+     "j_hit_the_road",
+     "j_jolly",
+     "j_misprint"
+    ],
+    990
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 146,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

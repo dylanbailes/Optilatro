@@ -98,7 +98,9 @@ class TestRollDeterminism:
 
 
 class TestInstantTags:
-    def test_economy_doubles_capped_40(self):
+    def test_economy_doubles_below_40(self):
+        """Economy Tag: doubles below $40 — the +$40 cap is on the GAIN, not
+        the total (the old min(dollars*2, 40) model lost money at >$40)."""
         g = BalatroGame(seed=5, rng_mode="seed")
         g.dollars = 15
         _skip(g, "t_economy")
@@ -106,11 +108,33 @@ class TestInstantTags:
         g = BalatroGame(seed=5, rng_mode="seed")
         g.dollars = 25
         _skip(g, "t_economy")
-        assert g.dollars == 40  # 50 → capped at 40
+        assert g.dollars == 50  # 25 doubled (gain 25 < 40)
         g = BalatroGame(seed=5, rng_mode="seed")
-        g.dollars = 30
+        g.dollars = 39
         _skip(g, "t_economy")
-        assert g.dollars == 40  # 60 → capped at 40
+        assert g.dollars == 78
+
+    def test_economy_adds_40_at_or_above_40(self):
+        """At/above $40 the tag adds exactly $40 (wiki: $55 → $95)."""
+        g = BalatroGame(seed=5, rng_mode="seed")
+        g.dollars = 55
+        _skip(g, "t_economy")
+        assert g.dollars == 95
+        g = BalatroGame(seed=5, rng_mode="seed")
+        g.dollars = 40
+        _skip(g, "t_economy")
+        assert g.dollars == 80
+        g = BalatroGame(seed=5, rng_mode="seed")
+        g.dollars = 100
+        _skip(g, "t_economy")
+        assert g.dollars == 140
+
+    def test_economy_zeroes_negative_balance(self):
+        """A negative balance is not doubled — the tag wastes and sets $0."""
+        g = BalatroGame(seed=5, rng_mode="seed")
+        g.dollars = -15
+        _skip(g, "t_economy")
+        assert g.dollars == 0
 
     def test_speed_pays_5_per_skipped_blind(self):
         g = BalatroGame(seed=5, rng_mode="seed")
@@ -309,25 +333,39 @@ class TestQueuedTags:
         assert not g.double_tag_active
 
     def test_boss_tag_rerolls_next_boss(self):
+        """The Boss Tag reroll is consumed when the boss is PRE-SELECTED at
+        shop entry (the real flow) — two selection draws: the original pick
+        (no exclude) then the reroll (excluded)."""
         g = BalatroGame(seed=11, rng_mode="seed")
         apply_tag(g, "t_boss")
         assert g.boss_reroll_pending
         calls = []
+        picks = []
         orig = g._select_boss
 
         def spy(ante, exclude=None):
             calls.append(exclude)
-            return orig(ante, exclude=exclude)
+            key = orig(ante, exclude=exclude)
+            picks.append(key)
+            return key
 
         g._select_boss = spy
-        g.blind_idx = 2
+        g.blind_idx = 1                    # shop after the Big blind
+        g._preselect_next_boss()
+        assert g.next_boss_key is not None
+        assert not g.boss_reroll_pending   # consumed at pre-selection
+        # two selection draws: the original pick (no exclude) then the reroll
+        assert len(calls) == 2 and len(picks) == 2
+        assert calls[0] is None
+        assert calls[1] == picks[0]        # the reroll excluded the first pick
+        assert picks[0] != picks[1]
+        # the pre-selected boss is the reroll winner, and it is the one the
+        # blind is set up with (reused — no third draw)
+        g.blind_idx = 2          # advance past the shop: the Boss blind
         g._prepare_next_blind()
         assert g.current_blind.is_boss
-        assert not g.boss_reroll_pending
-        # two selection draws: the original pick (no exclude) then the reroll
+        assert g.current_blind.boss_key == picks[1]
         assert len(calls) == 2
-        assert calls[0] is None
-        assert calls[1] is not None
 
 
 class TestBoosterFlow:

@@ -1,0 +1,118 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 30,
+ "truncated": false,
+ "dollars": 7,
+ "jokers": [
+  "j_gift"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gift"
+  ],
+  "money_spent": 6,
+  "best_score": 560,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    252
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gift"
+    ],
+    124
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gift"
+    ],
+    64
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gift"
+    ],
+    260
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gift"
+    ],
+    60
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gift"
+    ],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gift"
+    ],
+    116
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gift"
+    ],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gift"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 66,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

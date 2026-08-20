@@ -1,0 +1,209 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 45,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_blue_joker",
+  "j_vampire",
+  "j_faceless",
+  "j_8_ball"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_vampire",
+   "j_faceless",
+   "j_8_ball"
+  ],
+  "money_spent": 28,
+  "best_score": 1216,
+  "rerolls": 1,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_blue_joker"
+    ],
+    268
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_blue_joker"
+    ],
+    196
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_vampire"
+    ],
+    576
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_vampire"
+    ],
+    71
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_faceless",
+     "j_vampire"
+    ],
+    288
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_faceless",
+     "j_vampire"
+    ],
+    280
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_faceless",
+     "j_vampire"
+    ],
+    369
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_faceless",
+     "j_vampire"
+    ],
+    632
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_faceless",
+     "j_vampire"
+    ],
+    584
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_faceless",
+     "j_vampire"
+    ],
+    596
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_faceless",
+     "j_vampire"
+    ],
+    240
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_faceless",
+     "j_vampire"
+    ],
+    148
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_faceless",
+     "j_vampire"
+    ],
+    144
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_faceless",
+     "j_vampire"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 96,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

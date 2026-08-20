@@ -1,0 +1,173 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 54,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_runner",
+  "j_business"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_runner",
+   "j_business"
+  ],
+  "money_spent": 19,
+  "best_score": 1061,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    124
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    117
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_runner"
+    ],
+    216
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_runner"
+    ],
+    212
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_runner"
+    ],
+    160
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_runner"
+    ],
+    220
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_runner"
+    ],
+    180
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_runner"
+    ],
+    128
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_runner"
+    ],
+    134
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_runner"
+    ],
+    576
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_runner"
+    ],
+    238
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_runner"
+    ],
+    375
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_runner"
+    ],
+    246
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_runner"
+    ],
+    226
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_business",
+     "j_runner"
+    ],
+    214
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 108,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

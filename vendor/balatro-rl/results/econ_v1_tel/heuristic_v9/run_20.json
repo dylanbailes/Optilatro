@@ -1,0 +1,156 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 48,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_faceless",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_faceless",
+   "j_greedy_joker"
+  ],
+  "money_spent": 25,
+  "best_score": 868,
+  "rerolls": 2,
+  "packs_bought": 1,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    292
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_faceless"
+    ],
+    292
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_faceless"
+    ],
+    260
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_faceless"
+    ],
+    308
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_faceless"
+    ],
+    320
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_faceless"
+    ],
+    324
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_faceless"
+    ],
+    344
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_faceless"
+    ],
+    200
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker"
+    ],
+    230
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker"
+    ],
+    135
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker"
+    ],
+    135
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker"
+    ],
+    87
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_faceless"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 20,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

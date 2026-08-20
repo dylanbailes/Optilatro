@@ -1,0 +1,308 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 91,
+ "truncated": false,
+ "dollars": 11,
+ "jokers": [
+  "j_cavendish",
+  "j_trio",
+  "j_delayed_grat",
+  "j_flower_pot"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_walkie_talkie",
+   "j_cavendish",
+   "j_odd_todd",
+   "j_half",
+   "j_gros_michel",
+   "j_trio",
+   "j_delayed_grat",
+   "j_flower_pot"
+  ],
+  "money_spent": 71,
+  "best_score": 7521,
+  "rerolls": 1,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_walkie_talkie"
+   ],
+   [
+    4,
+    "j_odd_todd"
+   ],
+   [
+    4,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    372
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ticket"
+    ],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_ticket"
+    ],
+    112
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ticket"
+    ],
+    44
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    696
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    423
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    540
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_odd_todd",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    1749
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_odd_todd",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    4929
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_half",
+     "j_odd_todd",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    4674
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_odd_todd",
+     "j_walkie_talkie"
+    ],
+    3168
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_odd_todd",
+     "j_trio"
+    ],
+    7521
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_half",
+     "j_odd_todd",
+     "j_trio"
+    ],
+    7245
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_trio"
+    ],
+    2772
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_trio"
+    ],
+    972
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_trio"
+    ],
+    423
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_trio"
+    ],
+    2160
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_mercury",
+    [
+     "j_cavendish",
+     "j_ticket",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_half",
+     "j_odd_todd",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 68,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

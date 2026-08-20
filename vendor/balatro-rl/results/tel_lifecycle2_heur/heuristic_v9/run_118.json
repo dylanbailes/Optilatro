@@ -1,0 +1,318 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 67,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_golden",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_hermit",
+   "c_hierophant",
+   "c_magician",
+   "c_hanged_man",
+   "c_empress",
+   "c_hanged_man",
+   "c_lovers"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_credit_card"
+  ],
+  "money_spent": 53,
+  "best_score": 1108,
+  "rerolls": 1,
+  "packs_bought": 8,
+  "packs_opened": 5,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    300
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    264
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    312
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    252
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    135
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    296
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    112
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    284
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    712
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    45
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    96
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    92
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    344
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_hermit",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_magician",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_empress",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_credit_card",
+     "j_golden"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 118,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

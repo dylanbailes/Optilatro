@@ -1,0 +1,783 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 208,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_madness",
+  "j_trousers",
+  "j_baseball",
+  "j_burglar",
+  "j_tribe"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_hierophant",
+   "c_hierophant",
+   "c_fool",
+   "c_chariot",
+   "c_fool",
+   "c_empress"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus",
+   "pl_mercury",
+   "pl_jupiter",
+   "pl_jupiter"
+  ],
+  "spectrals": [
+   "s_wraith"
+  ],
+  "jokers_bought": [
+   "j_crafty",
+   "j_cavendish",
+   "j_business",
+   "j_madness",
+   "j_trousers",
+   "j_gros_michel",
+   "j_mad",
+   "j_abstract",
+   "j_baseball",
+   "j_banner",
+   "j_photograph",
+   "j_burglar",
+   "j_loyalty_card",
+   "j_mr_bones",
+   "j_sly",
+   "j_arrowhead",
+   "j_popcorn",
+   "j_blackboard",
+   "j_seeing_double",
+   "j_burglar"
+  ],
+  "money_spent": 178,
+  "best_score": 124043,
+  "rerolls": 1,
+  "packs_bought": 14,
+  "packs_opened": 12,
+  "jokers_sold": [
+   [
+    3,
+    "j_crafty"
+   ],
+   [
+    3,
+    "j_business"
+   ],
+   [
+    4,
+    "j_mad"
+   ],
+   [
+    5,
+    "j_burglar"
+   ],
+   [
+    5,
+    "j_loyalty_card"
+   ],
+   [
+    7,
+    "j_blackboard"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    316
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    124
+   ],
+   [
+    1,
+    "Four of a Kind",
+    [],
+    700
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crafty"
+    ],
+    616
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crafty"
+    ],
+    724
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_crafty"
+    ],
+    316
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_crafty"
+    ],
+    1812
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_cavendish",
+     "j_crafty"
+    ],
+    3552
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_business",
+     "j_cavendish",
+     "j_crafty",
+     "j_ice_cream"
+    ],
+    2496
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_business",
+     "j_crafty",
+     "j_ice_cream",
+     "j_madness"
+    ],
+    1224
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_business",
+     "j_crafty",
+     "j_ice_cream",
+     "j_madness"
+    ],
+    1050
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_business",
+     "j_crafty",
+     "j_ice_cream",
+     "j_madness"
+    ],
+    963
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_business",
+     "j_crafty",
+     "j_ice_cream",
+     "j_madness",
+     "j_trousers"
+    ],
+    1398
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_business",
+     "j_crafty",
+     "j_ice_cream",
+     "j_madness",
+     "j_trousers"
+    ],
+    1326
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_business",
+     "j_crafty",
+     "j_ice_cream",
+     "j_madness",
+     "j_trousers"
+    ],
+    1530
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_gros_michel",
+     "j_mad",
+     "j_madness",
+     "j_trousers"
+    ],
+    5220
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_abstract",
+     "j_mad",
+     "j_madness",
+     "j_trousers"
+    ],
+    5980
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_mad",
+     "j_madness",
+     "j_trousers"
+    ],
+    3770
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_mad",
+     "j_madness",
+     "j_trousers"
+    ],
+    7087
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_madness",
+     "j_trousers"
+    ],
+    8505
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_madness",
+     "j_trousers"
+    ],
+    2592
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_madness",
+     "j_trousers"
+    ],
+    13182
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_madness",
+     "j_trousers"
+    ],
+    3780
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_trousers"
+    ],
+    9922
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_trousers"
+    ],
+    16584
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_mr_bones",
+     "j_trousers"
+    ],
+    15741
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_sly",
+     "j_trousers"
+    ],
+    41006
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_sly",
+     "j_trousers"
+    ],
+    39852
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_sly",
+     "j_trousers"
+    ],
+    11340
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_sly",
+     "j_trousers"
+    ],
+    27540
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_sly",
+     "j_trousers"
+    ],
+    15873
+   ],
+   [
+    7,
+    "Straight",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_popcorn",
+     "j_trousers"
+    ],
+    28586
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_popcorn",
+     "j_trousers"
+    ],
+    35268
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_baseball",
+     "j_blackboard",
+     "j_madness",
+     "j_popcorn",
+     "j_trousers"
+    ],
+    124043
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_seeing_double",
+     "j_trousers"
+    ],
+    66420
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_trousers"
+    ],
+    60810
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_trousers"
+    ],
+    18888
+   ],
+   [
+    8,
+    "Three of a Kind",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_tribe",
+     "j_trousers"
+    ],
+    9652
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_tribe",
+     "j_trousers"
+    ],
+    1360
+   ],
+   [
+    8,
+    "Straight",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_tribe",
+     "j_trousers"
+    ],
+    4387
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_tribe",
+     "j_trousers"
+    ],
+    3378
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_tribe",
+     "j_trousers"
+    ],
+    1852
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_tribe",
+     "j_trousers"
+    ],
+    1535
+   ],
+   [
+    8,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_tribe",
+     "j_trousers"
+    ],
+    25272
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_empress",
+    [
+     "j_crafty"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_crafty"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_madness",
+     "j_mr_bones",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Blue"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_uranus",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_mr_bones",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_fool",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_mr_bones",
+     "j_sly",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_uranus",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_sly",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_chariot",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_sly",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "pl_mercury",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_sly",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    7,
+    "pl_jupiter",
+    [
+     "j_baseball",
+     "j_madness",
+     "j_popcorn",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    8,
+    "c_fool",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_seeing_double",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    8,
+    "pl_jupiter",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_seeing_double",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    8,
+    "s_wraith",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    8,
+    "c_empress",
+    [
+     "j_baseball",
+     "j_burglar",
+     "j_madness",
+     "j_tribe",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 168,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

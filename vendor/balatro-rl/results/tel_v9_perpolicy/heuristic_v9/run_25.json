@@ -1,0 +1,306 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 88,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_splash",
+  "j_sock_and_buskin",
+  "j_joker",
+  "j_swashbuckler"
+ ],
+ "stats": {
+  "tarots": [
+   "c_high_priestess"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_ice_cream",
+   "j_splash",
+   "j_sly",
+   "j_mad",
+   "j_joker",
+   "j_swashbuckler"
+  ],
+  "money_spent": 60,
+  "best_score": 4914,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    3,
+    "j_sly"
+   ],
+   [
+    3,
+    "j_mad"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    116
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_ice_cream",
+     "j_splash"
+    ],
+    316
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_splash"
+    ],
+    234
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ice_cream",
+     "j_splash"
+    ],
+    540
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_splash"
+    ],
+    210
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_ice_cream",
+     "j_splash"
+    ],
+    644
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_ice_cream",
+     "j_splash"
+    ],
+    560
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_ice_cream",
+     "j_sly",
+     "j_splash"
+    ],
+    560
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_ice_cream",
+     "j_sly",
+     "j_splash"
+    ],
+    352
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_ice_cream",
+     "j_sly",
+     "j_splash"
+    ],
+    440
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_ice_cream",
+     "j_mad",
+     "j_sly",
+     "j_splash"
+    ],
+    1812
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_ice_cream",
+     "j_mad",
+     "j_sly",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    2040
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_mad",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    2224
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_mad",
+     "j_sock_and_buskin",
+     "j_splash"
+    ],
+    1568
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_sock_and_buskin",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    1176
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_sock_and_buskin",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    1568
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_sock_and_buskin",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    1050
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_sock_and_buskin",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    644
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_sock_and_buskin",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    1750
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_ice_cream",
+     "j_joker",
+     "j_sock_and_buskin",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    1904
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_joker",
+     "j_sock_and_buskin",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    960
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_joker",
+     "j_sock_and_buskin",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    300
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_high_priestess",
+    [
+     "j_ice_cream",
+     "j_splash"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 25,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

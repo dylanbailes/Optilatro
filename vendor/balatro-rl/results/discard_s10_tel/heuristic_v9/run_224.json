@@ -1,0 +1,302 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 101,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_crazy",
+  "j_devious",
+  "j_stencil",
+  "j_jolly"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_fool",
+   "c_empress",
+   "c_hierophant",
+   "c_temperance"
+  ],
+  "planets": [
+   "pl_saturn",
+   "pl_saturn",
+   "pl_saturn"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_devious",
+   "j_jolly"
+  ],
+  "money_spent": 69,
+  "best_score": 10816,
+  "rerolls": 0,
+  "packs_bought": 15,
+  "packs_opened": 9,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    308
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_crazy"
+    ],
+    1232
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_crazy"
+    ],
+    1340
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_stencil"
+    ],
+    1232
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_stencil"
+    ],
+    5664
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_stencil"
+    ],
+    4800
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_stencil"
+    ],
+    7866
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_stencil"
+    ],
+    7030
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_stencil"
+    ],
+    10816
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_jolly",
+     "j_stencil"
+    ],
+    1056
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_jolly",
+     "j_stencil"
+    ],
+    860
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_jolly",
+     "j_stencil"
+    ],
+    45
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_jolly",
+     "j_stencil"
+    ],
+    240
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_empress",
+    [
+     "j_crazy"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_fool",
+    [
+     "j_crazy"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_empress",
+    [
+     "j_crazy"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hierophant",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_stencil"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_saturn",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_saturn",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_temperance",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_stencil"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_saturn",
+    [
+     "j_crazy",
+     "j_devious",
+     "j_jolly",
+     "j_stencil"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 224,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "discard_ev_samples": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

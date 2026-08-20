@@ -80,6 +80,12 @@ def _score_single_card(card: Card, ctx: ScoreContext, jokers: list[JokerInstance
     elif card.edition == "Polychrome":
         ctx.mult_mult *= 1.5
 
+    # Gold seal: $3 when this card is SCORED (doc §8). This is per scoring
+    # pass, so Red seal and retrigger jokers multiply it like any other scored
+    # ability (§3.1 fix — was wrongly paid as a held-at-round-end effect).
+    if card.seal == "Gold":
+        ctx.pending_money += 3
+
     # Jokers: on_score_card
     for joker in jokers:
         joker.on_score_card(card, ctx)
@@ -171,9 +177,11 @@ def score_hand(
     mime = any(j.has_flag("retriggers_held") for j in jokers)
     held_steel = [c for c in ctx.held_cards
                   if c.enhancement == "Steel" and not c.debuffed]
-    for _ in held_steel:
-        ctx.mult_mult *= 1.5
-        if mime:
+    for c in held_steel:
+        # Mime retriggers held-in-hand abilities; a Red seal on the card itself
+        # retriggers them too (RULING-R: Steel X2.25 when Red-sealed).
+        triggers = 1 + (1 if mime else 0) + (1 if c.seal == "Red" else 0)
+        for _ in range(triggers):
             ctx.mult_mult *= 1.5
 
     # Glass shatter: 1-in-4 per non-debuffed Glass card scored, rolled once per

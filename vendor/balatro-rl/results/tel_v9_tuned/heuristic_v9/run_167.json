@@ -1,0 +1,222 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 72,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_lusty_joker",
+  "j_scholar",
+  "j_bootstraps",
+  "j_joker",
+  "j_splash"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_photograph",
+   "j_gros_michel",
+   "j_lusty_joker",
+   "j_scholar",
+   "j_bootstraps",
+   "j_joker"
+  ],
+  "money_spent": 62,
+  "best_score": 3438,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_ride_the_bus"
+   ],
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    3,
+    "j_photograph"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_photograph",
+     "j_ride_the_bus"
+    ],
+    592
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_photograph",
+     "j_ride_the_bus"
+    ],
+    1020
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gros_michel",
+     "j_photograph",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    864
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_gros_michel",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_reserved_parking",
+     "j_ride_the_bus"
+    ],
+    1200
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    2828
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_bootstraps",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    854
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    1738
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_bootstraps",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    584
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_joker",
+     "j_lusty_joker",
+     "j_photograph",
+     "j_scholar"
+    ],
+    2618
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_joker",
+     "j_lusty_joker",
+     "j_scholar",
+     "j_splash"
+    ],
+    793
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_joker",
+     "j_lusty_joker",
+     "j_scholar",
+     "j_splash"
+    ],
+    770
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_joker",
+     "j_lusty_joker",
+     "j_scholar",
+     "j_splash"
+    ],
+    300
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_bootstraps",
+     "j_joker",
+     "j_lusty_joker",
+     "j_scholar",
+     "j_splash"
+    ],
+    1575
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 167,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

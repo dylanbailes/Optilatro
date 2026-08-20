@@ -1,0 +1,117 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 30,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_scary_face",
+  "j_egg",
+  "j_credit_card"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_egg",
+   "j_credit_card"
+  ],
+  "money_spent": 9,
+  "best_score": 736,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    96
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    36
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_scary_face"
+    ],
+    228
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_scary_face"
+    ],
+    508
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face"
+    ],
+    256
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face"
+    ],
+    45
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face"
+    ],
+    60
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_scary_face"
+    ],
+    45
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 152,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

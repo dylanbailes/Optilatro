@@ -1,0 +1,773 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 237,
+ "truncated": false,
+ "dollars": 14,
+ "jokers": [
+  "j_smiley",
+  "j_cavendish",
+  "j_photograph",
+  "j_hanging_chad",
+  "j_shoot_the_moon"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_fool",
+   "c_judgement",
+   "c_death",
+   "c_hanged_man",
+   "c_lovers",
+   "c_death",
+   "c_chariot",
+   "c_chariot",
+   "c_devil",
+   "c_temperance",
+   "c_death"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_cryptid"
+  ],
+  "jokers_bought": [
+   "j_gros_michel",
+   "j_hallucination",
+   "j_8_ball",
+   "j_egg",
+   "j_blue_joker",
+   "j_ticket",
+   "j_smiley",
+   "j_greedy_joker",
+   "j_cavendish",
+   "j_scary_face",
+   "j_misprint",
+   "j_space",
+   "j_bull",
+   "j_photograph",
+   "j_swashbuckler",
+   "j_bloodstone",
+   "j_half",
+   "j_lucky_cat",
+   "j_acrobat",
+   "j_hanging_chad",
+   "j_business",
+   "j_half",
+   "j_shoot_the_moon"
+  ],
+  "money_spent": 282,
+  "best_score": 282312,
+  "rerolls": 6,
+  "packs_bought": 27,
+  "packs_opened": 16,
+  "jokers_sold": [
+   [
+    2,
+    "j_hallucination"
+   ],
+   [
+    3,
+    "j_8_ball"
+   ],
+   [
+    3,
+    "j_dusk"
+   ],
+   [
+    3,
+    "j_egg"
+   ],
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    4,
+    "j_greedy_joker"
+   ],
+   [
+    4,
+    "j_blue_joker"
+   ],
+   [
+    4,
+    "j_misprint"
+   ],
+   [
+    4,
+    "j_space"
+   ],
+   [
+    5,
+    "j_bull"
+   ],
+   [
+    6,
+    "j_scary_face"
+   ],
+   [
+    7,
+    "j_swashbuckler"
+   ],
+   [
+    7,
+    "j_bloodstone"
+   ],
+   [
+    8,
+    "j_half"
+   ],
+   [
+    8,
+    "j_lucky_cat"
+   ],
+   [
+    8,
+    "j_acrobat"
+   ],
+   [
+    8,
+    "j_raised_fist"
+   ],
+   [
+    8,
+    "j_business"
+   ],
+   [
+    8,
+    "j_half"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    264
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    40
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_gros_michel"
+    ],
+    680
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_gros_michel",
+     "j_hallucination"
+    ],
+    1026
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_gros_michel",
+     "j_hallucination",
+     "j_raised_fist"
+    ],
+    1488
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_hallucination",
+     "j_raised_fist"
+    ],
+    1540
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_egg",
+     "j_hallucination",
+     "j_raised_fist"
+    ],
+    600
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_egg",
+     "j_hallucination",
+     "j_raised_fist"
+    ],
+    616
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_egg",
+     "j_hallucination",
+     "j_raised_fist"
+    ],
+    650
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_blue_joker",
+     "j_dusk",
+     "j_egg",
+     "j_raised_fist"
+    ],
+    2120
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_dusk",
+     "j_egg",
+     "j_raised_fist",
+     "j_ticket"
+    ],
+    3240
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_egg",
+     "j_raised_fist",
+     "j_smiley",
+     "j_ticket"
+    ],
+    4400
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_greedy_joker",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    5535
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    7560
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley",
+     "j_space"
+    ],
+    32232
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    31080
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    51840
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    25896
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    27783
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    36519
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    105570
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    105570
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_bloodstone",
+     "j_cavendish",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    152145
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    49833
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    87192
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_cavendish",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    95040
+   ],
+   [
+    8,
+    "Four of a Kind",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    160776
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    73440
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    39960
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    8136
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_judgement",
+    [
+     "j_8_ball",
+     "j_gros_michel",
+     "j_hallucination"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_fool",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_gros_michel",
+     "j_hallucination"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_judgement",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_gros_michel",
+     "j_hallucination"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_hallucination",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_8_ball",
+     "j_dusk",
+     "j_hallucination",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_lovers",
+    [
+     "j_cavendish",
+     "j_misprint",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_bull",
+     "j_cavendish",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "Stone",
+      "edition": "None",
+      "seal": "Red"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_chariot",
+    [
+     "j_cavendish",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    5,
+    "s_cryptid",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_raised_fist",
+     "j_scary_face",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_chariot",
+    [
+     "j_cavendish",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_devil",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "pl_mercury",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_temperance",
+    [
+     "j_cavendish",
+     "j_half",
+     "j_photograph",
+     "j_raised_fist",
+     "j_smiley"
+    ],
+    []
+   ],
+   [
+    8,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_shoot_the_moon",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "Gold"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 67,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": true,
+  "seed_start": 0,
+  "games": 300
+ }
+}

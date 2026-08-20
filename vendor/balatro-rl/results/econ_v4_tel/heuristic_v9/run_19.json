@@ -1,0 +1,120 @@
+{
+ "won": false,
+ "ante": 1,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 29,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_clever",
+  "j_egg"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_clever",
+   "j_egg"
+  ],
+  "money_spent": 8,
+  "best_score": 512,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    135
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    56
+   ],
+   [
+    1,
+    "High Card",
+    [],
+    8
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_clever"
+    ],
+    236
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_clever"
+    ],
+    276
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_egg"
+    ],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_clever",
+     "j_egg"
+    ],
+    52
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_clever",
+     "j_egg"
+    ],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_clever",
+     "j_egg"
+    ],
+    40
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 19,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

@@ -1,0 +1,192 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 56,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_certificate",
+  "j_trousers",
+  "j_faceless",
+  "j_fortune_teller"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_certificate",
+   "j_trousers",
+   "j_faceless",
+   "j_fortune_teller"
+  ],
+  "money_spent": 30,
+  "best_score": 2542,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_certificate"
+    ],
+    324
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_certificate"
+    ],
+    138
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_certificate",
+     "j_trousers"
+    ],
+    256
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_trousers"
+    ],
+    240
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_trousers"
+    ],
+    240
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_certificate",
+     "j_trousers"
+    ],
+    744
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_trousers"
+    ],
+    168
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_certificate",
+     "j_faceless",
+     "j_trousers"
+    ],
+    720
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_faceless",
+     "j_trousers"
+    ],
+    464
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_faceless",
+     "j_trousers"
+    ],
+    144
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_certificate",
+     "j_faceless",
+     "j_fortune_teller",
+     "j_trousers"
+    ],
+    830
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_certificate",
+     "j_faceless",
+     "j_fortune_teller",
+     "j_trousers"
+    ],
+    432
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_certificate",
+     "j_faceless",
+     "j_fortune_teller",
+     "j_trousers"
+    ],
+    820
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_faceless",
+     "j_fortune_teller",
+     "j_trousers"
+    ],
+    460
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 45,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

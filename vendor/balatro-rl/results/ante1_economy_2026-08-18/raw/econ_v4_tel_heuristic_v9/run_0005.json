@@ -1,0 +1,745 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 206,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_blue_joker",
+  "j_ramen",
+  "j_seeing_double",
+  "j_raised_fist",
+  "j_shoot_the_moon"
+ ],
+ "stats": {
+  "tarots": [
+   "c_wheel_of_fortune",
+   "c_strength",
+   "c_chariot",
+   "c_magician",
+   "c_death",
+   "c_death",
+   "c_devil",
+   "c_fool",
+   "c_devil"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_immolate"
+  ],
+  "jokers_bought": [
+   "j_crafty",
+   "j_even_steven",
+   "j_blue_joker",
+   "j_greedy_joker",
+   "j_sly",
+   "j_reserved_parking",
+   "j_lusty_joker",
+   "j_campfire",
+   "j_ramen",
+   "j_swashbuckler",
+   "j_golden",
+   "j_red_card",
+   "j_seeing_double",
+   "j_to_the_moon",
+   "j_abstract",
+   "j_raised_fist",
+   "j_popcorn",
+   "j_shoot_the_moon"
+  ],
+  "money_spent": 232,
+  "best_score": 133832,
+  "rerolls": 2,
+  "packs_bought": 22,
+  "packs_opened": 14,
+  "jokers_sold": [
+   [
+    2,
+    "j_crafty"
+   ],
+   [
+    2,
+    "j_reserved_parking"
+   ],
+   [
+    2,
+    "j_lusty_joker"
+   ],
+   [
+    3,
+    "j_sly"
+   ],
+   [
+    3,
+    "j_greedy_joker"
+   ],
+   [
+    4,
+    "j_swashbuckler"
+   ],
+   [
+    4,
+    "j_golden"
+   ],
+   [
+    4,
+    "j_red_card"
+   ],
+   [
+    4,
+    "j_campfire"
+   ],
+   [
+    5,
+    "j_to_the_moon"
+   ],
+   [
+    5,
+    "j_abstract"
+   ],
+   [
+    5,
+    "j_even_steven"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    272
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crafty"
+    ],
+    816
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crafty",
+     "j_even_steven"
+    ],
+    640
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_crafty",
+     "j_even_steven",
+     "j_greedy_joker"
+    ],
+    1700
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_crafty",
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_sly"
+    ],
+    1140
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_crafty",
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_sly"
+    ],
+    145
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    2028
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_campfire",
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_sly"
+    ],
+    4173
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_campfire",
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_ramen"
+    ],
+    5700
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_campfire",
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_ramen"
+    ],
+    7410
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_campfire",
+     "j_even_steven",
+     "j_ramen",
+     "j_swashbuckler"
+    ],
+    9480
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_campfire",
+     "j_even_steven",
+     "j_ramen"
+    ],
+    7980
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_campfire",
+     "j_even_steven",
+     "j_ramen",
+     "j_red_card"
+    ],
+    4377
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_campfire",
+     "j_even_steven",
+     "j_ramen",
+     "j_red_card"
+    ],
+    8972
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ramen",
+     "j_seeing_double",
+     "j_to_the_moon"
+    ],
+    12506
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    14226
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    17445
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    33350
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    21677
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    30293
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    23733
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    19482
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    17969
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    16089
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    13110
+   ],
+   [
+    7,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    10529
+   ],
+   [
+    7,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    123303
+   ],
+   [
+    7,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    10099
+   ],
+   [
+    7,
+    "Full House",
+    [
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    18061
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    21258
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    11459
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_blue_joker",
+     "j_campfire",
+     "j_even_steven",
+     "j_greedy_joker",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_campfire",
+     "j_even_steven",
+     "j_ramen",
+     "j_red_card"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_strength",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ramen",
+     "j_seeing_double",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "s_immolate",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ramen",
+     "j_seeing_double",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_magician",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_even_steven",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_death",
+    [
+     "j_blue_joker",
+     "j_popcorn",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_devil",
+    [
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_fool",
+    [
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_devil",
+    [
+     "j_blue_joker",
+     "j_raised_fist",
+     "j_ramen",
+     "j_seeing_double",
+     "j_shoot_the_moon"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 5,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

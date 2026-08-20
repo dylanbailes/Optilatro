@@ -1,0 +1,230 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 64,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_half",
+  "j_ride_the_bus",
+  "j_chaos",
+  "j_todo_list",
+  "j_hallucination"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scary_face",
+   "j_half",
+   "j_ride_the_bus",
+   "j_fortune_teller",
+   "j_chaos",
+   "j_todo_list",
+   "j_hallucination"
+  ],
+  "money_spent": 48,
+  "best_score": 2684,
+  "rerolls": 3,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [
+   [
+    3,
+    "j_scary_face"
+   ],
+   [
+    3,
+    "j_fortune_teller"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_scary_face"
+    ],
+    220
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_scary_face"
+    ],
+    124
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_scary_face"
+    ],
+    92
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_scary_face"
+    ],
+    45
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_half",
+     "j_scary_face"
+    ],
+    616
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_ride_the_bus",
+     "j_scary_face"
+    ],
+    460
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_ride_the_bus",
+     "j_scary_face"
+    ],
+    432
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_half",
+     "j_ride_the_bus",
+     "j_scary_face"
+    ],
+    1980
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_fortune_teller",
+     "j_half",
+     "j_ride_the_bus",
+     "j_scary_face"
+    ],
+    1980
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_chaos",
+     "j_fortune_teller",
+     "j_half",
+     "j_ride_the_bus",
+     "j_scary_face"
+    ],
+    945
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_chaos",
+     "j_fortune_teller",
+     "j_half",
+     "j_ride_the_bus",
+     "j_scary_face"
+    ],
+    945
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_chaos",
+     "j_fortune_teller",
+     "j_half",
+     "j_ride_the_bus",
+     "j_scary_face"
+    ],
+    315
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_chaos",
+     "j_half",
+     "j_hallucination",
+     "j_ride_the_bus",
+     "j_todo_list"
+    ],
+    672
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_chaos",
+     "j_half",
+     "j_hallucination",
+     "j_ride_the_bus",
+     "j_todo_list"
+    ],
+    800
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_chaos",
+     "j_half",
+     "j_hallucination",
+     "j_ride_the_bus",
+     "j_todo_list"
+    ],
+    660
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_chaos",
+     "j_half",
+     "j_hallucination",
+     "j_ride_the_bus",
+     "j_todo_list"
+    ],
+    552
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 210,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

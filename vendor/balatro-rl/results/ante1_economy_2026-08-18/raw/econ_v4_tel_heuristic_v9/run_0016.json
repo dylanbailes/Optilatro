@@ -1,0 +1,289 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 75,
+ "truncated": false,
+ "dollars": 12,
+ "jokers": [
+  "j_blackboard",
+  "j_odd_todd",
+  "j_scholar",
+  "j_zany",
+  "j_mime"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_faceless",
+   "j_blackboard",
+   "j_odd_todd",
+   "j_scholar",
+   "j_rough_gem",
+   "j_egg",
+   "j_zany",
+   "j_mime"
+  ],
+  "money_spent": 52,
+  "best_score": 2862,
+  "rerolls": 0,
+  "packs_bought": 3,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    2,
+    "j_faceless"
+   ],
+   [
+    2,
+    "j_rough_gem"
+   ],
+   [
+    2,
+    "j_egg"
+   ],
+   [
+    2,
+    "j_hallucination"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    360
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_faceless"
+    ],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_faceless"
+    ],
+    88
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_faceless"
+    ],
+    108
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_blackboard",
+     "j_faceless"
+    ],
+    864
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_blackboard",
+     "j_faceless",
+     "j_odd_todd"
+    ],
+    544
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_blackboard",
+     "j_faceless",
+     "j_odd_todd"
+    ],
+    450
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_blackboard",
+     "j_faceless",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_scholar"
+    ],
+    1056
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_faceless",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_scholar"
+    ],
+    88
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blackboard",
+     "j_faceless",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_scholar"
+    ],
+    335
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_blackboard",
+     "j_egg",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_scholar"
+    ],
+    1152
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_blackboard",
+     "j_egg",
+     "j_odd_todd",
+     "j_rough_gem",
+     "j_scholar"
+    ],
+    480
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_blackboard",
+     "j_mime",
+     "j_odd_todd",
+     "j_scholar",
+     "j_zany"
+    ],
+    1344
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_blackboard",
+     "j_mime",
+     "j_odd_todd",
+     "j_scholar",
+     "j_zany"
+    ],
+    810
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_blackboard",
+     "j_mime",
+     "j_odd_todd",
+     "j_scholar",
+     "j_zany"
+    ],
+    660
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_blackboard",
+     "j_mime",
+     "j_odd_todd",
+     "j_scholar",
+     "j_zany"
+    ],
+    1890
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_mime",
+     "j_odd_todd",
+     "j_scholar",
+     "j_zany"
+    ],
+    180
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_mime",
+     "j_odd_todd",
+     "j_scholar",
+     "j_zany"
+    ],
+    132
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [
+     "j_blackboard",
+     "j_faceless",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 16,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "reroll_max": 1,
+   "reroll_min_money": 10
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

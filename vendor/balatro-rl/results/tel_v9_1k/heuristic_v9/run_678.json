@@ -1,0 +1,152 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 44,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_swashbuckler",
+  "j_hit_the_road",
+  "j_ride_the_bus",
+  "j_shoot_the_moon",
+  "j_jolly"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_world"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_swashbuckler",
+   "j_ride_the_bus",
+   "j_shoot_the_moon",
+   "j_jolly"
+  ],
+  "money_spent": 37,
+  "best_score": 2046,
+  "rerolls": 1,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    320
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_hit_the_road",
+     "j_swashbuckler"
+    ],
+    632
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_hit_the_road",
+     "j_ride_the_bus",
+     "j_swashbuckler"
+    ],
+    2046
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_hit_the_road",
+     "j_ride_the_bus",
+     "j_shoot_the_moon",
+     "j_swashbuckler"
+    ],
+    840
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hit_the_road",
+     "j_jolly",
+     "j_ride_the_bus",
+     "j_shoot_the_moon",
+     "j_swashbuckler"
+    ],
+    1750
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_hit_the_road",
+     "j_jolly",
+     "j_ride_the_bus",
+     "j_shoot_the_moon",
+     "j_swashbuckler"
+    ],
+    920
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [
+     "j_hit_the_road",
+     "j_ride_the_bus",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_world",
+    [
+     "j_hit_the_road",
+     "j_jolly",
+     "j_ride_the_bus",
+     "j_shoot_the_moon",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,236 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 67,
+ "truncated": false,
+ "dollars": 12,
+ "jokers": [
+  "j_misprint",
+  "j_zany",
+  "j_seeing_double",
+  "j_jolly"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_chariot"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_misprint",
+   "j_walkie_talkie",
+   "j_egg",
+   "j_zany",
+   "j_runner",
+   "j_seeing_double",
+   "j_sock_and_buskin",
+   "j_rocket",
+   "j_jolly"
+  ],
+  "money_spent": 73,
+  "best_score": 3426,
+  "rerolls": 3,
+  "packs_bought": 3,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_walkie_talkie"
+   ],
+   [
+    2,
+    "j_egg"
+   ],
+   [
+    3,
+    "j_sock_and_buskin"
+   ],
+   [
+    3,
+    "j_rocket"
+   ],
+   [
+    3,
+    "j_runner"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    252
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_misprint"
+    ],
+    1320
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_misprint",
+     "j_walkie_talkie"
+    ],
+    1008
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    576
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    154
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    1200
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    1520
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_runner",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    1700
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_misprint",
+     "j_runner",
+     "j_seeing_double",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    2088
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_misprint",
+     "j_rocket",
+     "j_runner",
+     "j_seeing_double",
+     "j_zany"
+    ],
+    804
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_misprint",
+     "j_rocket",
+     "j_runner",
+     "j_seeing_double",
+     "j_zany"
+    ],
+    2622
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_misprint",
+     "j_seeing_double",
+     "j_zany"
+    ],
+    1160
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_misprint",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_egg",
+     "j_misprint",
+     "j_runner",
+     "j_walkie_talkie",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 160,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

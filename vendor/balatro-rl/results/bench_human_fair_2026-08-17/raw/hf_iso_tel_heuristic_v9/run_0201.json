@@ -1,0 +1,268 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 84,
+ "truncated": false,
+ "dollars": 14,
+ "jokers": [
+  "j_misprint",
+  "j_photograph",
+  "j_zany",
+  "j_banner"
+ ],
+ "stats": {
+  "tarots": [
+   "c_lovers"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_joker",
+   "j_misprint",
+   "j_scary_face",
+   "j_photograph",
+   "j_delayed_grat",
+   "j_credit_card",
+   "j_zany",
+   "j_banner"
+  ],
+  "money_spent": 62,
+  "best_score": 6578,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 3,
+  "jokers_sold": [
+   [
+    2,
+    "j_golden"
+   ],
+   [
+    2,
+    "j_delayed_grat"
+   ],
+   [
+    3,
+    "j_scary_face"
+   ],
+   [
+    3,
+    "j_credit_card"
+   ],
+   [
+    3,
+    "j_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    332
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_joker",
+     "j_popcorn"
+    ],
+    624
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_joker",
+     "j_misprint",
+     "j_popcorn"
+    ],
+    750
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_joker",
+     "j_misprint",
+     "j_popcorn",
+     "j_scary_face"
+    ],
+    1392
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_golden",
+     "j_joker",
+     "j_misprint",
+     "j_popcorn",
+     "j_scary_face"
+    ],
+    1440
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_popcorn",
+     "j_scary_face"
+    ],
+    2430
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_popcorn",
+     "j_scary_face"
+    ],
+    990
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_scary_face"
+    ],
+    6578
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_misprint",
+     "j_photograph"
+    ],
+    1494
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_misprint",
+     "j_photograph"
+    ],
+    1458
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_joker",
+     "j_misprint",
+     "j_photograph"
+    ],
+    702
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_zany"
+    ],
+    2680
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_misprint",
+     "j_photograph",
+     "j_zany"
+    ],
+    780
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_banner",
+     "j_misprint",
+     "j_photograph",
+     "j_zany"
+    ],
+    296
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_banner",
+     "j_misprint",
+     "j_photograph",
+     "j_zany"
+    ],
+    312
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_banner",
+     "j_misprint",
+     "j_photograph",
+     "j_zany"
+    ],
+    160
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_lovers",
+    [
+     "j_joker",
+     "j_misprint",
+     "j_photograph",
+     "j_popcorn",
+     "j_scary_face"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 201,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "econ_value_weight": 0,
+   "gen_value_weight": 0
+  },
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

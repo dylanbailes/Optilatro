@@ -13,7 +13,7 @@ Covers the real-game rules (verified against balatrowiki.org/w/Blinds_and_Antes)
 from __future__ import annotations
 
 from balatro_sim.game import (
-    BalatroGame, BOSS_MIN_ANTE, SHOWDOWN_BOSSES, UNIMPLEMENTED_BOSSES,
+    BalatroGame, State, BOSS_MIN_ANTE, SHOWDOWN_BOSSES, UNIMPLEMENTED_BOSSES,
 )
 from balatro_sim.seed_rng import node_boss
 
@@ -159,3 +159,78 @@ class TestDeterminism:
         a = _pick_many(1, 20, seed=123)
         b = _pick_many(1, 20, seed=124)
         assert a != b
+
+
+class TestPreselectTiming:
+    """Boss-layer pass: the upcoming Boss Blind is selected at SHOP ENTRY
+    (game.next_boss_key), not at shop end — the real game reveals the boss
+    with the shop, and Director's Cut / the graph's boss-counter term need
+    the key while shopping. Same boss-node draws, one shop earlier; every
+    other node is independently seeded, so shop contents are unchanged."""
+
+    def test_boss_key_known_during_shop_after_big(self):
+        g = BalatroGame(seed=11, rng_mode="seed")
+        g.blind_idx = 1                    # just fought the Big blind
+        g._end_round()                     # shop entry: boss pre-selected
+        assert g.next_boss_key is not None
+        assert g.state == State.SHOP
+        # the graph context now sees the REAL key, not just the flag
+        from balatro_sim.graph_v9 import boss_context
+        coming, key = boss_context(g)
+        assert coming and key == g.next_boss_key
+        # leaving the shop sets up the boss with the SAME key (no reselect)
+        old = g.next_boss_key
+        g._end_shop()
+        assert g.current_blind.is_boss
+        assert g.current_blind.boss_key == old
+        assert g.next_boss_key is None     # consumed
+
+    def test_no_preselect_except_before_boss(self):
+        g0 = BalatroGame(seed=11, rng_mode="seed")
+        g0.blind_idx = 0                   # after Small: next is Big
+        g0._end_round()
+        assert g0.next_boss_key is None
+        g1 = BalatroGame(seed=11, rng_mode="seed")
+        g1.blind_idx = 1                   # after Big: next IS the Boss
+        g1._end_round()
+        assert g1.next_boss_key is not None
+        g2 = BalatroGame(seed=11, rng_mode="seed")
+        g2.blind_idx = 2                   # after Boss: ante advances
+        g2._end_round()
+        assert g2.next_boss_key is None
+
+    def test_preselect_idempotent_no_extra_draw(self):
+        """A second shop-entry call (e.g. free-pack tag flow) must not draw
+        the boss node again."""
+        g = BalatroGame(seed=11, rng_mode="seed")
+        g.blind_idx = 1
+        g.rng.enable_tracing()
+        g._preselect_next_boss()
+        g._preselect_next_boss()
+        boss_draws = [r for r in g.rng.records if r.node == node_boss()]
+        assert len(boss_draws) == 1
+
+    def test_boss_node_drawn_before_shop_at_entry(self):
+        """Seed-mode trace: the boss draw moves BEFORE the first shop draw
+        (Voucher1 at the ante-1 restock); the per-node streams stay
+        independent, so the shop itself is unchanged."""
+        g = BalatroGame(seed=11, rng_mode="seed")
+        g.blind_idx = 1
+        g.rng.enable_tracing()
+        g._end_round()
+        records = g.rng.records
+        boss_pos = next(i for i, r in enumerate(records) if r.node == node_boss())
+        voucher_pos = next(i for i, r in enumerate(records)
+                           if r.node.startswith("Voucher"))
+        assert boss_pos < voucher_pos
+
+    def test_preselect_uses_rotation_and_min_ante(self):
+        """Pre-selection follows the same real rules as the old shop-end
+        selection: same seed, same ante-1 boss via either path."""
+        legacy = BalatroGame(seed=3, rng_mode="seed")
+        legacy.blind_idx = 2
+        legacy._prepare_next_blind()
+        preselected = BalatroGame(seed=3, rng_mode="seed")
+        preselected.blind_idx = 1
+        preselected._preselect_next_boss()
+        assert preselected.next_boss_key == legacy.current_blind.boss_key

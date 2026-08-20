@@ -1,0 +1,189 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 56,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_seeing_double",
+  "j_splash",
+  "j_scary_face",
+  "j_swashbuckler"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_hermit",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_seeing_double",
+   "j_splash",
+   "j_scary_face",
+   "j_swashbuckler"
+  ],
+  "money_spent": 53,
+  "best_score": 1440,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 2,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_seeing_double"
+    ],
+    284
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_seeing_double"
+    ],
+    180
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_seeing_double"
+    ],
+    696
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_scary_face",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    504
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_scary_face",
+     "j_seeing_double",
+     "j_splash"
+    ],
+    832
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_scary_face",
+     "j_seeing_double",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    1140
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_scary_face",
+     "j_seeing_double",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    300
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_scary_face",
+     "j_seeing_double",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    340
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_scary_face",
+     "j_seeing_double",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    126
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_scary_face",
+     "j_seeing_double",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    180
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_seeing_double"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_hermit",
+    [
+     "j_seeing_double"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_scary_face",
+     "j_seeing_double",
+     "j_splash",
+     "j_swashbuckler"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 145,
+ "_cfg": {
+  "policy": "search_shop_v9",
+  "rng_mode": "seed",
+  "params": {
+   "use_wiki_prior": false
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

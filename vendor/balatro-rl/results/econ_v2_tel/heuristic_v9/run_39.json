@@ -1,0 +1,267 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 77,
+ "truncated": false,
+ "dollars": 6,
+ "jokers": [
+  "j_family",
+  "j_ice_cream",
+  "j_hanging_chad",
+  "j_joker",
+  "j_rough_gem"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_family",
+   "j_ice_cream",
+   "j_golden",
+   "j_clever",
+   "j_hanging_chad",
+   "j_joker",
+   "j_rough_gem"
+  ],
+  "money_spent": 57,
+  "best_score": 2149,
+  "rerolls": 1,
+  "packs_bought": 3,
+  "packs_opened": 1,
+  "jokers_sold": [
+   [
+    2,
+    "j_golden"
+   ],
+   [
+    3,
+    "j_clever"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    44
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_family"
+    ],
+    324
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_family"
+    ],
+    88
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_family"
+    ],
+    64
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_family",
+     "j_ice_cream"
+    ],
+    480
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_family",
+     "j_ice_cream"
+    ],
+    218
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_family",
+     "j_golden",
+     "j_ice_cream"
+    ],
+    728
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_family",
+     "j_golden",
+     "j_ice_cream"
+    ],
+    206
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_family",
+     "j_golden",
+     "j_ice_cream"
+    ],
+    636
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_family",
+     "j_golden",
+     "j_ice_cream"
+    ],
+    405
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_family",
+     "j_golden",
+     "j_ice_cream"
+    ],
+    200
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_clever",
+     "j_family",
+     "j_golden",
+     "j_ice_cream"
+    ],
+    768
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_clever",
+     "j_family",
+     "j_golden",
+     "j_ice_cream"
+    ],
+    528
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_family",
+     "j_golden",
+     "j_ice_cream"
+    ],
+    354
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_family",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_joker"
+    ],
+    1236
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_clever",
+     "j_family",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_joker"
+    ],
+    800
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_family",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_joker",
+     "j_rough_gem"
+    ],
+    672
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_family",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_joker",
+     "j_rough_gem"
+    ],
+    864
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_family",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_joker",
+     "j_rough_gem"
+    ],
+    408
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_family",
+     "j_hanging_chad",
+     "j_ice_cream",
+     "j_joker",
+     "j_rough_gem"
+    ],
+    205
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 39,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

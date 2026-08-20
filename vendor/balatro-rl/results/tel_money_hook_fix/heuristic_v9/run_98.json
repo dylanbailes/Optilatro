@@ -1,0 +1,471 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 119,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_green_joker",
+  "j_greedy_joker",
+  "j_jolly",
+  "j_joker",
+  "j_flash"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_magician",
+   "c_wheel_of_fortune",
+   "c_moon"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_green_joker",
+   "j_greedy_joker",
+   "j_ticket",
+   "j_todo_list",
+   "j_joker",
+   "j_business",
+   "j_flash"
+  ],
+  "money_spent": 80,
+  "best_score": 6802,
+  "rerolls": 0,
+  "packs_bought": 10,
+  "packs_opened": 7,
+  "jokers_sold": [
+   [
+    2,
+    "j_to_the_moon"
+   ],
+   [
+    2,
+    "j_ticket"
+   ],
+   [
+    3,
+    "j_todo_list"
+   ],
+   [
+    4,
+    "j_business"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    292
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_green_joker",
+     "j_to_the_moon"
+    ],
+    370
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_green_joker",
+     "j_to_the_moon"
+    ],
+    112
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_to_the_moon"
+    ],
+    726
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_jolly",
+     "j_ticket",
+     "j_to_the_moon"
+    ],
+    868
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_jolly",
+     "j_ticket",
+     "j_to_the_moon"
+    ],
+    780
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_jolly",
+     "j_ticket",
+     "j_to_the_moon"
+    ],
+    570
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_jolly",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    711
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_jolly",
+     "j_ticket",
+     "j_todo_list"
+    ],
+    1134
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly",
+     "j_todo_list"
+    ],
+    1953
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly",
+     "j_todo_list"
+    ],
+    442
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly",
+     "j_todo_list"
+    ],
+    1428
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly",
+     "j_todo_list"
+    ],
+    600
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly",
+     "j_todo_list"
+    ],
+    1360
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    2000
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    810
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    2250
+   ],
+   [
+    4,
+    "Straight Flush",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    2100
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    2150
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    2156
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_flash",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    2352
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_flash",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    1968
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_flash",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    1938
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_flash",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    544
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_death",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_wheel_of_fortune",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_moon",
+    [
+     "j_business",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 98,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

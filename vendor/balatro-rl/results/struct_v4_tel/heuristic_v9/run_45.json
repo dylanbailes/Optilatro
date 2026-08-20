@@ -1,0 +1,183 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 45,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_certificate",
+  "j_trousers",
+  "j_idol",
+  "j_faceless"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_certificate",
+   "j_trousers",
+   "j_idol",
+   "j_faceless"
+  ],
+  "money_spent": 22,
+  "best_score": 960,
+  "rerolls": 0,
+  "packs_bought": 0,
+  "packs_opened": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_certificate"
+    ],
+    324
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_certificate"
+    ],
+    268
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_certificate",
+     "j_trousers"
+    ],
+    276
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_certificate",
+     "j_trousers"
+    ],
+    176
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_certificate",
+     "j_trousers"
+    ],
+    126
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_certificate",
+     "j_trousers"
+    ],
+    60
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_idol",
+     "j_trousers"
+    ],
+    168
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_certificate",
+     "j_idol",
+     "j_trousers"
+    ],
+    348
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_certificate",
+     "j_idol",
+     "j_trousers"
+    ],
+    444
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_certificate",
+     "j_faceless",
+     "j_idol",
+     "j_trousers"
+    ],
+    468
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_certificate",
+     "j_faceless",
+     "j_idol",
+     "j_trousers"
+    ],
+    45
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_faceless",
+     "j_idol",
+     "j_trousers"
+    ],
+    96
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_certificate",
+     "j_faceless",
+     "j_idol",
+     "j_trousers"
+    ],
+    64
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 45,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "lookahead": false,
+  "seed_start": 0,
+  "games": 300
+ }
+}

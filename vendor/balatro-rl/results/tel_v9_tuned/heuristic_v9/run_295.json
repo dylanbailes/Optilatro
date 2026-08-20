@@ -1,0 +1,195 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 60,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_sock_and_buskin",
+  "j_selzer"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_sock_and_buskin",
+   "j_selzer"
+  ],
+  "money_spent": 37,
+  "best_score": 1848,
+  "rerolls": 1,
+  "packs_bought": 2,
+  "packs_opened": 1,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    100
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    200
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_sock_and_buskin"
+    ],
+    252
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_sock_and_buskin"
+    ],
+    200
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_sock_and_buskin"
+    ],
+    480
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_sock_and_buskin"
+    ],
+    200
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_sock_and_buskin"
+    ],
+    644
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_sock_and_buskin"
+    ],
+    200
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_sock_and_buskin"
+    ],
+    456
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_sock_and_buskin"
+    ],
+    580
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_sock_and_buskin"
+    ],
+    384
+   ],
+   [
+    2,
+    "Four of a Kind",
+    [
+     "j_sock_and_buskin"
+    ],
+    1330
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_sock_and_buskin"
+    ],
+    152
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_sock_and_buskin"
+    ],
+    164
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_selzer",
+     "j_sock_and_buskin"
+    ],
+    498
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_selzer",
+     "j_sock_and_buskin"
+    ],
+    570
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_selzer",
+     "j_sock_and_buskin"
+    ],
+    176
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_selzer",
+     "j_sock_and_buskin"
+    ],
+    604
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_sock_and_buskin"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 295,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

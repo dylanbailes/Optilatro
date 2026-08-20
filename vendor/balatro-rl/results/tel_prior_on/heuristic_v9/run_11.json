@@ -1,0 +1,238 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 59,
+ "truncated": false,
+ "dollars": 4,
+ "jokers": [
+  "j_todo_list",
+  "j_runner",
+  "j_odd_todd",
+  "j_raised_fist"
+ ],
+ "stats": {
+  "tarots": [
+   "c_sun",
+   "c_death",
+   "c_star"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_runner",
+   "j_odd_todd",
+   "j_raised_fist"
+  ],
+  "money_spent": 47,
+  "best_score": 1548,
+  "rerolls": 1,
+  "packs_bought": 5,
+  "packs_opened": 3,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_todo_list"
+    ],
+    324
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_todo_list"
+    ],
+    296
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_runner",
+     "j_todo_list"
+    ],
+    320
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_runner",
+     "j_todo_list"
+    ],
+    76
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_runner",
+     "j_todo_list"
+    ],
+    80
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_runner",
+     "j_todo_list"
+    ],
+    132
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_odd_todd",
+     "j_runner",
+     "j_todo_list"
+    ],
+    540
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_odd_todd",
+     "j_runner",
+     "j_todo_list"
+    ],
+    436
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_runner",
+     "j_todo_list"
+    ],
+    1548
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_runner",
+     "j_todo_list"
+    ],
+    676
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_runner",
+     "j_todo_list"
+    ],
+    799
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_sun",
+    [
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_odd_todd",
+     "j_runner",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_star",
+    [
+     "j_odd_todd",
+     "j_runner",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 11,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {},
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}

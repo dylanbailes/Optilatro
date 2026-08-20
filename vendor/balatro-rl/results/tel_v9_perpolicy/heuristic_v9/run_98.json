@@ -1,0 +1,264 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 104,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_greedy_joker",
+  "j_jolly",
+  "j_joker",
+  "j_sly",
+  "j_blue_joker"
+ ],
+ "stats": {
+  "tarots": [],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_green_joker",
+   "j_greedy_joker",
+   "j_joker",
+   "j_sly",
+   "j_blue_joker"
+  ],
+  "money_spent": 75,
+  "best_score": 8495,
+  "rerolls": 2,
+  "packs_bought": 8,
+  "packs_opened": 2,
+  "jokers_sold": [
+   [
+    3,
+    "j_green_joker"
+   ],
+   [
+    4,
+    "j_flower_pot"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    292
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_green_joker"
+    ],
+    370
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_green_joker"
+    ],
+    112
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_greedy_joker",
+     "j_green_joker"
+    ],
+    726
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_jolly"
+    ],
+    868
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_jolly"
+    ],
+    780
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_jolly"
+    ],
+    570
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_jolly"
+    ],
+    711
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_jolly"
+    ],
+    1134
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    3534
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    2916
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    532
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    2916
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_green_joker",
+     "j_joker",
+     "j_jolly"
+    ],
+    2520
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_joker",
+     "j_jolly",
+     "j_sly"
+    ],
+    5100
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_jolly",
+     "j_sly"
+    ],
+    3264
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_jolly",
+     "j_sly"
+    ],
+    3243
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_jolly",
+     "j_sly"
+    ],
+    1988
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_greedy_joker",
+     "j_joker",
+     "j_jolly",
+     "j_sly"
+    ],
+    3128
+   ]
+  ],
+  "consumable_uses": []
+ },
+ "seed": 98,
+ "_cfg": {
+  "policy": "heuristic_v9",
+  "rng_mode": "seed",
+  "params": {
+   "synergy_tree": "D:\\Optilatro\\tools\\synergy_tree_heuristic_v9.json"
+  },
+  "search_shops": 1,
+  "seed_start": 0,
+  "games": 300
+ }
+}
