@@ -164,6 +164,38 @@ _XMULT_HAND_MAP = {
     "j_order": "Straight", "j_tribe": "Flush",
 }
 
+def joker_target_hand_type(game):
+    """Hand type to chase for owned jokers — the highest-value chip/xMult engine's hand.
+    Returns None if no hand-specific joker. Gated farm<1.0."""
+    try:
+        if V10_PARAMS.get("farm_clear_threshold", 0.9) >= 1.0:
+            return None
+    except Exception:
+        return None
+    if not getattr(game, "jokers", None):
+        return None
+    candidates = []
+    for j in game.jokers:
+        ht = _CHIPS_HAND_MAP.get(j.key) or _XMULT_HAND_MAP.get(j.key)
+        if ht:
+            # Value via joker_value on reference hand — higher value = more important to chase
+            try:
+                from .agent_v9 import reference_hand as _ref
+                ref = _ref(game)
+                v = joker_value(game, j.key, j.edition, ref)
+            except Exception:
+                v = 0.0
+            candidates.append((v, ht))
+    # Photograph — prefer Flush if flush draw exists, else Pair with face
+    owned = {j.key for j in game.jokers}
+    if "j_photograph" in owned:
+        # Photograph wants face + hand, Flush with face is ideal per §2 (x2 first face)
+        candidates.append((0.20, "Flush"))
+    if not candidates:
+        return None
+    candidates.sort(reverse=True)
+    return candidates[0][1]
+
 def _hand_keep_indices(hand, hand_type: str):
     """Indices of cards in `hand` that support `hand_type` and should not be discarded."""
     n = len(hand)

@@ -168,3 +168,39 @@ def test_joker_keep_respects_farm_off():
     keep = joker_keep_indices(hand, g)
     assert keep == set(), f"farm off should keep nothing, got {keep}"
     V10_PARAMS["farm_clear_threshold"] = old
+
+
+def test_joker_target_hand_type():
+    from balatro_sim.game import BalatroGame
+    from balatro_sim.jokers.base import JokerInstance
+    from balatro_sim.agent_v10 import joker_target_hand_type, V10_PARAMS
+    g = BalatroGame(seed=1, rng_mode="seed")
+    g.ante = 1
+    g.jokers = [JokerInstance("j_sly")]
+    assert joker_target_hand_type(g) == "Pair"
+    g.jokers = [JokerInstance("j_photograph")]
+    assert joker_target_hand_type(g) == "Flush"
+    old = V10_PARAMS["farm_clear_threshold"]
+    V10_PARAMS["farm_clear_threshold"] = 1.0
+    assert joker_target_hand_type(g) is None
+    V10_PARAMS["farm_clear_threshold"] = old
+
+
+def test_best_discard_keeps_photograph_face():
+    from balatro_sim.game import BalatroGame
+    from balatro_sim.card import Card
+    from balatro_sim.jokers.base import JokerInstance
+    from balatro_sim.agent_v9 import best_discard
+    g = BalatroGame(seed=1, rng_mode="seed")
+    g.ante = 1
+    g.current_blind.kind = "Small"
+    g.current_blind.chips_target = 300
+    g.chips_scored = 0
+    g.hands_left = 4
+    g.discards_left = 4
+    g.jokers = [JokerInstance("j_photograph")]
+    g.hand = [Card(11,"Hearts"), Card(13,"Spades"), Card(5,"Clubs"), Card(7,"Diamonds"), Card(9,"Hearts"), Card(2,"Clubs"), Card(3,"Diamonds"), Card(4,"Spades")]
+    g.deck = [Card(6,"Hearts") for _ in range(20)]
+    dset, _ = best_discard(g)
+    # Should not discard faces (J, K)
+    assert 0 not in dset and 1 not in dset, f"photograph should keep faces, discard {dset}"
