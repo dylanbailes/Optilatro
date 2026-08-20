@@ -1,5 +1,5 @@
 """Generate tools/boss_spec.json — machine-readable Boss Blind contracts parsed
-from balatro-mechanics-reference(2).md §10 + §16 (the project's source of
+from docs/reference/balatro-mechanics.md §10 + §16 (the project's source of
 truth), keyed by the sim's canonical keys (bl_*).
 
 Each spec entry:
@@ -21,11 +21,13 @@ import json
 import re
 import sys
 
-sys.path.insert(0, "vendor/balatro-rl")
+from _paths import REFERENCE_DOC, ROOT, VENDOR_RL
+
+sys.path.insert(0, str(VENDOR_RL))
 from balatro_sim.game import BOSS_MIN_ANTE, SHOWDOWN_BOSSES
 
-DOC = "balatro-mechanics-reference(2).md"
-OUT = "tools/boss_spec.json"
+DOC = str(REFERENCE_DOC)
+OUT = str(ROOT / "tools" / "boss_spec.json")
 
 #: Doc display name -> sim key. The slug rule ("The Arm" -> bl_arm) covers
 #: everything except The Arm, whose sim key is the internal-name bl_grim.

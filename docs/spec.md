@@ -1,7 +1,8 @@
 # Balatro AI Optimizer — Project Specification
 
-**Status:** Draft v1 — interview-complete, pre-implementation
+**Status:** Draft v1 — interview-complete, then largely executed (see [STATUS.md](STATUS.md))
 **Date:** 2026-08-06
+**Location:** moved from the repo root (`balatro-ai-spec.md`) to `docs/spec.md`.
 **Root cause / goal:** Build a lightweight system that plays Balatro with the goal of **maximizing ante-8 win rate** (base game, no Endless).
 **Route (decided):** Headless simulator-first. Train/experiment in a fast pure-Python sim, verify against the real game via a Steamodded mod in a final live phase.
 

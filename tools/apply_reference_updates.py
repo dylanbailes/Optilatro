@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Apply the verified updates to balatro-mechanics-reference(2).md.
+Apply the verified updates to docs/reference/balatro-mechanics.md.
 
 Sources used (all verified against balatrowiki.org and balatro-rs game data):
   - Joker activation types:  https://balatrowiki.org/w/Activation_Type
@@ -12,8 +12,9 @@ Every replacement is asserted to apply; the script exits non-zero if any misses.
 """
 import re
 import sys
+from pathlib import Path
 
-PATH = "balatro-mechanics-reference(2).md"
+PATH = str(Path(__file__).resolve().parent.parent / "docs" / "reference" / "balatro-mechanics.md")
 src = open(PATH, encoding="utf-8").read()
 orig = src
 

@@ -1,7 +1,7 @@
 # M2 — Reference-Doc Fidelity Audit (2026-08-06)
 
 Audits `vendor/balatro-rl` against the verified source of truth,
-`balatro-mechanics-reference(2).md` (which was itself cross-checked against
+`docs/reference/balatro-mechanics.md` (which was itself cross-checked against
 balatrowiki.org and balatro-rs game data). Scope: every mechanic the reference
 doc now pinpoints — stickers, boss score multipliers + Matador compatibility,
 shop generation weights, first-shop booster guarantee, Illusion, plus the

@@ -3,7 +3,7 @@ fidelity gate.
 
 Verifies the sim's consumable definitions and apply_* implementations against
 tools/consumable_spec.json, which is generated from
-balatro-mechanics-reference(2).md §3-§5 + §9 (the project's source of truth).
+docs/reference/balatro-mechanics.md §3-§5 + §9 (the project's source of truth).
 
 Gates, each of which must report 0:
 

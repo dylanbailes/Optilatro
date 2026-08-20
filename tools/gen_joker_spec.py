@@ -1,5 +1,5 @@
 """Generate tools/joker_spec.json — machine-readable joker contracts parsed
-from balatro-mechanics-reference(2).md §2 (the project's source of truth),
+from docs/reference/balatro-mechanics.md §2 (the project's source of truth),
 keyed by the sim's canonical JOKER_CATALOGUE keys.
 
 Each spec entry: {name, cost, type, effect, timing}
@@ -17,11 +17,13 @@ import json
 import re
 import sys
 
-sys.path.insert(0, "vendor/balatro-rl")
+from _paths import REFERENCE_DOC, ROOT, VENDOR_RL
+
+sys.path.insert(0, str(VENDOR_RL))
 from balatro_sim.shop import JOKER_CATALOGUE  # canonical key -> {name, rarity, price}
 
-DOC = "balatro-mechanics-reference(2).md"
-OUT = "tools/joker_spec.json"
+DOC = str(REFERENCE_DOC)
+OUT = str(ROOT / "tools" / "joker_spec.json")
 
 
 def norm(s: str) -> str:

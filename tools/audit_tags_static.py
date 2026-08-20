@@ -1,7 +1,7 @@
 """Static skip-blind Tag audit — catalogue + roll + apply-path fidelity gate.
 
 Verifies the sim's tag definitions and apply paths against
-tools/tag_spec.json, which is generated from balatro-mechanics-reference(2).md
+tools/tag_spec.json, which is generated from docs/reference/balatro-mechanics.md
 §14 (the project's source of truth).
 
 Gates, each of which must report 0:

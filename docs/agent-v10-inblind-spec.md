@@ -1,7 +1,8 @@
 # agent-v10-inblind-spec.md
 
 **In-blind goal hierarchy & value farming (agent_v10)**
-Status: Draft — produced from an interview with the requester (2026-08-18)
+Status: Implemented — knobs confirmed 2026-08-18; this spec is the design record.
+Location: moved from the repo root to `docs/agent-v10-inblind-spec.md`.
 Milestone label: **M12** (tentative; follows M11 sim-perf audit + the HUMAN-FAIR pivot)
 
 ---
@@ -64,7 +65,7 @@ and `rollout.clone_game`. It does not model in-blind value either.
 
 ## 3. Sim fidelity: required fixes + seal/enhancement audit
 
-Source of truth: `balatro-mechanics-reference(2).md` §6 (Enhancements), §7
+Source of truth: `docs/reference/balatro-mechanics.md` §6 (Enhancements), §7
 (Editions), §8 (Seals).
 
 ### 3.1 Confirmed bugs (blocking — these are directly implicated by the request)
@@ -528,7 +529,7 @@ trigger depends on that joker (treat as an expected-value haircut).
 `Ω`, `hs`, debuff set) plus the Hook held-value discount and the Tooth/Ox money
 adjustments. Do NOT special-case boss keys inside the tier logic.
 
-Source of truth: `balatro-mechanics-reference(2).md`. `$` = economy; all in-blind
+Source of truth: `docs/reference/balatro-mechanics.md`. `$` = economy; all in-blind
 decisions that can be influenced by hold/play/discard are listed. (Verify each
 hook/fidelity during the §3.2 audit; the sim's RNG nodes / pending-money /
 pending-consumable mechanisms are the plumbing to reuse.)

@@ -1,5 +1,5 @@
 """Generate tools/tag_spec.json — machine-readable skip-blind Tag contracts
-parsed from balatro-mechanics-reference(2).md §14 (the project's source of
+parsed from docs/reference/balatro-mechanics.md §14 (the project's source of
 truth), keyed by the sim's canonical keys (t_*).
 
 Each spec entry:
@@ -22,11 +22,13 @@ import json
 import re
 import sys
 
-sys.path.insert(0, "vendor/balatro-rl")
+from _paths import REFERENCE_DOC, ROOT, VENDOR_RL
+
+sys.path.insert(0, str(VENDOR_RL))
 from balatro_sim.tags import TAG_CATALOGUE, TAG_ORDER, _TAG_PACK
 
-DOC = "balatro-mechanics-reference(2).md"
-OUT = "tools/tag_spec.json"
+DOC = str(REFERENCE_DOC)
+OUT = str(ROOT / "tools" / "tag_spec.json")
 
 
 def tag_key(name: str) -> str:
