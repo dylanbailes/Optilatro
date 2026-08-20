@@ -911,8 +911,12 @@ def estimate_clear_probability_bounds(game, h=None, d=None, T=None, hand=None,
     M = _value_multiset(game.deck)
     N = sum(M.values())
     hs = max(1, len(hand))
-    k_d = min(3, hs)            # typical cards per discard (conservative)
-    k_r = max(1, hs - 5)        # typical refill per play after the first
+    if game.ante == 1 and V10_PARAMS.get("ante1_kd_boost", True):
+        k_d = min(5, hs)
+        k_r = max(2, hs - 4)
+    else:
+        k_d = min(3, hs)            # typical cards per discard (conservative)
+        k_r = max(1, hs - 5)        # typical refill per play after the first
     fresh = max(0, min(N, d * k_d + (h - 1) * k_r))
 
     p_hts = {}
