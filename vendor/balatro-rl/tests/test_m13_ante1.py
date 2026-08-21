@@ -204,3 +204,45 @@ def test_best_discard_keeps_photograph_face():
     dset, _ = best_discard(g)
     # Should not discard faces (J, K)
     assert 0 not in dset and 1 not in dset, f"photograph should keep faces, discard {dset}"
+
+
+def test_tier1_plays_joker_target_hand_type():
+    """Photograph + flush-with-face available: tier1 should play the flush even
+    when a higher-scoring non-flush play exists (joker-aware chase)."""
+    from balatro_sim.game import BalatroGame
+    from balatro_sim.card import Card
+    from balatro_sim.jokers.base import JokerInstance
+    from balatro_sim.agent_v9 import scored_plays
+    from balatro_sim.agent_v10 import _tier1_survive, V10_PARAMS
+    g = BalatroGame(seed=1, rng_mode="seed")
+    g.ante = 1
+    g.current_blind.chips_target = 600
+    g.chips_scored = 0
+    g.hands_left = 4
+    g.discards_left = 4
+    g.jokers = [JokerInstance("j_photograph")]
+    # Flush of hearts incl. a face; also a two pair that scores more without jokers
+    g.hand = [Card(14,"Hearts"), Card(12,"Hearts"), Card(9,"Hearts"), Card(6,"Hearts"), Card(3,"Hearts"),
+              Card(13,"Spades"), Card(13,"Clubs"), Card(5,"Diamonds")]
+    plays = scored_plays(g)
+    act = _tier1_survive(g, plays)
+    played = [g.hand[i] for i in act["cards"]]
+    ht_flush = all(c.suit == "Hearts" for c in played) and len(played) == 5
+    assert ht_flush, f"expected flush play with photograph, got {act} {[ (c.rank,c.suit) for c in played]}"
+
+
+def test_upgrade_trips_to_full_house():
+    from balatro_sim.game import BalatroGame
+    from balatro_sim.card import Card
+    from balatro_sim.jokers.base import JokerInstance
+    from balatro_sim.agent_v10 import joker_keep_indices, _upgrade_target
+    g = BalatroGame(seed=1, rng_mode="seed")
+    g.ante = 1
+    g.jokers = [JokerInstance("j_wily")]   # +100 Chips if contains Three of a Kind
+    hand = [Card(7,"Hearts"), Card(7,"Spades"), Card(7,"Clubs"),
+            Card(2,"Diamonds"), Card(2,"Hearts"), Card(9,"Clubs"), Card(11,"Spades"), Card(4,"Diamonds")]
+    assert _upgrade_target(hand, "Three of a Kind") == "Full House"
+    keep = joker_keep_indices(hand, g)
+    # Trips AND the pair must be kept (full house material)
+    kept_ranks = {hand[i].rank for i in keep}
+    assert 7 in kept_ranks and 2 in kept_ranks, f"full house upgrade should keep trips+pair, got {keep}"

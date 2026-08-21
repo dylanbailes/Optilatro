@@ -166,7 +166,12 @@ _XMULT_HAND_MAP = {
 
 def joker_target_hand_type(game):
     """Hand type to chase for owned jokers — the highest-value chip/xMult engine's hand.
-    Returns None if no hand-specific joker. Gated farm<1.0."""
+    Returns None if no hand-specific joker. Gated farm<1.0.
+
+    Boss-blind aware: under a Boss the target must still CLEAR (Boss 600 needs
+    more than a bare Pair), so hand types that scale with jokers win:
+    Photograph → Flush (face inside flush = x2 on top of flush base §2/§16),
+    chips jokers keep their mapped type."""
     try:
         if V10_PARAMS.get("farm_clear_threshold", 0.9) >= 1.0:
             return None
@@ -195,6 +200,26 @@ def joker_target_hand_type(game):
         return None
     candidates.sort(reverse=True)
     return candidates[0][1]
+
+
+# Chips-joker upgrade path: a trips joker (j_wily) wants a Full House when the
+# hand already holds trips — the +100 Chips rides on any hand containing a
+# Three of a Kind (§2 "contains"), and a full house scores far more chips.
+_UPGRADE_MAP = {
+    "Three of a Kind": "Full House",
+    "Pair": "Two Pair",
+}
+
+def _upgrade_target(hand, hand_type: str):
+    """When `hand` already contains the base structure of `hand_type`, return
+    the upgraded type worth chasing (trips→full house, pair→two pair)."""
+    from collections import Counter
+    cnt = Counter(c.rank for c in hand)
+    if hand_type == "Three of a Kind" and any(c >= 3 for c in cnt.values()):
+        return _UPGRADE_MAP[hand_type]
+    if hand_type == "Pair" and sum(1 for c in cnt.values() if c >= 2) >= 2:
+        return _UPGRADE_MAP[hand_type]
+    return None
 
 def _hand_keep_indices(hand, hand_type: str):
     """Indices of cards in `hand` that support `hand_type` and should not be discarded."""
@@ -256,14 +281,21 @@ def joker_keep_indices(hand, game) -> set:
     # Photograph — keep all face cards (§2 On Scored x2 first face)
     if "j_photograph" in owned:
         keep.update(i for i,c in enumerate(hand) if c.is_face_card)
-    # Chip jokers — keep their hand-type support
+    # Chip jokers — keep their hand-type support; upgrade trips→full house /
+    # pair→two pair when the hand already holds the base structure
     for key, ht in _CHIPS_HAND_MAP.items():
         if key in owned:
             keep.update(_hand_keep_indices(hand, ht))
+            up = _upgrade_target(hand, ht)
+            if up:
+                keep.update(_hand_keep_indices(hand, up))
     # xMult engines — keep their hand-type support (Duo/Trio/Family/Order/Tribe)
     for key, ht in _XMULT_HAND_MAP.items():
         if key in owned:
             keep.update(_hand_keep_indices(hand, ht))
+            up = _upgrade_target(hand, ht)
+            if up:
+                keep.update(_hand_keep_indices(hand, up))
     # For chips jokers that want High Card (e.g., j_half) — no keep
     return keep
 
@@ -1116,6 +1148,22 @@ def _tier1_survive(game, plays):
         clearing = [pl for pl in plays if pl[0] >= target]
         clearing.sort(key=lambda e: (len(e[1]), e[0]))
         return {"type": "play", "cards": list(clearing[0][1])}
+
+    # Joker-aware hand-type chase (M13+): when a hand-type joker is owned and
+    # the target hand type can CLEAR within remaining hands, prefer playing
+    # that type over the greedy best — e.g. Photograph + flush-with-face beats
+    # Boss 600 in one; Sly + trips→full house clears Big 450. Gated farm<1.0.
+    target_ht = joker_target_hand_type(game)
+    if target_ht and target_ht != "High Card":
+        ht_plays = [pl for pl in plays if pl[2] == target_ht]
+        if ht_plays:
+            # Prefer a play of the target type that makes real progress
+            # (>50% of remaining target) or clears outright.
+            progress = max(ht_plays, key=lambda e: e[0])
+            if progress[0] >= target or (
+                    game.hands_left >= 2
+                    and progress[0] >= target * 0.5):
+                return {"type": "play", "cards": list(progress[1])}
 
     good_thresh = V10_PARAMS.get("ante1_good_hand", p["discard_play_good_hand"]) if game.ante == 1 and game.hands_left == 2 and V10_PARAMS["farm_clear_threshold"] < 1.0 else p["discard_play_good_hand"]
     good_hand = best_score >= target * good_thresh
