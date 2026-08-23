@@ -88,6 +88,52 @@ V10_DEFAULTS = {
     "hook_hold_discount": True,     # discount held value under The Hook
     "tooth_money_net": True,        # subtract $1/card played under The Tooth
     "eval_topk_value_play": 8,      # top-K scored plays considered in value mode
+    "target_enabled": True,         # joker-aware blind targeting (M14)
+    "fallback_protect_plan": True,  # M14h: the fallback EV discard must
+                                    #   never shed a committed plan's cards
+    "chase_min_prob": 0.40,         # min P(assemble the plan) to commit a
+                                    #   chase line (kills the doomed flush/
+                                    #   straight chases that burned 4 discards
+                                    #   on seeds 52/54/63)
+    "chase_max_hands": 1,           # only chase KILL LINES: plans that clear
+                                    #   the whole remaining target in <= this
+                                    #   many hands (M14c). Every audited rule
+                                    #   is an m=1 line (face-flush x Photo,
+                                    #   trips->FH x chip jokers, Small flush);
+                                    #   m>=2 'grind' chases were pure variance
+                                    #   on top of the V9 grind.
+    "early_chip_bias": 0.35,        # ante<=2 with <3 jokers: value bonus for
+                                    #   flat-chip jokers (Sly/Wily/Clever/
+                                    #   Banner) in SHOP ranking and PACK PICKS
+                                    #   (M14d). The ante-1 deaths own flat-
+                                    #   chips: packs kept dealing econ jokers
+                                    #   (seed 0 got shoot_the_moon from two
+                                    #   Buffoons and died Big with no chips).
+    "chase_min_ev_gain": 1.00,      # chase EV (P·S_made) must beat the current
+                                    #   best play by this factor (seed 228:
+                                    #   never dump a working 240 straight for a
+                                    #   coin-flip flush)
+    "chase_max_ante": 2,            # M14g scope: committed chase lines only
+                                    #   up to this ante. Bank evidence: the
+                                    #   chase layer saves ~5 ante-1 deaths but
+                                    #   costs ~5-6 WINS when allowed mid-game
+                                    #   (nochase arm: 12/200 wins vs 6/200).
+    "chase_max_consec": 2,          # M14e doom-loop guard: at most this many
+                                    #   chase discards IN A ROW without an
+                                    #   intervening play. Seed 59 re-fired an FH
+                                    #   chase on every decision and burned all
+                                    #   4 discards before the first hand; the
+                                    #   counter resets on every play, so mid-
+                                    #   game chase->play->chase kill lines
+                                    #   (the pre-fix wins) stay available.
+    "buffoon_open_value": 0.45,     # ante<=2 with <2 jokers: open-Buffoon
+                                    #   ranking floor for paths without the
+                                    #   pre-buy (L1 comparative search)
+    "buffoon_first": True,          # ante<=2 with <2 jokers: open the
+                                    #   Buffoon BEFORE any other buy (audit
+                                    #   seed 0: $8 j_order starved the $4
+                                    #   pack; two fresh picks compound for
+                                    #   the whole run, one Rare does not)
     "reshape_enabled": True,        # deck-reshaping toward bought engines
     "reshape_pack_rank_bonus": 0.10,
     "reshape_pack_near_rank_bonus": 0.05,
@@ -413,7 +459,8 @@ def _v10_rank_shop_items(game, ref, surplus):
         if price > game.dollars:
             continue
         if item.kind == "joker":
-            value = joker_value(game, item.key, item.edition, ref, surplus)
+            value = _v10_joker_value(game, item.key, item.edition, ref,
+                                     surplus)
             has_room = (len(game.jokers) < game.joker_slots
                         or item.edition == "Negative")
             thr = 0.0 if (game.ante <= 2 and not game.jokers) else p["buy_threshold"]
@@ -427,7 +474,7 @@ def _v10_rank_shop_items(game, ref, surplus):
                         >= p["sell_margin"]):
                     need_sell = (value, worst_cache)
         elif item.kind == "booster":
-            value = pack_value(game, item.key)
+            value = _v10_pack_value(game, item.key)
             if value >= p["buy_threshold"]:
                 buys.append((value, i))
         elif item.kind == "voucher":
@@ -476,6 +523,11 @@ def _v10_decide_shop(game, rerolls_used: int) -> dict:
         act = _v10_decide_consumable(game)
         if act is not None:
             return act
+
+    # Early-Buffoon priority (M14): open the pack before any ranked buy.
+    act = _buffoon_open_action(game)
+    if act is not None:
+        return act
 
     ref = reference_hand(game)
     surplus = forecast_beatable(game, p["tilt_surplus_margin"], ref)
@@ -532,7 +584,7 @@ def _v10_decide_booster(game) -> dict:
                 continue
             if ref is None:
                 ref = reference_hand(game)
-            value = joker_value(game, key, edition, ref)
+            value = _v10_joker_value(game, key, edition, ref)
         elif isinstance(c, tuple) and c and c[0] == "card":
             value = _v10_pack_card_value(game, c[1])
         elif isinstance(c, str):
@@ -839,6 +891,40 @@ def _card_sort_key(c):
             (c.rank, c.suit, c.enhancement, c.edition, c.seal))
 
 
+def _plain_flush_candidates(ranked):
+    """Per-suit best PLAIN-flush 5-card constructions (quality-desc order).
+
+    M14f root cause (seed 59): `_type_candidates(ranked, "Flush")` builds ONE
+    candidate from an arbitrarily tie-broken top suit, and with a near-full
+    deck its best five are almost always A-K-Q-J-10 — which evaluates as a
+    STRAIGHT Flush. The scan-until-requested-type loop then exhausts its only
+    candidate, `S["Flush"]` never exists, and the planner is blind to the
+    user's majority-suit flush line even while holding four of that suit.
+
+    Fix: build a candidate per suit (>=5 pool cards, stones excluded), and
+    when the top-5 window reads as a straight flush, slide the LOW card down
+    the quality order until the five are not consecutive. Deterministic;
+    empty when no suit can produce a plain flush."""
+    suits = {}
+    for c in ranked:
+        if c.enhancement != "Stone":
+            suits.setdefault(c.suit, []).append(c)
+    out = []
+    for cs in suits.values():
+        if len(cs) < 5:
+            continue
+        for c5 in ([cs[:5]]
+                   + [cs[1:5] + [cs[k]] for k in range(5, len(cs))]):
+            try:
+                ht5, _sc = evaluate_hand(c5)
+            except Exception:
+                continue
+            if ht5 == "Flush":
+                out.append(c5)
+                break
+    return out
+
+
 def _compute_type_scores(game, plays) -> dict:
     """S(ht): the best ONE-hand score of each type, seeded from the already-
     scored held-hand `plays` (free) and filled for missing big types from a
@@ -856,15 +942,56 @@ def _compute_type_scores(game, plays) -> dict:
                "Straight Flush", "Five of a Kind"):
         if ht in S:
             continue
-        for c5 in _type_candidates(ranked, ht):
+        if ht == "Flush":
+            # Real per-suit plain-flush lines (M14f); the generic generator
+            # yields a single arbitrary-suit candidate that usually reads as
+            # a Straight Flush and leaves Flush absent entirely.
+            cands = _plain_flush_candidates(ranked)
+        else:
+            cands = _type_candidates(ranked, ht)
+        for c5 in cands:
             try:
                 ht5, sc = evaluate_hand(c5)
                 s = eval_hand_score(game, ht5, sc, c5)
             except Exception:
                 continue
             S[ht5] = max(S.get(ht5, 0), s)
-            break
+            if ht5 == ht:
+                # The first candidate is often a NEAR type (asking Full
+                # House yields the bare-quads construction, which scores as
+                # Four/Five of a Kind). Keep scanning until the REQUESTED
+                # type is represented, or the candidates run out — otherwise
+                # Full House never lands in S and the planner can never
+                # target the trips→full-house upgrade line.
+                break
     return S
+
+
+def _chase_consec(game) -> int:
+    """Consecutive chase discards since the last PLAYED hand this blind
+    (M14e doom-loop guard).
+
+    Keyed by blind identity so a stale counter can never leak into the next
+    blind, and RESET whenever a hand is played (`_reset_chase`, called from
+    `_v10_survive`'s play returns). Seed 59 lesson: an m=1 plan whose
+    probability stayed above the gate re-fired on every decision and burned
+    ALL four discards before the first hand was played. A blunt per-blind
+    cap also blocked legitimate mid-game chase->play->chase kill lines, so
+    the guard counts only CONSECUTIVE chases."""
+    st = getattr(game, "_m14_chase_state", None)
+    if st and st[0] == _plan_blind_id(game):
+        return st[1]
+    return 0
+
+
+def _spend_chase(game) -> None:
+    """Record that a chase discard fired this blind."""
+    game._m14_chase_state = (_plan_blind_id(game), _chase_consec(game) + 1)
+
+
+def _reset_chase(game) -> None:
+    """A hand was played: the doom-loop counter starts over."""
+    game._m14_chase_state = (_plan_blind_id(game), 0)
 
 
 def estimate_clear_probability_bounds(game, h=None, d=None, T=None, hand=None,
@@ -933,8 +1060,457 @@ def estimate_clear_probability(game, h=None, d=None, T=None, hand=None,
 
 
 # ────────────────────────────────────────────────────────────────────────────
+# Joker-aware blind targeting (M14): pick the hand TYPE the owned jokers
+# want, then steer discards toward it
+# ────────────────────────────────────────────────────────────────────────────
+#
+# The ante-1 audit's two traced losses are targeting failures, not luck:
+#
+#   - Photograph (x2 Mult first face) + a face-flush clears the Boss 600 in
+#     ONE hand — but the agent ground pairs because nothing told it a flush
+#     WITH A FACE is the kill line.
+#   - Any flat-chips joker turns a Three-of-a-Kind board into a Full-House
+#     kill (40×4 vs 30×3 base + the chip bonus) — the agent kept playing
+#     trips and died at 413/600.
+#
+# The machinery already exists: `_compute_type_scores` scores a MADE hand of
+# each type THROUGH THE REAL ENGINE (owned jokers active), and the §5.1
+# assemblers give P(drawing into it) from deck composition alone. Combine
+# them: target = fewest hands to clear, tie-broken by assembly probability,
+# gated by a minimum probability and an EV-vs-current-best check. Then the
+# committed chase discard keeps exactly the plan's cards and pools the rest.
+#
+# Human-fair: composition-only reads (multiset + hypergeometric), isolated
+# scoring, deterministic tie-breaks. Gated off entirely at
+# `farm_clear_threshold >= 1.0` so the farming-off arm stays byte-V9.
+
+
+def _plan_context(game):
+    """(M, held, N, fresh) — the §5.1 belief state: deck-value multiset,
+    live hand, and the fresh-draw budget (≈min(3,hs) per discard +(hs-5)
+    per later hand). Same formula as `estimate_clear_probability_bounds`."""
+    hand = game.hand
+    M = _value_multiset(game.deck)
+    N = sum(M.values())
+    hs = max(1, len(hand))
+    h, d = game.hands_left, game.discards_left
+    fresh = max(0, min(N, d * min(3, hs) + (h - 1) * max(1, hs - 5)))
+    return M, hand, N, fresh
+
+
+def _plan_flush_prob(M, held, N, fresh, suit) -> float:
+    return _assemble_flush(M, held, suit, 5, N, fresh)
+
+
+def _plan_kind_prob(M, held, N, fresh, ht) -> float:
+    fn = _ASSEMBLERS.get(ht)
+    return fn(M, held, N, fresh) if fn else 0.0
+
+
+# Chasable plan types. Excluded on purpose (seed-52 lesson):
+#   - Four/Five of a Kind, Straight/Flush House/Five: `type_scores` prices
+#     them from a representative best-card construction (phantom S — a
+#     "728-chip Four of a Kind" nobody holds), and `_rank_union`'s union
+#     bound reads ~1.0 when the hand holds two trips. Those phantom plans
+#     occupied the argmax all blind and burned discards on lottery tickets.
+#   - Pair: never worth a committed chase — the V9 grind already plays pairs.
+#   - Two Pair: NEVER a chase line (M14b). `_assemble_two_pair` reads ≈1.0
+#     from any live deck, so it wins the argmax on probability alone and
+#     produces no-progress loops (seed 7 Boss: plan Two Pair == best play,
+#     burned every discard keeping the same [11,11,9,9]). The V9 grind
+#     already plays two pairs; committing discards to it adds nothing.
+_PLAN_TYPES = ("Flush", "Straight", "Full House", "Three of a Kind")
+
+
+def _plan_eff_prob(raw: float, m: int) -> float:
+    """P(the line actually clears), not P(one assembly). A plan needing m
+    scored hands must re-assemble the shape every hand, so the honest
+    pessimistic estimate compounds the per-attempt probability (seed 52:
+    an m=3 flush passed every gate on its raw 0.90 and then lost the blind
+    when attempts 2 and 3 missed)."""
+    return raw if m <= 1 else raw ** m
+
+
+def _blind_plan(game, type_scores) -> dict | None:
+    """The joker-aware in-blind target: the hand type whose MADE score
+    (real-engine eval with the owned jokers) clears the remaining target in
+    the fewest hands, tie-broken by assembly probability. None when no line
+    is reliable enough (the caller grinds V9-style).
+
+    Ante-1 Small Blind resolves to the majority-suit flush almost always:
+    S_flush ≈ 330-350 ≥ 300 in m=1 with P ≈ 0.8+ — exactly the user rule
+    'impossible to lose if you chase the suit you hold most of', derived
+    rather than hardcoded (a made pair/trips line with m=1 still wins)."""
+    p = V10_PARAMS
+    if not p["target_enabled"]:
+        return None
+    T = game.current_blind.chips_target - game.chips_scored
+    if T <= 0 or not game.hand:
+        return None
+    M, held, N, fresh = _plan_context(game)
+    best_key, best = None, None
+    for ht in sorted(type_scores):
+        S = type_scores.get(ht)
+        if not S or S <= 0 or ht not in _PLAN_TYPES:
+            continue
+        m = math.ceil(T / float(S))
+        if m > p["chase_max_hands"]:
+            continue          # not a kill line (M14c), or impossible
+        if m > game.hands_left:
+            continue
+        if ht == "Flush":
+            # Commit to ONE suit: the most-assemblable one (ties resolve in
+            # _SUIT_ORDER, i.e. deterministically, never by deck order).
+            raw, suit = 0.0, None
+            for s in _SUIT_ORDER:
+                pr = _plan_flush_prob(M, held, N, fresh, s)
+                if pr > raw:
+                    raw, suit = pr, s
+            detail = suit
+        else:
+            raw = _plan_kind_prob(M, held, N, fresh, ht)
+            detail = None
+        prob = _plan_eff_prob(raw, m)
+        if prob < p["chase_min_prob"]:
+            continue
+        key = (m, -round(prob, 6), -S, ht)
+        if best_key is None or key < best_key:
+            best_key = key
+            best = {"ht": ht, "suit": detail, "S": S, "prob": prob, "m": m}
+    return best
+
+
+def _longest_run_indices(hand) -> list[int]:
+    """Hand indices of the longest consecutive-rank run (straight chase
+    keep-set). Deterministic (rank-based, never deck order)."""
+    by_rank = {}
+    for i, c in enumerate(hand):
+        if c.enhancement != "Stone":
+            by_rank.setdefault(c.rank, []).append(i)
+    ranks = sorted(by_rank, reverse=True)
+    best_run: list[int] = []
+    run: list[int] = []
+    prev = None
+    for r in ranks:
+        if prev is not None and prev - r == 1:
+            run.extend(by_rank[r])
+        else:
+            if len(run) > len(best_run):
+                best_run = run
+            run = list(by_rank[r])
+        prev = r
+    if len(run) > len(best_run):
+        best_run = run
+    return best_run
+
+
+def _hand_rank_groups(hand):
+    """Non-debuffed rank groups in deterministic rank order (never deck
+    order): {rank: [indices]} plus the sorted rank list."""
+    groups = {}
+    for i, c in enumerate(hand):
+        if not c.debuffed:
+            groups.setdefault(c.rank, []).append(i)
+    return [groups[r] for r in sorted(groups)]
+
+
+def _kind_keep(groups, hand) -> list[int]:
+    """Keep-set for a kind-plan (Trips / Full House): the best PAIR plus the
+    second-best pair (callers already handled any ≥3 group as 'assembled',
+    so every live group here is size ≤ 2). No pairs ⇒ nothing to build on.
+    Quality-sorted, capped at 5, deterministic."""
+    pairs = [g for g in groups if len(g) >= 2]
+    if not pairs:
+        return []
+    ranked = sorted(pairs,
+                    key=lambda g: (len(g), _card_sort_key(hand[g[0]])),
+                    reverse=True)
+    keep = list(ranked[0])
+    if len(ranked) > 1:
+        keep.extend(ranked[1][:2])
+    keep.sort(key=lambda i: _card_sort_key(hand[i]), reverse=True)
+    return keep[:5]
+
+
+def _plan_keep_indices(hand, plan) -> list[int]:
+    """The plan's cards in THIS hand (≤5, quality-best): the keep-set of the
+    committed chase. Empty ⇒ nothing to chase toward this decision — either
+    the line needs pure draws, or it is ALREADY ASSEMBLED and playing it
+    beats fishing (M14b: seed 7 kept the same made pair for four straight
+    discards because 'already holding it' read as 'keep chasing it')."""
+    ht = plan["ht"]
+    if ht == "Flush":
+        s = plan["suit"]
+        idx = [i for i, c in enumerate(hand)
+               if not c.debuffed
+               and (c.suit == s or c.enhancement == "Wild")]
+        if not idx or len(idx) >= 5:
+            return []          # assembled (or impossible) — play instead
+        idx.sort(key=lambda i: _card_sort_key(hand[i]), reverse=True)
+        return idx[:5]
+    if ht == "Three of a Kind":
+        groups = _hand_rank_groups(hand)
+        trips = next((g for g in groups if len(g) >= 3), None)
+        if trips is not None:
+            return []          # trips already made — no chase
+        # Biggest group (whole — a quad candidate is also the trips) + the
+        # best second pair (fallback two pair, FH path). M14c: the earlier
+        # single-pair keep threw away the second pair's equity.
+        return _kind_keep(groups, hand)
+    if ht == "Full House":
+        groups = _hand_rank_groups(hand)
+        trips = next((g for g in groups if len(g) >= 3), None)
+        pair = next((g for g in groups if len(g) >= 2 and g is not trips),
+                    None)
+        if trips is not None and pair is not None:
+            return []          # FH already assembled — play it
+        return _kind_keep(groups, hand)
+    if ht in ("Two Pair", "Pair"):
+        # Not a chasable type any more; kept for stale-plan safety.
+        groups = _hand_rank_groups(hand)
+        pairs = sorted((g for g in groups if len(g) >= 2),
+                       key=lambda g: _card_sort_key(hand[g[0]]),
+                       reverse=True)
+        if len(pairs) >= (2 if ht == "Two Pair" else 1):
+            return []
+        return list(pairs[0]) if pairs else []
+    if ht in ("Straight", "Straight Flush"):
+        idx = [i for i in _longest_run_indices(hand)]
+        if not idx or len(idx) >= 5:
+            return []
+        idx.sort(key=lambda i: _card_sort_key(hand[i]), reverse=True)
+        return idx[:5]
+    return []
+
+
+def _chase_discard(game, plan, base_score) -> dict | None:
+    """Committed chase discard toward `plan`: keep the plan's cards, pool
+    the rest (worst quality first, capped at the real-game 5-card limit).
+
+    Two gates kill the audited doom-chases:
+      EV   plan.prob * plan.S >= base_score * chase_min_ev_gain
+           (never dump a working hand for a coin flip), and
+      PROB P(plan assembles | keep-set + fresh draws) >= chase_min_prob
+           (re-measured AFTER shedding the junk — the keep-set is what the
+           draws have to land on)."""
+    p = V10_PARAMS
+    if game.discards_left <= 0 or not game.deck or len(game.hand) < 2:
+        return None
+    keep = _plan_keep_indices(game.hand, plan)
+    if not keep:
+        return None
+    if plan["prob"] * plan["S"] < base_score * p["chase_min_ev_gain"]:
+        return None
+    M = _value_multiset(game.deck)
+    N = sum(M.values())
+    hs = max(1, len(game.hand))
+    h, d = game.hands_left, game.discards_left
+    fresh = max(0, min(N, d * min(3, hs) + (h - 1) * max(1, hs - 5)))
+    keep_cards = [game.hand[i] for i in keep]
+    if plan["ht"] == "Flush":
+        raw = _plan_flush_prob(M, keep_cards, N, fresh, plan["suit"])
+    else:
+        raw = _plan_kind_prob(M, keep_cards, N, fresh, plan["ht"])
+    prob = _plan_eff_prob(raw, plan["m"])
+    if prob < p["chase_min_prob"]:
+        return None
+    kset = set(keep)
+    off = sorted((i for i in range(len(game.hand)) if i not in kset),
+                 key=lambda i: _card_sort_key(game.hand[i]))
+    dset = off[:5]
+    if not dset:
+        return None
+    return {"type": "discard", "cards": sorted(dset)}
+
+
+# ────────────────────────────────────────────────────────────────────────────
 # Tier 1 — survive (V9's play/discard core, re-armed with P(clear))
 # ────────────────────────────────────────────────────────────────────────────
+
+# Flat-chip jokers (§2): the ante-1 audit's missing piece. The grind line
+# at antes 1-2 is pairs/two-pairs/trips, so these ride EVERY scoring hand:
+#   j_sly +50 chips (Pair+) · j_clever +80 (Two Pair) · j_wily +100 (Trips)
+#   j_banner +30 per remaining discard (≈ +120 on hand 1 at 4 discards)
+_EARLY_CHIP_JOKERS = ("j_sly", "j_clever", "j_wily", "j_banner")
+
+
+def _v10_joker_value(game, key: str, edition, ref, surplus=None) -> float:
+    """joker_value with the early flat-chip bias (M14d): at ante ≤ 2 with
+    fewer than 3 jokers, a flat-chip joker is worth more than its lifecycle/
+    econ valuation suggests — it converts every grind hand into a blind
+    clearer, which is exactly what the audited ante-1 deaths lacked (seed 0:
+    two Buffoon packs, zero chips, died Big 198 short). Applied to BOTH the
+    shop ranking and the booster-pack picks so the packs stop dealing econ
+    jokers into a chips-starved run. Zero delta when gated off (byte-V9)."""
+    v = joker_value(game, key, edition, ref, surplus)
+    p = V10_PARAMS
+    if (p["target_enabled"] and p["farm_clear_threshold"] < 1.0
+            and p["early_chip_bias"] > 0
+            and key in _EARLY_CHIP_JOKERS
+            and game.ante <= 2 and len(game.jokers) < 3):
+        v += p["early_chip_bias"]
+    return v
+
+
+def _v10_pack_value(game, key: str) -> float:
+    """pack_value with the early Buffoon-open floor (M14): at ante ≤ 2 with
+    fewer than 2 jokers, opening a Buffoon Pack beats almost any single shop
+    item — two fresh joker picks compound for the whole run, while a weak
+    Rare (j_order X3-straight with no straight deck) does not. Zero when
+    gated off so the farming-off arm reproduces V9 exactly."""
+    p = V10_PARAMS
+    v = pack_value(game, key)
+    if (p["target_enabled"] and p["farm_clear_threshold"] < 1.0
+            and key.startswith("p_buffoon")
+            and game.ante <= 2 and len(game.jokers) < 2):
+        v = max(v, p["buffoon_open_value"])
+    return v
+
+
+def _buffoon_open_action(game) -> dict | None:
+    """M14 shop rule: at ante ≤ 2 with fewer than 2 jokers, open an offered
+    Buffoon Pack FIRST — before every other buy.
+
+    A plain value comparison cannot express this: joker_value rates a weak
+    ante-1 Rare ~1.6 (lifecycle/econ terms), far above any pack weight, yet
+    the traced deaths bought exactly those Rares and skipped the $4 pack
+    (seed 0: j_order for $8, left $1, died Big 252/450). Two random jokers
+    compound across the run; the audit's rule is 'always open it unless far
+    better' — and nothing offered in the first two shops is far better.
+    None when gated off (the farming-off arm stays byte-V9)."""
+    p = V10_PARAMS
+    if (not p["target_enabled"] or not p["buffoon_first"]
+            or p["farm_clear_threshold"] >= 1.0):
+        return None
+    if game.ante > 2 or len(game.jokers) >= 2:
+        return None
+    for i, item in enumerate(game.current_shop):
+        if (item.kind == "booster" and not item.sold
+                and item.key.startswith("p_buffoon")
+                and item.discounted_price(game.shop_discount) <= game.dollars):
+            return {"type": "buy", "item_idx": i}
+    return None
+
+
+def _plan_blind_id(game):
+    """Identity of the current blind for plan-stickiness caching."""
+    b = game.current_blind
+    return (game.ante, getattr(b, "kind", ""), getattr(b, "boss_key", ""))
+
+
+def _committed_plan(game, type_scores) -> dict | None:
+    """The blind's chase plan, STICKY across decisions (M14b).
+
+    Once a chase commits, re-selecting from scratch every discard lets a
+    hair-thin probability difference flip the line mid-chase — seed 19
+    switched Full-House→Straight on a 0.704-vs-0.731 nudge and threw away
+    the MADE pairs to fish an unmade run. So: while the committed type stays
+    feasible (still in _PLAN_TYPES, still fits the remaining hands, its
+    re-measured effective probability still clears `chase_min_prob`), it IS
+    the plan regardless of what the fresh argmax would say. Only a dead
+    commitment falls through to a fresh `_blind_plan`.
+
+    The cache lives ON the game object, keyed by blind identity, and every
+    touch is behind `target_enabled` — the byte-V9 arm never sees it."""
+    p = V10_PARAMS
+    if not p["target_enabled"]:
+        return None
+    cache = getattr(game, "_m14_plan_cache", None)
+    if cache is not None:
+        if cache.get("blind") != _plan_blind_id(game):
+            game._m14_plan_cache = None          # new blind
+        else:
+            plan = dict(cache["plan"])
+            ht, suit = plan["ht"], plan.get("suit")
+            S = type_scores.get(ht, 0)
+            T = game.current_blind.chips_target - game.chips_scored
+            if S and S > 0 and ht in _PLAN_TYPES and T > 0:
+                m = math.ceil(T / float(S))
+                if m <= min(p["chase_max_hands"], game.hands_left):
+                    M, held, N, fresh = _plan_context(game)
+                    if ht == "Flush":
+                        raw = _plan_flush_prob(M, held, N, fresh, suit)
+                    else:
+                        raw = _plan_kind_prob(M, held, N, fresh, ht)
+                    prob = _plan_eff_prob(raw, m)
+                    if prob >= p["chase_min_prob"]:
+                        plan.update(S=S, m=m, prob=prob)
+                        return plan
+            game._m14_plan_cache = None          # commitment died
+    return _blind_plan(game, type_scores)
+
+
+def _commit_plan(game, plan) -> None:
+    """Pin `plan` as this blind's chase line (called when a chase FIRES)."""
+    if V10_PARAMS["target_enabled"]:
+        game._m14_plan_cache = {"blind": _plan_blind_id(game),
+                                "plan": dict(plan)}
+
+
+def _v10_survive(game, plays, type_scores):
+    """Tier 1 with joker-aware targeting: identical to `_tier1_survive`
+    (clearing play → good-hand rule → hold/slack discards) plus ONE inserted
+    step — when the best play is NOT worth playing yet, try the committed
+    chase discard toward the joker-aware plan. Every original branch and
+    threshold is preserved; the chase only replaces SOME weak-hand discards
+    with a better line."""
+    p = ACTIVE_PARAMS
+    if not plays:
+        return {"type": "play", "cards": [0] if game.hand else []}
+
+    best_score, best_combo, _ = plays[0]
+    target = game.current_blind.chips_target - game.chips_scored
+
+    if best_score >= target:
+        clearing = [pl for pl in plays if pl[0] >= target]
+        clearing.sort(key=lambda e: (len(e[1]), e[0]))
+        _reset_chase(game)               # played a hand: doom counter resets
+        return {"type": "play", "cards": list(clearing[0][1])}
+
+    good_hand = best_score >= target * p["discard_play_good_hand"]
+    # M14e chase discipline: never chase into the last hand (V9 hold-gate
+    # parity) and never stack more than chase_max_consec chases without
+    # playing — seed 59 burned all four discards pre-play on a re-firing FH
+    # plan.
+    chase_ok = (game.hands_left >= 2
+                and game.ante <= V10_PARAMS["chase_max_ante"]
+                and _chase_consec(game)
+                < V10_PARAMS["chase_max_consec"])
+    # Resolve the committed plan ONCE per decision (M14h): the chase branch
+    # consumes it directly, and the fallback branches need its keep-set for
+    # protection even when the consec guard blocks another chase commit.
+    plan = None
+    if (not good_hand and game.discards_left > 0 and len(game.deck) > 0
+            and V10_PARAMS["target_enabled"]):
+        plan = _committed_plan(game, type_scores)
+    protect = None
+    if plan is not None and V10_PARAMS["fallback_protect_plan"]:
+        protect = set(_plan_keep_indices(game.hand, plan)) or None
+    if (not good_hand and chase_ok and game.discards_left > 0
+            and len(game.deck) > 0):
+        if plan is not None:
+            act = _chase_discard(game, plan, best_score)
+            if act is not None:
+                _commit_plan(game, plan)
+                _spend_chase(game)
+                return act
+
+    if (not good_hand and game.discards_left > 0 and len(game.deck) > 0
+            and p["discard_hold_until_clear"] and game.hands_left >= 2):
+        dset, dscore = best_discard(game, base_score=best_score,
+                                    protect=protect)
+        if dset:
+            return {"type": "discard", "cards": list(dset)}
+
+    if not good_hand and game.discards_left > 0 and len(game.deck) > 0:
+        dset, dscore = best_discard(game, base_score=best_score,
+                                    protect=protect)
+        if dscore > best_score * p["discard_slack"]:
+            return {"type": "discard", "cards": list(dset)}
+
+    _reset_chase(game)                   # played a hand: doom counter resets
+    return {"type": "play", "cards": list(best_combo)}
+
 
 def _tier1_survive(game, plays):
     """The V9 'just enough / discard EV' core, minus the pre-actions (Verdant
@@ -1223,7 +1799,7 @@ def _v10_decide_hand(game) -> dict:
         if act is not None:
             return act
 
-    return _tier1_survive(game, plays)
+    return _v10_survive(game, plays, type_scores)
 
 
 class HeuristicV10(HeuristicV9):

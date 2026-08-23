@@ -1219,7 +1219,8 @@ def _structure_pool(hand, min_suit=4, min_run=4, min_pairs=2):
     return None, None
 
 
-def best_discard(game, max_size=None, pool_size=None, base_score=None):
+def best_discard(game, max_size=None, pool_size=None, base_score=None,
+                 protect=None):
     """Expected-value discard over the KNOWN deck composition (human-fair).
 
     A human knows which cards remain in the deck but NOT the draw order, so
@@ -1248,6 +1249,13 @@ def best_discard(game, max_size=None, pool_size=None, base_score=None):
     computed it (decide_hand has scored_plays in hand) — recomputing it here
     costs one full scored_plays per discard decision (~141/run, the biggest
     redundancy in the hot loop).
+
+    `protect`: optional set of hand indices that must NEVER enter a discard
+    candidate. V10 M14h plan protection: with a chase line committed, the
+    fallback EV discard must not shed the plan's own cards (seed 5 held
+    four spades under a committed flush plan; the rank-line structure pool
+    won priority and the fallback dropped 5S2S on the last discard). None
+    (default) keeps V9 behaviour byte-identical.
     """
     hand = game.hand
     deck = game.deck
@@ -1285,6 +1293,8 @@ def best_discard(game, max_size=None, pool_size=None, base_score=None):
         pool = pool_size if pool_size is not None else p["discard_pool_size"]
         pool = sorted(range(len(hand)),
                       key=lambda i: _card_quality(hand[i]))[:pool]
+    if protect:
+        pool = [i for i in pool if i not in protect]
     if max_size < 1 or not pool:
         return (), base
 
