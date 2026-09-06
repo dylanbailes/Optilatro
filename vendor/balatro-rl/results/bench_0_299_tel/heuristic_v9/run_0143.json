@@ -1,0 +1,628 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 166,
+ "truncated": false,
+ "dollars": 14,
+ "jokers": [
+  "j_even_steven",
+  "j_cavendish",
+  "j_blue_joker",
+  "j_bloodstone",
+  "j_ticket"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_temperance",
+   "c_fool",
+   "c_magician",
+   "c_strength",
+   "c_chariot",
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_deja_vu",
+   "s_incantation"
+  ],
+  "jokers_bought": [
+   "j_joker",
+   "j_popcorn",
+   "j_wrathful_joker",
+   "j_cavendish",
+   "j_blue_joker",
+   "j_mail",
+   "j_misprint",
+   "j_shoot_the_moon",
+   "j_selzer",
+   "j_egg",
+   "j_green_joker",
+   "j_sock_and_buskin",
+   "j_gluttenous_joker",
+   "j_smiley",
+   "j_popcorn",
+   "j_bloodstone",
+   "j_ticket"
+  ],
+  "money_spent": 190,
+  "best_score": 31827,
+  "rerolls": 2,
+  "packs_bought": 19,
+  "packs_opened": 12,
+  "interest_collected": 28,
+  "econ_source": 32,
+  "jokers_sold": [
+   [
+    2,
+    "j_wrathful_joker"
+   ],
+   [
+    2,
+    "j_joker"
+   ],
+   [
+    2,
+    "j_delayed_grat"
+   ],
+   [
+    2,
+    "j_mail"
+   ],
+   [
+    3,
+    "j_misprint"
+   ],
+   [
+    4,
+    "j_shoot_the_moon"
+   ],
+   [
+    4,
+    "j_egg"
+   ],
+   [
+    4,
+    "j_green_joker"
+   ],
+   [
+    4,
+    "j_sock_and_buskin"
+   ],
+   [
+    5,
+    "j_gluttenous_joker"
+   ],
+   [
+    5,
+    "j_smiley"
+   ],
+   [
+    5,
+    "j_popcorn"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    316
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker"
+    ],
+    665
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    1920
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    1750
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn"
+    ],
+    9240
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_mail",
+     "j_popcorn"
+    ],
+    2592
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_misprint",
+     "j_popcorn"
+    ],
+    11310
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    20160
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_misprint",
+     "j_shoot_the_moon"
+    ],
+    6300
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_shoot_the_moon"
+    ],
+    6402
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_egg",
+     "j_even_steven",
+     "j_selzer"
+    ],
+    8880
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_green_joker",
+     "j_selzer"
+    ],
+    9324
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_green_joker",
+     "j_selzer"
+    ],
+    10560
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_gluttenous_joker",
+     "j_selzer"
+    ],
+    11529
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_smiley"
+    ],
+    11040
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_smiley"
+    ],
+    20787
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_popcorn",
+     "j_selzer"
+    ],
+    11175
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_popcorn",
+     "j_selzer"
+    ],
+    11175
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven"
+    ],
+    17550
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven"
+    ],
+    7560
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_ticket"
+    ],
+    14040
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_ticket"
+    ],
+    3996
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_ticket"
+    ],
+    2556
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_ticket"
+    ],
+    2340
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn",
+     "j_wrathful_joker"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_joker",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_misprint",
+     "j_popcorn"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_strength",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "s_deja_vu",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_selzer",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_popcorn",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    5,
+    "s_incantation",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_popcorn",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_chariot",
+    [
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Red"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_chariot",
+    [
+     "j_bloodstone",
+     "j_blue_joker",
+     "j_cavendish",
+     "j_even_steven",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 143
+}

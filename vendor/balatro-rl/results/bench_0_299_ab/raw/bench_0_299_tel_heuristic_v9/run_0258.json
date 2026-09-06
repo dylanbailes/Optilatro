@@ -1,0 +1,754 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 203,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_even_steven",
+  "j_abstract",
+  "j_misprint",
+  "j_scholar",
+  "j_popcorn"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_death",
+   "c_hermit",
+   "c_temperance",
+   "c_temperance",
+   "c_chariot"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_uranus",
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [
+   "s_aura",
+   "s_deja_vu"
+  ],
+  "jokers_bought": [
+   "j_trading",
+   "j_jolly",
+   "j_gros_michel",
+   "j_satellite",
+   "j_even_steven",
+   "j_swashbuckler",
+   "j_ticket",
+   "j_devious",
+   "j_abstract",
+   "j_misprint",
+   "j_scholar",
+   "j_reserved_parking",
+   "j_wrathful_joker",
+   "j_popcorn"
+  ],
+  "money_spent": 173,
+  "best_score": 30357,
+  "rerolls": 4,
+  "packs_bought": 16,
+  "packs_opened": 13,
+  "interest_collected": 14,
+  "econ_source": 12,
+  "jokers_sold": [
+   [
+    3,
+    "j_trading"
+   ],
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    4,
+    "j_satellite"
+   ],
+   [
+    5,
+    "j_jolly"
+   ],
+   [
+    5,
+    "j_swashbuckler"
+   ],
+   [
+    5,
+    "j_devious"
+   ],
+   [
+    6,
+    "j_reserved_parking"
+   ],
+   [
+    6,
+    "j_wrathful_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    28
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_trading"
+    ],
+    320
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_trading"
+    ],
+    68
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_trading"
+    ],
+    280
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_jolly",
+     "j_trading"
+    ],
+    480
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_jolly",
+     "j_trading"
+    ],
+    210
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_gros_michel",
+     "j_jolly",
+     "j_trading"
+    ],
+    1150
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    864
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    160
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    300
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    1392
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    150
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    210
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    1512
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    684
+   ],
+   [
+    3,
+    "Four of a Kind",
+    [
+     "j_even_steven",
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    1500
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    948
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    540
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    15
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_jolly",
+     "j_satellite",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    2002
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_jolly",
+     "j_satellite",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    2160
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_satellite",
+     "j_swashbuckler"
+    ],
+    5520
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    3784
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    3440
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    1508
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    4418
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    3784
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    2916
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    9471
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    1560
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    16252
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    1914
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_misprint",
+     "j_scholar"
+    ],
+    14204
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_misprint",
+     "j_scholar"
+    ],
+    6100
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_misprint",
+     "j_scholar"
+    ],
+    3486
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    19327
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    1904
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    23157
+   ],
+   [
+    6,
+    "Four of a Kind",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    7200
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    4331
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    16147
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    3975
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    885
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hermit",
+    [
+     "j_jolly",
+     "j_trading"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_jolly",
+     "j_satellite",
+     "j_trading"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_uranus",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_jolly",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "s_aura",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "s_deja_vu",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_even_steven",
+     "j_misprint",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "Foil",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_misprint",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 258
+}

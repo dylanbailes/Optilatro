@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>V10 Benchmark Report (Seeds 10200–10499)</title>
+<style>
+  body { margin: 0; padding: 32px; background: #0f1115; color: #e6e8ee;
+         font: 14px/1.5 "Segoe UI", system-ui, sans-serif; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 28px 0 10px; border-bottom: 1px solid #2a2e39; padding-bottom: 6px; }
+  h3 { margin: 0 0 10px; font-size: 15px; }
+  h4 { margin: 14px 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: #8b93a7; }
+  .meta { color: #8b93a7; font-size: 12px; margin-bottom: 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 16px; }
+  .card { background: #1a1d24; border: 1px solid #2a2e39; border-radius: 10px; padding: 16px 18px; }
+  table { border-collapse: collapse; width: 100%; background: #1a1d24; border-radius: 10px; overflow: hidden; }
+  th, td { padding: 8px 10px; text-align: right; border-bottom: 1px solid #242834; font-variant-numeric: tabular-nums; }
+  th { background: #232733; color: #8b93a7; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+  td:first-child, th:first-child { text-align: left; }
+  .big { color: #4dabf7; font-weight: 700; }
+  .good { color: #51cf66; font-weight: 700; }
+  .bad { color: #ff6b6b; font-weight: 700; }
+  .brow { display: flex; align-items: center; gap: 10px; margin: 4px 0; }
+  .blabel { width: 180px; font-size: 12px; color: #c3c9d6; }
+  .btrack { flex: 1; background: #232733; border-radius: 4px; height: 14px; }
+  .bfill { display: block; height: 14px; border-radius: 4px; }
+  .bval { width: 44px; text-align: right; font-size: 12px; color: #8b93a7; }
+</style></head><body>
+<h1>Optilatro V10 Benchmark Report — Pristine Seeds 10200–10499</h1>
+<div class="meta">bench/bench_agent_v10.py --seeds 10200-10499 --workers 16 --policies heuristic_v9,search_shop_v10 · 300 unseen seeds · human-fair</div>
+<h2>Summary Comparison</h2>
+<table>
+<tr>
+  <th>Policy</th><th>Wins</th><th>Win %</th><th>Ante-1 Deaths</th><th>Ante-1 %</th><th>Mean Ante</th><th>Mean Steps</th><th>Econ/Run</th><th>Interest/Run</th><th>Tarots/Run</th><th>Planets/Run</th>
+</tr>
+<tr>
+  <td><b>heuristic_v9</b></td>
+  <td>11/300</td>
+  <td class='bad'>3.67%</td>
+  <td>29</td>
+  <td class='bad'>9.67%</td>
+  <td>4.44</td>
+  <td>122</td>
+  <td>$8.9</td>
+  <td>$14.8</td>
+  <td>5.0</td>
+  <td>1.6</td>
+</tr>
+<tr>
+  <td><b>search_shop_v10</b></td>
+  <td>32/300</td>
+  <td class='good'>10.67% (+7.00%)</td>
+  <td>9</td>
+  <td class='good'>3.00% (-6.67%)</td>
+  <td>5.19</td>
+  <td>155</td>
+  <td>$15.0</td>
+  <td>$17.1</td>
+  <td>7.3</td>
+  <td>6.0</td>
+</tr>
+</table>
+
+<h2>Mortality Distribution by Ante</h2>
+<div class="grid">
+<div class="card">
+  <h3>heuristic_v9 — 11/300 Wins (3.67%)</h3>
+  <h4>Deaths / Clears</h4>
+<div class="brow"><span class="blabel">Ante 1</span><span class="btrack"><span class="bfill" style="width:44.6%;background:#ff6b6b"></span></span><span class="bval">29</span></div>
+<div class="brow"><span class="blabel">Ante 2</span><span class="btrack"><span class="bfill" style="width:60.0%;background:#ff6b6b"></span></span><span class="bval">39</span></div>
+<div class="brow"><span class="blabel">Ante 3</span><span class="btrack"><span class="bfill" style="width:49.2%;background:#ff6b6b"></span></span><span class="bval">32</span></div>
+<div class="brow"><span class="blabel">Ante 4</span><span class="btrack"><span class="bfill" style="width:69.2%;background:#ff6b6b"></span></span><span class="bval">45</span></div>
+<div class="brow"><span class="blabel">Ante 5</span><span class="btrack"><span class="bfill" style="width:100.0%;background:#ff6b6b"></span></span><span class="bval">65</span></div>
+<div class="brow"><span class="blabel">Ante 6</span><span class="btrack"><span class="bfill" style="width:66.2%;background:#ff6b6b"></span></span><span class="bval">43</span></div>
+<div class="brow"><span class="blabel">Ante 7</span><span class="btrack"><span class="bfill" style="width:32.3%;background:#ff6b6b"></span></span><span class="bval">21</span></div>
+<div class="brow"><span class="blabel">Ante 8</span><span class="btrack"><span class="bfill" style="width:23.1%;background:#ff6b6b"></span></span><span class="bval">15</span></div>
+<div class="brow"><span class="blabel">Ante 9 (Won)</span><span class="btrack"><span class="bfill" style="width:16.9%;background:#51cf66"></span></span><span class="bval">11</span></div>
+
+</div>
+<div class="card">
+  <h3>search_shop_v10 — 32/300 Wins (10.67%)</h3>
+  <h4>Deaths / Clears</h4>
+<div class="brow"><span class="blabel">Ante 1</span><span class="btrack"><span class="bfill" style="width:15.0%;background:#ff6b6b"></span></span><span class="bval">9</span></div>
+<div class="brow"><span class="blabel">Ante 2</span><span class="btrack"><span class="bfill" style="width:35.0%;background:#ff6b6b"></span></span><span class="bval">21</span></div>
+<div class="brow"><span class="blabel">Ante 3</span><span class="btrack"><span class="bfill" style="width:65.0%;background:#ff6b6b"></span></span><span class="bval">39</span></div>
+<div class="brow"><span class="blabel">Ante 4</span><span class="btrack"><span class="bfill" style="width:100.0%;background:#ff6b6b"></span></span><span class="bval">60</span></div>
+<div class="brow"><span class="blabel">Ante 5</span><span class="btrack"><span class="bfill" style="width:68.3%;background:#ff6b6b"></span></span><span class="bval">41</span></div>
+<div class="brow"><span class="blabel">Ante 6</span><span class="btrack"><span class="bfill" style="width:88.3%;background:#ff6b6b"></span></span><span class="bval">53</span></div>
+<div class="brow"><span class="blabel">Ante 7</span><span class="btrack"><span class="bfill" style="width:35.0%;background:#ff6b6b"></span></span><span class="bval">21</span></div>
+<div class="brow"><span class="blabel">Ante 8</span><span class="btrack"><span class="bfill" style="width:40.0%;background:#ff6b6b"></span></span><span class="bval">24</span></div>
+<div class="brow"><span class="blabel">Ante 9 (Won)</span><span class="btrack"><span class="bfill" style="width:53.3%;background:#51cf66"></span></span><span class="bval">32</span></div>
+
+</div>
+</div>
+</body></html>

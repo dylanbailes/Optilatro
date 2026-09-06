@@ -1,0 +1,636 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 151,
+ "truncated": false,
+ "dollars": 1,
+ "jokers": [
+  "j_mad",
+  "j_flower_pot",
+  "j_sly",
+  "j_abstract",
+  "j_faceless"
+ ],
+ "stats": {
+  "tarots": [
+   "c_moon",
+   "c_fool",
+   "c_moon",
+   "c_empress",
+   "c_fool",
+   "c_empress",
+   "c_hierophant",
+   "c_temperance",
+   "c_hanged_man",
+   "c_wheel_of_fortune",
+   "c_strength",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mad",
+   "j_flower_pot",
+   "j_sly",
+   "j_red_card",
+   "j_half",
+   "j_scary_face",
+   "j_ticket",
+   "j_greedy_joker",
+   "j_abstract",
+   "j_delayed_grat",
+   "j_8_ball",
+   "j_card_sharp",
+   "j_faceless"
+  ],
+  "money_spent": 164,
+  "best_score": 47712,
+  "rerolls": 3,
+  "packs_bought": 15,
+  "packs_opened": 11,
+  "interest_collected": 16,
+  "econ_source": 24,
+  "jokers_sold": [
+   [
+    2,
+    "j_delayed_grat"
+   ],
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    2,
+    "j_half"
+   ],
+   [
+    2,
+    "j_scary_face"
+   ],
+   [
+    3,
+    "j_ticket"
+   ],
+   [
+    4,
+    "j_greedy_joker"
+   ],
+   [
+    4,
+    "j_delayed_grat"
+   ],
+   [
+    4,
+    "j_8_ball"
+   ],
+   [
+    5,
+    "j_card_sharp"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    308
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_mad"
+    ],
+    330
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_mad"
+    ],
+    128
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    224
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    512
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_red_card",
+     "j_sly"
+    ],
+    1752
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_flower_pot",
+     "j_half",
+     "j_mad",
+     "j_scary_face",
+     "j_sly"
+    ],
+    2596
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_mad",
+     "j_scary_face",
+     "j_sly",
+     "j_ticket"
+    ],
+    2448
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    504
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    2700
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    6660
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly"
+    ],
+    4620
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly"
+    ],
+    3173
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly"
+    ],
+    8646
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly"
+    ],
+    5928
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly"
+    ],
+    2440
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    15552
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    5376
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    42336
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    20292
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    6696
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    3250
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    2938
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_faceless",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    5472
+   ]
+  ],
+  "consumable_uses": [
+   [
+    3,
+    "c_moon",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_moon",
+    [
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_empress",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_empress",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_greedy_joker",
+     "j_mad",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hanged_man",
+    [
+     "j_abstract",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_wheel_of_fortune",
+    [
+     "j_8_ball",
+     "j_abstract",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_uranus",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_strength",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_wheel_of_fortune",
+    [
+     "j_abstract",
+     "j_card_sharp",
+     "j_flower_pot",
+     "j_mad",
+     "j_sly"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 104
+}

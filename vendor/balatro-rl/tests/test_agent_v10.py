@@ -20,6 +20,7 @@ docstring.
 from __future__ import annotations
 
 import pytest
+import time
 
 from balatro_sim.card import Card
 from balatro_sim.game import BalatroGame, State
@@ -249,6 +250,111 @@ class TestSearchShopV10:
         g = BalatroGame(seed=0, rng_mode="seed")
         pol = v10.SearchShopV10()
         r = rollout(g, pol)
+        assert "won" in r
+        assert r["steps"] > 0
+
+    def test_value_model_evaluation_and_latency(self):
+        """Pure-Python evaluation of shop_model.json in <30µs."""
+        data = v10._load_shop_value_model()
+        assert data is not None
+        assert "feat_order" in data
+        assert len(data["feat_order"]) >= 45
+
+        sample_feat = {
+            "ante": 1.0, "blind_idx": 0.0, "dollars": 10.0, "interest_units": 2.0,
+            "hands_left": 4.0, "discards_left": 3.0, "joker_count": 1.0, "free_joker_slots": 4.0,
+            "n_chips": 1.0, "n_flat_mult": 0.0, "n_xmult": 0.0, "n_scaling": 0.0,
+            "n_econ": 0.0, "n_retrigger": 0.0, "n_foil": 0.0, "n_holo": 0.0, "n_poly": 0.0,
+            "n_negative": 0.0, "has_chips": 1.0, "has_flat": 0.0, "has_xmult": 0.0,
+            "has_scaling": 0.0, "has_econ": 0.0, "is_balanced": 0.0, "econ_heavy_late": 0.0,
+            "zero_xmult_late": 0.0, "no_scoring_early": 0.0, "deck_size": 52.0, "suit_conc": 0.25,
+            "face_ratio": 0.23, "enh_ratio": 0.0, "seal_ratio": 0.0, "max_hand_lvl": 1.0,
+            "flush_lvl": 1.0, "pair_lvl": 1.0, "two_pair_lvl": 1.0, "high_card_lvl": 1.0,
+            "vouchers_count": 0.0, "has_telescope": 0.0, "has_directors_cut": 0.0,
+            "has_grabber": 0.0, "has_wasteful": 0.0,
+        }
+        t0 = time.perf_counter()
+        iters = 500
+        for _ in range(iters):
+            v = v10.evaluate_shop_value(sample_feat)
+            assert 0.0 < v < 1.0
+        avg_us = ((time.perf_counter() - t0) / iters) * 1e6
+        assert avg_us < 30.0, f"Average inference latency {avg_us:.2f}µs exceeded 30µs budget"
+
+    def test_counterfactual_state_formulation_buy_and_swap(self):
+        """Counterfactual state formulation correctly models post-action feature changes."""
+        from balatro_sim.shop import ShopItem
+        from balatro_sim.jokers.base import JokerInstance
+
+        g = BalatroGame(seed=42, rng_mode="seed")
+        g.reset()
+        g.state = State.SHOP
+        g.dollars = 12
+        g.ante = 4
+        g.joker_slots = 2
+        g.jokers = [
+            JokerInstance("j_joker", game=g),
+            JokerInstance("j_golden", game=g),
+        ]
+        g.current_shop = [
+            ShopItem("joker", "j_cavendish", name="Cavendish", price=5),
+        ]
+
+        # Evaluate swap of joker 1 (golden) for item 0 (cavendish)
+        f_swap = v10.formulate_counterfactual_state(g, {
+            "type": "swap_joker", "sell_idx": 1, "buy_idx": 0
+        })
+        assert f_swap["n_xmult"] == 1.0
+        assert f_swap["n_econ"] == 0.0
+        assert f_swap["zero_xmult_late"] == 0.0
+
+    def test_search_shop_executes_room_making_swap(self):
+        """When joker slots are full, SearchShopV10 sells weak joker to buy xMult upgrade."""
+        from balatro_sim.shop import ShopItem
+        from balatro_sim.jokers.base import JokerInstance
+
+        g = BalatroGame(seed=42, rng_mode="seed")
+        g.reset()
+        g.state = State.SHOP
+        g.dollars = 10
+        g.ante = 4
+        g.joker_slots = 2
+        g.jokers = [
+            JokerInstance("j_popcorn", game=g),
+            JokerInstance("j_joker", game=g),
+        ]
+        g.current_shop = [
+            ShopItem("joker", "j_cavendish", name="Cavendish", price=5),
+        ]
+
+        pol = v10.SearchShopV10()
+        # Step 1: Search should trigger sell of popcorn to make room
+        act1 = pol._search_shop(g)
+        assert act1["type"] == "sell_joker"
+        assert act1["joker_idx"] in (0, 1)
+
+        # Apply sell
+        g.step(act1)
+        assert len(g.jokers) == 1
+
+        # Step 2: Next decision buys Cavendish
+        act2 = pol._search_shop(g)
+        assert act2["type"] == "buy"
+        assert act2["item_idx"] == 0
+
+    def test_search_shop_leaves_when_no_positive_gain(self):
+        """SearchShopV10 safely leaves the shop when no candidate action provides positive value gain."""
+        g = BalatroGame(seed=42, rng_mode="seed")
+        g.reset()
+        g.state = State.SHOP
+        g.dollars = 20
+        g.ante = 3
+        g.current_shop = []
+
+        pol = v10.SearchShopV10()
+        act = pol._search_shop(g)
+        assert act["type"] == "leave_shop"
+
 
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -296,10 +402,12 @@ class TestDeckReshapeTarget(_ReshapeBase):
         t = v10.deck_reshape_target(g)
         assert t["rank"] == 7
 
-    def test_golden_targets_diamonds(self):
-        g = _game([Card(14, "Spades")], deck=_std_deck(), jokers=("j_golden",))
+    def test_diamond_joker_targets_diamonds(self):
+        g = _game([Card(14, "Spades")], deck=_std_deck(), jokers=("j_rough_gem",))
         t = v10.deck_reshape_target(g)
         assert t["suit"] == "Diamonds"
+        g_golden = _game([Card(14, "Spades")], deck=_std_deck(), jokers=("j_golden",))
+        assert v10.deck_reshape_target(g_golden)["suit"] is None
 
     def test_steel_joker_targets_steel(self):
         g = _game([Card(14, "Spades")], deck=_std_deck(),
@@ -365,7 +473,7 @@ class TestReshapeValues(_ReshapeBase):
         assert v10._v10_pack_card_value(g, five) == v10._pack_card_value(five)
 
     def test_pack_card_suit_bonus(self):
-        g = _game([Card(14, "Spades")], deck=_std_deck(), jokers=("j_golden",))
+        g = _game([Card(14, "Spades")], deck=_std_deck(), jokers=("j_rough_gem",))
         dia = Card(5, "Diamonds")
         spade = Card(5, "Spades")
         assert v10._v10_pack_card_value(g, dia) > v10._pack_card_value(dia)
@@ -408,7 +516,7 @@ class TestReshapeTarotAction(_ReshapeBase):
         non-Diamond cards toward Diamonds in the SHOP phase."""
         hand = [Card(13, "Hearts"), Card(12, "Spades"), Card(11, "Clubs"),
                 Card(10, "Diamonds")]
-        g = self._shop_game(hand, ("j_golden",))
+        g = self._shop_game(hand, ("j_rough_gem",))
         g.consumable_hand = ["c_star"]
         best, weakest = v10._target_lists(g.hand)
         act = v10._v10_tarot_action(g, 0, "c_star", g.hand, best, weakest)
@@ -423,3 +531,62 @@ class TestReshapeTarotAction(_ReshapeBase):
         a = v10._v10_tarot_action(g, 0, "c_death", g.hand, best, weakest)
         b = v10._tarot_action(g, 0, "c_death", g.hand, best, weakest)
         assert a == b
+
+
+# ────────────────────────────────────────────────────────────────────────────
+# Ante-1 Pace Rule (R1)
+# ────────────────────────────────────────────────────────────────────────────
+
+class TestAnte1PaceRule:
+    def test_default_config_enabled(self):
+        """V10_DEFAULTS must have ante1_pace_rule enabled by default."""
+        assert v10.V10_DEFAULTS.get("ante1_pace_rule") is True
+
+    def test_pace_triggers_immediate_play(self):
+        """When best_score >= pace (target / hands_left) at Ante 1, agent plays immediately."""
+        # Target 300, 4 hands -> pace 75. A 100-chip play meets pace.
+        g = _game([Card(10, "Hearts"), Card(10, "Spades"), Card(4, "Clubs"), Card(2, "Diamonds")], deck=_std_deck())
+        g.ante = 1
+        g.current_blind.chips_target = 300
+        g.chips_scored = 0
+        g.hands_left = 4
+        g.discards_left = 3
+        
+        plays = [(100, [0, 1], "Two Pair"), (50, [0], "Pair")]
+        v10.V10_PARAMS["farm_clear_threshold"] = 0.90
+        v10.V10_PARAMS["ante1_pace_rule"] = True
+        v10.V10_PARAMS["ante1_pace_mult"] = 1.0
+        
+        act = v10._tier1_survive(g, plays)
+        assert act["type"] == "play"
+        assert act["cards"] == [0, 1]
+
+    def test_below_pace_discards_normally(self):
+        """When best_score < pace at Ante 1, agent discards to seek better hands."""
+        # Target 300, 4 hands -> pace 75. A 40-chip play fails pace.
+        g = _game([Card(10, "Hearts"), Card(8, "Spades"), Card(4, "Clubs"), Card(2, "Diamonds")], deck=_std_deck())
+        g.ante = 1
+        g.current_blind.chips_target = 300
+        g.chips_scored = 0
+        g.hands_left = 4
+        g.discards_left = 3
+        
+        plays = [(40, [0], "High Card")]
+        v10.V10_PARAMS["farm_clear_threshold"] = 0.90
+        v10.V10_PARAMS["ante1_pace_rule"] = True
+        v10.V10_PARAMS["ante1_pace_mult"] = 1.0
+        
+        act = v10._tier1_survive(g, plays)
+        assert act["type"] == "discard"
+
+    def test_fatal_seeds_clear_ante1(self):
+        """Fatal seeds 205 and 275 clear Ante 1 Small Blind with default V10 policy."""
+        for seed in (205, 275):
+            game = BalatroGame(seed=seed, rng_mode="seed")
+            agent = v10.HeuristicV10()
+            for _ in range(100):
+                if game.state == State.GAME_OVER or game.ante > 1:
+                    break
+                game.step(agent.decide(game))
+            assert game.ante > 1, f"Seed {seed} failed to clear Ante 1 (state: {game.state})"
+

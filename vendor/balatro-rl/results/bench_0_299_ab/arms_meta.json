@@ -1,0 +1,36 @@
+{
+ "seed_bank": "Seeds 0-299",
+ "notes": [
+  "Full benchmark bank evaluation comparing V10 against frozen V9 and goal_iter7_final_D.json baseline."
+ ],
+ "arms": [
+  {
+   "label": "Baseline (goal_iter7_D)",
+   "slug": "bench_0_299_tel_goal_iter7_baseline",
+   "source": "vendor\\balatro-rl\\results\\bench_0_299_tel\\goal_iter7_baseline",
+   "n": 300,
+   "command": "python bench/bench_agent_v10.py --games 300 --policies heuristic_v10"
+  },
+  {
+   "label": "Heuristic V9 (baseline)",
+   "slug": "bench_0_299_tel_heuristic_v9",
+   "source": "vendor\\balatro-rl\\results\\bench_0_299_tel\\heuristic_v9",
+   "n": 300,
+   "command": "python bench/bench_agent_v10.py --games 300 --policies heuristic_v9"
+  },
+  {
+   "label": "Heuristic V10",
+   "slug": "bench_0_299_tel_heuristic_v10",
+   "source": "vendor\\balatro-rl\\results\\bench_0_299_tel\\heuristic_v10",
+   "n": 300,
+   "command": "python bench/bench_agent_v10.py --games 300 --policies heuristic_v10"
+  },
+  {
+   "label": "SearchShop V10",
+   "slug": "bench_0_299_tel_search_shop_v10",
+   "source": "vendor\\balatro-rl\\results\\bench_0_299_tel\\search_shop_v10",
+   "n": 300,
+   "command": "python bench/bench_agent_v10.py --games 300 --policies search_shop_v10"
+  }
+ ]
+}

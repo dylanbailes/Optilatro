@@ -1,0 +1,408 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 0,
+ "death_kind": "Small",
+ "steps": 99,
+ "truncated": false,
+ "dollars": 23,
+ "jokers": [
+  "j_business",
+  "j_ticket",
+  "j_madness",
+  "j_cavendish"
+ ],
+ "stats": {
+  "tarots": [
+   "c_empress",
+   "c_fool",
+   "c_empress",
+   "c_death",
+   "c_devil"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_business",
+   "j_gros_michel",
+   "j_hanging_chad",
+   "j_blue_joker",
+   "j_abstract",
+   "j_red_card",
+   "j_ticket",
+   "j_madness",
+   "j_flash",
+   "j_cavendish"
+  ],
+  "money_spent": 86,
+  "best_score": 4872,
+  "rerolls": 1,
+  "packs_bought": 7,
+  "packs_opened": 5,
+  "interest_collected": 7,
+  "econ_source": 36,
+  "jokers_sold": [
+   [
+    2,
+    "j_bootstraps"
+   ],
+   [
+    3,
+    "j_red_card"
+   ],
+   [
+    3,
+    "j_hanging_chad"
+   ],
+   [
+    3,
+    "j_flash"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    120
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bootstraps",
+     "j_business"
+    ],
+    248
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_bootstraps",
+     "j_business"
+    ],
+    180
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_business"
+    ],
+    56
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_bootstraps",
+     "j_business",
+     "j_gros_michel"
+    ],
+    240
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_business",
+     "j_gros_michel"
+    ],
+    612
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_business",
+     "j_gros_michel",
+     "j_hanging_chad"
+    ],
+    1326
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_bootstraps",
+     "j_business",
+     "j_gros_michel",
+     "j_hanging_chad"
+    ],
+    3591
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_gros_michel",
+     "j_hanging_chad"
+    ],
+    4480
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_hanging_chad",
+     "j_red_card"
+    ],
+    3060
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_business",
+     "j_madness",
+     "j_ticket"
+    ],
+    292
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_business",
+     "j_madness",
+     "j_ticket"
+    ],
+    1302
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_abstract",
+     "j_business",
+     "j_madness",
+     "j_ticket"
+    ],
+    1896
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_business",
+     "j_madness",
+     "j_ticket"
+    ],
+    312
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_abstract",
+     "j_business",
+     "j_madness",
+     "j_ticket"
+    ],
+    2100
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_abstract",
+     "j_business",
+     "j_madness",
+     "j_ticket"
+    ],
+    1350
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_business",
+     "j_madness",
+     "j_ticket"
+    ],
+    292
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_business",
+     "j_cavendish",
+     "j_madness",
+     "j_ticket"
+    ],
+    720
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_business",
+     "j_cavendish",
+     "j_madness",
+     "j_ticket"
+    ],
+    1800
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_business",
+     "j_cavendish",
+     "j_madness",
+     "j_ticket"
+    ],
+    1992
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_cavendish",
+     "j_madness",
+     "j_ticket"
+    ],
+    360
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_empress",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_gros_michel",
+     "j_hanging_chad"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_gros_michel",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_gros_michel",
+     "j_hanging_chad"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_hanging_chad",
+     "j_red_card"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_devil",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_hanging_chad",
+     "j_red_card"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 234
+}

@@ -1,0 +1,278 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 70,
+ "truncated": false,
+ "dollars": 18,
+ "jokers": [
+  "j_greedy_joker",
+  "j_scholar",
+  "j_selzer",
+  "j_faceless",
+  "j_satellite"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_hermit",
+   "c_star"
+  ],
+  "planets": [
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scholar",
+   "j_scary_face",
+   "j_banner",
+   "j_selzer",
+   "j_faceless",
+   "j_satellite"
+  ],
+  "money_spent": 67,
+  "best_score": 7240,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 5,
+  "interest_collected": 4,
+  "econ_source": 12,
+  "jokers_sold": [
+   [
+    3,
+    "j_scary_face"
+   ],
+   [
+    3,
+    "j_banner"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    80
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    264
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_greedy_joker"
+    ],
+    570
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1000
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    940
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    1710
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    1696
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    1267
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    1600
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    7240
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar",
+     "j_selzer"
+    ],
+    948
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar",
+     "j_selzer"
+    ],
+    300
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar",
+     "j_selzer"
+    ],
+    300
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_faceless",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_scholar",
+     "j_selzer"
+    ],
+    112
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_greedy_joker"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_jupiter",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_star",
+    [
+     "j_banner",
+     "j_greedy_joker",
+     "j_scary_face",
+     "j_scholar",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 195
+}

@@ -392,12 +392,26 @@ class _EvalGame:
     `consumable_hand` is read by Observatory (short-circuited while vouchers
     stay empty) — provided for robustness."""
 
-    __slots__ = ("rng", "vouchers", "consumable_hand")
+    __slots__ = ("rng", "vouchers", "consumable_hand", "jokers", "run_hand_counts")
 
-    def __init__(self):
+    def __init__(self, game=None):
         self.rng = make_source(0, "seed")
         self.vouchers = set()
         self.consumable_hand = []
+        if game is not None and hasattr(game, "jokers"):
+            self.jokers = [j for j in game.jokers]
+        else:
+            self.jokers = []
+        self.run_hand_counts = dict(game.run_hand_counts) if hasattr(game, 'run_hand_counts') and game.run_hand_counts else {}
+
+    def copy(self):
+        c = _EvalGame()
+        c.rng = self.rng
+        c.vouchers = set(self.vouchers)
+        c.consumable_hand = list(self.consumable_hand)
+        c.jokers = list(self.jokers)
+        c.run_hand_counts = dict(self.run_hand_counts)
+        return c
 
 
 def _copy_state(state: dict) -> dict:
@@ -432,7 +446,7 @@ def eval_hand_score(game, hand_type, scoring_cards, all_cards,
     - extra_joker: (key, edition) appended (shop/pack valuation).
     - exclude_joker: index of an owned joker to drop (sell valuation).
     """
-    eg = _EvalGame()
+    eg = _EvalGame(game)
     jokers = []
     for i, j in enumerate(game.jokers):
         if i == exclude_joker:
@@ -447,8 +461,10 @@ def eval_hand_score(game, hand_type, scoring_cards, all_cards,
     if extra_joker is not None:
         key, edition = extra_joker
         jokers.append(JokerInstance(key, edition, game=eg))
+    eg.jokers = jokers
     cards = [c.copy() for c in all_cards]
-    sc = [c.copy() for c in scoring_cards]
+    card_map = {id(orig): cp for orig, cp in zip(all_cards, cards)}
+    sc = [card_map[id(c)] if id(c) in card_map else c.copy() for c in scoring_cards]
     held = [c.copy() for c in (held_cards or [])]
     pl = dict(game.planet_levels)
     if level_override:
@@ -796,8 +812,25 @@ def scored_plays(game, hand=None, extra_joker=None, exclude_joker=None,
     # Score the top `topk` by priority plus a bounded tie window (same-priority
     # variants stay in) — never the full 218 (profiling: tie expansion used to
     # score ~80+ combos per call).
+    window = candidates[:limit]
+    # V10 synergy window: retrigger/enhancement engines (Hanging Chad,
+    # Scholar, Photograph, Greedy...) make SINGLE-card plays outscore whole
+    # flushes, but 1-card combos are priority-0 and never reach the
+    # priority-sorted window (diag_topplay_miss.py: median gap 760 chips).
+    # Append the valid singles explicitly. Gated so V9 stays byte-identical.
+    try:
+        from balatro_sim.agent_v10 import V10_PARAMS as _VP
+        if (_VP.get("farm_clear_threshold", 0.9) < 1.0
+                and _VP.get("singles_window", False)):
+            have = {c[2] for c in window}
+            lo, hi = offsets[1], offsets[1] + n
+            window = window + [c for c in candidates
+                               if lo <= c[2] < hi and c[2] not in have
+                               and c[1]]
+    except Exception:
+        pass
     scored = []
-    for priority, valid, idx, combo, ht, sc, cards, held in candidates[:limit]:
+    for priority, valid, idx, combo, ht, sc, cards, held in window:
         if sc is None:
             # lazy: only the scored window needs the scoring cards — this is
             # the ONLY evaluate_hand call left in the hot enumeration (was
@@ -1221,7 +1254,8 @@ def _structure_pool(hand, min_suit=4, min_run=4, min_pairs=2):
     return None, None
 
 
-def best_discard(game, max_size=None, pool_size=None, base_score=None):
+def best_discard(game, max_size=None, pool_size=None, base_score=None,
+                 two_hand=False):
     """Expected-value discard over the KNOWN deck composition (human-fair).
 
     A human knows which cards remain in the deck but NOT the draw order, so
@@ -1339,6 +1373,13 @@ def best_discard(game, max_size=None, pool_size=None, base_score=None):
     multiset = _value_multiset(deck)
     bar = base * slack
 
+    # Two-hand objective (V10, gated): when the blind cannot be cleared in one
+    # hand, optimize the SUM of the top-2 plays after refill (Bellatro-101:
+    # "any two five-card hands will work") instead of the single best play.
+    if two_hand:
+        cur = scored_plays(game, topk=2)
+        bar = (sum(e[0] for e in cur[:2])) * slack if cur else bar
+
     # Phase 1 — screen every candidate by its best-possible (ceiling) hand.
     screened = []   # (ceiling_score, dset, keep)
     flush_bonus = p["discard_flush_ceiling"]
@@ -1369,15 +1410,21 @@ def best_discard(game, max_size=None, pool_size=None, base_score=None):
     target_aware = p["discard_target_aware"] and base < share
     clear_weight = p["discard_clear_weight"]
     rng = random.Random(0)   # throwaway deterministic sampler — never the run's
-    best_val, best_set = base, ()
+    best_val, best_set = (sum(e[0] for e in scored_plays(game, topk=2)[:2])
+                          if two_hand else base), ()
     for _cscore, dset, keep in candidates:
         k = len(dset)
         mean = 0.0
         clears = 0
         for _ in range(samples):
             drawn = _keys_to_cards(_sample_value_keys(rng, multiset, k))
-            s = best_play_score(game, hand=keep + drawn, topk=ev_topk,
-                                filter_boss=True)
+            if two_hand:
+                pl = scored_plays(game, hand=keep + drawn, topk=ev_topk,
+                                  filter_boss=True)
+                s = sum(e[0] for e in pl[:2])
+            else:
+                s = best_play_score(game, hand=keep + drawn, topk=ev_topk,
+                                    filter_boss=True)
             mean += s
             clears += s >= share
         mean /= samples

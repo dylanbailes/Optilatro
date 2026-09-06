@@ -1,0 +1,752 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 200,
+ "truncated": false,
+ "dollars": 24,
+ "jokers": [
+  "j_raised_fist",
+  "j_fibonacci",
+  "j_trio",
+  "j_odd_todd",
+  "j_even_steven"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_lovers",
+   "c_magician",
+   "c_sun",
+   "c_temperance",
+   "c_hermit",
+   "c_chariot",
+   "c_devil",
+   "c_hermit",
+   "c_sun",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [
+   "s_medium"
+  ],
+  "jokers_bought": [
+   "j_photograph",
+   "j_crafty",
+   "j_mystic_summit",
+   "j_mail",
+   "j_raised_fist",
+   "j_rough_gem",
+   "j_certificate",
+   "j_misprint",
+   "j_ice_cream",
+   "j_egg",
+   "j_golden",
+   "j_todo_list",
+   "j_fibonacci",
+   "j_trio",
+   "j_odd_todd",
+   "j_even_steven"
+  ],
+  "money_spent": 212,
+  "best_score": 53568,
+  "rerolls": 5,
+  "packs_bought": 19,
+  "packs_opened": 13,
+  "interest_collected": 35,
+  "econ_source": 22,
+  "jokers_sold": [
+   [
+    3,
+    "j_crafty"
+   ],
+   [
+    3,
+    "j_mystic_summit"
+   ],
+   [
+    3,
+    "j_mail"
+   ],
+   [
+    4,
+    "j_rough_gem"
+   ],
+   [
+    4,
+    "j_certificate"
+   ],
+   [
+    4,
+    "j_egg"
+   ],
+   [
+    4,
+    "j_golden"
+   ],
+   [
+    4,
+    "j_todo_list"
+   ],
+   [
+    5,
+    "j_misprint"
+   ],
+   [
+    6,
+    "j_photograph"
+   ],
+   [
+    6,
+    "j_ice_cream"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    356
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_crafty",
+     "j_photograph"
+    ],
+    312
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crafty",
+     "j_photograph"
+    ],
+    1176
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_mystic_summit",
+     "j_photograph"
+    ],
+    240
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crafty",
+     "j_mystic_summit",
+     "j_photograph"
+    ],
+    460
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_mystic_summit",
+     "j_photograph"
+    ],
+    232
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_mystic_summit",
+     "j_photograph"
+    ],
+    918
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_crafty",
+     "j_mail",
+     "j_mystic_summit",
+     "j_photograph"
+    ],
+    1296
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_mail",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    1584
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_crafty",
+     "j_mail",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    260
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_mail",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    972
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_crafty",
+     "j_mail",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    1232
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_mail",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    1000
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_mail",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    1752
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_mail",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    288
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_certificate",
+     "j_mail",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    1920
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_mail",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    3600
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    3808
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_certificate",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    1840
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_certificate",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    4524
+   ],
+   [
+    4,
+    "Four of a Kind",
+    [
+     "j_certificate",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    2888
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_certificate",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    396
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_certificate",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    6972
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    2540
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_certificate",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    3776
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    6858
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    6600
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    17010
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    17856
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    3847
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    2587
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_photograph",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    21978
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    53568
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    6656
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    9102
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    8740
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    840
+   ]
+  ],
+  "consumable_uses": [
+   [
+    3,
+    "c_hermit",
+    [
+     "j_crafty",
+     "j_mail",
+     "j_mystic_summit",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_lovers",
+    [
+     "j_certificate",
+     "j_mail",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_certificate",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_sun",
+    [
+     "j_certificate",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_temperance",
+    [
+     "j_certificate",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_certificate",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    4,
+    "s_medium",
+    [
+     "j_certificate",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_egg",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_devil",
+    [
+     "j_egg",
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_ice_cream",
+     "j_misprint",
+     "j_photograph",
+     "j_raised_fist",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_sun",
+    [
+     "j_fibonacci",
+     "j_ice_cream",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Purple"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_wheel_of_fortune",
+    [
+     "j_even_steven",
+     "j_fibonacci",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_trio"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 213
+}

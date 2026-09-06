@@ -1,0 +1,773 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 219,
+ "truncated": false,
+ "dollars": 12,
+ "jokers": [
+  "j_bootstraps",
+  "j_baseball",
+  "j_trousers",
+  "j_family",
+  "j_abstract"
+ ],
+ "stats": {
+  "tarots": [
+   "c_fool",
+   "c_magician",
+   "c_magician",
+   "c_wheel_of_fortune",
+   "c_emperor",
+   "c_hanged_man"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_photograph",
+   "j_gros_michel",
+   "j_even_steven",
+   "j_delayed_grat",
+   "j_lusty_joker",
+   "j_bootstraps",
+   "j_baseball",
+   "j_luchador",
+   "j_trousers",
+   "j_rocket",
+   "j_lucky_cat",
+   "j_pareidolia",
+   "j_smeared",
+   "j_scholar",
+   "j_todo_list",
+   "j_faceless",
+   "j_card_sharp",
+   "j_golden",
+   "j_family",
+   "j_faceless",
+   "j_turtle_bean",
+   "j_hack",
+   "j_flash",
+   "j_stencil",
+   "j_ice_cream",
+   "j_abstract"
+  ],
+  "money_spent": 246,
+  "best_score": 41850,
+  "rerolls": 3,
+  "packs_bought": 14,
+  "packs_opened": 8,
+  "interest_collected": 37,
+  "econ_source": 69,
+  "jokers_sold": [
+   [
+    2,
+    "j_satellite"
+   ],
+   [
+    3,
+    "j_delayed_grat"
+   ],
+   [
+    3,
+    "j_photograph"
+   ],
+   [
+    3,
+    "j_lusty_joker"
+   ],
+   [
+    3,
+    "j_luchador"
+   ],
+   [
+    4,
+    "j_rocket"
+   ],
+   [
+    4,
+    "j_lucky_cat"
+   ],
+   [
+    4,
+    "j_pareidolia"
+   ],
+   [
+    4,
+    "j_smeared"
+   ],
+   [
+    4,
+    "j_scholar"
+   ],
+   [
+    4,
+    "j_todo_list"
+   ],
+   [
+    4,
+    "j_even_steven"
+   ],
+   [
+    4,
+    "j_faceless"
+   ],
+   [
+    5,
+    "j_golden"
+   ],
+   [
+    5,
+    "j_card_sharp"
+   ],
+   [
+    5,
+    "j_faceless"
+   ],
+   [
+    6,
+    "j_turtle_bean"
+   ],
+   [
+    6,
+    "j_hack"
+   ],
+   [
+    6,
+    "j_flash"
+   ],
+   [
+    6,
+    "j_stencil"
+   ],
+   [
+    6,
+    "j_ice_cream"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    280
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    56
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_photograph",
+     "j_satellite"
+    ],
+    584
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gros_michel",
+     "j_photograph",
+     "j_satellite"
+    ],
+    680
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_gros_michel",
+     "j_photograph",
+     "j_satellite"
+    ],
+    1150
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_gros_michel",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    2380
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    574
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    598
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    270
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    180
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    1672
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    396
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    3216
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_even_steven",
+     "j_luchador",
+     "j_trousers"
+    ],
+    432
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_even_steven",
+     "j_luchador",
+     "j_trousers"
+    ],
+    3280
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_even_steven",
+     "j_luchador",
+     "j_trousers"
+    ],
+    303
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_even_steven",
+     "j_rocket",
+     "j_trousers"
+    ],
+    3118
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_even_steven",
+     "j_rocket",
+     "j_trousers"
+    ],
+    1417
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_even_steven",
+     "j_rocket",
+     "j_trousers"
+    ],
+    2227
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_even_steven",
+     "j_lucky_cat",
+     "j_trousers"
+    ],
+    7654
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_even_steven",
+     "j_faceless",
+     "j_trousers"
+    ],
+    5499
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_even_steven",
+     "j_faceless",
+     "j_trousers"
+    ],
+    3906
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_even_steven",
+     "j_faceless",
+     "j_trousers"
+    ],
+    810
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_card_sharp",
+     "j_golden",
+     "j_trousers"
+    ],
+    3037
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_card_sharp",
+     "j_golden",
+     "j_trousers"
+    ],
+    5953
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_card_sharp",
+     "j_golden",
+     "j_trousers"
+    ],
+    2970
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_card_sharp",
+     "j_family",
+     "j_trousers"
+    ],
+    3510
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_card_sharp",
+     "j_family",
+     "j_trousers"
+    ],
+    2592
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_card_sharp",
+     "j_family",
+     "j_trousers"
+    ],
+    1620
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_card_sharp",
+     "j_family",
+     "j_trousers"
+    ],
+    14742
+   ],
+   [
+    5,
+    "Four of a Kind",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_card_sharp",
+     "j_family",
+     "j_trousers"
+    ],
+    41850
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_family",
+     "j_trousers",
+     "j_turtle_bean"
+    ],
+    8930
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_family",
+     "j_trousers",
+     "j_turtle_bean"
+    ],
+    7276
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_family",
+     "j_trousers",
+     "j_turtle_bean"
+    ],
+    3969
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_family",
+     "j_flash",
+     "j_trousers"
+    ],
+    6615
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_family",
+     "j_flash",
+     "j_trousers"
+    ],
+    13668
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_family",
+     "j_flash",
+     "j_trousers"
+    ],
+    8505
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_family",
+     "j_flash",
+     "j_trousers"
+    ],
+    1512
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_bootstraps",
+     "j_family",
+     "j_trousers"
+    ],
+    9778
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_bootstraps",
+     "j_family",
+     "j_trousers"
+    ],
+    7546
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_baseball",
+     "j_bootstraps",
+     "j_family",
+     "j_trousers"
+    ],
+    7312
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_mercury",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_bootstraps",
+     "j_delayed_grat",
+     "j_even_steven",
+     "j_lusty_joker",
+     "j_photograph"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_wheel_of_fortune",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_even_steven",
+     "j_lucky_cat",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_emperor",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_card_sharp",
+     "j_family",
+     "j_trousers"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hanged_man",
+    [
+     "j_baseball",
+     "j_bootstraps",
+     "j_card_sharp",
+     "j_family",
+     "j_trousers"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 167
+}

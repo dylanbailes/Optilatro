@@ -1,0 +1,584 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 148,
+ "truncated": false,
+ "dollars": 7,
+ "jokers": [
+  "j_cavendish",
+  "j_seeing_double",
+  "j_hanging_chad",
+  "j_photograph",
+  "j_photograph"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_death",
+   "c_fool",
+   "c_death",
+   "c_emperor",
+   "c_wheel_of_fortune",
+   "c_magician",
+   "c_fool",
+   "c_magician",
+   "c_temperance",
+   "c_temperance",
+   "c_hierophant"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_swashbuckler",
+   "j_cavendish",
+   "j_dusk",
+   "j_scary_face",
+   "j_crafty",
+   "j_delayed_grat",
+   "j_hallucination",
+   "j_popcorn",
+   "j_seeing_double",
+   "j_sixth_sense",
+   "j_hanging_chad",
+   "j_photograph",
+   "j_ring_master",
+   "j_photograph"
+  ],
+  "money_spent": 188,
+  "best_score": 14040,
+  "rerolls": 4,
+  "packs_bought": 18,
+  "packs_opened": 11,
+  "interest_collected": 26,
+  "econ_source": 39,
+  "jokers_sold": [
+   [
+    2,
+    "j_dusk"
+   ],
+   [
+    2,
+    "j_crafty"
+   ],
+   [
+    3,
+    "j_scary_face"
+   ],
+   [
+    3,
+    "j_hallucination"
+   ],
+   [
+    3,
+    "j_delayed_grat"
+   ],
+   [
+    4,
+    "j_odd_todd"
+   ],
+   [
+    4,
+    "j_sixth_sense"
+   ],
+   [
+    4,
+    "j_swashbuckler"
+   ],
+   [
+    5,
+    "j_ring_master"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    300
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_odd_todd",
+     "j_swashbuckler"
+    ],
+    480
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_odd_todd",
+     "j_swashbuckler"
+    ],
+    1536
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_odd_todd",
+     "j_swashbuckler"
+    ],
+    2400
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    2448
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    5832
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    8835
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_odd_todd",
+     "j_swashbuckler"
+    ],
+    2145
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_delayed_grat",
+     "j_hallucination",
+     "j_odd_todd",
+     "j_swashbuckler"
+    ],
+    2880
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_swashbuckler"
+    ],
+    13464
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_swashbuckler"
+    ],
+    5460
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    5070
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    8970
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    4356
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    9660
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_popcorn",
+     "j_seeing_double"
+    ],
+    5250
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_popcorn",
+     "j_seeing_double"
+    ],
+    225
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_popcorn",
+     "j_seeing_double"
+    ],
+    5808
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_photograph",
+     "j_seeing_double"
+    ],
+    3456
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_photograph",
+     "j_seeing_double"
+    ],
+    216
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_photograph",
+     "j_seeing_double"
+    ],
+    1560
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_photograph",
+     "j_seeing_double"
+    ],
+    6480
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_odd_todd",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_dusk",
+     "j_odd_todd",
+     "j_scary_face",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_emperor",
+    [
+     "j_cavendish",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_wheel_of_fortune",
+    [
+     "j_cavendish",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_magician",
+    [
+     "j_cavendish",
+     "j_odd_todd",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_cavendish",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_cavendish",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_temperance",
+    [
+     "j_cavendish",
+     "j_popcorn",
+     "j_seeing_double",
+     "j_sixth_sense",
+     "j_swashbuckler"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_temperance",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_seeing_double"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hierophant",
+    [
+     "j_cavendish",
+     "j_hanging_chad",
+     "j_photograph",
+     "j_photograph",
+     "j_seeing_double"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "Foil",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 211
+}

@@ -196,6 +196,15 @@ class JokerInstance:
             self.state: dict = deepcopy(self.effect.state_defaults)
         self._hook_cache: dict = {}
 
+    def __getstate__(self):
+        # _hook_cache memoizes the module-level _NOOP sentinel; deepcopy would
+        # copy that sentinel into a fresh object which fails the `m is _NOOP`
+        # identity check in fire() and then gets called as a plain object().
+        # Drop it on copy — forks repopulate the cache lazily.
+        state = self.__dict__.copy()
+        state["_hook_cache"] = {}
+        return state
+
     def chance(self):
         """RNG for probability triggers: the game's per-node 'chance' source
         (deterministic per seed in seed mode); module random when the joker was

@@ -1,0 +1,301 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 68,
+ "truncated": false,
+ "dollars": 10,
+ "jokers": [
+  "j_lusty_joker",
+  "j_sly",
+  "j_abstract",
+  "j_family",
+  "j_trading"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant",
+   "c_star",
+   "c_fool",
+   "c_star",
+   "c_world"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_sly",
+   "j_abstract",
+   "j_cartomancer",
+   "j_turtle_bean",
+   "j_family",
+   "j_trading"
+  ],
+  "money_spent": 54,
+  "best_score": 3422,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "interest_collected": 0,
+  "econ_source": 3,
+  "jokers_sold": [
+   [
+    3,
+    "j_cartomancer"
+   ],
+   [
+    3,
+    "j_turtle_bean"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    268
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_lusty_joker"
+    ],
+    518
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    320
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    138
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    160
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    880
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    1316
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_sly",
+     "j_turtle_bean"
+    ],
+    1632
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_sly",
+     "j_turtle_bean"
+    ],
+    2147
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_family",
+     "j_lusty_joker",
+     "j_sly",
+     "j_turtle_bean"
+    ],
+    1960
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_family",
+     "j_lusty_joker",
+     "j_sly",
+     "j_turtle_bean"
+    ],
+    1462
+   ],
+   [
+    3,
+    "Full House",
+    [
+     "j_abstract",
+     "j_family",
+     "j_lusty_joker",
+     "j_sly",
+     "j_trading"
+    ],
+    2166
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_lusty_joker"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_star",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_sly",
+     "j_turtle_bean"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_sly",
+     "j_turtle_bean"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_star",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_sly",
+     "j_turtle_bean"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_world",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_sly",
+     "j_turtle_bean"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "Bonus",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 179
+}

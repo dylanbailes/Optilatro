@@ -1,0 +1,798 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 208,
+ "truncated": false,
+ "dollars": 29,
+ "jokers": [
+  "j_abstract",
+  "j_photograph",
+  "j_rocket",
+  "j_stuntman",
+  "j_ice_cream"
+ ],
+ "stats": {
+  "tarots": [
+   "c_devil",
+   "c_moon",
+   "c_chariot",
+   "c_death",
+   "c_magician",
+   "c_death",
+   "c_devil",
+   "c_fool",
+   "c_temperance",
+   "c_hermit",
+   "c_devil",
+   "c_temperance",
+   "c_fool",
+   "c_temperance",
+   "c_temperance",
+   "c_empress"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_pluto",
+   "pl_pluto",
+   "pl_pluto",
+   "pl_pluto"
+  ],
+  "spectrals": [
+   "s_cryptid"
+  ],
+  "jokers_bought": [
+   "j_certificate",
+   "j_abstract",
+   "j_photograph",
+   "j_smiley",
+   "j_red_card",
+   "j_rocket",
+   "j_dusk",
+   "j_sock_and_buskin",
+   "j_stuntman",
+   "j_satellite",
+   "j_reserved_parking",
+   "j_green_joker",
+   "j_wrathful_joker",
+   "j_reserved_parking",
+   "j_juggler",
+   "j_gluttenous_joker",
+   "j_gros_michel",
+   "j_egg",
+   "j_ice_cream"
+  ],
+  "money_spent": 299,
+  "best_score": 32060,
+  "rerolls": 8,
+  "packs_bought": 29,
+  "packs_opened": 20,
+  "interest_collected": 38,
+  "econ_source": 75,
+  "jokers_sold": [
+   [
+    2,
+    "j_smiley"
+   ],
+   [
+    2,
+    "j_red_card"
+   ],
+   [
+    2,
+    "j_certificate"
+   ],
+   [
+    3,
+    "j_dusk"
+   ],
+   [
+    3,
+    "j_sock_and_buskin"
+   ],
+   [
+    3,
+    "j_banner"
+   ],
+   [
+    4,
+    "j_satellite"
+   ],
+   [
+    4,
+    "j_reserved_parking"
+   ],
+   [
+    4,
+    "j_green_joker"
+   ],
+   [
+    4,
+    "j_wrathful_joker"
+   ],
+   [
+    4,
+    "j_reserved_parking"
+   ],
+   [
+    5,
+    "j_juggler"
+   ],
+   [
+    5,
+    "j_gluttenous_joker"
+   ],
+   [
+    6,
+    "j_egg"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    112
+   ],
+   [
+    1,
+    "Two Pair",
+    [],
+    108
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_banner"
+    ],
+    740
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_banner",
+     "j_certificate"
+    ],
+    272
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_banner",
+     "j_certificate"
+    ],
+    450
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_certificate",
+     "j_photograph"
+    ],
+    1876
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_certificate",
+     "j_photograph",
+     "j_smiley"
+    ],
+    9024
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_certificate",
+     "j_photograph",
+     "j_red_card"
+    ],
+    7200
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_dusk",
+     "j_photograph",
+     "j_rocket"
+    ],
+    2414
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_photograph",
+     "j_rocket",
+     "j_sock_and_buskin"
+    ],
+    6960
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_photograph",
+     "j_rocket",
+     "j_sock_and_buskin"
+    ],
+    3492
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_photograph",
+     "j_rocket",
+     "j_sock_and_buskin"
+    ],
+    2312
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_photograph",
+     "j_rocket",
+     "j_satellite",
+     "j_stuntman"
+    ],
+    4726
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_photograph",
+     "j_rocket",
+     "j_satellite",
+     "j_stuntman"
+    ],
+    4539
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_green_joker",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    9900
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman",
+     "j_wrathful_joker"
+    ],
+    14025
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_juggler",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    10260
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_juggler",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    4986
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    11340
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    5520
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    32025
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    21120
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    10710
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    21350
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_ice_cream",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    16200
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_devil",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_certificate",
+     "j_photograph"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_moon",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_certificate",
+     "j_photograph",
+     "j_smiley"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Purple"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_certificate",
+     "j_photograph",
+     "j_red_card"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_certificate",
+     "j_photograph",
+     "j_red_card"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_death",
+    [
+     "j_abstract",
+     "j_photograph",
+     "j_rocket",
+     "j_satellite",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Spades",
+      "enh": "Gold",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_photograph",
+     "j_rocket",
+     "j_satellite",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_abstract",
+     "j_juggler",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_juggler",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_abstract",
+     "j_juggler",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_devil",
+    [
+     "j_abstract",
+     "j_gluttenous_joker",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    5,
+    "pl_pluto",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_devil",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "s_cryptid",
+    [
+     "j_abstract",
+     "j_gros_michel",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "Stone",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_empress",
+    [
+     "j_abstract",
+     "j_ice_cream",
+     "j_photograph",
+     "j_rocket",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 229
+}

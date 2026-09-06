@@ -1,0 +1,920 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 211,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_raised_fist",
+  "j_runner",
+  "j_sly",
+  "j_abstract",
+  "j_banner"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant",
+   "c_lovers",
+   "c_death",
+   "c_sun",
+   "c_fool",
+   "c_hierophant",
+   "c_strength",
+   "c_hanged_man",
+   "c_hanged_man",
+   "c_magician",
+   "c_moon"
+  ],
+  "planets": [
+   "pl_uranus",
+   "pl_jupiter",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_mercury",
+   "pl_venus",
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_faceless",
+   "j_certificate",
+   "j_raised_fist",
+   "j_runner",
+   "j_even_steven",
+   "j_sly",
+   "j_scary_face",
+   "j_to_the_moon",
+   "j_8_ball",
+   "j_todo_list",
+   "j_abstract",
+   "j_banner"
+  ],
+  "money_spent": 197,
+  "best_score": 34500,
+  "rerolls": 3,
+  "packs_bought": 21,
+  "packs_opened": 14,
+  "interest_collected": 34,
+  "econ_source": 44,
+  "jokers_sold": [
+   [
+    2,
+    "j_sly"
+   ],
+   [
+    3,
+    "j_certificate"
+   ],
+   [
+    3,
+    "j_crafty"
+   ],
+   [
+    4,
+    "j_faceless"
+   ],
+   [
+    4,
+    "j_scary_face"
+   ],
+   [
+    5,
+    "j_to_the_moon"
+   ],
+   [
+    5,
+    "j_8_ball"
+   ],
+   [
+    5,
+    "j_todo_list"
+   ],
+   [
+    6,
+    "j_even_steven"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    316
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_crafty",
+     "j_faceless"
+    ],
+    260
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_faceless"
+    ],
+    112
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_faceless"
+    ],
+    60
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crafty",
+     "j_faceless"
+    ],
+    56
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_crafty",
+     "j_faceless"
+    ],
+    596
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_crafty",
+     "j_faceless"
+    ],
+    60
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless"
+    ],
+    174
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless"
+    ],
+    840
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_raised_fist"
+    ],
+    2646
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    1540
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    88
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    2030
+   ],
+   [
+    3,
+    "Four of a Kind",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    2622
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    1476
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_crafty",
+     "j_even_steven",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    2600
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_crafty",
+     "j_even_steven",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    1995
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    1054
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    3955
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_scary_face",
+     "j_sly"
+    ],
+    5088
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_scary_face",
+     "j_sly"
+    ],
+    2700
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_scary_face",
+     "j_sly"
+    ],
+    1199
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_scary_face",
+     "j_sly"
+    ],
+    4860
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_scary_face",
+     "j_sly"
+    ],
+    4320
+   ],
+   [
+    5,
+    "Straight",
+    [
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly",
+     "j_to_the_moon"
+    ],
+    3104
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly",
+     "j_to_the_moon"
+    ],
+    7946
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_8_ball",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    6656
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    7502
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    3570
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    11450
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    13478
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    10621
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    9435
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    12989
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    11742
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    8575
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    7400
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    9144
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    10676
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    7280
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_crafty",
+     "j_faceless"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hierophant",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_lovers",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_raised_fist",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Purple"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_sun",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Gold"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_jupiter",
+    [
+     "j_certificate",
+     "j_crafty",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_mercury",
+    [
+     "j_crafty",
+     "j_even_steven",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_crafty",
+     "j_even_steven",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_even_steven",
+     "j_faceless",
+     "j_raised_fist",
+     "j_runner"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hierophant",
+    [
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_scary_face",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_scary_face",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_strength",
+    [
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_scary_face",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hanged_man",
+    [
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "pl_mercury",
+    [
+     "j_8_ball",
+     "j_even_steven",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_venus",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_hanged_man",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_magician",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "Blue"
+     },
+     {
+      "rank": 14,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_moon",
+    [
+     "j_abstract",
+     "j_banner",
+     "j_raised_fist",
+     "j_runner",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "Glass",
+      "edition": "None",
+      "seal": "Blue"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 180
+}

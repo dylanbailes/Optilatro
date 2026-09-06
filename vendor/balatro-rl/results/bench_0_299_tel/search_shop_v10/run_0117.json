@@ -1,0 +1,229 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 50,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_arrowhead",
+  "j_scholar",
+  "j_fibonacci",
+  "j_green_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_hierophant",
+   "c_death",
+   "c_devil"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_scholar",
+   "j_green_joker"
+  ],
+  "money_spent": 33,
+  "best_score": 1944,
+  "rerolls": 0,
+  "packs_bought": 4,
+  "packs_opened": 3,
+  "interest_collected": 0,
+  "econ_source": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    76
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    28
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_arrowhead"
+    ],
+    296
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_arrowhead"
+    ],
+    268
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_scholar"
+    ],
+    160
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_scholar"
+    ],
+    1220
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_arrowhead",
+     "j_fibonacci",
+     "j_scholar"
+    ],
+    680
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_fibonacci",
+     "j_scholar"
+    ],
+    252
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_fibonacci",
+     "j_green_joker",
+     "j_scholar"
+    ],
+    1944
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_arrowhead",
+     "j_fibonacci",
+     "j_green_joker",
+     "j_scholar"
+    ],
+    600
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_arrowhead"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_arrowhead",
+     "j_fibonacci",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_arrowhead",
+     "j_fibonacci",
+     "j_green_joker",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "Bonus",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_devil",
+    [
+     "j_arrowhead",
+     "j_fibonacci",
+     "j_green_joker",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 117
+}

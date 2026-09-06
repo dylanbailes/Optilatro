@@ -1,0 +1,929 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 249,
+ "truncated": false,
+ "dollars": 9,
+ "jokers": [
+  "j_raised_fist",
+  "j_bull",
+  "j_blackboard",
+  "j_hanging_chad",
+  "j_zany"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_death",
+   "c_hermit",
+   "c_fool",
+   "c_hermit",
+   "c_star",
+   "c_hermit",
+   "c_lovers",
+   "c_magician",
+   "c_temperance",
+   "c_wheel_of_fortune",
+   "c_death",
+   "c_hermit",
+   "c_hermit",
+   "c_world",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_pluto",
+   "pl_uranus",
+   "pl_pluto",
+   "pl_uranus",
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [
+   "s_aura"
+  ],
+  "jokers_bought": [
+   "j_jolly",
+   "j_cloud_9",
+   "j_mad",
+   "j_raised_fist",
+   "j_bull",
+   "j_mail",
+   "j_green_joker",
+   "j_shoot_the_moon",
+   "j_blackboard",
+   "j_joker",
+   "j_blue_joker",
+   "j_hanging_chad",
+   "j_golden",
+   "j_half",
+   "j_banner",
+   "j_satellite",
+   "j_jolly",
+   "j_hanging_chad",
+   "j_zany"
+  ],
+  "money_spent": 346,
+  "best_score": 32157,
+  "rerolls": 13,
+  "packs_bought": 37,
+  "packs_opened": 27,
+  "interest_collected": 34,
+  "econ_source": 85,
+  "jokers_sold": [
+   [
+    2,
+    "j_mad"
+   ],
+   [
+    3,
+    "j_jolly"
+   ],
+   [
+    3,
+    "j_mail"
+   ],
+   [
+    4,
+    "j_green_joker"
+   ],
+   [
+    4,
+    "j_shoot_the_moon"
+   ],
+   [
+    4,
+    "j_cloud_9"
+   ],
+   [
+    4,
+    "j_joker"
+   ],
+   [
+    4,
+    "j_blue_joker"
+   ],
+   [
+    4,
+    "j_hanging_chad"
+   ],
+   [
+    4,
+    "j_golden"
+   ],
+   [
+    5,
+    "j_half"
+   ],
+   [
+    5,
+    "j_banner"
+   ],
+   [
+    5,
+    "j_rough_gem"
+   ],
+   [
+    5,
+    "j_jolly"
+   ],
+   [
+    5,
+    "j_satellite"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    124
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_jolly",
+     "j_rough_gem"
+    ],
+    11
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_jolly",
+     "j_rough_gem"
+    ],
+    732
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_cloud_9",
+     "j_jolly",
+     "j_rough_gem"
+    ],
+    520
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_cloud_9",
+     "j_jolly",
+     "j_rough_gem"
+    ],
+    13
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_cloud_9",
+     "j_jolly",
+     "j_rough_gem"
+    ],
+    160
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cloud_9",
+     "j_jolly",
+     "j_mad",
+     "j_rough_gem"
+    ],
+    1160
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_cloud_9",
+     "j_jolly",
+     "j_mad",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    264
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_cloud_9",
+     "j_jolly",
+     "j_mad",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    1600
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_cloud_9",
+     "j_jolly",
+     "j_mad",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    1560
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_cloud_9",
+     "j_jolly",
+     "j_mad",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    426
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_jolly",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    3300
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_jolly",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    3174
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_jolly",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    2688
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_jolly",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    2016
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_green_joker",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    2880
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_green_joker",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    2408
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_raised_fist",
+     "j_rough_gem",
+     "j_shoot_the_moon"
+    ],
+    2940
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_raised_fist",
+     "j_rough_gem",
+     "j_shoot_the_moon"
+    ],
+    4092
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_raised_fist",
+     "j_rough_gem",
+     "j_shoot_the_moon"
+    ],
+    6351
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_blue_joker",
+     "j_bull",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    7182
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_blue_joker",
+     "j_bull",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    6460
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_half",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    4278
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_half",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    4557
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_half",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    4020
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_jolly",
+     "j_raised_fist",
+     "j_satellite"
+    ],
+    5936
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_jolly",
+     "j_raised_fist",
+     "j_satellite"
+    ],
+    12948
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_satellite"
+    ],
+    15660
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_satellite"
+    ],
+    5328
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_satellite"
+    ],
+    4824
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_zany"
+    ],
+    25380
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_zany"
+    ],
+    8763
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_zany"
+    ],
+    1794
+   ],
+   [
+    6,
+    "Two Pair",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_zany"
+    ],
+    21600
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_zany"
+    ],
+    15768
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_pluto",
+    [
+     "j_cloud_9",
+     "j_jolly",
+     "j_mad",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_cloud_9",
+     "j_jolly",
+     "j_mad",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_cloud_9",
+     "j_jolly",
+     "j_mad",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_pluto",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_jolly",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_death",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_jolly",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_uranus",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_mail",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_green_joker",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_raised_fist",
+     "j_rough_gem",
+     "j_shoot_the_moon"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_bull",
+     "j_cloud_9",
+     "j_raised_fist",
+     "j_rough_gem",
+     "j_shoot_the_moon"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_uranus",
+    [
+     "j_blackboard",
+     "j_blue_joker",
+     "j_bull",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_star",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_golden",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "Holographic",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_golden",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_lovers",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_golden",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "Holographic",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_golden",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_uranus",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_half",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_temperance",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_half",
+     "j_raised_fist",
+     "j_rough_gem"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_wheel_of_fortune",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_raised_fist",
+     "j_rough_gem",
+     "j_satellite"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_raised_fist",
+     "j_rough_gem",
+     "j_satellite"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_jolly",
+     "j_raised_fist",
+     "j_satellite"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hermit",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_jolly",
+     "j_raised_fist",
+     "j_satellite"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_world",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_jolly",
+     "j_raised_fist",
+     "j_satellite"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_magician",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_jolly",
+     "j_raised_fist",
+     "j_satellite"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "s_aura",
+    [
+     "j_blackboard",
+     "j_bull",
+     "j_jolly",
+     "j_raised_fist",
+     "j_satellite"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 253
+}

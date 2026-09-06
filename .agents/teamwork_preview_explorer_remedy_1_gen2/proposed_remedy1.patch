@@ -1,0 +1,111 @@
+diff --git a/vendor/balatro-rl/balatro_sim/agent_v10.py b/vendor/balatro-rl/balatro_sim/agent_v10.py
+--- a/vendor/balatro-rl/balatro_sim/agent_v10.py
++++ b/vendor/balatro-rl/balatro_sim/agent_v10.py
+@@ -294,4 +294,5 @@ V10_DEFAULTS = {
+-    "ante1_chip_bias": 0.03,
+-    "ante2_chip_bias": 0.0,
++    "ante1_chip_bias": 0.8,
++    "ante2_chip_bias": 0.5,
++    "early_shop_reserve": 4,
+     "swap_delta_threshold": 0.005,
+     "search_shops": 999,
+@@ -2749,3 +2750,3 @@ def formulate_counterfactual_state(game: Any, action: dict[str, Any]) -> dict[s
+-            sell_val = getattr(j_inst, "sell_cost", max(1, getattr(j_inst, "cost", 4) // 2))
++            sell_val = getattr(j_inst, "state", {}).get("sell_value", max(1, getattr(j_inst, "cost", 4) // 2))
+             dollars += sell_val
+@@ -2760,3 +2761,3 @@ def formulate_counterfactual_state(game: Any, action: dict[str, Any]) -> dict[s
+-            sell_val = getattr(j_inst, "sell_cost", max(1, getattr(j_inst, "cost", 4) // 2))
++            sell_val = getattr(j_inst, "state", {}).get("sell_value", max(1, getattr(j_inst, "cost", 4) // 2))
+             dollars = max(0, dollars + sell_val - price)
+@@ -2824,9 +2825,9 @@ class SearchShopV10(SearchShopV9):
+             target_i = self._pending_swap_target_idx
++            self._pending_swap_target_idx = None
+             if 0 <= target_i < len(game.current_shop) and not game.current_shop[target_i].sold:
+                 item = game.current_shop[target_i]
+                 price = item.discounted_price(game.shop_discount)
+                 has_room = len(game.jokers) < game.joker_slots or getattr(item, "edition", None) == "Negative"
+                 if price <= game.dollars and has_room:
+-                    self._pending_swap_target_idx = None
+                     return {"type": "buy", "item_idx": target_i}
+-            else:
+-                self._pending_swap_target_idx = None
+@@ -2842,2 +2843,8 @@ class SearchShopV10(SearchShopV9):
+             best_buy_idx = None
++
++            # Check if player currently owns a flat scoring anchor (chips or flat mult)
++            has_flat_scoring = any(
++                j.key in CHIPS_JOKERS or j.key in FLAT_MULT_JOKERS
++                for j in game.jokers
++            )
++
+             for i, item in enumerate(game.current_shop):
+@@ -2848,2 +2855,18 @@ class SearchShopV10(SearchShopV9):
+                     continue
++
++                is_early_scoring = item.key in CHIPS_JOKERS or item.key in FLAT_MULT_JOKERS
++                is_pure_xmult = item.key in XMULT_JOKERS and not is_early_scoring
++
++                # Early-ante constraints (Ante <= 2) to protect interest compounding and prevent premature death
++                if game.ante <= 2:
++                    # 1. Require flat scoring anchor before buying pure xMult / specific-hand endgame jokers
++                    if is_pure_xmult and not has_flat_scoring:
++                        continue
++
+                     # 2. Enforce cash reserve in early antes:
++                    # If already holding a flat scoring anchor or evaluating non-scoring jokers,
++                    # ensure purchase leaves at least the reserve (e.g. $4).
++                    early_reserve = V10_PARAMS.get("early_shop_reserve", 4)
++                    if (has_flat_scoring or not is_early_scoring) and (game.dollars - price < early_reserve):
++                        continue
++
+                 f_buy = formulate_counterfactual_state(game, {"type": "buy", "item_idx": i})
+@@ -2852,4 +2875,6 @@ class SearchShopV10(SearchShopV9):
+                 is_high_leverage = item.key in HIGH_LEVERAGE_SCORING_JOKERS
+-                thr = 0.000 if is_high_leverage else best_buy_delta
++                # Relaxed threshold (0.000) only for high-leverage scoring in mid/late game (Ante > 2)
++                # or early ante when a flat scoring anchor is already secured
++                allow_relaxed_thr = is_high_leverage and (game.ante > 2 or has_flat_scoring or is_early_scoring)
++                thr = 0.000 if allow_relaxed_thr else best_buy_delta
+                 if delta > thr:
+-                    if delta > best_buy_delta or (is_high_leverage and best_buy_idx is None):
++                    if delta > best_buy_delta or (allow_relaxed_thr and best_buy_idx is None):
+                         best_buy_delta = max(best_buy_delta, delta)
+@@ -2897,3 +2922,3 @@ class SearchShopV10(SearchShopV9):
+                 owned_cand = game.jokers[s_idx]
+-                sell_val = getattr(owned_cand, "sell_cost", max(1, getattr(owned_cand, "cost", 4) // 2))
++                sell_val = getattr(owned_cand, "state", {}).get("sell_value", max(1, getattr(owned_cand, "cost", 4) // 2))
+                 for i, item in enumerate(game.current_shop):
+@@ -2942,9 +2967,9 @@ class SearchShopV10(SearchShopV9):
+             target_i = self._pending_swap_target_idx
++            self._pending_swap_target_idx = None
+             if 0 <= target_i < len(game.current_shop) and not game.current_shop[target_i].sold:
+                 item = game.current_shop[target_i]
+                 price = item.discounted_price(game.shop_discount)
+                 has_room = len(game.jokers) < game.joker_slots or getattr(item, "edition", None) == "Negative"
+                 if price <= game.dollars and has_room:
+-                    self._pending_swap_target_idx = None
+                     return {"type": "buy", "item_idx": target_i}
+-            else:
+-                self._pending_swap_target_idx = None
+diff --git a/vendor/balatro-rl/tests/test_m13_ante1.py b/vendor/balatro-rl/tests/test_m13_ante1.py
+--- a/vendor/balatro-rl/tests/test_m13_ante1.py
++++ b/vendor/balatro-rl/tests/test_m13_ante1.py
+@@ -93,4 +93,16 @@ def test_ante1_buffoon_outranks_sly():
+     vals = {g.current_shop[i].key: v for v,i in buys}
+-    # Ante-1: buffoon boosted 0.25+0.20=0.45 > sly 0.41, so buffoon should be top
+-    assert vals["p_buffoon"] > vals["j_sly"], f"ante1 buffoon should outrank sly: {vals}"
++
++    # Under Config D defaults (ante1_chip_bias=0.8), high-priority flat chips jokers
++    # take precedence over gambling on a buffoon pack (1.01 > 0.45) to ensure early survival.
++    # Under legacy low chip bias (0.03), buffoon boost (0.25+0.20=0.45) outranks sly (0.41).
++    old_bias = V10_PARAMS.get("ante1_chip_bias", 0.8)
++    try:
++        V10_PARAMS["ante1_chip_bias"] = 0.03
++        buys_legacy, _ = _v10_rank_shop_items(g, ref, surplus=False)
++        vals_legacy = {g.current_shop[i].key: v for v,i in buys_legacy}
++        assert vals_legacy["p_buffoon"] > vals_legacy["j_sly"], f"ante1 buffoon should outrank sly under low bias: {vals_legacy}"
++    finally:
++        V10_PARAMS["ante1_chip_bias"] = old_bias
++
++    # Under Config D, chip joker correctly outranks buffoon pack:
++    assert vals["j_sly"] > vals["p_buffoon"], f"Config D chip joker should outrank buffoon pack: {vals}"

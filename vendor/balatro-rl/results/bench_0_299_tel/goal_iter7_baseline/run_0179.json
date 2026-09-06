@@ -1,0 +1,554 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 104,
+ "truncated": false,
+ "dollars": 28,
+ "jokers": [
+  "j_abstract",
+  "j_cartomancer",
+  "j_family",
+  "j_trading",
+  "j_mail"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant",
+   "c_emperor",
+   "c_sun",
+   "c_temperance",
+   "c_strength",
+   "c_hanged_man",
+   "c_hermit",
+   "c_hierophant",
+   "c_fool",
+   "c_hierophant",
+   "c_star",
+   "c_judgement",
+   "c_chariot"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_sly",
+   "j_abstract",
+   "j_riff_raff",
+   "j_cartomancer",
+   "j_family",
+   "j_trading",
+   "j_mail"
+  ],
+  "money_spent": 82,
+  "best_score": 6217,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 5,
+  "interest_collected": 4,
+  "econ_source": 12,
+  "jokers_sold": [
+   [
+    2,
+    "j_riff_raff"
+   ],
+   [
+    3,
+    "j_shoot_the_moon"
+   ],
+   [
+    3,
+    "j_burnt"
+   ],
+   [
+    3,
+    "j_lusty_joker"
+   ],
+   [
+    4,
+    "j_sly"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    268
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    48
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_lusty_joker"
+    ],
+    518
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    320
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    350
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_lusty_joker",
+     "j_riff_raff",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    1428
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    1280
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    1888
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    2071
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    2000
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    1258
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_sly",
+     "j_trading"
+    ],
+    2856
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_sly",
+     "j_trading"
+    ],
+    1360
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_sly",
+     "j_trading"
+    ],
+    3106
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_sly",
+     "j_trading"
+    ],
+    1887
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_sly",
+     "j_trading"
+    ],
+    1224
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_mail",
+     "j_trading"
+    ],
+    884
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_mail",
+     "j_trading"
+    ],
+    256
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_mail",
+     "j_trading"
+    ],
+    240
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_mail",
+     "j_trading"
+    ],
+    240
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hierophant",
+    [
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_emperor",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_sun",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_star",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_shoot_the_moon",
+     "j_sly"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_judgement",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_lusty_joker",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_chariot",
+    [
+     "j_abstract",
+     "j_cartomancer",
+     "j_family",
+     "j_sly",
+     "j_trading"
+    ],
+    [
+     {
+      "rank": 6,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 179
+}

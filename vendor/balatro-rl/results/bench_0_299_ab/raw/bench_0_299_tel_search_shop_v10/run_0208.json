@@ -1,0 +1,291 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 52,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_popcorn",
+  "j_hallucination",
+  "j_egg",
+  "j_to_the_moon",
+  "j_scholar"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance",
+   "c_judgement",
+   "c_death",
+   "c_hanged_man",
+   "c_hanged_man",
+   "c_hanged_man",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_popcorn",
+   "j_hallucination",
+   "j_egg",
+   "j_scholar"
+  ],
+  "money_spent": 44,
+  "best_score": 1296,
+  "rerolls": 0,
+  "packs_bought": 5,
+  "packs_opened": 3,
+  "interest_collected": 0,
+  "econ_source": 0,
+  "jokers_sold": [
+   [
+    2,
+    "j_devious"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    92
+   ],
+   [
+    1,
+    "Full House",
+    [],
+    296
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_devious",
+     "j_popcorn"
+    ],
+    396
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_devious",
+     "j_popcorn"
+    ],
+    704
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_devious",
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    252
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_devious",
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    272
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_devious",
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    136
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    1264
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    1296
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    624
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_temperance",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_judgement",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_death",
+    [
+     "j_devious",
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hanged_man",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 7,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_wheel_of_fortune",
+    [
+     "j_egg",
+     "j_hallucination",
+     "j_popcorn",
+     "j_scholar",
+     "j_to_the_moon"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 208
+}

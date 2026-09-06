@@ -1,0 +1,704 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 170,
+ "truncated": false,
+ "dollars": 5,
+ "jokers": [
+  "j_constellation",
+  "j_raised_fist",
+  "j_luchador",
+  "j_to_the_moon",
+  "j_hanging_chad"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hermit",
+   "c_empress",
+   "c_death",
+   "c_temperance",
+   "c_moon",
+   "c_magician",
+   "c_temperance",
+   "c_death"
+  ],
+  "planets": [
+   "pl_pluto",
+   "pl_uranus"
+  ],
+  "spectrals": [
+   "s_ectoplasm"
+  ],
+  "jokers_bought": [
+   "j_delayed_grat",
+   "j_dusk",
+   "j_crafty",
+   "j_popcorn",
+   "j_zany",
+   "j_scholar",
+   "j_business",
+   "j_blue_joker",
+   "j_constellation",
+   "j_lusty_joker",
+   "j_raised_fist",
+   "j_hallucination",
+   "j_luchador",
+   "j_to_the_moon",
+   "j_hanging_chad"
+  ],
+  "money_spent": 168,
+  "best_score": 14895,
+  "rerolls": 3,
+  "packs_bought": 15,
+  "packs_opened": 11,
+  "interest_collected": 8,
+  "econ_source": 29,
+  "jokers_sold": [
+   [
+    2,
+    "j_crafty"
+   ],
+   [
+    2,
+    "j_dusk"
+   ],
+   [
+    2,
+    "j_joker"
+   ],
+   [
+    2,
+    "j_zany"
+   ],
+   [
+    3,
+    "j_scholar"
+   ],
+   [
+    3,
+    "j_delayed_grat"
+   ],
+   [
+    3,
+    "j_acrobat"
+   ],
+   [
+    3,
+    "j_lusty_joker"
+   ],
+   [
+    3,
+    "j_business"
+   ],
+   [
+    3,
+    "j_hallucination"
+   ],
+   [
+    4,
+    "j_blue_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    312
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_acrobat",
+     "j_joker"
+    ],
+    568
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_joker"
+    ],
+    270
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_joker"
+    ],
+    120
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_joker"
+    ],
+    80
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_joker"
+    ],
+    234
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_dusk",
+     "j_joker"
+    ],
+    204
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_dusk",
+     "j_joker"
+    ],
+    616
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_acrobat",
+     "j_crafty",
+     "j_delayed_grat",
+     "j_dusk",
+     "j_joker"
+    ],
+    1208
+   ],
+   [
+    2,
+    "Straight Flush",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_joker",
+     "j_popcorn",
+     "j_zany"
+    ],
+    3200
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_acrobat",
+     "j_business",
+     "j_delayed_grat",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    315
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_business",
+     "j_delayed_grat",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    1080
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_acrobat",
+     "j_business",
+     "j_delayed_grat",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    828
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_acrobat",
+     "j_blue_joker",
+     "j_business",
+     "j_delayed_grat",
+     "j_popcorn"
+    ],
+    1339
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_acrobat",
+     "j_blue_joker",
+     "j_business",
+     "j_delayed_grat",
+     "j_popcorn"
+    ],
+    1313
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_acrobat",
+     "j_blue_joker",
+     "j_business",
+     "j_delayed_grat",
+     "j_popcorn"
+    ],
+    1287
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    3640
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    1696
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_luchador",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    4598
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_luchador",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    3341
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    4356
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    3344
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    4126
+   ],
+   [
+    4,
+    "Straight",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    2006
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    2188
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    3528
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_constellation",
+     "j_hanging_chad",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    4374
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_constellation",
+     "j_hanging_chad",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    2508
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_constellation",
+     "j_hanging_chad",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    1209
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_constellation",
+     "j_hanging_chad",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    6804
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_constellation",
+     "j_hanging_chad",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    5184
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_constellation",
+     "j_hanging_chad",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    4752
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_constellation",
+     "j_hanging_chad",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    1094
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_constellation",
+     "j_hanging_chad",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    1260
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_hermit",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_popcorn",
+     "j_scholar",
+     "j_zany"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_acrobat",
+     "j_delayed_grat",
+     "j_popcorn",
+     "j_scholar",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_acrobat",
+     "j_business",
+     "j_delayed_grat",
+     "j_popcorn",
+     "j_scholar"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_temperance",
+    [
+     "j_blue_joker",
+     "j_business",
+     "j_constellation",
+     "j_lusty_joker",
+     "j_popcorn"
+    ],
+    []
+   ],
+   [
+    3,
+    "pl_pluto",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_hallucination",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_moon",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_luchador",
+     "j_popcorn",
+     "j_raised_fist"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "Mult",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 8,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_uranus",
+    [
+     "j_blue_joker",
+     "j_constellation",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_temperance",
+    [
+     "j_constellation",
+     "j_hanging_chad",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_death",
+    [
+     "j_constellation",
+     "j_hanging_chad",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 7,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "s_ectoplasm",
+    [
+     "j_constellation",
+     "j_hanging_chad",
+     "j_luchador",
+     "j_raised_fist",
+     "j_to_the_moon"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 251
+}

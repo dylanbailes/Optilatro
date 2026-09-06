@@ -1,0 +1,410 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 80,
+ "truncated": false,
+ "dollars": 24,
+ "jokers": [
+  "j_mail",
+  "j_hanging_chad",
+  "j_swashbuckler",
+  "j_delayed_grat",
+  "j_ticket"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_hermit",
+   "c_devil",
+   "c_world",
+   "c_magician",
+   "c_chariot",
+   "c_hierophant"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mail",
+   "j_hanging_chad",
+   "j_seance",
+   "j_swashbuckler",
+   "j_delayed_grat",
+   "j_ticket"
+  ],
+  "money_spent": 72,
+  "best_score": 2722,
+  "rerolls": 1,
+  "packs_bought": 6,
+  "packs_opened": 5,
+  "interest_collected": 1,
+  "econ_source": 39,
+  "jokers_sold": [
+   [
+    1,
+    "j_seance"
+   ],
+   [
+    2,
+    "j_smiley"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Four of a Kind",
+    [],
+    700
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_mail",
+     "j_smiley"
+    ],
+    228
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_mail",
+     "j_smiley"
+    ],
+    360
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_mail",
+     "j_seance",
+     "j_smiley"
+    ],
+    680
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    648
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    154
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    882
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    384
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    1078
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    577
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    910
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    288
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    495
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    600
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    994
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    936
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    192
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_smiley",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_devil",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_world",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 8,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_chariot",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hierophant",
+    [
+     "j_delayed_grat",
+     "j_hanging_chad",
+     "j_mail",
+     "j_swashbuckler",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 240
+}

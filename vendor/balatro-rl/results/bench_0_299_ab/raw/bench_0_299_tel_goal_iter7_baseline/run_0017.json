@@ -1,0 +1,784 @@
+{
+ "won": false,
+ "ante": 6,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 197,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_erosion",
+  "j_golden",
+  "j_throwback",
+  "j_baron",
+  "j_faceless"
+ ],
+ "stats": {
+  "tarots": [
+   "c_strength",
+   "c_fool",
+   "c_strength",
+   "c_lovers",
+   "c_magician",
+   "c_fool",
+   "c_magician",
+   "c_magician",
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_mercury",
+   "pl_jupiter"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_wily",
+   "j_marble",
+   "j_erosion",
+   "j_odd_todd",
+   "j_selzer",
+   "j_golden",
+   "j_throwback",
+   "j_shoot_the_moon",
+   "j_to_the_moon",
+   "j_baron",
+   "j_runner",
+   "j_hologram",
+   "j_smiley",
+   "j_swashbuckler",
+   "j_faceless"
+  ],
+  "money_spent": 197,
+  "best_score": 41912,
+  "rerolls": 5,
+  "packs_bought": 20,
+  "packs_opened": 14,
+  "interest_collected": 11,
+  "econ_source": 60,
+  "jokers_sold": [
+   [
+    2,
+    "j_ride_the_bus"
+   ],
+   [
+    2,
+    "j_wily"
+   ],
+   [
+    3,
+    "j_odd_todd"
+   ],
+   [
+    3,
+    "j_marble"
+   ],
+   [
+    3,
+    "j_shoot_the_moon"
+   ],
+   [
+    4,
+    "j_selzer"
+   ],
+   [
+    4,
+    "j_to_the_moon"
+   ],
+   [
+    4,
+    "j_runner"
+   ],
+   [
+    4,
+    "j_hologram"
+   ],
+   [
+    4,
+    "j_smiley"
+   ],
+   [
+    6,
+    "j_swashbuckler"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    308
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_ride_the_bus",
+     "j_wily"
+    ],
+    325
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_ride_the_bus",
+     "j_wily"
+    ],
+    88
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_ride_the_bus",
+     "j_wily"
+    ],
+    78
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_marble",
+     "j_ride_the_bus",
+     "j_wily"
+    ],
+    360
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_marble",
+     "j_ride_the_bus",
+     "j_wily"
+    ],
+    480
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_erosion",
+     "j_marble",
+     "j_ride_the_bus",
+     "j_wily"
+    ],
+    864
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_erosion",
+     "j_marble",
+     "j_odd_todd",
+     "j_ride_the_bus",
+     "j_wily"
+    ],
+    1872
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_erosion",
+     "j_marble",
+     "j_odd_todd",
+     "j_selzer",
+     "j_wily"
+    ],
+    2916
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_erosion",
+     "j_golden",
+     "j_marble",
+     "j_odd_todd",
+     "j_selzer"
+    ],
+    2090
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_erosion",
+     "j_golden",
+     "j_marble",
+     "j_selzer",
+     "j_throwback"
+    ],
+    2596
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_erosion",
+     "j_golden",
+     "j_marble",
+     "j_selzer",
+     "j_throwback"
+    ],
+    3040
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_erosion",
+     "j_golden",
+     "j_selzer",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    2080
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_erosion",
+     "j_golden",
+     "j_selzer",
+     "j_shoot_the_moon",
+     "j_throwback"
+    ],
+    3872
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_erosion",
+     "j_golden",
+     "j_selzer",
+     "j_throwback",
+     "j_to_the_moon"
+    ],
+    4284
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_erosion",
+     "j_golden",
+     "j_selzer",
+     "j_throwback",
+     "j_to_the_moon"
+    ],
+    2736
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_runner",
+     "j_throwback"
+    ],
+    3952
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_runner",
+     "j_throwback"
+    ],
+    3915
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_smiley",
+     "j_throwback"
+    ],
+    2955
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_smiley",
+     "j_throwback"
+    ],
+    4192
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_smiley",
+     "j_throwback"
+    ],
+    4692
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    6510
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    9504
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    8058
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    7751
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    5605
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    9804
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    9396
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    4225
+   ],
+   [
+    6,
+    "Full House",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    7452
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    9840
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    7350
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    12757
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    7245
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    9720
+   ],
+   [
+    6,
+    "Three of a Kind",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    12190
+   ],
+   [
+    6,
+    "Straight",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_faceless",
+     "j_golden",
+     "j_throwback"
+    ],
+    720
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_faceless",
+     "j_golden",
+     "j_throwback"
+    ],
+    6612
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_faceless",
+     "j_golden",
+     "j_throwback"
+    ],
+    11259
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_faceless",
+     "j_golden",
+     "j_throwback"
+    ],
+    17280
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_strength",
+    [
+     "j_erosion",
+     "j_marble",
+     "j_odd_todd",
+     "j_selzer",
+     "j_wily"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_erosion",
+     "j_marble",
+     "j_odd_todd",
+     "j_selzer",
+     "j_wily"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_erosion",
+     "j_marble",
+     "j_odd_todd",
+     "j_selzer",
+     "j_wily"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 6,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_lovers",
+    [
+     "j_erosion",
+     "j_golden",
+     "j_selzer",
+     "j_throwback",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_erosion",
+     "j_golden",
+     "j_selzer",
+     "j_throwback",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_fool",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_runner",
+     "j_throwback"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_magician",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_runner",
+     "j_throwback"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_mercury",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_runner",
+     "j_throwback"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_magician",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_high_priestess",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_golden",
+     "j_swashbuckler",
+     "j_throwback"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_jupiter",
+    [
+     "j_baron",
+     "j_erosion",
+     "j_faceless",
+     "j_golden",
+     "j_throwback"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 17
+}

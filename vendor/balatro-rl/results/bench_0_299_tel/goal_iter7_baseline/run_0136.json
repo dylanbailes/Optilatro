@@ -1,0 +1,623 @@
+{
+ "won": false,
+ "ante": 4,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 135,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_business",
+  "j_credit_card",
+  "j_to_the_moon",
+  "j_ride_the_bus",
+  "j_family"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_strength",
+   "c_fool",
+   "c_strength",
+   "c_fool",
+   "c_strength",
+   "c_chariot",
+   "c_death",
+   "c_wheel_of_fortune",
+   "c_emperor",
+   "c_empress",
+   "c_hermit"
+  ],
+  "planets": [
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_mystic_summit",
+   "j_gluttenous_joker",
+   "j_gros_michel",
+   "j_delayed_grat",
+   "j_business",
+   "j_banner",
+   "j_odd_todd",
+   "j_credit_card",
+   "j_clever",
+   "j_to_the_moon",
+   "j_shoot_the_moon",
+   "j_half",
+   "j_ride_the_bus",
+   "j_family"
+  ],
+  "money_spent": 154,
+  "best_score": 8186,
+  "rerolls": 4,
+  "packs_bought": 13,
+  "packs_opened": 10,
+  "interest_collected": 13,
+  "econ_source": 47,
+  "jokers_sold": [
+   [
+    2,
+    "j_mystic_summit"
+   ],
+   [
+    2,
+    "j_gluttenous_joker"
+   ],
+   [
+    2,
+    "j_ticket"
+   ],
+   [
+    2,
+    "j_odd_todd"
+   ],
+   [
+    2,
+    "j_delayed_grat"
+   ],
+   [
+    3,
+    "j_clever"
+   ],
+   [
+    3,
+    "j_banner"
+   ],
+   [
+    4,
+    "j_shoot_the_moon"
+   ],
+   [
+    4,
+    "j_half"
+   ],
+   [
+    4,
+    "j_gros_michel"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_gluttenous_joker",
+     "j_mystic_summit"
+    ],
+    945
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_mystic_summit"
+    ],
+    560
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_mystic_summit"
+    ],
+    112
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_delayed_grat",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_mystic_summit",
+     "j_ticket"
+    ],
+    1080
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ticket"
+    ],
+    1850
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_banner",
+     "j_business",
+     "j_delayed_grat",
+     "j_gros_michel",
+     "j_odd_todd"
+    ],
+    2160
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_banner",
+     "j_business",
+     "j_clever",
+     "j_credit_card",
+     "j_gros_michel"
+    ],
+    3434
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_banner",
+     "j_business",
+     "j_clever",
+     "j_credit_card",
+     "j_gros_michel"
+    ],
+    2960
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_banner",
+     "j_business",
+     "j_clever",
+     "j_credit_card",
+     "j_gros_michel"
+    ],
+    2960
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_banner",
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_to_the_moon"
+    ],
+    2960
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_banner",
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_to_the_moon"
+    ],
+    2960
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_shoot_the_moon",
+     "j_to_the_moon"
+    ],
+    1598
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_shoot_the_moon",
+     "j_to_the_moon"
+    ],
+    1040
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_shoot_the_moon",
+     "j_to_the_moon"
+    ],
+    2040
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_shoot_the_moon",
+     "j_to_the_moon"
+    ],
+    1885
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    3741
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    1690
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    2755
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_family",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    2192
+   ],
+   [
+    4,
+    "Full House",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_family",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    1820
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_family",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    1040
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_family",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    2106
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_death",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_gluttenous_joker",
+     "j_gros_michel",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_banner",
+     "j_business",
+     "j_delayed_grat",
+     "j_gros_michel",
+     "j_ticket"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 5,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_banner",
+     "j_business",
+     "j_clever",
+     "j_credit_card",
+     "j_gros_michel"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_banner",
+     "j_business",
+     "j_clever",
+     "j_credit_card",
+     "j_gros_michel"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_fool",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_shoot_the_moon",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_strength",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_shoot_the_moon",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_chariot",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_half",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_half",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 5,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "Steel",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_wheel_of_fortune",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    4,
+    "pl_pluto",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_emperor",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_empress",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 9,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_hermit",
+    [
+     "j_business",
+     "j_credit_card",
+     "j_gros_michel",
+     "j_ride_the_bus",
+     "j_to_the_moon"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 136
+}

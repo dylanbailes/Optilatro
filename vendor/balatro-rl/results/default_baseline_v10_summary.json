@@ -1,0 +1,34 @@
+{
+  "policy": "search_shop_v10",
+  "seed_bank": "10200-10499",
+  "games": 300,
+  "human_fair": true,
+  "aggregate": {
+    "n": 300,
+    "wins": 32,
+    "win_rate": 10.666666666666666,
+    "ante1_deaths": 9,
+    "ante1_death_rate": 3.0,
+    "death": {
+      "4": 60,
+      "2": 21,
+      "6": 53,
+      "9": 32,
+      "5": 41,
+      "3": 39,
+      "7": 21,
+      "8": 24,
+      "1": 9
+    },
+    "mean_ante": 5.193333333333333,
+    "mean_steps": 154.56,
+    "mean_dollars": 7.38,
+    "mean_econ_source": 15.04,
+    "total_econ_source": 4512,
+    "mean_interest": 17.14,
+    "total_interest": 5142,
+    "mean_tarots": 7.32,
+    "mean_planets": 6.05,
+    "mean_spectrals": 0.3566666666666667
+  }
+}

@@ -1,0 +1,753 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 173,
+ "truncated": false,
+ "dollars": 2,
+ "jokers": [
+  "j_abstract",
+  "j_golden",
+  "j_flower_pot",
+  "j_blue_joker",
+  "j_delayed_grat"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hierophant",
+   "c_moon",
+   "c_temperance",
+   "c_fool",
+   "c_temperance",
+   "c_world",
+   "c_hermit",
+   "c_strength",
+   "c_death",
+   "c_temperance",
+   "c_world",
+   "c_high_priestess"
+  ],
+  "planets": [
+   "pl_venus",
+   "pl_venus",
+   "pl_uranus",
+   "pl_uranus"
+  ],
+  "spectrals": [
+   "s_aura"
+  ],
+  "jokers_bought": [
+   "j_hanging_chad",
+   "j_golden",
+   "j_flower_pot",
+   "j_devious",
+   "j_green_joker",
+   "j_splash",
+   "j_gluttenous_joker",
+   "j_odd_todd",
+   "j_egg",
+   "j_business",
+   "j_blue_joker",
+   "j_credit_card",
+   "j_delayed_grat"
+  ],
+  "money_spent": 202,
+  "best_score": 17890,
+  "rerolls": 5,
+  "packs_bought": 22,
+  "packs_opened": 20,
+  "interest_collected": 11,
+  "econ_source": 56,
+  "jokers_sold": [
+   [
+    2,
+    "j_devious"
+   ],
+   [
+    3,
+    "j_green_joker"
+   ],
+   [
+    3,
+    "j_splash"
+   ],
+   [
+    3,
+    "j_gluttenous_joker"
+   ],
+   [
+    3,
+    "j_hanging_chad"
+   ],
+   [
+    3,
+    "j_egg"
+   ],
+   [
+    4,
+    "j_odd_todd"
+   ],
+   [
+    4,
+    "j_business"
+   ],
+   [
+    5,
+    "j_credit_card"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    104
+   ],
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_hanging_chad"
+    ],
+    630
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    840
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    2184
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    840
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    585
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    850
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    1444
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    4560
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    3712
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    2322
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    1488
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    440
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_business",
+     "j_flower_pot",
+     "j_golden",
+     "j_odd_todd"
+    ],
+    720
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_business",
+     "j_flower_pot",
+     "j_golden",
+     "j_odd_todd"
+    ],
+    3916
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_business",
+     "j_flower_pot",
+     "j_golden",
+     "j_odd_todd"
+    ],
+    1598
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    2288
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    1776
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    1972
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    1520
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    1872
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    10602
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_credit_card",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    1904
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_credit_card",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    4092
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_credit_card",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    3458
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_credit_card",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    8436
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    3652
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    5597
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    3116
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_delayed_grat",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    1598
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "pl_venus",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_venus",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_hierophant",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_moon",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_fool",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "pl_uranus",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_world",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_abstract",
+     "j_devious",
+     "j_flower_pot",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_strength",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_golden",
+     "j_green_joker",
+     "j_hanging_chad"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_death",
+    [
+     "j_abstract",
+     "j_flower_pot",
+     "j_gluttenous_joker",
+     "j_golden",
+     "j_hanging_chad"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_temperance",
+    [
+     "j_abstract",
+     "j_egg",
+     "j_flower_pot",
+     "j_golden",
+     "j_odd_todd"
+    ],
+    []
+   ],
+   [
+    4,
+    "s_aura",
+    [
+     "j_abstract",
+     "j_business",
+     "j_flower_pot",
+     "j_golden",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Spades",
+      "enh": "Bonus",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_world",
+    [
+     "j_abstract",
+     "j_business",
+     "j_flower_pot",
+     "j_golden",
+     "j_odd_todd"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "pl_uranus",
+    [
+     "j_abstract",
+     "j_business",
+     "j_flower_pot",
+     "j_golden",
+     "j_odd_todd"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_high_priestess",
+    [
+     "j_abstract",
+     "j_blue_joker",
+     "j_business",
+     "j_flower_pot",
+     "j_golden"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 47
+}

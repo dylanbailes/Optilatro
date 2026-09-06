@@ -1,0 +1,310 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 79,
+ "truncated": false,
+ "dollars": 13,
+ "jokers": [
+  "j_even_steven",
+  "j_credit_card",
+  "j_todo_list",
+  "j_egg",
+  "j_zany"
+ ],
+ "stats": {
+  "tarots": [
+   "c_magician",
+   "c_death",
+   "c_hermit"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_credit_card",
+   "j_todo_list",
+   "j_egg",
+   "j_zany"
+  ],
+  "money_spent": 64,
+  "best_score": 2460,
+  "rerolls": 1,
+  "packs_bought": 10,
+  "packs_opened": 7,
+  "interest_collected": 6,
+  "econ_source": 27,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Two Pair",
+    [],
+    88
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    56
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_even_steven"
+    ],
+    300
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_even_steven"
+    ],
+    320
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    300
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    1072
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    520
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    140
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    1800
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list"
+    ],
+    720
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list"
+    ],
+    320
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list"
+    ],
+    140
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list"
+    ],
+    60
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list"
+    ],
+    1400
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list",
+     "j_zany"
+    ],
+    1620
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list",
+     "j_zany"
+    ],
+    720
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list",
+     "j_zany"
+    ],
+    1848
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list",
+     "j_zany"
+    ],
+    380
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list",
+     "j_zany"
+    ],
+    32
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list",
+     "j_zany"
+    ],
+    60
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_magician",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_hermit",
+    [
+     "j_credit_card",
+     "j_egg",
+     "j_even_steven",
+     "j_todo_list"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 6
+}

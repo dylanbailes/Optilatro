@@ -1,0 +1,483 @@
+{
+ "won": false,
+ "ante": 5,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 135,
+ "truncated": false,
+ "dollars": 23,
+ "jokers": [
+  "j_cavendish",
+  "j_golden",
+  "j_misprint",
+  "j_scholar",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [
+   "c_judgement",
+   "c_strength",
+   "c_death",
+   "c_judgement",
+   "c_hanged_man"
+  ],
+  "planets": [
+   "pl_pluto",
+   "pl_pluto"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_bull",
+   "j_reserved_parking",
+   "j_gros_michel",
+   "j_popcorn",
+   "j_todo_list",
+   "j_jolly",
+   "j_cavendish",
+   "j_golden",
+   "j_reserved_parking",
+   "j_misprint",
+   "j_scary_face",
+   "j_scholar",
+   "j_reserved_parking"
+  ],
+  "money_spent": 146,
+  "best_score": 18300,
+  "rerolls": 2,
+  "packs_bought": 12,
+  "packs_opened": 9,
+  "interest_collected": 26,
+  "econ_source": 32,
+  "jokers_sold": [
+   [
+    2,
+    "j_ticket"
+   ],
+   [
+    2,
+    "j_bull"
+   ],
+   [
+    3,
+    "j_jolly"
+   ],
+   [
+    3,
+    "j_reserved_parking"
+   ],
+   [
+    3,
+    "j_todo_list"
+   ],
+   [
+    4,
+    "j_reserved_parking"
+   ],
+   [
+    4,
+    "j_ice_cream"
+   ],
+   [
+    5,
+    "j_scary_face"
+   ],
+   [
+    5,
+    "j_blue_joker"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    336
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bull",
+     "j_ticket"
+    ],
+    292
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_bull",
+     "j_ticket"
+    ],
+    268
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_bull",
+     "j_reserved_parking",
+     "j_ticket"
+    ],
+    336
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_bull",
+     "j_reserved_parking",
+     "j_ticket"
+    ],
+    268
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_bull",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ticket"
+    ],
+    578
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_bull",
+     "j_gros_michel",
+     "j_reserved_parking",
+     "j_ticket"
+    ],
+    304
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_bull",
+     "j_gros_michel",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_ticket"
+    ],
+    1554
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_gros_michel",
+     "j_jolly",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    884
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_gros_michel",
+     "j_jolly",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    512
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_gros_michel",
+     "j_jolly",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    480
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_gros_michel",
+     "j_jolly",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    1984
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_gros_michel",
+     "j_jolly",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    1080
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    2250
+   ],
+   [
+    3,
+    "Straight",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    4455
+   ],
+   [
+    3,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    7620
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    5559
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    7446
+   ],
+   [
+    4,
+    "Three of a Kind",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    7830
+   ],
+   [
+    4,
+    "Flush",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_golden",
+     "j_ice_cream",
+     "j_misprint"
+    ],
+    5208
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_golden",
+     "j_ice_cream",
+     "j_misprint"
+    ],
+    12627
+   ],
+   [
+    5,
+    "Two Pair",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_golden",
+     "j_misprint",
+     "j_scary_face"
+    ],
+    11970
+   ],
+   [
+    5,
+    "Three of a Kind",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_golden",
+     "j_misprint",
+     "j_scary_face"
+    ],
+    18300
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_misprint",
+     "j_reserved_parking",
+     "j_scholar"
+    ],
+    6720
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "pl_pluto",
+    [
+     "j_gros_michel",
+     "j_jolly",
+     "j_popcorn",
+     "j_reserved_parking",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_judgement",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_popcorn",
+     "j_todo_list"
+    ],
+    []
+   ],
+   [
+    3,
+    "c_strength",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream",
+     "j_popcorn"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "pl_pluto",
+    [
+     "j_cavendish",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    []
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_gros_michel",
+     "j_ice_cream"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_judgement",
+    [
+     "j_cavendish",
+     "j_golden",
+     "j_ice_cream",
+     "j_reserved_parking"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hanged_man",
+    [
+     "j_blue_joker",
+     "j_cavendish",
+     "j_golden",
+     "j_misprint",
+     "j_scary_face"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 3,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 52
+}

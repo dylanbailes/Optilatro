@@ -206,3 +206,11 @@ class SearchShopV9(HeuristicV9):
             return 1e12
         return (out["ante"] * 1e6 + out["death_blind"] * 1e4
                 + out["dollars"] * 10 + len(out["jokers"]) * 100)
+
+
+def __getattr__(name: str):
+    if name == "SearchShopV10":
+        from .agent_v10 import SearchShopV10
+        return SearchShopV10
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+

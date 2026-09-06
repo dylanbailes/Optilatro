@@ -1,0 +1,638 @@
+{
+ "won": false,
+ "ante": 7,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 190,
+ "truncated": false,
+ "dollars": 25,
+ "jokers": [
+  "j_cavendish",
+  "j_splash",
+  "j_scholar",
+  "j_selzer",
+  "j_arrowhead"
+ ],
+ "stats": {
+  "tarots": [
+   "c_temperance",
+   "c_magician",
+   "c_death",
+   "c_temperance",
+   "c_hanged_man",
+   "c_star",
+   "c_hermit",
+   "c_hermit",
+   "c_wheel_of_fortune"
+  ],
+  "planets": [
+   "pl_mercury"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_gros_michel",
+   "j_erosion",
+   "j_baseball",
+   "j_satellite",
+   "j_chaos",
+   "j_oops",
+   "j_scary_face",
+   "j_ring_master",
+   "j_hiker",
+   "j_constellation",
+   "j_cavendish",
+   "j_sly",
+   "j_splash",
+   "j_scholar",
+   "j_selzer",
+   "j_arrowhead"
+  ],
+  "money_spent": 241,
+  "best_score": 43764,
+  "rerolls": 7,
+  "packs_bought": 24,
+  "packs_opened": 17,
+  "interest_collected": 40,
+  "econ_source": 0,
+  "jokers_sold": [
+   [
+    3,
+    "j_half"
+   ],
+   [
+    3,
+    "j_chaos"
+   ],
+   [
+    3,
+    "j_satellite"
+   ],
+   [
+    4,
+    "j_oops"
+   ],
+   [
+    4,
+    "j_scary_face"
+   ],
+   [
+    5,
+    "j_idol"
+   ],
+   [
+    5,
+    "j_ring_master"
+   ],
+   [
+    5,
+    "j_hiker"
+   ],
+   [
+    6,
+    "j_sly"
+   ],
+   [
+    6,
+    "j_constellation"
+   ],
+   [
+    6,
+    "j_baseball"
+   ],
+   [
+    7,
+    "j_erosion"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Full House",
+    [],
+    356
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_gros_michel",
+     "j_half"
+    ],
+    468
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_erosion",
+     "j_gros_michel",
+     "j_half"
+    ],
+    1932
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_half"
+    ],
+    1944
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_half",
+     "j_satellite"
+    ],
+    1944
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_half",
+     "j_satellite"
+    ],
+    2065
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_half",
+     "j_idol",
+     "j_satellite"
+    ],
+    2146
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_baseball",
+     "j_chaos",
+     "j_erosion",
+     "j_idol",
+     "j_satellite"
+    ],
+    7344
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_idol",
+     "j_oops",
+     "j_satellite"
+    ],
+    7573
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_idol",
+     "j_oops",
+     "j_satellite"
+    ],
+    4050
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_idol",
+     "j_oops",
+     "j_scary_face"
+    ],
+    10327
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_idol",
+     "j_ring_master",
+     "j_scary_face"
+    ],
+    20655
+   ],
+   [
+    4,
+    "Two Pair",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_hiker",
+     "j_idol",
+     "j_ring_master"
+    ],
+    6682
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_hiker",
+     "j_idol",
+     "j_ring_master"
+    ],
+    3726
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_hiker",
+     "j_idol",
+     "j_ring_master"
+    ],
+    12312
+   ],
+   [
+    5,
+    "Full House",
+    [
+     "j_baseball",
+     "j_constellation",
+     "j_erosion",
+     "j_hiker",
+     "j_ring_master"
+    ],
+    20412
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_constellation",
+     "j_erosion",
+     "j_hiker"
+    ],
+    20412
+   ],
+   [
+    5,
+    "High Card",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_constellation",
+     "j_erosion",
+     "j_hiker"
+    ],
+    3645
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_constellation",
+     "j_erosion",
+     "j_sly"
+    ],
+    13365
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_constellation",
+     "j_erosion",
+     "j_sly"
+    ],
+    14215
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_constellation",
+     "j_erosion",
+     "j_sly"
+    ],
+    30789
+   ],
+   [
+    6,
+    "Flush",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_erosion",
+     "j_scholar",
+     "j_splash"
+    ],
+    18306
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_erosion",
+     "j_scholar",
+     "j_splash"
+    ],
+    23098
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_scholar",
+     "j_selzer",
+     "j_splash"
+    ],
+    33534
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_scholar",
+     "j_selzer",
+     "j_splash"
+    ],
+    1305
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_scholar",
+     "j_selzer",
+     "j_splash"
+    ],
+    8925
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_arrowhead",
+     "j_cavendish",
+     "j_scholar",
+     "j_selzer",
+     "j_splash"
+    ],
+    2241
+   ],
+   [
+    7,
+    "Full House",
+    [
+     "j_arrowhead",
+     "j_cavendish",
+     "j_scholar",
+     "j_selzer",
+     "j_splash"
+    ],
+    4080
+   ],
+   [
+    7,
+    "Two Pair",
+    [
+     "j_arrowhead",
+     "j_cavendish",
+     "j_scholar",
+     "j_selzer",
+     "j_splash"
+    ],
+    14718
+   ],
+   [
+    7,
+    "Three of a Kind",
+    [
+     "j_arrowhead",
+     "j_cavendish",
+     "j_scholar",
+     "j_selzer",
+     "j_splash"
+    ],
+    2340
+   ]
+  ],
+  "consumable_uses": [
+   [
+    2,
+    "c_temperance",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_half",
+     "j_idol",
+     "j_satellite"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_half",
+     "j_idol",
+     "j_satellite"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    4,
+    "c_death",
+    [
+     "j_baseball",
+     "j_erosion",
+     "j_hiker",
+     "j_idol",
+     "j_ring_master"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "Lucky",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_temperance",
+    [
+     "j_baseball",
+     "j_constellation",
+     "j_erosion",
+     "j_hiker",
+     "j_ring_master"
+    ],
+    []
+   ],
+   [
+    6,
+    "pl_mercury",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_constellation",
+     "j_erosion",
+     "j_sly"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_hanged_man",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_erosion",
+     "j_scholar",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "c_star",
+    [
+     "j_baseball",
+     "j_cavendish",
+     "j_erosion",
+     "j_scholar",
+     "j_splash"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_hermit",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_scholar",
+     "j_selzer",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_hermit",
+    [
+     "j_cavendish",
+     "j_erosion",
+     "j_scholar",
+     "j_selzer",
+     "j_splash"
+    ],
+    []
+   ],
+   [
+    7,
+    "c_wheel_of_fortune",
+    [
+     "j_arrowhead",
+     "j_cavendish",
+     "j_scholar",
+     "j_selzer",
+     "j_splash"
+    ],
+    []
+   ]
+  ]
+ },
+ "seed": 37
+}

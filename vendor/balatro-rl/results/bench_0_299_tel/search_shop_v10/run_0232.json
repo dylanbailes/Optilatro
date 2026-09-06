@@ -1,0 +1,240 @@
+{
+ "won": false,
+ "ante": 2,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 57,
+ "truncated": false,
+ "dollars": 0,
+ "jokers": [
+  "j_satellite",
+  "j_8_ball",
+  "j_selzer",
+  "j_greedy_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_wheel_of_fortune",
+   "c_magician"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_8_ball",
+   "j_selzer",
+   "j_greedy_joker"
+  ],
+  "money_spent": 29,
+  "best_score": 1205,
+  "rerolls": 0,
+  "packs_bought": 2,
+  "packs_opened": 2,
+  "interest_collected": 0,
+  "econ_source": 0,
+  "jokers_sold": [],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    268
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    60
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_satellite"
+    ],
+    116
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_satellite"
+    ],
+    108
+   ],
+   [
+    1,
+    "Three of a Kind",
+    [
+     "j_8_ball",
+     "j_satellite"
+    ],
+    180
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_satellite"
+    ],
+    52
+   ],
+   [
+    1,
+    "Full House",
+    [
+     "j_8_ball",
+     "j_satellite"
+    ],
+    344
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_satellite"
+    ],
+    92
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_8_ball",
+     "j_satellite"
+    ],
+    292
+   ],
+   [
+    2,
+    "Straight",
+    [
+     "j_8_ball",
+     "j_satellite",
+     "j_selzer"
+    ],
+    472
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_8_ball",
+     "j_satellite",
+     "j_selzer"
+    ],
+    372
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_selzer"
+    ],
+    672
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_8_ball",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_selzer"
+    ],
+    400
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_8_ball",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_selzer"
+    ],
+    133
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_8_ball",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_selzer"
+    ],
+    1176
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_8_ball",
+     "j_satellite"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_wheel_of_fortune",
+    [
+     "j_8_ball",
+     "j_satellite"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_8_ball",
+     "j_greedy_joker",
+     "j_satellite",
+     "j_selzer"
+    ],
+    [
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 232
+}

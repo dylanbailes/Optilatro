@@ -1,0 +1,249 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 67,
+ "truncated": false,
+ "dollars": 18,
+ "jokers": [
+  "j_hanging_chad",
+  "j_rough_gem",
+  "j_walkie_talkie",
+  "j_reserved_parking"
+ ],
+ "stats": {
+  "tarots": [
+   "c_death",
+   "c_magician"
+  ],
+  "planets": [
+   "pl_uranus"
+  ],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_credit_card",
+   "j_hanging_chad",
+   "j_scary_face",
+   "j_rough_gem",
+   "j_walkie_talkie",
+   "j_reserved_parking",
+   "j_faceless"
+  ],
+  "money_spent": 54,
+  "best_score": 2550,
+  "rerolls": 0,
+  "packs_bought": 6,
+  "packs_opened": 4,
+  "interest_collected": 1,
+  "econ_source": 13,
+  "jokers_sold": [
+   [
+    2,
+    "j_scary_face"
+   ],
+   [
+    2,
+    "j_credit_card"
+   ],
+   [
+    3,
+    "j_even_steven"
+   ],
+   [
+    3,
+    "j_faceless"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Flush",
+    [],
+    304
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_even_steven"
+    ],
+    864
+   ],
+   [
+    1,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    644
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    1056
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_scary_face"
+    ],
+    1610
+   ],
+   [
+    2,
+    "Two Pair",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_rough_gem",
+     "j_scary_face"
+    ],
+    902
+   ],
+   [
+    2,
+    "Flush",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_rough_gem",
+     "j_scary_face"
+    ],
+    1648
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem",
+     "j_walkie_talkie"
+    ],
+    2244
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem",
+     "j_walkie_talkie"
+    ],
+    35
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem",
+     "j_walkie_talkie"
+    ],
+    500
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem",
+     "j_walkie_talkie"
+    ],
+    858
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem",
+     "j_walkie_talkie"
+    ],
+    902
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_death",
+    [
+     "j_credit_card",
+     "j_even_steven"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "pl_uranus",
+    [
+     "j_credit_card",
+     "j_even_steven",
+     "j_hanging_chad"
+    ],
+    []
+   ],
+   [
+    2,
+    "c_magician",
+    [
+     "j_even_steven",
+     "j_hanging_chad",
+     "j_reserved_parking",
+     "j_rough_gem",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 90
+}

@@ -1,0 +1,807 @@
+{
+ "won": false,
+ "ante": 8,
+ "death_blind": 2,
+ "death_kind": "Boss",
+ "steps": 210,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_stuntman",
+  "j_half",
+  "j_baron",
+  "j_ramen",
+  "j_swashbuckler"
+ ],
+ "stats": {
+  "tarots": [
+   "c_emperor",
+   "c_star",
+   "c_hierophant",
+   "c_fool",
+   "c_hierophant",
+   "c_death",
+   "c_temperance",
+   "c_wheel_of_fortune",
+   "c_strength",
+   "c_sun"
+  ],
+  "planets": [
+   "pl_pluto"
+  ],
+  "spectrals": [
+   "s_familiar"
+  ],
+  "jokers_bought": [
+   "j_duo",
+   "j_business",
+   "j_half",
+   "j_todo_list",
+   "j_credit_card",
+   "j_raised_fist",
+   "j_hologram",
+   "j_jolly",
+   "j_half",
+   "j_greedy_joker",
+   "j_splash",
+   "j_odd_todd",
+   "j_hallucination",
+   "j_hanging_chad",
+   "j_ticket",
+   "j_odd_todd",
+   "j_baron",
+   "j_ramen",
+   "j_swashbuckler"
+  ],
+  "money_spent": 242,
+  "best_score": 85106,
+  "rerolls": 5,
+  "packs_bought": 18,
+  "packs_opened": 8,
+  "interest_collected": 44,
+  "econ_source": 8,
+  "jokers_sold": [
+   [
+    3,
+    "j_business"
+   ],
+   [
+    3,
+    "j_credit_card"
+   ],
+   [
+    4,
+    "j_half"
+   ],
+   [
+    4,
+    "j_hologram"
+   ],
+   [
+    5,
+    "j_jolly"
+   ],
+   [
+    5,
+    "j_todo_list"
+   ],
+   [
+    5,
+    "j_walkie_talkie"
+   ],
+   [
+    5,
+    "j_greedy_joker"
+   ],
+   [
+    5,
+    "j_splash"
+   ],
+   [
+    5,
+    "j_odd_todd"
+   ],
+   [
+    5,
+    "j_hallucination"
+   ],
+   [
+    6,
+    "j_hanging_chad"
+   ],
+   [
+    6,
+    "j_ticket"
+   ],
+   [
+    6,
+    "j_odd_todd"
+   ],
+   [
+    7,
+    "j_raised_fist"
+   ],
+   [
+    8,
+    "j_duo"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Straight",
+    [],
+    220
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    52
+   ],
+   [
+    1,
+    "Pair",
+    [],
+    64
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_stuntman"
+    ],
+    265
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_stuntman"
+    ],
+    257
+   ],
+   [
+    1,
+    "High Card",
+    [
+     "j_duo",
+     "j_stuntman"
+    ],
+    265
+   ],
+   [
+    1,
+    "Pair",
+    [
+     "j_duo",
+     "j_stuntman"
+    ],
+    1112
+   ],
+   [
+    2,
+    "Pair",
+    [
+     "j_business",
+     "j_duo",
+     "j_stuntman"
+    ],
+    1104
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_business",
+     "j_duo",
+     "j_half",
+     "j_stuntman"
+    ],
+    5397
+   ],
+   [
+    2,
+    "High Card",
+    [
+     "j_business",
+     "j_duo",
+     "j_half",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    5565
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_business",
+     "j_duo",
+     "j_half",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    5565
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    5418
+   ],
+   [
+    3,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    5397
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    5397
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_duo",
+     "j_hologram",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    4921
+   ],
+   [
+    4,
+    "High Card",
+    [
+     "j_duo",
+     "j_hologram",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    3419
+   ],
+   [
+    4,
+    "Pair",
+    [
+     "j_duo",
+     "j_jolly",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    17280
+   ],
+   [
+    5,
+    "Flush",
+    [
+     "j_duo",
+     "j_jolly",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    7848
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_duo",
+     "j_jolly",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    16080
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    22848
+   ],
+   [
+    5,
+    "Pair",
+    [
+     "j_duo",
+     "j_half",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    28080
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    13865
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    10218
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    15050
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_duo",
+     "j_half",
+     "j_odd_todd",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    16176
+   ],
+   [
+    6,
+    "Pair",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    28496
+   ],
+   [
+    6,
+    "High Card",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    14526
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    30912
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    10450
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    30688
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    22400
+   ],
+   [
+    7,
+    "Pair",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_ramen",
+     "j_stuntman"
+    ],
+    51840
+   ],
+   [
+    7,
+    "High Card",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_ramen",
+     "j_stuntman"
+    ],
+    19520
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_ramen",
+     "j_stuntman"
+    ],
+    26135
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_ramen",
+     "j_stuntman"
+    ],
+    25565
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_baron",
+     "j_half",
+     "j_ramen",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    75913
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_baron",
+     "j_half",
+     "j_ramen",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    14481
+   ],
+   [
+    8,
+    "High Card",
+    [
+     "j_baron",
+     "j_half",
+     "j_ramen",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    43480
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_baron",
+     "j_half",
+     "j_ramen",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    10929
+   ],
+   [
+    8,
+    "Pair",
+    [
+     "j_baron",
+     "j_half",
+     "j_ramen",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    16216
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_emperor",
+    [
+     "j_business",
+     "j_duo",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_star",
+    [
+     "j_duo",
+     "j_jolly",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_hierophant",
+    [
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_todo_list"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    5,
+    "c_fool",
+    [
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    []
+   ],
+   [
+    5,
+    "c_hierophant",
+    [
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman",
+     "j_walkie_talkie"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    6,
+    "pl_pluto",
+    [
+     "j_duo",
+     "j_half",
+     "j_hanging_chad",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    6,
+    "c_death",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 2,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "Bonus",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_temperance",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    7,
+    "s_familiar",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_raised_fist",
+     "j_stuntman"
+    ],
+    [
+     {
+      "rank": 3,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    7,
+    "c_wheel_of_fortune",
+    [
+     "j_baron",
+     "j_duo",
+     "j_half",
+     "j_ramen",
+     "j_stuntman"
+    ],
+    []
+   ],
+   [
+    8,
+    "c_strength",
+    [
+     "j_baron",
+     "j_half",
+     "j_ramen",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    8,
+    "c_sun",
+    [
+     "j_baron",
+     "j_half",
+     "j_ramen",
+     "j_stuntman",
+     "j_swashbuckler"
+    ],
+    [
+     {
+      "rank": 13,
+      "suit": "Diamonds",
+      "enh": "Bonus",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 44
+}

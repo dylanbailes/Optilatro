@@ -1,0 +1,456 @@
+{
+ "search_shop_v10": {
+  "aggregate": {
+   "n": 2,
+   "wins": 0,
+   "win_rate": 0.0,
+   "ante1_deaths": 1,
+   "ante1_death_rate": 50.0,
+   "death": {
+    "3": 1,
+    "1": 1
+   },
+   "mean_ante": 2,
+   "mean_steps": 52,
+   "mean_dollars": 2.5,
+   "mean_econ_source": 0.0,
+   "total_econ_source": 0,
+   "mean_interest": 0.5,
+   "total_interest": 1,
+   "mean_tarots": 1.5,
+   "mean_planets": 2.5,
+   "mean_spectrals": 0.0
+  },
+  "results": [
+   {
+    "won": false,
+    "ante": 3,
+    "death_blind": 2,
+    "death_kind": "Boss",
+    "steps": 80,
+    "truncated": false,
+    "dollars": 5,
+    "jokers": [
+     "j_order",
+     "j_blue_joker",
+     "j_square",
+     "j_ride_the_bus",
+     "j_golden"
+    ],
+    "stats": {
+     "tarots": [
+      "c_death",
+      "c_temperance",
+      "c_hermit"
+     ],
+     "planets": [
+      "pl_ceres",
+      "pl_eris",
+      "pl_pluto",
+      "pl_saturn"
+     ],
+     "spectrals": [],
+     "jokers_bought": [
+      "j_order",
+      "j_blue_joker",
+      "j_superposition",
+      "j_square",
+      "j_ride_the_bus",
+      "j_golden"
+     ],
+     "money_spent": 75,
+     "best_score": 4324,
+     "rerolls": 1,
+     "packs_bought": 6,
+     "packs_opened": 6,
+     "interest_collected": 1,
+     "econ_source": 0,
+     "jokers_sold": [
+      [
+       3,
+       "j_superposition"
+      ],
+      [
+       3,
+       "j_half"
+      ]
+     ],
+     "co_owned": [
+      [
+       1,
+       "Straight",
+       [],
+       220
+      ],
+      [
+       1,
+       "Two Pair",
+       [],
+       112
+      ],
+      [
+       1,
+       "Two Pair",
+       [
+        "j_order"
+       ],
+       96
+      ],
+      [
+       1,
+       "Full House",
+       [
+        "j_order"
+       ],
+       372
+      ],
+      [
+       1,
+       "Pair",
+       [
+        "j_blue_joker",
+        "j_order"
+       ],
+       210
+      ],
+      [
+       1,
+       "Pair",
+       [
+        "j_blue_joker",
+        "j_order"
+       ],
+       210
+      ],
+      [
+       1,
+       "Pair",
+       [
+        "j_blue_joker",
+        "j_order"
+       ],
+       220
+      ],
+      [
+       2,
+       "Straight",
+       [
+        "j_blue_joker",
+        "j_order",
+        "j_superposition"
+       ],
+       2328
+      ],
+      [
+       2,
+       "Pair",
+       [
+        "j_blue_joker",
+        "j_half",
+        "j_order",
+        "j_square",
+        "j_superposition"
+       ],
+       3520
+      ],
+      [
+       2,
+       "Pair",
+       [
+        "j_blue_joker",
+        "j_half",
+        "j_order",
+        "j_square",
+        "j_superposition"
+       ],
+       3696
+      ],
+      [
+       3,
+       "Three of a Kind",
+       [
+        "j_blue_joker",
+        "j_half",
+        "j_order",
+        "j_square",
+        "j_superposition"
+       ],
+       4324
+      ],
+      [
+       3,
+       "High Card",
+       [
+        "j_blue_joker",
+        "j_half",
+        "j_order",
+        "j_ride_the_bus",
+        "j_square"
+       ],
+       3201
+      ],
+      [
+       3,
+       "Two Pair",
+       [
+        "j_blue_joker",
+        "j_golden",
+        "j_order",
+        "j_ride_the_bus",
+        "j_square"
+       ],
+       552
+      ],
+      [
+       3,
+       "Full House",
+       [
+        "j_blue_joker",
+        "j_golden",
+        "j_order",
+        "j_ride_the_bus",
+        "j_square"
+       ],
+       672
+      ],
+      [
+       3,
+       "Two Pair",
+       [
+        "j_blue_joker",
+        "j_golden",
+        "j_order",
+        "j_ride_the_bus",
+        "j_square"
+       ],
+       336
+      ],
+      [
+       3,
+       "Two Pair",
+       [
+        "j_blue_joker",
+        "j_golden",
+        "j_order",
+        "j_ride_the_bus",
+        "j_square"
+       ],
+       472
+      ]
+     ],
+     "consumable_uses": [
+      [
+       2,
+       "pl_ceres",
+       [
+        "j_blue_joker",
+        "j_half",
+        "j_order",
+        "j_square",
+        "j_superposition"
+       ],
+       []
+      ],
+      [
+       2,
+       "c_death",
+       [
+        "j_blue_joker",
+        "j_half",
+        "j_order",
+        "j_square",
+        "j_superposition"
+       ],
+       [
+        {
+         "rank": 2,
+         "suit": "Hearts",
+         "enh": "None",
+         "edition": "None",
+         "seal": "None"
+        },
+        {
+         "rank": 12,
+         "suit": "Diamonds",
+         "enh": "None",
+         "edition": "None",
+         "seal": "None"
+        }
+       ]
+      ],
+      [
+       2,
+       "pl_eris",
+       [
+        "j_blue_joker",
+        "j_half",
+        "j_order",
+        "j_square",
+        "j_superposition"
+       ],
+       []
+      ],
+      [
+       2,
+       "c_temperance",
+       [
+        "j_blue_joker",
+        "j_half",
+        "j_order",
+        "j_square",
+        "j_superposition"
+       ],
+       []
+      ],
+      [
+       3,
+       "c_hermit",
+       [
+        "j_blue_joker",
+        "j_half",
+        "j_order",
+        "j_square",
+        "j_superposition"
+       ],
+       []
+      ],
+      [
+       3,
+       "pl_pluto",
+       [
+        "j_blue_joker",
+        "j_golden",
+        "j_order",
+        "j_ride_the_bus",
+        "j_square"
+       ],
+       []
+      ],
+      [
+       3,
+       "pl_saturn",
+       [
+        "j_blue_joker",
+        "j_golden",
+        "j_order",
+        "j_ride_the_bus",
+        "j_square"
+       ],
+       []
+      ]
+     ]
+    },
+    "seed": 0
+   },
+   {
+    "won": false,
+    "ante": 1,
+    "death_blind": 2,
+    "death_kind": "Boss",
+    "steps": 24,
+    "truncated": false,
+    "dollars": 0,
+    "jokers": [
+     "j_bull",
+     "j_throwback"
+    ],
+    "stats": {
+     "tarots": [],
+     "planets": [
+      "pl_mercury"
+     ],
+     "spectrals": [],
+     "jokers_bought": [
+      "j_bull",
+      "j_throwback"
+     ],
+     "money_spent": 15,
+     "best_score": 523,
+     "rerolls": 0,
+     "packs_bought": 0,
+     "packs_opened": 0,
+     "interest_collected": 0,
+     "econ_source": 0,
+     "jokers_sold": [],
+     "co_owned": [
+      [
+       1,
+       "Straight",
+       [],
+       280
+      ],
+      [
+       1,
+       "Pair",
+       [],
+       60
+      ],
+      [
+       1,
+       "Full House",
+       [
+        "j_bull"
+       ],
+       216
+      ],
+      [
+       1,
+       "Flush",
+       [
+        "j_bull"
+       ],
+       292
+      ],
+      [
+       1,
+       "Straight",
+       [
+        "j_bull",
+        "j_throwback"
+       ],
+       220
+      ],
+      [
+       1,
+       "Pair",
+       [
+        "j_bull",
+        "j_throwback"
+       ],
+       105
+      ],
+      [
+       1,
+       "Pair",
+       [
+        "j_bull",
+        "j_throwback"
+       ],
+       93
+      ],
+      [
+       1,
+       "Pair",
+       [
+        "j_bull",
+        "j_throwback"
+       ],
+       105
+      ]
+     ],
+     "consumable_uses": [
+      [
+       1,
+       "pl_mercury",
+       [
+        "j_bull"
+       ],
+       []
+      ]
+     ]
+    },
+    "seed": 1
+   }
+  ]
+ }
+}

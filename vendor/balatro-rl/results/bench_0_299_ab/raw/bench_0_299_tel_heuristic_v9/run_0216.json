@@ -1,0 +1,347 @@
+{
+ "won": false,
+ "ante": 3,
+ "death_blind": 1,
+ "death_kind": "Big",
+ "steps": 91,
+ "truncated": false,
+ "dollars": 3,
+ "jokers": [
+  "j_sock_and_buskin",
+  "j_zany",
+  "j_clever",
+  "j_hallucination",
+  "j_gluttenous_joker"
+ ],
+ "stats": {
+  "tarots": [
+   "c_hanged_man",
+   "c_hermit",
+   "c_empress",
+   "c_empress",
+   "c_empress",
+   "c_sun"
+  ],
+  "planets": [],
+  "spectrals": [],
+  "jokers_bought": [
+   "j_sock_and_buskin",
+   "j_delayed_grat",
+   "j_zany",
+   "j_clever",
+   "j_hallucination",
+   "j_gluttenous_joker"
+  ],
+  "money_spent": 82,
+  "best_score": 2424,
+  "rerolls": 1,
+  "packs_bought": 8,
+  "packs_opened": 5,
+  "interest_collected": 0,
+  "econ_source": 28,
+  "jokers_sold": [
+   [
+    3,
+    "j_business"
+   ],
+   [
+    3,
+    "j_delayed_grat"
+   ]
+  ],
+  "co_owned": [
+   [
+    1,
+    "Three of a Kind",
+    [],
+    180
+   ],
+   [
+    1,
+    "Flush",
+    [],
+    284
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_sock_and_buskin"
+    ],
+    384
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_sock_and_buskin"
+    ],
+    220
+   ],
+   [
+    1,
+    "Straight",
+    [
+     "j_business",
+     "j_sock_and_buskin"
+    ],
+    388
+   ],
+   [
+    1,
+    "Flush",
+    [
+     "j_business",
+     "j_sock_and_buskin"
+    ],
+    300
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    900
+   ],
+   [
+    2,
+    "Three of a Kind",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    2070
+   ],
+   [
+    2,
+    "Full House",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    2424
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_clever",
+     "j_delayed_grat",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    780
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_business",
+     "j_clever",
+     "j_delayed_grat",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    1480
+   ],
+   [
+    3,
+    "Flush",
+    [
+     "j_clever",
+     "j_gluttenous_joker",
+     "j_hallucination",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    396
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_gluttenous_joker",
+     "j_hallucination",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    292
+   ],
+   [
+    3,
+    "Two Pair",
+    [
+     "j_clever",
+     "j_gluttenous_joker",
+     "j_hallucination",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    1134
+   ],
+   [
+    3,
+    "Pair",
+    [
+     "j_clever",
+     "j_gluttenous_joker",
+     "j_hallucination",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    40
+   ]
+  ],
+  "consumable_uses": [
+   [
+    1,
+    "c_hanged_man",
+    [
+     "j_business",
+     "j_sock_and_buskin"
+    ],
+    [
+     {
+      "rank": 4,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 4,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    1,
+    "c_hermit",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_sock_and_buskin"
+    ],
+    []
+   ],
+   [
+    1,
+    "c_empress",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_sock_and_buskin"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 13,
+      "suit": "Hearts",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 14,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 11,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    2,
+    "c_empress",
+    [
+     "j_business",
+     "j_delayed_grat",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 12,
+      "suit": "Diamonds",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 10,
+      "suit": "Clubs",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ],
+   [
+    3,
+    "c_sun",
+    [
+     "j_clever",
+     "j_gluttenous_joker",
+     "j_hallucination",
+     "j_sock_and_buskin",
+     "j_zany"
+    ],
+    [
+     {
+      "rank": 11,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     },
+     {
+      "rank": 12,
+      "suit": "Spades",
+      "enh": "None",
+      "edition": "None",
+      "seal": "None"
+     }
+    ]
+   ]
+  ]
+ },
+ "seed": 216
+}

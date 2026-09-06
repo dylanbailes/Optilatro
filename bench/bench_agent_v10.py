@@ -39,6 +39,7 @@ sys.path.insert(0, str(VENDOR))
 
 from balatro_sim.agent_v9 import HeuristicV9
 from balatro_sim.agent_v10 import HeuristicV10, SearchShopV10
+from balatro_sim.agent_v11 import SearchShopV11
 from balatro_sim.agent_l1 import SearchShopV9
 from balatro_sim.game import BalatroGame
 from balatro_sim.rollout import rollout
@@ -49,11 +50,12 @@ _POLICIES = {
     "heuristic_v10": HeuristicV10,
     "search_shop_v9": SearchShopV9,
     "search_shop_v10": SearchShopV10,
+    "search_shop_v11": SearchShopV11,
 }
 
 
 def _make_policy(name: str, params, search_shops: int, lookahead: bool):
-    if name in ("search_shop_v9", "search_shop_v10"):
+    if name in ("search_shop_v9", "search_shop_v10", "search_shop_v11"):
         return _POLICIES[name](params=params, search_shops=search_shops,
                                lookahead=lookahead)
     return _POLICIES[name](params=params)
@@ -143,14 +145,16 @@ def main() -> None:
                     help="comma-separated policies from: " + ", ".join(_POLICIES))
     ap.add_argument("--rng-mode", default="seed", choices=["seed", "generic"])
     ap.add_argument("--seed-start", type=int, default=0)
-    ap.add_argument("--search-shops", type=int, default=1)
+    ap.add_argument("--seeds", default=None,
+                    help="Seed range like '0-299' or '300-499' (overrides --games and --seed-start)")
+    ap.add_argument("--search-shops", type=int, default=999)
     ap.add_argument("--lookahead", action="store_true",
                     help="RESEARCH ONLY (not human-fair): rollout shop search")
     ap.add_argument("--params", default=None,
                     help="JSON dict overridden into the policy params "
                          "(v10 farm knobs: farm_clear_threshold, "
                          "abandon_clear_floor, farm_spare_hands)")
-    ap.add_argument("--report", default=str(VENDOR / "results" / "v10_report.html"))
+    ap.add_argument("--report", default=None)
     ap.add_argument("--no-report", action="store_true")
     ap.add_argument("--batch-size", type=int, default=25)
     args = ap.parse_args()
@@ -160,7 +164,20 @@ def main() -> None:
     for p in policies:
         if p not in _POLICIES:
             sys.exit(f"unknown policy {p!r} (choose from {list(_POLICIES)})")
-    seeds = list(range(args.seed_start, args.seed_start + args.games))
+
+    if args.seeds:
+        parts = args.seeds.split("-")
+        s_start = int(parts[0])
+        s_end = int(parts[1])
+        seeds = list(range(s_start, s_end + 1))
+        args.games = len(seeds)
+        args.seed_start = s_start
+    else:
+        seeds = list(range(args.seed_start, args.seed_start + args.games))
+
+    if args.report is None:
+        args.report = str(VENDOR / "results" / f"bench_{seeds[0]}_{seeds[-1]}_{'_'.join(policies)}.html")
+
     print(f"bench_agent_v10: {args.games} seeds ({seeds[0]}..{seeds[-1]}), "
           f"rng_mode={args.rng_mode}, workers={args.workers}, "
           f"policies={policies}, search_shops={args.search_shops}, "
