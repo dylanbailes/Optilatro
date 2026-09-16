@@ -1,0 +1,312 @@
+{
+ "alpha": 782.6086956521744,
+ "catalogue_fingerprint": "65abde89679e4127",
+ "cell_stats": {
+  "cells": 3952,
+  "cells_finest": 1472,
+  "max_n": 929.0,
+  "median_n": 2.0
+ },
+ "concordance_legacy_dv": {
+  "accuracy": 0.48533724340175954,
+  "ci95": [
+   0.44561894138252417,
+   0.5180675675675676
+  ],
+  "decisions": 552,
+  "mean_per_decision": 0.47508195307108353,
+  "pairs": 682,
+  "ties": 814
+ },
+ "concordance_model": {
+  "accuracy": 0.5381231671554252,
+  "ci95": [
+   0.49716443092817864,
+   0.5766618779511339
+  ],
+  "decisions": 552,
+  "mean_per_decision": 0.5414639406487233,
+  "pairs": 682,
+  "ties": 814
+ },
+ "cv_rmse": 3.0573096151491055,
+ "elapsed_s": 7.4,
+ "feature_count": 161,
+ "folds": 5,
+ "holdout_rmse_full": 3.2001364758423074,
+ "holdout_rmse_linear": 3.1606137835713435,
+ "holdout_rmse_rel": 1.8863482516846926,
+ "item_evidence": {
+  "keys_seen_train": 231,
+  "keys_with_3plus": 227,
+  "keys_with_8plus": 189,
+  "top_keys": [
+   [
+    "p_buffoon",
+    723
+   ],
+   [
+    "p_standard",
+    673
+   ],
+   [
+    "p_arcana",
+    605
+   ],
+   [
+    "p_celestial",
+    593
+   ],
+   [
+    "p_standard_jumbo",
+    271
+   ],
+   [
+    "p_celestial_jumbo",
+    245
+   ],
+   [
+    "p_arcana_jumbo",
+    238
+   ],
+   [
+    "p_arcana_mega",
+    134
+   ],
+   [
+    "p_spectral",
+    114
+   ],
+   [
+    "p_buffoon_jumbo",
+    106
+   ]
+  ]
+ },
+ "rank_head_absolute": {
+  "ctx_delta": 0.06362346263008514,
+  "decisions": 1057,
+  "frac_positive": 0.2800378429517502,
+  "top1_rate": 0.5085146641438032
+ },
+ "rank_head_relative": {
+  "ctx_delta": 0.12606433301797543,
+  "decisions": 1057,
+  "frac_positive": 0.2781456953642384,
+  "top1_rate": 0.5070955534531694
+ },
+ "rank_legacy_dv": {
+  "ctx_delta": -0.04895931882686849,
+  "decisions": 1057,
+  "frac_positive": 0.2412488174077578,
+  "top1_rate": 0.4706717123935667
+ },
+ "resid_sd": 3.0572925188910127,
+ "resid_sd_rel": 1.7201322788679352,
+ "rows_holdout": 2638,
+ "rows_train": 9348,
+ "scenario_evidence": {
+  "boss": {
+   "cells": 875,
+   "cells_with_3plus": 213,
+   "cells_with_8plus": 8,
+   "max_n": 8,
+   "rows_labelled": 875
+  },
+  "hand": {
+   "cells": 1609,
+   "cells_with_3plus": 1278,
+   "cells_with_8plus": 811,
+   "max_n": 52,
+   "rows_labelled": 1609
+  },
+  "items_seen": 231,
+  "rows": 9348
+ },
+ "seeds_train": 753,
+ "selection_legacy_dv": {
+  "decisions": 1054,
+  "frac_positive": 0.4060721062618596,
+  "mean_delta": -0.12264187314126768,
+  "median_delta": -0.02418745275888133,
+  "se": 0.03942077013753826
+ },
+ "selection_model": {
+  "decisions": 1054,
+  "frac_positive": 0.7741935483870968,
+  "mean_delta": 0.7153482183913993,
+  "median_delta": 0.5151515151515151,
+  "se": 0.031227728404921076
+ },
+ "selective_curve": [
+  {
+   "concordance": 0.5625,
+   "coverage": 0.6459,
+   "decisions": 901,
+   "frac_positive": 0.2053,
+   "mean_ctx_delta": -0.0164,
+   "pairs": 144,
+   "z": 0.0
+  },
+  {
+   "concordance": 0.625,
+   "coverage": 0.362,
+   "decisions": 505,
+   "frac_positive": 0.198,
+   "mean_ctx_delta": -0.0701,
+   "pairs": 32,
+   "z": 0.5
+  },
+  {
+   "concordance": 0.8182,
+   "coverage": 0.2108,
+   "decisions": 294,
+   "frac_positive": 0.2313,
+   "mean_ctx_delta": -0.0017,
+   "pairs": 11,
+   "z": 1.0
+  },
+  {
+   "concordance": 0.8333,
+   "coverage": 0.1427,
+   "decisions": 199,
+   "frac_positive": 0.2261,
+   "mean_ctx_delta": -0.0188,
+   "pairs": 6,
+   "z": 1.5
+  },
+  {
+   "concordance": 1.0,
+   "coverage": 0.0832,
+   "decisions": 116,
+   "frac_positive": 0.2414,
+   "mean_ctx_delta": 0.2091,
+   "pairs": 1,
+   "z": 2.0
+  },
+  {
+   "concordance": 1.0,
+   "coverage": 0.0165,
+   "decisions": 23,
+   "frac_positive": 0.3043,
+   "mean_ctx_delta": -0.1304,
+   "pairs": 1,
+   "z": 3.0
+  },
+  {
+   "concordance": null,
+   "coverage": 0.0072,
+   "decisions": 10,
+   "frac_positive": 0.2,
+   "mean_ctx_delta": -0.25,
+   "pairs": 0,
+   "z": 4.0
+  }
+ ],
+ "tau": 29.0,
+ "tau_rel": 29.0,
+ "tau_sweep": [
+  {
+   "holdout_rmse": 3.425312657677472,
+   "tau": 1.0
+  },
+  {
+   "holdout_rmse": 3.414385997437469,
+   "tau": 1.1506235270984195
+  },
+  {
+   "holdout_rmse": 3.403158622156638,
+   "tau": 1.3239345011124073
+  },
+  {
+   "holdout_rmse": 3.391711521397252,
+   "tau": 1.5233501853172446
+  },
+  {
+   "holdout_rmse": 3.380127099531367,
+   "tau": 1.7528025632357591
+  },
+  {
+   "holdout_rmse": 3.36848620657443,
+   "tau": 2.0168158676174794
+  },
+  {
+   "holdout_rmse": 3.35686564674358,
+   "tau": 2.320595787106084
+  },
+  {
+   "holdout_rmse": 3.3453363272089787,
+   "tau": 2.670132109529735
+  },
+  {
+   "holdout_rmse": 3.333962096423302,
+   "tau": 3.072316825685847
+  },
+  {
+   "holdout_rmse": 3.3227992221152354,
+   "tau": 3.535080022334469
+  },
+  {
+   "holdout_rmse": 3.311896390220297,
+   "tau": 4.067546243873647
+  },
+  {
+   "holdout_rmse": 3.30129507262546,
+   "tau": 4.6802144057618245
+  },
+  {
+   "holdout_rmse": 3.2910301092638905,
+   "tau": 5.385164807134504
+  },
+  {
+   "holdout_rmse": 3.281130370040846,
+   "tau": 6.1962973243913835
+  },
+  {
+   "holdout_rmse": 3.271619395353514,
+   "tau": 7.129605482341712
+  },
+  {
+   "holdout_rmse": 3.262515953308276,
+   "tau": 8.20349180691225
+  },
+  {
+   "holdout_rmse": 3.2538344911722015,
+   "tau": 9.43913067739236
+  },
+  {
+   "holdout_rmse": 3.2455854924458976,
+   "tau": 10.860885832764092
+  },
+  {
+   "holdout_rmse": 3.2377757737365913,
+   "tau": 12.496790764308273
+  },
+  {
+   "holdout_rmse": 3.230408763411875,
+   "tau": 14.379101466639343
+  },
+  {
+   "holdout_rmse": 3.2234847963556055,
+   "tau": 16.544932446050616
+  },
+  {
+   "holdout_rmse": 3.2170014400085445,
+   "tau": 19.036988526679846
+  },
+  {
+   "holdout_rmse": 3.210953843741387,
+   "tau": 21.904406883900503
+  },
+  {
+   "holdout_rmse": 3.205335084812713,
+   "tau": 25.203725907752496
+  },
+  {
+   "holdout_rmse": 3.2001364758423074,
+   "tau": 29.0
+  }
+ ],
+ "win_auc_legacy_dv": 0.5867895545314901,
+ "win_auc_model": 0.49097542242703535
+}

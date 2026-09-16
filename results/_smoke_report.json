@@ -1,0 +1,136 @@
+{
+ "alpha": 0.0004720496894409939,
+ "catalogue_fingerprint": "65abde89679e4127",
+ "cell_stats": {
+  "cells": 93,
+  "cells_finest": 31,
+  "max_n": 9.0,
+  "median_n": 1.0
+ },
+ "concordance_legacy_dv": {
+  "accuracy": NaN,
+  "decisions": 13,
+  "mean_per_decision": 0.0,
+  "pairs": 0
+ },
+ "concordance_model": {
+  "accuracy": NaN,
+  "decisions": 13,
+  "mean_per_decision": 0.0,
+  "pairs": 0
+ },
+ "cv_rmse": 0.0,
+ "elapsed_s": 0.4,
+ "feature_count": 161,
+ "folds": 4,
+ "holdout_rmse_full": 0.0,
+ "holdout_rmse_linear": 0.0,
+ "rows_holdout": 33,
+ "rows_train": 42,
+ "seeds_train": 4,
+ "tau": 1.0,
+ "tau_sweep": [
+  {
+   "holdout_rmse": 0.0,
+   "tau": 1.0
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 1.1006941712522096
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 1.2115276586285884
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 1.333521432163324
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 1.4677992676220695
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 1.615598098439874
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 1.7782794100389228
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 1.9573417814876601
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 2.154434690031884
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 2.371373705661655
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 2.610157215682537
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 2.8729848333536645
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 3.1622776601683795
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 3.4807005884284106
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 3.831186849557287
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 4.216965034285822
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 4.641588833612778
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 5.108969774506927
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 5.623413251903491
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 6.189658188912605
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 6.812920690579611
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 7.498942093324558
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 8.254041852680183
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 9.085175756516866
+  },
+  {
+   "holdout_rmse": 0.0,
+   "tau": 10.0
+  }
+ ],
+ "win_auc_legacy_dv": NaN,
+ "win_auc_model": NaN
+}

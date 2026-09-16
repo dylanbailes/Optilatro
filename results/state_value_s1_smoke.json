@@ -1,0 +1,140 @@
+{
+ "V": {
+  "agree": 5,
+  "auc": 0.47619047619047616,
+  "better": 3,
+  "n_pairs": 26,
+  "n_scored": 10,
+  "sign_rate": 0.5,
+  "ties": 16,
+  "worse": 7
+ },
+ "by_ante_V": {
+  "1": {
+   "agree": 1,
+   "auc": NaN,
+   "better": 0,
+   "n_pairs": 10,
+   "n_scored": 3,
+   "sign_rate": 0.3333333333333333,
+   "ties": 7,
+   "worse": 3
+  },
+  "2": {
+   "agree": 0,
+   "auc": NaN,
+   "better": 0,
+   "n_pairs": 2,
+   "n_scored": 1,
+   "sign_rate": 0.0,
+   "ties": 1,
+   "worse": 1
+  },
+  "3": {
+   "agree": 2,
+   "auc": NaN,
+   "better": 0,
+   "n_pairs": 5,
+   "n_scored": 2,
+   "sign_rate": 1.0,
+   "ties": 3,
+   "worse": 2
+  },
+  "4": {
+   "agree": 2,
+   "auc": NaN,
+   "better": 2,
+   "n_pairs": 3,
+   "n_scored": 2,
+   "sign_rate": 1.0,
+   "ties": 1,
+   "worse": 0
+  },
+  "5": {
+   "agree": 0,
+   "auc": 0.0,
+   "better": 1,
+   "n_pairs": 4,
+   "n_scored": 2,
+   "sign_rate": 0.0,
+   "ties": 2,
+   "worse": 1
+  },
+  "7": {
+   "agree": 0,
+   "auc": NaN,
+   "better": 0,
+   "n_pairs": 1,
+   "n_scored": 0,
+   "sign_rate": NaN,
+   "ties": 1,
+   "worse": 0
+  },
+  "8": {
+   "agree": 0,
+   "auc": NaN,
+   "better": 0,
+   "n_pairs": 1,
+   "n_scored": 0,
+   "sign_rate": NaN,
+   "ties": 1,
+   "worse": 0
+  }
+ },
+ "by_role": {
+  "model_alt": {
+   "agree": 5,
+   "auc": 0.47619047619047616,
+   "better": 3,
+   "n_pairs": 25,
+   "n_scored": 10,
+   "sign_rate": 0.5,
+   "ties": 15,
+   "worse": 7
+  },
+  "substitute": {
+   "agree": 0,
+   "auc": NaN,
+   "better": 0,
+   "n_pairs": 1,
+   "n_scored": 0,
+   "sign_rate": NaN,
+   "ties": 1,
+   "worse": 0
+  }
+ },
+ "corpus": "results/decisions/train_iter2.jsonl,results/decisions/holdout_iter2.jsonl",
+ "incumbent_head": {
+  "agree": 6,
+  "auc": 0.6190476190476191,
+  "better": 3,
+  "n_pairs": 26,
+  "n_scored": 10,
+  "sign_rate": 0.6,
+  "ties": 16,
+  "worse": 7
+ },
+ "index_mismatches": 0,
+ "legacy_shop_model": {
+  "agree": 6,
+  "auc": 0.2857142857142857,
+  "better": 3,
+  "n_pairs": 26,
+  "n_scored": 10,
+  "sign_rate": 0.6,
+  "ties": 16,
+  "worse": 7
+ },
+ "mismatch_examples": [],
+ "model": "results/state_value_model_partial.joblib",
+ "n_pairs": 26,
+ "n_seeds_replayed": 10,
+ "note": "sign_rate excludes exact label ties (a tie is the absence of a question); a prediction of exactly 0 on a non-tied pair counts as a disagreement, not a coin flip",
+ "roles": {
+  "model_alt": 221,
+  "pick": 330,
+  "substitute": 9
+ },
+ "split": "both",
+ "verdict": "V does NOT beat the incumbent: redesign falsified at S1"
+}

@@ -40,6 +40,7 @@ sys.path.insert(0, str(VENDOR))
 from balatro_sim.agent_v9 import HeuristicV9
 from balatro_sim.agent_v10 import HeuristicV10, SearchShopV10
 from balatro_sim.agent_v11 import SearchShopV11
+from balatro_sim.agent_v12 import SearchShopV12
 from balatro_sim.agent_l1 import SearchShopV9
 from balatro_sim.game import BalatroGame
 from balatro_sim.rollout import rollout
@@ -51,11 +52,13 @@ _POLICIES = {
     "search_shop_v9": SearchShopV9,
     "search_shop_v10": SearchShopV10,
     "search_shop_v11": SearchShopV11,
+    "search_shop_v12": SearchShopV12,
 }
 
 
 def _make_policy(name: str, params, search_shops: int, lookahead: bool):
-    if name in ("search_shop_v9", "search_shop_v10", "search_shop_v11"):
+    if name in ("search_shop_v9", "search_shop_v10", "search_shop_v11",
+                "search_shop_v12"):
         return _POLICIES[name](params=params, search_shops=search_shops,
                                lookahead=lookahead)
     return _POLICIES[name](params=params)
@@ -186,7 +189,22 @@ def main() -> None:
         print("WARNING: --lookahead is RESEARCH ONLY (not human-fair).", flush=True)
 
     policy_results = []
+    sidecar_path = Path(args.report).with_suffix(".json")
     for pname in policies:
+        if pname == "search_shop_v10" and sidecar_path.exists():
+            try:
+                prev_data = json.loads(sidecar_path.read_text(encoding="utf-8"))
+                if pname in prev_data and len(prev_data[pname].get("results", [])) == len(seeds):
+                    prev_seeds = {r["seed"] for r in prev_data[pname]["results"]}
+                    if prev_seeds == set(seeds):
+                        results = prev_data[pname]["results"]
+                        agg = prev_data[pname]["aggregate"]
+                        print(f"  [{pname}] Reused {len(results)} runs from {sidecar_path.name}")
+                        policy_results.append((pname, agg, results))
+                        continue
+            except Exception:
+                pass
+
         t0 = time.perf_counter()
         results: list[dict] = []
         jobs = [(pname, s, args.rng_mode, params, args.search_shops,
@@ -228,6 +246,14 @@ def main() -> None:
         sidecar.write_text(json.dumps(raw, indent=1, default=str),
                            encoding="utf-8")
         print(f"\nreport sidecar: {sidecar}")
+
+        try:
+            sys.path.insert(0, str(ROOT))
+            from tools.generate_paired_report import generate_html_report
+            generate_html_report(raw, path, title=f"Optilatro: Paired Benchmark ({seeds[0]}..{seeds[-1]}, N={len(seeds)})")
+            print(f"report html: {path}")
+        except Exception as e:
+            print(f"Warning: HTML report generation failed: {e}")
 
 
 if __name__ == "__main__":

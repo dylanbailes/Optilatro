@@ -288,3 +288,254 @@ Deployed Component A (copy joker trigger optimization with natural-order guardin
 - **Static Audits & Gate**: 4/4 static audits CLEAN, `ci_gate` 4/4 passed in 5.3s.
 - **Verdict**: **APPROVE** (passes both $\ge 10.0\%$ win rate and $\le 10$ Ante-1 death criteria).
 
+
+## 2026-09-10 — V11 regression root-caused & reverted; knob space exhausted (again)
+
+**V11 in the working tree was a −9-win regression against the committed artifact.**
+Same seeds, same sim, same policy name — only the code differed:
+
+| Artifact | V11 @ 10500–10799 |
+|---|---|
+| Committed (HEAD) `agent_v11.py` (677 lines) | **42/300 = 14.00%** (`git show HEAD:...paired.json`) |
+| Working tree after the failed session (+1131/−78) | **33/300 = 11.00%** |
+
+The rewrite replaced V11's shop loop — which delegated to the proven frozen V10
+L1 counterfactual search — with a value-net ranking + squeeze + trap-filter +
+conversion stack, and overwrote the committed paired JSON with the regressed
+numbers. Every historical gain in this repo came from *search* (V9 3.67% →
+`search_shop_v10` 10.67% → V11 14.0%), which is why the rewrite lost.
+
+**Fix (no new wins claimed):** the D–F components are kept in the tree but
+flipped dormant by default (`v11_squeeze/v11_filters/v11_boosters/
+v11_pack_bonus/v11_seq_plan/v11_swap_limit/v11_xmult_convert_hook = false`,
+`v11_vn_weight = 0.0`) with `v11_shop_v10_l1 = true`. Shipped V11 now scores
+**41/300 = 13.67%** and reproduces frozen V10 with **zero seed-level flips**
+(12/100 on 10500–10599, identical spend/econ/bought/sold).
+
+**Three new components built, measured, rejected/dormant:**
+
+- `v11_desperate` — forecast-gated "desperation" cash deployment. **Inert:** the
+  forecast never reports doom. Replay of the dominant death mode (Ante-3 Big,
+  target 3,000, seed 10510) shows the agent banking $13, rerolling ≤2 times,
+  burning all 4 discards on single cards, then playing Two Pair for 112 and
+  dying at 768/3,000. The urgency model compares an optimistic forecast against
+  **boss × 2.0** and only trims interest to $15/$10 in antes 2–5.
+- `v11_salvage` — never farm an unclearable blind. **Rejected:** −7 wins/100; a
+  dumber version of V10's own discard EV.
+- `v11_interest_target` (25 → 15) — looked like +2/100; **rejected at n=300**
+  (35/300, gained 11 / lost 18 = −7). Component G is dormant.
+- `v11_open_slot_search` — additive ΔV search over open slots. **Inert:** the
+  `evaluate_shop_value` ΔV never clears 0.10 for an open-slot buy.
+
+Also measured flat-or-worse (dormant/unchanged): `reroll_max` 4/6 (−2 each),
+`reroll_min_money` 3 (0), `save_margin` 1.5 (−4), `save_strong_value` 0.2 (+1,
+noise), `farm_clear_threshold` 0.80 (0).
+
+**Screening lesson:** at ~12 wins/100 the noise floor is ±3 wins, and the
+interest response was non-monotonic (20 → 11, 15 → 14, 12 → 9). **Adopt nothing
+on n=100**; two of this round's candidates flipped sign at n=300.
+
+Gate status: 1515 passed / ci_gate 4/4 / 4 static audits CLEAN. The 20% win-rate
+gate is **not met**; the composition-legal knob space is exhausted for the third
+independent time. Next lever must be a qualitatively stronger human-fair search
+(the `evaluate_shop_value` model, not the search gate, is the bottleneck) or a
+rollout-trained policy.
+
+## 2026-09-11 — Learned value model (V12 oracle): built, measured, NOT adopted
+
+Replaced the hand-curated item knowledge — 111 knobs, ~24 CAPS tables, 4
+duplicated role taxonomies, ~20 hand-typed numeric dicts — with a spec-derived
+catalogue plus a two-level value model fitted on **counterfactual rollout
+contrasts** (fork the same state, force acquire vs skip, dense return
+`ante + 8*win`). Full write-up: [value-model-2026-09-11.md](value-model-2026-09-11.md).
+
+**The curation was already broken.** The new completeness test found two live
+defects: `tools/portfolio.py` lists `j_square_joker`/`j_stone_joker` (aliases;
+the spec keys are `j_square`/`j_stone`, so a policy matching the alias mis-scores
+the card), and `agent_v10` lists `j_business` in *both* `ECON_JOKERS` and
+`DEAD_ECONOMY_JOKERS`.
+
+**Measured, on 1,690 collected rows / 1338 train / 352 holdout:**
+
+| Metric | Legacy state-model ΔV | New model |
+|---|---|---|
+| Within-decision concordance (80 pairs) | **0.588** | 0.500 |
+| Win-flip AUC | 0.719 | **0.929** |
+| Holdout RMSE (dense return) | — | 2.659 linear → 2.699 with residuals |
+
+**100-seed screen, paired:**
+
+| Policy | Wins | Ante-1 deaths | Mean ante |
+|---|---|---|---|
+| `search_shop_v10` (frozen) | **12 (12.0%)** | 6 | 4.73 |
+| `search_shop_v12` (oracle on) | 10 (10.0%) | 7 | 4.58 |
+
+Behind, and coherently so: the oracle *replaces* the search's open-slot choice,
+so a 0.500-concordance model displacing a 0.588 heuristic loses a little. **The
+300-seed benchmark was not run** — the gate was "no 300-seed claim without a
+small-seed ≥ parity signal".
+
+**Three findings worth keeping:**
+
+1. The additive end-of-visit hook is **structurally inert**: at `leave_shop` the
+   candidate list is empty because the frozen search fills every open slot
+   first (`offered = 0` for whole runs). Any open-slot hook must act at shop
+   *entry*, i.e. it replaces a decision rather than supplementing one.
+2. Rollout cost is **not** the shop search: `SearchShopV10` 4.15 s/run vs
+   `HeuristicV10` 4.11 vs `search_shops=0` 4.08, so cheaper continuations buy
+   ~2%. Data volume is ~1,700 rows / 40 min, and that is the binding constraint.
+3. Coverage is 951/6,000 purchasable item cells (15.8%); tarots and spectrals
+   are sampled but never to depth. Bosses and tags are **context, not items**,
+   and are scored through parsed boss flags — a per-boss residual is designed
+   for but not yet populated.
+
+Gate status: 1687 passed / ci_gate 4/4 / 4 static audits CLEAN /
+`audit_magic_numbers` CLEAN (9 declared constants, all with recorded
+provenance). `v12_oracle` defaults **off** and `tests/test_value_model.py`
+asserts V12 without it is byte-identical to frozen V10. The 20% win-rate gate is
+still unmet; the next lever is collecting against the coverage work order
+(`audit_value_coverage.py --focus-out` → `collect_decisions.py --focus-file`)
+and populating the per-boss residual.
+
+## Iteration 2 of the value-model loop (2026-09-11, later the same day)
+
+Collection ran against a *reachability-weighted* work order (new
+`tools/offer_census.py`): 248 seeds / 2,588 rows, corpus now 5,891 train +
+1,554 holdout rows over 462 seeds. Refit moved within-decision concordance to
+**0.531 [0.476, 0.582]** vs legacy ΔV 0.500 — real, but not enough.
+
+The paired **150-seed re-screen** decided it: V10 20/150; `v12_rel_z2` 17/150
+(6 gained / 9 lost); `v12_rel_z1` 12/150; `v12_allkinds_z2` 9/150. The
+dose-response — more learned substitutions, monotonically fewer wins — says the
+decision rule is not the weak link, the model's *ordering* is. No 300-seed
+bench (gate: ≥20% belief). `v12_oracle` stays off.
+
+Coverage is now reported honestly in three buckets (4,400 cells): **4.0% covered
+by own rows** (33.6% is the hierarchy-inherited figure that earlier reports
+quoted), 736 never offered, 1,891 supply-limited (handled by pooling at key
+level). Everything the agent is actually shown needs **~3 more iterations**, not
+the ~13 a uniform estimate implied.
+
+Gate status: 1692 passed / 3 skipped / ci_gate 4/4 / 4 static audits CLEAN /
+`audit_magic_numbers` CLEAN (10 declared constants, all with recorded
+provenance).
+
+## Iteration 3 of the value-model loop (2026-09-11, evening)
+
+Two more coverage-directed collection runs (v5 1,141 rows / 25 min; v6 634 rows / 20 min), corpus
+now **7,813 train rows over ~650 seeds**, coverage by *own* rows 1.5% → **3.9%** of the 4,400-cell
+grid (30.8% is the hierarchy-inherited figure, a different question).
+
+Three things were built, each forced by the previous iteration's measurement:
+
+1. **`v12_mode="prior"`** — the learned head may only re-order candidates the frozen ranker
+   *already* ranked, inside `v12_prior_margin` of the chosen item's value. The structural invariant
+   is that it can never show the policy an item the search had not put on the table, so it cannot
+   drain capital or stall a build. Measured correction to the obvious assumption: margin 0 is **not**
+   the identity (the ranker ties in ~a quarter of shops), so the arms are a margin dose-response.
+2. **Scenario cells** — `item|boss:<key>` and `item|hand:<type>`, so item values are *learned* in
+   those scenarios rather than asserted as context flags. `hand:<type>` reads `game.planet_levels`
+   (RNG-free); the collector now records `hand_key`, and the dimension went from **0 to 249 rows**
+   in one iteration. Scenario evidence explicitly does *not* loosen the oracle's confidence gate.
+3. **`tools/iterate.ps1`** — the whole loop (census → audit → collect → fit → audit → screen →
+   ledger) as one command, fit auto-discovery, `-SeedStart 45000` past every collected range.
+
+**Screen, bank A (10500–10649, 150 paired seeds):** V10 20/150 · `prior_m0` 19 (−1) ·
+**`prior_m05` 22 (+2, 6 gained/4 lost, mean ante 4.91 vs 4.80)** · `rel_z2` 17 (−3).
+**Screen, bank B (10700–10849, fresh bank):** V10 23/150 · **`prior_m05` 24 (+1, 6/5, ante 5.53 vs
+5.41)** · `prior_m10` 23 (+0). Pooled over **300 paired seeds: +3 wins (12 gained / 9 lost,
+p = 0.66)** with better mean ante on both banks and unchanged ante-1 deaths.
+
+The magnitude is inside noise; the *ordering* of modes is not — every mode that replaces the
+search's choice loses monotonically in firing rate, and the tie-breaking mode is the only one that
+comes out ahead. `v12_mode` now defaults to `prior` with margin 0.05; **`v12_oracle` stays off**
+(gate: ≥20% belief; the arm measures 14.7% / 16.0%). No 300-seed bench was run.
+
+Gate status: 41 value-model tests (10 new for prior mode and scenario cells), `test_catalogue` +
+`test_agent_v10` + `test_agent_v11` 82 passed, `audit_magic_numbers` CLEAN (11 declared constants).
+
+## 2026-09-12 — overnight run audited; loop made resumable; `prior_m02` best arm so far
+
+The overnight `iterate.ps1` run completed census + work order + collection (**2,766 rows**, 0 errors,
+23% of the corpus) and then stopped at the collect budget boundary with no fit, no work order, no
+screen and no ledger entry — `logs_sim/iter_iter1_collect.log` ends at `[200/500]` with no summary and
+`iterate_main.log` was never created, so it was killed rather than failing a stage. The loop was
+finished by hand: refit on **11,986 rows** (within-decision concordance 0.538 [0.497, 0.577] vs legacy
+0.485; selection ctx_delta +0.126 vs −0.049; hand-type scenario cells 249 → 1,609 labelled rows),
+work order regenerated (own-row coverage 3.9% → 4.4%), and two untouched-bank screens run.
+
+`tools/iterate.ps1` is now **resumable** (per-stage artifacts, `-Force` to redo), writes a ledger line
+per stage, keeps a heartbeat/state file, and has `-Detached`. Re-running the real command prints SKIP
+for all four iter1 stages and completes the round the overnight run died in.
+
+Screens on untouched banks: bank C `prior_m02` **15/100 vs V10 10/100** (econ $16.9 vs $13.9); bank D
+`prior_m02` 19/200 vs V10 17/200 with `m0` 14/200. Pooled over four banks: **m0 −4 (350 seeds), m02
++7 (300), m05 +6 (400), m10 +3 (250), rel_z2 −3 (150)** — ordering stable, magnitudes inside noise, so
+no 300-seed bench was run. A new `v12_prior_band` arm (never break an exact ranker tie) was built from
+the measurement that exact-tie pairs differ in return only 36% of the time vs 57% for near-ties, and it
+did **not** reproduce (+0 vs +2); the control showed it substitutes once per 12 seeds vs m02's four, so
+it is near-inert and the null is uninformative. Default stays off. Full record:
+`docs/value-model-2026-09-11.md` §Iteration 4; runs in `logs_sim/runs.jsonl` (32 entries).
+
+## 2026-09-12 (later) — on-policy collection: the collector now forks what the oracle weighs
+
+The collector ranked candidates by coverage shortfall, so the corpus described items chosen for being
+*under-measured* and never asked what the policy buys or what the oracle compares it against. New
+`--candidate-mode onpolicy` (collector v3) forks the pair the RUNTIME ORACLE weighs, by calling
+`SearchShopV12._oracle_prior` itself: `pick` (the frozen buy — the anchor), `substitute` (what the
+prior swaps in), `model_alt` (the head's preference with the tie window ignored), plus `coverage`
+fill. Controls measured first: V10/V11/V12-oracle-off are identical per-seed, and `pick` rows have
+label exactly 0.000 in 100% of cases, as designed. `tools/iterate.ps1` collects on-policy by default
+and stays resumable.
+
+Collection: 86 seeds / **1,468 rows / 0 errors** (roles: coverage 908, pick 330, model_alt 221,
+substitute 9); 191 of 605 decisions carry a pick+alternative pair. Refit on **13,454 rows**: within-
+decision concordance 0.503 (803 pairs, CI [0.469, 0.542]) vs legacy 0.487 — *down* from 0.538, because
+the decision-relevant pairs are 48% exact label ties. New `intervention` report section, the first
+direct measurement of the arm's own decisions: **193 pairs → 47 worse / 92 ties / 54 better, sign_rate
+0.535** (in-window 0.536, out-window 0.429). So the prior's edge per firing is a coin flip, 48% of its
+pairs are provably un-winnable, and the ±3 net deltas across five banks are exactly what a 53.5% rule
+produces — the family is at its ceiling. Fresh bank E: V10 10/100, `m02` 9/100 (−1), `m05` 8/100 (−2);
+pooled `m02` +6/400. No 300-seed bench (gate is ≥20% belief). Verification: 1,596 passed, ci_gate 4/4,
+4 static audits CLEAN, magic-number gate CLEAN (2 new constants ledgered). Full record:
+`docs/value-model-2026-09-11.md` §Iteration 5; `logs_sim/runs.jsonl` (42 entries).
+
+# V13 S0–S1: the state-value redesign, and the gate that stopped it
+
+Full record: `docs/v13-s0-s1-results-2026-09-12.md`; design: `docs/v13-state-value-design-2026-09-12.md`.
+
+The per-item framing is at its ceiling (capacity ceiling 0.549 on its own training data; 48% of the
+pairs it weighs are exactly equivalent), so V13 scores **whole states instead of single items**. Three
+pieces were built: `balatro_sim/state_value.py` (portfolio-aware encoder — owned jokers/consumables/
+vouchers encoded with the catalogue's spec vector and pooled, so an interaction like Blueprint+Baron
+is expressible with no synergy table), `tools/collect_trajectories.py` (every state a run passes
+through, stamped with the run's dense return — ~156 states/run, ~350× denser per unit compute than
+counterfactual forks), and `tools/fit_state_value.py`.
+
+**S0 passed.** 500 seeds → 77,390 states. Holdout spearman 0.564 (train 0.871), **seed spearman 0.808
+over 100 runs**, AUC(won) 0.767, calibration monotone across antes 1–8. Permutation importance now
+puts the **portfolio block first (+4.30)**, then `st_` +3.48. The same fitter on 101 seeds gave
+`pf_` −2.65 and seed spearman 0.609 — i.e. **the small-corpus read was the opposite of the
+large-corpus read**, so a negative block ablation at n≈100 is not evidence against a block.
+
+S0 also caught a real bug: the first 500-seed collection silently **dropped 463,450 feature
+instances** (~7 per state) because `layout_keys` declared the voucher pool with no reductions while
+`_pool` emitted `max` unconditionally — every `vo_max_*` column (46 names, ~11% of the layout) was
+missing from the frozen layout. Fixed by making `_POOL_OPS` one table both sides read (404 → 450
+columns, 0 dropped on re-measurement) and pinned by `tests/test_state_value.py` (7 tests).
+
+**S1 failed — the gate did its job.** `tools/validate_state_value.py` replays the on-policy fork
+decisions with rollouts stubbed (86 seeds, 191 reconstructions, `index_mismatches 0`) and scores both
+sides of every `(pick, model_alt)` pair with `V`. Result, on the 97 non-tied pairs: **V sign rate
+0.454** vs incumbent head 0.485 vs legacy 0.464 — all chance, against **94 of 191 pairs being exact
+label ties**. V is meanwhile excellent at run level (seed spearman 0.808). It learned exactly what
+trajectories teach and nothing about within-decision preference.
+
+**The failure is sample size, not architecture** — that distinction was measured, not assumed. Fitting
+the encoded differences `V(alt) − V(pick)`: **GBM in-sample 0.887, leave-seed-out 0.505** (49/97).
+Structure exists and does not survive to held-out seeds, across 63 distinct keys at ~1.5 pairs per key.
+The second suspect is label noise: iteration 2 used `--samples 1`, so the modal ±1 label is a single
+draw. Running now: `--samples 3` over the same 500 seeds and focus order, which yields ~3× the pairs
+**and** `dense_samples` gives a direct split-half label-noise measurement. Decision rule: split-half
+near 1.0 → scale volume and re-run S1; near 0.5 → S1 must be rebuilt on the K-averaged denser metrics.
+No arm reaches a behavioural screen until the sign rate clears the incumbent's.

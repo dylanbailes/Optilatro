@@ -1,0 +1,70 @@
+{
+ "_doc": "Provenance ledger for numeric constants in the learned-value stack. Every module-level numeric constant in the audited files must appear here with a matching value and a kind of: spec-derived (copied from a generated spec file or from the game's own scope), fitted (produced by fitting on collected data), structural (pure code shape: index/sentinel/schema version), or measured (empirical number from a named bench). Enforced by tools/audit_magic_numbers.py. NOTE: fitted quantities (ridge alpha, shrinkage tau, control-variate beta, all feature weights) live in balatro_sim/value_tables.json, never in code — that is the whole point of this gate.",
+ "constants": {
+  "vendor/balatro-rl/balatro_sim/catalogue.py::_COST_MAX": {
+   "value": 0,
+   "kind": "structural",
+   "note": "Empty-catalogue default for the price normaliser. Overwritten at load() by max(cost) over the catalogue, so the real scale is data-derived, never typed."
+  },
+  "tools/collect_decisions.py::COLLECTOR_VERSION": {
+   "value": 3,
+   "kind": "structural",
+   "note": "Row-schema version stamped into every collected row so a fit can refuse a mixed-provenance dataset. v3 adds `role` (pick / substitute / coverage), `candidate_mode`, `oracle_offered`, `oracle_substituted`: v2 rows cannot say whether they describe a pair the runtime oracle weighs."
+  },
+  "vendor/balatro-rl/balatro_sim/value_tables.py::MODEL_VERSION": {
+   "value": 1,
+   "kind": "structural",
+   "note": "Artifact schema version. ValueTable.load() refuses a file whose version does not match, so an old artifact can never be evaluated against new feature code."
+  },
+  "vendor/balatro-rl/balatro_sim/value_tables.py::TOTAL_ANTES": {
+   "value": 8,
+   "kind": "spec-derived",
+   "note": "Scope lock (AGENTS.md / PROJECT.md): Red Deck, White Stake, antes 1-8, no Endless. Also the win bonus in the return function, so a win is worth the whole run's depth again."
+  },
+  "vendor/balatro-rl/balatro_sim/value_tables.py::STANDARD_DECK": {
+   "value": 52,
+   "kind": "spec-derived",
+   "note": "A standard Balatro deck is 52 cards. Used only as the divisor when normalising deck size, and only when the game object exposes no deck list."
+  },
+  "tools/collect_decisions.py::FOCUS_FORCE_AT": {
+   "value": 1.0,
+   "kind": "structural",
+   "note": "A cell is 'forced' (sampled whatever the spread coin says) only at a shortfall of exactly 1.0, i.e. when it has NO measured rows of its own. This is the boundary of the shortfall range, not a tuned urgency weight; urgency below it rides the same number through the work-order weight."
+  },
+  "vendor/balatro-rl/balatro_sim/agent_v12.py::V12_DEFAULTS::1.0": {
+   "value": 1.0,
+   "kind": "structural",
+   "note": "v12_z: act only when the learned effect exceeds this many standard errors of its own estimate. 1.0 is the definition of one standard error, not a tuned threshold. Sensitivity is measured in the screen (bench, 100 seeds)."
+  },
+  "vendor/balatro-rl/balatro_sim/agent_v12.py::V12_DEFAULTS::0.05": {
+   "value": 0.05,
+   "kind": "measured",
+   "note": "v12_prior_margin: the near-tie window (in the frozen ranker's own value units, not return units) inside which 'prior' mode lets the learned head re-order the search's candidates. Measured on 556 candidate-bearing shop decisions over 14 seeds: top candidate value q05/q25/q50/q75 = 0.07/0.09/0.15/0.25, within-shop spread q05/q25/q50/q75 = 0.00/0.00/0.03/0.14. 0.05 sits between the median and q75 spread, so it covers the indifferent majority without reaching differences the ranker actually distinguishes. Swept in the V12 prior arms (m0/m02/m05/m10)."
+  },
+  "vendor/balatro-rl/balatro_sim/agent_v12.py::V12_DEFAULTS::1": {
+   "value": 1,
+   "kind": "structural",
+   "note": "v12_max_buys_per_visit: one deliberate learned purchase per shop visit, mirroring the repo's existing _swapped_this_visit churn guard. Prevents a sequence of small learned buys from draining the bank before a blind."
+  },
+  "tools/fit_value_model.py::GRID_POINTS": {
+   "value": 25,
+   "kind": "structural",
+   "note": "Resolution of the model-selection searches (ridge alpha, shrinkage tau). The chosen values are fitted and stored in the artifact; this only sets how finely they are searched."
+  },
+  "tools/collect_decisions.py::ORACLE_MARGIN": {
+   "value": 0.02,
+   "kind": "measured",
+   "note": "Near-tie window the collector replays in `onpolicy` candidate mode. Equal to the best-measured arm's v12_prior_margin (v12_prior_m02, +7 net wins / 300 paired seeds over four banks) so the collector forks the pair that arm actually weighs; it is overridable per run with --oracle-margin when a different arm is under study."
+  },
+  "tools/fit_value_model.py::ORACLE_MARGIN_FOR_REPORT": {
+   "value": 0.02,
+   "kind": "measured",
+   "note": "The near-tie window the intervention test conditions on: pairs whose |legacy_dV gap| is at or below this count as 'in_window' (the current rule would permit the substitution), above it 'out_window'. Held equal to the best-measured arm v12_prior_m02's v12_prior_margin so the report's split describes the shipped rule rather than an arbitrary cut."
+  },
+  "tools/audit_value_coverage.py::MIN_DETECTABLE_EFFECT": {
+   "value": 1.0,
+   "kind": "spec-derived",
+   "note": "One ante step. The return function is denominated in antes (RETURN_WIN_BONUS == TOTAL_ANTES), so one ante is its natural resolution unit; required_n = (residual_sd / this) ** 2 is therefore derived from the fitted residual spread, not typed."
+  }
+ }
+}

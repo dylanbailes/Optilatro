@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optilatro: Paired Benchmark (10500..10799, N=300)</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card-bg: #161b22;
+    --border: #30363d;
+    --text: #c9d1d9;
+    --text-bright: #f0f6fc;
+    --text-muted: #8b949e;
+    --accent-blue: #58a6ff;
+    --accent-green: #3fb950;
+    --accent-red: #f85149;
+    --accent-orange: #d29922;
+    --accent-purple: #bc8cff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 28px 20px;
+    background: var(--bg); color: var(--text);
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .container { max-width: 1180px; margin: 0 auto; }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px; margin-bottom: 24px;
+  }
+  h1 { font-size: 24px; color: var(--text-bright); margin: 0 0 8px 0; }
+  .subtitle { color: var(--text-muted); font-size: 13px; }
+  .badge {
+    display: inline-block; padding: 2px 8px; border-radius: 12px;
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    background: rgba(88, 166, 255, 0.15); color: var(--accent-blue);
+    border: 1px solid rgba(88, 166, 255, 0.3); margin-right: 6px;
+  }
+  .badge-fair {
+    background: rgba(63, 185, 80, 0.15); color: var(--accent-green);
+    border: 1px solid rgba(63, 185, 80, 0.3);
+  }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: 8px; padding: 18px; margin-bottom: 20px;
+  }
+  .card h2 {
+    margin: 0 0 14px 0; font-size: 16px; color: var(--text-bright);
+    border-bottom: 1px solid var(--border); padding-bottom: 8px;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-variant-numeric: tabular-nums; }
+  th, td { padding: 8px 10px; text-align: right; border-bottom: 1px solid var(--border); }
+  th { background: #21262d; color: var(--text-muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+  th:first-child, td:first-child { text-align: left; }
+  tr:last-child td { border-bottom: none; }
+  .big { font-size: 15px; font-weight: 700; color: var(--text-bright); }
+  .win-a { color: var(--accent-blue); }
+  .win-b { color: var(--accent-green); }
+  .highlight { color: var(--accent-green); font-weight: 600; }
+  .pill { padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+  .pill-win { background: rgba(63, 185, 80, 0.2); color: var(--accent-green); }
+  .pill-loss { background: rgba(248, 81, 73, 0.2); color: var(--accent-red); }
+  .bar-container {
+    display: flex; align-items: center; margin: 4px 0; font-size: 12px;
+  }
+  .bar-label { width: 75px; text-align: right; margin-right: 10px; color: var(--text-muted); }
+  .bar-track { flex: 1; height: 16px; background: #21262d; border-radius: 3px; overflow: hidden; display: flex; }
+  .bar-fill-a { height: 100%; background: var(--accent-blue); }
+  .bar-fill-b { height: 100%; background: var(--accent-green); }
+  .bar-val { width: 65px; text-align: right; margin-left: 10px; color: var(--text-bright); font-weight: 600; }
+  .seed-box {
+    max-height: 140px; overflow-y: auto; background: #0d1117;
+    border: 1px solid var(--border); border-radius: 4px;
+    padding: 8px 12px; font-family: monospace; font-size: 12px;
+    line-height: 1.6; word-break: break-all;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="badge">Optilatro Research</span>
+    <span class="badge badge-fair">100% Human-Fair (Seed Mode)</span>
+    <span class="badge">Red Deck / White Stake</span>
+    <h1>Optilatro: Paired Benchmark (10500..10799, N=300)</h1>
+    <div class="subtitle">
+      Paired evaluation over deterministic seeds 10500–10799 (N=300) &bull;
+      Generated 2026-09-10 15:22:47
+    </div>
+  </header>
+
+  <!-- §8 Telemetry Bundle Summary -->
+  <div class="card">
+    <h2>1. §8 Full Telemetry Bundle (Paired A/B)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Policy</th>
+          <th>Wins / N</th>
+          <th>Win Rate (95% Wilson CI)</th>
+          <th>Ante-1 Deaths</th>
+          <th>Mean Ante</th>
+          <th>Mean Steps</th>
+          <th>End $</th>
+          <th>Spent $</th>
+          <th>Econ $ (Mean / Total)</th>
+          <th>Interest $ (Mean / Total)</th>
+          <th>Tarot / Planet / Spectral</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>search_shop_v10</b> (Baseline)</td>
+          <td>42 / 300</td>
+          <td class="big win-a">14.00% <span style="font-size:11px;font-weight:normal;color:var(--text-muted)">[10.5%, 18.4%]</span></td>
+          <td>10 (3.33%)</td>
+          <td>5.06</td>
+          <td>148.8</td>
+          <td>$7.2</td>
+          <td>$147.9</td>
+          <td>$17.1 / $5,128</td>
+          <td>$16.4 / $4,929</td>
+          <td>7.8 / 6.1 / 0.37</td>
+        </tr>
+        <tr>
+          <td><b>search_shop_v11</b> (Unified)</td>
+          <td>33 / 300</td>
+          <td class="big win-b">11.00% <span style="font-size:11px;font-weight:normal;color:var(--text-muted)">[7.9%, 15.0%]</span></td>
+          <td>10 (3.33%)</td>
+          <td>5.08</td>
+          <td>147.1</td>
+          <td>$8.2</td>
+          <td>$135.6</td>
+          <td>$19.8 / $5,946</td>
+          <td>$15.9 / $4,764</td>
+          <td>7.5 / 8.6 / 0.32</td>
+        </tr>
+        <tr style="background:#1c2128;font-weight:600">
+          <td><b>Delta (V11 &minus; V10)</b></td>
+          <td>-9</td>
+          <td class="big win-a">-3.00 pp</td>
+          <td>+0 (+0.00 pp)</td>
+          <td>+0.02</td>
+          <td>-1.7</td>
+          <td>$+1.0</td>
+          <td>$-12.3</td>
+          <td>$+2.7 / $+818</td>
+          <td>$-0.5 / $-165</td>
+          <td>-0.4 / +2.5 / -0.05</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- McNemar Test & Paired Matrix -->
+  <div class="grid-2">
+    <div class="card">
+      <h2>2. Paired 2&times;2 Contingency Matrix</h2>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>search_shop_v11 Win</th>
+            <th>search_shop_v11 Loss</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>search_shop_v10 Win</b></td>
+            <td style="color:var(--accent-green);font-weight:700">15 (Both Win)</td>
+            <td style="color:var(--accent-red);font-weight:700">27 (V10 only)</td>
+            <td><b>42</b></td>
+          </tr>
+          <tr>
+            <td><b>search_shop_v10 Loss</b></td>
+            <td style="color:var(--accent-blue);font-weight:700">18 (V11 only)</td>
+            <td>240 (Both Loss)</td>
+            <td><b>258</b></td>
+          </tr>
+          <tr>
+            <td><b>Total</b></td>
+            <td><b>33</b></td>
+            <td><b>267</b></td>
+            <td><b>300</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>3. McNemar Statistical Significance Test</h2>
+      <table style="margin-top:14px">
+        <tbody>
+          <tr>
+            <td>Discordant Pairs (b01 + b10)</td>
+            <td class="big">45</td>
+          </tr>
+          <tr>
+            <td>Net Win Delta (b01 &minus; b10)</td>
+            <td class="big highlight">-9</td>
+          </tr>
+          <tr>
+            <td>McNemar Chi-Square (&chi;&sup2;, continuity-corrected)</td>
+            <td class="big">1.4222</td>
+          </tr>
+          <tr>
+            <td>p-value (two-sided, df=1)</td>
+            <td class="big highlight">2.3304e-01 (p >= 0.05)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Survival / Death Distribution -->
+  <div class="card">
+    <h2>4. Survival & Death Distribution by Ante</h2>
+    <div style="margin-bottom:12px;display:flex;gap:16px">
+      <div style="display:flex;align-items:center;gap:6px">
+        <span style="display:inline-block;width:12px;height:12px;background:var(--accent-blue);border-radius:2px"></span>
+        <span style="font-size:12px">search_shop_v10</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px">
+        <span style="display:inline-block;width:12px;height:12px;background:var(--accent-green);border-radius:2px"></span>
+        <span style="font-size:12px">search_shop_v11</span>
+      </div>
+    </div>
+
+    <div class="bar-container">
+      <div class="bar-label">Ante 1</div>
+      <div class="bar-track" style="flex-direction:column;gap:1px">
+        <div class="bar-fill-a" style="width:15.6%"></div>
+        <div class="bar-fill-b" style="width:15.6%"></div>
+      </div>
+      <div class="bar-val">10 / 10</div>
+    </div>
+
+    <div class="bar-container">
+      <div class="bar-label">Ante 2</div>
+      <div class="bar-track" style="flex-direction:column;gap:1px">
+        <div class="bar-fill-a" style="width:48.4%"></div>
+        <div class="bar-fill-b" style="width:48.4%"></div>
+      </div>
+      <div class="bar-val">31 / 31</div>
+    </div>
+
+    <div class="bar-container">
+      <div class="bar-label">Ante 3</div>
+      <div class="bar-track" style="flex-direction:column;gap:1px">
+        <div class="bar-fill-a" style="width:57.8%"></div>
+        <div class="bar-fill-b" style="width:48.4%"></div>
+      </div>
+      <div class="bar-val">37 / 31</div>
+    </div>
+
+    <div class="bar-container">
+      <div class="bar-label">Ante 4</div>
+      <div class="bar-track" style="flex-direction:column;gap:1px">
+        <div class="bar-fill-a" style="width:85.9%"></div>
+        <div class="bar-fill-b" style="width:85.9%"></div>
+      </div>
+      <div class="bar-val">55 / 55</div>
+    </div>
+
+    <div class="bar-container">
+      <div class="bar-label">Ante 5</div>
+      <div class="bar-track" style="flex-direction:column;gap:1px">
+        <div class="bar-fill-a" style="width:93.8%"></div>
+        <div class="bar-fill-b" style="width:100.0%"></div>
+      </div>
+      <div class="bar-val">60 / 64</div>
+    </div>
+
+    <div class="bar-container">
+      <div class="bar-label">Ante 6</div>
+      <div class="bar-track" style="flex-direction:column;gap:1px">
+        <div class="bar-fill-a" style="width:48.4%"></div>
+        <div class="bar-fill-b" style="width:53.1%"></div>
+      </div>
+      <div class="bar-val">31 / 34</div>
+    </div>
+
+    <div class="bar-container">
+      <div class="bar-label">Ante 7</div>
+      <div class="bar-track" style="flex-direction:column;gap:1px">
+        <div class="bar-fill-a" style="width:34.4%"></div>
+        <div class="bar-fill-b" style="width:28.1%"></div>
+      </div>
+      <div class="bar-val">22 / 18</div>
+    </div>
+
+    <div class="bar-container">
+      <div class="bar-label">Ante 8</div>
+      <div class="bar-track" style="flex-direction:column;gap:1px">
+        <div class="bar-fill-a" style="width:18.8%"></div>
+        <div class="bar-fill-b" style="width:37.5%"></div>
+      </div>
+      <div class="bar-val">12 / 24</div>
+    </div>
+
+    <div class="bar-container">
+      <div class="bar-label">Ante 9 (Win)</div>
+      <div class="bar-track" style="flex-direction:column;gap:1px">
+        <div class="bar-fill-a" style="width:65.6%"></div>
+        <div class="bar-fill-b" style="width:51.6%"></div>
+      </div>
+      <div class="bar-val">42 / 33</div>
+    </div>
+
+  </div>
+
+  <!-- Win Flips Seed Audit -->
+  <div class="grid-2">
+    <div class="card">
+      <h2>5. Gained Wins by V11 (18)</h2>
+      <div class="subtitle" style="margin-bottom:8px">Seeds where V10 lost, but V11 won:</div>
+      <div class="seed-box">
+        10509, 10547, 10564, 10573, 10581, 10590, 10591, 10599, 10602, 10612, 10637, 10706, 10723, 10760, 10762, 10781, 10790, 10799
+      </div>
+    </div>
+    <div class="card">
+      <h2>6. Lost Wins by V11 (27)</h2>
+      <div class="subtitle" style="margin-bottom:8px">Seeds where V10 won, but V11 lost:</div>
+      <div class="seed-box">
+        10503, 10531, 10532, 10574, 10578, 10588, 10592, 10607, 10608, 10626, 10628, 10678, 10679, 10685, 10702, 10708, 10720, 10728, 10730, 10737, 10743, 10744, 10751, 10758, 10775, 10780, 10788
+      </div>
+    </div>
+  </div>
+
+  <!-- Verification & Invariants Section -->
+  <div class="card">
+    <h2>7. Invariants & Verification Record</h2>
+    <ul>
+      <li><b>Human-Fairness Invariant:</b> 100% verified. Zero draw-order peeking; isolated counterfactual evaluations use throwaway seeds; zero RNG consumption.</li>
+      <li><b>Frozen Baseline Invariant:</b> <code>agent_v10.py</code> and <code>default_baseline_v10.json</code> remained 100% frozen.</li>
+      <li><b>Static Audits (4/4 Clean):</b>
+        <ul>
+          <li><code>tools/audit_jokers_static.py</code>: 0 dupes, 0 dead, 0 stubs, 0 gaps, 0 noscan (CLEAN).</li>
+          <li><code>tools/audit_consumables_static.py</code>: 0 count, 0 dead, 0 wired, 0 effect errors (CLEAN).</li>
+          <li><code>tools/audit_bosses_static.py</code>: 0 min_ante, 0 showdown, 0 scaling, 0 effect errors (CLEAN).</li>
+          <li><code>tools/audit_tags_static.py</code>: 0 count, 0 ante, 0 effect errors (CLEAN).</li>
+        </ul>
+      </li>
+      <li><b>CI Seed Exactness Gate:</b> <code>pytest vendor/balatro-rl/tests/test_seed_exactness.py -m ci_gate -v</code> passed cleanly.</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

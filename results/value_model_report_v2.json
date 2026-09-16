@@ -1,0 +1,294 @@
+{
+ "alpha": 695.6521739130444,
+ "catalogue_fingerprint": "65abde89679e4127",
+ "cell_stats": {
+  "cells": 1883,
+  "cells_finest": 877,
+  "max_n": 292.0,
+  "median_n": 2.0
+ },
+ "concordance_legacy_dv": {
+  "accuracy": 0.5151515151515151,
+  "ci95": [
+   0.4339428368542517,
+   0.6104213800904976
+  ],
+  "decisions": 111,
+  "mean_per_decision": 0.5291291291291291,
+  "pairs": 132,
+  "ties": 146
+ },
+ "concordance_model": {
+  "accuracy": 0.49242424242424243,
+  "ci95": [
+   0.3951612903225806,
+   0.5724964362081254
+  ],
+  "decisions": 111,
+  "mean_per_decision": 0.47492492492492494,
+  "pairs": 132,
+  "ties": 146
+ },
+ "cv_rmse": 2.8840452493353257,
+ "elapsed_s": 175.6,
+ "feature_count": 161,
+ "folds": 5,
+ "holdout_rmse_full": 2.52989612639291,
+ "holdout_rmse_linear": 2.4844127830756686,
+ "holdout_rmse_rel": 1.5440300453486557,
+ "item_evidence": {
+  "keys_seen_train": 220,
+  "keys_with_3plus": 185,
+  "keys_with_8plus": 102,
+  "top_keys": [
+   [
+    "p_buffoon",
+    108
+   ],
+   [
+    "p_standard",
+    94
+   ],
+   [
+    "p_arcana",
+    88
+   ],
+   [
+    "p_celestial",
+    75
+   ],
+   [
+    "p_standard_jumbo",
+    47
+   ],
+   [
+    "p_arcana_jumbo",
+    35
+   ],
+   [
+    "p_celestial_jumbo",
+    26
+   ],
+   [
+    "card",
+    25
+   ],
+   [
+    "v_directors_cut",
+    23
+   ],
+   [
+    "v_tarot_merchant",
+    23
+   ]
+  ]
+ },
+ "rank_head_absolute": {
+  "ctx_delta": -0.01666666666666666,
+  "decisions": 215,
+  "frac_positive": 0.2372093023255814,
+  "top1_rate": 0.4697674418604651
+ },
+ "rank_head_relative": {
+  "ctx_delta": -0.03527131782945736,
+  "decisions": 215,
+  "frac_positive": 0.25116279069767444,
+  "top1_rate": 0.4883720930232558
+ },
+ "rank_legacy_dv": {
+  "ctx_delta": 0.06705426356589148,
+  "decisions": 215,
+  "frac_positive": 0.2744186046511628,
+  "top1_rate": 0.5116279069767442
+ },
+ "resid_sd": 2.883708687236369,
+ "resid_sd_rel": 1.6157870803494663,
+ "rows_holdout": 525,
+ "rows_train": 2073,
+ "seeds_train": 171,
+ "selection_legacy_dv": {
+  "decisions": 195,
+  "frac_positive": 0.36923076923076925,
+  "mean_delta": -0.11981004043680278,
+  "median_delta": -0.07792207792207792,
+  "se": 0.11590764259603797
+ },
+ "selection_model": {
+  "decisions": 195,
+  "frac_positive": 0.7538461538461538,
+  "mean_delta": 0.9741597711634473,
+  "median_delta": 0.6666666666666666,
+  "se": 0.09160679405926717
+ },
+ "selective_curve": [
+  {
+   "concordance": 0.6176,
+   "coverage": 0.7102,
+   "decisions": 201,
+   "frac_positive": 0.204,
+   "mean_ctx_delta": 0.0518,
+   "pairs": 34,
+   "z": 0.0
+  },
+  {
+   "concordance": 0.4,
+   "coverage": 0.2615,
+   "decisions": 74,
+   "frac_positive": 0.2568,
+   "mean_ctx_delta": 0.2072,
+   "pairs": 5,
+   "z": 0.5
+  },
+  {
+   "concordance": null,
+   "coverage": 0.159,
+   "decisions": 45,
+   "frac_positive": 0.2444,
+   "mean_ctx_delta": -0.0222,
+   "pairs": 0,
+   "z": 1.0
+  },
+  {
+   "concordance": null,
+   "coverage": 0.0565,
+   "decisions": 16,
+   "frac_positive": 0.25,
+   "mean_ctx_delta": 0.0,
+   "pairs": 0,
+   "z": 1.5
+  },
+  {
+   "concordance": null,
+   "coverage": 0.0318,
+   "decisions": 9,
+   "frac_positive": 0.1111,
+   "mean_ctx_delta": -0.0556,
+   "pairs": 0,
+   "z": 2.0
+  },
+  {
+   "concordance": null,
+   "coverage": 0.0035,
+   "decisions": 1,
+   "frac_positive": 0.0,
+   "mean_ctx_delta": 0.0,
+   "pairs": 0,
+   "z": 3.0
+  },
+  {
+   "concordance": null,
+   "coverage": 0.0,
+   "decisions": 0,
+   "frac_positive": null,
+   "mean_ctx_delta": null,
+   "pairs": 0,
+   "z": 4.0
+  }
+ ],
+ "tau": 10.0,
+ "tau_rel": 10.0,
+ "tau_sweep": [
+  {
+   "holdout_rmse": 2.6888518752468342,
+   "tau": 1.0
+  },
+  {
+   "holdout_rmse": 2.683126259729757,
+   "tau": 1.1006941712522096
+  },
+  {
+   "holdout_rmse": 2.6771010984278933,
+   "tau": 1.2115276586285884
+  },
+  {
+   "holdout_rmse": 2.6707972860077662,
+   "tau": 1.333521432163324
+  },
+  {
+   "holdout_rmse": 2.66423992152196,
+   "tau": 1.4677992676220695
+  },
+  {
+   "holdout_rmse": 2.6574578280978525,
+   "tau": 1.615598098439874
+  },
+  {
+   "holdout_rmse": 2.650482954217125,
+   "tau": 1.7782794100389228
+  },
+  {
+   "holdout_rmse": 2.64334968552281,
+   "tau": 1.9573417814876601
+  },
+  {
+   "holdout_rmse": 2.6360941008237035,
+   "tau": 2.154434690031884
+  },
+  {
+   "holdout_rmse": 2.628753208250735,
+   "tau": 2.371373705661655
+  },
+  {
+   "holdout_rmse": 2.621364197226503,
+   "tau": 2.610157215682537
+  },
+  {
+   "holdout_rmse": 2.6139637391350212,
+   "tau": 2.8729848333536645
+  },
+  {
+   "holdout_rmse": 2.6065873646307267,
+   "tau": 3.1622776601683795
+  },
+  {
+   "holdout_rmse": 2.5992689388809658,
+   "tau": 3.4807005884284106
+  },
+  {
+   "holdout_rmse": 2.592040248286063,
+   "tau": 3.831186849557287
+  },
+  {
+   "holdout_rmse": 2.584930704010409,
+   "tau": 4.216965034285822
+  },
+  {
+   "holdout_rmse": 2.577967159627868,
+   "tau": 4.641588833612778
+  },
+  {
+   "holdout_rmse": 2.571173832927735,
+   "tau": 5.108969774506927
+  },
+  {
+   "holdout_rmse": 2.5645723159546017,
+   "tau": 5.623413251903491
+  },
+  {
+   "holdout_rmse": 2.5581816530725416,
+   "tau": 6.189658188912605
+  },
+  {
+   "holdout_rmse": 2.552018464528847,
+   "tau": 6.812920690579611
+  },
+  {
+   "holdout_rmse": 2.5460970927712956,
+   "tau": 7.498942093324558
+  },
+  {
+   "holdout_rmse": 2.5404297505976006,
+   "tau": 8.254041852680183
+  },
+  {
+   "holdout_rmse": 2.5350266538499664,
+   "tau": 9.085175756516866
+  },
+  {
+   "holdout_rmse": 2.52989612639291,
+   "tau": 10.0
+  }
+ ],
+ "win_auc_legacy_dv": 0.70703125,
+ "win_auc_model": 0.7734375
+}
