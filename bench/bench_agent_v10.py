@@ -41,6 +41,8 @@ from balatro_sim.agent_v9 import HeuristicV9
 from balatro_sim.agent_v10 import HeuristicV10, SearchShopV10
 from balatro_sim.agent_v11 import SearchShopV11
 from balatro_sim.agent_v12 import SearchShopV12
+from balatro_sim.agent_v14 import SearchInBlindV14
+from balatro_sim.agent_pair import PairBot
 from balatro_sim.agent_l1 import SearchShopV9
 from balatro_sim.game import BalatroGame
 from balatro_sim.rollout import rollout
@@ -53,12 +55,14 @@ _POLICIES = {
     "search_shop_v10": SearchShopV10,
     "search_shop_v11": SearchShopV11,
     "search_shop_v12": SearchShopV12,
+    "search_inblind_v14": SearchInBlindV14,
+    "pair_bot": PairBot,
 }
 
 
 def _make_policy(name: str, params, search_shops: int, lookahead: bool):
     if name in ("search_shop_v9", "search_shop_v10", "search_shop_v11",
-                "search_shop_v12"):
+                "search_shop_v12", "search_inblind_v14", "pair_bot"):
         return _POLICIES[name](params=params, search_shops=search_shops,
                                lookahead=lookahead)
     return _POLICIES[name](params=params)

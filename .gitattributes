@@ -13,3 +13,5 @@
 *.txt text eol=lf
 *.json text eol=lf
 *.sh text eol=lf
+results/evaluator/*.jsonl filter=lfs diff=lfs merge=lfs -text
+results/evaluator/*.pt filter=lfs diff=lfs merge=lfs -text

@@ -21,6 +21,7 @@ class _Stuntman(JokerEffect):
 
 @register_joker("j_gros_michel")
 class _GrosMichel(JokerEffect):
+    flags = {"unlocks_cavendish_on_extinction"}
     def on_hand_scored(self, inst, ctx):
         ctx.mult += 15
     def on_round_end(self, inst, ctx):

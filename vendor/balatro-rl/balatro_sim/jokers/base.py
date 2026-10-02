@@ -44,7 +44,10 @@ def full_deck(game) -> list:
     (direct-call tests)."""
     if game is None:
         return []
-    return list(game.deck) + list(game.hand) + list(game.spent)
+    deck = getattr(game, "deck", ())
+    hand = getattr(game, "hand", ())
+    spent = getattr(game, "spent", ())
+    return list(deck) + list(hand) + list(spent)
 
 
 def register_joker(key: str):

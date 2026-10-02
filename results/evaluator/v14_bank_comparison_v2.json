@@ -1,0 +1,2672 @@
+{
+  "schema_version": 2,
+  "comparison_scope": {
+    "description": "Original versus enriched V14 fixed-bank validation reports; read-only analysis of reports, not model or policy changes.",
+    "inputs": {
+      "original": {
+        "path": "results\\evaluator\\v14_gate_bank_original.json",
+        "bytes": 16176315,
+        "sha256": "88815bffcdf3fef8c4626ed358d6c11e54acd46db60aaa839c64e38eced5ad27"
+      },
+      "enriched": {
+        "path": "results\\evaluator\\v14_gate_bank_enriched.json",
+        "bytes": 16180058,
+        "sha256": "431e444b0d6a62004ac6c958128cf9ed62182a739ae86cac2013baff6d935420"
+      }
+    },
+    "split": "validation",
+    "protocol": {
+      "name": "split_world_parity_v1",
+      "rule": "even sample_index = selection; odd sample_index = evaluation; disjoint halves, no same-world fallback",
+      "minimum_trials_per_arm": 2,
+      "selection": "mean P(clear) on even indices only",
+      "evaluation": "raw Bernoulli mean on odd indices only",
+      "seed_check": "unique seeds per arm; shared cross-arm seeds must have the same index; halves disjoint",
+      "calibration": "all usable trials, not split",
+      "arm_average_fallback": false
+    },
+    "matched_estimand": "Decision-weighted mean of (enriched choice_weights - original choice_weights) dot common evaluation_values.",
+    "baseline_advantage": "Reported model_value minus anchor_value; not model versus model and not full-run win rate.",
+    "test_split_data_read": false,
+    "raw_datasets_or_checkpoints_read": false,
+    "dataset_paths_reported": {
+      "original": "D:\\Optilatro\\results\\evaluator\\v14_validation_fixed_v2.jsonl",
+      "enriched": "D:\\Optilatro\\results\\evaluator\\v14_validation_fixed_v2.jsonl"
+    },
+    "source_ci_layout": [
+      "lower",
+      "point_estimate",
+      "upper"
+    ],
+    "matched_ci_layout": [
+      "lower",
+      "upper"
+    ],
+    "metric_directions": {
+      "advantage": "higher",
+      "pairwise": "higher",
+      "regret": "lower",
+      "top1": "higher",
+      "top3": "higher",
+      "brier": "lower"
+    },
+    "quantile_coverage_note": "Quantiles.coverage is empirical quantile coverage, distinct from candidate coverage; nominal levels and intervals retained.",
+    "source_files_modified": false
+  },
+  "schema_verification": {
+    "field_name_mismatches": [],
+    "records_container": "list",
+    "identity_fields": [
+      "seed",
+      "decision_id"
+    ],
+    "confirmed_record_fields": [
+      "advantage",
+      "anchor_value",
+      "ante",
+      "choice_weights",
+      "decision_id",
+      "evaluation",
+      "evaluation_trials_per_arm",
+      "evaluation_values",
+      "gap",
+      "model_value",
+      "seed",
+      "selection_trials_per_arm"
+    ],
+    "advantage_ci_source": "paired.ci, not paired.advantage_ci",
+    "other_ci_sources": {
+      "pairwise": "paired.pairwise_ci",
+      "regret": "paired.regret_ci",
+      "brier": "calibration.ci"
+    },
+    "identical_validation_paired_identity_sets": true,
+    "original_only_identities": 0,
+    "enriched_only_identities": 0,
+    "duplicate_identities": 0,
+    "identical_evaluation_values_elementwise": true,
+    "identical_record_protocol_ante_gap_trial_counts_anchor": true,
+    "identical_dataset_path": true,
+    "identical_ranking_protocol": true,
+    "identical_evidence_counts": true,
+    "identical_stratum_identity_sets": {
+      "by_ante": true,
+      "by_gap": true
+    },
+    "identity_set_sha256": "fb15a0d10353067a94a986aed1769a3eb82e60e2ff24f4fdb41809d0f4f488d1",
+    "choice_weight_simplexes_and_model_value_dot_products_verified": true,
+    "matched_delta_equals_difference_of_reported_advantages_within_tolerance": true,
+    "identity_scope_caveat": "Exact overlap verified for all 2981 retained paired records and their strata. The 51 excluded decisions have no paired identities; equality of their identities cannot be established from aggregate counts. No explicit per-arm action IDs are carried in paired records; common array ordering is supported by exact evaluation-vector equality and common report dataset/protocol, not independently audited from raw data."
+  },
+  "verdicts": {
+    "reported_gate_verdicts": {
+      "original": "INCONCLUSIVE",
+      "enriched": "INCONCLUSIVE"
+    },
+    "matched_model_separation": "NOT_SEPARABLE",
+    "matched_ci_spans_zero": true,
+    "confirmatory_significance_claim": false,
+    "advantage_ci_overlap": true,
+    "advantage_ci_intersection": [
+      -0.007382977851177718,
+      -0.0003277522862865199
+    ],
+    "enriched_advantage_ci_excludes_original_advantage": false,
+    "original_advantage_ci_excludes_enriched_advantage": false,
+    "original_advantage_ci_excludes_zero": false,
+    "enriched_advantage_ci_excludes_zero": true,
+    "ci_overlap_interpretation": "Marginal CI overlap and point containment are descriptive, not a matched model-difference test.",
+    "recommendation": "Neither is separable on matched validation value. If one must be frozen for an independent test gate, carry original as a tuning choice: higher advantage, pairwise, top1/top3 and lower regret; enriched has slightly lower Brier. No test result or superiority claim."
+  },
+  "per_model_metrics": {
+    "original": {
+      "model": {
+        "path": "D:\\Optilatro\\results\\evaluator\\v14_matched_original_e10_s0.pt",
+        "config": {
+          "architecture": "attention",
+          "context_dim": 426,
+          "card_dim": 40,
+          "joker_dim": 264,
+          "d_model": 128,
+          "num_layers": 2,
+          "num_heads": 4,
+          "dropout": 0.0,
+          "loss_weights": {
+            "clear": 1.0,
+            "ratio": 0.1,
+            "horizons": 0.05,
+            "dense": 0.05,
+            "final_ante": 0.05,
+            "win": 0.05
+          },
+          "pairwise_weight": 0.0
+        },
+        "selection": {
+          "metric": "validation_bce",
+          "value": 0.07185769876321921,
+          "epoch": 1,
+          "test_used": false
+        },
+        "samples": {
+          "train": 22697,
+          "validation": 4062
+        },
+        "fallback": null
+      },
+      "split": "validation",
+      "reported_verdict": "INCONCLUSIVE",
+      "reported_reasons": [
+        "validation split is tuning evidence, not an independent test gate"
+      ],
+      "paired": {
+        "advantage": -0.0026836632002683663,
+        "ci": [
+          -0.007382977851177718,
+          -0.0026836632002683663,
+          0.0017965420036988664
+        ],
+        "decisions": 2981,
+        "total_decisions": 3032,
+        "excluded_decisions": 51,
+        "seeds": 212,
+        "informative_decisions": 760,
+        "informative_seeds": 172,
+        "null_decisions": 2221,
+        "prediction_ties": 2,
+        "exclusion_rule": "complete verified world splits only; censored selection or unknown/censored evaluation excludes the decision; selection labels and evaluation predictions unused",
+        "tie_rule": "uniform prediction argmax ties; all label maxima accepted; no SE gap filtering",
+        "evaluation_protocol": "split_world_parity_v1",
+        "selection_rule": "even sample_index = selection; odd sample_index = evaluation; disjoint halves, no same-world fallback",
+        "exclusion_counts": {
+          "censored_or_missing_evaluation_labels": 51
+        },
+        "top1": 0.8933243877893324,
+        "top1_ci": [
+          0.8775784706947707,
+          0.8933243877893324,
+          0.9084584702482283
+        ],
+        "top3": 0.9372693726937269,
+        "top3_ci": [
+          0.9263973522251974,
+          0.9372693726937269,
+          0.9474948013894469
+        ],
+        "pairwise": 0.5356564234944657,
+        "pairwise_ci": [
+          0.5171698890125879,
+          0.5356564234944657,
+          0.5542701827543205
+        ],
+        "regret": 0.03307614894330762,
+        "regret_ci": [
+          0.028045927971991066,
+          0.03307614894330762,
+          0.038630976454404053
+        ],
+        "normalized_regret": 0.3123245614035087,
+        "normalized_regret_ci": [
+          0.284613987284287,
+          0.3123245614035087,
+          0.34039602346805736
+        ],
+        "anchor_value": 0.9278094599127809,
+        "anchor_value_ci": [
+          0.9151895018046248,
+          0.9278094599127809,
+          0.9404171325956397
+        ],
+        "model_value": 0.9251257967125126,
+        "model_value_ci": [
+          0.9122153479839181,
+          0.9251257967125126,
+          0.9372507444420802
+        ],
+        "random_value": 0.9194213351224422,
+        "random_value_ci": [
+          0.9064901627411979,
+          0.9194213351224422,
+          0.9322453248031494
+        ],
+        "pairs": 10989,
+        "label_tied_pairs": 72076
+      },
+      "calibration": {
+        "n": 238824,
+        "excluded": 0,
+        "brier": 0.07347040395591806,
+        "ci": [
+          0.061815603310804865,
+          0.07347040395591772,
+          0.0849700422929641
+        ]
+      },
+      "quantiles": {
+        "nominal": [
+          0.1,
+          0.25,
+          0.5,
+          0.75,
+          0.9
+        ],
+        "coverage": [
+          0.005518708337520517,
+          0.031064717113857904,
+          0.6538999430542994,
+          0.8708295648678525,
+          0.9263683716879375
+        ],
+        "counts": [
+          238824,
+          238824,
+          238824,
+          238824,
+          238824
+        ],
+        "ci": [
+          [
+            0.003106363939277654,
+            0.005518708337520517,
+            0.00834346606808522
+          ],
+          [
+            0.02421348168317124,
+            0.031064717113857904,
+            0.03855960732390059
+          ],
+          [
+            0.6311553184974663,
+            0.6538999430542994,
+            0.6768417544687564
+          ],
+          [
+            0.8530311599463597,
+            0.8708295648678525,
+            0.887581861451502
+          ],
+          [
+            0.911546270287961,
+            0.9263683716879375,
+            0.9392474112847317
+          ]
+        ],
+        "crossings": 0,
+        "comparison_space": "log1p raw score/target; monotone transform preserves coverage; no ratio clipping"
+      },
+      "candidate_coverage": {
+        "decisions": 0,
+        "seeds": 0,
+        "requested_decisions": 0,
+        "reference": "extended finite-sample optimistic proxy, not a legal-action oracle",
+        "independent_reference_repetitions": 0,
+        "top1": null,
+        "top1_ci": [
+          null,
+          null,
+          null
+        ],
+        "top3": null,
+        "top3_ci": [
+          null,
+          null,
+          null
+        ],
+        "regret": null,
+        "regret_ci": [
+          null,
+          null,
+          null
+        ]
+      },
+      "terminal": {
+        "dense": {
+          "n": 0,
+          "mse": null,
+          "mse_ci": [
+            null,
+            null,
+            null
+          ],
+          "mae": null
+        },
+        "final_ante": {
+          "n": 0,
+          "mse": null,
+          "mse_ci": [
+            null,
+            null,
+            null
+          ],
+          "mae": null
+        },
+        "win": {
+          "n": 0,
+          "excluded": 0,
+          "brier": null,
+          "ci": [
+            null,
+            null,
+            null
+          ]
+        },
+        "horizon_1": {
+          "n": 0,
+          "excluded": 0,
+          "brier": null,
+          "ci": [
+            null,
+            null,
+            null
+          ]
+        },
+        "horizon_2": {
+          "n": 0,
+          "excluded": 0,
+          "brier": null,
+          "ci": [
+            null,
+            null,
+            null
+          ]
+        },
+        "horizon_3": {
+          "n": 0,
+          "excluded": 0,
+          "brier": null,
+          "ci": [
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "evidence": {
+        "holdout_decisions": 3032,
+        "holdout_seeds": 212,
+        "trials": 241850,
+        "candidate_trials": 241850,
+        "censored_trials": 3026,
+        "unknown_clear_trials": 3026,
+        "usable_clear_trials": 238824,
+        "predicted_trials": 238824,
+        "terminal_trials": 0
+      },
+      "thresholds": {
+        "min_informative_decisions": 200,
+        "min_informative_seeds": 30,
+        "advantage_lower_bound": 0.0,
+        "alpha": 0.05
+      },
+      "reported_limitations_verbatim": [
+        "supported observable domain only; root eligibility requires collector summary",
+        "no fresh-bank claim without provenance audit",
+        "small-K reference maxima are optimistic and noisy",
+        "prediction ties use uniform randomization expectation, not outcome-informed tie-breaking",
+        "calibration uses individual raw Bernoulli trials; ranking uses trial-mean probabilities",
+        "all candidate decisions containing censored/missing arms excluded, not silently reranked",
+        "HistGBM has only a clear head; unavailable auxiliary diagnostics remain null",
+        "Gate 3 verdict is not certification of collector Gate 1 or live-policy improvement"
+      ]
+    },
+    "enriched": {
+      "model": {
+        "path": "D:\\Optilatro\\results\\evaluator\\v14_matched_enriched_e10_s0.pt",
+        "config": {
+          "architecture": "attention",
+          "context_dim": 426,
+          "card_dim": 40,
+          "joker_dim": 264,
+          "d_model": 128,
+          "num_layers": 2,
+          "num_heads": 4,
+          "dropout": 0.0,
+          "loss_weights": {
+            "clear": 1.0,
+            "ratio": 0.1,
+            "horizons": 0.05,
+            "dense": 0.05,
+            "final_ante": 0.05,
+            "win": 0.05
+          },
+          "pairwise_weight": 0.0
+        },
+        "selection": {
+          "metric": "validation_bce",
+          "value": 0.07268503512470768,
+          "epoch": 1,
+          "test_used": false
+        },
+        "samples": {
+          "train": 25297,
+          "validation": 4062
+        },
+        "fallback": null
+      },
+      "split": "validation",
+      "reported_verdict": "INCONCLUSIVE",
+      "reported_reasons": [
+        "validation split is tuning evidence, not an independent test gate"
+      ],
+      "paired": {
+        "advantage": -0.00469641060046964,
+        "ci": [
+          -0.009496523704642924,
+          -0.00469641060046964,
+          -0.0003277522862865199
+        ],
+        "decisions": 2981,
+        "total_decisions": 3032,
+        "excluded_decisions": 51,
+        "seeds": 212,
+        "informative_decisions": 760,
+        "informative_seeds": 172,
+        "null_decisions": 2221,
+        "prediction_ties": 1,
+        "exclusion_rule": "complete verified world splits only; censored selection or unknown/censored evaluation excludes the decision; selection labels and evaluation predictions unused",
+        "tie_rule": "uniform prediction argmax ties; all label maxima accepted; no SE gap filtering",
+        "evaluation_protocol": "split_world_parity_v1",
+        "selection_rule": "even sample_index = selection; odd sample_index = evaluation; disjoint halves, no same-world fallback",
+        "exclusion_counts": {
+          "censored_or_missing_evaluation_labels": 51
+        },
+        "top1": 0.8846024823884603,
+        "top1_ci": [
+          0.8672290508445483,
+          0.8846024823884603,
+          0.9011436187707204
+        ],
+        "top3": 0.9215028513921503,
+        "top3_ci": [
+          0.9086772818351604,
+          0.9215028513921503,
+          0.9332686801618205
+        ],
+        "pairwise": 0.5082583807523589,
+        "pairwise_ci": [
+          0.4878989035770179,
+          0.5082583807523589,
+          0.5284685490376388
+        ],
+        "regret": 0.03508889634350889,
+        "regret_ci": [
+          0.029687843114347204,
+          0.03508889634350889,
+          0.04091121844328255
+        ],
+        "normalized_regret": 0.35052631578947363,
+        "normalized_regret_ci": [
+          0.3212578478650826,
+          0.35052631578947363,
+          0.3790517682901073
+        ],
+        "anchor_value": 0.9278094599127809,
+        "anchor_value_ci": [
+          0.9151895018046248,
+          0.9278094599127809,
+          0.9404171325956397
+        ],
+        "model_value": 0.9231130493123112,
+        "model_value_ci": [
+          0.9097290910340247,
+          0.9231130493123112,
+          0.9356978042401068
+        ],
+        "random_value": 0.9194213351224422,
+        "random_value_ci": [
+          0.9064901627411979,
+          0.9194213351224422,
+          0.9322453248031494
+        ],
+        "pairs": 10989,
+        "label_tied_pairs": 72076
+      },
+      "calibration": {
+        "n": 238824,
+        "excluded": 0,
+        "brier": 0.07302725380305924,
+        "ci": [
+          0.061734178517142385,
+          0.0730272538030589,
+          0.08447809830939927
+        ]
+      },
+      "quantiles": {
+        "nominal": [
+          0.1,
+          0.25,
+          0.5,
+          0.75,
+          0.9
+        ],
+        "coverage": [
+          0.00895638629283489,
+          0.04273439855290925,
+          0.673897933206043,
+          0.8455515358590426,
+          0.9087696378923391
+        ],
+        "counts": [
+          238824,
+          238824,
+          238824,
+          238824,
+          238824
+        ],
+        "ci": [
+          [
+            0.005664301273207146,
+            0.00895638629283489,
+            0.012763015238719193
+          ],
+          [
+            0.034081097816890005,
+            0.04273439855290925,
+            0.05221458698923273
+          ],
+          [
+            0.6520021665937827,
+            0.673897933206043,
+            0.6961697426932504
+          ],
+          [
+            0.8270694087934115,
+            0.8455515358590426,
+            0.8636884393907872
+          ],
+          [
+            0.8921763828073054,
+            0.9087696378923391,
+            0.9233288167713601
+          ]
+        ],
+        "crossings": 0,
+        "comparison_space": "log1p raw score/target; monotone transform preserves coverage; no ratio clipping"
+      },
+      "candidate_coverage": {
+        "decisions": 0,
+        "seeds": 0,
+        "requested_decisions": 0,
+        "reference": "extended finite-sample optimistic proxy, not a legal-action oracle",
+        "independent_reference_repetitions": 0,
+        "top1": null,
+        "top1_ci": [
+          null,
+          null,
+          null
+        ],
+        "top3": null,
+        "top3_ci": [
+          null,
+          null,
+          null
+        ],
+        "regret": null,
+        "regret_ci": [
+          null,
+          null,
+          null
+        ]
+      },
+      "terminal": {
+        "dense": {
+          "n": 0,
+          "mse": null,
+          "mse_ci": [
+            null,
+            null,
+            null
+          ],
+          "mae": null
+        },
+        "final_ante": {
+          "n": 0,
+          "mse": null,
+          "mse_ci": [
+            null,
+            null,
+            null
+          ],
+          "mae": null
+        },
+        "win": {
+          "n": 0,
+          "excluded": 0,
+          "brier": null,
+          "ci": [
+            null,
+            null,
+            null
+          ]
+        },
+        "horizon_1": {
+          "n": 0,
+          "excluded": 0,
+          "brier": null,
+          "ci": [
+            null,
+            null,
+            null
+          ]
+        },
+        "horizon_2": {
+          "n": 0,
+          "excluded": 0,
+          "brier": null,
+          "ci": [
+            null,
+            null,
+            null
+          ]
+        },
+        "horizon_3": {
+          "n": 0,
+          "excluded": 0,
+          "brier": null,
+          "ci": [
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "evidence": {
+        "holdout_decisions": 3032,
+        "holdout_seeds": 212,
+        "trials": 241850,
+        "candidate_trials": 241850,
+        "censored_trials": 3026,
+        "unknown_clear_trials": 3026,
+        "usable_clear_trials": 238824,
+        "predicted_trials": 238824,
+        "terminal_trials": 0
+      },
+      "thresholds": {
+        "min_informative_decisions": 200,
+        "min_informative_seeds": 30,
+        "advantage_lower_bound": 0.0,
+        "alpha": 0.05
+      },
+      "reported_limitations_verbatim": [
+        "supported observable domain only; root eligibility requires collector summary",
+        "no fresh-bank claim without provenance audit",
+        "small-K reference maxima are optimistic and noisy",
+        "prediction ties use uniform randomization expectation, not outcome-informed tie-breaking",
+        "calibration uses individual raw Bernoulli trials; ranking uses trial-mean probabilities",
+        "all candidate decisions containing censored/missing arms excluded, not silently reranked",
+        "HistGBM has only a clear head; unavailable auxiliary diagnostics remain null",
+        "Gate 3 verdict is not certification of collector Gate 1 or live-policy improvement"
+      ]
+    }
+  },
+  "matched_delta": {
+    "direction": "enriched_minus_original",
+    "mean": -0.002012747400201274,
+    "ci_95": [
+      -0.005304318259095545,
+      0.0013022618231665522
+    ],
+    "decisions": 2981,
+    "seeds": 212,
+    "bootstrap": {
+      "rng": "numpy.random.default_rng(0)",
+      "numpy_version": "2.2.3",
+      "replicates": 100000,
+      "cluster_unit": "seed",
+      "seed_order": "ascending numeric seed",
+      "batch_size": 2000,
+      "resampling": "Draw 212 seeds with replacement per replicate; include every decision of each sampled seed with its multiplicity.",
+      "statistic": "Sum sampled seed delta totals / sum sampled seed decision counts; not unweighted mean of seed means.",
+      "interval": "percentile",
+      "quantiles": [
+        0.025,
+        0.975
+      ],
+      "quantile_method": "linear"
+    },
+    "value_tolerance": 1e-12,
+    "disagreement_definition": "Choice-weight vectors differ by exact array equality; gained/lost/tied classifies enriched-minus-original value using tolerance 1e-12.",
+    "disagreements": {
+      "total": 1777,
+      "gained": 88,
+      "lost": 125,
+      "tied": 1564
+    },
+    "same_choice_weights": 1204,
+    "all_decision_value_counts": {
+      "gained": 88,
+      "lost": 125,
+      "tied": 2768
+    },
+    "per_seed_sufficient_statistics": [
+      {
+        "seed": 75015,
+        "decisions": 24,
+        "delta_sum": -0.4
+      },
+      {
+        "seed": 75019,
+        "decisions": 3,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75028,
+        "decisions": 9,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75029,
+        "decisions": 9,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75062,
+        "decisions": 7,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75093,
+        "decisions": 24,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75096,
+        "decisions": 15,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75097,
+        "decisions": 23,
+        "delta_sum": -0.20000000000000007
+      },
+      {
+        "seed": 75110,
+        "decisions": 16,
+        "delta_sum": 0.6
+      },
+      {
+        "seed": 75116,
+        "decisions": 5,
+        "delta_sum": 1.0
+      },
+      {
+        "seed": 75136,
+        "decisions": 14,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 75138,
+        "decisions": 18,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 75146,
+        "decisions": 24,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75160,
+        "decisions": 14,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 75164,
+        "decisions": 20,
+        "delta_sum": -0.20000000000000007
+      },
+      {
+        "seed": 75170,
+        "decisions": 22,
+        "delta_sum": -0.6000000000000003
+      },
+      {
+        "seed": 75178,
+        "decisions": 7,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75185,
+        "decisions": 18,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75190,
+        "decisions": 6,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75200,
+        "decisions": 13,
+        "delta_sum": -0.2
+      },
+      {
+        "seed": 75206,
+        "decisions": 9,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75214,
+        "decisions": 13,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75229,
+        "decisions": 12,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75230,
+        "decisions": 21,
+        "delta_sum": 0.6
+      },
+      {
+        "seed": 75239,
+        "decisions": 9,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75245,
+        "decisions": 13,
+        "delta_sum": 0.2
+      },
+      {
+        "seed": 75257,
+        "decisions": 17,
+        "delta_sum": -0.6
+      },
+      {
+        "seed": 75267,
+        "decisions": 12,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75276,
+        "decisions": 17,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75280,
+        "decisions": 7,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75283,
+        "decisions": 7,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75313,
+        "decisions": 16,
+        "delta_sum": 1.0
+      },
+      {
+        "seed": 75383,
+        "decisions": 20,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 75397,
+        "decisions": 7,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75398,
+        "decisions": 9,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75408,
+        "decisions": 24,
+        "delta_sum": 1.1102230246251565e-16
+      },
+      {
+        "seed": 75413,
+        "decisions": 24,
+        "delta_sum": 0.20000000000000007
+      },
+      {
+        "seed": 75416,
+        "decisions": 15,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75418,
+        "decisions": 7,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75438,
+        "decisions": 12,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75439,
+        "decisions": 13,
+        "delta_sum": -0.39999999999999997
+      },
+      {
+        "seed": 75440,
+        "decisions": 12,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75457,
+        "decisions": 11,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 75467,
+        "decisions": 15,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75483,
+        "decisions": 18,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75489,
+        "decisions": 17,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75494,
+        "decisions": 11,
+        "delta_sum": -1.1102230246251565e-16
+      },
+      {
+        "seed": 75495,
+        "decisions": 12,
+        "delta_sum": -0.8
+      },
+      {
+        "seed": 75545,
+        "decisions": 10,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 75548,
+        "decisions": 24,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75554,
+        "decisions": 14,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75555,
+        "decisions": 17,
+        "delta_sum": 1.4
+      },
+      {
+        "seed": 75580,
+        "decisions": 16,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75583,
+        "decisions": 22,
+        "delta_sum": -0.6
+      },
+      {
+        "seed": 75596,
+        "decisions": 8,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 75602,
+        "decisions": 6,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75603,
+        "decisions": 24,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75608,
+        "decisions": 8,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75617,
+        "decisions": 14,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75638,
+        "decisions": 7,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75644,
+        "decisions": 9,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75647,
+        "decisions": 15,
+        "delta_sum": -0.7999999999999999
+      },
+      {
+        "seed": 75649,
+        "decisions": 8,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75654,
+        "decisions": 15,
+        "delta_sum": -0.4
+      },
+      {
+        "seed": 75667,
+        "decisions": 13,
+        "delta_sum": -0.20000000000000007
+      },
+      {
+        "seed": 75685,
+        "decisions": 18,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 75694,
+        "decisions": 16,
+        "delta_sum": 5.551115123125783e-17
+      },
+      {
+        "seed": 75712,
+        "decisions": 15,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75716,
+        "decisions": 10,
+        "delta_sum": -0.4
+      },
+      {
+        "seed": 75722,
+        "decisions": 6,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75735,
+        "decisions": 13,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 75754,
+        "decisions": 12,
+        "delta_sum": -0.6
+      },
+      {
+        "seed": 75757,
+        "decisions": 11,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 75767,
+        "decisions": 9,
+        "delta_sum": 0.2
+      },
+      {
+        "seed": 75771,
+        "decisions": 17,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 75774,
+        "decisions": 16,
+        "delta_sum": 1.0
+      },
+      {
+        "seed": 75776,
+        "decisions": 16,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75791,
+        "decisions": 20,
+        "delta_sum": 0.4
+      },
+      {
+        "seed": 75815,
+        "decisions": 18,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75819,
+        "decisions": 18,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75833,
+        "decisions": 10,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75835,
+        "decisions": 5,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75841,
+        "decisions": 6,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 75855,
+        "decisions": 8,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75871,
+        "decisions": 10,
+        "delta_sum": -1.2
+      },
+      {
+        "seed": 75880,
+        "decisions": 6,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75881,
+        "decisions": 16,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75897,
+        "decisions": 8,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75899,
+        "decisions": 12,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75931,
+        "decisions": 24,
+        "delta_sum": -0.4
+      },
+      {
+        "seed": 75946,
+        "decisions": 21,
+        "delta_sum": -0.3999999999999999
+      },
+      {
+        "seed": 75948,
+        "decisions": 10,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75958,
+        "decisions": 24,
+        "delta_sum": 0.20000000000000007
+      },
+      {
+        "seed": 75963,
+        "decisions": 13,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75966,
+        "decisions": 24,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75969,
+        "decisions": 17,
+        "delta_sum": 0.6
+      },
+      {
+        "seed": 75975,
+        "decisions": 10,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75984,
+        "decisions": 13,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 75997,
+        "decisions": 11,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76005,
+        "decisions": 15,
+        "delta_sum": -0.4
+      },
+      {
+        "seed": 76010,
+        "decisions": 24,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76011,
+        "decisions": 9,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76031,
+        "decisions": 7,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 76034,
+        "decisions": 10,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76043,
+        "decisions": 6,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76045,
+        "decisions": 24,
+        "delta_sum": -1.1102230246251565e-16
+      },
+      {
+        "seed": 76058,
+        "decisions": 10,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76066,
+        "decisions": 24,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76071,
+        "decisions": 14,
+        "delta_sum": -0.6000000000000001
+      },
+      {
+        "seed": 76082,
+        "decisions": 10,
+        "delta_sum": 0.6000000000000001
+      },
+      {
+        "seed": 76115,
+        "decisions": 24,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76126,
+        "decisions": 5,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76146,
+        "decisions": 12,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76158,
+        "decisions": 3,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76163,
+        "decisions": 19,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76171,
+        "decisions": 11,
+        "delta_sum": 0.20000000000000007
+      },
+      {
+        "seed": 76174,
+        "decisions": 23,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76175,
+        "decisions": 12,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 76218,
+        "decisions": 23,
+        "delta_sum": -0.3999999999999999
+      },
+      {
+        "seed": 76222,
+        "decisions": 7,
+        "delta_sum": 0.20000000000000007
+      },
+      {
+        "seed": 76229,
+        "decisions": 19,
+        "delta_sum": -0.4
+      },
+      {
+        "seed": 76244,
+        "decisions": 16,
+        "delta_sum": -0.40000000000000013
+      },
+      {
+        "seed": 76251,
+        "decisions": 8,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76257,
+        "decisions": 8,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76259,
+        "decisions": 9,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76261,
+        "decisions": 10,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76274,
+        "decisions": 24,
+        "delta_sum": -0.1999999999999999
+      },
+      {
+        "seed": 76275,
+        "decisions": 22,
+        "delta_sum": 0.20000000000000007
+      },
+      {
+        "seed": 76288,
+        "decisions": 19,
+        "delta_sum": 0.2
+      },
+      {
+        "seed": 76309,
+        "decisions": 24,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76336,
+        "decisions": 24,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76360,
+        "decisions": 8,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76366,
+        "decisions": 12,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76370,
+        "decisions": 6,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76377,
+        "decisions": 18,
+        "delta_sum": -0.4
+      },
+      {
+        "seed": 76384,
+        "decisions": 14,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76385,
+        "decisions": 13,
+        "delta_sum": 1.0
+      },
+      {
+        "seed": 76390,
+        "decisions": 8,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76393,
+        "decisions": 14,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76395,
+        "decisions": 8,
+        "delta_sum": -0.6
+      },
+      {
+        "seed": 76398,
+        "decisions": 24,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 76412,
+        "decisions": 19,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76442,
+        "decisions": 9,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76444,
+        "decisions": 4,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 76457,
+        "decisions": 21,
+        "delta_sum": -0.2
+      },
+      {
+        "seed": 76461,
+        "decisions": 7,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76469,
+        "decisions": 19,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76472,
+        "decisions": 24,
+        "delta_sum": -0.20000000000000018
+      },
+      {
+        "seed": 76488,
+        "decisions": 24,
+        "delta_sum": -5.551115123125783e-17
+      },
+      {
+        "seed": 76492,
+        "decisions": 19,
+        "delta_sum": 0.8
+      },
+      {
+        "seed": 76496,
+        "decisions": 13,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76498,
+        "decisions": 12,
+        "delta_sum": 0.4
+      },
+      {
+        "seed": 76501,
+        "decisions": 10,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76506,
+        "decisions": 16,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76513,
+        "decisions": 23,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76514,
+        "decisions": 19,
+        "delta_sum": -0.7999999999999999
+      },
+      {
+        "seed": 76537,
+        "decisions": 24,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 76549,
+        "decisions": 7,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 76557,
+        "decisions": 12,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76559,
+        "decisions": 5,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 76568,
+        "decisions": 14,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76580,
+        "decisions": 24,
+        "delta_sum": 0.6
+      },
+      {
+        "seed": 76601,
+        "decisions": 17,
+        "delta_sum": -0.2
+      },
+      {
+        "seed": 76604,
+        "decisions": 24,
+        "delta_sum": 0.8
+      },
+      {
+        "seed": 76605,
+        "decisions": 14,
+        "delta_sum": 0.4
+      },
+      {
+        "seed": 76611,
+        "decisions": 11,
+        "delta_sum": -0.8000000000000002
+      },
+      {
+        "seed": 76636,
+        "decisions": 16,
+        "delta_sum": -0.7999999999999998
+      },
+      {
+        "seed": 76652,
+        "decisions": 17,
+        "delta_sum": -0.20000000000000007
+      },
+      {
+        "seed": 76655,
+        "decisions": 8,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 76662,
+        "decisions": 7,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 76668,
+        "decisions": 7,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76675,
+        "decisions": 11,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76681,
+        "decisions": 11,
+        "delta_sum": -0.4
+      },
+      {
+        "seed": 76692,
+        "decisions": 24,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 76703,
+        "decisions": 24,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 76704,
+        "decisions": 9,
+        "delta_sum": 0.4
+      },
+      {
+        "seed": 76710,
+        "decisions": 6,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76714,
+        "decisions": 19,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76718,
+        "decisions": 7,
+        "delta_sum": -0.2
+      },
+      {
+        "seed": 76721,
+        "decisions": 10,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 76730,
+        "decisions": 11,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 76738,
+        "decisions": 24,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 76739,
+        "decisions": 11,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76753,
+        "decisions": 12,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76758,
+        "decisions": 19,
+        "delta_sum": 0.40000000000000013
+      },
+      {
+        "seed": 76776,
+        "decisions": 7,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76778,
+        "decisions": 16,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76784,
+        "decisions": 24,
+        "delta_sum": 5.551115123125783e-17
+      },
+      {
+        "seed": 76830,
+        "decisions": 18,
+        "delta_sum": -0.2
+      },
+      {
+        "seed": 76832,
+        "decisions": 24,
+        "delta_sum": 1.0
+      },
+      {
+        "seed": 76835,
+        "decisions": 24,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 76842,
+        "decisions": 11,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76846,
+        "decisions": 11,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76851,
+        "decisions": 12,
+        "delta_sum": -0.6
+      },
+      {
+        "seed": 76854,
+        "decisions": 12,
+        "delta_sum": -0.20000000000000007
+      },
+      {
+        "seed": 76867,
+        "decisions": 13,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76869,
+        "decisions": 6,
+        "delta_sum": 5.551115123125783e-17
+      },
+      {
+        "seed": 76888,
+        "decisions": 19,
+        "delta_sum": -0.5999999999999999
+      },
+      {
+        "seed": 76899,
+        "decisions": 24,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76905,
+        "decisions": 14,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76917,
+        "decisions": 24,
+        "delta_sum": -0.9999999999999999
+      },
+      {
+        "seed": 76936,
+        "decisions": 8,
+        "delta_sum": 0.4
+      },
+      {
+        "seed": 76941,
+        "decisions": 6,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76951,
+        "decisions": 19,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76964,
+        "decisions": 20,
+        "delta_sum": -0.19999999999999996
+      },
+      {
+        "seed": 76967,
+        "decisions": 7,
+        "delta_sum": 0.19999999999999996
+      },
+      {
+        "seed": 76975,
+        "decisions": 3,
+        "delta_sum": -0.6
+      },
+      {
+        "seed": 76977,
+        "decisions": 8,
+        "delta_sum": 1.1102230246251565e-16
+      },
+      {
+        "seed": 76987,
+        "decisions": 9,
+        "delta_sum": -1.0
+      },
+      {
+        "seed": 76990,
+        "decisions": 6,
+        "delta_sum": 0.4
+      },
+      {
+        "seed": 76993,
+        "decisions": 9,
+        "delta_sum": 0.0
+      },
+      {
+        "seed": 76997,
+        "decisions": 19,
+        "delta_sum": -0.6000000000000001
+      }
+    ]
+  },
+  "by_ante": [
+    {
+      "stratum": "1",
+      "original": {
+        "advantage": -0.006095238095238095,
+        "advantage_ci": [
+          -0.011197048321914337,
+          -0.006095238095238095,
+          -0.0011565031680913587
+        ],
+        "brier": 0.03533947241191004,
+        "brier_ci": [
+          0.026321965098591908,
+          0.03533947241190996,
+          0.0446628571684945
+        ],
+        "calibration_trials": 84000,
+        "decisions": 1050,
+        "seeds": 212,
+        "informative_decisions": 269,
+        "informative_seeds": 125,
+        "null_decisions": 781
+      },
+      "enriched": {
+        "advantage": -0.008952380952380951,
+        "advantage_ci": [
+          -0.015356531900382709,
+          -0.008952380952380951,
+          -0.0030946808510638308
+        ],
+        "brier": 0.03547282913631953,
+        "brier_ci": [
+          0.026140559045776272,
+          0.03547282913631945,
+          0.04511086451984085
+        ],
+        "calibration_trials": 84000,
+        "decisions": 1050,
+        "seeds": 212,
+        "informative_decisions": 269,
+        "informative_seeds": 125,
+        "null_decisions": 781
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": -0.002857142857142856,
+      "brier_delta_enriched_minus_original": 0.00013335672440949187
+    },
+    {
+      "stratum": "2",
+      "original": {
+        "advantage": -0.0013227513227513225,
+        "advantage_ci": [
+          -0.009094202898550724,
+          -0.0013227513227513225,
+          0.006831114062938721
+        ],
+        "brier": 0.05369677739658713,
+        "brier_ci": [
+          0.037437840111971564,
+          0.05369677739658701,
+          0.07104836614968565
+        ],
+        "calibration_trials": 60479,
+        "decisions": 756,
+        "seeds": 197,
+        "informative_decisions": 152,
+        "informative_seeds": 63,
+        "null_decisions": 604
+      },
+      "enriched": {
+        "advantage": -0.005820105820105821,
+        "advantage_ci": [
+          -0.012106462490440102,
+          -0.005820105820105821,
+          0.0005348131931234976
+        ],
+        "brier": 0.053327622327137544,
+        "brier_ci": [
+          0.03725955239232991,
+          0.053327622327137406,
+          0.07097753034460763
+        ],
+        "calibration_trials": 60479,
+        "decisions": 756,
+        "seeds": 197,
+        "informative_decisions": 152,
+        "informative_seeds": 63,
+        "null_decisions": 604
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": -0.004497354497354498,
+      "brier_delta_enriched_minus_original": -0.0003691550694495879
+    },
+    {
+      "stratum": "3",
+      "original": {
+        "advantage": 0.0007677543186180416,
+        "advantage_ci": [
+          -0.011257163154155817,
+          0.0007677543186180416,
+          0.01321599688262401
+        ],
+        "brier": 0.08636021562018113,
+        "brier_ci": [
+          0.05878042348080463,
+          0.08636021562018088,
+          0.11716697274526101
+        ],
+        "calibration_trials": 41997,
+        "decisions": 521,
+        "seeds": 138,
+        "informative_decisions": 124,
+        "informative_seeds": 45,
+        "null_decisions": 397
+      },
+      "enriched": {
+        "advantage": 0.0038387715930902097,
+        "advantage_ci": [
+          -0.007600114068441065,
+          0.0038387715930902097,
+          0.01615462427745664
+        ],
+        "brier": 0.08531758390057137,
+        "brier_ci": [
+          0.05839215746141112,
+          0.08531758390057113,
+          0.11412048929080773
+        ],
+        "calibration_trials": 41997,
+        "decisions": 521,
+        "seeds": 138,
+        "informative_decisions": 124,
+        "informative_seeds": 45,
+        "null_decisions": 397
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": 0.003071017274472168,
+      "brier_delta_enriched_minus_original": -0.0010426317196097629
+    },
+    {
+      "stratum": "4",
+      "original": {
+        "advantage": 0.0015345268542199502,
+        "advantage_ci": [
+          -0.013528079710144926,
+          0.0015345268542199502,
+          0.016925531914893606
+        ],
+        "brier": 0.17640291535707853,
+        "brier_ci": [
+          0.1328569473330048,
+          0.1764029153570781,
+          0.22111076530795504
+        ],
+        "calibration_trials": 31186,
+        "decisions": 391,
+        "seeds": 92,
+        "informative_decisions": 139,
+        "informative_seeds": 41,
+        "null_decisions": 252
+      },
+      "enriched": {
+        "advantage": -0.0025575447570332453,
+        "advantage_ci": [
+          -0.01916651634373153,
+          -0.0025575447570332453,
+          0.01459558338826631
+        ],
+        "brier": 0.1713879824937296,
+        "brier_ci": [
+          0.12943154470410453,
+          0.1713879824937291,
+          0.2142394630307974
+        ],
+        "calibration_trials": 31186,
+        "decisions": 391,
+        "seeds": 92,
+        "informative_decisions": 139,
+        "informative_seeds": 41,
+        "null_decisions": 252
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": -0.004092071611253196,
+      "brier_delta_enriched_minus_original": -0.00501493286334892
+    },
+    {
+      "stratum": "5",
+      "original": {
+        "advantage": -0.010989010989010986,
+        "advantage_ci": [
+          -0.04022362422140885,
+          -0.010989010989010986,
+          0.013335051546391745
+        ],
+        "brier": 0.12942914191869445,
+        "brier_ci": [
+          0.07545876021159553,
+          0.12942914191869415,
+          0.18494147569111066
+        ],
+        "calibration_trials": 14654,
+        "decisions": 182,
+        "seeds": 43,
+        "informative_decisions": 61,
+        "informative_seeds": 23,
+        "null_decisions": 121
+      },
+      "enriched": {
+        "advantage": -0.006593406593406592,
+        "advantage_ci": [
+          -0.030773809523809526,
+          -0.006593406593406592,
+          0.013134522015737466
+        ],
+        "brier": 0.12983203101189902,
+        "brier_ci": [
+          0.07947414200264753,
+          0.12983203101189872,
+          0.1813586341522888
+        ],
+        "calibration_trials": 14654,
+        "decisions": 182,
+        "seeds": 43,
+        "informative_decisions": 61,
+        "informative_seeds": 23,
+        "null_decisions": 121
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": 0.004395604395604395,
+      "brier_delta_enriched_minus_original": 0.00040288909320457256
+    },
+    {
+      "stratum": "6",
+      "original": {
+        "advantage": 0.006153846153846152,
+        "advantage_ci": [
+          0.0,
+          0.006153846153846152,
+          0.015151515151515148
+        ],
+        "brier": 0.057781802963277576,
+        "brier_ci": [
+          0.010040784927443638,
+          0.05778180296327748,
+          0.1262949005527925
+        ],
+        "calibration_trials": 5228,
+        "decisions": 65,
+        "seeds": 19,
+        "informative_decisions": 14,
+        "informative_seeds": 7,
+        "null_decisions": 51
+      },
+      "enriched": {
+        "advantage": 0.0,
+        "advantage_ci": [
+          -0.012499999999999997,
+          0.0,
+          0.01176470588235294
+        ],
+        "brier": 0.07467600456793957,
+        "brier_ci": [
+          0.025012662700060345,
+          0.07467600456793948,
+          0.1379156996079256
+        ],
+        "calibration_trials": 5228,
+        "decisions": 65,
+        "seeds": 19,
+        "informative_decisions": 14,
+        "informative_seeds": 7,
+        "null_decisions": 51
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": -0.006153846153846152,
+      "brier_delta_enriched_minus_original": 0.016894201604662
+    },
+    {
+      "stratum": "7",
+      "original": {
+        "advantage": 0.0,
+        "advantage_ci": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "brier": 0.0028419707820834996,
+        "brier_ci": [
+          0.0018806554419527218,
+          0.0028419707820834996,
+          0.005385805134782628
+        ],
+        "calibration_trials": 1120,
+        "decisions": 14,
+        "seeds": 6,
+        "informative_decisions": 1,
+        "informative_seeds": 1,
+        "null_decisions": 13
+      },
+      "enriched": {
+        "advantage": 0.0,
+        "advantage_ci": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "brier": 0.011654232663277463,
+        "brier_ci": [
+          0.005670112526788218,
+          0.011654232663277463,
+          0.018607391540682777
+        ],
+        "calibration_trials": 1120,
+        "decisions": 14,
+        "seeds": 6,
+        "informative_decisions": 1,
+        "informative_seeds": 1,
+        "null_decisions": 13
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": 0.0,
+      "brier_delta_enriched_minus_original": 0.008812261881193963
+    },
+    {
+      "stratum": "8",
+      "original": {
+        "advantage": 0.0,
+        "advantage_ci": [
+          null,
+          0.0,
+          null
+        ],
+        "brier": 0.0022528689277691027,
+        "brier_ci": [
+          null,
+          0.0022528689277691027,
+          null
+        ],
+        "calibration_trials": 160,
+        "decisions": 2,
+        "seeds": 1,
+        "informative_decisions": 0,
+        "informative_seeds": 0,
+        "null_decisions": 2
+      },
+      "enriched": {
+        "advantage": 0.0,
+        "advantage_ci": [
+          null,
+          0.0,
+          null
+        ],
+        "brier": 0.010851725336601703,
+        "brier_ci": [
+          null,
+          0.010851725336601703,
+          null
+        ],
+        "calibration_trials": 160,
+        "decisions": 2,
+        "seeds": 1,
+        "informative_decisions": 0,
+        "informative_seeds": 0,
+        "null_decisions": 2
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": 0.0,
+      "brier_delta_enriched_minus_original": 0.0085988564088326
+    }
+  ],
+  "by_gap": [
+    {
+      "stratum": "tie",
+      "original": {
+        "advantage": 0.0,
+        "advantage_ci": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "brier": 0.01983198654010656,
+        "brier_ci": [
+          0.013185127574869924,
+          0.019831986540106532,
+          0.02737103424442064
+        ],
+        "calibration_trials": 177410,
+        "decisions": 2221,
+        "seeds": 210,
+        "informative_decisions": 0,
+        "informative_seeds": 0,
+        "null_decisions": 2221
+      },
+      "enriched": {
+        "advantage": 0.0,
+        "advantage_ci": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "brier": 0.01994683819067141,
+        "brier_ci": [
+          0.013670112971934744,
+          0.019946838190671376,
+          0.027346391597825585
+        ],
+        "calibration_trials": 177410,
+        "decisions": 2221,
+        "seeds": 210,
+        "informative_decisions": 0,
+        "informative_seeds": 0,
+        "null_decisions": 2221
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": 0.0,
+      "brier_delta_enriched_minus_original": 0.00011485165056485114
+    },
+    {
+      "stratum": "(0,0.1]",
+      "original": {
+        "advantage": null,
+        "advantage_ci": [
+          null,
+          null,
+          null
+        ],
+        "brier": null,
+        "brier_ci": [
+          null,
+          null,
+          null
+        ],
+        "calibration_trials": 0,
+        "decisions": 0,
+        "seeds": 0,
+        "informative_decisions": 0,
+        "informative_seeds": 0,
+        "null_decisions": 0
+      },
+      "enriched": {
+        "advantage": null,
+        "advantage_ci": [
+          null,
+          null,
+          null
+        ],
+        "brier": null,
+        "brier_ci": [
+          null,
+          null,
+          null
+        ],
+        "calibration_trials": 0,
+        "decisions": 0,
+        "seeds": 0,
+        "informative_decisions": 0,
+        "informative_seeds": 0,
+        "null_decisions": 0
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": null,
+      "brier_delta_enriched_minus_original": null
+    },
+    {
+      "stratum": "(0.1,0.25]",
+      "original": {
+        "advantage": 0.01293800539083558,
+        "advantage_ci": [
+          0.000553753161507888,
+          0.01293800539083558,
+          0.025144206974128225
+        ],
+        "brier": 0.14819713222761635,
+        "brier_ci": [
+          0.11794813144456663,
+          0.1481971322276161,
+          0.1794428500208626
+        ],
+        "calibration_trials": 29350,
+        "decisions": 371,
+        "seeds": 157,
+        "informative_decisions": 371,
+        "informative_seeds": 157,
+        "null_decisions": 0
+      },
+      "enriched": {
+        "advantage": 8.977544673518787e-19,
+        "advantage_ci": [
+          -0.012174133745310085,
+          8.977544673518787e-19,
+          0.012339331619537272
+        ],
+        "brier": 0.14552715783515965,
+        "brier_ci": [
+          0.11692952533961154,
+          0.1455271578351595,
+          0.17530780280972974
+        ],
+        "calibration_trials": 29350,
+        "decisions": 371,
+        "seeds": 157,
+        "informative_decisions": 371,
+        "informative_seeds": 157,
+        "null_decisions": 0
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": -0.012938005390835578,
+      "brier_delta_enriched_minus_original": -0.0026699743924566977
+    },
+    {
+      "stratum": "(0.25,0.5]",
+      "original": {
+        "advantage": 0.007792207792207796,
+        "advantage_ci": [
+          -0.023423423423423417,
+          0.007792207792207796,
+          0.037171141442927845
+        ],
+        "brier": 0.2610780706708148,
+        "brier_ci": [
+          0.23079750870744062,
+          0.26107807067081434,
+          0.29205005297707143
+        ],
+        "calibration_trials": 18440,
+        "decisions": 231,
+        "seeds": 106,
+        "informative_decisions": 231,
+        "informative_seeds": 106,
+        "null_decisions": 0
+      },
+      "enriched": {
+        "advantage": 0.000865800865800868,
+        "advantage_ci": [
+          -0.029184549356223173,
+          0.000865800865800868,
+          0.0332048748353096
+        ],
+        "brier": 0.25831571399202974,
+        "brier_ci": [
+          0.2291487780873805,
+          0.25831571399202924,
+          0.2885625716565522
+        ],
+        "calibration_trials": 18440,
+        "decisions": 231,
+        "seeds": 106,
+        "informative_decisions": 231,
+        "informative_seeds": 106,
+        "null_decisions": 0
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": -0.006926406926406928,
+      "brier_delta_enriched_minus_original": -0.0027623566787850495
+    },
+    {
+      "stratum": "(0.5,1]",
+      "original": {
+        "advantage": -0.09240506329113923,
+        "advantage_ci": [
+          -0.1548409813721036,
+          -0.09240506329113923,
+          -0.029649769585253605
+        ],
+        "brier": 0.3864649623201772,
+        "brier_ci": [
+          0.35051872108037424,
+          0.38646496232017646,
+          0.4206798473093544
+        ],
+        "calibration_trials": 12570,
+        "decisions": 158,
+        "seeds": 89,
+        "informative_decisions": 158,
+        "informative_seeds": 89,
+        "null_decisions": 0
+      },
+      "enriched": {
+        "advantage": -0.08987341772151898,
+        "advantage_ci": [
+          -0.14882422547332186,
+          -0.08987341772151898,
+          -0.02607805746249687
+        ],
+        "brier": 0.38673113103595663,
+        "brier_ci": [
+          0.3510412287010843,
+          0.386731131035956,
+          0.42039738454035697
+        ],
+        "calibration_trials": 12570,
+        "decisions": 158,
+        "seeds": 89,
+        "informative_decisions": 158,
+        "informative_seeds": 89,
+        "null_decisions": 0
+      },
+      "identical_record_identity_sets": true,
+      "advantage_delta_enriched_minus_original": 0.0025316455696202528,
+      "brier_delta_enriched_minus_original": 0.0002661687157794468
+    }
+  ],
+  "highlights": {
+    "by_ante": {
+      "selection_rule": "Descriptive extrema of enriched-minus-original advantage among nonempty, non-tie strata; no multiplicity-adjusted inference.",
+      "most_favorable_to_enriched": {
+        "stratum": "5",
+        "original": {
+          "advantage": -0.010989010989010986,
+          "advantage_ci": [
+            -0.04022362422140885,
+            -0.010989010989010986,
+            0.013335051546391745
+          ],
+          "brier": 0.12942914191869445,
+          "brier_ci": [
+            0.07545876021159553,
+            0.12942914191869415,
+            0.18494147569111066
+          ],
+          "calibration_trials": 14654,
+          "decisions": 182,
+          "seeds": 43,
+          "informative_decisions": 61,
+          "informative_seeds": 23,
+          "null_decisions": 121
+        },
+        "enriched": {
+          "advantage": -0.006593406593406592,
+          "advantage_ci": [
+            -0.030773809523809526,
+            -0.006593406593406592,
+            0.013134522015737466
+          ],
+          "brier": 0.12983203101189902,
+          "brier_ci": [
+            0.07947414200264753,
+            0.12983203101189872,
+            0.1813586341522888
+          ],
+          "calibration_trials": 14654,
+          "decisions": 182,
+          "seeds": 43,
+          "informative_decisions": 61,
+          "informative_seeds": 23,
+          "null_decisions": 121
+        },
+        "identical_record_identity_sets": true,
+        "advantage_delta_enriched_minus_original": 0.004395604395604395,
+        "brier_delta_enriched_minus_original": 0.00040288909320457256
+      },
+      "most_favorable_to_original": {
+        "stratum": "6",
+        "original": {
+          "advantage": 0.006153846153846152,
+          "advantage_ci": [
+            0.0,
+            0.006153846153846152,
+            0.015151515151515148
+          ],
+          "brier": 0.057781802963277576,
+          "brier_ci": [
+            0.010040784927443638,
+            0.05778180296327748,
+            0.1262949005527925
+          ],
+          "calibration_trials": 5228,
+          "decisions": 65,
+          "seeds": 19,
+          "informative_decisions": 14,
+          "informative_seeds": 7,
+          "null_decisions": 51
+        },
+        "enriched": {
+          "advantage": 0.0,
+          "advantage_ci": [
+            -0.012499999999999997,
+            0.0,
+            0.01176470588235294
+          ],
+          "brier": 0.07467600456793957,
+          "brier_ci": [
+            0.025012662700060345,
+            0.07467600456793948,
+            0.1379156996079256
+          ],
+          "calibration_trials": 5228,
+          "decisions": 65,
+          "seeds": 19,
+          "informative_decisions": 14,
+          "informative_seeds": 7,
+          "null_decisions": 51
+        },
+        "identical_record_identity_sets": true,
+        "advantage_delta_enriched_minus_original": -0.006153846153846152,
+        "brier_delta_enriched_minus_original": 0.016894201604662
+      }
+    },
+    "by_gap": {
+      "selection_rule": "Descriptive extrema of enriched-minus-original advantage among nonempty, non-tie strata; no multiplicity-adjusted inference.",
+      "most_favorable_to_enriched": {
+        "stratum": "(0.5,1]",
+        "original": {
+          "advantage": -0.09240506329113923,
+          "advantage_ci": [
+            -0.1548409813721036,
+            -0.09240506329113923,
+            -0.029649769585253605
+          ],
+          "brier": 0.3864649623201772,
+          "brier_ci": [
+            0.35051872108037424,
+            0.38646496232017646,
+            0.4206798473093544
+          ],
+          "calibration_trials": 12570,
+          "decisions": 158,
+          "seeds": 89,
+          "informative_decisions": 158,
+          "informative_seeds": 89,
+          "null_decisions": 0
+        },
+        "enriched": {
+          "advantage": -0.08987341772151898,
+          "advantage_ci": [
+            -0.14882422547332186,
+            -0.08987341772151898,
+            -0.02607805746249687
+          ],
+          "brier": 0.38673113103595663,
+          "brier_ci": [
+            0.3510412287010843,
+            0.386731131035956,
+            0.42039738454035697
+          ],
+          "calibration_trials": 12570,
+          "decisions": 158,
+          "seeds": 89,
+          "informative_decisions": 158,
+          "informative_seeds": 89,
+          "null_decisions": 0
+        },
+        "identical_record_identity_sets": true,
+        "advantage_delta_enriched_minus_original": 0.0025316455696202528,
+        "brier_delta_enriched_minus_original": 0.0002661687157794468
+      },
+      "most_favorable_to_original": {
+        "stratum": "(0.1,0.25]",
+        "original": {
+          "advantage": 0.01293800539083558,
+          "advantage_ci": [
+            0.000553753161507888,
+            0.01293800539083558,
+            0.025144206974128225
+          ],
+          "brier": 0.14819713222761635,
+          "brier_ci": [
+            0.11794813144456663,
+            0.1481971322276161,
+            0.1794428500208626
+          ],
+          "calibration_trials": 29350,
+          "decisions": 371,
+          "seeds": 157,
+          "informative_decisions": 371,
+          "informative_seeds": 157,
+          "null_decisions": 0
+        },
+        "enriched": {
+          "advantage": 8.977544673518787e-19,
+          "advantage_ci": [
+            -0.012174133745310085,
+            8.977544673518787e-19,
+            0.012339331619537272
+          ],
+          "brier": 0.14552715783515965,
+          "brier_ci": [
+            0.11692952533961154,
+            0.1455271578351595,
+            0.17530780280972974
+          ],
+          "calibration_trials": 29350,
+          "decisions": 371,
+          "seeds": 157,
+          "informative_decisions": 371,
+          "informative_seeds": 157,
+          "null_decisions": 0
+        },
+        "identical_record_identity_sets": true,
+        "advantage_delta_enriched_minus_original": -0.012938005390835578,
+        "brier_delta_enriched_minus_original": -0.0026699743924566977
+      }
+    }
+  },
+  "sample_sizes": {
+    "per_model": {
+      "original": {
+        "evidence": {
+          "holdout_decisions": 3032,
+          "holdout_seeds": 212,
+          "trials": 241850,
+          "candidate_trials": 241850,
+          "censored_trials": 3026,
+          "unknown_clear_trials": 3026,
+          "usable_clear_trials": 238824,
+          "predicted_trials": 238824,
+          "terminal_trials": 0
+        },
+        "paired": {
+          "decisions": 2981,
+          "seeds": 212,
+          "total_decisions": 3032,
+          "informative_decisions": 760,
+          "informative_seeds": 172,
+          "null_decisions": 2221,
+          "prediction_ties": 2,
+          "excluded_decisions": 51,
+          "exclusion_counts": {
+            "censored_or_missing_evaluation_labels": 51
+          },
+          "pairs": 10989,
+          "label_tied_pairs": 72076
+        }
+      },
+      "enriched": {
+        "evidence": {
+          "holdout_decisions": 3032,
+          "holdout_seeds": 212,
+          "trials": 241850,
+          "candidate_trials": 241850,
+          "censored_trials": 3026,
+          "unknown_clear_trials": 3026,
+          "usable_clear_trials": 238824,
+          "predicted_trials": 238824,
+          "terminal_trials": 0
+        },
+        "paired": {
+          "decisions": 2981,
+          "seeds": 212,
+          "total_decisions": 3032,
+          "informative_decisions": 760,
+          "informative_seeds": 172,
+          "null_decisions": 2221,
+          "prediction_ties": 1,
+          "excluded_decisions": 51,
+          "exclusion_counts": {
+            "censored_or_missing_evaluation_labels": 51
+          },
+          "pairs": 10989,
+          "label_tied_pairs": 72076
+        }
+      }
+    },
+    "matched_decisions": 2981,
+    "matched_seeds": 212,
+    "gate_bar_context": "Only 212 seed clusters (172 informative), not 238824 independent trials. This is limited evidence for a decisive test gate, but exceeds the reports' actual minimum of 30 informative seeds and 200 informative decisions (observed 760). No larger numeric gate bar is specified in these reports; do not claim a sample-size threshold failure."
+  },
+  "limitations": [
+    "Validation is tuning/model-selection evidence, not independent test-gate evidence; no test-split data were read.",
+    "The matched 95% CI spans zero: no significance or model-superiority claim; absence of separation is not proof of equivalence.",
+    "Small seed count relative to a decisive gate: 212 clusters, 172 informative; reported numerical minima are nevertheless met. More bootstrap replicates do not add independent evidence.",
+    "Cluster bootstrap preserves within-seed dependence and weights decisions equally. It conditions on fitted models and observed evaluation trial means, without refitting models or resampling evaluation worlds.",
+    "2221 of 2981 paired decisions have null action-value differences; top1/top3 include these ties and are not informative-only ranking rates.",
+    "51 decisions are excluded from paired ranking; 3026 trials are censored/unknown. Calibration uses 238824 usable raw trials and is not restricted to the exact paired-ranking population.",
+    "Candidate coverage was not measured (zero decisions); terminal heads have zero observations, so terminal performance and full-run win rate cannot be inferred.",
+    "Stratum highlights and Brier differences are descriptive; no matched Brier interval or multiplicity correction was computed.",
+    "Freshness, raw world/arm identity and train/validation/test disjointness were not independently audited; only report-level paired validation identity overlap was verified.",
+    "Source limitations are preserved verbatim; the generic HistGBM clear-head limitation is not treated as proof of these models' architecture."
+  ]
+}

@@ -95,8 +95,10 @@ def rollout(
                 stalled = 0
         else:
             stalled = 0
-        sig = new_sig
-    return outcome(game, steps, truncated=steps >= max_steps)
+    res = outcome(game, steps, truncated=steps >= max_steps)
+    if hasattr(policy, "_pair_stats"):
+        res["policy_stats"] = dict(policy._pair_stats)
+    return res
 
 
 def outcome(
@@ -137,5 +139,17 @@ def outcome(
             "jokers_sold": list(game.run_stats["jokers_sold"]),
             "co_owned": list(game.run_stats["co_owned"]),
             "consumable_uses": list(game.run_stats["consumable_uses"]),
+            "deck_size": len(game.deck) + len(game.hand) + len(game.spent),
+            "planet_levels": dict(game.planet_levels),
+            "run_hand_counts": dict(game.run_hand_counts),
+            "vouchers": list(game.vouchers),
+            "boss_key": getattr(getattr(game, "current_blind", None), "boss_key", None),
+            "steel_cards": sum(1 for c in (list(game.deck) + list(game.hand) + list(game.spent)) if getattr(c, "enhancement", None) == "Steel"),
+            "gold_cards": sum(1 for c in (list(game.deck) + list(game.hand) + list(game.spent)) if getattr(c, "enhancement", None) == "Gold"),
+            "lucky_cards": sum(1 for c in (list(game.deck) + list(game.hand) + list(game.spent)) if getattr(c, "enhancement", None) == "Lucky"),
+            "glass_cards": sum(1 for c in (list(game.deck) + list(game.hand) + list(game.spent)) if getattr(c, "enhancement", None) == "Glass"),
+            "blue_seals": sum(1 for c in (list(game.deck) + list(game.hand) + list(game.spent)) if getattr(c, "seal", None) == "Blue"),
+            "purple_seals": sum(1 for c in (list(game.deck) + list(game.hand) + list(game.spent)) if getattr(c, "seal", None) == "Purple"),
+            "red_seals": sum(1 for c in (list(game.deck) + list(game.hand) + list(game.spent)) if getattr(c, "seal", None) == "Red"),
         },
     }

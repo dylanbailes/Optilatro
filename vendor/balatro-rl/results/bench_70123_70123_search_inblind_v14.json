@@ -1,0 +1,1116 @@
+{
+ "search_inblind_v14": {
+  "aggregate": {
+   "n": 1,
+   "wins": 1,
+   "win_rate": 100.0,
+   "ante1_deaths": 0,
+   "ante1_death_rate": 0.0,
+   "death": {
+    "9": 1
+   },
+   "mean_ante": 9,
+   "mean_steps": 273,
+   "mean_dollars": 0,
+   "mean_econ_source": 6.0,
+   "total_econ_source": 6,
+   "mean_interest": 46.0,
+   "total_interest": 46,
+   "mean_tarots": 19.0,
+   "mean_planets": 18.0,
+   "mean_spectrals": 0.0
+  },
+  "results": [
+   {
+    "won": true,
+    "ante": 9,
+    "death_blind": 0,
+    "death_kind": "Boss",
+    "steps": 273,
+    "truncated": false,
+    "dollars": 0,
+    "jokers": [
+     "j_erosion",
+     "j_misprint",
+     "j_cavendish",
+     "j_stuntman",
+     "j_blackboard"
+    ],
+    "stats": {
+     "tarots": [
+      "c_lovers",
+      "c_wheel_of_fortune",
+      "c_hierophant",
+      "c_chariot",
+      "c_wheel_of_fortune",
+      "c_fool",
+      "c_lovers",
+      "c_temperance",
+      "c_wheel_of_fortune",
+      "c_hermit",
+      "c_world",
+      "c_justice",
+      "c_temperance",
+      "c_hermit",
+      "c_star",
+      "c_temperance",
+      "c_fool",
+      "c_temperance",
+      "c_lovers"
+     ],
+     "planets": [
+      "pl_uranus",
+      "pl_earth",
+      "pl_earth",
+      "pl_neptune",
+      "pl_mercury",
+      "pl_mercury",
+      "pl_pluto",
+      "pl_jupiter",
+      "pl_jupiter",
+      "pl_planet_x",
+      "pl_pluto",
+      "pl_pluto",
+      "pl_venus",
+      "pl_mercury",
+      "pl_earth",
+      "pl_pluto",
+      "pl_mercury",
+      "pl_eris"
+     ],
+     "spectrals": [],
+     "jokers_bought": [
+      "j_trousers",
+      "j_stuntman",
+      "j_green_joker",
+      "j_wily",
+      "j_scholar",
+      "j_ride_the_bus",
+      "j_hallucination",
+      "j_fortune_teller",
+      "j_vagabond",
+      "j_mail",
+      "j_erosion",
+      "j_blackboard",
+      "j_photograph",
+      "j_credit_card",
+      "j_green_joker",
+      "j_sock_and_buskin",
+      "j_faceless",
+      "j_misprint"
+     ],
+     "money_spent": 342,
+     "best_score": 147864,
+     "rerolls": 9,
+     "packs_bought": 36,
+     "packs_opened": 35,
+     "interest_collected": 46,
+     "econ_source": 6,
+     "jokers_sold": [
+      [
+       2,
+       "j_wily"
+      ],
+      [
+       4,
+       "j_scholar"
+      ],
+      [
+       5,
+       "j_ride_the_bus"
+      ],
+      [
+       5,
+       "j_hallucination"
+      ],
+      [
+       5,
+       "j_fortune_teller"
+      ],
+      [
+       5,
+       "j_vagabond"
+      ],
+      [
+       5,
+       "j_mail"
+      ],
+      [
+       6,
+       "j_trousers"
+      ],
+      [
+       6,
+       "j_green_joker"
+      ],
+      [
+       7,
+       "j_photograph"
+      ],
+      [
+       7,
+       "j_credit_card"
+      ],
+      [
+       7,
+       "j_green_joker"
+      ],
+      [
+       7,
+       "j_sock_and_buskin"
+      ],
+      [
+       7,
+       "j_faceless"
+      ]
+     ],
+     "co_owned": [
+      [
+       1,
+       "Straight",
+       [],
+       308
+      ],
+      [
+       1,
+       "Straight",
+       [
+        "j_cavendish",
+        "j_trousers"
+       ],
+       948
+      ],
+      [
+       1,
+       "Two Pair",
+       [
+        "j_cavendish",
+        "j_trousers"
+       ],
+       384
+      ],
+      [
+       1,
+       "Pair",
+       [
+        "j_cavendish",
+        "j_trousers"
+       ],
+       288
+      ],
+      [
+       2,
+       "High Card",
+       [
+        "j_cavendish",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       2340
+      ],
+      [
+       2,
+       "High Card",
+       [
+        "j_cavendish",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       2331
+      ],
+      [
+       2,
+       "High Card",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_stuntman",
+        "j_trousers",
+        "j_wily"
+       ],
+       3768
+      ],
+      [
+       3,
+       "Pair",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       5760
+      ],
+      [
+       3,
+       "High Card",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       10080
+      ],
+      [
+       3,
+       "High Card",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       6573
+      ],
+      [
+       4,
+       "Pair",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       8478
+      ],
+      [
+       4,
+       "High Card",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       8505
+      ],
+      [
+       4,
+       "High Card",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       9450
+      ],
+      [
+       4,
+       "High Card",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       10197
+      ],
+      [
+       5,
+       "Pair",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_ride_the_bus",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       12870
+      ],
+      [
+       5,
+       "High Card",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_hallucination",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       21390
+      ],
+      [
+       5,
+       "High Card",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_stuntman",
+        "j_trousers",
+        "j_vagabond"
+       ],
+       29673
+      ],
+      [
+       6,
+       "Two Pair",
+       [
+        "j_cavendish",
+        "j_erosion",
+        "j_green_joker",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       24168
+      ],
+      [
+       6,
+       "Pair",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_green_joker",
+        "j_stuntman"
+       ],
+       64980
+      ],
+      [
+       6,
+       "Two Pair",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_photograph",
+        "j_stuntman"
+       ],
+       36234
+      ],
+      [
+       6,
+       "High Card",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_photograph",
+        "j_stuntman"
+       ],
+       27405
+      ],
+      [
+       7,
+       "High Card",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_photograph",
+        "j_stuntman"
+       ],
+       28350
+      ],
+      [
+       7,
+       "High Card",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_photograph",
+        "j_stuntman"
+       ],
+       24867
+      ],
+      [
+       7,
+       "Pair",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_sock_and_buskin",
+        "j_stuntman"
+       ],
+       82080
+      ],
+      [
+       7,
+       "High Card",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_sock_and_buskin",
+        "j_stuntman"
+       ],
+       22110
+      ],
+      [
+       7,
+       "Pair",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_sock_and_buskin",
+        "j_stuntman"
+       ],
+       88704
+      ],
+      [
+       7,
+       "High Card",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_sock_and_buskin",
+        "j_stuntman"
+       ],
+       37050
+      ],
+      [
+       8,
+       "Pair",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       12528
+      ],
+      [
+       8,
+       "Pair",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       15660
+      ],
+      [
+       8,
+       "High Card",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       21861
+      ],
+      [
+       8,
+       "Pair",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       25344
+      ],
+      [
+       8,
+       "Pair",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       41418
+      ],
+      [
+       8,
+       "High Card",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       46368
+      ],
+      [
+       8,
+       "Pair",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       20358
+      ],
+      [
+       8,
+       "Pair",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       44833
+      ],
+      [
+       8,
+       "High Card",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       37044
+      ]
+     ],
+     "consumable_uses": [
+      [
+       2,
+       "pl_uranus",
+       [
+        "j_cavendish",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       []
+      ],
+      [
+       2,
+       "c_lovers",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       [
+        {
+         "rank": 14,
+         "suit": "Clubs",
+         "enh": "None",
+         "edition": "None",
+         "seal": "None"
+        }
+       ]
+      ],
+      [
+       4,
+       "c_wheel_of_fortune",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       []
+      ],
+      [
+       4,
+       "c_hierophant",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       [
+        {
+         "rank": 11,
+         "suit": "Clubs",
+         "enh": "None",
+         "edition": "None",
+         "seal": "None"
+        },
+        {
+         "rank": 11,
+         "suit": "Spades",
+         "enh": "None",
+         "edition": "None",
+         "seal": "None"
+        }
+       ]
+      ],
+      [
+       4,
+       "c_chariot",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       [
+        {
+         "rank": 10,
+         "suit": "Diamonds",
+         "enh": "None",
+         "edition": "None",
+         "seal": "None"
+        }
+       ]
+      ],
+      [
+       4,
+       "c_wheel_of_fortune",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_scholar",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       []
+      ],
+      [
+       4,
+       "pl_earth",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_ride_the_bus",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       []
+      ],
+      [
+       5,
+       "c_fool",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_hallucination",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       []
+      ],
+      [
+       5,
+       "pl_earth",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_hallucination",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       []
+      ],
+      [
+       5,
+       "c_lovers",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_hallucination",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       [
+        {
+         "rank": 10,
+         "suit": "Hearts",
+         "enh": "None",
+         "edition": "None",
+         "seal": "None"
+        }
+       ]
+      ],
+      [
+       5,
+       "pl_neptune",
+       [
+        "j_cavendish",
+        "j_fortune_teller",
+        "j_green_joker",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       []
+      ],
+      [
+       5,
+       "c_temperance",
+       [
+        "j_cavendish",
+        "j_fortune_teller",
+        "j_green_joker",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       []
+      ],
+      [
+       5,
+       "c_wheel_of_fortune",
+       [
+        "j_cavendish",
+        "j_green_joker",
+        "j_mail",
+        "j_stuntman",
+        "j_trousers"
+       ],
+       []
+      ],
+      [
+       6,
+       "pl_mercury",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_photograph",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       7,
+       "c_hermit",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_photograph",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       7,
+       "pl_mercury",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_credit_card",
+        "j_erosion",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       7,
+       "c_world",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_credit_card",
+        "j_erosion",
+        "j_stuntman"
+       ],
+       [
+        {
+         "rank": 11,
+         "suit": "Clubs",
+         "enh": "Bonus",
+         "edition": "None",
+         "seal": "None"
+        },
+        {
+         "rank": 10,
+         "suit": "Diamonds",
+         "enh": "Steel",
+         "edition": "None",
+         "seal": "None"
+        }
+       ]
+      ],
+      [
+       7,
+       "pl_pluto",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_sock_and_buskin",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       7,
+       "pl_jupiter",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_sock_and_buskin",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       7,
+       "pl_jupiter",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_sock_and_buskin",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       7,
+       "c_justice",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_sock_and_buskin",
+        "j_stuntman"
+       ],
+       [
+        {
+         "rank": 12,
+         "suit": "Hearts",
+         "enh": "None",
+         "edition": "None",
+         "seal": "None"
+        }
+       ]
+      ],
+      [
+       8,
+       "pl_planet_x",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "pl_pluto",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "c_temperance",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "c_hermit",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "pl_pluto",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "c_star",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       [
+        {
+         "rank": 12,
+         "suit": "Clubs",
+         "enh": "None",
+         "edition": "None",
+         "seal": "None"
+        },
+        {
+         "rank": 9,
+         "suit": "Hearts",
+         "enh": "None",
+         "edition": "None",
+         "seal": "None"
+        }
+       ]
+      ],
+      [
+       8,
+       "pl_venus",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "pl_mercury",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "pl_earth",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "pl_pluto",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "c_temperance",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "c_fool",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "c_temperance",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "pl_mercury",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "pl_eris",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       []
+      ],
+      [
+       8,
+       "c_lovers",
+       [
+        "j_blackboard",
+        "j_cavendish",
+        "j_erosion",
+        "j_misprint",
+        "j_stuntman"
+       ],
+       [
+        {
+         "rank": 12,
+         "suit": "Diamonds",
+         "enh": "None",
+         "edition": "None",
+         "seal": "None"
+        }
+       ]
+      ]
+     ]
+    },
+    "seed": 70123
+   }
+  ]
+ }
+}

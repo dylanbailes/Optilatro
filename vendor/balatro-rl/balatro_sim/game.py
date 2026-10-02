@@ -309,6 +309,7 @@ class BalatroGame:
         # ── Skip-blind Tag state (Phase 1: all 24 real tags) ───────────────
         self.current_tag: Optional[str] = None   # tag offered for the current blind
         self.skipped_blinds = 0                  # Speed Tag: $5 × skips this run
+        self.gros_michel_extinct: bool = False   # Pool flag: True when Gros Michel self-destructs (unlocks Cavendish)
         self.run_hands_played = 0                # Handy Tag: $1 per played hand this run
         self.run_unused_discards = 0             # Garbage Tag: $1 per unused discard this run
         self.investment_pending = False          # Investment Tag: +$25 after next Boss
@@ -530,6 +531,17 @@ class BalatroGame:
         if "v_palette" in self.vouchers:
             self.hand_size += 1
 
+        boss_key = (
+            self.current_blind.boss_key
+            if self.current_blind.is_boss and self._boss_effects_on()
+            else ""
+        )
+        # Manacle reduces the size of the opening hand, so apply its passive
+        # before dealing. Other boss start effects need the dealt cards present
+        # (or act on draws) and remain applied below.
+        if boss_key == "bl_manacle":
+            self._apply_boss_start(boss_key)
+
         # Return cards played/discarded last round (and any cards still held,
         # e.g. left in hand through the shop phase) to the persistent deck,
         # then shuffle and draw the opening hand. Destroyed cards are neither
@@ -540,9 +552,10 @@ class BalatroGame:
         self.hand = []
         self.rng.node(DECK_SHUFFLE_NODE).shuffle(self.deck)
         self._draw_to_full()
-        # Apply boss debuffs (skipped entirely when abilities are disabled)
-        if self.current_blind.is_boss and self._boss_effects_on():
-            self._apply_boss_start(self.current_blind.boss_key)
+        # Apply the remaining boss start effects after dealing (skipped
+        # entirely when abilities are disabled).
+        if boss_key and boss_key != "bl_manacle":
+            self._apply_boss_start(boss_key)
         # Fire blind_selected joker hooks; collect created rewards so they apply
         # AFTER the whole loop — a joker Riff-Raff creates (parked as a
         # ("joker", ...) tuple) must not have its own on_blind_selected fire
@@ -1281,6 +1294,9 @@ class BalatroGame:
 
         # Self-destructing jokers (Gros Michel 1/6, Cavendish 1/1000, Turtle
         # Bean at 0) set state["destroyed"] in on_round_end — honor it.
+        for j in self.jokers:
+            if j.state.get("destroyed", False) and j.has_flag("unlocks_cavendish_on_extinction"):
+                self.gros_michel_extinct = True
         self.jokers = [j for j in self.jokers if not j.state.pop("destroyed", False)]
 
         # Gold ENHANCEMENT: $3 per card held in hand at round end (doc §6).

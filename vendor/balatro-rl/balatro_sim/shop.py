@@ -331,11 +331,14 @@ def random_joker_key(
     current pack, so a pack never repeats one); ignored when game is None or
     Showman is owned (the rule is fully lifted)."""
     if rng is None:
+        cavendish_unlocked = bool(getattr(game, "gros_michel_extinct", False))
         if rarity:
             pool = [k for k, v in JOKER_CATALOGUE.items()
-                    if v["rarity"] == rarity and k not in BANNED_JOKERS]
+                    if v["rarity"] == rarity and k not in BANNED_JOKERS
+                    and (k != "j_cavendish" or cavendish_unlocked)]
             return random.choice(pool) if pool else "j_joker"
-        keys = [k for k in JOKER_CATALOGUE.keys() if k not in BANNED_JOKERS]
+        keys = [k for k in JOKER_CATALOGUE.keys() if k not in BANNED_JOKERS
+                and (k != "j_cavendish" or cavendish_unlocked)]
         weights = [RARITY_WEIGHTS.get(JOKER_CATALOGUE[k]["rarity"], 10) for k in keys]
         if not keys:
             return "j_joker"
@@ -349,13 +352,15 @@ def random_joker_key(
     if not pool:
         return "j_joker"
     jnode = node_joker(_JOKER_NODE_RARITY[rarity], source, ante)
-    if game is None or _showman_owned(game):
-        # Showman lifts duplicate suppression entirely — even within-pack
-        # `exclude` locks are bypassed (real game).
-        return rng.node(jnode).choice(pool)
-    locked = _possessed_keys(game)
-    if exclude:
-        locked = locked | set(exclude)
+
+    locked = set()
+    if game is not None and not _showman_owned(game):
+        locked.update(_possessed_keys(game))
+        if exclude:
+            locked.update(exclude)
+    # Cavendish is locked until Gros Michel goes extinct (real game pool rules)
+    if not getattr(game, "gros_michel_extinct", False):
+        locked.add("j_cavendish")
     return _draw_excluding(rng, jnode, pool, locked)
 
 
@@ -959,6 +964,3 @@ def _open_booster(game: "BalatroGame", booster_key: str):
 
     game.booster_choices = choices
     game.booster_picks_remaining = picks
-
-
-

@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "comparison": "v14_matched_enriched_e10_s0 minus v14_matched_original_e10_s0",
+  "scope": "Validation-only tuning evidence; no test/holdout outcome dataset or report opened. Source files unchanged. Synthetic unit tests permitted.",
+  "verdict": "INCONCLUSIVE",
+  "recommendation": "Keep original: enrichment has a small positive choice-value point estimate but no demonstrated gain; Brier, validation BCE and pairwise accuracy worsen.",
+  "statistical_significance_claimed": false,
+  "inputs": {
+    "original_report": "results/evaluator/v14_matched_original_e10_s0_validation.json",
+    "enriched_report": "results/evaluator/v14_matched_enriched_e10_s0_validation.json",
+    "original_checkpoint": "results/evaluator/v14_matched_original_e10_s0.pt",
+    "enriched_checkpoint": "results/evaluator/v14_matched_enriched_e10_s0.pt",
+    "new_training_source": "results/evaluator/v14_train_later_probe_v2.jsonl"
+  },
+  "matching": {
+    "split": "validation",
+    "unique_matched_decisions": 50,
+    "duplicate_identities": 0,
+    "unmatched_included_records": 0,
+    "seeds": [70309, 70319, 70324],
+    "total_report_decisions_each": 52,
+    "excluded_decisions_each": 2,
+    "exclusion_counts_each": {"censored_or_missing_evaluation_labels": 2},
+    "informative_decisions": 8,
+    "informative_seeds": 2,
+    "null_decisions": 42,
+    "same_dataset_path_and_metadata": true,
+    "same_checkpoint_validation_provenance": true,
+    "record_fields_verified_equal": ["seed", "decision_id", "ante", "evaluation", "selection_trials_per_arm", "evaluation_trials_per_arm", "evaluation_values", "anchor_value"],
+    "identity_hash_encoding": "SHA256 of UTF-8 json.dumps(sorted((seed, decision_id)), separators=(',', ':'))",
+    "identity_sha256_each": "b213506042efc47beb680fc0bcc0cd232795f9d4d39a5826ad37e3659e16c70f",
+    "decision_ids_by_seed": {
+      "70309": [1, 2, 9, 10, 24, 35, 36, 41, 42, 51, 52, 57, 64, 71, 79, 86],
+      "70319": [1, 2, 9, 10, 18, 19, 26, 27, 36, 37, 46, 47, 58, 67, 73, 81, 93, 101, 111, 123, 143, 159, 184, 198],
+      "70324": [1, 2, 11, 12, 20, 21, 28, 29, 38, 39]
+    },
+    "validation_dataset_sha256_from_both_checkpoints": "f6dcdbff8d79af254fb9ee23772ae6699f89e0b3c1a0a3e3d38936855cfc27ba",
+    "proof_limitations": "Record identity and ordered evaluation-value equality verified directly. Source digest is recorded checkpoint provenance, not rehashed here: the mixed-split original JSONL was not opened. Reports omit action payloads, individual world IDs and excluded-record IDs, so these were not independently reverified."
+  },
+  "metrics": {
+    "ci_format": "[lower, upper], nominal 95% seed-cluster percentile intervals",
+    "original": {
+      "advantage_vs_anchor": 0.004,
+      "advantage_ci": [0.0, 0.02],
+      "model_choice_value": 0.984,
+      "anchor_value": 0.98,
+      "brier": 0.010696672527004528,
+      "brier_ci": [0.002174513078527222, 0.023150065089975812],
+      "calibration_trials": 4062,
+      "pairwise": 0.650735294117647,
+      "pairwise_ci": [0.5612745098039216, 0.6805555555555555],
+      "regret": 0.012,
+      "regret_ci": [0.0, 0.025],
+      "normalized_regret": 0.25,
+      "top1": 0.96,
+      "top3": 0.98,
+      "validation_bce": 0.07185769876321921
+    },
+    "enriched": {
+      "advantage_vs_anchor": 0.008,
+      "advantage_ci": [0.0, 0.025],
+      "model_choice_value": 0.988,
+      "anchor_value": 0.98,
+      "brier": 0.011466855113217288,
+      "brier_ci": [0.004068893528356143, 0.02287303519584802],
+      "calibration_trials": 4062,
+      "pairwise": 0.5570728291316526,
+      "pairwise_ci": [0.4068627450980392, 0.6071428571428571],
+      "regret": 0.008,
+      "regret_ci": [0.0, 0.04],
+      "normalized_regret": 0.25,
+      "top1": 0.96,
+      "top3": 0.98,
+      "validation_bce": 0.07268503512470768
+    },
+    "definitions": {
+      "ranking": "split_world_parity_v1: mean predicted P(clear) on five even-index worlds selects; mean observed clear on five odd-index worlds evaluates. Prediction argmax ties use uniform expected value.",
+      "advantage": "Mean per-decision model choice value minus anchor value, retaining null decisions.",
+      "pairwise": "Equal-decision mean over eight decisions with non-tied labels, not pooled pair accuracy; 86 non-tied and 1314 tied label pairs.",
+      "regret": "Mean maximum candidate evaluation value minus chosen evaluation value; noisy finite-sample reference, not an oracle.",
+      "brier": "Raw Bernoulli calibration over 4062 usable candidate trials, including both world halves; not restricted to the 50 complete ranking decisions."
+    }
+  },
+  "matched_model_delta": {
+    "estimand": "Mean over all 50 matched decisions of sum_a((enriched_choice_weight_a - original_choice_weight_a) * common_evaluation_value_a)",
+    "estimate": 0.004,
+    "ci95": [-0.02, 0.025],
+    "method": "Resample three whole seed clusters with replacement, preserving matched decisions and cluster multiplicities; divide resampled delta sum by resampled decision count. No independent-model bootstrap or subtraction of separate CI endpoints.",
+    "implementation": "vendor/balatro-rl/balatro_sim/eval_metrics.py:48 bootstrap_seed_ci",
+    "rng": "numpy.random.default_rng(0)",
+    "bootstrap_replicates": 100000,
+    "alpha": 0.05,
+    "crosscheck_2000_replicates_same_interval": true,
+    "by_seed": [
+      {"seed": 70309, "decisions": 16, "delta_sum": 0.4, "delta_mean": 0.025},
+      {"seed": 70319, "decisions": 24, "delta_sum": 0.0, "delta_mean": 0.0},
+      {"seed": 70324, "decisions": 10, "delta_sum": -0.2, "delta_mean": -0.02}
+    ],
+    "choice_disagreements": 35,
+    "choice_agreements": 15,
+    "disagreement_gained": 1,
+    "disagreement_lost": 1,
+    "disagreement_value_tied": 33,
+    "all_decisions_value_tied": 48,
+    "tie_tolerance": 1e-12,
+    "nonzero_records": [
+      {"seed": 70309, "decision_id": 10, "original_arm_zero_based": 3, "enriched_arm_zero_based": 2, "original_value": 0.4, "enriched_value": 0.8, "delta": 0.4},
+      {"seed": 70324, "decision_id": 28, "original_arm_zero_based": 4, "enriched_arm_zero_based": 6, "original_value": 1.0, "enriched_value": 0.8, "delta": -0.2}
+    ]
+  },
+  "training": {
+    "same_model_config": true,
+    "same_training_hyperparameters": true,
+    "architecture": "attention",
+    "d_model": 128,
+    "training_seed": 0,
+    "epochs_requested_each": 10,
+    "selected_epoch_each": 1,
+    "selection_metric": "validation_bce",
+    "checkpoint_test_used": {"original": false, "enriched": false},
+    "checkpoint_seed_banks_pairwise_disjoint_each": true,
+    "original_source_manifest_retained_unchanged": true,
+    "original_train_seeds": 22,
+    "enriched_train_seeds": 31,
+    "new_train_seeds": [73000, 73001, 73002, 73003, 73004, 73005, 73007, 73008, 73009],
+    "new_train_seed_count": 9,
+    "new_committed_training_rows": 33,
+    "new_usable_training_decisions": 33,
+    "original_train_samples": 22697,
+    "enriched_train_samples": 25297,
+    "new_usable_training_samples": 2600,
+    "validation_samples_each": 4062,
+    "new_rows_per_seed": {"73000": 4, "73001": 4, "73002": 4, "73003": 4, "73004": 3, "73005": 4, "73007": 4, "73008": 2, "73009": 4},
+    "new_rows_per_ante": {"1": 21, "2": 6, "3": 2, "4": 1, "5": 3},
+    "new_training_source_sha256_verified": "97a8228d6f17597c8413471e64c7c8fa05ccc13acd7921a39ea9682acfb4552a",
+    "all_declared_semantic_fields_present_and_equal": true,
+    "source_fingerprint_differences": ["tools/collect_blind_decisions.py"],
+    "notes": [
+      "New rows and usable samples were counted through load_data(..., 'train') and usable_decisions on the train-only enrichment file; new samples exactly match checkpoint count difference.",
+      "Original total training-row count was not reconstructed from the mixed-split source, avoiding test outcome access.",
+      "Enrichment is mostly early ante: 27/33 rows are ante 1-2, six are ante 3-5, none ante 6-8.",
+      "Terminal auxiliary collection changes from terminal_every=8 to 0; coverage_fraction changes from 0.15 to 0.0; collection schedule, bank and per-seed cap also change.",
+      "Identical epochs do not imply equal optimizer updates: enrichment adds decisions and changes normalization. This is a data-enrichment experiment, not a compute-matched causal isolation.",
+      "test_used=false denotes no test-driven fitting/selection, not that the fitter never parses a test source; its CLI loads test rows for split/provenance checks."
+    ]
+  },
+  "fitter_review": {
+    "status": "SELF_REVIEW_ONLY; independent review unavailable",
+    "independent_review_completed": false,
+    "historical_diff_available": false,
+    "history_evidence": "git status reports tools/fit_evaluator.py untracked; git diff, git log --all -- tools/fit_evaluator.py, and git ls-files provide no tracked predecessor.",
+    "scope": "Current multi-source loader and fitter integration, related metrics and focused tests; no source edits.",
+    "positive_checks": [
+      "Resolved duplicate paths and duplicate training decision identities are rejected; only train-split rows are concatenated in argument order.",
+      "Schema, split version and dataset version are checked; declared semantic conflicts rejected; split overlap guarded.",
+      "Source hashing streams data; normalization uses training samples; selection uses validation BCE; checkpoint loads use weights_only=True.",
+      "No shell execution or dynamic evaluation of dataset content observed in the fitter."
+    ],
+    "findings": [
+      {
+        "severity": "medium",
+        "reference": "tools/fit_evaluator.py:85",
+        "finding": "Semantic compatibility is checked only for fields a source declares. Missing policy/sampler/protocol metadata is accepted, leaving compatibility unproven for legacy sources.",
+        "recommendation": "Require semantic fields or explicitly mark legacy-source compatibility unverified. Both actual sources declare matching fields, so this gap does not establish a mismatch here."
+      },
+      {
+        "severity": "medium",
+        "reference": "tools/fit_evaluator.py:34",
+        "finding": "The semantic allowlist excludes source code fingerprints and label-affecting collection settings such as max_steps. Arbitrary mechanics changes or horizon changes could be combined under identical header strings.",
+        "recommendation": "Distinguish approved sampling changes from label/mechanics changes and require an explicit compatibility audit. Actual manifests differ only in collector fingerprint; max_steps is 100 in both. Historical collector code equivalence was not proven."
+      },
+      {
+        "severity": "low",
+        "reference": "tools/fit_evaluator.py:96",
+        "finding": "The source digest is computed after loading in a separate file pass, so it does not guarantee the file stayed unchanged during load/hash.",
+        "recommendation": "For stronger provenance, hash the loaded snapshot or verify immutability across passes. No concurrent modification was observed."
+      }
+    ]
+  },
+  "verification": {
+    "focused_test_command": "python -B -m pytest vendor/balatro-rl/tests/test_eval_metrics.py -q -p no:cacheprovider",
+    "environment": "PYTHONDONTWRITEBYTECODE=1; TMP and TEMP point to C:/Users/dbail/AppData/Local/Temp/opencode",
+    "passed": 54,
+    "failed": 0,
+    "elapsed_seconds": 47.79,
+    "test_data": "Synthetic fixtures only; no experiment test/holdout outcomes read.",
+    "source_edits": false,
+    "lint_typecheck": "Not run: read-only analysis with JSON output only; no source changes."
+  },
+  "limitations": [
+    "Only three validation seed clusters, eight informative decisions on two seeds, and five evaluation worlds per arm; nominal bootstrap coverage is unreliable at this size.",
+    "Only two decisions have nonzero model-vs-model value differences. A positive point estimate is not statistically significant evidence of improvement.",
+    "Validation labels selected the checkpoints and are reused for tuning comparisons; world-half separation does not make checkpoint selection independent of validation outcomes.",
+    "Reported gate thresholds are 200 informative decisions and 30 informative seeds; this bank is far smaller, and validation cannot certify a test gate regardless.",
+    "No ante-8 win-rate, live-policy improvement, fresh-bank generalization, or human-fair deployment certification is claimed.",
+    "Independent review and historical multi-source diff review remain unfulfilled because neither reviewer tools nor a tracked fitter predecessor were available."
+  ]
+}

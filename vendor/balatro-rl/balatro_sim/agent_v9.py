@@ -392,7 +392,7 @@ class _EvalGame:
     `consumable_hand` is read by Observatory (short-circuited while vouchers
     stay empty) — provided for robustness."""
 
-    __slots__ = ("rng", "vouchers", "consumable_hand", "jokers", "run_hand_counts")
+    __slots__ = ("rng", "vouchers", "consumable_hand", "jokers", "run_hand_counts", "deck", "hand", "spent")
 
     def __init__(self, game=None):
         self.rng = make_source(0, "seed")
@@ -403,6 +403,9 @@ class _EvalGame:
         else:
             self.jokers = []
         self.run_hand_counts = dict(game.run_hand_counts) if hasattr(game, 'run_hand_counts') and game.run_hand_counts else {}
+        self.deck = list(game.deck) if game is not None and hasattr(game, "deck") else []
+        self.hand = list(game.hand) if game is not None and hasattr(game, "hand") else []
+        self.spent = list(game.spent) if game is not None and hasattr(game, "spent") else []
 
     def copy(self):
         c = _EvalGame()
@@ -411,6 +414,9 @@ class _EvalGame:
         c.consumable_hand = list(self.consumable_hand)
         c.jokers = list(self.jokers)
         c.run_hand_counts = dict(self.run_hand_counts)
+        c.deck = list(self.deck)
+        c.hand = list(self.hand)
+        c.spent = list(self.spent)
         return c
 
 
@@ -476,7 +482,14 @@ def eval_hand_score(game, hand_type, scoring_cards, all_cards,
         hand_type=hand_type,
         jokers=jokers,
         planet_levels=pl,
-        hands_left=max(1, game.hands_left),
+        # During hand selection this evaluates the prospective play, so the
+        # scoring context sees the hands remaining AFTER that play. In
+        # particular, Dusk and Acrobat must activate when game.hands_left == 1.
+        hands_left=(
+            max(0, game.hands_left - 1)
+            if game.state == State.SELECTING_HAND
+            else max(1, game.hands_left)
+        ),
         discards_left=game.discards_left,
         dollars=game.dollars,
         ante=game.ante,

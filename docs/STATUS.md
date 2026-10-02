@@ -19,6 +19,8 @@ Red Deck, White Stake, antes 1–8, no Endless. Human-fair evaluation.
 | V9 L0/L1 | Heuristic + shop search | **Done** (human-fair pivot later) |
 | V10 | In-blind survive/value hierarchy | **Done**; knobs confirmed |
 | V11 | Multi-item sequences + copy ordering + MLP value net | **Done**; paired A/B approved on seeds 10500–10799 |
+| V14 | In-blind residual offline evaluator + surplus target + analytical fast-path | **Verified**; 67.34% validation concordance, 94.0% top-1, 100% test pass |
+| PairBot | Balatro University Pair-First reference policy | **Implemented & Benchmarked**; 9.00% win rate @ 100 seeds (10500–10599), 4.00% ante-1 deaths, +36% faster execution |
 
 ## Headline numbers (do not mix banks)
 
@@ -32,6 +34,8 @@ Red Deck, White Stake, antes 1–8, no Endless. Human-fair evaluation.
 | V10 heuristic vs V9 | **5.00%** vs 3.67% @ 300; **4.40%** vs farm-off @ 1000 | Farm-off == V9 byte-for-byte |
 | `search_shop_v10` (new default baseline) | **10.67%** @ 300 (Seeds 10200–10499) vs V9 **3.67%** | Strict human-fair. +21 wins (+190.9%), -20 ante-1 deaths (-69.0%). Baseline file: `results/default_baseline_v10.json` |
 | `search_shop_v11` (V11 Architecture) | **14.00%** (42/300) on Seeds 10500–10799 | Matches V10 (14.00%) with 41 concordant wins, 10 ante-1 deaths (3.33%), zero regression, verified APPROVE |
+| `search_inblind_v14` (V14 Evaluator) | **11.00%** (11/100) vs V11 **12.00%** (12/100) on Seeds 10500–10599 | Strict human-fair. Pairwise concordance jumped from 53.56% to 67.34% (+13.78 pp), 94.0% top-1, 96.0% top-3. CRN coupling + analytical fast-path active. |
+| `pair_bot` (Pair-First Reference) | **9.00%** (9/100) on Seeds 10500–10599 vs V11 **12.00%** | Strict human-fair. 4.00% ante-1 deaths (vs V11 6.00%), mean ante 4.73, 1.5 games/s (+36% speedup). Sidecar: `results/bench_10500_10599_search_shop_v11_pair_bot.json` |
 
 
 Ante-1 clear on the structure-discard bank: human-fair ~89%, lookahead oracle

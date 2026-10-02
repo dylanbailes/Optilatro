@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "experiment": "v14_added_only_diagnostic",
+  "kind": "promised diagnostic; training-corpus ablation",
+  "mode": "existing-CLI fit + validation only; no source edits, no commits, no test-bank evaluation, no extra experiment",
+  "question": "Does training on ONLY the added later-decision bank (v14_train_later_probe_v2.jsonl, 33 decisions / 9 seeds / 2600 trials) change gate-bank behavior vs the original multitask fit (285 decisions / 22 seeds / 22697 usable train samples from v14_collect_v1.jsonl)?",
+  "confound_note": "The added-only corpus is ~8.7x smaller in decisions and 9 vs 22 seeds, so this run is CONFOUNDED by training-corpus size and seed diversity; it cannot prove or refute the label-noise hypothesis from v14_label_and_rollout_diagnostic.json.",
+  "fit": {
+    "command": "python tools/fit_evaluator.py --train results/evaluator/v14_train_later_probe_v2.jsonl --val results/evaluator/v14_collect_v1.jsonl --test results/evaluator/v14_collect_v1.jsonl --arch attention --hidden 128 --seed 0 --epochs 10 --loss-profile multitask --out results/evaluator/v14_added_only_e10_s0.pt",
+    "checkpoint": "results/evaluator/v14_added_only_e10_s0.pt",
+    "architecture": "attention",
+    "d_model": 128,
+    "seed": 0,
+    "epochs": 10,
+    "loss_profile": "multitask",
+    "torch_threads": "OMP_NUM_THREADS=1, MKL_NUM_THREADS=1, torch.set_num_threads(1) inside CLI",
+    "train_bank": "results/evaluator/v14_train_later_probe_v2.jsonl (added bank; 33 train decisions, 9 seeds 73000-73009, 2600 samples)",
+    "val_test_bank": "results/evaluator/v14_collect_v1.jsonl internal splits (val = 3 seeds/52 decisions; test = 1 seed, used by fit contract only, never for selection or metrics; test_used=false)",
+    "selection": {"metric": "validation_bce", "value": 0.07452081104453939, "epoch": 8, "test_used": false},
+    "elapsed_seconds": 259.719
+  },
+  "validation": {
+    "command": "python tools/validate_evaluator.py --model results/evaluator/v14_added_only_e10_s0.pt --dataset results/evaluator/v14_validation_fixed_v2.jsonl --split validation --out results/evaluator/v14_gate_bank_added_only.json",
+    "report": "results/evaluator/v14_gate_bank_added_only.json",
+    "bank": "results/evaluator/v14_validation_fixed_v2.jsonl (212 seeds / 3032 decisions, 2981 paired)",
+    "test_evaluation": false,
+    "verdict": "INCONCLUSIVE",
+    "reasons": ["validation split is tuning evidence, not an independent test gate"],
+    "elapsed_seconds": 1212.61
+  },
+  "comparison_to_original": {
+    "baseline_report": "results/evaluator/v14_gate_bank_original.json",
+    "matching": "2981/2981 paired records matched on (seed, decision_id); anchor/evaluation values identical by construction; per-decision advantage deltas computed for all matched decisions",
+    "matched_delta": {
+      "definition": "added_only advantage - original advantage, decision-weighted, seed-cluster bootstrap (balatro_sim.eval_metrics.bootstrap_seed_ci, 2000 resamples, seed 0)",
+      "point": 0.00197920161019792,
+      "ci": [-0.001926410004717393, 0.00197920161019792, 0.005880403487023632],
+      "changed_decisions": "291 of 2981",
+      "per_decision_delta_range": [-0.8, 1.0]
+    },
+    "matched_deltas": {
+      "paired_advantage": {"original": -0.0026836632002683663, "added_only": -0.0007044615900704466, "delta": 0.00197920161019792},
+      "model_value": {"original": 0.9251257967125126, "added_only": 0.9271049983227104},
+      "anchor_value": {"original": 0.9278094599127809, "added_only": 0.9278094599127809},
+      "random_value": {"original": 0.9194213351224422, "added_only": 0.9194213351224422},
+      "top1": {"original": 0.8933243877893324, "added_only": 0.9007044615900704},
+      "top3": {"original": 0.9372693726937269, "added_only": 0.9340825226434083},
+      "pairwise": {"original": 0.5356564234944657, "added_only": 0.5540041925476553},
+      "regret": {"original": 0.03307614894330762, "added_only": 0.031096947333109692},
+      "calibration_brier": {"original": 0.07347040395591806, "added_only": 0.07311925343290146, "note": "Brier over the same 238824 usable trials, matched identities"},
+      "informative_decisions": {"original": 760, "added_only": 760},
+      "seeds": {"original": 212, "added_only": 212}
+    },
+    "interpretation": "Added-only training moves the large validation bank's paired advantage from -0.268 pp to -0.070 pp (matched delta +0.198 pp, 95% CI [-0.193, +0.588]) and reduces Brier/regret slightly. All CIs span zero; nothing separable. Because the added bank has ~1/9 the decisions and fewer seeds than the original, size/data-diversity is confounded with any per-row effect; this cannot prove or disprove the label-noise hypothesis."
+  },
+  "verification": {
+    "focused_test_eval_metrics": {"command": "python -m pytest vendor/balatro-rl/tests/test_eval_metrics.py -q", "result": "61 passed in 56.67s", "exit": 0},
+    "seed_exactness_ci_gate": {"command": "python -m pytest vendor/balatro-rl/tests/test_seed_exactness.py -m ci_gate -v", "result": "4 passed in 4.85s", "exit": 0},
+    "source_files_changed_this_session": [],
+    "dataset_modified": false,
+    "test_bank_outcomes_reported": false,
+    "commits_created": false
+  },
+  "conclusion": "Training on the added later-decision bank alone yields an INCONCLUSIVE, statistically indistinguishable gate-bank result vs the original multitask fit (matched delta +0.198 pp advantage, CI spans 0). The 9-seed corpus is far smaller than the original, so no claim about label noise vs data volume is established."
+}
